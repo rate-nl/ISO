@@ -16,3 +16,39 @@ The following sections will guide you through the specific components of our ISM
 5. **Operation** (Clause 8)
 6. **Performance Evaluation** (Clause 9)
 7. **Improvement** (Clause 10)
+
+
+
+# 1. Context of the Organization (Clause 4)
+
+## 1.1 Understanding the Organization and Its Context (Clause 4.1)
+
+Rate is a small software company specializing in providing a platform for collecting customer surveys and satisfaction metrics. Our primary operations involve:
+
+- Developing and maintaining our survey platform.
+- Managing customer accounts and their respective data.
+- Ensuring the security and integrity of collected survey responses.
+
+We recognize that information security is vital to maintaining customer trust and meeting regulatory requirements. Therefore, we are committed to implementing an Information Security Management System (ISMS) that aligns with our organizational context and addresses relevant internal and external issues.
+
+## 1.2 Understanding the Needs and Expectations of Interested Parties (Clause 4.2)
+
+To ensure the effectiveness of our ISMS, we have identified the following interested parties and their expectations:
+
+- **Customers**: Expect confidentiality and integrity of their survey data.
+- **Employees**: Seek a secure working environment and protection of personal information.
+- **Regulatory Bodies**: Require compliance with applicable data protection laws and regulations.
+- **Suppliers and Partners**: Anticipate secure handling of shared information and adherence to contractual obligations.
+
+## 1.3 Determining the Scope of the ISMS (Clause 4.3)
+
+The scope of our ISMS encompasses all processes, systems, and personnel involved in the development, maintenance, and delivery of our survey platform services. This includes:
+
+- **Physical Location**: Our single office premises.
+- **Assets**: Servers, databases, backups, company laptops, and network infrastructure.
+- **Information**: Customer survey data and employee personal information.
+- **Activities**: Data collection, processing, storage, and analysis related to customer surveys.
+
+## 1.4 Information Security Management System (Clause 4.4)
+
+Rate has established, implemented, and is committed to maintaining and continually improving an ISMS in accordance with the ISO/IEC 27001:2022 standard. Our ISMS framework is designed to manage and mitigate risks to our information assets, ensuring their confidentiality, integrity, and availability. This system includes policies, procedures, and controls tailored to our organizational context and the needs of our interested parties.
