@@ -1,3 +1,12 @@
+**Introduction**
+
+At Rate, we are committed to safeguarding the confidentiality, integrity, and availability of all physical and electronic information assets throughout our organization. This Information Security Management System (ISMS) manual outlines the policies, procedures, and controls implemented to manage information security risks effectively. Our goal is to ensure business continuity, minimize business risk, and maximize return on investments and business opportunities.
+
+This manual is structured to provide a comprehensive overview of our ISMS, detailing the scope, objectives, risk assessment methodologies, and the various controls in place to protect our information assets. It serves as a reference point for all stakeholders to understand our approach to information security and their roles within it.
+
+The following sections will guide you through the specific components of our ISMS, starting with the scope statement and followed by detailed policies and procedures that form the backbone of our information security strategy.
+
+
 | **Document Name**                        | **Description**                                           |
 |--------------------------------------|---------------------------------------------------|
 | Scope Statement                      | Defines the boundaries of the ISMS.                       |
