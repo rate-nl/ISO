@@ -80,11 +80,34 @@ The policy is reviewed periodically to ensure its effectiveness and relevance.
 
 The leadership of Rate assigns and communicates the necessary roles and responsibilities for the ISMS:
 
-- **Managing Director:** Overall accountability for the ISMS, ensuring alignment with business goals.
-- **Security Officer:** Responsible for managing and maintaining the ISMS, conducting risk assessments, and ensuring compliance.
-- **Developers (2):** Ensure secure coding practices, implement security controls, and report any security concerns.
-- **Operations Specialist:** Manages operational security measures, access control, and incident response coordination.
+- **Chief Executive Officer (CEO):**
+  - Holds overall accountability for the ISMS.
+  - Ensures strategic alignment with business goals and information security requirements.
+  - Responsible for high-level risk management.
+  - Oversees overall compliance with regulatory and security standards.
+
+- **Managing Director:**
+  - Oversees ISMS implementation and its integration into business operations.
+  - Ensures compliance with security policies and regulatory requirements.
+  - Manages and maintains the ISMS framework and associated policies.
+  - Conducts organization-wide risk assessments and ensures mitigation measures are in place.
+  - Supports operational security measures and access control strategies.
+
+- **Team Lead Developer:**
+  - Leads the development team in implementing secure coding practices and ensuring software security.
+  - Enforces security policies within the software development lifecycle.
+  - Conducts periodic code reviews and security assessments to identify vulnerabilities.
+  - Manages and monitors security compliance related to development infrastructure.
+  - Acts as a point of contact for security incidents related to software and development infrastructure.
+
+- **Developers:**
+  - Follow secure coding standards and implement software security measures.
+  - Assist in enforcing access control and authentication processes within the development environment.
+  - Support security compliance by maintaining documentation and adhering to best practices.
+  - Identify and report potential software vulnerabilities to the Team Lead Developer.
+  - Assist in responding to security incidents by providing technical expertise and remediation support.
 
 All employees are responsible for following the information security policies and reporting security incidents or weaknesses.
 
 The leadership of Rate ensures that roles and responsibilities are well understood and that employees have the necessary competencies and resources to fulfill their information security obligations.
+
