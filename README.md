@@ -52,3 +52,39 @@ The scope of our ISMS encompasses all processes, systems, and personnel involved
 ## 1.4 Information Security Management System (Clause 4.4)
 
 Rate has established, implemented, and is committed to maintaining and continually improving an ISMS in accordance with the ISO/IEC 27001:2022 standard. Our ISMS framework is designed to manage and mitigate risks to our information assets, ensuring their confidentiality, integrity, and availability. This system includes policies, procedures, and controls tailored to our organizational context and the needs of our interested parties.
+
+
+# Leadership (Clause 5)
+
+## 5.1 Leadership and Commitment
+
+The leadership of **Rate** demonstrates its commitment to establishing, implementing, maintaining, and continually improving the Information Security Management System (ISMS) in accordance with ISO/IEC 27001:2022. The leadership ensures:
+
+- The ISMS aligns with the strategic direction and business objectives of Rate.
+- Information security requirements are integrated into the company's processes.
+- Adequate resources are available to implement and maintain the ISMS.
+- Responsibilities and authorities for information security are assigned and communicated within the organization.
+- A culture of continuous improvement in information security is promoted.
+
+## 5.2 Information Security Policy
+
+Rate has established an Information Security Policy that:
+- Is appropriate to the organization’s purpose and context.
+- Provides a framework for setting information security objectives.
+- Includes commitments to fulfilling applicable requirements and continuous improvement.
+- Is communicated within the organization and available to relevant interested parties.
+
+The policy is reviewed periodically to ensure its effectiveness and relevance.
+
+## 5.3 Organizational Roles, Responsibilities, and Authorities
+
+The leadership of Rate assigns and communicates the necessary roles and responsibilities for the ISMS:
+
+- **Managing Director:** Overall accountability for the ISMS, ensuring alignment with business goals.
+- **Security Officer:** Responsible for managing and maintaining the ISMS, conducting risk assessments, and ensuring compliance.
+- **Developers (2):** Ensure secure coding practices, implement security controls, and report any security concerns.
+- **Operations Specialist:** Manages operational security measures, access control, and incident response coordination.
+
+All employees are responsible for following the information security policies and reporting security incidents or weaknesses.
+
+The leadership of Rate ensures that roles and responsibilities are well understood and that employees have the necessary competencies and resources to fulfill their information security obligations.
