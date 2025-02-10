@@ -145,4 +145,71 @@ Rate.nl has established a structured process to manage security-related changes 
 - **Implementation and Monitoring** – Deploy changes securely and track their effectiveness.
 - **Documentation and Compliance** – Maintain records to ensure ongoing GDPR compliance and alignment with security objectives.
 
-This planning ensures Rate.nl's ISMS remains effective, adaptive, and compliant with ISO 27001:2022 standards.
+# Clause 7: Support
+
+## 7.1 Resources
+
+Rate.nl ensures the availability of adequate resources to support the implementation, maintenance, and improvement of its Information Security Management System (ISMS). The company utilizes the following resources:
+
+- **Hosting & Cloud Security**: Rate.nl hosts its platform on **Hetzner (VMs)** and implements security measures such as:
+  - Regular security updates and patch management.
+  - Access controls to restrict unauthorized access.
+  - Secure backups and monitoring for threat detection.
+
+- **Password Management**: Rate.nl uses **LastPass** for securely storing and managing shared credentials.
+
+- **Data & Document Security**:
+  - **Google Drive**: Used for securely storing internal documents, policies, and ISMS-related information.
+  - **Access Control**: Documents are restricted based on role-based permissions.
+
+- **Security Tools**:
+  - **Google Workspace**: Enforces security policies such as two-factor authentication (2FA), data encryption, and access control for emails, documents, and collaboration tools.
+  - **Freshdesk**: Implements security controls to protect customer support interactions, including role-based access and secure ticket handling.
+  - **Trello, Miro, Stack Overflow**: Used for project management and collaboration but do not store sensitive security-related data. Secure access policies are followed where applicable.
+
+- **Physical & Network Security**:
+  - **Access Cards**: Required for entering **Groothandelsgebouw** office space.
+  - **Office Keys**: Provided to designated employees for securing physical workspace.
+  - **Headsets**: Issued for employees working in remote or office environments.
+  - **WiFi Networks**:
+    - **Rate.nl Employee WiFi**: Secured with strong encryption and access control.
+    - **Guest WiFi**: Separate network for visitors with restricted access.
+
+- **IT Assets & Compliance**:
+  - **Laptops**: Each employee is provided with a company-managed laptop with security controls.
+  - **Exact Online**: Used for HR and compliance-related record-keeping.
+  - **GitHub**: Source code management platform with enforced security policies.
+
+- **Backup Strategy**:
+  - **NAS Backup**: Full daily backups of the database from the **Hetzner production server** to an internal NAS system for disaster recovery.
+
+## 7.2 Competence
+
+To ensure security effectiveness, Rate.nl has implemented a **basic competency evaluation framework**, including:
+- **Role-based security knowledge**: Employees are trained on security responsibilities relevant to their roles.
+- **Periodic assessments**: Regular internal evaluations will be conducted to measure employee understanding of security policies.
+- **Continuous learning**: Employees are encouraged to stay updated on security trends through external resources and internal training.
+
+## 7.3 Awareness
+
+Rate.nl has established a **security training plan** to ensure all employees are aware of information security policies and their responsibilities:
+- **Onboarding Training**: New employees receive a basic introduction to the ISMS and security policies.
+- **Ongoing Awareness Campaigns**: Periodic security reminders and training sessions are conducted.
+- **Phishing and Social Engineering Awareness**: Employees are educated on recognizing and reporting suspicious activities.
+
+## 7.4 Communication
+
+Effective communication is essential to maintain information security. Rate.nl follows these communication practices:
+- **Internal Communication**: Security updates, policies, and incident reports are shared with employees through email and internal meetings.
+- **External Communication**: Security-related discussions with clients, partners, and authorities follow defined policies to ensure confidentiality and compliance.
+- **Incident Reporting**: Employees report security incidents promptly to the designated authority within the organization.
+
+## 7.5 Documented Information
+
+Rate.nl ensures proper management of security-related documentation, including:
+- **Security Policies and Procedures**: Maintained and updated periodically to reflect security changes.
+- **Access Logs and Incident Reports**: Documented for tracking security activities and improvements.
+- **Knowledge Management**: A central repository will be created to store security best practices, guidelines, and training materials.
+
+
+
