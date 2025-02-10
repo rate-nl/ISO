@@ -261,4 +261,42 @@ Rate.nl utilizes third-party services such as **Hetzner, Google Workspace, and F
 - Regularly reviews security practices of critical providers to ensure continued compliance with industry standards.
 - Ensures that internal security policies align with best practices when interacting with third-party services.
 
+# Clause 9: Performance Evaluation
+
+## 9.1 Monitoring, Measurement, Analysis & Evaluation
+
+Rate.nl has established a **security performance evaluation framework** to assess the effectiveness of its Information Security Management System (ISMS). The company tracks key security metrics to ensure continuous improvement.
+
+### **Security Key Performance Indicators (KPIs):**
+- **Number of security incidents** reported and resolved.
+- **Audit compliance score** based on internal security checks.
+- **Percentage of employees completing security training** and awareness programs.
+- **Response time to security incidents** to measure efficiency in handling breaches.
+- **Effectiveness of access control policies**, evaluated through periodic access reviews.
+
+These metrics are reviewed regularly, and findings are documented to support decision-making for security improvements.
+
+## 9.2 Internal Audit
+
+Rate.nl conducts **internal security audits** to ensure compliance with ISO 27001:2022 and to identify areas for improvement. The audit process includes:
+
+1. **Audit Planning**: Defining the audit scope, criteria, and schedule.
+2. **Audit Execution**: Reviewing policies, procedures, logs, and controls to verify compliance.
+3. **Reporting**: Documenting findings, identifying gaps, and recommending corrective actions.
+4. **Follow-up Actions**: Ensuring that identified issues are addressed and improvements are implemented.
+
+Internal audits are conducted **at least annually** and whenever significant changes to security policies or infrastructure occur.
+
+## 9.3 Management Review
+
+To maintain ISMS effectiveness, **Rate.nl’s management conducts periodic security reviews** to assess overall security posture. The review includes:
+- Evaluation of **security KPIs and audit results**.
+- Assessment of **security incidents and response effectiveness**.
+- Review of **compliance with ISO 27001 and GDPR requirements**.
+- Identification of **areas requiring security improvements**.
+- Decision-making on **resource allocation and policy adjustments**.
+
+Management reviews are held **at least once per year**, with additional sessions conducted as needed based on security findings or emerging threats.
+
+
 
