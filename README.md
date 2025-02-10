@@ -111,3 +111,38 @@ All employees are responsible for following the information security policies an
 
 The leadership of Rate ensures that roles and responsibilities are well understood and that employees have the necessary competencies and resources to fulfill their information security obligations.
 
+# Clause 6: Planning
+
+## 6.1 Actions to Address Risks and Opportunities
+
+Rate.nl has established a **risk management framework** to identify, assess, and mitigate information security risks. This ensures continuous improvement of security measures and alignment with business objectives.
+
+### Risk Management Framework
+1. **Identify Risks** – Regularly assess threats related to data confidentiality, availability, and integrity.
+2. **Assess Risks** – Categorize risks based on likelihood and impact.
+3. **Mitigate Risks** – Implement security controls to address identified risks.
+4. **Monitor and Review** – Conduct periodic risk assessments to ensure ongoing security compliance.
+
+## 6.2 Information Security Objectives and Planning to Achieve Them
+
+Rate.nl has defined the following **security objectives**:
+- **Ensure system availability** – Maintain high uptime and prevent service disruptions.
+- **Protect data confidentiality** – Safeguard sensitive customer and business data.
+- **Ensure GDPR compliance** – Implement and enforce data protection measures.
+- **Improve security awareness** – Conduct employee training and awareness sessions.
+
+### Implementation Plan
+- **Assign Responsibilities** – Ensure that roles and responsibilities for security measures are clearly defined.
+- **Set Measurable Goals** – Define key performance indicators (KPIs) to track progress.
+- **Review Performance** – Conduct internal audits and assessments.
+- **Continuous Improvement** – Update security policies and controls as needed.
+
+## 6.3 Planning of Changes
+
+Rate.nl has established a structured process to manage security-related changes efficiently:
+- **Change Evaluation** – Assess security impact before implementing changes.
+- **Approval Process** – Ensure management reviews and approves critical changes.
+- **Implementation and Monitoring** – Deploy changes securely and track their effectiveness.
+- **Documentation and Compliance** – Maintain records to ensure ongoing GDPR compliance and alignment with security objectives.
+
+This planning ensures Rate.nl's ISMS remains effective, adaptive, and compliant with ISO 27001:2022 standards.
