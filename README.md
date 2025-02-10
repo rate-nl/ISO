@@ -299,4 +299,37 @@ To maintain ISMS effectiveness, **Rate.nl’s management conducts periodic secur
 Management reviews are held **at least once per year**, with additional sessions conducted as needed based on security findings or emerging threats.
 
 
+# Clause 10: Improvement
+
+## 10.1 Nonconformity and Corrective Action
+
+Rate.nl has established a **corrective action process** to address security-related nonconformities, ensuring that issues are identified, analyzed, and remediated effectively. The process includes:
+
+1. **Identification**: Nonconformities, security incidents, or policy deviations are detected through audits, monitoring, or employee reports.
+2. **Root Cause Analysis**: The issue is analyzed to determine its cause and prevent recurrence.
+3. **Corrective Actions**: Necessary measures are implemented to eliminate or mitigate risks associated with the nonconformity.
+4. **Effectiveness Review**: After implementing corrective actions, follow-up evaluations are conducted to verify their success and make further adjustments if necessary.
+5. **Documentation and Communication**: All corrective actions are recorded in a structured format, specifying responsible personnel and storage location. Relevant stakeholders are informed about the corrective actions taken and their outcomes to ensure lessons learned are shared across the organization.
+
+## 10.2 Continual Improvement
+
+Rate.nl follows a **continual improvement framework** to enhance its Information Security Management System (ISMS). This ensures that security practices remain effective and aligned with evolving threats. The improvement process includes:
+
+- **Regular Security Assessments**: Conducting periodic evaluations of security controls, policies, and risk management.
+- **Benchmarking**: Comparing security practices against industry standards and best practices.
+- **Training and Awareness Updates**: Updating employee security awareness programs to address emerging risks.
+- **Policy and Process Optimization**: Reviewing and refining security policies and operational procedures based on assessment outcomes.
+- **Technology Enhancements**: Implementing new tools or configurations to strengthen security.
+- **Proactive Enhancement Initiatives**: Encouraging staff at all levels to suggest improvements, fostering a culture where proactive identification of enhancement opportunities is standard practice.
+
+## 10.3 Feedback and Lessons Learned
+
+To ensure proactive security improvements, Rate.nl has established a **structured feedback and improvement process**:
+
+- **Security Incident Reviews**: After any security incident, a post-incident analysis is conducted to identify improvement opportunities.
+- **Audit and Assessment Findings**: Internal and external audit results are reviewed to refine security measures.
+- **Employee Feedback**: Employees are encouraged to provide security-related suggestions, which are reviewed periodically.
+- **Management Review Inputs**: Insights from management reviews (Clause 9.3) are incorporated into security enhancements.
+
+
 
