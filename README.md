@@ -188,6 +188,7 @@ Rate.nl ensures the availability of adequate resources to support the implementa
 To ensure security effectiveness, Rate.nl has implemented a **basic competency evaluation framework**, including:
 - **Role-based security knowledge**: Employees are trained on security responsibilities relevant to their roles.
 - **Periodic assessments**: Regular internal evaluations will be conducted to measure employee understanding of security policies.
+- **Annual security reviews**: Formal reviews are conducted to verify employees' comprehension and adherence to security policies.
 - **Continuous learning**: Employees are encouraged to stay updated on security trends through external resources and internal training.
 
 ## 7.3 Awareness
