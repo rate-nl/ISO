@@ -309,7 +309,8 @@ Rate.nl has established a **corrective action process** to address security-rela
 2. **Root Cause Analysis**: The issue is analyzed to determine its cause and prevent recurrence.
 3. **Corrective Actions**: Necessary measures are implemented to eliminate or mitigate risks associated with the nonconformity.
 4. **Effectiveness Review**: After implementing corrective actions, follow-up evaluations are conducted to verify their success and make further adjustments if necessary.
-5. **Documentation and Communication**: All corrective actions are recorded in a structured format, specifying responsible personnel and storage location. Relevant stakeholders are informed about the corrective actions taken and their outcomes to ensure lessons learned are shared across the organization.
+5. **Preventive Actions**: Potential nonconformities are proactively identified, and measures are implemented to prevent their occurrence, thereby enhancing the ISMS’s resilience.
+6. **Documentation and Communication**: All corrective and preventive actions are recorded in a structured format, specifying responsible personnel and storage location. Relevant stakeholders are informed about the corrective actions taken and their outcomes to ensure lessons learned are shared across the organization.
 
 ## 10.2 Continual Improvement
 
@@ -321,6 +322,8 @@ Rate.nl follows a **continual improvement framework** to enhance its Information
 - **Policy and Process Optimization**: Reviewing and refining security policies and operational procedures based on assessment outcomes.
 - **Technology Enhancements**: Implementing new tools or configurations to strengthen security.
 - **Proactive Enhancement Initiatives**: Encouraging staff at all levels to suggest improvements, fostering a culture where proactive identification of enhancement opportunities is standard practice.
+- **Management Reviews**: Conducting periodic management reviews to evaluate the ISMS’s suitability, adequacy, and effectiveness, ensuring that opportunities for improvement are identified and acted upon.
+- **Performance Monitoring and Measurement**: Defining and tracking key performance indicators (KPIs) related to information security objectives to assess the effectiveness of the ISMS and guide improvement efforts.
 
 ## 10.3 Feedback and Lessons Learned
 
@@ -330,6 +333,8 @@ To ensure proactive security improvements, Rate.nl has established a **structure
 - **Audit and Assessment Findings**: Internal and external audit results are reviewed to refine security measures.
 - **Employee Feedback**: Employees are encouraged to provide security-related suggestions, which are reviewed periodically.
 - **Management Review Inputs**: Insights from management reviews (Clause 9.3) are incorporated into security enhancements.
+- **Employee Engagement**: A culture of continual improvement is promoted by encouraging employees to actively participate in identifying and implementing ISMS enhancements.
+
 
 
 
