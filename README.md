@@ -209,7 +209,6 @@ Effective communication is essential to maintain information security. Rate.nl f
 Rate.nl ensures proper management of security-related documentation, including:
 - **Security Policies and Procedures**: Maintained and updated periodically to reflect security changes.
 - **Access Logs and Incident Reports**: Documented for tracking security activities and improvements.
-- **Knowledge Management**: A central repository will be created to store security best practices, guidelines, and training materials.
 
 
 # Clause 8: Operation
