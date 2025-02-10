@@ -212,4 +212,53 @@ Rate.nl ensures proper management of security-related documentation, including:
 - **Knowledge Management**: A central repository will be created to store security best practices, guidelines, and training materials.
 
 
+# Clause 8: Operation
+
+## 8.1 Operational Planning and Control
+
+Rate.nl ensures that information security processes are planned, implemented, and controlled in alignment with ISO 27001:2022. The company follows structured approaches for managing security operations, including:
+- Ensuring compliance with documented security policies.
+- Monitoring security risks and addressing vulnerabilities.
+- Maintaining operational procedures for security-related tasks.
+
+## 8.2 Change Management
+
+Rate.nl maintains a **Change Management Log** stored in **Google Drive** to document and track system changes. The change management process includes:
+- **Recording all significant changes** affecting security or system performance.
+- **Reviewing and approving changes** before implementation.
+- **Testing changes** to ensure no adverse impact on security or functionality.
+- **Monitoring changes post-implementation** to address unforeseen risks.
+
+## 8.3 Incident Management
+
+Rate.nl follows a **structured incident response process** to detect, report, and mitigate security incidents efficiently. The process includes:
+1. **Detection & Reporting** – Employees must report suspected security incidents immediately.
+2. **Assessment & Classification** – Incidents are classified based on severity and potential impact.
+3. **Response & Containment** – Affected systems or accounts may be isolated to prevent further damage.
+4. **Investigation & Remediation** – Root causes are identified, and corrective actions are applied.
+5. **Documentation & Review** – Each incident is logged, and lessons learned are used to improve security controls.
+
+## 8.4 System Maintenance and Monitoring
+
+Rate.nl implements a structured approach for system maintenance and security monitoring:
+- **Software Updates**:
+  - System updates are configured to be **automatic** to ensure security patches are applied timely.
+  - Employees are responsible for maintaining their assigned **company laptops** up to date.
+- **Manual Vulnerability Assessment**:
+  - **System & Software Configurations Review**: Regularly verify firewall rules, SSH access, and active services.
+  - **Software & Patch Audits**: Check for outdated OS, CMS, and third-party libraries.
+  - **Code Review**: Assess security risks such as hardcoded credentials, SQL injection risks, and weak authentication methods.
+  - **Web Application Security Checks**: Validate authentication, session security, and input sanitization.
+  - **Access Log Review**: Analyze failed login attempts and unusual activities.
+  - All findings are documented, prioritized (Critical, High, Medium, Low), and remediated accordingly.
+- **Log Monitoring**:
+  - **Kentico CMS log monitoring** is used to track system activities and security-related events.
+
+## 8.5 Third-Party Security Considerations
+
+Rate.nl utilizes third-party services such as **Hetzner, Google Workspace, and Freshdesk**, where security is **guaranteed by the service providers** as part of their offerings. The company:
+- Relies on third-party security controls as defined in their **terms of service and compliance documentation**.
+- Regularly reviews security practices of critical providers to ensure continued compliance with industry standards.
+- Ensures that internal security policies align with best practices when interacting with third-party services.
+
 
