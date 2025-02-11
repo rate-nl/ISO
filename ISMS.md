@@ -32,3 +32,24 @@
    - Risk Assessment and Treatment Records  
    - Audit and Review Reports  
    - Any Other Supporting Documentation  
+
+
+
+## 1. Introduction
+
+### Purpose and Objectives of the ISMS
+
+Rate is committed to safeguarding the confidentiality, integrity, and availability of all physical and electronic information assets. Our Information Security Management System (ISMS) is designed to manage information security risks effectively, ensuring business continuity and minimizing potential threats.
+
+### Scope of the ISMS
+
+This ISMS applies to all organizational units, processes, and information systems involved in delivering our services. It encompasses the management of information assets, including data handling, storage, and transmission, across all departments.
+
+### Definitions and Abbreviations
+
+- **ISMS**: Information Security Management System
+- **Information Assets**: Data, systems, and processes vital to Rate's operations
+- **Confidentiality**: Ensuring information is accessible only to authorized individuals
+- **Integrity**: Maintaining the accuracy and completeness of information
+- **Availability**: Ensuring information and resources are accessible when needed
+
