@@ -54,17 +54,18 @@ The ISMS encompasses all processes, systems, and personnel involved in the devel
 - **Integrity**: Maintaining the accuracy and completeness of information
 - **Availability**: Ensuring information and resources are accessible when needed
 
-# Information Security Policy
+# 2. Core ISMS Documents
+## Information Security Policy
 
-## 1. Purpose
+### 1. Purpose
 
 The purpose of this Information Security Policy is to establish a framework for managing and protecting Rate's information assets, ensuring their confidentiality, integrity, and availability. This policy aligns with the requirements of ISO/IEC 27001:2022 and demonstrates our commitment to information security.
 
-## 2. Scope
+### 2. Scope
 
 This policy applies to all employees, contractors, consultants, temporary staff, and any other personnel at Rate who have access to information assets. It encompasses all information systems, networks, applications, and data owned or managed by Rate.
 
-## 3. Information Security Objectives
+### 3. Information Security Objectives
 
 Rate is committed to:
 
@@ -73,11 +74,11 @@ Rate is committed to:
 - Complying with applicable legal, regulatory, and contractual obligations.
 - Continually improving the Information Security Management System (ISMS).
 
-## 4. Roles and Responsibilities
+### 4. Roles and Responsibilities
 
 In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following roles and responsibilities are defined:
 
-### 4.1. Chief Executive Officer (CEO)
+#### 4.1. Chief Executive Officer (CEO)
 
 - **Accountability**: Holds overall accountability for the ISMS.
 - **Responsibilities**:
@@ -85,7 +86,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Provides necessary resources for ISMS implementation and maintenance.
   - Promotes a culture of information security within the organization.
 
-### 4.2. Managing Director
+#### 4.2. Managing Director
 
 - **Accountability**: Oversees the implementation and operation of the ISMS.
 - **Responsibilities**:
@@ -94,7 +95,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Ensures compliance with information security policies and applicable laws.
   - Reports ISMS performance to top management.
 
-### 4.3. Information Security Manager
+#### 4.3. Information Security Manager
 
 - **Accountability**: Manages the daily operations of the ISMS.
 - **Responsibilities**:
@@ -103,7 +104,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Coordinates incident response and reporting.
   - Provides information security training and awareness programs.
 
-### 4.4. Team Lead Developer
+#### 4.4. Team Lead Developer
 
 - **Accountability**: Ensures secure software development practices.
 - **Responsibilities**:
@@ -112,7 +113,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Manages security aspects of development infrastructure.
   - Acts as a point of contact for security incidents related to software.
 
-### 4.5. Developers
+#### 4.5. Developers
 
 - **Accountability**: Implement secure coding practices.
 - **Responsibilities**:
@@ -120,7 +121,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Assist in identifying and mitigating software vulnerabilities.
   - Participate in security training and awareness activities.
 
-### 4.6. All Employees
+#### 4.6. All Employees
 
 - **Accountability**: Adhere to information security policies and procedures.
 - **Responsibilities**:
@@ -128,7 +129,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Report security incidents or weaknesses promptly.
   - Participate in information security training and awareness programs.
 
-## 5. Information Security Principles
+### 5. Information Security Principles
 
 Rate adopts the following principles to guide its information security efforts:
 
@@ -136,7 +137,7 @@ Rate adopts the following principles to guide its information security efforts:
 - **Integrity**: Safeguarding the accuracy and completeness of information and processing methods.
 - **Availability**: Ensuring that authorized users have access to information and associated assets when required.
 
-## 6. Risk Management
+### 6. Risk Management
 
 Rate will implement a risk management process that includes:
 
@@ -145,15 +146,15 @@ Rate will implement a risk management process that includes:
 - Implementing appropriate controls to mitigate risks.
 - Monitoring and reviewing risks regularly.
 
-## 7. Compliance
+### 7. Compliance
 
 Rate is committed to complying with all applicable legal, regulatory, and contractual requirements related to information security. This includes, but is not limited to, data protection laws and industry standards.
 
-## 8. Policy Review
+### 8. Policy Review
 
 This Information Security Policy will be reviewed at least annually or when significant changes occur to ensure its continued suitability, adequacy, and effectiveness.
 
-## 9. Approval
+### 9. Approval
 
 This policy is approved by the Chief Executive Officer and is effective as of the date below.
 
