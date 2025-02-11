@@ -104,16 +104,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Coordinates incident response and reporting.
   - Provides information security training and awareness programs.
 
-#### 4.4. Team Lead Developer
-
-- **Accountability**: Ensures secure software development practices.
-- **Responsibilities**:
-  - Enforces secure coding standards within the development team.
-  - Conducts code reviews and security assessments.
-  - Manages security aspects of development infrastructure.
-  - Acts as a point of contact for security incidents related to software.
-
-#### 4.5. Developers
+#### 4.4. Developers
 
 - **Accountability**: Implement secure coding practices.
 - **Responsibilities**:
@@ -121,7 +112,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Assist in identifying and mitigating software vulnerabilities.
   - Participate in security training and awareness activities.
 
-#### 4.6. All Employees
+#### 4.5. All Employees
 
 - **Accountability**: Adhere to information security policies and procedures.
 - **Responsibilities**:
