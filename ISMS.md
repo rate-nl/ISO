@@ -41,9 +41,15 @@
 
 Rate is committed to safeguarding the confidentiality, integrity, and availability of all physical and electronic information assets. Our Information Security Management System (ISMS) is designed to manage information security risks effectively, ensuring business continuity and minimizing potential threats.
 
-### Scope of the ISMS
+## Scope of the ISMS
 
-This ISMS applies to all organizational units, processes, and information systems involved in delivering our services. It encompasses the management of information assets, including data handling, storage, and transmission, across all departments.
+The ISMS encompasses all processes, systems, and personnel involved in the development, maintenance, and delivery of our survey platform services. This includes:
+
+- **Physical Location:** Our single office premises.
+- **Assets:** Servers, databases, backups, company laptops, and network infrastructure.
+- **Information:** Customer survey data and employee personal information.
+- **Activities:** Data collection, processing, storage, and analysis related to customer surveys.
+
 
 ### Definitions and Abbreviations
 
