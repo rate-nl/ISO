@@ -1,7 +1,7 @@
-# Incident Management and Response Plan
+# Incident Management and Response Process
 
 ## 1. Purpose
-This Incident Management and Response Plan outlines the procedures for identifying, reporting, assessing, responding to, and recovering from security incidents at Rate. The objective is to minimize the impact of incidents, protect information assets, and ensure business continuity.
+This Incident Management and Response Process outlines the procedures for identifying, reporting, assessing, responding to, and recovering from security incidents at Rate. The objective is to minimize the impact of incidents, protect information assets, and ensure business continuity.
 
 ## 2. Scope
 This plan applies to all employees, contractors, and third-party service providers with access to Rate's systems, applications, and networks.
