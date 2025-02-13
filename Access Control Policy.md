@@ -26,9 +26,9 @@ This policy applies to all personnel accessing Rate's information assets, includ
 
 ## 4. User Access Management
 ### **4.1. Registration and De-registration**
-- **Registration:** Requests are submitted to the Tech Lead via email and documented. CEO approval is required for high-privilege access.
-- **De-registration:** The CEO instructs the Tech Lead to revoke access upon role change or departure.
-- **Documentation:** All access requests are recorded in an internal log.
+- **Registration:** Requests are submitted to the Tech Lead via email. CEO approval is required for high-privilege access. Requests are stored in email records, which serve as documentation.
+- **De-registration:** The CEO instructs the Tech Lead via email to revoke access upon role change or departure.
+- **Documentation:** Access approvals and removals are retained in email records.
 
 ### **4.2. Provisioning and Review**
 - The Tech Lead provisions access and conducts quarterly access reviews.
@@ -38,9 +38,7 @@ This policy applies to all personnel accessing Rate's information assets, includ
 
 ## 5. Authentication and Password Management
 - **2FA Implementation:**
-  - **VPN:** 2FA with mobile OTP authenticator
   - **Cloud Apps (e.g., Google Workspace, GitHub):** SSO with 2FA
-  - **Remote Desktop (RDP):** Enforced 2FA through VPN
 - **Password Policy:** Minimum 12 characters, 90-day expiration, and secure storage in LastPass
 
 ---
@@ -70,7 +68,6 @@ This policy applies to all personnel accessing Rate's information assets, includ
 ## 9. Responsibilities
 - **Tech Lead:** Manages access, reviews logs quarterly, and oversees configurations.
 - **CEO:** Approves sensitive access requests and enforces compliance.
-- **Backup Administrator (in Tech Lead’s Absence):** Authorized to manage access and perform log reviews.
 - **All Employees:** Maintain laptop security and promptly report incidents.
 
 ---
