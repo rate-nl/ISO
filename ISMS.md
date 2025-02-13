@@ -82,36 +82,40 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
 
 - **Accountability**: Holds overall accountability for the ISMS.
 - **Responsibilities**:
-  - Ensures strategic alignment of the ISMS with business objectives.
-  - Provides necessary resources for ISMS implementation and maintenance.
-  - Promotes a culture of information security within the organization.
+  - Ensure strategic alignment of the ISMS with business objectives.
+  - Provide necessary resources for ISMS implementation and maintenance.
+  - Promote a culture of information security within the organization.
+  - Oversee compliance with regulatory and security standards.
 
 ### 4.2. Managing Director
 
 - **Accountability**: Oversees the implementation and operation of the ISMS.
 - **Responsibilities**:
-  - Develops and maintains information security policies and procedures.
-  - Conducts risk assessments and manages risk treatment plans.
-  - Ensures compliance with information security policies and applicable laws.
-  - Reports ISMS performance to top management.
+  - Develop and maintain information security policies and procedures.
+  - Conduct organization-wide risk assessments and manage risk treatment plans.
+  - Ensure compliance with information security policies and applicable laws.
+  - Report ISMS performance to top management.
+  - Support operational security measures and access control strategies.
 
-### 4.3. Information Security Manager (ISM)
+### 4.3. Team Lead Developer
 
-- **Accountability**: Manages the daily operations of the ISMS.
+- **Accountability**: Ensures secure software development practices.
 - **Responsibilities**:
-  - Identifies and assesses information security risks.
-  - Implements and monitors security controls.
-  - Coordinates incident response and reporting.
-  - Provides information security training and awareness programs.
-  - Reviews and updates the Information Security Policy regularly.
+  - Lead the development team in implementing secure coding practices and ensuring software security.
+  - Enforce security policies within the software development lifecycle.
+  - Conduct periodic code reviews and security assessments to identify vulnerabilities.
+  - Manage and monitor security compliance related to development infrastructure.
+  - Act as a point of contact for security incidents related to software and development infrastructure.
 
 ### 4.4. Developers
 
 - **Accountability**: Implement secure coding practices.
 - **Responsibilities**:
   - Follow secure coding standards and guidelines.
-  - Assist in identifying and mitigating software vulnerabilities.
-  - Participate in security training and awareness activities.
+  - Assist in enforcing access control and authentication processes within the development environment.
+  - Support security compliance by maintaining documentation and adhering to best practices.
+  - Identify and report potential software vulnerabilities to the Team Lead Developer.
+  - Assist in responding to security incidents by providing technical expertise and remediation support.
 
 ### 4.5. All Employees
 
@@ -120,6 +124,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Protect information assets within their control.
   - Report security incidents or weaknesses promptly.
   - Participate in information security training and awareness programs.
+
 
 ## 5. Information Security Principles
 
