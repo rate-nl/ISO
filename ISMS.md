@@ -6,8 +6,7 @@
    - Definitions and Abbreviations
 
 ## 2. Core ISMS Documents
-   - Information Security Policy
-   - Statement of Applicability
+   - Information Security Policy   
    - Risk Assessment and Risk Treatment Process
    - Risk Treatment Plan
 
@@ -28,6 +27,8 @@
    - Risk Assessment and Treatment Records
    - Audit and Review Reports
    - Any Other Supporting Documentation
+
+## 6. Statement of Applicability
 
 
 ## 1. Introduction
