@@ -1,84 +1,85 @@
 # Access Control Policy
 
 ## 1. Purpose
-
-The purpose of this Access Control Policy is to establish guidelines for managing access to Rate's information systems and data, ensuring that only authorized individuals have appropriate access based on their roles and responsibilities. This policy aligns with ISO/IEC 27001:2022 Annex A.5.15 requirements.
+This Access Control Policy defines guidelines for managing access to Rate's information systems, cloud applications, and on-premises infrastructure. It ensures proper role-based access and aligns with ISO/IEC 27001:2022 Annex A.5.15 requirements.
 
 ## 2. Scope
-
-This policy applies to all employees, contractors, consultants, temporary staff, and any other personnel at Rate who have access to information assets. It covers all information systems, networks, applications, and data owned or managed by Rate, including but not limited to:
-
-- `dashboard.rate.nl` (Global Admin)
-- `dashboard.rate.nl` (Client-specific access)
-- `dashdev.rate.nl` (Test & Development Platform)
-- Production Servers
-
-## 3. Access Control Principles
-
-Rate adheres to the following principles to manage access effectively:
-
-- **Least Privilege**: Access rights are granted at the minimum level necessary for users to perform their job functions.
-- **Need-to-Know**: Access to sensitive information is restricted to individuals who require it for legitimate business purposes.
-- **Role-Based Access Control (RBAC)**: Access permissions are assigned based on defined roles within the organization.
-
-## 4. User Access Management
-
-### 4.1. User Registration and De-registration
-
-- **Registration**: Access requests must be submitted via email to the Tech Lead. For certain access levels, approval from the CEO is required. All access requests are documented in an access control log.
-- **De-registration**: Upon termination or role change, the CEO notifies the Tech Lead to revoke or adjust access rights immediately.
-
-### 4.2. User Access Provisioning
-
-- Access is granted based on the user's role and responsibilities.
-- The Tech Lead is responsible for configuring access permissions following approval.
-
-### 4.3. Review of User Access Rights
-
-- Access rights are reviewed quarterly by the development team to ensure appropriateness.
-- Any discrepancies or unauthorized access are addressed promptly.
-
-## 5. Authentication and Password Management
-
-- **Authentication Methods**: Strong password policies combined with two-factor authentication (2FA) are implemented for all critical systems.
-- **Password Policy**:
-  - Minimum length: 12 characters
-  - Complexity: Must include uppercase, lowercase, numbers, and special characters
-  - Expiration: Passwords must be changed every 90 days
-  - Storage: Passwords are stored securely and must not be shared
-
-## 6. Access Monitoring and Logging
-
-- Access to sensitive data is logged, and logs are reviewed quarterly by the development team to detect any unauthorized access attempts.
-- Logs are retained for a minimum of one year for auditing purposes.
-
-## 7. Physical Access Control
-
-- Key card access systems are utilized for building entry, and keys are required for office entry.
-- Access to areas containing sensitive information or critical systems is restricted to authorized personnel only.
-
-## 8. Responsibilities
-
-- **Tech Lead**:
-  - Manages user access provisioning and de-provisioning.
-  - Maintains the access control log.
-  - Reviews access rights quarterly.
-- **CEO**:
-  - Approves access requests requiring higher-level authorization.
-  - Notifies the Tech Lead of any changes in personnel status affecting access rights.
-- **All Employees**:
-  - Comply with this Access Control Policy.
-  - Report any security incidents or unauthorized access to the Tech Lead immediately.
-
-## 9. Policy Review
-
-This Access Control Policy is reviewed annually or whenever significant changes occur in Rate's IT infrastructure to ensure its continued effectiveness and relevance.
-
-## 10. Compliance
-
-Non-compliance with this policy may result in disciplinary action, up to and including termination of employment or contract. Additionally, legal action may be taken if warranted.
+This policy applies to all personnel accessing Rate's information assets, including:
+- **On-Premises Systems and Networks:**
+  - `dashboard.rate.nl` (Global Admin and Client-specific)
+  - `dashdev.rate.nl` (Test & Development)
+  - NAS (Backup System) - Secured with locked storage
+  - Development Server - Secured with locked storage
+  - WiFi Networks: "Rate.nl employee," "Rate.nl guest," and "KH_OFFICES"
+- **Cloud Applications and Providers:** Google Drive, Google Workspace, GitHub, Stack Overflow, Exact Online, WordPress, and Hetzner Cloud
+- **Remote Access Systems:** Remote Desktop Server, Local VPN (Hetzner), and employee-managed laptops
 
 ---
 
-*Note: This policy is subject to change. Employees will be notified of any updates.*
+## 3. Access Control Principles
+- **Least Privilege:** Limit access to the minimum necessary for tasks.
+- **Need-to-Know:** Restrict sensitive data access.
+- **Role-Based Access Control (RBAC):** Assign permissions based on job roles.
+- **Separation of Duties:** Divide security-sensitive responsibilities.
 
+---
+
+## 4. User Access Management
+### **4.1. Registration and De-registration**
+- **Registration:** Requests are submitted to the Tech Lead via email and documented. CEO approval is required for high-privilege access.
+- **De-registration:** The CEO instructs the Tech Lead to revoke access upon role change or departure.
+- **Documentation:** All access requests are recorded in an internal log.
+
+### **4.2. Provisioning and Review**
+- The Tech Lead provisions access and conducts quarterly access reviews.
+- Records are maintained for audit purposes.
+
+---
+
+## 5. Authentication and Password Management
+- **2FA Implementation:**
+  - **VPN:** 2FA with mobile OTP authenticator
+  - **Cloud Apps (e.g., Google Workspace, GitHub):** SSO with 2FA
+  - **Remote Desktop (RDP):** Enforced 2FA through VPN
+- **Password Policy:** Minimum 12 characters, 90-day expiration, and secure storage in LastPass
+
+---
+
+## 6. Monitoring and Logging
+- **Logs:** Collected from all on-premises and cloud systems.
+- **Review Frequency:** The Tech Lead reviews logs quarterly.
+- **Retention:** Logs are retained for at least one year.
+
+---
+
+## 7. Third-Party and Cloud Access Control
+- Third-party access is not currently granted.
+- Cloud administrators are the Tech Lead and Managing Director.
+- Cloud provider security settings are configured to standard compliance.
+
+---
+
+## 8. Physical Access Control
+- Building entry requires key card access.
+- Office access is secured by key.
+- NAS and Development Server are stored under lock.
+- Production servers are cloud-hosted on Hetzner.
+
+---
+
+## 9. Responsibilities
+- **Tech Lead:** Manages access, reviews logs quarterly, and oversees configurations.
+- **CEO:** Approves sensitive access requests and enforces compliance.
+- **Backup Administrator (in Tech Lead’s Absence):** Authorized to manage access and perform log reviews.
+- **All Employees:** Maintain laptop security and promptly report incidents.
+
+---
+
+## 10. Policy Review
+The policy undergoes annual review or immediate revision after major changes.
+
+## 11. Compliance
+Non-compliance may result in disciplinary actions or legal consequences.
+
+---
+*Note: Employees will be notified of all policy updates.*
