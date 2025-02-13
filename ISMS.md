@@ -178,7 +178,7 @@ In compliance with ISO/IEC 27001:2022 Clause 5.1.2, this Information Security Po
 **Date**: [Approval Date]
 
 
-# Risk Assessment and Risk Treatment Plan
+# Risk Assessment and Risk Treatment Process
 
 This document outlines the identified risks, their likelihood and impact, and the appropriate risk treatment actions in accordance with **ISO 27001:2022**.
 
@@ -242,7 +242,7 @@ This document will be **reviewed annually** and after any significant changes to
 
 
 
-# Incident Management and Response Process
+# Incident Management and Response plan
 
 ## 1. Purpose
 This Incident Management and Response Process outlines the procedures for identifying, reporting, assessing, responding to, and recovering from security incidents at Rate. The objective is to minimize the impact of incidents, protect information assets, and ensure business continuity.
