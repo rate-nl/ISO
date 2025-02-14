@@ -243,9 +243,6 @@ This document will be **reviewed annually** and after any significant changes to
 
 
 # Risk Treatment Plan (RTP)
-## Information Security Management System (ISMS)
-### Version: 1.0  
-**Last Updated:** [Insert Date]  
 
 ## **1. Introduction**
 This Risk Treatment Plan (RTP) is developed as part of the **Risk Assessment and Risk Treatment Process** for Rate in accordance with **ISO/IEC 27001:2022 Clause 6.1.3**. It outlines the selected risk treatment actions, responsible roles, implementation deadlines, and required approvals.  
