@@ -191,38 +191,55 @@ In compliance with ISO/IEC 27001:2022 Clause 5.1.2, this Information Security Po
 
 This document outlines the identified risks, their likelihood and impact, and the appropriate risk treatment actions in accordance with **ISO 27001:2022**.
 
+---
 
 ## **1. Risk Categorization**
 
 ### **1.1 Data Security Risks**
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
 |---|---|---|---|---|---|---|---|
-| **Unauthorized access to customer database** | Medium | High | Developers | Mitigate | strict **access controls**, using firewall. | A.9 Access Control | Risk is acceptable if **if strong passwords are used and firewall is active**. |
-| **Data loss from a server crash** | Medium | High | Developers | Mitigate | Ensure **automatic backups** to NAS Perform **regular backup tests**. | A.12 Backup Policy | Acceptable if **offsite backup is tested Yearly**. |
+| **Unauthorized access to customer database** | Medium | High | Developers | Mitigate | Enforce strict **access controls** using a **firewall**. | A.9 Access Control | Acceptable if **strong passwords are used and the firewall is active**. |
+| **Data loss from a server crash** | Medium | High | Developers | Mitigate | Ensure **automatic backups** to NAS and **perform regular backup tests**. | A.12 Backup Policy | Acceptable if **offsite backup is tested yearly**. |
 | **Insider threats (employee mishandling data)** | Low | High | Managing Director | Mitigate | Implement **role-based access control (RBAC)** and log all sensitive actions. | A.7 Human Resource Security | Acceptable if **RBAC is enforced & reviewed yearly**. |
 
+---
 
 ### **1.2 Infrastructure Risks**
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
 |---|---|---|---|---|---|---|---|
-| **Server crash causing service disruption** | Medium | High | Developers | Mitigate | Regular DB and code backups. Monitor server health. Implement **automated alerts**. | A.17 Business Continuity | Acceptable if **Regular backups taken and automatic alerts set**. |
-| **Losing physical or internet access to head office (VPN, backups, development server)** | Medium | High | Developers | Mitigate | Make sure production server **Firewall rules can be changed without VPN access**. Dev server and backups can be reconfigured. | A.13 Network Security | Acceptable if **Alernative means of access to produciton server exist**. |
-| **NAS Storage corruption or damage** | Medium | High | Tech Lead Developer | Mitigate | **Yearly backups check**,. | A.12 Backup Policy | Acceptable if **Yearly backups checked for integrity**. |
+| **Server crash causing service disruption** | Medium | High | Developers | Mitigate | Regular **database and code backups**. Monitor server health and implement **automated alerts**. | A.17 Business Continuity | Acceptable if **regular backups are taken and automatic alerts are set**. |
+| **Losing physical or internet access to head office (VPN, backups, development server)** | Medium | High | Developers | Mitigate | Ensure production server **firewall rules can be changed without VPN access**. Dev server and backups can be reconfigured. | A.13 Network Security | Acceptable if **alternative means of access to the production server exist**. |
+| **NAS Storage corruption or damage** | Medium | High | Tech Lead Developer | Mitigate | Conduct a **yearly backup integrity check**. | A.12 Backup Policy | Acceptable if **yearly backups are checked for integrity**. |
 
+---
 
 ### **1.3 Human Resource Risks**
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
 |---|---|---|---|---|---|---|---|
-| **Critical employee suddenly leaving** | Medium | Medium | Managing Director | Mitigate | Document **all key processes**, ensure **passwords are stored securely** and access controls prevent single-person dependency. | A.7 Human Resource Security | Acceptable if **knowledgebase is in place**. |
-| **Developer’s laptop lost, stolen, or damaged** | Medium | Medium | Tech Lead Developer | Mitigate | Enforce storing information always on cloud and using local passwords. | A.8 Asset Management | Acceptable if **Information is always stored on the cloud**. |
+| **Critical employee suddenly leaving** | Medium | Medium | Managing Director | Mitigate | Document **all key processes**, ensure **passwords are securely stored**, and enforce access control policies to prevent single-person dependency. | A.7 Human Resource Security | Acceptable if **a knowledge base is in place**. |
+| **Developer’s laptop lost, stolen, or damaged** | Medium | Medium | Tech Lead Developer | Mitigate | Enforce **storing information on cloud storage** with encryption and using secure password managers. | A.8 Asset Management | Acceptable if **all important data is securely stored in the cloud**. |
 
+---
 
 ### **1.4 Cybersecurity Risks**
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
 |---|---|---|---|---|---|---|---|
-| **Virus or ransomware attack on company devices** | Medium | Medium | Tech Lead Developer | Mitigate | Install **Virus protection**, enable **automatic updates**. | A.12 Malware Protection | Acceptable if **Virus protection is always on**. |
+| **Virus or ransomware attack on company devices** | Medium | Medium | Tech Lead Developer | Mitigate | Install **virus protection**, enable **automatic updates**, and conduct regular security training. | A.12 Malware Protection | Acceptable if **virus protection is always active**. |
 | **Losing access to LastPass (password manager)** | Low | High | CEO | Mitigate | Maintain a **bi-yearly backup of critical passwords** in a separate, **secure** location (e.g., encrypted cloud storage). | A.9 Access Control | Acceptable if **backup plan is tested annually**. |
-| **SSL certificate expiry for platform or website** | High | Medium | Tech Lead Developer | Mitigate | Enable **automatic SSL renewal** or have reminders inplace. Track expiration dates with reminders. | A.14 System Security | Acceptable if **automatic renewal is active or reminders are set**. |
+| **SSL certificate expiry for platform or website** | High | Medium | Tech Lead Developer | Mitigate | Enable **automatic SSL renewal** or set up **reminders** for renewal tracking. | A.14 System Security | Acceptable if **automatic renewal is active or reminders are set**. |
+
+---
+
+## **2. Risk Review and Approval**
+- **Risk Assessment Reviewed By:** [Managing Director]  
+- **Risk Treatment Plan Approved By:** [CEO Name]  
+- **Date of Last Review:** [Insert Date]  
+
+This document will be **reviewed annually** and after any significant changes to infrastructure, services, or the risk landscape.
+
+---
+
+
 
 
 ## **2. Risk Review and Approval**
