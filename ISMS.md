@@ -14,6 +14,10 @@
    - Business Continuity and Disaster Recovery Plan
    - Asset Management and Data Protection Policy
 
+## 6. Statement of Applicability
+
+
+
 ## 4. Compliance and Performance Monitoring
    - Legal and Regulatory Compliance
    - Internal Audits and Continuous Improvement
@@ -26,7 +30,6 @@
    - Audit and Review Reports
    - Any Other Supporting Documentation
 
-## 6. Statement of Applicability
 
 
 ## 1. Introduction
