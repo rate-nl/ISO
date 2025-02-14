@@ -410,83 +410,121 @@ A security incident is any event that compromises the confidentiality, integrity
 
 ---
 
-# Business Continuity and Disaster Recovery Plan
+# Business Continuity and Disaster Recovery Plan (BCDRP)  
+**Aligned with ISO/IEC 27001:2022 and Integrated with Risk Assessment and Treatment Plan**  
 
-## 1. Purpose
-This plan outlines procedures for maintaining business operations and recovering from disruptions at Rate, ensuring continuity of services and rapid recovery from disasters.
 
-## 2. Scope
-Covers all systems, employees, and processes supporting Rate's platform and operations.
+## **1. Purpose**  
+This plan outlines procedures for maintaining business operations and recovering from disruptions at **Rate**, ensuring continuity of services and rapid recovery from disasters. It incorporates controls from the Risk Assessment and Treatment Plan (RARTP).
 
-## 3. Key Contacts
-- **Disaster Recovery Team:** CEO (Head), Managing Director, Team Lead Developer
-- **Contact Email:** info@rate.nl
-- **Emergency Contact Phone Number:** 010 – 822 52 22
 
-## 4. Critical Systems
-- **Cloud Hosting:** Hetzner (primary), Azure (secondary for provider failure)
-- **Source Code:** Managed in GitHub
-- **Backups:** Stored on NAS (remote) and cloud storage
-- **Communication Tools:** Google Workspace (email, documents)
+## **2. Scope**  
+Covers all systems, employees, cloud services, and processes supporting **Rate's platform and operations**.  
 
-## 5. Backup and Recovery Procedures
-- **Database:**
-  - Full daily backup (03:00), retained for 1 month (NAS and cloud)
-  - Incremental backups every 4 hours (retained 1 month)
-  - Transaction log backups every 30 minutes
-  - **Testing:** Monthly backup restoration tests
-- **Production Folder:** Daily backups (NAS, retained 1 month, tested monthly)
-- **Source Code:** Managed in GitHub with integrity checks
 
-## 6. Disaster Scenarios, RTO, and RPO
-### **6.1 Production Server Failure (Hetzner)**
-- **Action:** Provision new Hetzner server and restore from repository backups
-- **Lead:** Team Lead Developer
-- **RTO (Recovery Time Objective):** 4 hours
-- **RPO (Recovery Point Objective):** 30 minutes (via transaction logs)
+## **3. Key Contacts**  
+- **Disaster Recovery Team:**  
+  - **CEO (Head)** – Primary decision-maker  
+  - **Managing Director** – Operations and communications  
+  - **Team Lead Developer** – Technical recovery lead  
+- **Contact Email:** info@rate.nl  
+- **Emergency Contact Phone Number:** 010 – 822 52 22  
 
-### **6.2 Cloud Provider Failure (Hetzner Unavailable)**
-- **Action:** Deploy new server on Azure, restore from backups, and notify customers
-- **Lead:** Team Lead Developer
-- **RTO:** 4 hours
-- **RPO:** 30 minutes
 
-### **6.3 Office Internet Outage**
-- **Action:** Enable remote work via VPN and Google Workspace
-- **Lead:** Managing Director
-- **RTO:** Immediate
-- **RPO:** None (cloud-based services)
+## **4. Critical Systems and Dependencies**  
+| **System/Service** | **Provider** | **Backup Location** | **RTO** | **RPO** | **Owner** |
+|--------------------|-------------|-------------------|--------|--------|---------|
+| **Production Hosting** | Hetzner (Primary) | NAS & Cloud | 4 hours | 30 minutes | Team Lead Developer |
+| **Secondary Hosting (Provider Failure)** | Azure | Cloud | 4 hours | 30 minutes | Team Lead Developer |
+| **Source Code Repository** | GitHub | Cloud with integrity checks | 1 hour | Real-time | Team Lead Developer |
+| **Backups** | NAS (Remote) & Cloud | Monthly restoration tests | N/A | 30 minutes | Team Lead Developer |
+| **VPN & Remote Access** | Local VPN on Dev Server | N/A | Immediate | None | Managing Director |
+| **Communication Tools** | Google Workspace (email, docs) | Google Cloud | Immediate | None | Managing Director |
+| **HR and Compliance System** | Exact Online | Cloud | 2 hours | 1 hour | Managing Director |
+| **Password Manager** | LastPass | Encrypted Cloud | 1 hour | 30 minutes | CEO |
 
-### **6.4 Data Leak or Malware Attack**
-- **Action:** Isolate systems, notify Managing Director, and conduct forensic analysis
-- **Lead:** Managing Director
-- **RTO:** 2 hours
-- **RPO:** 30 minutes
 
-### **6.5 Calamities (e.g., Fire, Flood)**
-- **Action:** Follow building escape plan (Groothandelsgebouw) and secure backups
-- **Lead:** CEO
-- **RTO:** As feasible
-- **RPO:** 30 minutes (via offsite backups)
+## **5. Backup and Recovery Procedures**  
+### **5.1 Database Backups (Critical)**
+- **Full Daily Backup:** 03:00 (retained 1 month) – Stored on NAS and cloud  
+- **Incremental Backups:** Every 4 hours (retained 1 month)  
+- **Transaction Log Backups:** Every 30 minutes (retained 1 month)  
+- **Testing:** Monthly restoration from backups with documentation of results  
 
-## 7. Roles and Responsibilities
-- **CEO:** Approves major actions and communicates with stakeholders.
-- **Managing Director:** Oversees recovery operations and manages recordkeeping.
-- **Team Lead Developer:** Executes technical recovery steps and maintains backup records.
+### **5.2 Production Application Folder Backups**  
+- **Full Daily Backup:** 03:00 (retained 1 month) – Stored on NAS and cloud  
+- **Testing:** Monthly restoration and integrity checks  
 
-## 8. Testing and Review
-- **Testing:** Annual disaster recovery drills with backup restoration tests.
-- **Review:** Annual updates or after major changes.
-- **Lessons Learned:** Document findings from each test and address gaps.
+### **5.3 Source Code Backups**  
+- **Managed In:** GitHub with real-time synchronization  
+- **Testing:** Quarterly integrity verification (hash checks)  
 
-## 9. Compliance and Recordkeeping
-- **Backup Retention:** 1 month (NAS/cloud) — Team Lead Developer
-- **Incident Logs:** Retained for 3 years (Google Drive) — Managing Director
-- **Backup Testing Records:** Retained for 3 years — Team Lead Developer
-- **Recordkeeping Oversight:** Managing Director
-- **Compliance:** ISO/IEC 27001:2022, GDPR
+### **5.4 Backup Retention Policy:**  
+- **Location:** NAS (remote) and cloud storage  
+- **Retention Period:** 1 month for backups, 3 years for logs  
+- **Backup Logs Storage:** Google Drive (retained for 3 years)  
 
-*Last Updated: [Insert Date]*
+
+
+## **6. Disaster Scenarios, RTO, and RPO**  
+| **Scenario** | **Action Plan** | **Lead** | **RTO (Recovery Time Objective)** | **RPO (Recovery Point Objective)** |
+|--------------|----------------|----------|----------------------------------|-----------------------------------|
+| **6.1 Production Server Failure (Hetzner)** | Provision a new Hetzner server, restore from repository backups | Team Lead Developer | 4 hours | 30 minutes |
+| **6.2 Cloud Provider Failure (Hetzner Unavailable)** | Deploy server on Azure, restore backups, notify customers | Team Lead Developer | 4 hours | 30 minutes |
+| **6.3 Office Internet Outage** | Enable remote work via VPN and Google Workspace | Managing Director | Immediate | None |
+| **6.4 Data Leak or Malware Attack** | Isolate systems, notify Managing Director, conduct forensic analysis | Managing Director | 2 hours | 30 minutes |
+| **6.5 Calamities (Fire, Flood, Physical Theft)** | Follow Groothandelsgebouw escape plan, secure backups offsite | CEO | As feasible | 30 minutes |
+| **6.6 Loss of LastPass (Password Manager)** | Restore from encrypted cloud backup, reset passwords for critical systems | CEO | 1 hour | 30 minutes |
+| **6.7 SSL Certificate Expiry for Website/Platform** | Enable auto-renewals, set calendar reminders for manual renewal checks | Team Lead Developer | 1 hour | None |
+
+
+## **7. Roles and Responsibilities**  
+| **Role** | **Responsibilities During Disaster** |
+|----------|-----------------------------------|
+| **CEO (Head of Disaster Recovery Team)** | Authorizes major decisions, communicates with customers and stakeholders |
+| **Managing Director** | Oversees recovery operations, manages communications, maintains incident logs |
+| **Team Lead Developer** | Executes technical recovery steps, restores servers, maintains backup records |
+| **All Employees** | Follow the BCDRP procedures and report security incidents immediately |
+
+
+## **8. Testing and Review (ISO Clause 8.1 & 9.1)**  
+- **Testing Frequency:** Annually (full disaster recovery drill) with monthly backup restoration tests  
+- **Test Components:** Server restoration, VPN failover, LastPass recovery, SSL certificate renewal  
+- **Documentation:** Maintain test results and lessons learned on Google Drive for 3 years  
+- **Review Cycle:** Annually or after any major incident or infrastructure change  
+- **Responsible for Testing:** Managing Director  
+- **Responsible for Documentation:** Team Lead Developer  
+
+
+## **9. Continuous Improvement and Lessons Learned (ISO Clause 10.2)**  
+- **After-Action Reports (AAR):** Produced after every disaster recovery test or real incident  
+- **Lessons Learned:** Logged and reviewed quarterly during ISMS management meetings  
+- **Plan Updates:** Adjust BCDRP based on lessons learned and new threats  
+- **Plan Review Frequency:** Annual or after significant infrastructure changes  
+- **Plan Approver:** CEO  
+
+
+## **10. Compliance and Recordkeeping (ISO Clause 9.2 & 9.3)**  
+| **Record** | **Retention Period** | **Storage Location** | **Responsible Owner** |
+|------------|--------------------|---------------------|---------------------|
+| Backup Logs | 3 years | Google Drive | Team Lead Developer |
+| Incident Logs | 3 years | Google Drive | Managing Director |
+| Disaster Recovery Test Reports | 3 years | Google Drive | Managing Director |
+| Residual Risk Approvals | 3 years | Google Drive | CEO |
+| ISMS Management Review Records | 3 years | Google Drive | Managing Director |
+
+### **Compliance with Standards:**  
+ **ISO/IEC 27001:2022** (Clauses 8.1, 9.1, 9.2, 9.3, 10.2)  
+ **GDPR (Article 32: Security of Processing)**  
+
+
+
+## **11. Review and Approval**  
+- **Reviewed By:** Managing Director  
+- **Approved By:** CEO  
+- **Date of Last Review:** [Insert Date]  
+- **Next Scheduled Review:** [Insert Date]  
+
 
 ---
 
