@@ -199,7 +199,7 @@ This document outlines the identified risks, their likelihood and impact, and th
 |---|---|---|---|---|---|---|---|
 | **Unauthorized access to customer database** | Medium | High | Developers | Mitigate | Enforce strict **access controls** using a **firewall** and strong authentication mechanisms. | A.9 Access Control | Acceptable if **strong passwords are enforced and the firewall is active**. |
 | **Data loss from a server crash** | Medium | High | Developers | Mitigate | Ensure **automatic backups** to NAS and **perform regular backup tests**. | A.12 Backup Policy | Acceptable if **offsite backups are tested annually**. |
-| **Insider threats (employee mishandling data)** | Low | High | Managing Director | Mitigate | Implement **role-based access control (RBAC)** and log all sensitive actions. Conduct security awareness training. | A.7 Human Resource Security | Acceptable if **RBAC is enforced & reviewed annually**. |
+| **Insider threats (employee mishandling data)** | Low | High | Managing Director | Mitigate | Implement **role-based access control (RBAC)** and log all sensitive actions. | A.7 Human Resource Security | Acceptable if **RBAC is enforced & reviewed annually**. |
 
 ---
 
@@ -208,7 +208,7 @@ This document outlines the identified risks, their likelihood and impact, and th
 |---|---|---|---|---|---|---|---|
 | **Server crash causing service disruption** | Medium | High | Developers | Mitigate | Implement **regular database and code backups**. Monitor server health and set **automated alerts**. | A.17 Business Continuity | Acceptable if **regular backups are performed and automatic alerts are configured**. |
 | **Losing physical or internet access to head office (VPN, backups, development server)** | Medium | High | Developers | Mitigate | Ensure **production server firewall rules** can be modified securely **without VPN access**. Maintain **alternative access** methods. | A.13 Network Security | Acceptable if **alternative means of accessing production servers exist**. |
-| **NAS Storage corruption or damage** | Medium | High | Tech Lead Developer | Mitigate | Conduct a **yearly backup integrity check** and implement **redundant storage solutions**. | A.12 Backup Policy | Acceptable if **yearly backups pass integrity checks**. |
+| **NAS Storage corruption or damage** | Medium | High | Tech Lead Developer | Mitigate | Conduct a **yearly backup integrity check**. | A.12 Backup Policy | Acceptable if **yearly backups pass integrity checks**. |
 
 ---
 
