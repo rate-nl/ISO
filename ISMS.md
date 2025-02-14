@@ -31,6 +31,8 @@
    - Any Other Supporting Documentation
 
 
+---
+
 
 ## 1. Introduction
 
@@ -56,7 +58,12 @@ The ISMS encompasses all processes, systems, and personnel involved in the devel
 - **Integrity**: Maintaining the accuracy and completeness of information
 - **Availability**: Ensuring information and resources are accessible when needed
 
+
+---
+
+
 # 2. Core ISMS Documents
+
 # Information Security Policy
 
 ## 1. Purpose
@@ -184,7 +191,6 @@ In compliance with ISO/IEC 27001:2022 Clause 5.1.2, this Information Security Po
 
 This document outlines the identified risks, their likelihood and impact, and the appropriate risk treatment actions in accordance with **ISO 27001:2022**.
 
----
 
 ## **1. Risk Categorization**
 
@@ -195,7 +201,6 @@ This document outlines the identified risks, their likelihood and impact, and th
 | **Data loss from a server crash** | Medium | High | Tech Lead Developer | Mitigate | Ensure **automatic backups** to NAS and cloud storage. Perform **regular backup tests**. | A.12 Backup Policy | Acceptable if **offsite backup is tested monthly**. |
 | **Insider threats (employee mishandling data)** | Low | High | Managing Director | Mitigate | Implement **role-based access control (RBAC)** and log all sensitive actions. Conduct **employee security training**. | A.7 Human Resource Security | Acceptable if **RBAC is enforced & logs are reviewed quarterly**. |
 
----
 
 ### **1.2 Infrastructure Risks**
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
@@ -204,7 +209,6 @@ This document outlines the identified risks, their likelihood and impact, and th
 | **Losing physical or internet access to head office (VPN, backups, development server)** | Medium | High | Managing Director | Mitigate | Configure **alternative VPN access** (e.g., cloud-based VPN, backup ISP). Maintain **offsite backups**. | A.13 Network Security | Acceptable if **backup ISP & VPN alternative is in place**. |
 | **NAS Storage corruption or damage** | Medium | High | Tech Lead Developer | Mitigate | Implement **RAID** for redundancy, conduct **monthly backup integrity checks**. | A.12 Backup Policy | Acceptable if **RAID & offsite backups are maintained**. |
 
----
 
 ### **1.3 Human Resource Risks**
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
@@ -212,7 +216,6 @@ This document outlines the identified risks, their likelihood and impact, and th
 | **Critical employee suddenly leaving** | Medium | Medium | Managing Director | Mitigate | Document **all key processes**, ensure **passwords are stored securely** and access controls prevent single-person dependency. | A.7 Human Resource Security | Acceptable if **knowledge transfer plan is in place**. |
 | **Developer’s laptop lost, stolen, or damaged** | Medium | Medium | Tech Lead Developer | Mitigate | Enforce **full disk encryption**, **remote wipe capabilities**, and strong **device access controls**. | A.8 Asset Management | Acceptable if **encryption & remote wipe are enforced**. |
 
----
 
 ### **1.4 Cybersecurity Risks**
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
@@ -222,7 +225,6 @@ This document outlines the identified risks, their likelihood and impact, and th
 | **LastPass breach (exposing all stored passwords)** | Low | High | Managing Director | Mitigate | Enable **zero-knowledge encryption**, enforce **strong unique passwords**, rotate passwords periodically. Consider **an alternative password manager** for redundancy. | A.9 Access Control | Acceptable if **password rotation & secondary storage is in place**. |
 | **SSL certificate expiry for platform or website** | High | Medium | Tech Lead Developer | Mitigate | Enable **automatic SSL renewal** with monitoring alerts. Track expiration dates with reminders. | A.14 System Security | Acceptable if **automatic renewal & monitoring alerts are active**. |
 
----
 
 ## **2. Risk Review and Approval**
 - **Risk Assessment Reviewed By:** Managing Director  
@@ -231,7 +233,6 @@ This document outlines the identified risks, their likelihood and impact, and th
 
 This document will be **reviewed annually** and after any significant changes to our infrastructure, services, or risk landscape.
 
----
 
 ## **Next Steps**
 - Monitor and update this risk register **at least once per year**.  
@@ -258,7 +259,6 @@ This policy applies to all personnel accessing Rate's information assets, includ
 - **Cloud Applications and Providers:** Google Drive, Google Workspace, GitHub, Stack Overflow, Exact Online, WordPress, and Hetzner Cloud
 - **Remote Access Systems:** Remote Desktop Server, Local VPN (Hetzner), and employee-managed laptops
 
----
 
 ## 3. Access Control Principles
 - **Least Privilege:** Limit access to the minimum necessary for tasks.
@@ -266,7 +266,6 @@ This policy applies to all personnel accessing Rate's information assets, includ
 - **Role-Based Access Control (RBAC):** Assign permissions based on job roles.
 - **Separation of Duties:** Divide security-sensitive responsibilities.
 
----
 
 ## 4. User Access Management
 ### **4.1. Registration and De-registration**
@@ -278,28 +277,24 @@ This policy applies to all personnel accessing Rate's information assets, includ
 - The Tech Lead provisions access and conducts quarterly access reviews.
 - Records are maintained for audit purposes.
 
----
 
 ## 5. Authentication and Password Management
 - **2FA Implementation:**
   - **Cloud Apps (e.g., Google Workspace, GitHub):** SSO with 2FA
 - **Password Policy:** Minimum 12 characters, 90-day expiration, and secure storage in LastPass
 
----
 
 ## 6. Monitoring and Logging
 - **Logs:** Collected from all on-premises and cloud systems.
 - **Review Frequency:** The Tech Lead reviews logs quarterly.
 - **Retention:** Logs are retained for at least one year.
 
----
 
 ## 7. Third-Party and Cloud Access Control
 - Third-party access is not currently granted.
 - Cloud administrators are the Tech Lead and Managing Director.
 - Cloud provider security settings are configured to standard compliance.
 
----
 
 ## 8. Physical Access Control
 - Building entry requires key card access.
@@ -307,14 +302,12 @@ This policy applies to all personnel accessing Rate's information assets, includ
 - NAS and Development Server are stored under lock.
 - Production servers are cloud-hosted on Hetzner.
 
----
 
 ## 9. Responsibilities
 - **Tech Lead:** Manages access, reviews logs quarterly, and oversees configurations.
 - **CEO:** Approves sensitive access requests and enforces compliance.
 - **All Employees:** Maintain laptop security and promptly report incidents.
 
----
 
 ## 10. Policy Review
 The policy undergoes annual review or immediate revision after major changes.
@@ -322,11 +315,10 @@ The policy undergoes annual review or immediate revision after major changes.
 ## 11. Compliance
 Non-compliance may result in disciplinary actions or legal consequences.
 
----
 *Note: Employees will be notified of all policy updates.*
 
 
-
+---
 
 
 # Incident Management and Response plan
@@ -416,7 +408,6 @@ A security incident is any event that compromises the confidentiality, integrity
 - Incident logs are retained for **3 years** in Google Drive.
 - The plan adheres to **ISO/IEC 27001:2022** and **GDPR** requirements.
 
----
 
 *Note: Employees will be notified of policy updates.*
 
@@ -498,7 +489,6 @@ Covers all systems, employees, and processes supporting Rate's platform and oper
 - **Recordkeeping Oversight:** Managing Director
 - **Compliance:** ISO/IEC 27001:2022, GDPR
 
----
 *Last Updated: [Insert Date]*
 
 ---
