@@ -281,12 +281,6 @@ The security team will track progress on all risk treatments and ensure timely i
 
 ---
 
-**End of Document**
-```
-
-
-
-
 
 # Access Control Policy
 
@@ -533,6 +527,72 @@ Covers all systems, employees, and processes supporting Rate's platform and oper
 - **Backup Testing Records:** Retained for 3 years — Team Lead Developer
 - **Recordkeeping Oversight:** Managing Director
 - **Compliance:** ISO/IEC 27001:2022, GDPR
+
+*Last Updated: [Insert Date]*
+
+---
+
+# Asset Management and Data Protection Policy
+
+## 1. Purpose
+This policy defines procedures for managing and protecting Rate's information assets, ensuring compliance with ISO/IEC 27001:2022.
+
+## 2. Scope
+Applies to all digital, physical, and cloud-based assets accessed by Rate employees, contractors, and third parties.
+
+## 3. Asset Inventory and Ownership
+- **Asset Inventory:** Managed by the Managing Director, covering hardware, software, cloud services, and backups.
+- **Asset Owners:** Responsible for security, maintenance, risk assessments, and classification.
+- **Role Assignments:**
+  - **Hardware:** Team Lead Developer.
+  - **Software/Cloud Services:** Managing Director.
+  - **Data (including backups):** Team Lead Developer and Asset Owners.
+- **Documentation:** Logs include asset classification, ownership, and review records.
+
+## 4. Acceptable Use and Protection Measures
+- **Acceptable Use:** Annual acknowledgment of the Acceptable Use Policy is required.
+- **Device Security:** Full disk encryption and automatic updates are mandatory.
+- **Cloud Security:** 2FA is required for cloud service access.
+- **Data Storage:** Role-based access controls protect sensitive data.
+- **Backups:** Daily backups with monthly restoration tests.
+
+## 5. Access Control and Data Security (Annex A.9)
+- **Access Management:** Controlled by the Tech Lead with CEO approval for high-privilege roles.
+- **Access Reviews:** Quarterly reviews by the Managing Director with findings logged.
+- **Log Retention:** Access logs are retained for three years.
+- **Access Revocation:** Immediate action for role changes or departures, with records documented.
+- **Remote Access:** VPN is required for development server access.
+
+## 6. Data Retention and Disposal (Annex A.8, A.11)
+- **Retention Periods:** Backups retained for one month; incident logs for three years.
+- **Secure Disposal:** Hardware is securely wiped and destroyed.
+- **Disposal Records:** Logs include date, method, approver details, and retention for three years.
+
+## 7. Monitoring and Review (Annex A.12, A.15)
+- **Log Reviews:** Conducted quarterly, with results, corrective actions, and completion dates recorded.
+- **Audit Documentation:** Managed by the Managing Director, documenting findings, corrective actions, and dates.
+- **Policy Review:** Annually conducted with updates and actions logged.
+- **Audit Record Retention:** All audit reports and supporting documents retained for three years.
+
+## 8. Roles and Responsibilities (Annex A.7, A.6)
+- **Managing Director:** Manages inventory, risk assessments, audit logs, and ensures Statement of Applicability (SoA) mappings are current.
+- **Team Lead Developer:** Conducts asset reviews, oversees backups, and verifies disposal records.
+- **Asset Owners:** Maintain classification records and ensure security controls are applied.
+- **Employees:** Follow policies, annually acknowledge requirements, and report security issues.
+
+## 9. Compliance (ISO/IEC 27001 Annex A Controls and SoA Mapping)
+This policy aligns with ISO/IEC 27001:2022 Annex A controls, and their applicability is documented in the Statement of Applicability (SoA):
+- **A.5:** Information Security Policies
+- **A.6:** Organization of Information Security
+- **A.7:** Human Resource Security
+- **A.8:** Asset Management
+- **A.9:** Access Control
+- **A.11:** Physical and Environmental Security
+- **A.12:** Operations Security (including audit records and corrective action logs)
+- **A.15:** Supplier Relationships
+- **A.18:** Compliance
+- **SoA Link:** Refer to the current Statement of Applicability for specific mappings and control implementations.
+
 
 *Last Updated: [Insert Date]*
 
