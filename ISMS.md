@@ -14,7 +14,7 @@
    - Business Continuity and Disaster Recovery Plan
    - Asset Management and Data Protection Policy
 
-## 6. Statement of Applicability
+## 3. Statement of Applicability
 
 
 
