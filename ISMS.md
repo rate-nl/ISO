@@ -230,17 +230,6 @@ This document outlines the identified risks, their likelihood and impact, and th
 
 ---
 
-## **2. Risk Review and Approval**
-- **Risk Assessment Reviewed By:** [Managing Director]  
-- **Risk Treatment Plan Approved By:** [CEO Name]  
-- **Date of Last Review:** [Insert Date]  
-
-This document will be **reviewed annually** and after any significant changes to infrastructure, services, or the risk landscape.
-
----
-
-
-
 
 ## **2. Risk Review and Approval**
 - **Risk Assessment Reviewed By:** Managing Director  
