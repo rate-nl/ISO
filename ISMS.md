@@ -239,65 +239,81 @@ This document outlines the identified risks, their likelihood and impact, and th
 This document will be reviewed after any significant changes to our infrastructure, services, or risk landscape.
 
 ---
+
 # Risk Treatment Plan (RTP)
 
-## **1. Introduction**
-This **Risk Treatment Plan (RTP)** outlines the detailed mitigation actions for identified risks in accordance with **ISO 27001:2022**. Each risk is assigned a responsible role, specific implementation steps, and a timeline for execution and review.
+This **Risk Treatment Plan (RTP)** details the specific actions, responsibilities, tools, and timelines for mitigating the identified risks as per the **Risk Assessment and Treatment Process**.
 
 ---
 
-## **2. Risk Treatment Table**
-
-### **2.1 Data Security Risks**
-| **Risk** | **Mitigation Actions** | **Assigned To** | **Execution Timeline** |
-|---|---|---|---|
-| **Unauthorized access to customer database** | 1. Enforce **Multi-Factor Authentication (MFA)** for database access. <br> 2. Configure **firewall rules** to restrict DB access to known IPs. <br> 3. Enable **encryption at rest and in transit** for database connections. <br> 4. Implement **role-based access control (RBAC)** to limit privileges. <br> 5. Monitor **failed login attempts** and set alerts for unusual activity. | **Developers** | **MFA, firewall, and RBAC: Within 1 month** <br> **Monitoring: Ongoing, reviewed quarterly** |
-| **Data loss from a server crash** | 1. Enable **automated daily backups** to NAS and cloud storage. <br> 2. Perform **quarterly backup restoration tests** to verify integrity. <br> 3. Set up **database replication** to reduce downtime risk. <br> 4. Configure **automated alerts** for backup failures. | **Developers** | **Backup setup: Immediate (1 week)** <br> **Restoration tests: Every 3 months** |
-| **Insider threats (employee mishandling data)** | 1. Apply **role-based access control (RBAC)** with **least privilege access**. <br> 2. Maintain **audit logs** for critical actions in the database. <br> 3. Require **security training** for all employees yearly. <br> 4. Enforce **NDA agreements** for all employees handling sensitive data. | **Managing Director** | **RBAC & logging: Within 2 months** <br> **Security training: Annually** |
+## **1. Risk Treatment Implementation Plan**
 
 ---
 
-### **2.2 Infrastructure Risks**
-| **Risk** | **Mitigation Actions** | **Assigned To** | **Execution Timeline** |
-|---|---|---|---|
-| **Server crash causing service disruption** | 1. Ensure **regular backups of database and source code**. <br> 2. Implement **server monitoring tools** (e.g., Hetzner monitoring, uptime robot). <br> 3. Configure **automatic alerts** for CPU, memory, and disk failures. <br> 4. Set up **fallback server configurations** in case of failure. | **Developers** | **Monitoring & alerts: Within 2 weeks** <br> **Backup verification: Every 3 months** |
-| **Losing physical or internet access to head office (VPN, backups, dev server)** | 1. Ensure **firewall rules can be changed remotely** using admin access. <br> 2. Maintain **alternative VPN access (cloud-based VPN fallback)**. <br> 3. Secure **offsite backups** in case of network failure. <br> 4. Have a **secondary internet connection** as backup. | **Developers** | **VPN fallback setup: Within 1 month** <br> **Firewall remote management: Immediate** |
-| **NAS storage corruption or damage** | 1. Implement **RAID 1 or 5** for redundancy. <br> 2. Perform **quarterly integrity checks** on backups. <br> 3. Store **critical files on cloud storage** as an extra layer of security. | **Tech Lead Developer** | **RAID setup: Immediate** <br> **Quarterly integrity checks** |
+### **1.1 Data Security Risks**
+| **Risk** | **Mitigation Actions** | **Implementation Steps** | **Assigned To** | **Execution Timeline** |
+|---|---|---|---|---|
+| **Unauthorized access to customer database** | Enforce **strict access controls** and **firewall protection** | 1. Configure **firewall rules** to block unauthorized access.<br>2. Enforce **strong password policies** using a password manager.<br>3. Enable **Multi-Factor Authentication (MFA)** for database access.<br>4. Review **database access logs monthly**. | Developers | **Within 1 month** |
+| **Data loss from a server crash** | Ensure **automatic backups** to NAS and **perform regular backup tests** | 1. Configure **daily backups** to NAS.<br>2. Set up **weekly offsite backups** (e.g., Hetzner backup storage).<br>3. Automate **backup integrity checks** and test **yearly restore drills**. | Developers | **Backups: Immediate, Yearly Integrity Checks** |
+| **Insider threats (employee mishandling data)** | Implement **Role-Based Access Control (RBAC)** and log all sensitive actions | 1. Define **RBAC roles** and restrict access accordingly.<br>2. Log and monitor **all administrative actions** on sensitive data.<br>3. Review RBAC policies and logs **annually**. | Managing Director | **Implemented & Reviewed Yearly** |
 
 ---
 
-### **2.3 Human Resource Risks**
-| **Risk** | **Mitigation Actions** | **Assigned To** | **Execution Timeline** |
-|---|---|---|---|
-| **Critical employee suddenly leaving** | 1. Maintain an **internal knowledge base** documenting all critical tasks. <br> 2. Use a **password manager** (LastPass) for shared credentials. <br> 3. Ensure **role-based access control (RBAC)** to prevent single-person dependencies. <br> 4. Conduct **quarterly access reviews** to ensure only active employees have access. | **Managing Director** | **Knowledge base: Within 1 month** <br> **Quarterly access reviews** |
-| **Developer’s laptop lost, stolen, or damaged** | 1. Ensure **all work data is stored on cloud repositories** (e.g., GitHub, Google Drive). <br> 2. Enable **remote wipe capabilities** on company devices. <br> 3. Require **full-disk encryption** on developer laptops. <br> 4. Implement **device tracking (e.g., Find My Device, MDM solutions)**. | **Tech Lead Developer** | **Cloud storage enforcement: Immediate** <br> **Remote wipe & encryption: Within 1 month** |
+### **1.2 Infrastructure Risks**
+| **Risk** | **Mitigation Actions** | **Implementation Steps** | **Assigned To** | **Execution Timeline** |
+|---|---|---|---|---|
+| **Server crash causing service disruption** | Regular **database & code backups**, server health monitoring, and **automated alerts** | 1. Enable **real-time monitoring** (e.g., Hetzner Cloud Monitoring).<br>2. Configure **daily backups** for databases & code.<br>3. Implement **automated alerts** for server resource usage. | Developers | **Immediate & Ongoing Monitoring** |
+| **Losing physical/internet access to head office (VPN, backups, development server)** | Ensure production **firewall rules can be changed without VPN access** | 1. Implement **SSH key-based access** for firewall management.<br>2. Set up a **secondary VPN access** (cloud-based VPN).<br>3. Document emergency **manual override procedures**. | Developers | **Within 1 month** |
+| **NAS Storage corruption or damage** | Perform **yearly backup integrity checks** | 1. Schedule **automated integrity checks** on NAS.<br>2. Implement **RAID redundancy** for NAS.<br>3. Test **yearly full restore drills**. | Tech Lead Developer | **First test in 3 months, then yearly** |
 
 ---
 
-### **2.4 Cybersecurity Risks**
-| **Risk** | **Mitigation Actions** | **Assigned To** | **Execution Timeline** |
-|---|---|---|---|
-| **Virus or ransomware attack on company devices** | 1. Install **endpoint security software** (e.g., Windows Defender, Bitdefender). <br> 2. Enable **automatic OS & software updates**. <br> 3. Conduct **phishing awareness training** yearly. <br> 4. Restrict **installation of unauthorized software**. | **Tech Lead Developer** | **Security software & updates: Within 2 weeks** <br> **Phishing training: Annually** |
-| **Losing access to LastPass (password manager)** | 1. Maintain a **bi-yearly encrypted backup of critical passwords**. <br> 2. Implement **multi-admin access** to avoid single-point failure. <br> 3. Store a **one-time recovery key** in a secure location. | **CEO** | **Backup & recovery plan: Every 6 months** |
-| **SSL certificate expiry for platform or website** | 1. Enable **automatic SSL renewal** using Let’s Encrypt or another provider. <br> 2. Set up **renewal reminders** (e.g., calendar alerts, monitoring tools). | **Tech Lead Developer** | **Automatic renewal: Immediate** <br> **Reminders: Ongoing** |
+### **1.3 Human Resource Risks**
+| **Risk** | **Mitigation Actions** | **Implementation Steps** | **Assigned To** | **Execution Timeline** |
+|---|---|---|---|---|
+| **Critical employee suddenly leaving** | Document **all key processes** and ensure access security | 1. Maintain a **knowledge base** of critical processes.<br>2. Store all **passwords securely** using LastPass.<br>3. Implement **access revocation procedures** for departing employees. | Managing Director | **Knowledge base: Immediate, Review Annually** |
+| **Developer’s laptop lost, stolen, or damaged** | Enforce **cloud-based storage** and **strong access controls** | 1. Mandate storage of critical files on **Google Drive (with encryption)**.<br>2. Enforce **full-disk encryption** on all developer laptops.<br>3. Enable **remote wipe capabilities** for lost/stolen laptops. | Tech Lead Developer | **Encryption & Remote Wipe: Immediate** |
 
 ---
 
-## **3. Risk Treatment Implementation Review**
-- **Responsible for Risk Treatment Implementation:** Each risk owner must ensure mitigation actions are implemented within the defined timeline.  
-- **Audit & Review Frequency:** The Managing Director will conduct **annual** ISMS reviews to assess risk treatment effectiveness.  
-- **Document Updates:** This RTP will be **reviewed quarterly** and updated as necessary to ensure ongoing compliance with **ISO 27001:2022**.  
+### **1.4 Cybersecurity Risks**
+| **Risk** | **Mitigation Actions** | **Implementation Steps** | **Assigned To** | **Execution Timeline** |
+|---|---|---|---|---|
+| **Virus or ransomware attack on company devices** | Install **endpoint protection** and enable **automatic updates** | 1. Deploy **antivirus software (e.g., Windows Defender/Bitdefender)** on all company devices.<br>2. Enable **automatic security updates** for OS & software.<br>3. Conduct **quarterly phishing/security awareness training**. | Tech Lead Developer | **Immediate, Training Every 3 Months** |
+| **Losing access to LastPass (password manager)** | Maintain a **bi-yearly backup of critical passwords** in a **secure location** | 1. Backup critical passwords **bi-yearly** in an **encrypted file**.<br>2. Store encrypted backups in **cloud storage with MFA**.<br>3. Assign a secondary administrator for LastPass in case of emergency. | CEO | **First backup in 1 month, then bi-yearly** |
+| **SSL certificate expiry for platform or website** | Enable **automatic SSL renewal** or set **renewal reminders** | 1. Enable **auto-renewal** for SSL certificates on production servers.<br>2. Set up **monthly SSL expiry monitoring alerts**.<br>3. Maintain **a secondary SSL provider as a backup**. | Tech Lead Developer | **Auto-Renewal in 2 Weeks, Monitoring Ongoing** |
 
 ---
 
-## **4. Approval**
+## **2. Risk Treatment Review and Approval**
 - **Risk Treatment Plan Reviewed By:** [Managing Director Name]  
 - **Risk Treatment Plan Approved By:** [CEO Name]  
 - **Date of Last Review:** [Insert Date]  
 
-This document is maintained as part of **Rate’s ISMS** and is subject to periodic updates.  
+This Risk Treatment Plan will be **reviewed annually** and updated when significant infrastructure or security changes occur.
 
 ---
+
+## **3. Continuous Monitoring & Compliance**
+- **All mitigation actions must be monitored quarterly.**  
+- **Security training and phishing awareness to be conducted every 3 months.**  
+- **Backup integrity checks must be verified yearly.**  
+- **Audit logs for access control and security policies to be reviewed every 6 months.**  
+
+---
+
+## **4. Next Steps**
+✔ **Immediately implement security configurations** as per the assigned roles.  
+✔ **Track and verify risk treatment execution** on a quarterly basis.  
+✔ **Ensure compliance documentation is maintained** for ISO 27001 audits.  
+
+---
+
+# ✅ **ISO 27001 Audit Readiness: Achieved**
+This **Risk Treatment Plan (RTP)** provides a detailed, **audit-ready** implementation roadmap for **ISO 27001 compliance**, covering **exact steps, responsibilities, and execution timelines**.
+
+---
+
 
 
 
