@@ -243,41 +243,76 @@ This document will be **reviewed annually** and after any significant changes to
 
 
 # Risk Treatment Plan (RTP)
+## Information Security Management System (ISMS)
+### Version: 1.0  
+**Last Updated:** [Insert Date]  
 
-## 1. Purpose
-This Risk Treatment Plan (RTP) outlines the actions required to mitigate identified risks to Rate’s information security assets. It aligns with the **ISO 27001:2022** standard, specifically Clause **6.1.3(d)**, and ensures that appropriate security controls are implemented, assigned, and monitored.
+## **1. Introduction**
+This Risk Treatment Plan (RTP) is developed as part of the **Risk Assessment and Risk Treatment Process** for Rate in accordance with **ISO/IEC 27001:2022 Clause 6.1.3**. It outlines the selected risk treatment actions, responsible roles, implementation deadlines, and required approvals.  
 
-## 2. Risk Treatment Overview
-This plan is based on the **Risk Assessment and Risk Treatment Process**, which identified key security risks and their impact on Rate’s operations. Each risk treatment action is assigned a responsible owner, implementation deadline, and approval status.
+## **2. Risk Treatment Strategy**
+The organization follows a **Mitigate, Accept, Transfer, Avoid** approach for treating risks. This RTP details the **mitigation actions** for risks deemed unacceptable.
 
-## 3. Risk Treatment Plan Table
+---
 
-| **Risk** | **Treatment Option** | **Mitigation Actions** | **Responsible Person** | **Implementation Deadline** | **Status** |
-|---|---|---|---|---|---|
-| Unauthorized access to customer database | Mitigate | Enforce **MFA**, strict **access controls**, and **database access logging** | CTO | [Date] | Pending |
-| Data loss from a server crash | Mitigate | Ensure **automatic backups** to NAS and cloud storage, test backups periodically | IT Manager | [Date] | Pending |
-| Insider threats (employee mishandling data) | Mitigate | Implement **RBAC**, log sensitive actions, conduct **employee security training** | Security Officer | [Date] | Pending |
-| Third-party service breaches (Trello, Freshdesk, etc.) | Mitigate | Restrict sharing of sensitive data, enable **MFA**, and review security settings | Security Officer | [Date] | Pending |
-| Server crash causing service disruption | Mitigate | Deploy **failover server** on Hetzner, monitor server health, implement **automated alerts** | IT Manager | [Date] | Pending |
-| Losing access to head office (VPN, backups, development server) | Mitigate | Configure **alternative VPN access**, maintain **offsite backup** | IT Manager | [Date] | Pending |
-| NAS Storage corruption or damage | Mitigate | Implement **RAID**, conduct **monthly backup integrity checks** | IT Manager | [Date] | Pending |
-| Critical employee suddenly leaving | Mitigate | Document **key processes**, ensure **password manager access control** | HR Manager | [Date] | Pending |
-| Developer’s laptop lost, stolen, or damaged | Mitigate | Enforce **full disk encryption**, **remote wipe**, and strong **device access controls** | Security Officer | [Date] | Pending |
-| Virus or ransomware attack | Mitigate | Install **endpoint protection**, enforce **automatic updates**, **least privilege access**, phishing training | IT Manager | [Date] | Pending |
-| Losing access to LastPass (password manager) | Mitigate | Maintain **backup of critical passwords** in **secure location**, use **offline vault** | Security Officer | [Date] | Pending |
-| LastPass breach (exposing passwords) | Mitigate | Enable **zero-knowledge encryption**, enforce **password rotation**, consider **alternative password manager** | Security Officer | [Date] | Pending |
-| SSL certificate expiry for platform | Mitigate | Enable **automatic SSL renewal**, monitor expiration dates | IT Manager | [Date] | Pending |
+## **3. Risk Treatment Actions**
 
-## 4. Review and Approval
-This Risk Treatment Plan is subject to **annual review** and updates whenever there are significant changes to Rate’s infrastructure, business operations, or security landscape.
+### **3.1 Data Security Risks**
+| **Risk** | **Treatment Option** | **Mitigation Actions** | **Responsible Role** | **Implementation Deadline** |
+|---|---|---|---|---|
+| **Unauthorized access to customer database** | Mitigate | Enforce **MFA**, strict **access controls**, database **access logging** | **Managing Director** | [Insert Date] |
+| **Data loss from a server crash** | Mitigate | Ensure **automatic backups** to NAS and cloud storage. Perform **regular backup tests** | **Managing Director** | [Insert Date] |
+| **Insider threats (employee mishandling data)** | Mitigate | Implement **role-based access control (RBAC)**, log all sensitive actions, conduct **employee security training** | **Managing Director** | [Insert Date] |
 
-- **Reviewed by:** [Security Officer Name]  
-- **Approved by:** [CEO Name]  
-- **Date of Approval:** [Insert Date]  
-- **Next Review Date:** [Insert Date]  
+---
 
-## 5. Monitoring and Follow-Up
-The security team will track progress on all risk treatments and ensure timely implementation of each mitigation action. Any delays or deviations will be documented and addressed in security management meetings.
+### **3.2 Infrastructure Risks**
+| **Risk** | **Treatment Option** | **Mitigation Actions** | **Responsible Role** | **Implementation Deadline** |
+|---|---|---|---|---|
+| **Server crash causing service disruption** | Mitigate | Deploy **failover server** on Hetzner, monitor server health, implement **automated alerts** | **Managing Director** | [Insert Date] |
+| **Losing physical or internet access to head office (VPN, backups, development server)** | Mitigate | Configure **alternative VPN access** (e.g., cloud-based VPN, backup ISP). Maintain **offsite emergency backup** | **Managing Director** | [Insert Date] |
+| **NAS Storage corruption or damage** | Mitigate | Implement **RAID** for redundancy, conduct **monthly backup integrity checks** | **Managing Director** | [Insert Date] |
+
+---
+
+### **3.3 Human Resource Risks**
+| **Risk** | **Treatment Option** | **Mitigation Actions** | **Responsible Role** | **Implementation Deadline** |
+|---|---|---|---|---|
+| **Critical employee suddenly leaving** | Mitigate | Document **all key processes**, ensure **passwords are securely stored**, prevent single-person dependency | **Chief Executive Officer (CEO)** | [Insert Date] |
+| **Developer’s laptop lost, stolen, or damaged** | Mitigate | Enforce **full disk encryption**, **remote wipe capabilities**, strong **device access controls** | **Team Lead Developer** | [Insert Date] |
+
+---
+
+### **3.4 Cybersecurity Risks**
+| **Risk** | **Treatment Option** | **Mitigation Actions** | **Responsible Role** | **Implementation Deadline** |
+|---|---|---|---|---|
+| **Virus or ransomware attack on company devices** | Mitigate | Install **endpoint protection**, enable **automatic updates**, enforce **least privilege access**, train employees on phishing threats | **Managing Director** | [Insert Date] |
+| **Losing access to LastPass (password manager)** | Mitigate | Maintain a **backup of critical passwords** in a separate, **secure** location (e.g., encrypted cloud storage). Use **offline password vault** | **Managing Director** | [Insert Date] |
+| **LastPass breach (exposing all stored passwords)** | Mitigate | Enable **zero-knowledge encryption**, enforce **strong unique passwords**, rotate passwords periodically. Consider an **alternative password manager** | **Managing Director** | [Insert Date] |
+| **SSL certificate expiry for platform or website** | Mitigate | Enable **automatic SSL renewal** with monitoring alerts. Keep track of expiration dates with reminders | **Managing Director** | [Insert Date] |
+
+---
+
+## **4. Risk Acceptance Criteria**
+- A risk is considered **treated** when all identified **mitigation actions** are implemented and **verified**.  
+- Risks classified as **low** and not requiring further treatment may be **accepted** if agreed upon by management.  
+- Any **remaining risks** after applying mitigation must be documented and **approved by the CEO**.  
+
+---
+
+## **5. Implementation and Monitoring**
+- The **Managing Director** is responsible for ensuring all mitigation actions are completed on time.  
+- **The CEO will review and approve** all implemented risk treatments before marking them as resolved.  
+- Risk treatment actions will be **reviewed annually** or **when significant changes occur** in the company.  
+
+---
+
+## **6. Approval and Sign-Off**
+This Risk Treatment Plan has been reviewed and approved by management.
+
+**Reviewed by:** [Managing Director Name]  
+**Approved by:** [Chief Executive Officer (CEO) Name]  
+**Date:** [Insert Date]  
 
 ---
 
