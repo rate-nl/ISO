@@ -244,71 +244,66 @@ This document will be reviewed after any significant changes to our infrastructu
 # Risk Treatment Plan (RTP)
 
 ## **1. Introduction**
-This Risk Treatment Plan (RTP) is developed as part of the **Risk Assessment and Risk Treatment Process** for Rate in accordance with **ISO/IEC 27001:2022 Clause 6.1.3**. It outlines the selected risk treatment actions, responsible roles, implementation deadlines, and required approvals.  
-
-## **2. Risk Treatment Strategy**
-The organization follows a **Mitigate, Accept, Transfer, Avoid** approach for treating risks. This RTP details the **mitigation actions** for risks deemed unacceptable.
+This **Risk Treatment Plan (RTP)** outlines the specific mitigation actions, implementation steps, responsible roles, and execution timelines to address the risks identified in our **Risk Assessment and Risk Treatment Process**. This document ensures compliance with **ISO 27001:2022** and will be reviewed annually.
 
 ---
 
-## **3. Risk Treatment Actions**
+## **2. Risk Treatment Implementation**
 
-### **3.1 Data Security Risks**
-| **Risk** | **Treatment Option** | **Mitigation Actions** | **Responsible Role** | **Implementation Deadline** |
+### **2.1 Data Security Risks**
+| **Risk** | **Mitigation Actions** | **Responsible Role** | **Tools/Configurations** | **Execution Timeline** |
 |---|---|---|---|---|
-| **Unauthorized access to customer database** | Mitigate | Enforce **MFA**, strict **access controls**, database **access logging** | **Managing Director** | [Insert Date] |
-| **Data loss from a server crash** | Mitigate | Ensure **automatic backups** to NAS and cloud storage. Perform **regular backup tests** | **Managing Director** | [Insert Date] |
-| **Insider threats (employee mishandling data)** | Mitigate | Implement **role-based access control (RBAC)**, log all sensitive actions, conduct **employee security training** | **Managing Director** | [Insert Date] |
+| **Unauthorized access to customer database** | 1. Enforce **strict access control** with role-based permissions. 2. Configure **firewall rules** to block unauthorized connections. 3. Implement **multi-factor authentication (MFA)** for admin access. 4. Enable **database query logging** to track suspicious activities. | Developers | - Cloud Firewall - DB Role-based Access (PostgreSQL/MySQL) - Google Authenticator for MFA | ✅ **MFA & access roles: 2 weeks** ✅ **Firewall & logs: Ongoing monitoring** |
+| **Data loss from a server crash** | 1. Implement **automatic daily backups** to NAS. 2. Store **weekly offsite backups** in a secure cloud location. 3. Test **data recovery process** quarterly. 4. Enable **server monitoring alerts** for hardware failures. | Developers | - Rsync for NAS backups - AWS S3/Hetzner Storage - Prometheus monitoring | ✅ **Backups & offsite setup: 3 weeks** ✅ **Quarterly restore tests** |
+| **Insider threats (employee mishandling data)** | 1. Enforce **role-based access control (RBAC)**. 2. Restrict **employee access** to only necessary systems. 3. Log **all privileged user actions** for auditing. 4. Conduct **annual security awareness training**. | Managing Director | - Google Workspace Admin Controls - System Audit Logs | ✅ **RBAC & logs: Immediate** ✅ **Training: Annual** |
 
 ---
 
-### **3.2 Infrastructure Risks**
-| **Risk** | **Treatment Option** | **Mitigation Actions** | **Responsible Role** | **Implementation Deadline** |
+### **2.2 Infrastructure Risks**
+| **Risk** | **Mitigation Actions** | **Responsible Role** | **Tools/Configurations** | **Execution Timeline** |
 |---|---|---|---|---|
-| **Server crash causing service disruption** | Mitigate | Deploy **failover server** on Hetzner, monitor server health, implement **automated alerts** | **Managing Director** | [Insert Date] |
-| **Losing physical or internet access to head office (VPN, backups, development server)** | Mitigate | Configure **alternative VPN access** (e.g., cloud-based VPN, backup ISP). Maintain **offsite emergency backup** | **Managing Director** | [Insert Date] |
-| **NAS Storage corruption or damage** | Mitigate | Implement **RAID** for redundancy, conduct **monthly backup integrity checks** | **Managing Director** | [Insert Date] |
+| **Server crash causing service disruption** | 1. Implement **automated server health monitoring**. 2. Enable **auto-restart scripts** for failed services. 3. Schedule **monthly maintenance checks** on Hetzner. 4. Ensure **real-time backup sync to NAS**. | Developers | - Prometheus for monitoring - Systemd auto-restart | ✅ **Monitoring setup: 2 weeks** ✅ **Monthly maintenance checks** |
+| **Losing physical or internet access to head office (VPN, backups, development server)** | 1. Set up a **secondary VPN provider** as backup. 2. Ensure production server **firewall rules can be updated via emergency SSH key**. 3. Keep **offline emergency network configuration guide**. 4. Maintain a **backup ISP connection**. | Developers | - Cloudflare Access VPN - OpenVPN fallback | ✅ **Secondary VPN setup: 3 weeks** ✅ **Firewall emergency access: Immediate** |
+| **NAS Storage corruption or damage** | 1. Implement **RAID for redundancy**. 2. Configure **monthly backup integrity checks**. 3. Store **encrypted copies of critical backups offsite**. 4. Enable **S.M.A.R.T. disk health monitoring**. | Tech Lead Developer | - RAID 1/5 - AWS S3 offsite backup | ✅ **RAID setup: Immediate** ✅ **Monthly integrity checks** |
 
 ---
 
-### **3.3 Human Resource Risks**
-| **Risk** | **Treatment Option** | **Mitigation Actions** | **Responsible Role** | **Implementation Deadline** |
+### **2.3 Human Resource Risks**
+| **Risk** | **Mitigation Actions** | **Responsible Role** | **Tools/Configurations** | **Execution Timeline** |
 |---|---|---|---|---|
-| **Critical employee suddenly leaving** | Mitigate | Document **all key processes**, ensure **passwords are securely stored**, prevent single-person dependency | **Chief Executive Officer (CEO)** | [Insert Date] |
-| **Developer’s laptop lost, stolen, or damaged** | Mitigate | Enforce **full disk encryption**, **remote wipe capabilities**, strong **device access controls** | **Team Lead Developer** | [Insert Date] |
+| **Critical employee suddenly leaving** | 1. Maintain a **detailed knowledgebase** of processes. 2. Store all passwords in **a shared, encrypted vault**. 3. Implement a **handover process for key roles**. 4. Restrict **former employee access immediately** upon departure. | Managing Director | - Notion for documentation - Bitwarden/LastPass for shared passwords | ✅ **Documentation: Ongoing** ✅ **Access revocation: Immediate upon exit** |
+| **Developer’s laptop lost, stolen, or damaged** | 1. Enforce **disk encryption on all devices**. 2. Enable **remote wipe capabilities** via MDM. 3. Ensure **cloud storage is the primary workspace** (no local files). 4. Require **strong device passwords**. | Tech Lead Developer | - Google Drive for storage - BitLocker/FileVault for encryption | ✅ **Encryption policy: Immediate** ✅ **Remote wipe: Configured within 1 month** |
 
 ---
 
-### **3.4 Cybersecurity Risks**
-| **Risk** | **Treatment Option** | **Mitigation Actions** | **Responsible Role** | **Implementation Deadline** |
+### **2.4 Cybersecurity Risks**
+| **Risk** | **Mitigation Actions** | **Responsible Role** | **Tools/Configurations** | **Execution Timeline** |
 |---|---|---|---|---|
-| **Virus or ransomware attack on company devices** | Mitigate | Install **endpoint protection**, enable **automatic updates**, enforce **least privilege access**, train employees on phishing threats | **Managing Director** | [Insert Date] |
-| **Losing access to LastPass (password manager)** | Mitigate | Maintain a **backup of critical passwords** in a separate, **secure** location (e.g., encrypted cloud storage). Use **offline password vault** | **Managing Director** | [Insert Date] |
-| **LastPass breach (exposing all stored passwords)** | Mitigate | Enable **zero-knowledge encryption**, enforce **strong unique passwords**, rotate passwords periodically. Consider an **alternative password manager** | **Managing Director** | [Insert Date] |
-| **SSL certificate expiry for platform or website** | Mitigate | Enable **automatic SSL renewal** with monitoring alerts. Keep track of expiration dates with reminders | **Managing Director** | [Insert Date] |
+| **Virus or ransomware attack on company devices** | 1. Install **endpoint security software**. 2. Enable **automatic OS & app updates**. 3. Conduct **quarterly security awareness training**. 4. Implement **network segmentation** for isolating threats. | Tech Lead Developer | - ESET/Norton Endpoint Security - Windows/Linux Auto-Updates | ✅ **Antivirus rollout: 2 weeks** ✅ **Quarterly training sessions** |
+| **Losing access to LastPass (password manager)** | 1. Store a **bi-yearly encrypted backup** of credentials. 2. Set up **multi-admin access** for password recovery. 3. Enforce **two-factor authentication (2FA) on all accounts**. | CEO | - Bitwarden/LastPass Vault Export - Google Authenticator | ✅ **Backup & multi-admin setup: 3 weeks** ✅ **Annual access test** |
+| **SSL certificate expiry for platform or website** | 1. Enable **automatic SSL renewal**. 2. Set up **expiry monitoring alerts**. 3. Maintain a **manual renewal fallback plan**. | Tech Lead Developer | - Let’s Encrypt Auto-Renew - SSL Labs for monitoring | ✅ **Auto-renew setup: Immediate** ✅ **Alerts: 1 week** |
 
 ---
 
-## **4. Risk Acceptance Criteria**
-- A risk is considered **treated** when all identified **mitigation actions** are implemented and **verified**.  
-- Risks classified as **low** and not requiring further treatment may be **accepted** if agreed upon by management.  
-- Any **remaining risks** after applying mitigation must be documented and **approved by the CEO**.  
+## **3. Risk Treatment Execution and Review**
+- **Execution Timeline:** All mitigation actions must be implemented by the specified deadlines.
+- **Annual Review:** The Managing Director and Tech Lead Developer will review this plan **every 12 months**.
+- **Compliance Audit:** This RTP will be audited in accordance with **ISO 27001:2022**.
+
+✅ **Reviewed By:** [Security Officer Name]  
+✅ **Approved By:** [CEO Name]  
+✅ **Last Updated:** [Date]  
 
 ---
 
-## **5. Implementation and Monitoring**
-- The **Managing Director** is responsible for ensuring all mitigation actions are completed on time.  
-- **The CEO will review and approve** all implemented risk treatments before marking them as resolved.  
-- Risk treatment actions will be **reviewed annually** or **when significant changes occur** in the company.  
+## **4. Continuous Improvement**
+- All security incidents will be **analyzed post-mortem**, and improvements will be incorporated into the RTP.
+- Any new risks identified will be added to this document and addressed.
+- A **quarterly review** will be conducted to check implementation status.
 
 ---
 
-## **6. Approval and Sign-Off**
-This Risk Treatment Plan has been reviewed and approved by management.
 
-**Reviewed by:** [Managing Director Name]  
-**Approved by:** [Chief Executive Officer (CEO) Name]  
-**Date:** [Insert Date]  
 
 ---
 
