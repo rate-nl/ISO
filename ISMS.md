@@ -9,8 +9,6 @@
    - Information Security Policy   
    - Risk Assessment and Risk Treatment Process
    - Risk Treatment Plan
-
-## 3. Operational Controls and Security Policies
    - Access Control Policy
    - Incident Management and Response Plan
    - Business Continuity and Disaster Recovery Plan
@@ -419,5 +417,85 @@ A security incident is any event that compromises the confidentiality, integrity
 
 *Note: Employees will be notified of policy updates.*
 
+---
 
+# Business Continuity and Disaster Recovery Plan
 
+## 1. Purpose
+This plan outlines procedures for maintaining business operations and recovering from disruptions at Rate, ensuring continuity of services and rapid recovery from disasters.
+
+## 2. Scope
+Covers all systems, employees, and processes supporting Rate's platform and operations.
+
+## 3. Key Contacts
+- **Disaster Recovery Team:** CEO (Head), Managing Director, Team Lead Developer
+- **Contact Email:** info@rate.nl
+- **Emergency Contact Phone Number:** 010 – 822 52 22
+
+## 4. Critical Systems
+- **Cloud Hosting:** Hetzner (primary), Azure (secondary for provider failure)
+- **Source Code:** Managed in GitHub
+- **Backups:** Stored on NAS (remote) and cloud storage
+- **Communication Tools:** Google Workspace (email, documents)
+
+## 5. Backup and Recovery Procedures
+- **Database:**
+  - Full daily backup (03:00), retained for 1 month (NAS and cloud)
+  - Incremental backups every 4 hours (retained 1 month)
+  - Transaction log backups every 30 minutes
+  - **Testing:** Monthly backup restoration tests
+- **Production Folder:** Daily backups (NAS, retained 1 month, tested monthly)
+- **Source Code:** Managed in GitHub with integrity checks
+
+## 6. Disaster Scenarios, RTO, and RPO
+### **6.1 Production Server Failure (Hetzner)**
+- **Action:** Provision new Hetzner server and restore from repository backups
+- **Lead:** Team Lead Developer
+- **RTO (Recovery Time Objective):** 4 hours
+- **RPO (Recovery Point Objective):** 30 minutes (via transaction logs)
+
+### **6.2 Cloud Provider Failure (Hetzner Unavailable)**
+- **Action:** Deploy new server on Azure, restore from backups, and notify customers
+- **Lead:** Team Lead Developer
+- **RTO:** 4 hours
+- **RPO:** 30 minutes
+
+### **6.3 Office Internet Outage**
+- **Action:** Enable remote work via VPN and Google Workspace
+- **Lead:** Managing Director
+- **RTO:** Immediate
+- **RPO:** None (cloud-based services)
+
+### **6.4 Data Leak or Malware Attack**
+- **Action:** Isolate systems, notify Managing Director, and conduct forensic analysis
+- **Lead:** Managing Director
+- **RTO:** 2 hours
+- **RPO:** 30 minutes
+
+### **6.5 Calamities (e.g., Fire, Flood)**
+- **Action:** Follow building escape plan (Groothandelsgebouw) and secure backups
+- **Lead:** CEO
+- **RTO:** As feasible
+- **RPO:** 30 minutes (via offsite backups)
+
+## 7. Roles and Responsibilities
+- **CEO:** Approves major actions and communicates with stakeholders.
+- **Managing Director:** Oversees recovery operations and manages recordkeeping.
+- **Team Lead Developer:** Executes technical recovery steps and maintains backup records.
+
+## 8. Testing and Review
+- **Testing:** Annual disaster recovery drills with backup restoration tests.
+- **Review:** Annual updates or after major changes.
+- **Lessons Learned:** Document findings from each test and address gaps.
+
+## 9. Compliance and Recordkeeping
+- **Backup Retention:** 1 month (NAS/cloud) — Team Lead Developer
+- **Incident Logs:** Retained for 3 years (Google Drive) — Managing Director
+- **Backup Testing Records:** Retained for 3 years — Team Lead Developer
+- **Recordkeeping Oversight:** Managing Director
+- **Compliance:** ISO/IEC 27001:2022, GDPR
+
+---
+*Last Updated: [Insert Date]*
+
+---
