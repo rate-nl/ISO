@@ -241,6 +241,51 @@ This document will be **reviewed annually** and after any significant changes to
 
 ---
 
+```markdown
+# Risk Treatment Plan (RTP)
+
+## 1. Purpose
+This Risk Treatment Plan (RTP) outlines the actions required to mitigate identified risks to Rate’s information security assets. It aligns with the **ISO 27001:2022** standard, specifically Clause **6.1.3(d)**, and ensures that appropriate security controls are implemented, assigned, and monitored.
+
+## 2. Risk Treatment Overview
+This plan is based on the **Risk Assessment and Risk Treatment Process**, which identified key security risks and their impact on Rate’s operations. Each risk treatment action is assigned a responsible owner, implementation deadline, and approval status.
+
+## 3. Risk Treatment Plan Table
+
+| **Risk** | **Treatment Option** | **Mitigation Actions** | **Responsible Person** | **Implementation Deadline** | **Status** |
+|---|---|---|---|---|---|
+| Unauthorized access to customer database | Mitigate | Enforce **MFA**, strict **access controls**, and **database access logging** | CTO | [Date] | Pending |
+| Data loss from a server crash | Mitigate | Ensure **automatic backups** to NAS and cloud storage, test backups periodically | IT Manager | [Date] | Pending |
+| Insider threats (employee mishandling data) | Mitigate | Implement **RBAC**, log sensitive actions, conduct **employee security training** | Security Officer | [Date] | Pending |
+| Third-party service breaches (Trello, Freshdesk, etc.) | Mitigate | Restrict sharing of sensitive data, enable **MFA**, and review security settings | Security Officer | [Date] | Pending |
+| Server crash causing service disruption | Mitigate | Deploy **failover server** on Hetzner, monitor server health, implement **automated alerts** | IT Manager | [Date] | Pending |
+| Losing access to head office (VPN, backups, development server) | Mitigate | Configure **alternative VPN access**, maintain **offsite backup** | IT Manager | [Date] | Pending |
+| NAS Storage corruption or damage | Mitigate | Implement **RAID**, conduct **monthly backup integrity checks** | IT Manager | [Date] | Pending |
+| Critical employee suddenly leaving | Mitigate | Document **key processes**, ensure **password manager access control** | HR Manager | [Date] | Pending |
+| Developer’s laptop lost, stolen, or damaged | Mitigate | Enforce **full disk encryption**, **remote wipe**, and strong **device access controls** | Security Officer | [Date] | Pending |
+| Virus or ransomware attack | Mitigate | Install **endpoint protection**, enforce **automatic updates**, **least privilege access**, phishing training | IT Manager | [Date] | Pending |
+| Losing access to LastPass (password manager) | Mitigate | Maintain **backup of critical passwords** in **secure location**, use **offline vault** | Security Officer | [Date] | Pending |
+| LastPass breach (exposing passwords) | Mitigate | Enable **zero-knowledge encryption**, enforce **password rotation**, consider **alternative password manager** | Security Officer | [Date] | Pending |
+| SSL certificate expiry for platform | Mitigate | Enable **automatic SSL renewal**, monitor expiration dates | IT Manager | [Date] | Pending |
+
+## 4. Review and Approval
+This Risk Treatment Plan is subject to **annual review** and updates whenever there are significant changes to Rate’s infrastructure, business operations, or security landscape.
+
+- **Reviewed by:** [Security Officer Name]  
+- **Approved by:** [CEO Name]  
+- **Date of Approval:** [Insert Date]  
+- **Next Review Date:** [Insert Date]  
+
+## 5. Monitoring and Follow-Up
+The security team will track progress on all risk treatments and ensure timely implementation of each mitigation action. Any delays or deviations will be documented and addressed in security management meetings.
+
+---
+
+**End of Document**
+```
+
+
+
 
 
 # Access Control Policy
