@@ -7,8 +7,7 @@
 
 ## 2. Core ISMS Documents
    - Information Security Policy   
-   - Risk Assessment and Risk Treatment Process
-   - Risk Treatment Plan
+   - Risk Assessment and Risk Treatment Plan
    - Access Control Policy
    - Incident Management and Response Plan
    - Business Continuity and Disaster Recovery Plan
