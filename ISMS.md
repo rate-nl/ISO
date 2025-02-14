@@ -241,7 +241,7 @@ This document will be **reviewed annually** and after any significant changes to
 
 ---
 
-```markdown
+
 # Risk Treatment Plan (RTP)
 
 ## 1. Purpose
