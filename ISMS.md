@@ -244,7 +244,6 @@ This document will be reviewed **annually** and **after any significant changes*
 
 ---
 
-
 # Access Control Policy
 
 ## 1. Purpose
@@ -261,13 +260,11 @@ This policy applies to all personnel accessing Rate's information assets, includ
 - **Cloud Applications and Providers:** Google Drive, Google Workspace, GitHub, Stack Overflow, Exact Online, WordPress, and Hetzner Cloud
 - **Remote Access Systems:** Remote Desktop Server, Local VPN (Hetzner), and employee-managed laptops
 
-
 ## 3. Access Control Principles
 - **Least Privilege:** Limit access to the minimum necessary for tasks.
 - **Need-to-Know:** Restrict sensitive data access.
 - **Role-Based Access Control (RBAC):** Assign permissions based on job roles.
 - **Separation of Duties:** Divide security-sensitive responsibilities.
-
 
 ## 4. User Access Management
 ### **4.1. Registration and De-registration**
@@ -276,27 +273,23 @@ This policy applies to all personnel accessing Rate's information assets, includ
 - **Documentation:** Access approvals and removals are retained in email records.
 
 ### **4.2. Provisioning and Review**
-- The Tech Lead provisions access and conducts quarterly access reviews.
+- The Tech Lead provisions access and conducts **annual access reviews**.
+- Developers are responsible for ensuring secure implementation of access control measures within the systems they develop.
 - Records are maintained for audit purposes.
 
-
 ## 5. Authentication and Password Management
-- **2FA Implementation:**
-  - **Cloud Apps (e.g., Google Workspace, GitHub):** SSO with 2FA
-- **Password Policy:** Minimum 12 characters, 90-day expiration, and secure storage in LastPass
-
+- **Password Policy:** Minimum 12 characters, 90-day expiration, and secure storage in LastPass.
 
 ## 6. Monitoring and Logging
 - **Logs:** Collected from all on-premises and cloud systems.
-- **Review Frequency:** The Tech Lead reviews logs quarterly.
+- **Review Frequency:** The Tech Lead reviews logs annually.
 - **Retention:** Logs are retained for at least one year.
 
-
-## 7. Third-Party and Cloud Access Control
-- Third-party access is not currently granted.
-- Cloud administrators are the Tech Lead and Managing Director.
-- Cloud provider security settings are configured to standard compliance.
-
+## 7. Alternative Secure Access Methods
+In the event of **VPN failure**, an **alternative secure access method** must be available to ensure continued access to critical systems. This may include:
+- Direct secure SSH access with IP whitelisting.
+- Temporary access via emergency backup accounts (only activated under CEO approval).
+- Additional secure remote access solutions evaluated based on security needs.
 
 ## 8. Physical Access Control
 - Building entry requires key card access.
@@ -304,21 +297,19 @@ This policy applies to all personnel accessing Rate's information assets, includ
 - NAS and Development Server are stored under lock.
 - Production servers are cloud-hosted on Hetzner.
 
-
 ## 9. Responsibilities
-- **Tech Lead:** Manages access, reviews logs quarterly, and oversees configurations.
+- **Tech Lead:** Manages access, reviews logs annually, and oversees configurations.
 - **CEO:** Approves sensitive access requests and enforces compliance.
+- **Developers:** Ensure secure implementation of access control measures in systems they develop.
 - **All Employees:** Maintain laptop security and promptly report incidents.
 
-
 ## 10. Policy Review
-The policy undergoes annual review or immediate revision after major changes.
+The policy undergoes **annual review** or immediate revision after major changes.
 
 ## 11. Compliance
 Non-compliance may result in disciplinary actions or legal consequences.
 
 *Note: Employees will be notified of all policy updates.*
-
 
 ---
 
