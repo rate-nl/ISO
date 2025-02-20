@@ -515,13 +515,12 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 ## 4. Acceptable Use and Protection Measures
 - **Acceptable Use:** Annual acknowledgment of the Acceptable Use Policy is required.
 - **Device Security:** Full disk encryption and automatic updates are mandatory.
-- **Cloud Security:** 2FA is required for cloud service access.
 - **Data Storage:** Role-based access controls protect sensitive data.
-- **Backups:** Daily backups with monthly restoration tests.
+- **Backups:** Daily backups with **monthly restoration tests and an annual full validation check**.
 
 ## 5. Access Control and Data Security (Annex A.9)
 - **Access Management:** Controlled by the Tech Lead with CEO approval for high-privilege roles.
-- **Access Reviews:** Quarterly reviews by the Managing Director with findings logged.
+- **Access Reviews:** **Annual reviews** by the Managing Director with findings logged.
 - **Log Retention:** Access logs are retained for three years.
 - **Access Revocation:** Immediate action for role changes or departures, with records documented.
 - **Remote Access:** VPN is required for development server access.
@@ -532,7 +531,7 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 - **Disposal Records:** Logs include date, method, approver details, and retention for three years.
 
 ## 7. Monitoring and Review (Annex A.12, A.15)
-- **Log Reviews:** Conducted quarterly, with results, corrective actions, and completion dates recorded.
+- **Log Reviews:** Conducted **annually**, with results, corrective actions, and completion dates recorded.
 - **Audit Documentation:** Managed by the Managing Director, documenting findings, corrective actions, and dates.
 - **Policy Review:** Annually conducted with updates and actions logged.
 - **Audit Record Retention:** All audit reports and supporting documents retained for three years.
@@ -556,7 +555,5 @@ This policy aligns with ISO/IEC 27001:2022 Annex A controls, and their applicabi
 - **A.18:** Compliance
 - **SoA Link:** Refer to the current Statement of Applicability for specific mappings and control implementations.
 
-
-*Last Updated: [Insert Date]*
 
 ---
