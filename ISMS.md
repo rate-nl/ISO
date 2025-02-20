@@ -94,6 +94,9 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Provide necessary resources for ISMS implementation and maintenance.
   - Promote a culture of information security within the organization.
   - Oversee compliance with regulatory and security standards.
+  - Approve risk assessments and the Risk Treatment Plan (RTP).
+  - Oversee **incident management and resolution** for critical security incidents.
+  - Ensure periodic **reviews of security incidents and ISMS effectiveness**.
 
 ### 4.2. Managing Director
 
@@ -104,26 +107,31 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Ensure compliance with information security policies and applicable laws.
   - Report ISMS performance to top management.
   - Support operational security measures and access control strategies.
+  - Review risk assessments before CEO approval.
+  - Lead **incident response planning** and coordinate with affected teams.
+  - Conduct **annual security reviews** and adjust strategies as needed.
 
 ### 4.3. Team Lead Developer
 
-- **Accountability**: Ensures secure software development practices.
+- **Accountability**: Ensures secure software development practices and cybersecurity risk mitigation.
 - **Responsibilities**:
   - Lead the development team in implementing secure coding practices and ensuring software security.
   - Enforce security policies within the software development lifecycle.
   - Conduct periodic code reviews and security assessments to identify vulnerabilities.
   - Manage and monitor security compliance related to development infrastructure.
-  - Act as a point of contact for security incidents related to software and development infrastructure.
+  - Ensure **SSL certificate renewal** is managed through **automatic renewal or alerts**.
+  - Investigate and provide technical remediation for **security incidents** affecting development environments.
 
 ### 4.4. Developers
 
-- **Accountability**: Implement secure coding practices.
+- **Accountability**: Implement secure coding practices and access controls.
 - **Responsibilities**:
   - Follow secure coding standards and guidelines.
-  - Assist in enforcing access control and authentication processes within the development environment.
+  - Enforce access control and authentication processes within the development environment.
   - Support security compliance by maintaining documentation and adhering to best practices.
   - Identify and report potential software vulnerabilities to the Team Lead Developer.
   - Assist in responding to security incidents by providing technical expertise and remediation support.
+  - Implement and enforce **access control measures** in compliance with **Annex A.9**.
 
 ### 4.5. All Employees
 
@@ -132,7 +140,6 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Protect information assets within their control.
   - Report security incidents or weaknesses promptly.
   - Participate in information security training and awareness programs.
-
 
 ## 5. Information Security Principles
 
@@ -149,39 +156,38 @@ Rate will implement a risk management process that includes:
 - Identifying information security risks.
 - Assessing the potential impact and likelihood of risks.
 - Implementing appropriate controls to mitigate risks.
-- Monitoring and reviewing risks regularly.
+- Monitoring and reviewing risks **annually and after significant security incidents or infrastructure changes**.
 
-## 7. Compliance
+## 7. Access Control
+
+In accordance with **Annex A.9 - Access Control**, Rate enforces the following security measures:
+
+- **Role-based access control (RBAC)** is implemented for all systems.
+- **Firewall rules and VPN access restrictions** are enforced to protect critical infrastructure.
+- **Alternative access methods** to production servers are maintained to ensure availability in case of VPN failures.
+
+## 8. Compliance
 
 Rate is committed to complying with all applicable legal, regulatory, and contractual requirements related to information security. This includes, but is not limited to, data protection laws and industry standards.
-
-## 8. Management Commitment
-
-In alignment with ISO/IEC 27001:2022 Clause 5.1, Rate's top management is committed to:
-
-- Continual improvement of the ISMS to enhance information security performance.
-- Providing adequate resources to establish, implement, maintain, and improve the ISMS.
-- Integrating information security requirements into the organization's processes and strategic direction.
 
 ## 9. Incident Reporting and Response
 
 In accordance with ISO/IEC 27001:2022 Clause 16.1.1, Rate has established a formal Incident Response Plan (IRP) that includes:
 
-- **Incident Identification**: All employees are responsible for reporting suspected information security incidents immediately to the Information Security Manager (ISM).
-- **Incident Classification**: The ISM will assess and classify the incident based on its severity and impact.
-- **Incident Escalation**: Significant incidents will be escalated to the Managing Director and, if necessary, to the CEO and Security Committee.
-- **Incident Resolution**: The ISM, in collaboration with relevant personnel, will coordinate the response to and resolution of the incident.
-- **Post-Incident Review**: After resolution, a review will be conducted to identify lessons learned and implement improvements to prevent recurrence.
+- **Incident Identification**: All employees are responsible for reporting suspected information security incidents immediately to the **Managing Director**.
+- **Incident Escalation**: Significant incidents will be escalated to the **CEO** if necessary.
+- **Incident Resolution**: The **Team Lead Developer** and relevant personnel will coordinate the response to and resolution of the incident.
 
 ## 10. Policy Review and Approval
 
 In compliance with ISO/IEC 27001:2022 Clause 5.1.2, this Information Security Policy shall be:
 
-- **Reviewed**: The Information Security Manager (ISM) is responsible for reviewing this policy at least annually or when significant changes occur.
-- **Approved**: The policy must be approved by the Chief Executive Officer (CEO) and the Security Committee to ensure its relevance and effectiveness.
+- **Reviewed**: The **Managing Director** is responsible for reviewing this policy **at least annually** or when significant changes occur.
+- **Approved**: The policy must be **approved by the Chief Executive Officer (CEO)** to ensure its relevance and effectiveness.
 
-**Approved by**: [CEO Name]
+---
 
+**Approved by**: [CEO Name]  
 **Date**: [Approval Date]
 
 ---
