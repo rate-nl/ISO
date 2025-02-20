@@ -314,7 +314,7 @@ Non-compliance may result in disciplinary actions or legal consequences.
 ---
 
 
-# Incident Management and Response plan
+# Incident Management and Response Plan
 
 ## 1. Purpose
 This Incident Management and Response Process outlines the procedures for identifying, reporting, assessing, responding to, and recovering from security incidents at Rate. The objective is to minimize the impact of incidents, protect information assets, and ensure business continuity.
@@ -356,10 +356,7 @@ A security incident is any event that compromises the confidentiality, integrity
 ### **5.4. Recovery**
 - Systems are restored from backups, and normal operations resume.
 - Data integrity is verified on Google Drive, Exact Online, and production servers.
-
-### **5.5. Lessons Learned**
-- A post-incident review is conducted to document findings and update policies.
-- Security improvements are implemented to prevent recurrence.
+- **Annual backup testing is required** to ensure reliability, in alignment with the Risk Treatment Plan (RTP).
 
 ## 6. Documentation and Reporting
 - All incidents must be logged, including:
@@ -369,7 +366,6 @@ A security incident is any event that compromises the confidentiality, integrity
   - Actions taken
   - Resolution date
 - Incident logs are maintained for at least **3 years** in Google Drive.
-- Reports are reviewed quarterly to identify trends and improve response efforts.
 
 ## 7. Roles and Responsibilities
 ### **7.1. Employees**
@@ -377,11 +373,12 @@ A security incident is any event that compromises the confidentiality, integrity
 - Cooperate with investigations and follow security protocols.
 
 ### **7.2. Tech Lead**
-- Leads incident detection, containment, and resolution.
+- Leads **technical containment and resolution** of incidents.
 - Reviews and maintains incident logs.
 - Coordinates security improvements post-incident.
 
 ### **7.3. Managing Director**
+- **Leads overall incident response efforts**, ensuring proper execution of containment, eradication, and recovery steps.
 - Assists in response when the Tech Lead is unavailable.
 - Supports log analysis and recovery processes.
 
@@ -395,14 +392,14 @@ A security incident is any event that compromises the confidentiality, integrity
 
 ## 9. Plan Review and Testing
 - The plan is reviewed **annually** or after major incidents.
-- Incident response simulations are conducted **bi-annually** to ensure readiness.
+- **Incident reviews are conducted annually** to match the Risk Treatment Plan (RTP).
 
 ## 10. Compliance and Reporting
 - Incident logs are retained for **3 years** in Google Drive.
 - The plan adheres to **ISO/IEC 27001:2022** and **GDPR** requirements.
 
-
 *Note: Employees will be notified of policy updates.*
+
 
 ---
 
