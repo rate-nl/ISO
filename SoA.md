@@ -308,9 +308,6 @@ The **SoA document is version-controlled**, ensuring that all updates are **prop
 | **Version** | **Date** | **Change Description** | **Approved By** |
 |------------|---------|----------------------|---------------|
 | **1.0** | [Initial Date] | Initial draft | CEO |
-| **1.1** | [Update Date] | Updated Annex A mapping | CEO |
-| **1.2** | [Update Date] | Added continuous monitoring section | CEO |
-| **1.3** | [Update Date] | Included control performance metrics (ISO A.9.2) | CEO |
 
 - **Retention Policy:** SoA versions are **retained for 3 years** for audit purposes.
 - **Storage Location:** Google Drive (ISO Documentation Folder).
