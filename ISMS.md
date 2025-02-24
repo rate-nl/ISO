@@ -363,7 +363,7 @@ A security incident is any event that compromises the confidentiality, integrity
   - Description and impact
   - Actions taken
   - Resolution date
-- Incident logs are maintained for at least **3 years** in Google Drive.
+- Incident logs are maintained in Google Drive.
 
 ## 7. Roles and Responsibilities
 ### **7.1. Employees**
@@ -389,8 +389,7 @@ A security incident is any event that compromises the confidentiality, integrity
 - **External:** The CEO handles customer notifications and regulatory compliance communication.
 
 ## 9. Plan Review and Testing
-- The plan is reviewed **annually** or after major incidents.
-- **Incident reviews are conducted annually** to match the Risk Treatment Plan (RTP).
+- The plan is reviewed after major incidents.
 
 ## 10. Compliance and Reporting
 - Incident logs are retained in Google Drive.
