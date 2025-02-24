@@ -72,5 +72,3 @@ The **Statement of Applicability (SoA)** is reviewed and updated:
 - **Next Scheduled Review:** [Insert Date]  
 
 ---
-
-This **minimal SoA** ensures **ISO 27001:2022 compliance** while remaining **concise and relevant** to your ISMS and RTP.
