@@ -273,7 +273,6 @@ This policy applies to all personnel accessing Rate's information assets, includ
 - **Documentation:** Access approvals and removals are retained in email records.
 
 ### **4.2. Provisioning and Review**
-- The Tech Lead provisions access and conducts **annual access reviews**.
 - Developers are responsible for ensuring secure implementation of access control measures within the systems they develop.
 - Records are maintained for audit purposes.
 
@@ -519,7 +518,6 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 
 ## 5. Access Control and Data Security (Annex A.9)
 - **Access Management:** Controlled by the Tech Lead with CEO approval for high-privilege roles.
-- **Access Reviews:** **Annual reviews** by the Managing Director with findings logged.
 - **Log Retention:** Access logs are retained for three years.
 - **Access Revocation:** Immediate action for role changes or departures, with records documented.
 - **Remote Access:** VPN is required for development server access.
