@@ -537,18 +537,4 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 - **Asset Owners:** Maintain classification records and ensure security controls are applied.
 - **Employees:** Follow policies, and report security issues.
 
-## 9. Compliance (ISO/IEC 27001 Annex A Controls and SoA Mapping)
-This policy aligns with ISO/IEC 27001:2022 Annex A controls, and their applicability is documented in the Statement of Applicability (SoA):
-- **A.5:** Information Security Policies
-- **A.6:** Organization of Information Security
-- **A.7:** Human Resource Security
-- **A.8:** Asset Management
-- **A.9:** Access Control
-- **A.11:** Physical and Environmental Security
-- **A.12:** Operations Security (including audit records and corrective action logs)
-- **A.15:** Supplier Relationships
-- **A.18:** Compliance
-- **SoA Link:** Refer to the current Statement of Applicability for specific mappings and control implementations.
-
-
 ---
