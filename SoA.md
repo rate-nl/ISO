@@ -173,9 +173,9 @@ Certain **Annex A controls** are **excluded** from Rate’s ISMS scope due to **
 
 | **Excluded Control** | **Justification** | **Alternative Mitigation (If Applicable)** |
 |---------------------|------------------|----------------------------|
-| **A.14.2.9 - Outsourced Development** | Rate does **not** outsource development activities. | Internal development team follows **Secure Development Practices**. |
-| **A.10.1.1 - Key Management** | Rate does **not** manage large-scale cryptographic keys (e.g., PKI). | Passwords and encryption keys are **secured in LastPass** with MFA. |
-| **A.11.2.6 - Secure Disposal of Media** | Rate does **not** store sensitive data on physical media. | All data is **cloud-based**, and decommissioned hardware is securely wiped. |
+| **A.14.2.9 - Outsourced Development** | Rate does not outsource development activities; all software development is handled in-house. | The internal development team follows Secure Development Practices, ensuring adherence to security policies. |
+| **A.10.1.1 - Key Management** | Rate does not operate a large-scale Public Key Infrastructure (PKI) or issue digital certificates. | Cryptographic keys are securely stored and managed within LastPass with MFA and strict access controls. |
+| **A.11.2.6 - Secure Disposal of Media** | Rate operates entirely cloud-based, meaning no physical media is used for sensitive data storage. | All data is **cloud-based**, and decommissioned hardware is securely wiped before disposal. |
 
 Rate **continuously reviews** security risks and **may re-evaluate exclusions** if new threats emerge or **business needs change**.
 
@@ -241,6 +241,13 @@ The **Statement of Applicability (SoA)** is **formally reviewed:**
 - **Following security incidents** that require **policy updates or control adjustments**.
 - **Upon regulatory changes** affecting information security compliance (**e.g., GDPR updates**).
 
+## **6.2.1 SoA Update Tracking and Change Management**
+The Managing Director ensures that all updates to the SoA are documented in the ISMS Change Log.
+Any modifications to control applicability, inclusion/exclusion, or mapping must be:
+- Reviewed by the Managing Director.
+- Approved by the CEO before implementation.
+- Communicated to relevant stakeholders via the ISMS update notification process.
+All versions of the SoA are version-controlled and retained for 3 years.
 ---
 
 ## **6.3 Monitoring of Controls**
@@ -249,7 +256,7 @@ Each applicable **Annex A control** is **continuously monitored** through:
 - **Backup Integrity Checks:** Monthly and annual full validation.
 - **Incident Response Reviews:** Post-incident analysis and remediation.
 - **Physical Security Audits:** NAS and development server lock compliance.
-- **Employee Awareness Training Records:** Verification of participation.
+- **Employee Awareness Training Records:** **Security awareness training completion is tracked via employee sign-off forms. Reports are stored in Google Drive and reviewed annually by the Managing Director.**  
 
 **Audit Documentation:**  
 All **audit findings, corrective actions, and resolutions** are **recorded** in:
@@ -258,6 +265,21 @@ All **audit findings, corrective actions, and resolutions** are **recorded** in:
 - **Security Training Reports**
 - **Backup Testing Reports**
 
+**Control Performance Metrics (ISO A.9.2)**  
+Each control is reviewed based on **performance indicators**, ensuring its effectiveness:
+- **Access Control (A.9)** →  
+  - Access logs are **reviewed quarterly** for unauthorized access attempts.  
+  - **MFA enforcement compliance** is monitored across all systems.
+- **Backup & Disaster Recovery (A.12)** →  
+  - Monthly backup restoration tests must have a **95% success rate**.  
+  - Annual full backup validation must meet a **100% integrity check**.
+- **Incident Management (A.16)** →  
+  - **Critical incidents must be resolved within 24 hours**.  
+  - All reported incidents are logged, with a **root cause analysis completed within 7 days**.
+- **Physical Security (A.11)** →  
+  - Office security logs (entry access records) are **reviewed semi-annually**.  
+  - NAS and Development Server access is **checked during quarterly audits**.
+ 
 ---
 
 ## **6.4 Non-Conformities and Corrective Actions**
@@ -288,6 +310,7 @@ The **SoA document is version-controlled**, ensuring that all updates are **prop
 | **1.0** | [Initial Date] | Initial draft | CEO |
 | **1.1** | [Update Date] | Updated Annex A mapping | CEO |
 | **1.2** | [Update Date] | Added continuous monitoring section | CEO |
+| **1.3** | [Update Date] | Included control performance metrics (ISO A.9.2) | CEO |
 
 - **Retention Policy:** SoA versions are **retained for 3 years** for audit purposes.
 - **Storage Location:** Google Drive (ISO Documentation Folder).
