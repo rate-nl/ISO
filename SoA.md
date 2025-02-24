@@ -125,3 +125,179 @@ The **exclusions** are documented with **justifications** to ensure **compliance
 
 ---
 
+# **4. Justification for Control Inclusion and Exclusion**
+
+## **4.1 Control Inclusion Criteria**
+The selection of controls from **ISO/IEC 27001:2022 Annex A** is based on a **risk-based approach**, ensuring that Rate implements security measures that **effectively mitigate risks** identified in the **Risk Assessment and Risk Treatment Plan (RARTP)**.
+
+A control is **included** if it meets one or more of the following criteria:
+- **Addresses an identified risk** in Rate’s **Risk Assessment and Risk Treatment Plan (RARTP)**.
+- **Required for compliance** with **ISO 27001:2022**, **GDPR**, or **contractual obligations**.
+- **Enhances Rate’s overall security posture**, even if not explicitly required by regulations.
+- **Supports business continuity** by preventing or mitigating potential security incidents.
+- **Aligns with Rate’s information security objectives**, ensuring confidentiality, integrity, and availability.
+
+---
+
+## **4.2 Summary of Included Controls**
+The following **Annex A controls** are **included** because they **address specific security risks** and align with **Rate’s security objectives**:
+
+| **Annex A Control** | **Reason for Inclusion** | **Related Risk (RARTP)** | **Responsible Role** |
+|--------------------|----------------------|-----------------|------------------|
+| **A.5 Information Security Policies** | Establishes and maintains ISMS policies. | Lack of defined security policies | CEO |
+| **A.6 Organization of Information Security** | Defines security responsibilities and governance. | Undefined roles and responsibilities | CEO, Managing Director |
+| **A.7 Human Resource Security** | Ensures security awareness and controls for employees. | Insider threats and unauthorized access | Managing Director |
+| **A.8 Asset Management** | Identifies, classifies, and protects assets. | Unauthorized access, loss, or misuse of assets | Managing Director, Team Lead Developer |
+| **A.9 Access Control** | Implements Role-Based Access Control (RBAC), authentication, and authorization. | Unauthorized database or system access | Tech Lead Developer |
+| **A.10 Cryptography** | Ensures encryption of sensitive data (e.g., passwords, backups). | Data breach or exposure of sensitive information | Team Lead Developer |
+| **A.11 Physical and Environmental Security** | Protects office access, NAS, and development servers. | Unauthorized physical access to sensitive data | Managing Director |
+| **A.12 Operations Security** | Ensures secure system administration, patch management, and logging. | System vulnerabilities and outdated software | Team Lead Developer |
+| **A.13 Communications Security** | Secures network communications (VPN, encrypted email). | Data interception and MITM attacks | Tech Lead Developer |
+| **A.14 System Acquisition, Development, and Maintenance** | Ensures secure software development practices. | Application security vulnerabilities | Team Lead Developer |
+| **A.15 Supplier Relationships** | Ensures security in vendor and third-party agreements. | Third-party risks and data leaks | Managing Director |
+| **A.16 Information Security Incident Management** | Defines procedures for handling security incidents. | Lack of structured response to security breaches | Managing Director |
+| **A.17 Business Continuity Management** | Ensures business continuity and disaster recovery planning. | System failures or cloud provider outages | CEO, Managing Director |
+| **A.18 Compliance** | Ensures compliance with legal and regulatory requirements. | GDPR and ISO 27001 non-compliance risks | CEO |
+
+These controls are **implemented through Rate’s ISMS policies**, including:
+- **Information Security Policy**
+- **Access Control Policy**
+- **Incident Management and Response Plan**
+- **Business Continuity and Disaster Recovery Plan**
+- **Asset Management and Data Protection Policy**
+
+---
+
+## **4.3 Justification for Control Exclusions**
+Certain **Annex A controls** are **excluded** from Rate’s ISMS scope due to **business irrelevance, alternative mitigations, or lack of risk applicability**. Exclusions are **documented and justified** to comply with **ISO 27001 certification requirements**.
+
+| **Excluded Control** | **Justification** | **Alternative Mitigation (If Applicable)** |
+|---------------------|------------------|----------------------------|
+| **A.14.2.9 - Outsourced Development** | Rate does **not** outsource development activities. | Internal development team follows **Secure Development Practices**. |
+| **A.10.1.1 - Key Management** | Rate does **not** manage large-scale cryptographic keys (e.g., PKI). | Passwords and encryption keys are **secured in LastPass** with MFA. |
+| **A.11.2.6 - Secure Disposal of Media** | Rate does **not** store sensitive data on physical media. | All data is **cloud-based**, and decommissioned hardware is securely wiped. |
+
+Rate **continuously reviews** security risks and **may re-evaluate exclusions** if new threats emerge or **business needs change**.
+
+---
+
+## **4.4 Continuous Review and Update of Control Applicability**
+To maintain **ISMS effectiveness**, Rate ensures that the **Statement of Applicability (SoA) is reviewed and updated**:
+- **Annually** or **whenever significant changes occur** in **technology, business processes, or regulations**.
+- **During internal audits** as part of Rate’s **Continuous Improvement Process**.
+- **When new risks are identified** that require control modifications.
+
+**Approval and Versioning:**
+- **Reviewed by:** Managing Director  
+- **Approved by:** CEO  
+- **Last Review Date:** [Insert Date]  
+- **Next Scheduled Review:** [Insert Date]  
+
+---
+
+# **5. Control Mapping and Implementation Responsibility**
+
+## **5.1 Overview**
+This section provides a **detailed mapping of applicable Annex A controls** to Rate’s **policies, processes, and responsible roles**. Each control is aligned with **implementation mechanisms**, ensuring that security measures are properly assigned and managed.
+
+---
+
+## **5.2 Control Implementation Responsibility Matrix**
+
+| **Annex A Control** | **Implementation Responsibility** | **Related Policy/Procedure** | **Supporting Systems** |
+|--------------------|-------------------------------|---------------------------|----------------------|
+| **A.5 Information Security Policies** | CEO | Information Security Policy | ISMS Documentation |
+| **A.6 Organization of Information Security** | CEO, Managing Director | ISMS Roles & Responsibilities | ISMS Documentation |
+| **A.7 Human Resource Security** | Managing Director | Security Awareness Training | Employee Training Records |
+| **A.8 Asset Management** | Managing Director, Team Lead Developer | Asset Management & Data Protection Policy | Asset Inventory, Google Drive |
+| **A.9 Access Control** | Tech Lead Developer | Access Control Policy | VPN, Google Workspace, LastPass |
+| **A.10 Cryptography** | Tech Lead Developer | Secure Encryption Standards | Google Workspace, GitHub |
+| **A.11 Physical and Environmental Security** | Managing Director | Physical Security Measures | NAS, Locked Development Server |
+| **A.12 Operations Security** | Team Lead Developer | Backup & Patch Management Policy | Hetzner Cloud, NAS |
+| **A.13 Communications Security** | Tech Lead Developer | Secure Communication Standards | VPN, Google Workspace |
+| **A.14 System Acquisition, Development, and Maintenance** | Team Lead Developer | Secure Development Practices | GitHub, Code Repositories |
+| **A.15 Supplier Relationships** | Managing Director | Supplier Security Policy | Vendor Contracts |
+| **A.16 Information Security Incident Management** | Managing Director | Incident Management and Response Plan | Incident Logs, Google Drive |
+| **A.17 Business Continuity Management** | CEO, Managing Director | Business Continuity and Disaster Recovery Plan | NAS, Google Drive, Hetzner Cloud |
+| **A.18 Compliance** | CEO | Compliance Monitoring & Legal Requirements | ISMS Documentation |
+
+- **Primary Owners:** Each control has a **primary responsible party** ensuring that it is implemented and maintained.
+- **Supporting Policies:** Controls are mapped to **existing policies** to demonstrate compliance.
+- **Supporting Systems:** Tools and technologies used to **enforce and monitor** the controls.
+
+---
+
+# **6. Continuous Monitoring and Review**
+
+## **6.1 Overview**
+To ensure **ongoing compliance** with **ISO 27001:2022**, Rate follows a structured **monitoring and review** process for all applicable controls. The **Statement of Applicability (SoA)** is **reviewed, updated, and audited** on a **regular basis**.
+
+---
+
+## **6.2 Review Frequency and Criteria**
+The **Statement of Applicability (SoA)** is **formally reviewed:**
+- **Annually** as part of Rate’s **ISMS internal audit process**.
+- **After any major change** in **technology, business processes, or risk landscape**.
+- **Following security incidents** that require **policy updates or control adjustments**.
+- **Upon regulatory changes** affecting information security compliance (**e.g., GDPR updates**).
+
+---
+
+## **6.3 Monitoring of Controls**
+Each applicable **Annex A control** is **continuously monitored** through:
+- **Access Logs & Security Audits:** VPN, Google Workspace, NAS, and Hetzner Cloud.
+- **Backup Integrity Checks:** Monthly and annual full validation.
+- **Incident Response Reviews:** Post-incident analysis and remediation.
+- **Physical Security Audits:** NAS and development server lock compliance.
+- **Employee Awareness Training Records:** Verification of participation.
+
+**Audit Documentation:**  
+All **audit findings, corrective actions, and resolutions** are **recorded** in:
+- **Google Drive (Audit Logs, Policy Updates)**
+- **Incident Management Logs**
+- **Security Training Reports**
+- **Backup Testing Reports**
+
+---
+
+## **6.4 Non-Conformities and Corrective Actions**
+If **non-conformities** are identified during an **internal audit** or **external ISO certification assessment**, Rate will:
+1. **Document the issue** in the **Corrective Actions Log**.
+2. **Assign responsibility** for remediation (CEO or Managing Director).
+3. **Implement corrective actions** within a defined timeframe.
+4. **Reassess compliance** after remediation is completed.
+
+---
+
+# **7. Approval and Versioning**
+
+## **7.1 Approval and Ownership**
+The **Statement of Applicability (SoA)** is formally **approved** and maintained by **Rate’s top management**.
+
+- **Document Owner:** CEO
+- **Review Authority:** Managing Director
+- **Implementation Oversight:** Team Lead Developer
+
+---
+
+## **7.2 Version Control and Recordkeeping**
+The **SoA document is version-controlled**, ensuring that all updates are **properly documented**.
+
+| **Version** | **Date** | **Change Description** | **Approved By** |
+|------------|---------|----------------------|---------------|
+| **1.0** | [Initial Date] | Initial draft | CEO |
+| **1.1** | [Update Date] | Updated Annex A mapping | CEO |
+| **1.2** | [Update Date] | Added continuous monitoring section | CEO |
+
+- **Retention Policy:** SoA versions are **retained for 3 years** for audit purposes.
+- **Storage Location:** Google Drive (ISO Documentation Folder).
+- **Access Control:** Restricted to **CEO, Managing Director, and Team Lead Developer**.
+
+---
+
+## **7.3 Next Scheduled Review**
+- **Next Review Date:** [Insert Date]
+- **Reviewer:** Managing Director
+- **Purpose:** Annual review and updates based on new risks, incidents, and compliance changes.
+
+---
