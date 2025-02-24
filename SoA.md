@@ -252,8 +252,8 @@ All versions of the SoA are version-controlled and retained for 3 years.
 
 ## **6.3 Monitoring of Controls**
 Each applicable **Annex A control** is **continuously monitored** through:
-- **Access Logs & Security Audits:** VPN, Google Workspace, NAS, and Hetzner Cloud.
-- **Backup Integrity Checks:** Monthly and annual full validation.
+- **Security Audits:** VPN, Google Workspace, NAS, and Hetzner Cloud.
+- **Backup Integrity Checks:** Monthly restoration test and annual full validation.
 - **Incident Response Reviews:** Post-incident analysis and remediation.
 - **Physical Security Audits:** NAS and development server lock compliance.
 - **Employee Awareness Training Records:** **Security awareness training completion is tracked via employee sign-off forms. Reports are stored in Google Drive and reviewed annually by the Managing Director.**  
@@ -268,8 +268,8 @@ All **audit findings, corrective actions, and resolutions** are **recorded** in:
 **Control Performance Metrics (ISO A.9.2)**  
 Each control is reviewed based on **performance indicators**, ensuring its effectiveness:
 - **Access Control (A.9)** →  
-  - Access logs are **reviewed quarterly** for unauthorized access attempts.  
-  - **MFA enforcement compliance** is monitored across all systems.
+ 
+
 - **Backup & Disaster Recovery (A.12)** →  
   - Monthly backup restoration tests must have a **95% success rate**.  
   - Annual full backup validation must meet a **100% integrity check**.
@@ -277,7 +277,6 @@ Each control is reviewed based on **performance indicators**, ensuring its effec
   - **Critical incidents must be resolved within 24 hours**.  
   - All reported incidents are logged, with a **root cause analysis completed within 7 days**.
 - **Physical Security (A.11)** →  
-  - Office security logs (entry access records) are **reviewed semi-annually**.  
   - NAS and Development Server access is **checked during quarterly audits**.
  
 ---
