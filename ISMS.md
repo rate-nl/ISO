@@ -281,7 +281,7 @@ This policy applies to all personnel accessing Rate's information assets, includ
 
 ## 6. Monitoring and Logging
 - **Logs:** Collected from all on-premises and cloud systems.
-- **Retention:** Logs are retained for at least one year.
+- **Retention:** Logs are retained.
 
 ## 7. Alternative Secure Access Methods
 In the event of **VPN failure**, an **alternative secure access method** must be available to ensure continued access to critical systems. This may include:
@@ -393,7 +393,7 @@ A security incident is any event that compromises the confidentiality, integrity
 - **Incident reviews are conducted annually** to match the Risk Treatment Plan (RTP).
 
 ## 10. Compliance and Reporting
-- Incident logs are retained for **3 years** in Google Drive.
+- Incident logs are retained in Google Drive.
 - The plan adheres to **ISO/IEC 27001:2022** and **GDPR** requirements.
 
 *Note: Employees will be notified of policy updates.*
@@ -511,32 +511,31 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 - **Documentation:** Logs include asset classification, ownership, and review records.
 
 ## 4. Acceptable Use and Protection Measures
-- **Acceptable Use:** Annual acknowledgment of the Acceptable Use Policy is required.
 - **Device Security:** Full disk encryption and automatic updates are mandatory.
 - **Data Storage:** Role-based access controls protect sensitive data.
 - **Backups:** Daily backups with **monthly restoration tests and an annual full validation check**.
 
 ## 5. Access Control and Data Security (Annex A.9)
 - **Access Management:** Controlled by the Tech Lead with CEO approval for high-privilege roles.
-- **Log Retention:** Access logs are retained for three years.
+- **Log Retention:** Access logs are retained.
 - **Access Revocation:** Immediate action for role changes or departures, with records documented.
 - **Remote Access:** VPN is required for development server access.
 
 ## 6. Data Retention and Disposal (Annex A.8, A.11)
-- **Retention Periods:** Backups retained for one month; incident logs for three years.
+- **Retention Periods:** Backups retained for one month.
 - **Secure Disposal:** Hardware is securely wiped and destroyed.
 - **Disposal Records:** Logs include date, method, approver details, and retention for three years.
 
 ## 7. Monitoring and Review (Annex A.12, A.15)
 - **Audit Documentation:** Managed by the Managing Director, documenting findings, corrective actions, and dates.
 - **Policy Review:** Annually conducted with updates and actions logged.
-- **Audit Record Retention:** All audit reports and supporting documents retained for three years.
+- **Audit Record Retention:** All audit reports and supporting documents retained.
 
 ## 8. Roles and Responsibilities (Annex A.7, A.6)
 - **Managing Director:** Manages inventory, risk assessments, audit logs, and ensures Statement of Applicability (SoA) mappings are current.
 - **Team Lead Developer:** Conducts asset reviews, oversees backups, and verifies disposal records.
 - **Asset Owners:** Maintain classification records and ensure security controls are applied.
-- **Employees:** Follow policies, annually acknowledge requirements, and report security issues.
+- **Employees:** Follow policies, and report security issues.
 
 ## 9. Compliance (ISO/IEC 27001 Annex A Controls and SoA Mapping)
 This policy aligns with ISO/IEC 27001:2022 Annex A controls, and their applicability is documented in the Statement of Applicability (SoA):
