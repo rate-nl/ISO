@@ -278,11 +278,10 @@ This policy applies to all personnel accessing Rate's information assets, includ
 - Records are maintained for audit purposes.
 
 ## 5. Authentication and Password Management
-- **Password Policy:** Minimum 12 characters, 90-day expiration, and secure storage in LastPass.
+- **Password Policy:** Minimum 12 characters, and secure storage in LastPass.
 
 ## 6. Monitoring and Logging
 - **Logs:** Collected from all on-premises and cloud systems.
-- **Review Frequency:** The Tech Lead reviews logs annually.
 - **Retention:** Logs are retained for at least one year.
 
 ## 7. Alternative Secure Access Methods
@@ -298,7 +297,7 @@ In the event of **VPN failure**, an **alternative secure access method** must be
 - Production servers are cloud-hosted on Hetzner.
 
 ## 9. Responsibilities
-- **Tech Lead:** Manages access, reviews logs annually, and oversees configurations.
+- **Tech Lead:** Manages access, and oversees configurations.
 - **CEO:** Approves sensitive access requests and enforces compliance.
 - **Developers:** Ensure secure implementation of access control measures in systems they develop.
 - **All Employees:** Maintain laptop security and promptly report incidents.
@@ -531,7 +530,6 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 - **Disposal Records:** Logs include date, method, approver details, and retention for three years.
 
 ## 7. Monitoring and Review (Annex A.12, A.15)
-- **Log Reviews:** Conducted **annually**, with results, corrective actions, and completion dates recorded.
 - **Audit Documentation:** Managed by the Managing Director, documenting findings, corrective actions, and dates.
 - **Policy Review:** Annually conducted with updates and actions logged.
 - **Audit Record Retention:** All audit reports and supporting documents retained for three years.
