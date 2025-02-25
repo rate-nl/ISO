@@ -247,67 +247,101 @@ This document will be reviewed **annually** and **after any significant changes*
 # Access Control Policy
 
 ## 1. Purpose
+
 This Access Control Policy defines guidelines for managing access to Rate's information systems, cloud applications, and on-premises infrastructure. It ensures proper role-based access and aligns with ISO/IEC 27001:2022 Annex A.5.15 requirements.
 
 ## 2. Scope
+
 This policy applies to all personnel accessing Rate's information assets, including:
+
 - **On-Premises Systems and Networks:**
   - `dashboard.rate.nl` (Global Admin and Client-specific)
   - `dashdev.rate.nl` (Test & Development)
   - NAS (Backup System) - Secured with locked storage
   - Development Server - Secured with locked storage
-  - WiFi Networks: "Rate.nl employee," "Rate.nl guest," and "KH_OFFICES"
+  - WiFi Networks: "Rate.nl employee," "Rate.nl guest," and "KH\_OFFICES"
 - **Cloud Applications and Providers:** Google Drive, Google Workspace, GitHub, Stack Overflow, Exact Online, WordPress, and Hetzner Cloud
 - **Remote Access Systems:** Remote Desktop Server, Local VPN (Hetzner), and employee-managed laptops
 
 ## 3. Access Control Principles
+
 - **Least Privilege:** Limit access to the minimum necessary for tasks.
 - **Need-to-Know:** Restrict sensitive data access.
 - **Role-Based Access Control (RBAC):** Assign permissions based on job roles.
 - **Separation of Duties:** Divide security-sensitive responsibilities.
 
 ## 4. User Access Management
+
 ### **4.1. Registration and De-registration**
+
 - **Registration:** Requests are submitted to the Tech Lead via email. CEO approval is required for high-privilege access. Requests are stored in email records, which serve as documentation.
 - **De-registration:** The CEO instructs the Tech Lead via email to revoke access upon role change or departure.
 - **Documentation:** Access approvals and removals are retained in email records.
 
 ### **4.2. Provisioning and Review**
+
 - Developers are responsible for ensuring secure implementation of access control measures within the systems they develop.
 - Records are maintained for audit purposes.
+- **User Access Review Frequency:** Access permissions are reviewed \*\*annually \*\*to ensure only authorized users retain access to systems.
+
+### **4.3. Onboarding and Offboarding Process**&#x20;
+
+#### **Onboarding**
+
+1. **User Registration:** HR submits an onboarding request to the Managing Director.
+2. **Access Provisioning:** IT provisions necessary accounts (VPN, email, internal platforms) with **role-based access**.
+3. **Security Training:** New employees must complete security awareness training within the first week.
+4. **NDA Agreement:** Employees sign a **Confidentiality Agreement (NDA)** before accessing sensitive data.
+5. **Asset Assignment:** Laptops, security tokens, and other assets are logged in the asset inventory.
+
+#### **Offboarding**
+
+1. **Account Deactivation:** The **CEO or Managing Director** instructs the **Tech Lead** to revoke all access.
+2. **Asset Return:** Employees return laptops, access cards, and security tokens to the **Managing Director**.
+3. **Exit Security Review:** The Managing Director ensures final security clearance and logs any security concerns related to the departing employee.
 
 ## 5. Authentication and Password Management
+
 - **Password Policy:** Minimum 12 characters, and secure storage in LastPass.
 
 ## 6. Monitoring and Logging
+
 - **Logs:** Collected from all on-premises and cloud systems.
-- **Retention:** Logs are retained.
+- **Retention:** Logs are retained for **1 year**&#x20;
 
 ## 7. Alternative Secure Access Methods
+
 In the event of **VPN failure**, an **alternative secure access method** must be available to ensure continued access to critical systems. This may include:
+
 - Direct secure SSH access with IP whitelisting.
 - Temporary access via emergency backup accounts (only activated under CEO approval).
 - Additional secure remote access solutions evaluated based on security needs.
 
 ## 8. Physical Access Control
+
 - Building entry requires key card access.
 - Office access is secured by key.
 - NAS and Development Server are stored under lock.
 - Production servers are cloud-hosted on Hetzner.
 
 ## 9. Responsibilities
+
 - **Tech Lead:** Manages access, and oversees configurations.
 - **CEO:** Approves sensitive access requests and enforces compliance.
 - **Developers:** Ensure secure implementation of access control measures in systems they develop.
 - **All Employees:** Maintain laptop security and promptly report incidents.
 
 ## 10. Policy Review
+
 The policy undergoes **annual review** or immediate revision after major changes.
 
 ## 11. Compliance
+
 Non-compliance may result in disciplinary actions or legal consequences.
 
 *Note: Employees will be notified of all policy updates.*
+
+
 
 ---
 
