@@ -584,16 +584,11 @@ The following controls are **selected** as they address specific security risks 
 | **A.18 Compliance** | Ensures legal, regulatory, and contractual compliance. | Aligns ISMS with GDPR, ISO 27001, and other regulations. | **Incident Management and Response Plan** _(Includes compliance monitoring)_ | CEO |
 
 
-## **3. Justification for Control Exclusions**
-Some **ISO 27001 Annex A controls** are **excluded** because they are **not applicable** to Rate’s ISMS scope. These exclusions are justified as follows:
-
-| **Excluded Control** | **Justification** |
-|---------------------|------------------|
-| **A.14.2.9 - Outsourced Development** | Rate does **not** outsource development; all software development is done in-house. |
-| **A.10.1.1 - Key Management** | Rate does **not** operate a large-scale PKI or issue digital certificates. |
-| **A.11.2.6 - Secure Disposal of Media** | Rate operates entirely cloud-based, meaning no physical media is used for sensitive data storage. |
-
-The **exclusions** are documented to ensure **compliance with ISO 27001:2022**.
+## **3.2 Justification for Exclusions**
+All Annex A controls **not explicitly included in Section 2** are considered **not applicable** to Rate’s ISMS scope. These exclusions are based on:
+- The absence of relevant business operations requiring these controls.
+- The use of alternative security measures to mitigate associated risks.
+- The reliance on cloud-based infrastructure, reducing physical security concerns.
 
 ---
 
