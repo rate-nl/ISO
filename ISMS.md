@@ -584,7 +584,7 @@ The following controls are **selected** as they address specific security risks 
 | **A.18 Compliance** | Ensures legal, regulatory, and contractual compliance. | Aligns ISMS with GDPR, ISO 27001, and other regulations. | **Incident Management and Response Plan** _(Includes compliance monitoring)_ | CEO |
 
 
-## **3.2 Justification for Exclusions**
+## **3. Justification for Exclusions**
 All Annex A controls **not explicitly included in Section 2** are considered **not applicable** to Rate’s ISMS scope. These exclusions are based on:
 - The absence of relevant business operations requiring these controls.
 - The use of alternative security measures to mitigate associated risks.
