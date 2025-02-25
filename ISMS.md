@@ -434,94 +434,114 @@ A security incident is any event that compromises the confidentiality, integrity
 
 ---
 
-# Business Continuity and Disaster Recovery Plan (BCDRP)  
-**Aligned with ISO/IEC 27001:2022 and Integrated with Risk Assessment and Treatment Plan**  
+# Business Continuity and Disaster Recovery Plan (BCDRP)
 
-## **1. Purpose**  
-This plan outlines procedures for maintaining business operations and recovering from disruptions at **Rate**, ensuring continuity of services and rapid recovery from disasters. It incorporates controls from the Risk Assessment and Treatment Plan (RTP).  
+**Aligned with ISO/IEC 27001:2022 and Integrated with Risk Assessment and Treatment Plan**
 
-## **2. Scope**  
-Covers all systems, employees, cloud services, and processes supporting **Rate's platform and operations**.  
+## **1. Purpose**
 
-## **3. Key Contacts**  
-- **Disaster Recovery Team:**  
-  - **CEO (Head)** – Primary decision-maker  
-  - **Managing Director** – Operations and communications  
-  - **Team Lead Developer** – Technical recovery lead  
-- **Contact Email:** info@rate.nl  
-- **Emergency Contact Phone Number:** 010 – 822 52 22  
+This plan outlines procedures for maintaining business operations and recovering from disruptions at **Rate**, ensuring continuity of services and rapid recovery from disasters. It incorporates controls from the Risk Assessment and Treatment Plan (RTP).
 
-## **4. Critical Systems and Dependencies**  
-| **System/Service** | **Provider** | **Backup Location** | **RTO** | **RPO** | **Owner** |
-|--------------------|-------------|-------------------|--------|--------|---------|
-| **Production Hosting** | Hetzner (Primary) | NAS  | 4 hours | 30 minutes | Team Lead Developer |
-| **Secondary Hosting (Provider Failure)** | Azure | Cloud | 4 hours | 30 minutes | Team Lead Developer |
-| **Source Code Repository** | GitHub | Cloud with integrity checks | 1 hour | Real-time | Team Lead Developer |
-| **Backups** | NAS (Local) | Monthly restoration tests & **annual full integrity validation** | N/A | 30 minutes | Team Lead Developer |
-| **VPN & Remote Access** | Local VPN on Dev Server | N/A | Immediate | None | Managing Director |
-| **Communication Tools** | Google Workspace (email, docs) | Google Cloud | Immediate | None | Managing Director |
-| **HR and Compliance System** | Exact Online | Cloud | 2 hours | 1 hour | Managing Director |
-| **Password Manager** | LastPass | Encrypted Cloud | 1 hour | 30 minutes | CEO |
+## **2. Scope**
 
-## **5. Backup and Recovery Procedures**  
+Covers all systems, employees, cloud services, and processes supporting **Rate's platform and operations**.
+
+## **3. Key Contacts**
+
+- **Disaster Recovery Team:**
+  - **CEO (Head)** – Primary decision-maker
+  - **Managing Director** – Operations and communications
+  - **Team Lead Developer** – Technical recovery lead
+- **Contact Email:** [info@rate.nl](mailto\:info@rate.nl)
+- **Emergency Contact Phone Number:** 010 – 822 52 22
+
+## **4. Critical Systems and Dependencies**
+
+| **System/Service**                       | **Provider**                   | **Backup Location**                                              | **RTO**   | **RPO**    | **Owner**           |
+| ---------------------------------------- | ------------------------------ | ---------------------------------------------------------------- | --------- | ---------- | ------------------- |
+| **Production Hosting**                   | Hetzner (Primary)              | NAS                                                              | 4 hours   | 30 minutes | Team Lead Developer |
+| **Secondary Hosting (Provider Failure)** | Azure                          | Cloud                                                            | 4 hours   | 30 minutes | Team Lead Developer |
+| **Source Code Repository**               | GitHub                         | Cloud with integrity checks                                      | 1 hour    | Real-time  | Team Lead Developer |
+| **Backups**                              | NAS (Local)                    | Monthly restoration tests & **annual full integrity validation** | N/A       | 30 minutes | Team Lead Developer |
+| **VPN & Remote Access**                  | Local VPN on Dev Server        | N/A                                                              | Immediate | None       | Managing Director   |
+| **Communication Tools**                  | Google Workspace (email, docs) | Google Cloud                                                     | Immediate | None       | Managing Director   |
+| **HR and Compliance System**             | Exact Online                   | Cloud                                                            | 2 hours   | 1 hour     | Managing Director   |
+| **Password Manager**                     | LastPass                       | Encrypted Cloud                                                  | 1 hour    | 30 minutes | CEO                 |
+
+## **5. Backup and Recovery Procedures**
+
 ### **5.1 Database Backups (Critical)**
-- **Full Daily Backup:** 03:00 (retained 1 month) – Stored on NAS and cloud  
-- **Incremental Backups:** Every 4 hours (retained 1 month)  
-- **Transaction Log Backups:** Every 30 minutes (retained 1 month)  
-- **Testing:** Monthly restoration from backups & **annual full validation check**  
 
-### **5.2 Production Application Folder Backups**  
-- **Full Daily Backup:** 03:00 (retained 1 month) – Stored on NAS and cloud  
-- **Testing:** Monthly restoration and integrity checks & **annual full validation check**  
+- **Full Daily Backup:** 03:00 (retained 1 month) – Stored on NAS and cloud
+- **Incremental Backups:** Every 4 hours (retained 1 month)
+- **Transaction Log Backups:** Every 30 minutes (retained 1 month)
+- **Testing:** Monthly restoration from backups & **annual full validation check**
+- **Backup Retention Policy:** *(Updated)* Backups retained for **one month for standard data, one year for critical logs**.
 
-### **5.3 Source Code Backups**  
-- **Managed In:** GitHub  
+### **5.2 Production Application Folder Backups**
 
-### **5.4 Backup Retention Policy:**  
-- **Location:** Local NAS 
+- **Full Daily Backup:** 03:00 (retained 1 month) – Stored on NAS and cloud
+- **Testing:** Monthly restoration and integrity checks & **annual full validation check**
+
+### **5.3 Source Code Backups**
+
+- **Managed In:** GitHub
+
+### **5.4 Backup Retention Policy:**
+
+- **Location:** Local NAS
 - **Retention Period:** 3 Years.
 
-## **6. Disaster Scenarios, RTO, and RPO**  
-| **Scenario** | **Action Plan** | **Lead** | **RTO (Recovery Time Objective)** | **RPO (Recovery Point Objective)** |
-|--------------|----------------|----------|----------------------------------|-----------------------------------|
-| **6.1 Production Server Failure (Hetzner)** | Provision a new Hetzner server, restore from repository backups | Team Lead Developer | 4 hours | 30 minutes |
-| **6.2 Cloud Provider Failure (Hetzner Unavailable)** | Deploy server on Azure, restore backups, notify customers | Team Lead Developer | 4 hours | 30 minutes |
-| **6.3 Office Internet Outage** | Use alternative access means like whitelisting new ips in the firewall.| Managing Director | Immediate | None |
-| **6.4 Data Leak or Malware Attack** | Isolate systems, notify Managing Director, conduct forensic analysis | Managing Director | 2 hours | 30 minutes |
-| **6.5 Calamities (Fire, Flood, Physical Theft)** | Follow Groothandelsgebouw escape plan, secure backups offsite | CEO | As feasible | 30 minutes |
-| **6.6 Loss of LastPass (Password Manager)** | Restore from encrypted cloud backup, reset passwords for critical systems | CEO | 1 hour | 30 minutes |
-| **6.7 SSL Certificate Expiry for Website/Platform** | **Enable SSL auto-renewals are enabled** or set calendar reminders for manual renewal checks | Team Lead Developer | 1 hour | None |
+## **6. Disaster Scenarios, RTO, and RPO**
 
-## **7. Roles and Responsibilities**  
-| **Role** | **Responsibilities During Disaster** |
-|----------|-----------------------------------|
-| **CEO (Head of Disaster Recovery Team)** | Authorizes major decisions, communicates with customers and stakeholders |
-| **Managing Director** | Oversees recovery operations, manages communications, maintains incident logs |
-| **Team Lead Developer** | Executes technical recovery steps, restores servers, maintains backup records |
-| **All Employees** | Follow the BCDRP procedures and report security incidents immediately |
+| **Scenario**                                         | **Action Plan**                                                                              | **Lead**            | **RTO (Recovery Time Objective)** | **RPO (Recovery Point Objective)** |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------- | --------------------------------- | ---------------------------------- |
+| **6.1 Production Server Failure (Hetzner)**          | Provision a new Hetzner server, restore from repository backups                              | Team Lead Developer | 4 hours                           | 30 minutes                         |
+| **6.2 Cloud Provider Failure (Hetzner Unavailable)** | Deploy server on Azure, restore backups, notify customers                                    | Team Lead Developer | 4 hours                           | 30 minutes                         |
+| **6.3 Office Internet Outage**                       | Use alternative access means like whitelisting new ips in the firewall.                      | Managing Director   | Immediate                         | None                               |
+| **6.4 Data Leak or Malware Attack**                  | Isolate systems, notify Managing Director, conduct forensic analysis                         | Managing Director   | 2 hours                           | 30 minutes                         |
+| **6.5 Calamities (Fire, Flood, Physical Theft)**     | Follow Groothandelsgebouw escape plan, secure backups offsite                                | CEO                 | As feasible                       | 30 minutes                         |
+| **6.6 Loss of LastPass (Password Manager)**          | Restore from encrypted cloud backup, reset passwords for critical systems                    | CEO                 | 1 hour                            | 30 minutes                         |
+| **6.7 SSL Certificate Expiry for Website/Platform**  | **Enable SSL auto-renewals are enabled** or set calendar reminders for manual renewal checks | Team Lead Developer | 1 hour                            | None                               |
 
-## **8. Testing and Review (ISO Clause 8.1 & 9.1)**  
-- **Testing Frequency:** Annually (full disaster recovery drill) with monthly backup restoration tests  
+## **7. Roles and Responsibilities**
+
+| **Role**                                 | **Responsibilities During Disaster**                                          |
+| ---------------------------------------- | ----------------------------------------------------------------------------- |
+| **CEO (Head of Disaster Recovery Team)** | Authorizes major decisions, communicates with customers and stakeholders      |
+| **Managing Director**                    | Oversees recovery operations, manages communications, maintains incident logs |
+| **Team Lead Developer**                  | Executes technical recovery steps, restores servers, maintains backup records |
+| **All Employees**                        | Follow the BCDRP procedures and report security incidents immediately         |
+
+## **8. Testing and Review (ISO Clause 8.1 & 9.1)**
+
+- **Testing Frequency:** every 3 years (full disaster recovery drill) with monthly backup restoration tests
 - **Test Components:** Server restoration, VPN failover, LastPass recovery
-- **Review Cycle:** **Annual** or after any major incident or infrastructure change  
-- **Responsible for Testing:** Managing Director  
+- **Review Cycle:** **Annual** or after any major incident or infrastructure change
+- **Responsible for Testing:** Managing Director
 
 
-## **9. Compliance and Recordkeeping (ISO Clause 9.2 & 9.3)**  
-| **Record** | **Retention Period** | **Storage Location** | **Responsible Owner** |
-|------------|--------------------|---------------------|---------------------|
-| Backups | 3 years | NAS | Team Lead Developer |
-| Incident Logs | 3 years | Google Drive | Managing Director |
 
-### **Compliance with Standards:**  
- **ISO/IEC 27001:2022** (Clauses 9.2, 9.3,)  
- **GDPR (Article 32: Security of Processing)**  
+## **9. Compliance and Recordkeeping (ISO Clause 9.2 & 9.3)**
 
-## **10. Review and Approval**  
-- **Reviewed By:** Managing Director  
-- **Approved By:** CEO  
-- **Date of Last Review:** [Insert Date]  
-- **Next Scheduled Review:** [Insert Date]  
+| **Record**    | **Retention Period** | **Storage Location** | **Responsible Owner** |   |
+| ------------- | -------------------- | -------------------- | --------------------- | - |
+| Backups       | 3 years              | NAS                  | Team Lead Developer   |   |
+| Incident Logs | 3 years              | Google Drive         | Managing Director     |   |
+|               |                      |                      |                       |   |
+
+### **Compliance with Standards:**
+
+**ISO/IEC 27001:2022** (Clauses 9.2, 9.3,)\
+**GDPR (Article 32: Security of Processing)**
+
+## **10. Review and Approval**
+
+- **Reviewed By:** Managing Director
+- **Approved By:** CEO
+- **Date of Last Review:** [Insert Date]
+- **Next Scheduled Review:** [Insert Date]
+
 
 
 ---
@@ -551,6 +571,7 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
     - **Internal** – Non-sensitive company information meant for employees.
     - **Confidential** – Restricted data with controlled access.
     - **Restricted** – Highly sensitive data requiring strict security measures.
+  - **All assets in the inventory must be classified accordingly** and updated in the asset inventory list.
   - Asset classification must be reviewed annually to ensure proper security controls are in place.
 
 ## 4. Acceptable Use and Protection Measures
@@ -562,13 +583,13 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 ## 5. Access Control and Data Security (Annex A.9)
 
 - **Access Management:** Controlled by the Tech Lead with CEO approval for high-privilege roles.
-- **Log Retention:** Access logs are retained for **one year**  to align with compliance requirements.
+- **Log Retention:** Access logs are retained for **one year** to align with compliance requirements.
 - **Access Revocation:** Immediate action for role changes or departures, with records documented.
 - **Remote Access:** VPN is required for development server access.
 
 ## 6. Data Retention and Disposal (Annex A.8, A.11)
 
-- **Retention Periods:** Backups retained for **one month for standard data, one year for critical logs**&#x20;
+- **Retention Periods:** Backups retained for **one month for standard data, one year for critical logs** .
 - **Secure Disposal:** Hardware is securely wiped and destroyed.
 - **Disposal Records:** Logs include date, method, approver details, and retention for three years.
 
@@ -584,6 +605,7 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 - **Team Lead Developer:** Conducts asset reviews, oversees backups, and verifies disposal records.
 - **Asset Owners:** Maintain classification records and ensure security controls are applied.
 - **Employees:** Follow policies, and report security issues.
+
 
 
 
