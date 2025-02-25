@@ -529,12 +529,15 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 # Asset Management and Data Protection Policy
 
 ## 1. Purpose
+
 This policy defines procedures for managing and protecting Rate's information assets, ensuring compliance with ISO/IEC 27001:2022.
 
 ## 2. Scope
+
 Applies to all digital, physical, and cloud-based assets accessed by Rate employees, contractors, and third parties.
 
 ## 3. Asset Inventory and Ownership
+
 - **Asset Inventory:** Managed by the Managing Director, covering hardware, software, cloud services, and backups.
 - **Asset Owners:** Responsible for security, maintenance, risk assessments, and classification.
 - **Role Assignments:**
@@ -542,33 +545,47 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
   - **Software/Cloud Services:** Managing Director.
   - **Data (including backups):** Team Lead Developer and Asset Owners.
 - **Documentation:** Logs include asset classification, ownership, and review records.
+- **Asset Classification:**
+  - Assets are categorized into the following levels:
+    - **Public** – Information freely available to the public.
+    - **Internal** – Non-sensitive company information meant for employees.
+    - **Confidential** – Restricted data with controlled access.
+    - **Restricted** – Highly sensitive data requiring strict security measures.
+  - Asset classification must be reviewed annually to ensure proper security controls are in place.
 
 ## 4. Acceptable Use and Protection Measures
+
 - **Device Security:** Full disk encryption and automatic updates are mandatory.
 - **Data Storage:** Role-based access controls protect sensitive data.
 - **Backups:** Daily backups with **monthly restoration tests and an annual full validation check**.
 
 ## 5. Access Control and Data Security (Annex A.9)
+
 - **Access Management:** Controlled by the Tech Lead with CEO approval for high-privilege roles.
-- **Log Retention:** Access logs are retained.
+- **Log Retention:** Access logs are retained for **one year**  to align with compliance requirements.
 - **Access Revocation:** Immediate action for role changes or departures, with records documented.
 - **Remote Access:** VPN is required for development server access.
 
 ## 6. Data Retention and Disposal (Annex A.8, A.11)
-- **Retention Periods:** Backups retained for one month.
+
+- **Retention Periods:** Backups retained for **one month for standard data, one year for critical logs**&#x20;
 - **Secure Disposal:** Hardware is securely wiped and destroyed.
 - **Disposal Records:** Logs include date, method, approver details, and retention for three years.
 
 ## 7. Monitoring and Review (Annex A.12, A.15)
+
 - **Audit Documentation:** Managed by the Managing Director, documenting findings, corrective actions, and dates.
 - **Policy Review:** Annually conducted with updates and actions logged.
 - **Audit Record Retention:** All audit reports and supporting documents retained.
 
 ## 8. Roles and Responsibilities (Annex A.7, A.6)
+
 - **Managing Director:** Manages inventory, risk assessments, audit logs, and ensures Statement of Applicability (SoA) mappings are current.
 - **Team Lead Developer:** Conducts asset reviews, oversees backups, and verifies disposal records.
 - **Asset Owners:** Maintain classification records and ensure security controls are applied.
 - **Employees:** Follow policies, and report security issues.
+
+
 
 ---
 
