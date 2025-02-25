@@ -566,24 +566,23 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 
 The following controls are **selected** as they address specific security risks identified in the **Risk Assessment and Risk Treatment Plan (RTP)**.
 
-| **Annex A Control** | **Control Description** | **Justification** | **Related Policy/Process** | **Responsible Role** |
+| **Annex A Control** | **Control Description** | **Justification** | **Updated Related Policy/Process** | **Responsible Role** |
 |--------------------|----------------------|-----------------|--------------------|------------------|
-| **A.5 Information Security Policies** | Establishes security policies aligned with ISO 27001. | Required for ISMS governance and compliance. | Information Security Policy | CEO |
-| **A.6 Organization of Information Security** | Defines security roles and responsibilities. | Ensures accountability and security governance. | ISMS Roles & Responsibilities | CEO, Managing Director |
-| **A.7 Human Resource Security** | Covers security awareness and employee lifecycle controls. | Reduces insider threats and enforces security training. | Security Awareness Training | Managing Director |
-| **A.8 Asset Management** | Identifies, classifies, and protects information assets. | Prevents data loss and unauthorized access. | Asset Management Policy | Managing Director, Team Lead Developer |
-| **A.9 Access Control** | Implements Role-Based Access Control (RBAC), authentication, and authorization. | Protects against unauthorized access. | Access Control Policy | Tech Lead Developer |
-| **A.10 Cryptography** | Ensures encryption of sensitive data (e.g., passwords, backups). | Protects confidentiality and integrity of stored and transmitted data. | Secure Encryption Standards | Team Lead Developer |
-| **A.11 Physical and Environmental Security** | Protects physical access to critical assets (office, NAS, servers). | Prevents unauthorized access to hardware. | Physical Security Measures | Managing Director |
-| **A.12 Operations Security** | Ensures secure system administration, logging, and patch management. | Prevents system vulnerabilities and unauthorized system changes. | Backup & Patch Management Policy | Team Lead Developer |
-| **A.13 Communications Security** | Secures internal and external communications (VPN, encrypted email). | Protects data in transit against interception. | Secure Communication Standards | Tech Lead Developer |
-| **A.14 System Acquisition, Development, and Maintenance** | Applies security best practices in software development. | Prevents vulnerabilities in software. | Secure Development Practices | Team Lead Developer |
-| **A.15 Supplier Relationships** | Ensures security in third-party and vendor agreements. | Mitigates supply chain risks. | Supplier Security Policy | Managing Director |
-| **A.16 Information Security Incident Management** | Defines incident response, reporting, and resolution procedures. | Ensures a structured response to security incidents. | Incident Management and Response Plan | Managing Director |
-| **A.17 Business Continuity Management** | Ensures business continuity planning and disaster recovery. | Maintains availability of critical services. | Business Continuity & Disaster Recovery Plan | CEO, Managing Director |
-| **A.18 Compliance** | Ensures legal, regulatory, and contractual compliance. | Aligns ISMS with GDPR, ISO 27001, and other regulations. | Compliance Monitoring & Legal Requirements | CEO |
+| **A.5 Information Security Policies** | Establishes security policies aligned with ISO 27001. | Required for ISMS governance and compliance. | **Information Security Policy** | CEO |
+| **A.6 Organization of Information Security** | Defines security roles and responsibilities. | Ensures accountability and security governance. | **ISMS Roles & Responsibilities** | CEO, Managing Director |
+| **A.7 Human Resource Security** | Covers security awareness and employee lifecycle controls. | Reduces insider threats and enforces security training. | **ISMS Roles & Responsibilities** _(Covers onboarding & offboarding security measures)_ | Managing Director |
+| **A.8 Asset Management** | Identifies, classifies, and protects information assets. | Prevents data loss and unauthorized access. | **Asset Management and Data Protection Policy** | Managing Director, Team Lead Developer |
+| **A.9 Access Control** | Implements Role-Based Access Control (RBAC), authentication, and authorization. | Protects against unauthorized access. | **Access Control Policy** | Tech Lead Developer |
+| **A.10 Cryptography** | Ensures encryption of sensitive data (e.g., passwords, backups). | Protects confidentiality and integrity of stored and transmitted data. | **Access Control Policy** _(Covers encryption requirements)_ | Team Lead Developer |
+| **A.11 Physical and Environmental Security** | Protects physical access to critical assets (office, NAS, servers). | Prevents unauthorized access to hardware. | **Asset Management and Data Protection Policy** _(Covers physical security elements)_ | Managing Director |
+| **A.12 Operations Security** | Ensures secure system administration, logging, and patch management. | Prevents system vulnerabilities and unauthorized system changes. | **Business Continuity & Disaster Recovery Plan** _(Covers backup and patching)_ | Team Lead Developer |
+| **A.13 Communications Security** | Secures internal and external communications (VPN, encrypted email). | Protects data in transit against interception. | **Access Control Policy** _(Covers VPN & authentication security)_ | Tech Lead Developer |
+| **A.14 System Acquisition, Development, and Maintenance** | Applies security best practices in software development. | Prevents vulnerabilities in software. | **Access Control Policy** _(Ensures secure development practices)_ | Team Lead Developer |
+| **A.15 Supplier Relationships** | Ensures security in third-party and vendor agreements. | Mitigates supply chain risks. | **Asset Management and Data Protection Policy** _(Includes supplier security requirements)_ | Managing Director |
+| **A.16 Information Security Incident Management** | Defines incident response, reporting, and resolution procedures. | Ensures a structured response to security incidents. | **Incident Management and Response Plan** | Managing Director |
+| **A.17 Business Continuity Management** | Ensures business continuity planning and disaster recovery. | Maintains availability of critical services. | **Business Continuity & Disaster Recovery Plan** | CEO, Managing Director |
+| **A.18 Compliance** | Ensures legal, regulatory, and contractual compliance. | Aligns ISMS with GDPR, ISO 27001, and other regulations. | **Incident Management and Response Plan** _(Includes compliance monitoring)_ | CEO |
 
----
 
 ## **3. Justification for Control Exclusions**
 Some **ISO 27001 Annex A controls** are **excluded** because they are **not applicable** to Rate’s ISMS scope. These exclusions are justified as follows:
