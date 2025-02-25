@@ -566,7 +566,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 
 The following controls are **selected** as they address specific security risks identified in the **Risk Assessment and Risk Treatment Plan (RTP)**.
 
-| **Annex A Control** | **Control Description** | **Justification** | **Updated Related Policy/Process** | **Responsible Role** |
+| **Annex A Control** | **Control Description** | **Justification** | **Related Policy/Process** | **Responsible Role** |
 |--------------------|----------------------|-----------------|--------------------|------------------|
 | **A.5 Information Security Policies** | Establishes security policies aligned with ISO 27001. | Required for ISMS governance and compliance. | **Information Security Policy** | CEO |
 | **A.6 Organization of Information Security** | Defines security roles and responsibilities. | Ensures accountability and security governance. | **ISMS Roles & Responsibilities** | CEO, Managing Director |
