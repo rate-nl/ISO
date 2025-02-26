@@ -15,8 +15,6 @@
 
 ## 3. Statement of Applicability
 
-
-
 ## 4. Compliance and Performance Monitoring
    - Legal and Regulatory Compliance
    - Internal Audits and Continuous Improvement
@@ -681,3 +679,151 @@ The **Statement of Applicability (SoA)** is reviewed and updated:
 - **Next Scheduled Review:** [Insert Date]  
 
 ---
+
+# **4. Compliance and Performance Monitoring**
+
+## **4.1 Legal and Regulatory Compliance**
+
+### **1. Purpose**
+Ensure Rate complies with all applicable **legal, regulatory, and contractual** requirements related to information security, including **ISO/IEC 27001:2022** and **GDPR**.
+
+### **2. Scope**
+This applies to all **policies, procedures, and security controls** within Rate’s ISMS.
+
+### **3. Compliance Management Process**
+- **Identification** – Maintain an inventory of all applicable legal, regulatory, and contractual obligations.
+- **Implementation** – Ensure ISMS policies align with compliance requirements.
+- **Monitoring** – Conduct periodic reviews to ensure ongoing compliance.
+- **Documentation** – Maintain compliance records in **Google Drive**.
+
+### **4. Responsibilities**
+- **Managing Director** – Ensures compliance with laws and ISO 27001 requirements.
+- **CEO** – Approves legal compliance measures.
+- **Employees** – Adhere to security policies and report compliance issues.
+
+### **5. Review and Approval**
+- **Reviewed By:** Managing Director  
+- **Approved By:** CEO  
+- **Last Review Date:** [Insert Date]  
+- **Next Scheduled Review:** [Insert Date]  
+
+---
+
+## **4.2 Internal Audits and Continuous Improvement**
+
+### **1. Purpose**
+Ensure Rate conducts regular **internal audits** to assess ISMS effectiveness and implements **continuous improvement** practices, aligning with **ISO/IEC 27001:2022**.
+
+### **2. Scope**
+Applies to all processes, controls, and security measures within Rate’s **Information Security Management System (ISMS)**.
+
+### **3. Internal Audit Process**
+- **Audit Frequency**: Conducted **annually** or after significant changes to ISMS.
+- **Audit Scope**: Covers all ISMS policies, procedures, risk controls, and compliance requirements.
+- **Audit Methodology**:
+  1. **Planning** – Define scope, objectives, and schedule.
+  2. **Execution** – Assess policies, risk controls, and security measures.
+  3. **Reporting** – Document findings, non-conformities, and recommendations.
+  4. **Corrective Actions** – Assign responsibility and track remediation.
+- **Audit Records**: All findings and corrective actions are logged in **Google Drive**.
+
+### **4. Continuous Improvement**
+- ISMS is reviewed **annually** for enhancements based on:
+  - **Audit results** and security incidents.
+  - **Risk assessment updates**.
+  - **Regulatory or business changes**.
+  - **Stakeholder feedback**.
+
+- **Corrective and Preventive Actions**:
+  - All non-conformities are documented and tracked to resolution.
+  - Improvements are implemented and reviewed in subsequent audits.
+
+### **5. Responsibilities**
+- **Managing Director** – Oversees internal audits and ISMS improvements.
+- **CEO** – Approves audit findings and continuous improvement plans.
+- **Team Lead Developer** – Implements security-related corrective actions.
+- **Employees** – Cooperate during audits and follow security recommendations.
+
+### **6. Review and Approval**
+- **Reviewed By:** Managing Director  
+- **Approved By:** CEO  
+- **Last Review Date:** [Insert Date]  
+- **Next Scheduled Review:** [Insert Date]  
+
+---
+
+## **4.3 Nonconformities and Corrective Actions**
+
+### **1. Purpose**
+Ensure that any **nonconformities** within the ISMS are **identified, documented, corrected, and prevented from recurring**.
+
+### **2. Scope**
+Applies to all security incidents, audit findings, and operational deviations from ISMS policies.
+
+### **3. Nonconformity Management Process**
+1. **Identification** – Detect and document nonconformities.
+2. **Analysis** – Determine root causes and assess impact.
+3. **Corrective Actions** – Implement remediation plans and preventive measures.
+4. **Verification** – Ensure corrective actions are effective.
+
+### **4. Documentation**
+- **All nonconformities and corrective actions** are logged in **Google Drive**.
+- **Review reports** document the effectiveness of corrective actions.
+
+### **5. Responsibilities**
+- **Managing Director** – Tracks and oversees corrective actions.
+- **CEO** – Approves remediation plans.
+- **Team Lead Developer** – Implements technical corrections.
+- **Employees** – Report nonconformities and support corrective actions.
+
+### **6. Review and Approval**
+- **Reviewed By:** Managing Director  
+- **Approved By:** CEO  
+- **Last Review Date:** [Insert Date]  
+- **Next Scheduled Review:** [Insert Date]  
+
+---
+
+## **4.4 Performance Measurement and Management Reviews**
+
+### **1. Purpose**
+Ensure that Rate's ISMS is **measured, reviewed, and improved** in accordance with **ISO/IEC 27001:2022**.
+
+### **2. Scope**
+Covers all ISMS objectives, key performance indicators (KPIs), and security controls.
+
+### **3. Performance Measurement Process**
+- **Key Metrics Tracked**:
+  - **Incident response times** (e.g., resolving security incidents within 24 hours).
+  - **Access control effectiveness** (e.g., quarterly reviews of unauthorized access attempts).
+  - **Backup integrity checks** (e.g., monthly validation of backup restoration success).
+  - **Training completion rates** (e.g., percentage of employees completing security awareness training).
+
+- **Data Collection**:
+  - Security logs, audit reports, incident records, and compliance reviews.
+
+### **4. Management Review Process**
+- **Frequency**: Conducted **annually** or when significant risks arise.
+- **Key Areas Reviewed**:
+  - ISMS performance against security objectives.
+  - Effectiveness of risk treatment measures.
+  - Compliance with legal and regulatory requirements.
+  - Lessons learned from security incidents and audits.
+- **Review Outputs**:
+  - Decisions on ISMS updates and improvements.
+  - Adjustments to risk management strategies.
+  - Approval of corrective actions for identified weaknesses.
+
+### **5. Responsibilities**
+- **Managing Director** – Oversees performance tracking and management reviews.
+- **CEO** – Approves ISMS updates and ensures alignment with business objectives.
+- **Team Lead Developer** – Provides technical performance data for ISMS reviews.
+
+### **6. Review and Approval**
+- **Reviewed By:** Managing Director  
+- **Approved By:** CEO  
+- **Last Review Date:** [Insert Date]  
+- **Next Scheduled Review:** [Insert Date]
+
+---
+
