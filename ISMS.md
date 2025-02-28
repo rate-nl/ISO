@@ -682,7 +682,7 @@ The **Statement of Applicability (SoA)** is reviewed and updated:
 
 ---
 
-# Legal & Regulatory Compliance
+# Compliance & Security Governance
 
 ## 1. Legal & Regulatory Requirements
 
