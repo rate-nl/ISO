@@ -680,150 +680,153 @@ The **Statement of Applicability (SoA)** is reviewed and updated:
 
 ---
 
-# **4. Compliance and Performance Monitoring**
+# Legal & Regulatory Compliance
 
-## **4.1 Legal and Regulatory Compliance**
+## 1. Legal & Regulatory Requirements
 
-### **1. Purpose**
-Ensure Rate complies with all applicable **legal, regulatory, and contractual** requirements related to information security, including **ISO/IEC 27001:2022** and **GDPR**.
+Rate is committed to ensuring compliance with all applicable **legal, regulatory, and contractual obligations** related to information security. The following regulations and industry standards apply:
 
-### **2. Scope**
-This applies to all **policies, procedures, and security controls** within Rate’s ISMS.
+### **Applicable Laws & Regulations**
 
-### **3. Compliance Management Process**
-- **Identification** – Maintain an inventory of all applicable legal, regulatory, and contractual obligations.
-- **Implementation** – Ensure ISMS policies align with compliance requirements.
-- **Monitoring** – Conduct periodic reviews to ensure ongoing compliance.
-- **Documentation** – Maintain compliance records in **Google Drive**.
+- **General Data Protection Regulation (GDPR)** – Governs data protection and privacy for EU residents.
+- **ISO/IEC 27001:2022** – International standard for information security management.
+- **Any contractual agreements that impose security obligations** on Rate.
 
-### **4. Responsibilities**
-- **Managing Director** – Ensures compliance with laws and ISO 27001 requirements.
-- **CEO** – Approves legal compliance measures.
-- **Employees** – Adhere to security policies and report compliance issues.
+### **Compliance Review & Tracking**
 
-### **5. Review and Approval**
-- **Reviewed By:** Managing Director  
-- **Approved By:** CEO  
-- **Last Review Date:** [Insert Date]  
-- **Next Scheduled Review:** [Insert Date]  
+The **Managing Director** is responsible for reviewing applicable laws and regulatory changes **annually** and ensuring our policies are updated accordingly.
+
+| **Requirement**             | **Review Date** | **Status** | **Responsible Person** |
+| --------------------------- | --------------- | ---------- | ---------------------- |
+| GDPR Compliance             | [Insert Date]   | ✅ Reviewed | Managing Director      |
+| ISO 27001 Compliance        | [Insert Date]   | ✅ Reviewed | Managing Director      |
+| Contractual Security Review | [Insert Date]   | ⏳ Pending  | Managing Director      |
 
 ---
 
-## **4.2 Internal Audits and Continuous Improvement**
+# Privacy & Data Protection Policy
 
-### **1. Purpose**
-Ensure Rate conducts regular **internal audits** to assess ISMS effectiveness and implements **continuous improvement** practices, aligning with **ISO/IEC 27001:2022**.
+## 1. Purpose
 
-### **2. Scope**
-Applies to all processes, controls, and security measures within Rate’s **Information Security Management System (ISMS)**.
+This Privacy & Data Protection Policy defines how Rate collects, stores, processes, and protects personal data in compliance with **GDPR** and relevant data protection regulations.
 
-### **3. Internal Audit Process**
-- **Audit Frequency**: Conducted **annually** or after significant changes to ISMS.
-- **Audit Scope**: Covers all ISMS policies, procedures, risk controls, and compliance requirements.
-- **Audit Methodology**:
-  1. **Planning** – Define scope, objectives, and schedule.
-  2. **Execution** – Assess policies, risk controls, and security measures.
-  3. **Reporting** – Document findings, non-conformities, and recommendations.
-  4. **Corrective Actions** – Assign responsibility and track remediation.
-- **Audit Records**: All findings and corrective actions are logged in **Google Drive**.
+## 2. Scope
 
-### **4. Continuous Improvement**
-- ISMS is reviewed **annually** for enhancements based on:
-  - **Audit results** and security incidents.
-  - **Risk assessment updates**.
-  - **Regulatory or business changes**.
-  - **Stakeholder feedback**.
+This policy applies to all personal data collected from customers, employees, and third parties interacting with Rate's services.
 
-- **Corrective and Preventive Actions**:
-  - All non-conformities are documented and tracked to resolution.
-  - Improvements are implemented and reviewed in subsequent audits.
+## 3. Data Collection & Processing
 
-### **5. Responsibilities**
-- **Managing Director** – Oversees internal audits and ISMS improvements.
-- **CEO** – Approves audit findings and continuous improvement plans.
-- **Team Lead Developer** – Implements security-related corrective actions.
-- **Employees** – Cooperate during audits and follow security recommendations.
+- **Purpose of Data Collection:** Rate collects personal data strictly for providing survey analytics and user account management.
+- **Data Processing Basis:** Data is processed based on **legitimate business interest, contractual necessity, or user consent**.
 
-### **6. Review and Approval**
-- **Reviewed By:** Managing Director  
-- **Approved By:** CEO  
-- **Last Review Date:** [Insert Date]  
-- **Next Scheduled Review:** [Insert Date]  
+## 4. Data Subject Rights
+
+Users have the right to:
+
+- **Access** their personal data.
+- **Request corrections or updates** to inaccurate information.
+- **Request deletion** of personal data ("right to be forgotten").
+- **Restrict processing** under certain conditions.
+- **Obtain a copy** of their personal data.
+
+### **How to Submit a Request**
+
+Users can submit requests via email at **[********[support@rate.nl](mailto\:support@rate.nl)********]**, and we will respond **within 30 days**.
+
+## 5. Data Retention & Secure Deletion
+
+- Personal data is retained for **12 months** unless legally required otherwise.
+- Upon request or expiration, data is **securely erased.**
+- Backup data is **retained for up to 1 year**, after which it is securely deleted.
+
+## 6. Compliance & Review
+
+The **Managing Director** is responsible for reviewing and updating this policy **annually**.
 
 ---
 
-## **4.3 Nonconformities and Corrective Actions**
+# Supplier Security & Contractual Obligations
 
-### **1. Purpose**
-Ensure that any **nonconformities** within the ISMS are **identified, documented, corrected, and prevented from recurring**.
+## 1. Purpose
 
-### **2. Scope**
-Applies to all security incidents, audit findings, and operational deviations from ISMS policies.
+This section defines **security obligations for third-party vendors** who access Rate's data or infrastructure.
 
-### **3. Nonconformity Management Process**
-1. **Identification** – Detect and document nonconformities.
-2. **Analysis** – Determine root causes and assess impact.
-3. **Corrective Actions** – Implement remediation plans and preventive measures.
-4. **Verification** – Ensure corrective actions are effective.
+## 2. Vendor List & Review Process
 
-### **4. Documentation**
-- **All nonconformities and corrective actions** are logged in **Google Drive**.
-- **Review reports** document the effectiveness of corrective actions.
+All third-party vendors handling Rate’s sensitive data must be reviewed and approved.
 
-### **5. Responsibilities**
-- **Managing Director** – Tracks and oversees corrective actions.
-- **CEO** – Approves remediation plans.
-- **Team Lead Developer** – Implements technical corrections.
-- **Employees** – Report nonconformities and support corrective actions.
+| **Vendor Name**  | **Service Provided** | **Data Accessed**      | **Security Compliance** |
+| ---------------- | -------------------- | ---------------------- | ----------------------- |
+| Hetzner Cloud    | Server Hosting       | Customer Survey Data   | ISO 27001 Certified     |
+| Google Workspace | Email, Docs          | Internal Business Data | GDPR Compliant          |
+| [Other Vendors]  | [Service]            | [Data Type]            | [Compliance Status]     |
 
-### **6. Review and Approval**
-- **Reviewed By:** Managing Director  
-- **Approved By:** CEO  
-- **Last Review Date:** [Insert Date]  
-- **Next Scheduled Review:** [Insert Date]  
+## 3. Security Clauses for Vendor Contracts
+
+All contracts with vendors must include the following security obligations:
+
+- **Compliance with ISO 27001 & GDPR**.
+- **Data encryption during storage and transmission**.
+- **Breach notification within 24 hours**.
+- **Regular security audits & access control reviews**.
+
+**Vendor agreements are reviewed annually** to ensure compliance.
 
 ---
 
-## **4.4 Performance Measurement and Management Reviews**
+# Internal Audit Program
 
-### **1. Purpose**
-Ensure that Rate's ISMS is **measured, reviewed, and improved** in accordance with **ISO/IEC 27001:2022**.
+## 1. Purpose
 
-### **2. Scope**
-Covers all ISMS objectives, key performance indicators (KPIs), and security controls.
+The **Internal Audit Program** ensures that Rate’s security policies, controls, and ISMS implementation align with **ISO 27001:2022**.
 
-### **3. Performance Measurement Process**
-- **Key Metrics Tracked**:
-  - **Incident response times** (e.g., resolving security incidents within 24 hours).
-  - **Access control effectiveness** (e.g., quarterly reviews of unauthorized access attempts).
-  - **Backup integrity checks** (e.g., monthly validation of backup restoration success).
-  - **Training completion rates** (e.g., percentage of employees completing security awareness training).
+## 2. Audit Frequency & Process
 
-- **Data Collection**:
-  - Security logs, audit reports, incident records, and compliance reviews.
+Rate conducts **internal audits annually** to verify compliance.
 
-### **4. Management Review Process**
-- **Frequency**: Conducted **annually** or when significant risks arise.
-- **Key Areas Reviewed**:
-  - ISMS performance against security objectives.
-  - Effectiveness of risk treatment measures.
-  - Compliance with legal and regulatory requirements.
-  - Lessons learned from security incidents and audits.
-- **Review Outputs**:
-  - Decisions on ISMS updates and improvements.
-  - Adjustments to risk management strategies.
-  - Approval of corrective actions for identified weaknesses.
+### **Audit Process**
 
-### **5. Responsibilities**
-- **Managing Director** – Oversees performance tracking and management reviews.
-- **CEO** – Approves ISMS updates and ensures alignment with business objectives.
-- **Team Lead Developer** – Provides technical performance data for ISMS reviews.
+1. **Review Policies & Controls** – Assess ISMS policies and risk management.
+2. **Verify Implementation** – Check logs, access controls, backups, and compliance records.
+3. **Identify Non-Conformities** – Document any gaps or deviations.
+4. **Report & Corrective Actions** – Assign responsibilities for fixing issues.
 
-### **6. Review and Approval**
-- **Reviewed By:** Managing Director  
-- **Approved By:** CEO  
-- **Last Review Date:** [Insert Date]  
-- **Next Scheduled Review:** [Insert Date]
+## 3. Internal Audit Log
+
+| **Audit Date** | **Reviewed By**   | **Findings**             | **Corrective Actions**        |
+| -------------- | ----------------- | ------------------------ | ----------------------------- |
+| [Insert Date]  | Managing Director | ✅ Compliant              | None                          |
+| [Insert Date]  | Managing Director | ⚠️ Missing Vendor Review | Assigned to Managing Director |
+
+## 4. Review & Updates
+
+Audit findings are reviewed by the **CEO**, and corrective actions must be implemented **within 30 days**.
 
 ---
+
+# Corrective Actions & Non-Compliance Log
+
+## 1. Purpose
+
+This section defines how **non-compliance issues** are identified, recorded, and resolved **within 30 days**.
+
+## 2. Non-Compliance Handling Process
+
+1. **Identify Issue:** Any non-compliance is **logged**.
+2. **Assign Responsibility:** A team member is assigned to fix the issue.
+3. **Set a Deadline:** Issues must be resolved **within 30 days**.
+4. **Verify Resolution:** The CEO approves resolution before closing.
+
+## 3. Non-Compliance Log
+
+| **Issue**             | **Detected Date** | **Assigned To**     | **Resolution Date** | **Status** |
+| --------------------- | ----------------- | ------------------- | ------------------- | ---------- |
+| No SSL on dashboard   | 2025-02-28        | Team Lead Developer | 2025-03-05          | ✅ Fixed    |
+| Missing vendor review | 2025-02-20        | Managing Director   | 2025-03-10          | 🔄 Pending |
+
+**Corrective actions are reviewed annually** by the CEO.
+
+---
+
+
 
