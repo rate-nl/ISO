@@ -11,7 +11,7 @@
    - Access Control Policy
    - Incident Management and Response Plan
    - Business Continuity and Disaster Recovery Plan
-   - Asset Management and Data Protection Policy
+   - Asset Management Policy
 
 ## 3. Statement of Applicability
 
@@ -544,7 +544,7 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 
 ---
 
-# Asset Management and Data Protection Policy
+# Asset Management Policy
 
 ## 1. Purpose
 
@@ -642,14 +642,14 @@ The following controls are **selected** as they address specific security risks 
 | **A.5 Information Security Policies**                     | Establishes security policies aligned with ISO 27001.                           | Required for ISMS governance and compliance.                     | **Information Security Policy**                                           | CEO                                    |
 | **A.6 Organization of Information Security**              | Defines security roles and responsibilities.                                    | Ensures accountability and security governance.                  | **ISMS Roles & Responsibilities**                                         | CEO, Managing Director                 |
 | **A.7 Human Resource Security**                           | Covers security awareness and employee lifecycle controls.                      | Reduces insider threats and enforces security training.          | **Access Control Policy (Onboarding & Offboarding Process)**              | Managing Director                      |
-| **A.8 Asset Management**                                  | Identifies, classifies, and protects information assets.                        | Prevents data loss and unauthorized access.                      | **Asset Management and Data Protection Policy**                           | Managing Director, Team Lead Developer |
+| **A.8 Asset Management**                                  | Identifies, classifies, and protects information assets.                        | Prevents data loss and unauthorized access.                      | **Asset Management Policy**                           | Managing Director, Team Lead Developer |
 | **A.9 Access Control**                                    | Implements Role-Based Access Control (RBAC), authentication, and authorization. | Protects against unauthorized access.                            | **Access Control Policy**                                                 | Tech Lead Developer                    |
 |                                                           |                                                                                 |                                                                  |                                                                           |                                        |
-| **A.11 Physical and Environmental Security**              | Protects physical access to critical assets (office, NAS, servers).             | Prevents unauthorized access to hardware.                        | **Asset Management and Data Protection Policy**                           | Managing Director                      |
+| **A.11 Physical and Environmental Security**              | Protects physical access to critical assets (office, NAS, servers).             | Prevents unauthorized access to hardware.                        | **Asset Management Policy**                           | Managing Director                      |
 | **A.12 Operations Security**                              | Ensures secure system administration, logging, and patch management.            | Prevents system vulnerabilities and unauthorized system changes. | **Business Continuity and Disaster Recovery Plan (Log Retention Policy)** | Team Lead Developer                    |
 | **A.13 Communications Security**                          | Secures internal and external communications (VPN, encrypted email).            | Protects data in transit against interception.                   | **Access Control Policy**                                                 | Tech Lead Developer                    |
 | **A.14 System Acquisition, Development, and Maintenance** | Applies security best practices in software development.                        | Prevents vulnerabilities in software.                            | **Access Control Policy (Security Testing Process)**                      | Team Lead Developer                    |
-| **A.15 Supplier Relationships**                           | Ensures security in third-party and vendor agreements.                          | Mitigates supply chain risks.                                    | **Asset Management and Data Protection Policy**                           | Managing Director                      |
+| **A.15 Supplier Relationships**                           | Ensures security in third-party and vendor agreements.                          | Mitigates supply chain risks.                                    | **Asset Management Policy**                           | Managing Director                      |
 | **A.16 Information Security Incident Management**         | Defines incident response, reporting, and resolution procedures.                | Ensures a structured response to security incidents.             | **Incident Management and Response Plan**                                 | Managing Director                      |
 | **A.17 Business Continuity Management**                   | Ensures business continuity planning and disaster recovery.                     | Maintains availability of critical services.                     | **Business Continuity and Disaster Recovery Plan**                        | CEO, Managing Director                 |
 | **A.18 Compliance**                                       | Ensures legal, regulatory, and contractual compliance.                          | Aligns ISMS with GDPR, ISO 27001, and other regulations.         | **Incident Management and Response Plan**                                 | CEO                                    |
