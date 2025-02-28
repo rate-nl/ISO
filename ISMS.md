@@ -15,11 +15,13 @@
 
 ## 3. Statement of Applicability
 
-## 4. Compliance and Performance Monitoring
-   - Legal and Regulatory Compliance
-   - Internal Audits and Continuous Improvement
-   - Nonconformities and Corrective Actions
-   - Performance Measurement and Management Reviews
+## 4. Compliance & Security Governance
+   - [4.1 Legal & Regulatory Compliance](#legal--regulatory-compliance)
+   - [4.2 Privacy & Data Protection Policy](#privacy--data-protection-policy)
+   - [4.3 Supplier Security & Contractual Obligations](#supplier-security--contractual-obligations)
+   - [4.4 Internal Audit Program](#internal-audit-program)
+   - [4.5 Corrective Actions & Non-Compliance Log](#corrective-actions--non-compliance-log)
+
 
 ## 5. Annexes and Supporting Documents
    - List of Policies and Procedures
