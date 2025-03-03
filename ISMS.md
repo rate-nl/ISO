@@ -770,11 +770,23 @@ This section defines **security obligations for third-party vendors** who access
 
 All third-party vendors handling Rate’s sensitive data must be reviewed and approved.
 
-| **Vendor Name**  | **Service Provided** | **Data Accessed**      | **Security Compliance** |
-| ---------------- | -------------------- | ---------------------- | ----------------------- |
-| Hetzner Cloud    | Server Hosting       | Customer Survey Data   | ISO 27001 Certified     |
-| Google Workspace | Email, Docs          | Internal Business Data | GDPR Compliant          |
-| [Other Vendors]  | [Service]            | [Data Type]            | [Compliance Status]     |
+| **Vendor Name**       | **Service Provided**         | **Data Accessed**               | **Security Compliance**         | **Review Frequency** | **Responsible Owner**  |
+|----------------------|----------------------------|--------------------------------|--------------------------------|--------------------|------------------|
+| **Hetzner Cloud**     | Server Hosting             | Customer Survey Data           | ISO 27001 Certified             | Annually           | Managing Director  |
+| **Google Workspace**  | Email, Docs, Cloud Storage | Internal Business Data         | GDPR Compliant                  | Annually           | Managing Director  |
+| **GitHub**           | Source Code Repository     | Internal Codebase              | SOC 2 Type II, ISO 27001        | Annually           | Tech Lead Developer |
+| **LastPass**         | Password Manager           | Encrypted Password Storage     | SOC 2 Type II, GDPR Compliant   | Annually           | CEO |
+| **Exact Online**     | HR & Financial System      | Employee & Financial Data      | ISO 27001, GDPR Compliant       | Annually           | Managing Director  |
+| **Stack Overflow**   | Developer Collaboration    | Internal knowledge base      | Data Encrypted in Transit       | Annually           | Managing Director |
+| **Hetzner Cloud Backup** | Cloud Backup Storage | System Backups & Logs          | ISO 27001 Certified             | Annually           | Tech Lead Developer |
+| **WordPress**       | Company Website Hosting    | Public Website Data            | Regular Security Patching       | Annually           | Managing Director  |
+| **Freshdesk**       | Customer Support System    | Customer Service Data          | ISO 27001, GDPR Compliant       | Annually           | Managing Director  |
+| **Trello**         | Project Management         | Internal Business Data         | SOC 2, GDPR Compliant           | Annually           | Managing Director  |
+| **Miro**           | Collaboration Tool         | Internal Business Data         | SOC 2, GDPR Compliant           | Annually           | Managing Director  |
+| **Hetzner Cloud Firewall** | Security & Network Protection | System & Network Logs | ISO 27001 Certified             | Annually           | Tech Lead Developer |
+| **Local VPN** | Secure Remote Access | Internal Network Data         | End-to-End Encryption           | Annually           | Tech Lead Developer |
+
+---
 
 ## 3. Security Clauses for Vendor Contracts
 
