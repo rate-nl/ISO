@@ -3,12 +3,12 @@
 ## 1. Introduction
 
 ## 2. Core ISMS Documents
-   -[Information Security Policy](#Information-Security-Policy)
-   - Risk Assessment and Risk Treatment Plan
-   - Access Control Policy
-   - Incident Management and Response Plan
-   - Business Continuity and Disaster Recovery Plan
-   - Asset Management Policy
+   - [Information Security Policy](#Information-Security-Policy)
+   - [Access Control Policy](#Access-Control-Policy)
+   - [Incident Management and Response Plan](#Incident-Management-and-Response-Plan)
+   - [Incident Management and Response Plan](#Incident-Management-and-Response-Plan)
+   - [Business Continuity and Disaster Recovery Plan](#Business-Continuity-and-Disaster-Recovery-Plan)
+   - [Asset Management Policy](#Asset-Management-Policy)
 
 ## 3. Statement of Applicability
 
