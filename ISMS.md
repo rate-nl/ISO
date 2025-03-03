@@ -1,12 +1,9 @@
 # Information Security Management System (ISMS) Manual  
 
 ## 1. Introduction
-   - Purpose and Objectives of the ISMS
-   - Scope of the ISMS
-   - Definitions and Abbreviations
 
 ## 2. Core ISMS Documents
-   - Information Security Policy   
+   -[Information Security Policy](#Information-Security-Policy)
    - Risk Assessment and Risk Treatment Plan
    - Access Control Policy
    - Incident Management and Response Plan
