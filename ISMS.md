@@ -206,7 +206,7 @@ This document outlines the identified risks, their likelihood and impact, and th
 |---|---|---|---|---|---|---|---|
 | **Server crash causing service disruption** | Medium | High | Developers | Mitigate | Implement **regular database and code backups**. Monitor server health and set **automated alerts**. | A.17 Business Continuity | Acceptable if **regular backups are performed and automatic alerts are configured**. |
 | **Losing physical or internet access to head office (VPN, backups, development server)** | Medium | High | Developers | Mitigate | Ensure **production server firewall rules** can be modified securely **without VPN access**. Maintain **alternative access** methods. | A.13 Network Security | Acceptable if **alternative means of accessing production servers exist**. |
-| **NAS Storage corruption or damage** | Medium | High | Tech Lead Developer | Mitigate | Conduct a **yearly backup integrity check**. | A.12 Backup Policy | Acceptable if **yearly backups pass integrity checks**. |
+| **NAS Storage corruption or damage** | Medium | High | team lead Developer | Mitigate | Conduct a **yearly backup integrity check**. | A.12 Backup Policy | Acceptable if **yearly backups pass integrity checks**. |
 
 ---
 
@@ -214,16 +214,16 @@ This document outlines the identified risks, their likelihood and impact, and th
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
 |---|---|---|---|---|---|---|---|
 | **Critical employee suddenly leaving** | Medium | Medium | Managing Director | Mitigate | Document **all key processes**, ensure **secure password storage**, and implement **role-based access restrictions**. | A.7 Human Resource Security | Acceptable if **a knowledge base is maintained and access controls are enforced**. |
-| **Developer’s laptop lost, stolen, or damaged** | Medium | Medium | Tech Lead Developer | Mitigate | Enforce **cloud-based storage with encryption** and use **secure password managers**. | A.8 Asset Management | Acceptable if **all critical data is securely stored in the cloud**. |
+| **Developer’s laptop lost, stolen, or damaged** | Medium | Medium | team lead Developer | Mitigate | Enforce **cloud-based storage with encryption** and use **secure password managers**. | A.8 Asset Management | Acceptable if **all critical data is securely stored in the cloud**. |
 
 ---
 
 ### **1.4 Cybersecurity Risks**
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
 |---|---|---|---|---|---|---|---|
-| **Virus or ransomware attack on company devices** | Medium | Medium | Tech Lead Developer | Mitigate | Install **enterprise-grade antivirus software**, enable **automatic updates**, and conduct **regular security training**. | A.12 Malware Protection | Acceptable if **endpoint protection is always enabled and updated**. |
+| **Virus or ransomware attack on company devices** | Medium | Medium | team lead Developer | Mitigate | Install **enterprise-grade antivirus software**, enable **automatic updates**, and conduct **regular security training**. | A.12 Malware Protection | Acceptable if **endpoint protection is always enabled and updated**. |
 | **Losing access to LastPass (password manager)** | Low | High | CEO | Mitigate | Maintain a **bi-yearly backup of critical passwords** in an **encrypted and secure location**. | A.9 Access Control | Acceptable if **backup plan is tested annually**. |
-| **SSL certificate expiry for platform or website** | High | Medium | Tech Lead Developer | Mitigate | Enable **automatic SSL renewal** or set up **early expiration alerts**. | A.14 System Security | Acceptable if **automatic renewal is active or renewal reminders are in place**. |
+| **SSL certificate expiry for platform or website** | High | Medium | team lead Developer | Mitigate | Enable **automatic SSL renewal** or set up **early expiration alerts**. | A.14 System Security | Acceptable if **automatic renewal is active or renewal reminders are in place**. |
 
 ---
 
@@ -267,8 +267,8 @@ This policy applies to all personnel accessing Rate's information assets, includ
 
 ### **4.1. Registration and De-registration**
 
-- **Registration:** Requests are submitted to the Tech Lead via email. CEO approval is required for high-privilege access. Requests are stored in email records, which serve as documentation.
-- **De-registration:** The CEO instructs the Tech Lead via email to revoke access upon role change or departure.
+- **Registration:** Requests are submitted to the team lead via email. CEO approval is required for high-privilege access. Requests are stored in email records, which serve as documentation.
+- **De-registration:** The CEO instructs the team lead via email to revoke access upon role change or departure.
 - **Documentation:** Access approvals and removals are retained in email records.
 
 ### **4.2. Provisioning and Review**
@@ -289,7 +289,7 @@ This policy applies to all personnel accessing Rate's information assets, includ
 
 #### **Offboarding**
 
-1. **Account Deactivation:** The **CEO or Managing Director** instructs the **Tech Lead** to revoke all access.
+1. **Account Deactivation:** The **CEO or Managing Director** instructs the **team lead** to revoke all access.
 2. **Asset Return:** Employees return laptops, access cards, and security tokens to the **Managing Director**.
 3. **Exit Security Review:** The Managing Director ensures final security clearance and logs any security concerns related to the departing employee.
 
@@ -339,7 +339,7 @@ In the event of **VPN failure**, an **alternative secure access method** must be
 
 ## 9. Responsibilities
 
-- **Tech Lead:** Manages access, and oversees configurations.
+- **team lead:** Manages access, and oversees configurations.
 - **CEO:** Approves sensitive access requests and enforces compliance.
 - **Developers:** Ensure secure implementation of access control measures in systems they develop.
 - **All Employees:** Maintain laptop security and promptly report incidents.
@@ -377,7 +377,7 @@ A security incident is any event that compromises the confidentiality, integrity
 
 ## 4. Reporting Mechanism
 ### **4.1. Internal Reporting**
-- Employees must report incidents immediately via email to the Tech Lead.
+- Employees must report incidents immediately via email to the team lead.
 - High-severity incidents should be escalated to the CEO and Managing Director.
 - Incident details should include date, time, affected systems, and a brief description.
 
@@ -388,7 +388,7 @@ A security incident is any event that compromises the confidentiality, integrity
 ## 5. Incident Response Phases
 ### **5.1. Identification**
 - Incidents are detected through system monitoring, employee reports, and automated alerts.
-- The Tech Lead reviews logs from cloud providers (Google Workspace, Hetzner) and on-premises systems.
+- The team lead reviews logs from cloud providers (Google Workspace, Hetzner) and on-premises systems.
 
 ### **5.2. Containment**
 - Immediate actions include disabling compromised accounts and revoking VPN access.
@@ -417,14 +417,14 @@ A security incident is any event that compromises the confidentiality, integrity
 - Report security incidents immediately.
 - Cooperate with investigations and follow security protocols.
 
-### **7.2. Tech Lead**
+### **7.2. team lead**
 - Leads **technical containment and resolution** of incidents.
 - Reviews and maintains incident logs.
 - Coordinates security improvements post-incident.
 
 ### **7.3. Managing Director**
 - **Leads overall incident response efforts**, ensuring proper execution of containment, eradication, and recovery steps.
-- Assists in response when the Tech Lead is unavailable.
+- Assists in response when the team lead is unavailable.
 - Supports log analysis and recovery processes.
 
 ### **7.4. CEO**
@@ -432,7 +432,7 @@ A security incident is any event that compromises the confidentiality, integrity
 - Oversees communication with stakeholders and regulatory bodies.
 
 ## 8. Communication Plan
-- **Internal:** Tech Lead provides updates via email to the CEO and relevant teams.
+- **Internal:** team lead provides updates via email to the CEO and relevant teams.
 - **External:** The CEO handles customer notifications and regulatory compliance communication.
 
 ## 9. Plan Review and Testing
@@ -595,7 +595,7 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 
 ## 5. Access Control and Data Security (Annex A.9)
 
-- **Access Management:** Controlled by the Tech Lead with CEO approval for high-privilege roles.
+- **Access Management:** Controlled by the team lead with CEO approval for high-privilege roles.
 - **Log Retention:** Access logs are retained for **one year** to align with compliance requirements.
 - **Access Revocation:** Immediate action for role changes or departures, with records documented.
 - **Remote Access:** VPN is required for development server access.
@@ -658,11 +658,11 @@ The following controls are **selected** as they address specific security risks 
 | **A.6 Organization of Information Security**              | Defines security roles and responsibilities.                                    | Ensures accountability and security governance.                  | **ISMS Roles & Responsibilities**                                         | CEO, Managing Director                 |
 | **A.7 Human Resource Security**                           | Covers security awareness and employee lifecycle controls.                      | Reduces insider threats and enforces security training.          | **Access Control Policy (Onboarding & Offboarding Process)**              | Managing Director                      |
 | **A.8 Asset Management**                                  | Identifies, classifies, and protects information assets.                        | Prevents data loss and unauthorized access.                      | **Asset Management Policy**                           | Managing Director, Team Lead Developer |
-| **A.9 Access Control**                                    | Implements Role-Based Access Control (RBAC), authentication, and authorization. | Protects against unauthorized access.                            | **Access Control Policy**                                                 | Tech Lead Developer                    |
+| **A.9 Access Control**                                    | Implements Role-Based Access Control (RBAC), authentication, and authorization. | Protects against unauthorized access.                            | **Access Control Policy**                                                 | team lead Developer                    |
 |                                                           |                                                                                 |                                                                  |                                                                           |                                        |
 | **A.11 Physical and Environmental Security**              | Protects physical access to critical assets (office, NAS, servers).             | Prevents unauthorized access to hardware.                        | **Asset Management Policy**                           | Managing Director                      |
 | **A.12 Operations Security**                              | Ensures secure system administration, logging, and patch management.            | Prevents system vulnerabilities and unauthorized system changes. | **Business Continuity and Disaster Recovery Plan (Log Retention Policy)** | Team Lead Developer                    |
-| **A.13 Communications Security**                          | Secures internal and external communications (VPN, encrypted email).            | Protects data in transit against interception.                   | **Access Control Policy**                                                 | Tech Lead Developer                    |
+| **A.13 Communications Security**                          | Secures internal and external communications (VPN, encrypted email).            | Protects data in transit against interception.                   | **Access Control Policy**                                                 | team lead Developer                    |
 | **A.14 System Acquisition, Development, and Maintenance** | Applies security best practices in software development.                        | Prevents vulnerabilities in software.                            | **Access Control Policy (Security Testing Process)**                      | Team Lead Developer                    |
 | **A.15 Supplier Relationships**                           | Ensures security in third-party and vendor agreements.                          | Mitigates supply chain risks.                                    | **Asset Management Policy**                           | Managing Director                      |
 | **A.16 Information Security Incident Management**         | Defines incident response, reporting, and resolution procedures.                | Ensures a structured response to security incidents.             | **Incident Management and Response Plan**                                 | Managing Director                      |
@@ -774,17 +774,17 @@ All third-party vendors handling Rate’s sensitive data must be reviewed and ap
 |----------------------|----------------------------|--------------------------------|--------------------------------|--------------------|------------------|
 | **Hetzner Cloud**     | Server Hosting             | Customer Survey Data           | ISO 27001 Certified             | Annually           | Managing Director  |
 | **Google Workspace**  | Email, Docs, Cloud Storage | Internal Business Data         | GDPR Compliant                  | Annually           | Managing Director  |
-| **GitHub**           | Source Code Repository     | Internal Codebase              | SOC 2 Type II, ISO 27001        | Annually           | Tech Lead Developer |
+| **GitHub**           | Source Code Repository     | Internal Codebase              | SOC 2 Type II, ISO 27001        | Annually           | team lead Developer |
 | **LastPass**         | Password Manager           | Encrypted Password Storage     | SOC 2 Type II, GDPR Compliant   | Annually           | CEO |
 | **Exact Online**     | HR & Financial System      | Employee & Financial Data      | ISO 27001, GDPR Compliant       | Annually           | Managing Director  |
 | **Stack Overflow**   | Developer Collaboration    | Internal knowledge base      | Data Encrypted in Transit       | Annually           | Managing Director |
-| **Hetzner Cloud Backup** | Cloud Backup Storage | System Backups & Logs          | ISO 27001 Certified             | Annually           | Tech Lead Developer |
+| **Hetzner Cloud Backup** | Cloud Backup Storage | System Backups & Logs          | ISO 27001 Certified             | Annually           | team lead Developer |
 | **WordPress**       | Company Website Hosting    | Public Website Data            | Regular Security Patching       | Annually           | Managing Director  |
 | **Freshdesk**       | Customer Support System    | Customer Service Data          | ISO 27001, GDPR Compliant       | Annually           | Managing Director  |
 | **Trello**         | Project Management         | Internal Business Data         | SOC 2, GDPR Compliant           | Annually           | Managing Director  |
 | **Miro**           | Collaboration Tool         | Internal Business Data         | SOC 2, GDPR Compliant           | Annually           | Managing Director  |
-| **Hetzner Cloud Firewall** | Security & Network Protection | System & Network Logs | ISO 27001 Certified             | Annually           | Tech Lead Developer |
-| **Local VPN** | Secure Remote Access | Internal Network Data         | End-to-End Encryption           | Annually           | Tech Lead Developer |
+| **Hetzner Cloud Firewall** | Security & Network Protection | System & Network Logs | ISO 27001 Certified             | Annually           | team lead Developer |
+| **Local VPN** | Secure Remote Access | Internal Network Data         | End-to-End Encryption           | Annually           | team lead Developer |
 
 ---
 
@@ -923,19 +923,19 @@ This section defines key **performance indicators (KPIs)** used to measure the e
 |------------------------------------------------------|----------------------------------------------------|----------------------|---------------------------|-------------------------------|
 | **Management Review Minutes**                        | Evidence of annual management review of ISMS      | 3 years              | Google Drive              | Managing Director             |
 | **ISMS Performance Reports**                         | Evidence of ISMS KPI evaluation                   | 3 years              | Google Drive              | Managing Director             |
-| **Incident Logs**                                    | Documented security incidents and responses      | 3 years              | Google Drive              | Tech Lead / Managing Director |
+| **Incident Logs**                                    | Documented security incidents and responses      | 3 years              | Google Drive              | team lead / Managing Director |
 | **Risk Assessment Reports**                          | Annual risk analysis and mitigation strategy     | 3 years              | Google Drive              | Managing Director             |
 | **Risk Treatment Plan**                              | Risk treatment and mitigation measures           | 3 years              | Google Drive              | Managing Director             |
-| **Access Control Logs**                              | Records of user access and role changes         | 1 year               | Google Drive              | Tech Lead Developer          |
+| **Access Control Logs**                              | Records of user access and role changes         | 1 year               | Google Drive              | team lead Developer          |
 | **Security Awareness Training Records**             | Proof of employee training completion           | 3 years              | Google Drive              | Managing Director             |
 | **Audit Reports**                                    | Evidence of internal audits and corrective actions | 3 years              | Google Drive              | Managing Director             |
 | **Corrective Actions Log**                           | Log of security issues and corrective measures   | 3 years              | Google Drive              | Managing Director             |
-| **Backup Integrity Reports**                         | Verification of successful backup restoration   | 1 year               | NAS / Google Drive        | Tech Lead Developer          |
+| **Backup Integrity Reports**                         | Verification of successful backup restoration   | 1 year               | NAS / Google Drive        | team lead Developer          |
 | **Vendor Security Reviews**                          | Evaluation of third-party security compliance   | 3 years              | Google Drive              | Managing Director             |
 | **Business Continuity & Disaster Recovery Test Reports** | Evidence of BCDRP testing and updates        | 3 years              | Google Drive              | CEO / Managing Director      |
 | **Legal & Compliance Review Reports**               | Annual review of regulatory compliance         | 3 years              | Google Drive              | Managing Director             |
 | **Non-Conformance & Corrective Actions Reports**    | Evidence of issue resolution                   | 3 years              | Google Drive              | Managing Director             |
-| **Change Management Records**                       | Logs of security-related system changes        | 3 years              | Google Drive              | Tech Lead Developer          |
+| **Change Management Records**                       | Logs of security-related system changes        | 3 years              | Google Drive              | team lead Developer          |
 
 
 
