@@ -23,13 +23,6 @@
    - [4.5 Corrective Actions & Non-Compliance Log](#corrective-actions--non-compliance-log)
 
 
-## 5. Annexes and Supporting Documents
-   - List of Policies and Procedures
-   - Risk Assessment and Treatment Records
-   - Audit and Review Reports
-   - Any Other Supporting Documentation
-
-
 ---
 
 
