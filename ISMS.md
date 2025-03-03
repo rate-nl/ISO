@@ -293,6 +293,26 @@ This policy applies to all personnel accessing Rate's information assets, includ
 2. **Asset Return:** Employees return laptops, access cards, and security tokens to the **Managing Director**.
 3. **Exit Security Review:** The Managing Director ensures final security clearance and logs any security concerns related to the departing employee.
 
+
+#### Security Awareness Training
+
+## 1. Purpose
+
+To ensure all employees understand their **security responsibilities** and comply with Rate’s ISMS, as required by **ISO 27001:2022 Clause A.7.2.2**.
+
+## 2. Training Requirements
+
+| **Training**                | **Target Audience** | **Frequency**              | **Delivery Method**                |
+| --------------------------- | ------------------- | -------------------------- | ---------------------------------- |
+| Security Awareness Training | All employees       | Upon onboarding + annually | Online session / internal training |
+
+## 3. Compliance Tracking
+
+- Training completion records are **logged and retained** in **Google Drive**.
+- Employees who fail to complete mandatory training will be **notified and required to comply**.
+- Non-compliance may result in **access restrictions** or further corrective measures.
+- **The Managing Director is responsible for overseeing the training program, ensuring compliance, and tracking completion rates.**
+
 ## 5. Authentication and Password Management
 
 - **Password Policy:** Minimum 12 characters, and secure storage in LastPass.
@@ -821,7 +841,70 @@ This section defines how **non-compliance issues** are identified, recorded, and
 
 **Corrective actions are reviewed annually** by the CEO.
 
+
+
 ---
+
+# Management Review
+
+## 1. Purpose
+
+The purpose of this section is to ensure that Rate's ISMS is **periodically reviewed** by top management to maintain **effectiveness, compliance, and continual improvement**, as required by **ISO 27001:2022 Clause 9.3**.
+
+## 2. Review Frequency
+
+Management reviews are conducted **annually** and after any **major security incident or significant change** affecting the ISMS.
+
+## 3. Review Scope
+
+The following topics are reviewed:
+
+- **ISMS performance metrics** (e.g., incidents, compliance rates)
+- **Security incidents and corrective actions**
+- **Risk assessment updates and treatment effectiveness**
+- **Audit findings and non-conformities**
+- **Changes in legal, regulatory, or contractual requirements**
+- **Opportunities for improvement**
+
+## 4. Responsibilities
+
+| **Role**          | **Responsibility**                                                     |
+| ----------------- | ---------------------------------------------------------------------- |
+| CEO               | Chairs the review and ensures ISMS alignment with business objectives. |
+| Managing Director | Prepares the review report and tracks action items.                    |
+
+## 5. Documentation
+
+- **Meeting minutes** are recorded and stored in **Google Drive** for audit reference.
+- **Action items** are assigned and tracked in the **Corrective Actions Log**.
+- **Review results** are communicated internally as necessary.
+
+---
+
+# ISMS Performance Metrics
+
+## 1. Purpose
+
+This section defines key **performance indicators (KPIs)** used to measure the effectiveness of Rate's ISMS, in accordance with **ISO 27001:2022 Clause 9.1**.
+
+## 2. Metrics and Measurement
+
+| **Metric**                    | **Description**                                          | **Target**        | **Review Frequency** |
+| ----------------------------- | -------------------------------------------------------- | ----------------- | -------------------- |
+| Incident Response Time        | Time taken to contain and resolve security incidents.    | < 4 hours         | Annually             |
+| Access Control Violations     | Unauthorized access attempts detected.                   | 0 per year        | Annually             |
+| Backup Integrity              | Successful test restores of critical backups.            | 100% success rate | Monthly              |
+| Security Awareness Completion | Percentage of employees who completed security training. | 100%              | Annually             |
+| Audit Non-Conformities        | Number of major non-conformities found in audits.        | 0 major issues    | Annually             |
+
+## 3. Reporting and Review
+
+- The **Managing Director** compiles ISMS performance reports **annually**.
+- KPI results are reviewed in **Management Review Meetings**.
+- If KPIs fall below targets, **corrective actions** are initiated.
+
+---
+
 
 
 
