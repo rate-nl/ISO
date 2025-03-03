@@ -21,6 +21,8 @@
    - [4.3 Supplier Security & Contractual Obligations](#supplier-security--contractual-obligations)
    - [4.4 Internal Audit Program](#internal-audit-program)
    - [4.5 Corrective Actions & Non-Compliance Log](#corrective-actions--non-compliance-log)
+   - [4.6 Management Review](#Management-Review)
+   - [4.7 ISMS Performance Metrics](#ISMS-Performance-Metrics)
 
 
 ---
