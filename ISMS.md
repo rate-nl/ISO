@@ -92,7 +92,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Approve risk assessments and the Risk Treatment Plan (RTP).
   - Oversee **incident management and resolution** for critical security incidents.
   - Ensure periodic **reviews of security incidents and ISMS effectiveness**.
-  #### Competency Requirements:
+- **Competency Requirements**:
   - Understanding of information security governance and ISO 27001 principles.
   - Familiarity with legal, regulatory, and contractual obligations related to information security.
   - Experience in organizational risk management and executive decision-making.
