@@ -68,12 +68,14 @@ This policy applies to all employees, contractors, consultants, temporary staff,
 
 ## 3. Information Security Objectives
 
-Rate is committed to:
+Rate is committed to the following measurable information security objectives:
 
-- Protecting information assets against unauthorized access, disclosure, alteration, or destruction.
-- Ensuring the availability of information to authorized users when needed.
-- Complying with applicable legal, regulatory, and contractual obligations.
-- Continually improving the Information Security Management System (ISMS).
+- Maintain 100% completion rate for annual information security awareness training for all employees.
+- Ensure all backups are tested monthly with a minimum 90% success rate.
+- Limit unauthorized access incidents to zero per year.
+- Review access permissions for all systems at least once per year.
+- Complete annual internal ISMS audit and resolve 100% of non-conformities within 30 days.
+
 
 ## 4. Roles and Responsibilities
 
