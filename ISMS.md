@@ -103,6 +103,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Review risk assessments before CEO approval.
   - Lead **incident response planning** and coordinate with affected teams.
   - Conduct **annual security reviews** and adjust strategies as needed.
+  - Assign and review asset owners and ensure asset records are up to date and accurate.
 
 ### 4.3. Team Lead Developer
 
@@ -114,6 +115,7 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Manage and monitor security compliance related to development infrastructure.
   - Ensure **SSL certificate renewal** is managed through **automatic renewal or alerts**.
   - Investigate and provide technical remediation for **security incidents** affecting development environments.
+  - Maintain security and availability of hardware and data assets under their ownership.
 
 ### 4.4. Developers
 
@@ -572,7 +574,12 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 ## 3. Asset Inventory and Ownership
 
 - **Asset Inventory:** Managed by the Managing Director, covering hardware, software, cloud services, and backups.
-- **Asset Owners:** Responsible for security, maintenance, risk assessments, and classification.
+- **Asset Ownership and Management:**
+  - **Hardware:** Owned and maintained by the Team Lead Developer.
+  - **Software & Cloud Services:** Owned by the Managing Director, with maintenance delegated to relevant teams.
+  - **Data (including backups):** Owned by the Team Lead Developer; Managing Director oversees classification and access.
+  - Each asset in the inventory must have a designated owner listed with their responsibilities documented in the inventory file.
+
 - **Role Assignments:**
   - **Hardware:** Team Lead Developer.
   - **Software/Cloud Services:** Managing Director.
