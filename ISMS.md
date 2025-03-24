@@ -171,12 +171,43 @@ Rate adopts the following principles to guide its information security efforts:
 
 ## 6. Risk Management
 
-Rate will implement a risk management process that includes:
+Rate implements a structured risk management process based on ISO 27005, consisting of the following steps:
 
-- Identifying information security risks.
-- Assessing the potential impact and likelihood of risks.
-- Implementing appropriate controls to mitigate risks.
-- Monitoring and reviewing risks **annually and after significant security incidents or infrastructure changes**.
+### 6.1 Risk Identification
+- Identify threats and vulnerabilities that could affect information assets, services, and business processes.
+- Document assets and associated risks in the risk register.
+
+### 6.2 Risk Assessment
+- **Likelihood and Impact Assessment:** Assess the likelihood and potential impact of each identified risk using a defined risk matrix.
+- Assign a risk level (Low / Medium / High) for prioritization.
+
+### 6.3 Risk Evaluation
+- Compare risk levels against Rate’s **risk acceptance criteria**.
+- Risks that exceed acceptable thresholds are escalated for treatment.
+
+### 6.4 Risk Treatment
+- Select one or more of the following options:
+  - **Mitigate:** Apply security controls to reduce risk.
+  - **Avoid:** Discontinue the activity causing the risk.
+  - **Transfer:** Outsource the risk (e.g., through insurance or contracts).
+  - **Accept:** Justify and document acceptance of the residual risk.
+- Define and document mitigation actions in the **Risk Treatment Plan**.
+
+### 6.5 Risk Monitoring and Review
+- Risks are reviewed **annually** or after major changes/incidents.
+- Effectiveness of controls is verified through internal audits and incident analysis.
+
+### 6.6 Roles and Responsibilities
+- **Managing Director:** Owns the risk management process.
+- **CEO:** Approves risk assessments and treatment decisions.
+- **Team Lead Developer:** Supports technical risk analysis and control implementation.
+
+### 6.7 Documentation
+- All risk activities are documented in:
+  - **Risk Assessment Report**
+  - **Risk Treatment Plan**
+  - **Statement of Applicability (SoA)**
+
 
 ## 7. Access Control
 
