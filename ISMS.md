@@ -92,6 +92,11 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Approve risk assessments and the Risk Treatment Plan (RTP).
   - Oversee **incident management and resolution** for critical security incidents.
   - Ensure periodic **reviews of security incidents and ISMS effectiveness**.
+  #### Competency Requirements:
+  - Understanding of information security governance and ISO 27001 principles.
+  - Familiarity with legal, regulatory, and contractual obligations related to information security.
+  - Experience in organizational risk management and executive decision-making.
+
 
 ### 4.2. Managing Director
 
@@ -106,6 +111,10 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Lead **incident response planning** and coordinate with affected teams.
   - Conduct **annual security reviews** and adjust strategies as needed.
   - Assign and review asset owners and ensure asset records are up to date and accurate.
+- **Competency Requirements**:
+  - Knowledge of ISO 27001 control implementation and audit preparation.
+  - Skills in risk assessment, compliance monitoring, and incident management.
+  - Completion of formal training on ISMS frameworks and regulatory compliance.
 
 ### 4.3. Team Lead Developer
 
@@ -118,6 +127,11 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Ensure **SSL certificate renewal** is managed through **automatic renewal or alerts**.
   - Investigate and provide technical remediation for **security incidents** affecting development environments.
   - Maintain security and availability of hardware and data assets under their ownership.
+- **Competency Requirements**:
+  - Experience with secure coding practices and vulnerability management.
+  - Proficiency in access control principles and DevSecOps.
+  - Completion of secure development lifecycle (SDLC) and information security training.
+
 
 ### 4.4. Developers
 
@@ -129,6 +143,11 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Identify and report potential software vulnerabilities to the Team Lead Developer.
   - Assist in responding to security incidents by providing technical expertise and remediation support.
   - Implement and enforce **access control measures** in compliance with **Annex A.9**.
+- **Competency Requirements**:
+  - Knowledge of secure coding standards and access control.
+  - Participation in annual security awareness training.
+  - Ability to identify and report vulnerabilities.
+
 
 ### 4.5. All Employees
 
@@ -137,6 +156,10 @@ In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following 
   - Protect information assets within their control.
   - Report security incidents or weaknesses promptly.
   - Participate in information security training and awareness programs.
+- **Competency Requirements**:
+  - Completion of onboarding and annual information security awareness training.
+  - Understanding of how to report incidents and follow policies.
+
 
 ## 5. Information Security Principles
 
