@@ -6,7 +6,6 @@
    - [Information Security Policy](#Information-Security-Policy)
    - [Access Control Policy](#Access-Control-Policy)
    - [Incident Management and Response Plan](#Incident-Management-and-Response-Plan)
-   - [Incident Management and Response Plan](#Incident-Management-and-Response-Plan)
    - [Business Continuity and Disaster Recovery Plan](#Business-Continuity-and-Disaster-Recovery-Plan)
    - [Asset Management Policy](#Asset-Management-Policy)
 
@@ -460,6 +459,19 @@ A security incident is any event that compromises the confidentiality, integrity
 - Systems are restored from backups, and normal operations resume.
 - Data integrity is verified on Google Drive, Exact Online, and production servers.
 - **Annual backup testing is required** to ensure reliability, in alignment with the Risk Treatment Plan (RTP).
+
+### **5.6. Post-Incident Learning (Annex A.5.27)**
+
+Following any significant security incident, a **Post-Incident Review (PIR)** must be conducted by the Managing Director and team lead to:
+
+- Identify the root cause of the incident.
+- Assess the effectiveness of existing controls and the response process.
+- Document lessons learned and areas for improvement.
+- Recommend updates to policies, procedures, or technical safeguards if applicable.
+- Record all findings in the **Incident Log** and assign any actions in the **Corrective Actions Log**.
+
+PIR outcomes are reviewed during **Management Review Meetings** and are used to improve the ISMS continuously.
+
 
 ## 6. Documentation and Reporting
 - All incidents must be logged, including:
