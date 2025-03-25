@@ -385,7 +385,22 @@ To ensure all employees understand their **security responsibilities** and compl
 
 ## 5. Authentication and Password Management
 
-- **Password Policy:** Minimum 12 characters, and secure storage in LastPass.
+In compliance with ISO/IEC 27001:2022 Annex A.9.4.3, Rate enforces a strong password policy for all systems and applications:
+
+- **Minimum Length:** Passwords must be at least **12 characters** long.
+- **Complexity Requirements:** Passwords must include **at least three of the following**:
+  - Uppercase letters (A–Z)
+  - Lowercase letters (a–z)
+  - Numbers (0–9)
+  - Special characters (e.g., !@#$%^&*)
+- **Password History:** Users must not reuse the last **5 passwords**.
+- **Password Expiry:** Passwords must be changed **every 180 days** unless longer periods are justified by additional security measures.
+- **Account Lockout:** Accounts are locked after **5 failed login attempts**, with automatic unlock after 15 minutes.
+- **Secure Storage:** Passwords must never be stored in plaintext. All credentials are securely stored using **LastPass** with end-to-end encryption.
+- **Multi-Factor Authentication (MFA):** MFA is **recommended** for access to production systems, VPN, and administrative tools to enhance security.
+
+All employees are made aware of these requirements during onboarding and through annual security awareness training.
+
 
 ## 6. Monitoring and Logging
 
