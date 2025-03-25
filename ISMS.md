@@ -338,6 +338,17 @@ This policy applies to all personnel accessing Rate's information assets, includ
 
 ### **4.3. Onboarding and Offboarding Process**&#x20;
 
+#### **Pre-Employment Screening**
+
+In alignment with ISO/IEC 27001:2022 Annex A.7.1.1, all candidates offered employment at Rate undergo pre-employment screening appropriate to the role. This includes:
+
+- Verification of identity and qualifications.
+- Reference checks (where legally permissible).
+- Confirmation of past employment history.
+
+Pre-employment screening is coordinated by the Managing Director and documented in the HR records.
+
+
 #### **Onboarding**
 
 1. **User Registration:** HR submits an onboarding request to the Managing Director.
