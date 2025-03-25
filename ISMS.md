@@ -250,37 +250,39 @@ This document outlines the identified risks, their likelihood and impact, and th
 ## **1. Risk Categorization**
 
 ### **1.1 Data Security Risks**
-| **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
-|---|---|---|---|---|---|---|---|
-| **Unauthorized access to customer database** | Medium | High | Developers | Mitigate | Enforce strict **access controls** using a **firewall** and strong authentication mechanisms. | A.9 Access Control | Acceptable if **strong passwords are enforced and the firewall is active**. |
-| **Data loss from a server crash** | Medium | High | Developers | Mitigate | Ensure **automatic backups** to NAS and **perform regular backup tests**. | A.12 Backup Policy | Acceptable if **offsite backups are tested annually**. |
-| **Insider threats (employee mishandling data)** | Low | High | Managing Director | Mitigate | Implement **role-based access control (RBAC)** and log all sensitive actions. | A.7 Human Resource Security | Acceptable if **RBAC is enforced & reviewed annually**. |
+
+| **Risk**                                | **Likelihood** | **Impact** | **Risk Owner**       | **Treatment Option** | **Mitigation Actions**                                                                                                                                         | **Annex A Reference** | **Risk Acceptance Criteria**                                             |
+|-----------------------------------------|----------------|------------|----------------------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|---------------------------------------------------------------------------|
+| **Unauthorized access to customer database** | Medium         | High       | Developers           | Mitigate             | Enforce strict **access controls** using a **firewall** and strong authentication mechanisms. Refer to the **Access Control Policy – Sections 3 & 4**.        | A.9 Access Control     | Acceptable if **strong passwords are enforced and the firewall is active**. |
+| **Data loss from a server crash**       | Medium         | High       | Developers           | Mitigate             | Ensure **automatic backups** to NAS and **perform regular backup tests**. Refer to the **Business Continuity and Disaster Recovery Plan – Section 5.1**.      | A.12 Backup Policy     | Acceptable if **offsite backups are tested annually**.                    |
+| **Insider threats (employee mishandling data)** | Low            | High       | Managing Director    | Mitigate             | Implement **role-based access control (RBAC)** and log all sensitive actions. Refer to the **Access Control Policy – Section 3** and **Incident Plan – Section 6**. | A.7 Human Resource Security | Acceptable if **RBAC is enforced & reviewed annually**.                   |
 
 ---
 
 ### **1.2 Infrastructure Risks**
-| **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
-|---|---|---|---|---|---|---|---|
-| **Server crash causing service disruption** | Medium | High | Developers | Mitigate | Implement **regular database and code backups**. Monitor server health and set **automated alerts**. | A.17 Business Continuity | Acceptable if **regular backups are performed and automatic alerts are configured**. |
-| **Losing physical or internet access to head office (VPN, backups, development server)** | Medium | High | Developers | Mitigate | Ensure **production server firewall rules** can be modified securely **without VPN access**. Maintain **alternative access** methods. | A.13 Network Security | Acceptable if **alternative means of accessing production servers exist**. |
-| **NAS Storage corruption or damage** | Medium | High | team lead Developer | Mitigate | Conduct a **yearly backup integrity check**. | A.12 Backup Policy | Acceptable if **yearly backups pass integrity checks**. |
+
+| **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions**                                                                                                                                               | **Annex A Reference**    | **Risk Acceptance Criteria**                                                            |
+|----------|----------------|------------|----------------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------------------------------------------------------------------------|
+| **Server crash causing service disruption** | Medium         | High       | Developers         | Mitigate             | Implement **regular database and code backups**. Monitor server health and set **automated alerts**. Refer to the **BCDR Plan – Section 5.1 & 6.1**.                 | A.17 Business Continuity | Acceptable if **regular backups are performed and automatic alerts are configured**.     |
+| **Losing physical or internet access to head office (VPN, backups, development server)** | Medium         | High       | Developers         | Mitigate             | Ensure **production server firewall rules** can be modified securely **without VPN access**. Maintain **alternative access** methods. Refer to the **Access Control Policy – Section 7** and **BCDR Plan – Section 6.3**. | A.13 Network Security     | Acceptable if **alternative means of accessing production servers exist**.               |
+| **NAS Storage corruption or damage** | Medium         | High       | Team Lead Developer | Mitigate             | Conduct a **yearly backup integrity check**. Refer to the **BCDR Plan – Section 5.1 & 8** for test and retention validation procedures.                               | A.12 Backup Policy        | Acceptable if **yearly backups pass integrity checks**.                                 |
 
 ---
 
 ### **1.3 Human Resource Risks**
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
 |---|---|---|---|---|---|---|---|
-| **Critical employee suddenly leaving** | Medium | Medium | Managing Director | Mitigate | Document **all key processes**, ensure **secure password storage**, and implement **role-based access restrictions**. | A.7 Human Resource Security | Acceptable if **a knowledge base is maintained and access controls are enforced**. |
-| **Developer’s laptop lost, stolen, or damaged** | Medium | Medium | team lead Developer | Mitigate | Enforce **cloud-based storage with encryption** and use **secure password managers**. | A.8 Asset Management | Acceptable if **all critical data is securely stored in the cloud**. |
+| **Critical employee suddenly leaving** | Medium | Medium | Managing Director | Mitigate | Document **all key processes** in the internal knowledge base, ensure **secure password storage** in LastPass, and implement **role-based access restrictions** as defined in the [Access Control Policy](#access-control-policy). | A.7 Human Resource Security | Acceptable if **a knowledge base is maintained and access controls are enforced**. |
+| **Developer’s laptop lost, stolen, or damaged** | Medium | Medium | Team Lead Developer | Mitigate | Enforce **cloud-based storage with encryption** (per [Asset Management Policy](#asset-management-policy)) and use **secure password managers** as defined in the [Access Control Policy](#access-control-policy). | A.8 Asset Management | Acceptable if **all critical data is securely stored in the cloud**. |
 
 ---
 
 ### **1.4 Cybersecurity Risks**
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
 |---|---|---|---|---|---|---|---|
-| **Virus or ransomware attack on company devices** | Medium | Medium | team lead Developer | Mitigate | Install **enterprise-grade antivirus software**, enable **automatic updates**, and conduct **regular security training**. | A.12 Malware Protection | Acceptable if **endpoint protection is always enabled and updated**. |
-| **Losing access to LastPass (password manager)** | Low | High | CEO | Mitigate | Maintain a **bi-yearly backup of critical passwords** in an **encrypted and secure location**. | A.9 Access Control | Acceptable if **backup plan is tested annually**. |
-| **SSL certificate expiry for platform or website** | High | Medium | team lead Developer | Mitigate | Enable **automatic SSL renewal** or set up **early expiration alerts**. | A.14 System Security | Acceptable if **automatic renewal is active or renewal reminders are in place**. |
+| **Virus or ransomware attack on company devices** | Medium | Medium | Team Lead Developer | Mitigate | Install **enterprise-grade antivirus software**, enable **automatic updates**, and conduct **regular security training** as outlined in the [Access Control Policy](#access-control-policy). | A.12 Malware Protection | Acceptable if **endpoint protection is always enabled and updated**. |
+| **Losing access to LastPass (password manager)** | Low | High | CEO | Mitigate | Maintain a **bi-yearly backup of critical passwords** in an **encrypted and secure location**, documented in the [Asset Management Policy](#asset-management-policy). | A.9 Access Control | Acceptable if **backup plan is tested annually**. |
+| **SSL certificate expiry for platform or website** | High | Medium | Team Lead Developer | Mitigate | Enable **automatic SSL renewal** or set up **early expiration alerts** as described in the [Access Control Policy](#access-control-policy). | A.14 System Security | Acceptable if **automatic renewal is active or renewal reminders are in place**. |
 
 ---
 
