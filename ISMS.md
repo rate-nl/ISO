@@ -215,6 +215,9 @@ In accordance with **Annex A.9 - Access Control**, Rate enforces the following s
 - **Role-based access control (RBAC)** is implemented for all systems.
 - **Firewall rules and VPN access restrictions** are enforced to protect critical infrastructure.
 - **Alternative access methods** to production servers are maintained to ensure availability in case of VPN failures.
+- **Access Reviews**: All user access rights, including administrative access, are formally reviewed **annually** by the **Team Lead Developer** in coordination with the **Managing Director**.
+- **Log Reviews**: System and access logs are reviewed **annually** for anomalies, with findings documented and reported during the management review.
+- **Log Retention**: Access and system logs are retained for **one year**, aligning with compliance requirements and internal policies.
 
 ## 8. Compliance
 
