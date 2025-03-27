@@ -581,6 +581,12 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 | **Communication Tools**                  | Google Workspace (email, docs) | Google Cloud                                                     | Immediate | None       | Managing Director   |
 | **HR and Compliance System**             | Exact Online                   | Cloud                                                            | 2 hours   | 1 hour     | Managing Director   |
 | **Password Manager**                     | LastPass                       | Encrypted Cloud                                                  | 1 hour    | 30 minutes | CEO                 |
+**Third-Party Responsibilities:**
+
+- **Hetzner** is responsible for the availability and physical security of the production infrastructure hosted on their cloud platform. This includes power supply, physical access control, and network connectivity within the data center.
+- Rate is responsible for server configuration, data backups, monitoring, and triggering recovery procedures.
+- In the event of a Hetzner outage, Rate will initiate failover to Azure and handle full restoration.
+
 
 ## **5. Backup and Recovery Procedures**
 
