@@ -740,11 +740,10 @@ This section describes Rate’s secure development and change management process
 
 ### 1. Development Process Overview
 
-Rate follows an Agile development methodology using the **Kanban method** to manage software changes. The process is visualized on a Kanban board with distinct swimlanes and status columns.
+Rate follows an Agile development methodology using the **Kanban method** to manage software changes. The process is visualized on a customer support board with distinct swimlanes and status columns.
 
-**Kanban Columns:**
-- Requested
-- Backlog (new feature)
+**Customer support Columns:**
+- Backlog
 - Scoped
 - Risk Analysis
 - Ready for development
