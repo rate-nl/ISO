@@ -37,7 +37,7 @@ Rate is committed to safeguarding the confidentiality, integrity, and availabili
 
 The ISMS encompasses all processes, systems, and personnel involved in the development, maintenance, and delivery of our survey platform services. This includes:
 
-- **Physical Location:** Our single office premises.
+- **Physical Location:** Our office at Stationsplein 45 Unit D3.125, 3013 AK Rotterdam, Netherlands.
 - **Assets:** Servers, databases, backups, company laptops, and network infrastructure.
 - **Information:** Customer survey data and employee personal information.
 - **Activities:** Data collection, processing, storage, and analysis related to customer surveys.
