@@ -828,10 +828,41 @@ The following controls are **selected** as they address specific security risks 
 
 
 ## **3. Justification for Exclusions**
-All Annex A controls **not explicitly included in Section 2** are considered **not applicable** to Rate’s ISMS scope. These exclusions are based on:
+These exclusions are based on:
 - The absence of relevant business operations requiring these controls.
 - The use of alternative security measures to mitigate associated risks.
 - The reliance on cloud-based infrastructure, reducing physical security concerns.
+
+The following Annex A controls were evaluated and determined to be **not applicable** to Rate’s ISMS scope. Justifications are based on the organization’s operations, infrastructure, and risk assessment results.
+
+| **Annex A Control** | **Control Description**                                         | **Justification for Exclusion**                                                  |
+|---------------------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| A.5.3               | Segregation of duties                                           | Not applicable due to small team; duties are traceable via audit logs.           |
+| A.5.5               | Contact with authorities                                        | No regulated operations requiring contact with authorities.                      |
+| A.5.6               | Contact with special interest groups                            | Rate does not participate in any such groups.                                    |
+| A.5.7               | Threat intelligence                                             | Not applicable due to low risk exposure.                                         |
+| A.5.13              | Labeling of information                                         | Not applicable; no physical documentation or manual labeling process.            |
+| A.5.21              | Managing information security in the ICT supply chain           | Limited ICT supply chain scope.                                                  |
+| A.5.22              | Monitoring of supplier services                                 | Services are simple and stable; no frequent changes warranting extra measures.   |
+| A.6.4               | Disciplinary process                                            | Managed informally due to small team size.                                       |
+| A.7.4               | Physical security monitoring                                    | Office is shared; surveillance not under Rate's control.                         |
+| A.7.6               | Working in secure areas                                         | Not applicable; no specially secured zones in use.                               |
+| A.7.10              | Storage media                                                   | No external storage devices in use.                                              |
+| A.7.11              | Supporting utilities                                            | Utilities are managed by the office building, not Rate.                          |
+| A.7.12              | Cabling security                                                | Not applicable; cabling not maintained in-house.                                 |
+| A.7.13              | Equipment maintenance                                           | Hardware is replaced instead of maintained.                                      |
+| A.8.6               | Capacity management                                             | System load is low and stable.                                                   |
+| A.8.11              | Data masking                                                    | No access to production PII; masking not required.                               |
+| A.8.12              | Data leakage prevention                                         | Not implemented due to low-risk context.                                         |
+| A.8.14              | Redundancy of processing facilities                             | Azure is used only as emergency backup.                                          |
+| A.8.17              | Clock synchronization                                           | Not applicable; no time-critical logging dependencies.                           |
+| A.8.21              | Secure system architecture principles                           | Infrastructure is simple; no large-scale system engineering.                     |
+| A.8.24              | Protection of test data                                         | Only synthetic data used in testing.                                             |
+| A.8.27              | Fault logging                                                   | Handled informally through monitoring.                                           |
+| A.8.30              | Clock synchronization (duplicate)                              | Duplicate of A.8.17; already excluded.                                           |
+| A.8.32              | Information system audit controls                               | No automated audit tools in use.                                                 |
+| A.8.36              | Segregation in networks                                         | Not applicable; single flat network environment.                                 |
+| A.8.37              | Web filtering                                                   | Not implemented.                                                                 |
 
 ---
 
