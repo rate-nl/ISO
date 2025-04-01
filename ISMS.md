@@ -279,6 +279,8 @@ This document outlines the identified risks, their likelihood and impact, and th
 |---|---|---|---|---|---|---|---|
 | **Critical employee suddenly leaving** | Medium | Medium | Managing Director | Mitigate | Document **all key processes** in the internal knowledge base, ensure **secure password storage** in LastPass, and implement **role-based access restrictions** as defined in the [Access Control Policy](#access-control-policy). | A.7 Human Resource Security | Acceptable if **a knowledge base is maintained and access controls are enforced**. |
 | **Developer’s laptop lost, stolen, or damaged** | Medium | Medium | Team Lead Developer | Mitigate | Enforce **cloud-based storage with encryption** (per [Asset Management Policy](#asset-management-policy)) and use **secure password managers** as defined in the [Access Control Policy](#access-control-policy). | A.8 Asset Management | Acceptable if **all critical data is securely stored in the cloud**. |
+| **Sudden departure of CEO or Managing Director** | Low | High | CEO / Managing Director | Mitigate | Store all critical credentials in a shared LastPass vault. Define succession roles and document recovery steps in the BCDRP. | A.7 Human Resource Security | Acceptable if full access continuity is documented and roles are reassigned within 1 day. |
+
 
 ---
 
@@ -402,6 +404,7 @@ In compliance with ISO/IEC 27001:2022 Annex A.9.4.3, Rate enforces a strong pass
 - **Password Expiry:** Passwords must be changed **every 180 days** unless longer periods are justified by additional security measures.
 - **Account Lockout:** Accounts are locked after **5 failed login attempts**, with automatic unlock after 15 minutes.
 - **Secure Storage:** Passwords must never be stored in plaintext. All credentials are securely stored using **LastPass** with end-to-end encryption.
+- All critical credentials (production servers, cloud accounts, HR systems) are securely stored in LastPass, with shared access for both the CEO and Managing Director.In the event one of them leaves, the other ensures smooth access continuity and triggers access reviews and necessary reassignments.
 - **Multi-Factor Authentication (MFA):** MFA is **recommended** for access to production systems, VPN, and administrative tools to enhance security.
 
 All employees are made aware of these requirements during onboarding and through annual security awareness training.
@@ -625,6 +628,8 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 | **6.5 Calamities (Fire, Flood, Physical Theft)**     | Follow Groothandelsgebouw escape plan, secure backups offsite                                | CEO                 | As feasible                       | 30 minutes                         |
 | **6.6 Loss of LastPass (Password Manager)**          | Restore from encrypted cloud backup, reset passwords for critical systems                    | CEO                 | 1 hour                            | 30 minutes                         |
 | **6.7 SSL Certificate Expiry for Website/Platform**  | **Enable SSL auto-renewals are enabled** or set calendar reminders for manual renewal checks | Team Lead Developer | 1 hour                            | None                               |
+| **6.8 Sudden Departure of CEO or Managing Director** | Access Rate's credentials and critical decisions via LastPass. Redistribute operational and ISMS responsibilities to designated successors. Document transition actions and notify key stakeholders. | Managing Director / CEO | 1 day | None |
+
 
 ## **7. Roles and Responsibilities**
 
@@ -634,6 +639,9 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 | **Managing Director**                    | Oversees recovery operations, manages communications, maintains incident logs |
 | **Team Lead Developer**                  | Executes technical recovery steps, restores servers, maintains backup records |
 | **All Employees**                        | Follow the BCDRP procedures and report security incidents immediately         |
+
+> **Note:** In the event the **CEO** or **Managing Director** becomes unavailable or leaves the company, the remaining executive temporarily assumes full responsibility for all critical disaster recovery and ISMS decisions. All necessary credentials and documentation are stored in a **shared LastPass vault** to ensure uninterrupted operations and access.
+
 
 ## **8. Testing and Review (ISO Clause 8.1 & 9.1)**
 
