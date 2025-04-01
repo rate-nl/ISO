@@ -635,7 +635,7 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 
 ## **8. Testing and Review (ISO Clause 8.1 & 9.1)**
 
-- **Testing Frequency:** every 3 years (full disaster recovery drill) with monthly backup restoration tests
+- **Testing Frequency:** Yearly (full disaster recovery drill) with monthly backup restoration tests
 - **Test Components:** Server restoration, VPN failover, LastPass recovery
 - **Review Cycle:** **Annual** or after any major incident or infrastructure change
 - **Responsible for Testing:** Managing Director
