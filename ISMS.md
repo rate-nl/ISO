@@ -8,6 +8,8 @@
    - [Incident Management and Response Plan](#Incident-Management-and-Response-Plan)
    - [Business Continuity and Disaster Recovery Plan](#Business-Continuity-and-Disaster-Recovery-Plan)
    - [Asset Management Policy](#Asset-Management-Policy)
+   - [Secure Development & Change Management](#secure-development--change-management)
+
 
 ## 3. Statement of Applicability
 
@@ -732,6 +734,48 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 - **Employees:** Follow policies, and report security issues.
 
 
+## Secure Development & Change Management
+
+This section describes Rate’s secure development and change management process, aligning with ISO/IEC 27001:2022 Annex A.8.28, A.8.29, and A.14.2.8.
+
+### 1. Development Process Overview
+
+Rate follows an Agile development methodology using the **Kanban method** to manage software changes. The process is visualized on a Kanban board with distinct swimlanes and status columns.
+
+**Kanban Columns:**
+- Requested
+- Backlog (new feature)
+- Scoped
+- Risk Analysis
+- Ready for development
+- In Progress
+- Add to Knowledge Base
+- Ready to test
+- Ready to deploy
+- Inform Stakeholders
+- Done
+
+Developers work from right to left to keep the board flowing efficiently. Cards are assigned to one responsible person at a time.
+
+### 2. Secure Development Practices
+
+- Rate uses **two isolated environments**: a **development** and a **production** environment.
+- **Live data** is never used in development except with explicit customer consent.
+- Developers must adhere to **OWASP secure coding practices for .NET**.
+- Code is committed to version control daily.
+- After development, issues and solutions are documented in the knowledge base.
+- Testing is performed before deployment.
+- All changes must be **approved by the Team Lead Developer** before deployment.
+
+### 3. Urgent or Blocked Tasks
+
+- Urgent tasks are prioritized and fast-tracked through the workflow.
+- Cards can be blocked at any point pending information or decisions.
+
+### 4. Documentation and Retention
+
+- Each card includes a short description of changes and test results.
+- Final versions are archived once deployment and stakeholder communication are completed.
 
 
 ---
