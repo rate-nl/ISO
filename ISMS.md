@@ -1050,18 +1050,33 @@ All contracts with vendors must include the following security obligations:
 
 ## 1. Purpose
 
-The **Internal Audit Program** ensures that Rate’s security policies, controls, and ISMS implementation align with **ISO 27001:2022**.
+The **Internal Audit Program** ensures that Rate’s security policies, controls, and ISMS implementation align with **ISO/IEC 27001:2022** and contribute to continuous improvement.
 
-## 2. Audit Frequency & Process
+## 2. Audit Frequency & Planning Process
 
-Rate conducts **internal audits annually** to verify compliance.
+Rate conducts **internal audits annually** to verify compliance with ISO 27001 requirements.
+
+### **Audit Planning**
+
+Each year, a structured **audit plan** is developed by the **Managing Director** and approved by the **CEO**. The plan includes:
+
+- **Audit Scope**: All ISMS policies, procedures, controls, and the Statement of Applicability (SoA)
+- **Audit Objectives**: 
+  - Confirm the effectiveness of implemented controls  
+  - Detect non-conformities and improvement opportunities  
+  - Validate risk treatment implementation
+- **Schedule**: Annual audit, with flexibility to conduct follow-ups or focused audits if needed
+- **Criteria**: ISO 27001:2022 clauses, Annex A controls, internal policies, and risk treatment outcomes
+- **Audit Independence**: Auditors are assigned to areas where they are not directly responsible
+- **Documentation**: The audit plan, evidence, and findings are stored securely in Google Drive
 
 ### **Audit Process**
 
-1. **Review Policies & Controls** – Assess ISMS policies and risk management.
-2. **Verify Implementation** – Check logs, access controls, backups, and compliance records.
-3. **Identify Non-Conformities** – Document any gaps or deviations.
-4. **Report & Corrective Actions** – Assign responsibilities for fixing issues.
+1. **Review Policies & Controls** – Assess ISMS documents and controls.
+2. **Verify Implementation** – Check access logs, backups, training records, and compliance reports.
+3. **Identify Non-Conformities** – Document issues and assign severity ratings.
+4. **Report & Corrective Actions** – Assign responsibilities and deadlines for resolution.
+5. **Follow-Up (if needed)** – Verify that corrective actions were completed.
 
 ## 3. Internal Audit Log
 
@@ -1072,9 +1087,8 @@ Rate conducts **internal audits annually** to verify compliance.
 
 ## 4. Review & Updates
 
-Audit findings are reviewed by the **CEO**, and corrective actions must be implemented **within 30 days**.
+Audit findings are reviewed by the **CEO**, and all corrective actions must be implemented **within 30 days**. Audit plans and outcomes are reviewed annually or when significant changes occur.
 
----
 
 # Corrective Actions & Non-Compliance Log
 
