@@ -1120,35 +1120,56 @@ This section defines how **non-compliance issues** are identified, recorded, and
 
 ## 1. Purpose
 
-The purpose of this section is to ensure that Rate's ISMS is **periodically reviewed** by top management to maintain **effectiveness, compliance, and continual improvement**, as required by **ISO 27001:2022 Clause 9.3**.
+To ensure that Rate's ISMS remains effective, compliant, and continuously improving through structured and well-documented reviews by top management. This process aligns with **ISO 27001:2022 Clause 9.3**.
 
 ## 2. Review Frequency
 
-Management reviews are conducted **annually** and after any **major security incident or significant change** affecting the ISMS.
+- Conducted **annually**, and after any **major incident**, significant **change in business operations**, or **updates in legal or regulatory requirements**.
 
-## 3. Review Scope
+## 3. Review Agenda (Inputs)
 
-The following topics are reviewed:
+The management review shall include:
 
-- **ISMS performance metrics** (e.g., incidents, compliance rates)
-- **Security incidents and corrective actions**
-- **Risk assessment updates and treatment effectiveness**
-- **Audit findings and non-conformities**
-- **Changes in legal, regulatory, or contractual requirements**
-- **Opportunities for improvement**
+- Status of actions from previous reviews
+- Results of internal audits and corrective actions
+- ISMS performance metrics and KPI achievement
+- Status of security incidents and risk treatment
+- Effectiveness of controls and security objectives
+- Feedback from stakeholders and users
+- Opportunities for continual improvement
+- Changes in internal/external issues relevant to the ISMS
+- Adequacy of resources and assigned roles
 
-## 4. Responsibilities
+## 4. Review Outputs (Decisions & Actions)
 
-| **Role**          | **Responsibility**                                                     |
-| ----------------- | ---------------------------------------------------------------------- |
-| CEO               | Chairs the review and ensures ISMS alignment with business objectives. |
-| Managing Director | Prepares the review report and tracks action items.                    |
+The review will result in:
 
-## 5. Documentation
+- Decisions on **updates to policies, procedures, and risk treatment**
+- Modifications to **ISMS objectives** and KPIs
+- Approval of **corrective actions and improvement plans**
+- Assignment of new **responsibilities or resources**
+- Validation of ISMS scope and SoA applicability
 
-- **Meeting minutes** are recorded and stored in **Google Drive** for audit reference.
-- **Action items** are assigned and tracked in the **Corrective Actions Log**.
-- **Review results** are communicated internally as necessary.
+All **decisions and actions are recorded** in the **Management Review Minutes** and **Corrective Actions Log**, with clear **due dates and owners**.
+
+## 5. Responsibilities
+
+| Role             | Responsibility                                                       |
+|------------------|----------------------------------------------------------------------|
+| **CEO**          | Chairs the meeting, approves decisions, ensures alignment with strategy |
+| **Managing Director** | Prepares agenda, records minutes, tracks action items              |
+
+## 6. Documentation and Retention
+
+- **Meeting minutes** and decisions are stored in **Google Drive** under ISMS records.
+- Retained for **3 years** as audit evidence.
+
+## 7. Review Approval
+
+- The **CEO formally signs off** on the review outcomes.
+- Approved actions are integrated into the **Corrective Actions Log** and relevant ISMS policies.
+
+
 
 ---
 
