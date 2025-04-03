@@ -862,34 +862,66 @@ These exclusions are based on:
 
 The following Annex A controls were evaluated and determined to be **not applicable** to Rate’s ISMS scope. Justifications are based on the organization’s operations, infrastructure, and risk assessment results.
 
-| **Annex A Control** | **Control Description**                                         | **Justification for Exclusion**                                                  |
-|---------------------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| A.5.3               | Segregation of duties                                           | Not applicable due to small team; duties are traceable via audit logs.           |
-| A.5.5               | Contact with authorities                                        | No regulated operations requiring contact with authorities.                      |
-| A.5.6               | Contact with special interest groups                            | Rate does not participate in any such groups.                                    |
-| A.5.7               | Threat intelligence                                             | Not applicable due to low risk exposure.                                         |
-| A.5.13              | Labeling of information                                         | Not applicable; no physical documentation or manual labeling process.            |
-| A.5.21              | Managing information security in the ICT supply chain           | Limited ICT supply chain scope.                                                  |
-| A.5.22              | Monitoring of supplier services                                 | Services are simple and stable; no frequent changes warranting extra measures.   |
-| A.6.4               | Disciplinary process                                            | Managed informally due to small team size.                                       |
-| A.7.4               | Physical security monitoring                                    | Office is shared; surveillance not under Rate's control.                         |
-| A.7.6               | Working in secure areas                                         | Not applicable; no specially secured zones in use.                               |
-| A.7.10              | Storage media                                                   | No external storage devices in use.                                              |
-| A.7.11              | Supporting utilities                                            | Utilities are managed by the office building, not Rate.                          |
-| A.7.12              | Cabling security                                                | Not applicable; cabling not maintained in-house.                                 |
-| A.7.13              | Equipment maintenance                                           | Hardware is replaced instead of maintained.                                      |
-| A.8.6               | Capacity management                                             | System load is low and stable.                                                   |
-| A.8.11              | Data masking                                                    | No access to production PII; masking not required.                               |
-| A.8.12              | Data leakage prevention                                         | Not implemented due to low-risk context.                                         |
-| A.8.14              | Redundancy of processing facilities                             | Azure is used only as emergency backup.                                          |
-| A.8.17              | Clock synchronization                                           | Not applicable; no time-critical logging dependencies.                           |
-| A.8.21              | Secure system architecture principles                           | Infrastructure is simple; no large-scale system engineering.                     |
-| A.8.24              | Protection of test data                                         | Only synthetic data used in testing.                                             |
-| A.8.27              | Fault logging                                                   | Handled informally through monitoring.                                           |
-| A.8.30              | Clock synchronization (duplicate)                              | Duplicate of A.8.17; already excluded.                                           |
-| A.8.32              | Information system audit controls                               | No automated audit tools in use.                                                 |
-| A.8.36              | Segregation in networks                                         | Not applicable; single flat network environment.                                 |
-| A.8.37              | Web filtering                                                   | Not implemented.                                                                 |
+| Annex A Control | Control Title |
+|-----------------|---------------|
+| A.5.2           | Information security roles and responsibilities |
+| A.5.4           | Management responsibilities |
+| A.5.5           | Contact with authorities |
+| A.5.6           | Contact with special interest groups |
+| A.5.7           | Threat intelligence |
+| A.5.8           | Information security in project management |
+| A.5.12          | Classification of information |
+| A.5.13          | Labelling of information |
+| A.5.14          | Information transfer |
+| A.5.21          | Managing information security in the ICT supply chain |
+| A.5.22          | Monitoring, review and change management of supplier services |
+| A.5.23          | Information security for use of cloud services |
+| A.5.28          | Collection of evidence |
+| A.5.30          | ICT readiness for business continuity |
+| A.5.37          | Documented operating procedures |
+| A.6.4           | Disciplinary process |
+| A.6.5           | Responsibilities after termination or change of employment |
+| A.6.6           | Confidentiality or non-disclosure agreements |
+| A.6.7           | Remote working |
+| A.6.8           | Information security event reporting |
+| A.7.3           | Securing offices, rooms and facilities |
+| A.7.4           | Physical security monitoring |
+| A.7.5           | Protecting against physical and environmental threats |
+| A.7.6           | Working in secure areas |
+| A.7.7           | Clear desk and clear screen |
+| A.7.8           | Equipment siting and protection |
+| A.7.9           | Security of assets off-premises |
+| A.7.10          | Storage media |
+| A.7.11          | Supporting utilities |
+| A.7.12          | Cabling security |
+| A.7.13          | Equipment maintenance |
+| A.7.14          | Secure disposal or re-use of equipment |
+| A.8.1           | User endpoint devices |
+| A.8.2           | Privileged access rights |
+| A.8.3           | Information access restriction |
+| A.8.4           | Access to source code |
+| A.8.5           | Secure authentication |
+| A.8.6           | Capacity management |
+| A.8.10          | Information deletion |
+| A.8.11          | Data masking |
+| A.8.12          | Data leakage prevention |
+| A.8.14          | Redundancy of information processing facilities |
+| A.8.15          | Logging |
+| A.8.16          | Monitoring activities |
+| A.8.17          | Clock synchronization |
+| A.8.18          | Use of privileged utility programs |
+| A.8.19          | Installation of software on operational systems |
+| A.8.21          | Security of network services |
+| A.8.22          | Segregation in networks |
+| A.8.23          | Web filtering |
+| A.8.27          | Secure system architecture and engineering principles |
+| A.8.29          | Security testing in development and acceptance |
+| A.8.30          | Outsourced development |
+| A.8.31          | Separation of development, test and production environments |
+| A.8.32          | Change management |
+| A.8.33          | Test information |
+| A.8.34          | Protection of information systems during audit and testing |
+
 
 ---
 
