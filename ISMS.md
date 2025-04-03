@@ -1156,23 +1156,25 @@ The following topics are reviewed:
 
 ## 1. Purpose
 
-This section defines key **performance indicators (KPIs)** used to measure the effectiveness of Rate's ISMS, in accordance with **ISO 27001:2022 Clause 9.1**.
+This section defines key **performance indicators (KPIs)** to measure the effectiveness of Rate's ISMS in alignment with its **information security objectives**, as required by **ISO/IEC 27001:2022 Clause 9.1**.
 
-## 2. Metrics and Measurement
+## 2. Metrics and Alignment with Objectives
 
-| **Metric**                    | **Description**                                          | **Target**        | **Review Frequency** |
-| ----------------------------- | -------------------------------------------------------- | ----------------- | -------------------- |
-| Incident Response Time        | Time taken to contain and resolve security incidents.    | < 4 hours         | Annually             |
-| Access Control Violations     | Unauthorized access attempts detected.                   | 0 per year        | Annually             |
-| Backup Integrity              | Successful test restores of critical backups.            | 100% success rate | Monthly              |
-| Security Awareness Completion | Percentage of employees who completed security training. | 100%              | Annually             |
-| Audit Non-Conformities        | Number of major non-conformities found in audits.        | 0 major issues    | Annually             |
+| **Metric**                    | **Description**                                                                 | **Target**              | **Related ISMS Objective**                                      | **Review Frequency** |
+|------------------------------|---------------------------------------------------------------------------------|--------------------------|------------------------------------------------------------------|----------------------|
+| Security Awareness Completion | Percentage of employees who completed training                                 | 100%                     | All employees complete annual awareness training                | Annually             |
+| Backup Integrity              | Success rate of monthly backup restorations                                     | ≥ 90%                    | Backups tested monthly with at least 90% success rate           | Monthly              |
+| Access Control Violations     | Number of unauthorized access attempts detected                                | 0 per year               | Limit unauthorized access incidents to zero                     | Annually             |
+| Incident Response Time        | Time taken to contain and resolve security incidents                           | < 4 hours                | Ensure quick response to security events                        | Annually             |
+| User Access Reviews           | Percentage of systems reviewed for access permissions annually                 | 100%                     | Annual access review for all systems                            | Annually             |
+| Audit Non-Conformities        | Number of major non-conformities found during internal audits                  | 0 major issues           | Complete annual internal audit and resolve findings in 30 days  | Annually             |
 
 ## 3. Reporting and Review
 
-- The **Managing Director** compiles ISMS performance reports **annually**.
-- KPI results are reviewed in **Management Review Meetings**.
-- If KPIs fall below targets, **corrective actions** are initiated.
+- The **Managing Director** compiles ISMS performance reports annually.
+- Metrics are reviewed during **Management Review Meetings**.
+- If KPIs fall below targets, **corrective actions** are initiated and logged.
+
 
 ---
 
