@@ -1019,21 +1019,59 @@ All third-party vendors handling Rate’s sensitive data must be reviewed and ap
 |----------------------|----------------------------|--------------------------------|--------------------------------|--------------------|------------------|
 | **Hetzner Cloud**     | Server Hosting             | Customer Survey Data           | ISO 27001 Certified             | Annually           | Managing Director  |
 | **Google Workspace**  | Email, Docs, Cloud Storage | Internal Business Data         | GDPR Compliant                  | Annually           | Managing Director  |
-| **GitHub**           | Source Code Repository     | Internal Codebase              | SOC 2 Type II, ISO 27001        | Annually           | team lead Developer |
+| **GitHub**           | Source Code Repository     | Internal Codebase              | SOC 2 Type II, ISO 27001        | Annually           | Team Lead Developer |
 | **LastPass**         | Password Manager           | Encrypted Password Storage     | SOC 2 Type II, GDPR Compliant   | Annually           | CEO |
 | **Exact Online**     | HR & Financial System      | Employee & Financial Data      | ISO 27001, GDPR Compliant       | Annually           | Managing Director  |
 | **Stack Overflow**   | Developer Collaboration    | Internal knowledge base      | Data Encrypted in Transit       | Annually           | Managing Director |
-| **Hetzner Cloud Backup** | Cloud Backup Storage | System Backups & Logs          | ISO 27001 Certified             | Annually           | team lead Developer |
-| **WordPress**       | Company Website Hosting    | Public Website Data            | Regular Security Patching       | Annually           | Managing Director  |
 | **Freshdesk**       | Customer Support System    | Customer Service Data          | ISO 27001, GDPR Compliant       | Annually           | Managing Director  |
 | **Trello**         | Project Management         | Internal Business Data         | SOC 2, GDPR Compliant           | Annually           | Managing Director  |
-| **Miro**           | Collaboration Tool         | Internal Business Data         | SOC 2, GDPR Compliant           | Annually           | Managing Director  |
-| **Hetzner Cloud Firewall** | Security & Network Protection | System & Network Logs | ISO 27001 Certified             | Annually           | team lead Developer |
-| **Local VPN** | Secure Remote Access | Internal Network Data         | End-to-End Encryption           | Annually           | team lead Developer |
+
+## 3. Security Responsibilities
+
+### Hetzner Cloud
+- Ensure physical security and access control of data centers.
+- Maintain infrastructure security and server updates.
+- Regular backups and disaster recovery.
+- Immediate notification of security breaches.
+
+### Google Workspace
+- Data encryption in transit and at rest.
+- Regular security assessments and compliance with GDPR.
+- Immediate breach notification and transparent incident reporting.
+
+### GitHub
+- Protection of source code repositories.
+- Compliance with secure coding and version control best practices.
+- Regular audits and incident management procedures.
+
+### LastPass
+- Secure storage of encrypted passwords.
+- Robust access control and multi-factor authentication.
+- Regular security assessments and breach notifications.
+
+### Exact Online
+- Secure handling of financial and employee data.
+- Compliance with GDPR and ISO 27001.
+- Immediate notification of security incidents.
+
+### Stack Overflow
+- Protection of internal knowledge data.
+- Data encryption in transit.
+- Notification of any security incidents or vulnerabilities.
+
+### Freshdesk
+- Secure management of customer service data.
+- Data encryption and compliance with GDPR.
+- Regular audits and prompt incident notifications.
+
+### Trello
+- Secure project management data handling.
+- Compliance with SOC 2 and GDPR.
+- Notification and management of security incidents.
 
 ---
 
-## 3. Security Clauses for Vendor Contracts
+## 4. Security Clauses for Vendor Contracts
 
 All contracts with vendors must include the following security obligations:
 
@@ -1043,6 +1081,10 @@ All contracts with vendors must include the following security obligations:
 - **Regular security audits & access control reviews**.
 
 **Vendor agreements are reviewed annually** to ensure compliance.
+
+---
+
+
 
 ---
 
