@@ -118,6 +118,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Purpose:** Documented risk identification and analysis  
 **Retention:** 3 years  
 **Owner:** Managing Director  
+**Old Risk assessments were managed within relevant trello cards**
 
 | Assessment ID | Date       | Assessor      | Summary               | Status   | Link                         |
 |:--------------|:-----------|:--------------|:----------------------|:---------|:-----------------------------|
