@@ -123,7 +123,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 | Assessment ID | Date       | Assessor      | Summary               | Status   | Link                         |
 |:--------------|:-----------|:--------------|:----------------------|:---------|:-----------------------------|
-| RA-2025-Q1    | YYYY-MM-DD | Managing Dir. | Identified 5 high risks | Complete | `/evidence/risk/RA-Q1.md`    |
+| RA-2025-Q1    | YYYY-MM-DD | Managing Dir. | Identified 5 high risks | Complete | `https://trello.com/c/PdvfZXPs`    |
 
 ---
 
@@ -134,7 +134,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 | Drill ID   | Date       | Participants      | Outcome    | Notes               | Link                         |
 |:-----------|:-----------|:------------------|:-----------|:--------------------|:-----------------------------|
-| DRILL-001  | YYYY-MM-DD | Team Lead, Ops    | Successful | Met 4-hour RTO goal | `/evidence/drill/drill1.md`  |
+| DRILL-001  | 10-01-2025 | Developers    | Successful | Met 4-hour RTO goal | `/evidence/drill/drill1.md`  |
 
 ---
 
