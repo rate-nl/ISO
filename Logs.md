@@ -92,10 +92,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Purpose:** Track hardware, software and ownership  
 **Retention:** 3 years  
 **Owner:** Managing Director  
-
-| Asset ID   | Type   | Description          | Owner             | Location | Link                         |
-|:-----------|:-------|:---------------------|:------------------|:---------|:-----------------------------|
-| ASSET-001  | Laptop | MD’s MacBook Pro     | Managing Director | Office   | `/evidence/assets/asset1.md` |
+**Hardware and Software assets** [Link](https://docs.google.com/spreadsheets/d/1pTpcCb0NRaoKwHqVUfqojYlkyGQRnSVEPFTyKMASNBg/edit?usp=sharing)
 
 ---
 
