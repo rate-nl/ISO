@@ -27,9 +27,12 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 3 years  
 **Owner:** Managing Director  
 
-| Date       | Employee Name | Training Module        | Status   | Notes              | Link                         |
-|:-----------|:--------------|:-----------------------|:---------|:-------------------|:-----------------------------|
-| YYYY-MM-DD | Alice Smith   | Security Awareness 2025| Completed| Certificate stored | `/evidence/training/2025.pdf`|
+| Date       | Employee Name     | Training Module        | Status   | Notes               | Link                                             |
+|------------|------------------|------------------------|----------|---------------------|--------------------------------------------------|
+| 2025-05-19 | Inge Proost       | Security Awareness 2025| Pending  | Confirm by email    | `Pending`      |
+| 2025-05-19 | Firas Kassoumeh   | Security Awareness 2025| Pending  | Confirm by email    | `Pending`     |
+| 2025-05-19 | Bassel Alkhateeb  | Security Awareness 2025| Pending  | Confirm by email    | `Pending`    |
+
 
 ---
 
