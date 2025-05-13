@@ -123,7 +123,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 | Assessment ID | Date       | Assessor      | Summary               | Status   | Link                         |
 |:--------------|:-----------|:--------------|:----------------------|:---------|:-----------------------------|
-| RA-2025-Q1    | YYYY-MM-DD | Managing Dir. | Identified 5 high risks | Complete | [Hetzner migration](`https://trello.com/c/PdvfZXPs`)    |
+| RA-2025-Q1    | YYYY-MM-DD | Managing Dir. | Identified 5 high risks | Complete |     |
 
 ---
 
