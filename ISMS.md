@@ -842,72 +842,75 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 
 
 ## **3. Justification for Exclusions**
+
 These exclusions are based on:
-- The absence of relevant business operations requiring these controls.
-- The use of alternative security measures to mitigate associated risks.
-- The reliance on cloud-based infrastructure, reducing physical security concerns.
+
+* The absence of relevant business operations requiring these controls.
+* The use of alternative security measures to mitigate associated risks.
+* The reliance on cloud-based infrastructure, reducing physical security concerns.
 
 The following Annex A controls were evaluated and determined to be **not applicable** to Rate’s ISMS scope. Justifications are based on the organization’s operations, infrastructure, and risk assessment results.
 
-| Annex A Control | Control Title |
-|-----------------|---------------|
-| A.5.2           | Information security roles and responsibilities |
-| A.5.4           | Management responsibilities |
-| A.5.5           | Contact with authorities |
-| A.5.6           | Contact with special interest groups |
-| A.5.7           | Threat intelligence |
-| A.5.8           | Information security in project management |
-| A.5.12          | Classification of information |
-| A.5.13          | Labelling of information |
-| A.5.14          | Information transfer |
-| A.5.21          | Managing information security in the ICT supply chain |
-| A.5.22          | Monitoring, review and change management of supplier services |
-| A.5.23          | Information security for use of cloud services |
-| A.5.28          | Collection of evidence |
-| A.5.30          | ICT readiness for business continuity |
-| A.5.37          | Documented operating procedures |
-| A.6.4           | Disciplinary process |
-| A.6.5           | Responsibilities after termination or change of employment |
-| A.6.6           | Confidentiality or non-disclosure agreements |
-| A.6.7           | Remote working |
-| A.6.8           | Information security event reporting |
-| A.7.3           | Securing offices, rooms and facilities |
-| A.7.4           | Physical security monitoring |
-| A.7.5           | Protecting against physical and environmental threats |
-| A.7.6           | Working in secure areas |
-| A.7.7           | Clear desk and clear screen |
-| A.7.8           | Equipment siting and protection |
-| A.7.9           | Security of assets off-premises |
-| A.7.10          | Storage media |
-| A.7.11          | Supporting utilities |
-| A.7.12          | Cabling security |
-| A.7.13          | Equipment maintenance |
-| A.7.14          | Secure disposal or re-use of equipment |
-| A.8.1           | User endpoint devices |
-| A.8.2           | Privileged access rights |
-| A.8.3           | Information access restriction |
-| A.8.4           | Access to source code |
-| A.8.5           | Secure authentication |
-| A.8.6           | Capacity management |
-| A.8.10          | Information deletion |
-| A.8.11          | Data masking |
-| A.8.12          | Data leakage prevention |
-| A.8.14          | Redundancy of information processing facilities |
-| A.8.15          | Logging |
-| A.8.16          | Monitoring activities |
-| A.8.17          | Clock synchronization |
-| A.8.18          | Use of privileged utility programs |
-| A.8.19          | Installation of software on operational systems |
-| A.8.21          | Security of network services |
-| A.8.22          | Segregation in networks |
-| A.8.23          | Web filtering |
-| A.8.27          | Secure system architecture and engineering principles |
-| A.8.29          | Security testing in development and acceptance |
-| A.8.30          | Outsourced development |
-| A.8.31          | Separation of development, test and production environments |
-| A.8.32          | Change management |
-| A.8.33          | Test information |
-| A.8.34          | Protection of information systems during audit and testing |
+| Annex A Control | Control Title                                                 | Justification                                                                                |
+| --------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| A.5.2           | Information security roles and responsibilities               | Roles and responsibilities already clearly defined in existing policy documents.             |
+| A.5.4           | Management responsibilities                                   | Covered under established ISMS documentation and governance processes.                       |
+| A.5.5           | Contact with authorities                                      | No regulatory requirement or direct communication needed with authorities.                   |
+| A.5.6           | Contact with special interest groups                          | No direct involvement with industry special interest groups.                                 |
+| A.5.7           | Threat intelligence                                           | Managed through existing security and vulnerability management processes.                    |
+| A.5.8           | Information security in project management                    | Integrated into secure development practices; no separate project management control needed. |
+| A.5.12          | Classification of information                                 | Assets classification documented in Asset Management Policy.                                 |
+| A.5.13          | Labelling of information                                      | Covered by standard access control and cloud-based management practices.                     |
+| A.5.14          | Information transfer                                          | Minimal external information transfer; secured by encryption and access controls.            |
+| A.5.21          | Managing information security in the ICT supply chain         | Managed by vendor agreements and contract security clauses.                                  |
+| A.5.22          | Monitoring, review and change management of supplier services | Included under Supplier Security & Contractual Obligations.                                  |
+| A.5.23          | Information security for use of cloud services                | Already explicitly addressed by individual cloud service providers (Google, Hetzner, etc.).  |
+| A.5.28          | Collection of evidence                                        | Incident response processes include evidence documentation.                                  |
+| A.5.30          | ICT readiness for business continuity                         | BCDR plan adequately covers ICT readiness.                                                   |
+| A.5.37          | Documented operating procedures                               | Procedures documented as needed within specific policy documents.                            |
+| A.6.4           | Disciplinary process                                          | Managed under general HR policies.                                                           |
+| A.6.5           | Responsibilities after termination or change of employment    | Covered by onboarding/offboarding processes in Access Control Policy.                        |
+| A.6.6           | Confidentiality or non-disclosure agreements                  | Employees sign NDAs upon employment, documented in HR processes.                             |
+| A.6.7           | Remote working                                                | Remote work securely managed via cloud-based applications and VPN.                           |
+| A.6.8           | Information security event reporting                          | Already addressed within Incident Management and Response Plan.                              |
+| A.7.3           | Securing offices, rooms and facilities                        | Office security managed through physical access control procedures.                          |
+| A.7.4           | Physical security monitoring                                  | Physical security managed via building infrastructure.                                       |
+| A.7.5           | Protecting against physical and environmental threats         | Data centers managed externally (Hetzner) with strong physical protections.                  |
+| A.7.6           | Working in secure areas                                       | No designated secure areas requiring additional controls.                                    |
+| A.7.7           | Clear desk and clear screen                                   | Managed under general office practices and device security policies.                         |
+| A.7.8           | Equipment siting and protection                               | Managed externally by cloud providers and minimal local hardware.                            |
+| A.7.9           | Security of assets off-premises                               | All critical assets cloud-based with strong security controls.                               |
+| A.7.10          | Storage media                                                 | No significant use of removable storage media.                                               |
+| A.7.11          | Supporting utilities                                          | Managed by cloud provider SLA.                                                               |
+| A.7.12          | Cabling security                                              | Managed externally by infrastructure providers.                                              |
+| A.7.13          | Equipment maintenance                                         | Managed externally or minimal equipment requiring maintenance.                               |
+| A.7.14          | Secure disposal or re-use of equipment                        | Minimal physical hardware; secure disposal already practiced.                                |
+| A.8.1           | User endpoint devices                                         | Managed via access control and device encryption standards.                                  |
+| A.8.2           | Privileged access rights                                      | Managed under access control policy.                                                         |
+| A.8.3           | Information access restriction                                | Managed via existing RBAC implementation.                                                    |
+| A.8.4           | Access to source code                                         | Managed via GitHub access and secure development practices.                                  |
+| A.8.5           | Secure authentication                                         | Already implemented with strong password and MFA policies.                                   |
+| A.8.6           | Capacity management                                           | Managed by cloud service providers' SLAs.                                                    |
+| A.8.10          | Information deletion                                          | Managed under existing data retention and deletion policies.                                 |
+| A.8.11          | Data masking                                                  | Not required due to minimal handling of sensitive personal data.                             |
+| A.8.12          | Data leakage prevention                                       | Managed through access control, RBAC, and cloud-based protections.                           |
+| A.8.14          | Redundancy of information processing facilities               | Managed by cloud providers' redundancy and disaster recovery measures.                       |
+| A.8.15          | Logging                                                       | Managed under existing system and cloud logging mechanisms.                                  |
+| A.8.16          | Monitoring activities                                         | Managed under established alerting and monitoring procedures.                                |
+| A.8.17          | Clock synchronization                                         | Managed automatically by cloud services.                                                     |
+| A.8.18          | Use of privileged utility programs                            | Limited scope, managed under privileged access controls.                                     |
+| A.8.19          | Installation of software on operational systems               | Strictly controlled and managed by automated processes.                                      |
+| A.8.21          | Security of network services                                  | Managed externally by cloud providers.                                                       |
+| A.8.22          | Segregation in networks                                       | Cloud provider responsibilities and network configurations in place.                         |
+| A.8.23          | Web filtering                                                 | Managed through existing network and endpoint controls.                                      |
+| A.8.27          | Secure system architecture and engineering principles         | Managed under secure development processes.                                                  |
+| A.8.29          | Security testing in development and acceptance                | Managed through existing secure development lifecycle.                                       |
+| A.8.30          | Outsourced development                                        | No outsourced software development.                                                          |
+| A.8.31          | Separation of development, test and production environments   | Clearly separated by existing processes and GitHub workflows.                                |
+| A.8.32          | Change management                                             | Managed under existing secure development and deployment procedures.                         |
+| A.8.33          | Test information                                              | Minimal test data, already securely managed.                                                 |
+| A.8.34          | Protection of information systems during audit and testing    | Secure testing practices already in place.                                                   |
+
 
 
 ---
