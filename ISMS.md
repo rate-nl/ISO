@@ -1231,27 +1231,198 @@ This section defines key **performance indicators (KPIs)** to measure the effect
 
 ---
 
-# Evidence & Logs (Todo)
+# ISMS Evidence & Logs
 
-| **Evidence Name**                               | **Purpose**                                         | **Retention** | **Responsible Owner**     |
-|--------------------------------------------------|-----------------------------------------------------|---------------|----------------------------|
-| Management Review Minutes                        | Annual review of ISMS                              | 3 years       | Managing Director          |
-| ISMS Performance Reports                         | Evaluation of KPIs and ISMS effectiveness          | 3 years       | Managing Director          |
-| Internal Audit Reports                           | Evidence of audit activities and findings          | 3 years       | Managing Director          |
-| Risk Assessment Report                           | Documented risk identification and analysis        | 3 years       | Managing Director          |
-| Risk Treatment Plan                              | Controls selected and justification                | 3 years       | Managing Director          |
-| Statement of Applicability (SoA)                 | Mapping of controls and justification              | 3 years       | Managing Director          |
-| SoA Implementation Evidence                      | Logs/configs/screenshots proving control use       | 3 years       | Team Lead Developer        |
-| Corrective Actions Log                           | Evidence of issue resolution and tracking          | 3 years       | Managing Director          |
-| Security Awareness Training Records              | Training completion proof                          | 3 years       | Managing Director          |
-| Incident Logs                                    | Security incidents and resolutions                 | 3 years       | Team Lead / Managing Director |
-| Access Control Logs / Permissions Review         | Evidence of RBAC, access rights review             | 1 year        | Team Lead Developer        |
-| Backup Integrity Reports                         | Verification of monthly/annual restoration testing | 1 year        | Team Lead Developer        |
-| BCDRP Test Reports                               | Annual test results for business continuity        | 3 years       | CEO / Managing Director    |
-| Vendor Security Reviews                          | Evaluation of third-party compliance               | 3 years       | Managing Director          |
-| Change Management Records                        | Documentation of approved and tracked changes      | 3 years       | Team Lead Developer        |
-| Legal & Compliance Review Logs                   | Evidence of annual regulatory review               | 3 years       | Managing Director          |
+> **Instructions:** For each section, list entries (date-stamped) under the table. Add links or notes in the “Location” column if needed.
 
+---
 
+## 1. Management Review Minutes  
+**Purpose:** Annual review of ISMS  
+**Retention:** 3 years  
+**Owner:** Managing Director  
 
+| Date       | Description                       | Location / Link     | Reviewed By        |
+|------------|-----------------------------------|---------------------|--------------------|
+| YYYY-MM-DD | e.g. “2025 Q1 management review”  | `/evidence/mgmt/`   | Managing Director  |
+|            |                                   |                     |                    |
 
+---
+
+## 2. ISMS Performance Reports  
+**Purpose:** Evaluation of KPIs and ISMS effectiveness  
+**Retention:** 3 years  
+**Owner:** Managing Director  
+
+| Date       | KPI Report Summary                | Location / Link     | Reviewed By        |
+|------------|-----------------------------------|---------------------|--------------------|
+| YYYY-MM-DD | e.g. “Incident Response Time Q1”  | `/evidence/kpi/`    | Managing Director  |
+|            |                                   |                     |                    |
+
+---
+
+## 3. Internal Audit Reports  
+**Purpose:** Evidence of audit activities and findings  
+**Retention:** 3 years  
+**Owner:** Managing Director  
+
+| Date       | Audit Scope / Findings            | Location / Link     | Auditor            |
+|------------|-----------------------------------|---------------------|--------------------|
+| YYYY-MM-DD | e.g. “Access Control audit”       | `/evidence/audit/`  | Internal Auditor   |
+|            |                                   |                     |                    |
+
+---
+
+## 4. Risk Assessment Report  
+**Purpose:** Documented risk identification and analysis  
+**Retention:** 3 years  
+**Owner:** Managing Director  
+
+| Date       | Risk Summary                      | Location / Link     | Approved By        |
+|------------|-----------------------------------|---------------------|--------------------|
+| YYYY-MM-DD | e.g. “Updated threat register”    | `/evidence/risk/`   | Managing Director  |
+|            |                                   |                     |                    |
+
+---
+
+## 5. Risk Treatment Plan  
+**Purpose:** Controls selected and justification  
+**Retention:** 3 years  
+**Owner:** Managing Director  
+
+| Date       | Control Changes                   | Location / Link     | Approved By        |
+|------------|-----------------------------------|---------------------|--------------------|
+| YYYY-MM-DD | e.g. “Added A.5.19 contract clause”| `/evidence/rtp/`   | CEO                |
+|            |                                   |                     |                    |
+
+---
+
+## 6. Statement of Applicability (SoA)  
+**Purpose:** Mapping of controls and justification  
+**Retention:** 3 years  
+**Owner:** Managing Director  
+
+| Version    | Summary of Changes                | Location / Link     | Approved By        |
+|------------|-----------------------------------|---------------------|--------------------|
+| 2025-05-01 | “Added supplier controls”         | `/evidence/soa.md`  | CEO                |
+|            |                                   |                     |                    |
+
+---
+
+## 7. SoA Implementation Evidence  
+**Purpose:** Logs/configs/screenshots proving control use  
+**Retention:** 3 years  
+**Owner:** Team Lead Developer  
+
+| Date       | Control & Evidence                | Location / Link     | Verified By        |
+|------------|-----------------------------------|---------------------|--------------------|
+| YYYY-MM-DD | e.g. “RBAC config screenshot”     | `/evidence/soa/`    | Team Lead Dev      |
+|            |                                   |                     |                    |
+
+---
+
+## 8. Corrective Actions Log  
+**Purpose:** Issue resolution and tracking  
+**Retention:** 3 years  
+**Owner:** Managing Director  
+
+| Date       | Issue                            | Action Taken         | Status    | Closed By        |
+|------------|-----------------------------------|----------------------|-----------|------------------|
+| YYYY-MM-DD | e.g. “SSL renewal missed”         | “Configured alerts”  | Closed    | Team Lead Dev    |
+|            |                                   |                      |           |                  |
+
+---
+
+## 9. Security Awareness Training Records  
+**Purpose:** Training completion proof  
+**Retention:** 3 years  
+**Owner:** Managing Director  
+
+| Date       | Training Topic                    | Participants         | Location / Link     |
+|------------|-----------------------------------|----------------------|---------------------|
+| YYYY-MM-DD | “Phishing awareness”              | All employees (4)    | `/evidence/training/`|
+|            |                                   |                      |                     |
+
+---
+
+## 10. Incident Logs  
+**Purpose:** Security incidents and resolutions  
+**Retention:** 3 years  
+**Owner:** Team Lead / Managing Director  
+
+| Date       | Incident Description              | Resolution           | Location / Link     | Reporter          |
+|------------|-----------------------------------|----------------------|---------------------|-------------------|
+| YYYY-MM-DD | “Unauthorized login attempt”      | “Blocked IP, reset”  | `/evidence/incidents/`| Team Lead Dev    |
+|            |                                   |                      |                     |                   |
+
+---
+
+## 11. Access Control Logs / Permissions Review  
+**Purpose:** Evidence of RBAC, access rights review  
+**Retention:** 1 year  
+**Owner:** Team Lead Developer  
+
+| Date       | Systems Reviewed                  | Findings             | Location / Link     | Reviewed By       |
+|------------|-----------------------------------|----------------------|---------------------|-------------------|
+| YYYY-MM-DD | “VPN & server ACLs”               | “No unauthorized”    | `/evidence/access/` | Team Lead Dev     |
+|            |                                   |                      |                     |                   |
+
+---
+
+## 12. Backup Integrity Reports  
+**Purpose:** Verification of restoration testing  
+**Retention:** 1 year  
+**Owner:** Team Lead Developer  
+
+| Date       | Backup Type                       | Test Result          | Location / Link     |
+|------------|-----------------------------------|----------------------|---------------------|
+| YYYY-MM-DD | Full server backup                | Success              | `/evidence/backups/`|
+|            |                                   |                      |                     |
+
+---
+
+## 13. BCDRP Test Reports  
+**Purpose:** Business continuity drill results  
+**Retention:** 3 years  
+**Owner:** CEO / Managing Director  
+
+| Date       | Scenario                          | Outcome              | Location / Link     | Lead             |
+|------------|-----------------------------------|----------------------|---------------------|------------------|
+| YYYY-MM-DD | Hetzner outage failover           | “Restored in 3h”     | `/evidence/bcdr/`   | Team Lead Dev    |
+|            |                                   |                      |                     |                  |
+
+---
+
+## 14. Vendor Security Reviews  
+**Purpose:** Third-party compliance evaluation  
+**Retention:** 3 years  
+**Owner:** Managing Director  
+
+| Date       | Vendor                            | Findings             | Location / Link     | Reviewer         |
+|------------|-----------------------------------|----------------------|---------------------|------------------|
+| YYYY-MM-DD | “Hetzner Cloud”                   | “ISO27001 valid”     | `/evidence/vendors/`| Managing Director|
+|            |                                   |                      |                     |                  |
+
+---
+
+## 15. Change Management Records  
+**Purpose:** Approved and tracked changes  
+**Retention:** 3 years  
+**Owner:** Team Lead Developer  
+
+| Date       | Change Description                | Approval             | Location / Link     |
+|------------|-----------------------------------|----------------------|---------------------|
+| YYYY-MM-DD | “Deployed new backup script”      | “Approved by CEO”    | `/evidence/changes/`|
+|            |                                   |                      |                     |
+
+---
+
+## 16. Legal & Compliance Review Logs  
+**Purpose:** Annual regulatory review  
+**Retention:** 3 years  
+**Owner:** Managing Director  
+
+| Date       | Regulation                        | Compliance Status    | Location / Link     |
+|------------|-----------------------------------|----------------------|---------------------|
+| YYYY-MM-DD | “GDPR review”                     | “All compliant”      | `/evidence/legal/`  |
+|            |                                   |                      |                     |
