@@ -91,11 +91,12 @@ _A single file to capture and track all required ISMS evidence in one place._
 ## 7. Change Control Log  
 **Purpose:** Track changes in production systems with approvals  
 **Retention:** 3 years  
-**Owner:** Team Lead Developer  
+**Owner:** Team Lead Developer
+**Old Log** https://docs.google.com/spreadsheets/d/1aTAYJK-ycFjJh9wI8hkGKIsSFxHTPhW5TxiL7bMx1hA/edit?usp=sharing
 
 | Change ID  | Date       | Description              | Requested By | Approval | Status   | Link                         |
 |:-----------|:-----------|:-------------------------|:-------------|:---------|:---------|:-----------------------------|
-| CHG-2025-01| YYYY-MM-DD | Update web server config | Jane Doe     | CEO      | Deployed | `/evidence/changes/chg1.md`  |
+
 
 ---
 
@@ -106,7 +107,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 | Patch ID   | Date       | System        | Description     | Status  | Link                         |
 |:-----------|:-----------|:--------------|:----------------|:--------|:-----------------------------|
-| PATCH-001  | YYYY-MM-DD | All endpoints | OS security fix | Applied | `/evidence/patches/patch1.md`|
+
 
 ---
 
