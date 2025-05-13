@@ -1239,19 +1239,19 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 ## Summary Table
 
-| Evidence Title               | Purpose                                                | Retention Period   | Responsible Owner   | Last Updated | Link / Location         |
-|:-----------------------------|:-------------------------------------------------------|:-------------------|:--------------------|:-------------|:------------------------|
-| Training Completion Log      | Confirm annual employee awareness training             | 3 years            | Managing Director   | YYYY-MM-DD   | `/evidence/training.md` |
-| Incident Response Log        | Track security events and responses                    | 3 years            | Managing Director   | YYYY-MM-DD   | `/evidence/incidents.md`|
-| Access Control Review Record | Review of user permissions and updates                 | 3 years            | Team Lead Developer | YYYY-MM-DD   | `/evidence/access.md`   |
-| DB Restore Test Log          | Confirm successful backup recovery tests               | 1 year             | Team Lead Developer | YYYY-MM-DD   | `/evidence/dbrestore.md`|
-| Backup Job Reports           | Proof of scheduled backup executions                   | 1 year             | Team Lead Developer | YYYY-MM-DD   | `/evidence/backups.md`  |
-| Asset Inventory              | Track hardware, software and ownership                 | 3 years            | Managing Director   | YYYY-MM-DD   | `/evidence/assets.md`   |
-| Change Control Log           | Track changes in production systems with approvals     | 3 years            | Team Lead Developer | YYYY-MM-DD   | `/evidence/changes.md`  |
-| Endpoint Patch/Update Log    | Prove system vulnerabilities are managed               | 1 year             | Team Lead Developer | YYYY-MM-DD   | `/evidence/patches.md`  |
-| Risk Assessment Report       | Documented risk identification and analysis            | 3 years            | Managing Director   | YYYY-MM-DD   | `/evidence/risk.md`     |
-| Restore Drill Checklist      | Validate that backup recovery is documented and tested | 1 year             | Team Lead Developer | YYYY-MM-DD   | `/evidence/drill.md`    |
-| Device Offboarding Checklist | Confirm access revoked and assets returned             | 3 years            | Managing Director   | YYYY-MM-DD   | `/evidence/offboard.md` |
+| Evidence Title               | Purpose                                                | Retention Period   | Responsible Owner   | Last Updated |
+|:-----------------------------|:-------------------------------------------------------|:-------------------|:--------------------|:-------------|
+| Training Completion Log      | Confirm annual employee awareness training             | 3 years            | Managing Director   | YYYY-MM-DD   |
+| Incident Response Log        | Track security events and responses                    | 3 years            | Managing Director   | YYYY-MM-DD   |
+| Access Control Review Record | Review of user permissions and updates                 | 3 years            | Team Lead Developer | YYYY-MM-DD   |
+| DB Restore Test Log          | Confirm successful backup recovery tests               | 1 year             | Team Lead Developer | YYYY-MM-DD   |
+| Backup Job Reports           | Proof of scheduled backup executions                   | 1 year             | Team Lead Developer | YYYY-MM-DD   |
+| Asset Inventory              | Track hardware, software and ownership                 | 3 years            | Managing Director   | YYYY-MM-DD   |
+| Change Control Log           | Track changes in production systems with approvals     | 3 years            | Team Lead Developer | YYYY-MM-DD   |
+| Endpoint Patch/Update Log    | Prove system vulnerabilities are managed               | 1 year             | Team Lead Developer | YYYY-MM-DD   |
+| Risk Assessment Report       | Documented risk identification and analysis            | 3 years            | Managing Director   | YYYY-MM-DD   |
+| Restore Drill Checklist      | Validate that backup recovery is documented and tested | 1 year             | Team Lead Developer | YYYY-MM-DD   |
+| Device Offboarding Checklist | Confirm access revoked and assets returned             | 3 years            | Managing Director   | YYYY-MM-DD   |
 
 ---
 
@@ -1260,9 +1260,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 3 years  
 **Owner:** Managing Director  
 
-| Date       | Employee Name | Training Module        | Status   | Notes              |
-|:-----------|:--------------|:-----------------------|:---------|:-------------------|
-| YYYY-MM-DD | Alice Smith   | Security Awareness 2025| Completed| Certificate stored |
+| Date       | Employee Name | Training Module        | Status   | Notes              | Link                         |
+|:-----------|:--------------|:-----------------------|:---------|:-------------------|:-----------------------------|
+| YYYY-MM-DD | Alice Smith   | Security Awareness 2025| Completed| Certificate stored | `/evidence/training/2025.pdf`|
 
 ---
 
@@ -1271,9 +1271,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 3 years  
 **Owner:** Managing Director  
 
-| Incident ID | Date       | Description                | Severity | Response Summary        | Status   |
-|:------------|:-----------|:---------------------------|:---------|:------------------------|:---------|
-| IR-2025-001 | YYYY-MM-DD | Unauthorized login attempt | Medium   | Blocked IP; reset creds | Closed   |
+| Incident ID | Date       | Description                | Severity | Response Summary        | Status   | Link                         |
+|:------------|:-----------|:---------------------------|:---------|:------------------------|:---------|:-----------------------------|
+| IR-2025-001 | YYYY-MM-DD | Unauthorized login attempt | Medium   | Blocked IP; reset creds | Closed   | `/evidence/incidents/IR-001.md` |
 
 ---
 
@@ -1282,9 +1282,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 3 years  
 **Owner:** Team Lead Developer  
 
-| Review Date | System | Users Reviewed | Findings                | Action Taken    |
-|:------------|:-------|:---------------|:------------------------|:----------------|
-| YYYY-MM-DD  | GitHub | 12             | 2 inactive accounts     | Removed access  |
+| Review Date | System | Users Reviewed | Findings                | Action Taken    | Link                         |
+|:------------|:-------|:---------------|:------------------------|:----------------|:-----------------------------|
+| YYYY-MM-DD  | GitHub | 12             | 2 inactive accounts     | Removed access  | `/evidence/access/review1.md` |
 
 ---
 
@@ -1293,9 +1293,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 1 year  
 **Owner:** Team Lead Developer  
 
-| Test Date  | Database   | Tested By        | Result   | Notes                     |
-|:-----------|:-----------|:-----------------|:---------|:--------------------------|
-| YYYY-MM-DD | prod_db    | John Doe         | Success  | Restoration in 5 minutes  |
+| Test Date  | Database   | Tested By | Result   | Notes                    | Link                         |
+|:-----------|:-----------|:----------|:---------|:-------------------------|:-----------------------------|
+| YYYY-MM-DD | prod_db    | John Doe  | Success  | Restoration in 5 minutes | `/evidence/dbrestore/test1.md` |
 
 ---
 
@@ -1304,9 +1304,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 1 year  
 **Owner:** Team Lead Developer  
 
-| Report Date | Job Name       | Status    | Duration | Notes                       |
-|:------------|:---------------|:----------|:---------|:----------------------------|
-| YYYY-MM-DD  | DailyBackup001 | Completed | 15m      | No errors                   |
+| Report Date | Job Name       | Status    | Duration | Notes      | Link                         |
+|:------------|:---------------|:----------|:---------|:-----------|:-----------------------------|
+| YYYY-MM-DD  | DailyBackup001 | Completed | 15m      | No errors  | `/evidence/backups/rep1.md`  |
 
 ---
 
@@ -1315,9 +1315,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 3 years  
 **Owner:** Managing Director  
 
-| Asset ID   | Type     | Description           | Owner             | Location        |
-|:-----------|:---------|:----------------------|:------------------|:----------------|
-| ASSET-001  | Laptop   | MD’s MacBook Pro      | Managing Director | Office          |
+| Asset ID   | Type   | Description          | Owner             | Location | Link                         |
+|:-----------|:-------|:---------------------|:------------------|:---------|:-----------------------------|
+| ASSET-001  | Laptop | MD’s MacBook Pro     | Managing Director | Office   | `/evidence/assets/asset1.md` |
 
 ---
 
@@ -1326,9 +1326,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 3 years  
 **Owner:** Team Lead Developer  
 
-| Change ID  | Date       | Description                | Requested By | Approval | Status   |
-|:-----------|:-----------|:---------------------------|:-------------|:---------|:---------|
-| CHG-2025-01| YYYY-MM-DD | Update web server config   | Jane Doe     | CEO      | Deployed |
+| Change ID  | Date       | Description              | Requested By | Approval | Status   | Link                         |
+|:-----------|:-----------|:-------------------------|:-------------|:---------|:---------|:-----------------------------|
+| CHG-2025-01| YYYY-MM-DD | Update web server config | Jane Doe     | CEO      | Deployed | `/evidence/changes/chg1.md`  |
 
 ---
 
@@ -1337,9 +1337,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 1 year  
 **Owner:** Team Lead Developer  
 
-| Patch ID   | Date       | System         | Description     | Status   |
-|:-----------|:-----------|:---------------|:----------------|:---------|
-| PATCH-001  | YYYY-MM-DD | All endpoints  | OS security fix | Applied  |
+| Patch ID   | Date       | System        | Description     | Status  | Link                         |
+|:-----------|:-----------|:--------------|:----------------|:--------|:-----------------------------|
+| PATCH-001  | YYYY-MM-DD | All endpoints | OS security fix | Applied | `/evidence/patches/patch1.md`|
 
 ---
 
@@ -1348,9 +1348,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 3 years  
 **Owner:** Managing Director  
 
-| Assessment ID | Date       | Assessor       | Summary               | Status   |
-|:--------------|:-----------|:---------------|:----------------------|:---------|
-| RA-2025-Q1    | YYYY-MM-DD | Managing Dir.  | Identified 5 high risks| Complete |
+| Assessment ID | Date       | Assessor      | Summary               | Status   | Link                         |
+|:--------------|:-----------|:--------------|:----------------------|:---------|:-----------------------------|
+| RA-2025-Q1    | YYYY-MM-DD | Managing Dir. | Identified 5 high risks | Complete | `/evidence/risk/RA-Q1.md`    |
 
 ---
 
@@ -1359,9 +1359,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 1 year  
 **Owner:** Team Lead Developer  
 
-| Drill ID   | Date       | Participants       | Outcome   | Notes                |
-|:-----------|:-----------|:-------------------|:----------|:---------------------|
-| DRILL-001  | YYYY-MM-DD | Team Lead, Ops     | Successful| Met 4-hour RTO goal  |
+| Drill ID   | Date       | Participants      | Outcome    | Notes               | Link                         |
+|:-----------|:-----------|:------------------|:-----------|:--------------------|:-----------------------------|
+| DRILL-001  | YYYY-MM-DD | Team Lead, Ops    | Successful | Met 4-hour RTO goal | `/evidence/drill/drill1.md`  |
 
 ---
 
@@ -1370,7 +1370,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 3 years  
 **Owner:** Managing Director  
 
-| Offboard ID | Date       | Employee Name | Assets Returned           | Access Revoked | Notes     |
-|:------------|:-----------|:--------------|:--------------------------|:---------------|:----------|
-| OFF-2025-01 | YYYY-MM-DD | John Smith    | Laptop, Badge, Phone      | Yes            | Completed |
+| Offboard ID | Date       | Employee Name | Assets Returned        | Access Revoked | Notes     | Link                         |
+|:------------|:-----------|:--------------|:-----------------------|:---------------|:----------|:-----------------------------|
+| OFF-2025-01 | YYYY-MM-DD | John Smith    | Laptop, Badge, Phone   | Yes            | Completed | `/evidence/offboard/off1.md` |
+
+
 
