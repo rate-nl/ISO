@@ -141,9 +141,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 ## 11. Device Offboarding Checklist  
 **Purpose:** Confirm access revoked and assets returned  
 **Retention:** 3 years  
-**Owner:** Managing Director  
+**Owner:** Managing Director
+**Access grants and revokes are maintained within EXACT software and managed by the managing director**
 
-| Offboard ID | Date       | Employee Name | Assets Returned        | Access Revoked | Notes     | Link                         |
-|:------------|:-----------|:--------------|:-----------------------|:---------------|:----------|:-----------------------------|
-| OFF-2025-01 | YYYY-MM-DD | John Smith    | Laptop, Badge, Phone   | Yes            | Completed | `/evidence/offboard/off1.md` |
 
