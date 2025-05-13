@@ -1230,23 +1230,24 @@ This section defines key **performance indicators (KPIs)** to measure the effect
 
 # Evidence & Logs (Todo)
 
-| **Record Name**                                      | **Purpose**                                        | **Retention Period** | **Storage Location**       | **Responsible Person**         |
-|------------------------------------------------------|----------------------------------------------------|----------------------|---------------------------|-------------------------------|
-| **Management Review Minutes**                        | Evidence of annual management review of ISMS      | 3 years              | Google Drive              | Managing Director             |
-| **ISMS Performance Reports**                         | Evidence of ISMS KPI evaluation                   | 3 years              | Google Drive              | Managing Director             |
-| **Incident Logs**                                    | Documented security incidents and responses      | 3 years              | Google Drive              | team lead / Managing Director |
-| **Risk Assessment Reports**                          | Annual risk analysis and mitigation strategy     | 3 years              | Google Drive              | Managing Director             |
-| **Risk Treatment Plan**                              | Risk treatment and mitigation measures           | 3 years              | Google Drive              | Managing Director             |
-| **Access Control Logs**                              | Records of user access and role changes         | 1 year               | Google Drive              | team lead Developer          |
-| **Security Awareness Training Records**             | Proof of employee training completion           | 3 years              | Google Drive              | Managing Director             |
-| **Audit Reports**                                    | Evidence of internal audits and corrective actions | 3 years              | Google Drive              | Managing Director             |
-| **Corrective Actions Log**                           | Log of security issues and corrective measures   | 3 years              | Google Drive              | Managing Director             |
-| **Backup Integrity Reports**                         | Verification of successful backup restoration   | 1 year               | NAS / Google Drive        | team lead Developer          |
-| **Vendor Security Reviews**                          | Evaluation of third-party security compliance   | 3 years              | Google Drive              | Managing Director             |
-| **Business Continuity & Disaster Recovery Test Reports** | Evidence of BCDRP testing and updates        | 3 years              | Google Drive              | CEO / Managing Director      |
-| **Legal & Compliance Review Reports**               | Annual review of regulatory compliance         | 3 years              | Google Drive              | Managing Director             |
-| **Non-Conformance & Corrective Actions Reports**    | Evidence of issue resolution                   | 3 years              | Google Drive              | Managing Director             |
-| **Change Management Records**                       | Logs of security-related system changes        | 3 years              | Google Drive              | team lead Developer          |
+| **Evidence Name**                               | **Purpose**                                         | **Retention** | **Responsible Owner**     |
+|--------------------------------------------------|-----------------------------------------------------|---------------|----------------------------|
+| Management Review Minutes                        | Annual review of ISMS                              | 3 years       | Managing Director          |
+| ISMS Performance Reports                         | Evaluation of KPIs and ISMS effectiveness          | 3 years       | Managing Director          |
+| Internal Audit Reports                           | Evidence of audit activities and findings          | 3 years       | Managing Director          |
+| Risk Assessment Report                           | Documented risk identification and analysis        | 3 years       | Managing Director          |
+| Risk Treatment Plan                              | Controls selected and justification                | 3 years       | Managing Director          |
+| Statement of Applicability (SoA)                 | Mapping of controls and justification              | 3 years       | Managing Director          |
+| SoA Implementation Evidence                      | Logs/configs/screenshots proving control use       | 3 years       | Team Lead Developer        |
+| Corrective Actions Log                           | Evidence of issue resolution and tracking          | 3 years       | Managing Director          |
+| Security Awareness Training Records              | Training completion proof                          | 3 years       | Managing Director          |
+| Incident Logs                                    | Security incidents and resolutions                 | 3 years       | Team Lead / Managing Director |
+| Access Control Logs / Permissions Review         | Evidence of RBAC, access rights review             | 1 year        | Team Lead Developer        |
+| Backup Integrity Reports                         | Verification of monthly/annual restoration testing | 1 year        | Team Lead Developer        |
+| BCDRP Test Reports                               | Annual test results for business continuity        | 3 years       | CEO / Managing Director    |
+| Vendor Security Reviews                          | Evaluation of third-party compliance               | 3 years       | Managing Director          |
+| Change Management Records                        | Documentation of approved and tracked changes      | 3 years       | Team Lead Developer        |
+| Legal & Compliance Review Logs                   | Evidence of annual regulatory review               | 3 years       | Managing Director          |
 
 
 
