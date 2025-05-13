@@ -41,9 +41,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 3 years  
 **Owner:** Managing Director  
 
-| Incident ID | Date       | Description                | Severity | Response Summary        | Status   | Link                         |
-|:------------|:-----------|:---------------------------|:---------|:------------------------|:---------|:-----------------------------|
-| IR-2025-001 | YYYY-MM-DD | Unauthorized login attempt | Medium   | Blocked IP; reset creds | Closed   | `/evidence/incidents/IR-001.md` |
+| Incident ID  | Date       | Description                              | Severity | Response Summary                            | Status | Link                                                                                  |
+|--------------|------------|------------------------------------------|----------|----------------------------------------------|--------|---------------------------------------------------------------------------------------|
+| IR-2025-001  | 2025-01-27 | Customer data overwritten due to session conflict | Medium   | Data restored; safeguards planned             | Closed | [Incident Report](https://docs.google.com/document/d/1qPG9Pe-GH_z7szprc42ms2sIN_t3KYaUsw6GKezd5zk/edit?tab=t.0#heading=h.epb41kpmjny7) |
 
 ---
 
