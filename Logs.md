@@ -134,7 +134,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 | Drill ID   | Date       | Participants      | Outcome    | Notes               | Link                         |
 |:-----------|:-----------|:------------------|:-----------|:--------------------|:-----------------------------|
-| DRILL-001  | 10-01-2025 | Developers    | Successful | Met 4-hour RTO goal | `/evidence/drill/drill1.md`  |
+| DRILL-001  | 10-01-2025 | Developers    | Successful | Met 4-hour RTO goal | `https://trello.com/c/PdvfZXPs`  |
 
 ---
 
