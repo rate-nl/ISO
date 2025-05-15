@@ -328,7 +328,8 @@ This policy applies to all personnel accessing Rate's information assets, includ
 
 - **Registration:** Requests are submitted to the team lead via email. CEO approval is required for high-privilege access. Requests are stored in email records, which serve as documentation.
 - **De-registration:** The CEO instructs the team lead via email to revoke access upon role change or departure.
-- **Documentation:** Access approvals and removals are retained in email records.
+- **Documentation:** Access approvals and removals are retained in email records. and must be updated in **Access Overview** ([view file](https://docs.google.com/document/d/1zzRYV8-JB9kXEzqw2DPTuI3aIKU_ifDiUABFxwWd43I/edit?tab=t.0)).
+
 
 ### **4.2. Provisioning and Review**
 
@@ -352,7 +353,7 @@ Pre-employment screening is coordinated by the Managing Director and documented 
 #### **Onboarding**
 
 1. **User Registration:** HR submits an onboarding request to the Managing Director.
-2. **Access Provisioning:** IT provisions necessary accounts (VPN, email, internal platforms) with **role-based access**.
+2. **Access Provisioning:** IT provisions necessary accounts (VPN, email, internal platforms) with **role-based access**.Access granted is recorded in the **Access Overview** ([view file](https://docs.google.com/document/d/1zzRYV8-JB9kXEzqw2DPTuI3aIKU_ifDiUABFxwWd43I/edit?tab=t.0))
 3. **Security Training:** New employees must complete security awareness training within the first week.
 4. **NDA Agreement:** Employees sign a **Confidentiality Agreement (NDA)** before accessing sensitive data.
 5. **Asset Assignment:** Laptops, security tokens, and other assets are logged in the asset inventory.
@@ -361,7 +362,7 @@ Pre-employment screening is coordinated by the Managing Director and documented 
 
 1. **Account Deactivation:** The **CEO or Managing Director** instructs the **team lead** to revoke all access.
 2. **Asset Return:** Employees return laptops, access cards, and security tokens to the **Managing Director**.
-3. **Exit Security Review:** The Managing Director ensures final security clearance and logs any security concerns related to the departing employee.
+3. **Exit Security Review:** The Managing Director ensures final security clearance and access revocation is signed off in the **Access Overview** ([view file](https://docs.google.com/document/d/1zzRYV8-JB9kXEzqw2DPTuI3aIKU_ifDiUABFxwWd43I/edit?tab=t.0)).
 
 
 #### Security Awareness Training
@@ -466,6 +467,12 @@ A security incident is any event that compromises the confidentiality, integrity
 - Employees must report incidents immediately via email to the team lead.
 - High-severity incidents should be escalated to the CEO and Managing Director.
 - Incident details should include date, time, affected systems, and a brief description.
+* Use the following form to record incidents:
+
+| **Template Name**             | **Purpose**                                                | **Link**                                                          |
+| ----------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------- |
+| Security Incident Report Form | To document and manage security incidents (A.5.24, A.5.25) | [View Template](https://docs.google.com/document/d/1qNgrz0pVWFuE2jzb2sc4SQB8KdniGmpaVv-866N25tg/edit?tab=t.0#heading=h.epb41kpmjny7) |
+
 
 ### **4.2. External Reporting**
 - If customer data is affected, the CEO will communicate with impacted parties.
