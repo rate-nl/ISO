@@ -1203,7 +1203,7 @@ This section defines key **performance indicators (KPIs)** to measure the effect
 
 # ISMS Review & Approval Log
 
-This log tracks the review and approval history of all core ISMS documents and policies, including who reviewed them, when they were last approved, whether formal approval is required, and the next scheduled review date. This ensures traceability, accountability, and compliance with ISO/IEC 27001:2022.
+This log tracks the review and approval history of all core ISMS documents and policies, including who reviewed them, when they were last approved, whether formal approval is required. This ensures traceability, accountability, and compliance with ISO/IEC 27001:2022.
 
 | Section/Policy                             | Last Reviewed | Reviewed By         |  Requires Approval | Approved By       | Approval Date | Status        | Notes                                                    |
 |-------------------------------------------|---------------|----------------------|--------------------|--------------------|----------------|---------------|----------------------------------------------------------|
