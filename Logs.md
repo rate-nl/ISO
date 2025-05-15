@@ -6,19 +6,19 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 ## Summary Table
 
-| Evidence Title               | Purpose                                                | Retention Period   | Responsible Owner   | Last Updated |
-|:-----------------------------|:-------------------------------------------------------|:-------------------|:--------------------|:-------------|
-| Training Completion Log      | Confirm annual employee awareness training             | 3 years            | Managing Director   | YYYY-MM-DD   |
-| Incident Response Log        | Track security events and responses                    | 3 years            | Managing Director   | YYYY-MM-DD   |
-| Access Control Review Record | Review of user permissions and updates                 | 3 years            | Team Lead Developer | YYYY-MM-DD   |
-| DB Restore Test Log          | Confirm successful backup recovery tests               | 1 year             | Team Lead Developer | YYYY-MM-DD   |
-| Backup Job Reports           | Proof of scheduled backup executions                   | 1 year             | Team Lead Developer | YYYY-MM-DD   |
-| Asset Inventory              | Track hardware, software and ownership                 | 3 years            | Managing Director   | YYYY-MM-DD   |
-| Change Control Log           | Track changes in production systems with approvals     | 3 years            | Team Lead Developer | YYYY-MM-DD   |
-| Endpoint Patch/Update Log    | Prove system vulnerabilities are managed               | 1 year             | Team Lead Developer | YYYY-MM-DD   |
-| Risk Assessment Report       | Documented risk identification and analysis            | 3 years            | Managing Director   | YYYY-MM-DD   |
-| Restore Drill Checklist      | Validate that backup recovery is documented and tested | 1 year             | Team Lead Developer | YYYY-MM-DD   |
-| Device Offboarding Checklist | Confirm access revoked and assets returned             | 3 years            | Managing Director   | YYYY-MM-DD   |
+| Evidence Title               | Purpose                                                | Retention Period | Responsible Owner     | Frequency                              | Estimated Time           |
+|-----------------------------|--------------------------------------------------------|------------------|------------------------|-----------------------------------------|--------------------------|
+| Training Completion Log      | Confirm annual employee awareness training             | 3 years          | Managing Director      | Annually                                | 1 hour                   |
+| Incident Response Log        | Track security events and responses                    | 3 years          | Managing Director      | After each incident + Annual review     | 30 minutes per incident  |
+| Access Control Review Record | Review of user permissions and updates                 | 3 years          | Team Lead Developer    | Annually                                | 1 hour                   |
+| DB Restore Test Log          | Confirm successful backup recovery tests               | 1 year           | Team Lead Developer    | Monthly + Annually                      | 1 hour                   |
+| Asset Inventory              | Track hardware, software and ownership                 | 3 years          | Managing Director      | Annually                                | 2 hours                  |
+| Change Control Log           | Track changes in production systems with approvals     | 3 years          | Team Lead Developer    | Per change                              | 10 minutes per entry     |
+| Endpoint Patch/Update Log    | Prove system vulnerabilities are managed               | 1 year           | Team Lead Developer    | Monthly                                 | 30 minutes               |
+| Risk Assessment Report       | Documented risk identification and analysis            | 3 years          | Managing Director      | After major change                      | 2 hours                  |
+| Restore Drill Checklist      | Validate that backup recovery is documented and tested | 1 year           | Team Lead Developer    | Annually                                | 1 hour                   |
+| Device Offboarding Checklist | Confirm access revoked and assets returned             | 3 years          | Managing Director      | Per offboarding                         | 15 minutes per employee  |
+
 
 ---
 
@@ -75,20 +75,10 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 
 
----
-
-## 5. Backup Job Reports  
-**Purpose:** Proof of scheduled backup executions  
-**Retention:** 1 year  
-**Owner:** Team Lead Developer  
-
-| Report Date | Job Name       | Status    | Duration | Notes      | Link                         |
-|:------------|:---------------|:----------|:---------|:-----------|:-----------------------------|
-| YYYY-MM-DD  | DailyBackup001 | Completed | 15m      | No errors  | `/evidence/backups/rep1.md`  |
 
 ---
 
-## 6. Asset Inventory  
+## 5. Asset Inventory  
 **Purpose:** Track hardware, software and ownership  
 **Retention:** 3 years  
 **Owner:** Managing Director  
@@ -96,7 +86,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 ---
 
-## 7. Change Control Log  
+## 6. Change Control Log  
 **Purpose:** Track changes in production systems with approvals  
 **Retention:** 3 years  
 **Owner:** Team Lead Developer
@@ -108,7 +98,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 ---
 
-## 8. Endpoint Patch/Update Log  
+## 7. Endpoint Patch/Update Log  
 **Purpose:** Prove system vulnerabilities are managed  
 **Retention:** 1 year  
 **Owner:** Team Lead Developer  
@@ -119,7 +109,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 ---
 
-## 9. Risk Assessment Report  
+## 8. Risk Assessment Report  
 **Purpose:** Documented risk identification and analysis  
 **Retention:** 3 years  
 **Owner:** Managing Director  
@@ -130,7 +120,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 ---
 
-## 10. Restore Drill Checklist  
+## 9. Restore Drill Checklist  
 **Purpose:** Validate that backup recovery is documented and tested  
 **Retention:** 1 year  
 **Owner:** Team Lead Developer  
@@ -141,7 +131,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 ---
 
-## 11. Device Offboarding Checklist  
+## 10. Device Offboarding Checklist  
 **Purpose:** Confirm access revoked and assets returned  
 **Retention:** 3 years  
 **Owner:** Managing Director
