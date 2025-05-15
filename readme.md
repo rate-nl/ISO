@@ -240,10 +240,6 @@ In compliance with ISO/IEC 27001:2022 Clause 5.1.2, this Information Security Po
 - **Reviewed**: The **Managing Director** is responsible for reviewing this policy **at least annually** or when significant changes occur.
 - **Approved**: The policy must be **approved by the Chief Executive Officer (CEO)** to ensure its relevance and effectiveness.
 
----
-
-**Approved by**: [CEO Name]  
-**Date**: [Approval Date]
 
 ---
 # Risk Assessment and Risk Treatment Plan
@@ -294,9 +290,6 @@ This document outlines the identified risks, their likelihood and impact, and th
 ---
 
 ## **2. Risk Review and Approval**
-- **Risk Assessment Reviewed By:** Managing Director  
-- **Risk Treatment Plan Approved By:** CEO  
-- **Date of Last Review:** [Insert Date]  
 
 This document will be reviewed **annually** and **after any significant changes** to infrastructure, services, or security risks.
 
@@ -665,13 +658,6 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 **ISO/IEC 27001:2022** (Clauses 9.2, 9.3,)\
 **GDPR (Article 32: Security of Processing)**
 
-## **10. Review and Approval**
-
-- **Reviewed By:** Managing Director
-- **Approved By:** CEO
-- **Date of Last Review:** [Insert Date]
-- **Next Scheduled Review:** [Insert Date]
-
 
 
 ---
@@ -922,12 +908,6 @@ The **Statement of Applicability (SoA)** is reviewed and updated:
 - **When new risks are identified** that require control modifications.
 - **Upon regulatory changes** affecting information security compliance (**e.g., GDPR updates**).
 
-### **Approval and Versioning**
-- **Reviewed by:** Managing Director  
-- **Approved by:** CEO  
-- **Last Review Date:** [Insert Date]  
-- **Next Scheduled Review:** [Insert Date]  
-
 ---
 
 # Compliance & Security Governance
@@ -945,12 +925,6 @@ Rate is committed to ensuring compliance with all applicable **legal, regulatory
 ### **Compliance Review & Tracking**
 
 The **Managing Director** is responsible for reviewing applicable laws and regulatory changes **annually** and ensuring our policies are updated accordingly.
-
-| **Requirement**             | **Review Date** | **Status** | **Responsible Person** |
-| --------------------------- | --------------- | ---------- | ---------------------- |
-| GDPR Compliance             | [Insert Date]   | ✅ Reviewed | Managing Director      |
-| ISO 27001 Compliance        | [Insert Date]   | ✅ Reviewed | Managing Director      |
-| Contractual Security Review | [Insert Date]   | ⏳ Pending  | Managing Director      |
 
 ---
 
@@ -1114,12 +1088,12 @@ Each year, a structured **audit plan** is developed by the **Managing Director**
 
 | **Audit Date** | **Reviewed By**   | **Findings**             | **Corrective Actions**        |
 | -------------- | ----------------- | ------------------------ | ----------------------------- |
-| [Insert Date]  | Managing Director | ✅ Compliant              | None                          |
-| [Insert Date]  | Managing Director | ⚠️ Missing Vendor Review | Assigned to Managing Director |
+
 
 ## 4. Review & Updates
 
 Audit findings are reviewed by the **CEO**, and all corrective actions must be implemented **within 30 days**. Audit plans and outcomes are reviewed annually or when significant changes occur.
+
 
 
 # Corrective Actions & Non-Compliance Log
@@ -1196,10 +1170,6 @@ All **decisions and actions are recorded** in the **Management Review Minutes** 
 - **Meeting minutes** and decisions are stored in **Google Drive** under ISMS records.
 - Retained for **3 years** as audit evidence.
 
-## 7. Review Approval
-
-- The **CEO formally signs off** on the review outcomes.
-- Approved actions are integrated into the **Corrective Actions Log** and relevant ISMS policies.
 
 
 
