@@ -22,16 +22,18 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 ---
 
-## 1. Training Completion Log  
-**Purpose:** Confirm annual employee awareness training  
-**Retention:** 3 years  
-**Owner:** Managing Director  
+## 1. Training Completion Log
 
-| Date       | Employee Name     | Training Module        | Status   | Notes               | Link                                             |
-|------------|------------------|------------------------|----------|---------------------|--------------------------------------------------|
-| 2025-05-19 | Inge Proost       | Security Awareness 2025| Pending  | Confirm by email    | `Pending`      |
-| 2025-05-19 | Firas Kassoumeh   | Security Awareness 2025| Pending  | Confirm by email    | `Pending`     |
-| 2025-05-19 | Bassel Alkhateeb  | Security Awareness 2025| Pending  | Confirm by email    | `Pending`    |
+**Purpose:** Confirm completion of combined **Security Awareness Training** and **ISMS Management Awareness Session** for 2025. Given Rate's small team size, both sessions were merged into a single training and delivered in one meeting.
+
+**Retention:** 3 years
+**Owner:** Managing Director
+
+| Date       | Employee Name    | Training Module                | Status      | Notes                     | Link                                                                                                                                                                                                                                     |
+| ---------- | ---------------- | ------------------------------ | ----------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2025-05-20 | Inge Proost      | Security + ISMS Awareness 2025 | ✅ Completed | See MoM & materials below | [Minutes](https://docs.google.com/document/d/1icjVU979pQZrNTgcScfVoTWJKHIZbYxIfz-RaKfFWHQ/edit?tab=t.0#heading=h.gsg0462khpl), [Materials](https://docs.google.com/document/d/1aTxQP5pj_n1xqduZj4EwyiqsfY3rcI7aY18_ee-SKQA/edit?tab=t.0) |
+| 2025-05-20 | Firas Kassoumeh  | Security + ISMS Awareness 2025 | ✅ Completed | See MoM & materials below | [Minutes](https://docs.google.com/document/d/1icjVU979pQZrNTgcScfVoTWJKHIZbYxIfz-RaKfFWHQ/edit?tab=t.0#heading=h.gsg0462khpl), [Materials](https://docs.google.com/document/d/1aTxQP5pj_n1xqduZj4EwyiqsfY3rcI7aY18_ee-SKQA/edit?tab=t.0) |
+| 2025-05-20 | Bassel Alkhateeb | Security + ISMS Awareness 2025 | ✅ Completed | See MoM & materials below | [Minutes](https://docs.google.com/document/d/1icjVU979pQZrNTgcScfVoTWJKHIZbYxIfz-RaKfFWHQ/edit?tab=t.0#heading=h.gsg0462khpl), [Materials](https://docs.google.com/document/d/1aTxQP5pj_n1xqduZj4EwyiqsfY3rcI7aY18_ee-SKQA/edit?tab=t.0) |
 
 
 ---
