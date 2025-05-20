@@ -1121,7 +1121,7 @@ This section defines how **non-compliance issues** are identified, recorded, and
 | **Issue**             | **Detected Date** | **Assigned To**     | **Resolution Date** | **Status** |
 | --------------------- | ----------------- | ------------------- | ------------------- | ---------- |
 | No SSL on dashboard   | 2025-02-28        | Team Lead Developer | 2025-03-05          | ✅ Fixed    |
-| Missing vendor review | 2025-02-20        | Managing Director   | 2025-03-10          | 🔄 Pending |
+| Missing vendor review | 2025-02-20        | Managing Director   | 2025-03-10          | ✅ Fixed |
 
 **Corrective actions are reviewed annually** by the CEO.
 
@@ -1238,12 +1238,12 @@ This log tracks the review and approval history of all core ISMS documents and p
 
 | Date                   | Activity                                      | Owner                   | Frequency           |
 |------------------------|-----------------------------------------------|-------------------------|---------------------|
-| May 19                 | Security Awareness Training                   | Managing Director       | Annual              |
+| May 20                 | Security Awareness Training                   | Managing Director       | Annual              |
 | Jun 01                 | Review ISMS Performance Metrics               | Managing Director       | Annual              |
 | Jul 01                 | Access Control Review                         | Team Lead Developer     | Annual              |
 | Jul 05                 | Vendor Security Reviews                       | Team Lead Developer     | Annual              |
 | **10th of every month**| Backup Restore Test                           | Team Lead Developer     | Monthly             |
-| May 20                 | Internal ISO 27001 Audit                      | Managing Director       | Annual              |
+| Jun 16                 | Internal ISO 27001 Audit                      | Managing Director       | Annual              |
 | Jul 22                 | Management Review Meeting                     | CEO & Managing Director | Annual              |
 | Jul 25                 | Business Continuity & Disaster Recovery Drill | CEO & Managing Director | Annual              |
 
