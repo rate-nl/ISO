@@ -1119,11 +1119,15 @@ This section defines how **non-compliance issues** are identified, recorded, and
 
 | **Issue**             | **Detected Date** | **Assigned To**     | **Resolution Date** | **Status** |
 | --------------------- | ----------------- | ------------------- | ------------------- | ---------- |
-| No SSL on dashboard   | 2025-02-28        | Team Lead Developer | 2025-03-05          | ✅ Fixed    |
-| Missing vendor review | 2025-02-20        | Managing Director   | 2025-03-10          | ✅ Fixed |
+
 
 **Corrective actions are reviewed annually** by the CEO.
 
+## 4. External Audit 2024 – Corrective Actions
+
+For reference and audit traceability, the corrective actions taken in response to the **2024 ISO 27001 external audit** are documented and tracked in the following log:
+
+ **[2024 ISO Audit – Corrective Actions Log](https://docs.google.com/spreadsheets/d/158OZ0o3GnyeTbsZXJwQG2oTLb0GeGbNR/edit?gid=529622322#gid=529622322)**  
 
 
 ---
