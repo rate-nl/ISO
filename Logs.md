@@ -92,10 +92,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Purpose:** Track changes in production systems with approvals  
 **Retention:** 3 years  
 **Owner:** Team Lead Developer
-**Old Log** https://docs.google.com/spreadsheets/d/1aTAYJK-ycFjJh9wI8hkGKIsSFxHTPhW5TxiL7bMx1hA/edit?usp=sharing
-
-| Change ID  | Date       | Description              | Requested By | Approval | Status   | Link                         |
-|:-----------|:-----------|:-------------------------|:-------------|:---------|:---------|:-----------------------------|
+**Change Management Log** https://docs.google.com/spreadsheets/d/1aTAYJK-ycFjJh9wI8hkGKIsSFxHTPhW5TxiL7bMx1hA/edit?usp=sharing
 
 
 ---
