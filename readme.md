@@ -1248,7 +1248,8 @@ This log tracks the review and approval history of all core ISMS documents and p
 | **10th of every month**| Backup Restore Test                           | Team Lead Developer     | Monthly             |
 | Jun 16                 | Internal ISO 27001 Audit                      | Managing Director       | Annual              |
 | Jul 22                 | Management Review Meeting                     | CEO & Managing Director | Annual              |
-| Jul 25                 | Business Continuity & Disaster Recovery Drill | CEO & Managing Director | Annual              |
+| Jul 25, Feb 25         | Lastpass full backup to NAS                    | CEO & Managing Director | Annual              |
+| Jul 25                 | Business Continuity & Disaster Recovery Drill (Including lastpass recovery) | CEO & Managing Director | Annual              |
 
 
 
