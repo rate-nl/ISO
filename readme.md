@@ -775,7 +775,7 @@ Developers work from right to left to keep the board flowing efficiently. Cards 
 
 - Each card includes a short description of changes and test results.
 - Final versions are archived once deployment and stakeholder communication are completed.
-
+- All production changes are recorded in the **[Change Management Log](https://docs.google.com/spreadsheets/d/1aTAYJK-ycFjJh9wI8hkGKIsSFxHTPhW5TxiL7bMx1hA/edit?gid=2142384983#gid=2142384983)** .
 
 ---
 
