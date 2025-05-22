@@ -572,7 +572,6 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
   - **Managing Director** – Operations and communications
   - **Team Lead Developer** – Technical recovery lead
 - **Contact Email:** [info@rate.nl](mailto\:info@rate.nl)
-- **Emergency Contact Phone Number:** 010 – 822 52 22
 
 ## **4. Critical Systems and Dependencies**
 
