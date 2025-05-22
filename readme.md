@@ -854,7 +854,7 @@ The following Annex A controls were evaluated and determined to be **not applica
 | A.5.12          | Classification of information                                 | Assets classification documented in Asset Management Policy.                                 |
 | A.5.13          | Labelling of information                                      | Covered by standard access control and cloud-based management practices.                     |
 | A.5.14          | Information transfer                                          | Minimal external information transfer; secured by encryption and access controls.            |
-| A.5.21          | Managing information security in the ICT supply chain         | Managed by vendor agreements and contract security clauses.                                  |
+| A.5.21          | Managing information security in the ICT supply chain         | Managed by supplier agreements and contract security clauses.                                  |
 | A.5.22          | Monitoring, review and change management of supplier services | Included under Supplier Security & Contractual Obligations.                                  |
 | A.5.23          | Information security for use of cloud services                | Already explicitly addressed by individual cloud service providers (Google, Hetzner, etc.).  |
 | A.5.28          | Collection of evidence                                        | Incident response processes include evidence documentation.                                  |
@@ -979,13 +979,13 @@ The **Managing Director** is responsible for reviewing and updating this policy 
 
 ## 1. Purpose
 
-This section defines **security obligations for third-party vendors** who access Rate's data or infrastructure.
+This section defines **security obligations for third-party suppliers** who access Rate's data or infrastructure.
 
-## 2. Vendor List & Review Process
+## 2. supplier List & Review Process
 
-All third-party vendors handling Rate’s sensitive data must be reviewed and approved.
+All third-party suppliers handling Rate’s sensitive data must be reviewed and approved.
 
-| **Vendor Name**       | **Service Provided**         | **Data Accessed**               | **Security Compliance**         | **Review Frequency** | **Responsible Owner**  |
+| **supplier Name**       | **Service Provided**         | **Data Accessed**               | **Security Compliance**         | **Review Frequency** | **Responsible Owner**  |
 |----------------------|----------------------------|--------------------------------|--------------------------------|--------------------|------------------|
 | **Hetzner Cloud**     | Server Hosting             | Customer Survey Data           | ISO 27001 Certified             | Annually           | Managing Director  |
 | **Google Workspace**  | Email, Docs, Cloud Storage | Internal Business Data         | GDPR Compliant                  | Annually           | Managing Director  |
@@ -1041,16 +1041,16 @@ All third-party vendors handling Rate’s sensitive data must be reviewed and ap
 
 ---
 
-## 4. Security Clauses for Vendor Contracts
+## 4. Security Clauses for supplier Contracts
 
-All contracts with vendors must include the following security obligations:
+All contracts with suppliers must include the following security obligations:
 
 - **Compliance with ISO 27001 & GDPR**.
 - **Data encryption during storage and transmission**.
 - **Breach notification within 24 hours**.
 - **Regular security audits & access control reviews**.
 
-**Vendor agreements are reviewed annually** to ensure compliance.
+**supplier agreements are reviewed annually** to ensure compliance.
 
 ---
 
@@ -1227,7 +1227,7 @@ This log tracks the review and approval history of all core ISMS documents and p
 | Statement of Applicability (SoA)          | 2025-05-16    | Managing Director    |  ✅ Yes              | CEO                | 2025-05-19     | ✅ Approved    | Controls mapped and exclusions justified                 |
 | Legal & Regulatory Compliance             | 2025-05-16    | Managing Director    |  ✅ Yes              | CEO                | 2025-05-19     | ✅ Approved    | Laws, ISO clauses, and contract requirements reviewed    |
 | Privacy & Data Protection Policy          | 2025-05-16    | Managing Director    |  ✅ Yes              | CEO                | 2025-05-19     | ✅ Approved    | GDPR rights handling and retention confirmed             |
-| Supplier Security & Contractual Oblig.    | 2025-05-16    | Managing Director    |  ✅ Yes              | CEO                | 2025-05-19     | ✅ Approved    | Vendor list, clauses, and reviews up to date             |
+| Supplier Security & Contractual Oblig.    | 2025-05-16    | Managing Director    |  ✅ Yes              | CEO                | 2025-05-19     | ✅ Approved    | supplier list, clauses, and reviews up to date             |
 | Internal Audit Program                    | 2025-05-16    | Managing Director    |  ✅ Yes              | CEO                | 2025-05-19     | ✅ Approved    | Scope, independence, and findings process reviewed       |
 | Corrective Actions & Non-Compliance Log   | 2025-05-16    | Managing Director    |  ✅ Yes              | CEO                | 2025-05-19     | ✅ Approved    | Log format, deadlines, and responsibilities confirmed     |
 | Management Review                         | 2025-05-16    | Managing Director    |  ✅ Yes              | CEO                | 2025-05-19     | ✅ Approved    | Agenda, outcomes, and meeting notes process verified     |
@@ -1244,7 +1244,7 @@ This log tracks the review and approval history of all core ISMS documents and p
 | May 20                 | Security Awareness Training                   | Managing Director       | Annual              |
 | Jun 01                 | Review ISMS Performance Metrics               | Managing Director       | Annual              |
 | Jul 01                 | Access Control Review                         | Team Lead Developer     | Annual              |
-| Jul 05                 | Vendor Security Reviews                       | Team Lead Developer     | Annual              |
+| Jul 05                 | supplier Security Reviews                       | Team Lead Developer     | Annual              |
 | **10th of every month**| Backup Restore Test                           | Team Lead Developer     | Monthly             |
 | Jun 16                 | Internal ISO 27001 Audit                      | Managing Director       | Annual              |
 | Jul 22                 | Management Review Meeting                     | CEO & Managing Director | Annual              |
