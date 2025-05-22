@@ -284,7 +284,7 @@ This document outlines the identified risks, their likelihood and impact, and th
 | **Risk** | **Likelihood** | **Impact** | **Risk Owner** | **Treatment Option** | **Mitigation Actions** | **Annex A Reference** | **Risk Acceptance Criteria** |
 |---|---|---|---|---|---|---|---|
 | **Virus or ransomware attack on company devices** | Medium | Medium | Team Lead Developer | Mitigate | Install **enterprise-grade antivirus software**, enable **automatic updates**, and conduct **regular security training** as outlined in the [Access Control Policy](#access-control-policy). | A.12 Malware Protection | Acceptable if **endpoint protection is always enabled and updated**. |
-| **Losing access to LastPass (password manager)** | Low | High | CEO | Mitigate | Maintain a **bi-yearly backup of critical passwords** in an **encrypted and secure location**, documented in the [Asset Management Policy](#asset-management-policy). | A.9 Access Control | Acceptable if **backup plan is tested annually**. |
+| **Losing access to LastPass (password manager)** | Low | High | CEO | Mitigate | Maintain a **bi-yearly backup of critical passwords** in an **encrypted and secure location**, documented in the [Access Control Policy](#access-control-policy). | A.9 Access Control | Acceptable if **backup plan is tested annually**. |
 | **SSL certificate expiry for platform or website** | High | Medium | Team Lead Developer | Mitigate | Enable **automatic SSL renewal** or set up **early expiration alerts** as described in the [Access Control Policy](#access-control-policy). | A.14 System Security | Acceptable if **automatic renewal is active or renewal reminders are in place**. |
 
 ---
@@ -584,7 +584,7 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 | **VPN & Remote Access**                  | Local VPN on Dev Server        | N/A                                                              | Immediate | None       | Managing Director   |
 | **Communication Tools**                  | Google Workspace (email, docs) | Google Cloud                                                     | Immediate | None       | Managing Director   |
 | **HR and Compliance System**             | Exact Online                   | Cloud                                                            | 2 hours   | 1 hour     | Managing Director   |
-| **Password Manager**                     | LastPass                       | Encrypted Cloud                                                  | 1 hour    | 30 minutes | CEO                 |
+| **Password Manager**                     | LastPass                       | NAS                                                 | 1 hour    | 30 minutes | CEO                 |
 **Third-Party Responsibilities:**
 
 - **Hetzner** is responsible for the availability and physical security of the production infrastructure hosted on their cloud platform. This includes power supply, physical access control, and network connectivity within the data center.
@@ -625,9 +625,9 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 | **6.3 Office Internet Outage**                       | Use alternative access means like whitelisting new ips in the firewall.                      | Managing Director   | Immediate                         | None                               |
 | **6.4 Data Leak or Malware Attack**                  | Isolate systems, notify Managing Director, conduct forensic analysis                         | Managing Director   | 2 hours                           | 30 minutes                         |
 | **6.5 Calamities (Fire, Flood, Physical Theft)**     | Follow Groothandelsgebouw escape plan, secure backups offsite                                | CEO                 | As feasible                       | 30 minutes                         |
-| **6.6 Loss of LastPass (Password Manager)**          | Restore from encrypted cloud backup, reset passwords for critical systems                    | CEO                 | 1 hour                            | 30 minutes                         |
+| **6.6 Loss of LastPass (Password Manager)**          | Restore from encrypted NAS backup, reset passwords for critical systems                    | CEO                 | 1 hour                            | 30 minutes                         |
 | **6.7 SSL Certificate Expiry for Website/Platform**  | **Enable SSL auto-renewals are enabled** or set calendar reminders for manual renewal checks | Team Lead Developer | 1 hour                            | None                               |
-| **6.8 Sudden Departure of CEO or Managing Director** | Access Rate's credentials and critical decisions via LastPass. Redistribute operational and ISMS responsibilities to designated successors. Document transition actions and notify key stakeholders. | Managing Director / CEO | 1 day | None |
+| **6.8 Sudden Departure of CEO or Managing Director** | Access Rate's credentials via LastPass. Redistribute operational and ISMS responsibilities to designated successors. Document transition actions and notify key stakeholders. | Managing Director / CEO | 1 day | None |
 
 
 ## **7. Roles and Responsibilities**
