@@ -1243,7 +1243,7 @@ This log tracks the review and approval history of all core ISMS documents and p
 |------------------------|-----------------------------------------------|-------------------------|---------------------|
 | May 20                 | Security Awareness Training                   | Managing Director       | Annual              |
 | Jun 01                 | Review ISMS Performance Metrics               | Managing Director       | Annual              |
-| Jul 01                 | Access Control Review                         | Team Lead Developer     | Annual              |
+| Jul 01                 | Access Control Review                         | Team Lead Developer     | Annual/ when some one leaves              |
 | Jul 05                 | supplier Security Reviews                       | Team Lead Developer     | Annual              |
 | **10th of every month**| Backup Restore Test                           | Team Lead Developer     | Monthly             |
 | Jun 16                 | Internal ISO 27001 Audit                      | Managing Director       | Annual              |
