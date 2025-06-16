@@ -1191,7 +1191,7 @@ All **decisions and actions are recorded** in the **Management Review Minutes** 
 
 This section defines key **performance indicators (KPIs)** to measure the effectiveness of Rate's ISMS in alignment with its **information security objectives**, as required by **ISO/IEC 27001:2022 Clause 9.1**.
 
-## 2. Metrics and Alignment with Objectives
+## 2. Metrics and Alignment with Objectives (KPI)
 
 | **Metric**                    | **Description**                                                                 | **Target**              | **Related ISMS Objective**                                      | **Review Frequency** |
 |------------------------------|---------------------------------------------------------------------------------|--------------------------|------------------------------------------------------------------|----------------------|
