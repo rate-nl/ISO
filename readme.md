@@ -62,7 +62,7 @@ The ISMS encompasses all processes, systems, and personnel involved in the devel
 
 ## 1. Purpose
 
-The purpose of this Information Security Policy is to establish a framework for managing and protecting Rate's information assets, ensuring their confidentiality, integrity, and availability. This policy aligns with the requirements of ISO/IEC 27001:2022 and demonstrates our commitment to information security.
+The purpose of this Information Security Policy is to establish a framework for managing and protecting Rate's information assets, ensuring their confidentiality, integrity, and availability. This policy aligns with the requirements of ISO  27001:2022 and demonstrates our commitment to information security.
 
 ## 2. Scope
 
@@ -81,7 +81,7 @@ Rate is committed to the following measurable information security objectives:
 
 ## 4. Roles and Responsibilities
 
-In accordance with ISO/IEC 27001:2022 Clause 5.3 and Annex A.5.2, the following roles and responsibilities are defined:
+In accordance with ISO  27001:2022 Clause 5.3 and Annex A.5.2, the following roles and responsibilities are defined:
 
 ### 4.1. Chief Executive Officer (CEO)
 
@@ -228,7 +228,7 @@ Rate is committed to complying with all applicable legal, regulatory, and contra
 
 ## 9. Incident Reporting and Response
 
-In accordance with ISO/IEC 27001:2022 Clause 16.1.1, Rate has established a formal Incident Response Plan (IRP) that includes:
+In accordance with ISO  27001:2022 Clause 16.1.1, Rate has established a formal Incident Response Plan (IRP) that includes:
 
 - **Incident Identification**: All employees are responsible for reporting suspected information security incidents immediately to the **Managing Director**.
 - **Incident Escalation**: Significant incidents will be escalated to the **CEO** if necessary.
@@ -236,7 +236,7 @@ In accordance with ISO/IEC 27001:2022 Clause 16.1.1, Rate has established a form
 
 ## 10. Policy Review and Approval
 
-In compliance with ISO/IEC 27001:2022 Clause 5.1.2, this Information Security Policy shall be:
+In compliance with ISO  27001:2022 Clause 5.1.2, this Information Security Policy shall be:
 
 - **Reviewed**: The **Managing Director** is responsible for reviewing this policy **at least annually** or when significant changes occur.
 - **Approved**: The policy must be **approved by the Chief Executive Officer (CEO)** to ensure its relevance and effectiveness.
@@ -301,7 +301,7 @@ This document will be reviewed **annually** and **after any significant changes*
 
 ## 1. Purpose
 
-This Access Control Policy defines guidelines for managing access to Rate's information systems, cloud applications, and on-premises infrastructure. It ensures proper role-based access and aligns with ISO/IEC 27001:2022 Annex A.5.15 requirements.
+This Access Control Policy defines guidelines for managing access to Rate's information systems, cloud applications, and on-premises infrastructure. It ensures proper role-based access and aligns with ISO  27001:2022 Annex A.5.15 requirements.
 
 ## 2. Scope
 
@@ -342,7 +342,7 @@ This policy applies to all personnel accessing Rate's information assets, includ
 
 #### **Pre-Employment Screening**
 
-In alignment with ISO/IEC 27001:2022 Annex A.7.1.1, all candidates offered employment at Rate undergo pre-employment screening appropriate to the role. This includes:
+In alignment with ISO  27001:2022 Annex A.7.1.1, all candidates offered employment at Rate undergo pre-employment screening appropriate to the role. This includes:
 
 - Verification of identity and qualifications.
 - Reference checks (where legally permissible).
@@ -387,7 +387,7 @@ To ensure all employees understand their **security responsibilities** and compl
 
 ## 5. Authentication and Password Management
 
-In compliance with ISO/IEC 27001:2022 Annex A.9.4.3, Rate enforces a strong password policy for all systems and applications:
+In compliance with ISO  27001:2022 Annex A.9.4.3, Rate enforces a strong password policy for all systems and applications:
 
 - **Minimum Length:** Passwords must be at least **12 characters** long.
 - **Complexity Requirements:** Passwords must include **at least three of the following**:
@@ -547,7 +547,7 @@ PIR outcomes are reviewed during **Management Review Meetings** and are used to 
 
 ## 10. Compliance and Reporting
 - Incident logs are retained in Google Drive.
-- The plan adheres to **ISO/IEC 27001:2022** and **GDPR** requirements.
+- The plan adheres to **ISO  27001:2022** and **GDPR** requirements.
 
 *Note: Employees will be notified of policy updates.*
 
@@ -556,7 +556,7 @@ PIR outcomes are reviewed during **Management Review Meetings** and are used to 
 
 # Business Continuity and Disaster Recovery Plan (BCDRP)
 
-**Aligned with ISO/IEC 27001:2022 and Integrated with Risk Assessment and Treatment Plan**
+**Aligned with ISO  27001:2022 and Integrated with Risk Assessment and Treatment Plan**
 
 ## **1. Purpose**
 
@@ -662,7 +662,7 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 
 ### **Compliance with Standards:**
 
-**ISO/IEC 27001:2022** (Clauses 9.2, 9.3,)\
+**ISO  27001:2022** (Clauses 9.2, 9.3,)\
 **GDPR (Article 32: Security of Processing)**
 
 
@@ -673,7 +673,7 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 
 ## 1. Purpose
 
-This policy defines procedures for managing and protecting Rate's information assets, ensuring compliance with ISO/IEC 27001:2022.
+This policy defines procedures for managing and protecting Rate's information assets, ensuring compliance with ISO  27001:2022.
 
 ## 2. Scope
 
@@ -737,7 +737,7 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 
 ## Secure Development & Change Management
 
-This section describes Rate’s secure development and change management process, aligning with ISO/IEC 27001:2022 Annex A.8.28, A.8.29, and A.14.2.8.
+This section describes Rate’s secure development and change management process, aligning with ISO  27001:2022 Annex A.8.28, A.8.29, and A.14.2.8.
 
 ### 1. Development Process Overview
 
@@ -785,10 +785,10 @@ Developers work from right to left to keep the board flowing efficiently. Cards 
 ## **1. Introduction**
 
 ### **1.1 Purpose**
-The **Statement of Applicability (SoA)** defines the security controls selected and applied within **Rate’s Information Security Management System (ISMS)**. It ensures alignment with **ISO/IEC 27001:2022** and provides justification for the inclusion or exclusion of Annex A controls.
+The **Statement of Applicability (SoA)** defines the security controls selected and applied within **Rate’s Information Security Management System (ISMS)**. It ensures alignment with **ISO  27001:2022** and provides justification for the inclusion or exclusion of Annex A controls.
 
 This document:
-- Identifies applicable **Annex A** controls from ISO/IEC 27001:2022.
+- Identifies applicable **Annex A** controls from ISO  27001:2022.
 - Provides justification for inclusion or exclusion.
 - Maps selected controls to **Rate’s Risk Assessment and Risk Treatment Plan (RTP)**.
 - Assigns responsibility for control implementation and maintenance.
@@ -926,7 +926,7 @@ Rate is committed to ensuring compliance with all applicable **legal, regulatory
 ### **Applicable Laws & Regulations**
 
 - **General Data Protection Regulation (GDPR)** – Governs data protection and privacy for EU residents.
-- **ISO/IEC 27001:2022** – International standard for information security management.
+- **ISO  27001:2022** – International standard for information security management.
 - **Any contractual agreements that impose security obligations** on Rate.
 
 ### **Compliance Review & Tracking**
@@ -1063,7 +1063,7 @@ All contracts with suppliers must include the following security obligations:
 
 ## 1. Purpose
 
-The **Internal Audit Program** ensures that Rate’s security policies, controls, and ISMS implementation align with **ISO/IEC 27001:2022** and contribute to continuous improvement.
+The **Internal Audit Program** ensures that Rate’s security policies, controls, and ISMS implementation align with **ISO  27001:2022** and contribute to continuous improvement.
 
 ## 2. Audit Frequency & Planning Process
 
@@ -1190,7 +1190,7 @@ All **decisions and actions are recorded** in the **Management Review Minutes** 
 
 ## 1. Purpose
 
-This section defines key **performance indicators (KPIs)** to measure the effectiveness of Rate's ISMS in alignment with its **information security objectives**, as required by **ISO/IEC 27001:2022 Clause 9.1**.
+This section defines key **performance indicators (KPIs)** to measure the effectiveness of Rate's ISMS in alignment with its **information security objectives**, as required by **ISO  27001:2022 Clause 9.1**.
 
 ## 2. Metrics and Alignment with Objectives (KPI)
 
@@ -1214,7 +1214,7 @@ This section defines key **performance indicators (KPIs)** to measure the effect
 
 # ISMS Review & Approval Log
 
-This log tracks the review and approval history of all core ISMS documents and policies, including who reviewed them, when they were last approved, whether formal approval is required. This ensures traceability, accountability, and compliance with ISO/IEC 27001:2022.
+This log tracks the review and approval history of all core ISMS documents and policies, including who reviewed them, when they were last approved, whether formal approval is required. This ensures traceability, accountability, and compliance with ISO  27001:2022.
 
 | Section/Policy                             | Last Reviewed | Reviewed By         |  Requires Approval | Approved By       | Approval Date | Status        | Notes                                                    |
 |-------------------------------------------|---------------|----------------------|--------------------|--------------------|----------------|---------------|----------------------------------------------------------|
