@@ -285,9 +285,7 @@ This document outlines the identified risks, their likelihood and impact, and th
 
 This document will be reviewed **annually** and **after any significant changes** to infrastructure, services, or security risks.
 
-```
 
-This is **raw Markdown**—what you see above is exactly what you should paste into your `.md` file. If you need it as a downloadable file, let me know!
 
 ---
 
