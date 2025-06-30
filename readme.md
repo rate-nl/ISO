@@ -35,13 +35,8 @@
 Rate is committed to safeguarding the confidentiality, integrity, and availability of all physical and electronic information assets. Our Information Security Management System (ISMS) is designed to manage information security risks effectively, ensuring business continuity and minimizing potential threats.
 
 ## Scope of the ISMS
-
-The ISMS encompasses all processes, systems, and personnel involved in the development, maintenance, and delivery of our survey platform services. This includes:
-
-- **Physical Location:** Our office at Stationsplein 45 Unit D3.125, 3013 AK Rotterdam, Netherlands.
-- **Assets:** Servers, databases, backups, company laptops, and network infrastructure.
-- **Information:** Customer survey data and employee personal information.
-- **Activities:** Data collection, processing, storage, and analysis related to customer surveys.
+The scope of Rate’s Information Security Management System (ISMS) is:
+The development, maintenance, hosting, and support of SaaS applications that enable health, education, and other organizations to independently conduct evaluation and improvement activities, at Stationsplein 45 Unit D3.125, 3013 AK Rotterdam, Netherlands, including all supporting people, processes, systems, and information assets, in accordance with the Statement of Applicability.
 
 
 ### Definitions and Abbreviations
