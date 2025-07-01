@@ -930,6 +930,36 @@ Developers work from right to left to keep the board flowing efficiently. Cards 
 - Final versions are archived once deployment and stakeholder communication are completed.
 - All production changes are recorded in the **[Change Management Log](https://docs.google.com/spreadsheets/d/1aTAYJK-ycFjJh9wI8hkGKIsSFxHTPhW5TxiL7bMx1hA/edit?gid=2142384983#gid=2142384983)** .
 
+### 5. Secure Coding Policy 
+
+To comply with **ISO/IEC 27001:2022 Annex A.8.28**, Rate enforces structured secure coding controls across all software lifecycle phases:
+
+#### 5.1 Planning & Pre-Coding
+
+- Security requirements are defined during the **"Scoped"** and **"Risk Analysis"** stages on the Kanban board.
+- Features undergo preliminary risk evaluation to assess potential threats and required controls.
+- Design reviews validate alignment with OWASP standards and Rate’s ISMS objectives.
+
+#### 5.2 During Coding
+
+- Developers follow **OWASP secure coding standards for .NET**.
+- Code is committed daily to version control (GitHub).
+- Peer code reviews are required before merging any change to the production branch.
+- Security controls and assumptions are documented for high-risk features.
+
+#### 5.3 Assessment & Testing
+
+- All code is tested in an isolated **development environment** before going live.
+- Vulnerability scans and manual testing are performed based on the risk level.
+- Findings are logged, prioritized, and resolved before deployment.
+
+#### 5.4 Maintenance & Updates
+
+- Post-deployment issues are logged and handled through the same secure workflow.
+- Security patches are given priority and monitored via the Kanban flow.
+- The **Team Lead Developer** reviews critical patches before release.
+- All changes are recorded in the **[Change Management Log](https://docs.google.com/spreadsheets/d/1aTAYJK-ycFjJh9wI8hkGKIsSFxHTPhW5TxiL7bMx1hA/edit?gid=2142384983#gid=2142384983)**.
+
 ---
 
 # **Statement of Applicability (SoA)**
@@ -984,7 +1014,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.8.23                     | Applying web filters                                                     | Web filtering is managed by our building provider (GHG), who blocks access to malicious and inappropriate websites at the network level as per their SLA.               | GHG network security policy/SLA                                     | Managing Director                    |
 | A.8.25                     | Secure development life cycle                                            | Integrates security into the software development process.   | Secure Development & Change Management                    | Team Lead Developer                    |
 | A.8.26                     | Application security requirements                                        | Ensures applications meet security standards.                | Secure Development & Change Management                    | Team Lead Developer                    |
-| A.8.28                     | Secure coding                                                            | Promotes secure coding practices.                            | Secure Development & Change Management                    | Team Lead Developer                    |
+| A.8.28                     | Secure coding                                                            | Promotes secure coding practices.                            | Secure Development & Change Management, Secure Coding Policy                    | Team Lead Developer                    |
 
 
 ## **3. Justification for Exclusions**
