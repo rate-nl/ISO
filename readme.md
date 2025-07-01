@@ -1035,16 +1035,15 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.5.21              | Managing information security in the ICT supply chain       | ❌           | Managed by supplier agreements and contract security clauses.                                        |
 | A.5.22              | Monitoring/review/change mgmt of supplier services          | ❌           | Included under Supplier Security & Contractual Obligations.                                          |
 | A.5.23              | Information security for use of cloud services              | ❌           | Already explicitly addressed by cloud service providers (Google, Hetzner, etc.).                     |
-
-|A.5.24|	Information security incident management planning and preparation|
-|A.5.25|	Assessment and decision on information security events|
-|A.5.26|	Response to information security incidents|
-|A.5.27|	Learning from information security incidents|
+| A.5.24|	Information security incident management planning and preparation|
+| A.5.25|	Assessment and decision on information security events|
+| A.5.26|	Response to information security incidents|
+| A.5.27|	Learning from information security incidents|
 
 | A.5.28                     | Collection of Evidence                                                   | ✅           | Evidence may need to be collected and preserved during incidents or investigations to support legal or disciplinary action. | Incident Management Plan – Section 6.1: Evidence Collection Procedure | Team Lead Developer, Managing Director |
-|A.5.29|	Information security during disruption|
+| A.5.29|	Information security during disruption|
 | A.5.30              | ICT readiness for business continuity                       | ❌           | BCDR plan adequately covers ICT readiness.                                                           |
-|Missing|
+| Missing|
 | A.5.37              | Documented operating procedures                             | ❌           | Procedures documented as needed within specific policy documents.                                    |
 
 
@@ -1098,7 +1097,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.8.21              | Security of network services                                | ❌           | Managed externally by cloud service providers.                                                       |
 | A.8.22              | Segregation in networks                                     | ❌           | Covered by cloud configuration controls.                                                             |
 | A.8.23                     | Applying web filters                                                     | ✅           | Web filtering is managed by our building provider (GHG), who blocks access to malicious and inappropriate websites at the network level as per their SLA. | GHG network security policy/SLA                           | Managing Director                      |
-|A.8.24|	Use of cryptography | 
+| A.8.24|	Use of cryptography | 
 | A.8.25                     | Secure development life cycle                                            | ✅           | Integrates security into the software development process.   | Secure Development & Change Management                    | Team Lead Developer                    |
 | A.8.26                     | Application security requirements                                        | ✅           | Ensures applications meet security standards.                | Secure Development & Change Management                    | Team Lead Developer                    |
 | A.8.27              | Secure system architecture and engineering principles       | ❌           | Integrated into secure development process.                                                          |
