@@ -1039,17 +1039,16 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.5.25|	Assessment and decision on information security events|
 | A.5.26|	Response to information security incidents|
 | A.5.27|	Learning from information security incidents|
-
 | A.5.28                     | Collection of Evidence                                                   | ✅           | Evidence may need to be collected and preserved during incidents or investigations to support legal or disciplinary action. | Incident Management Plan – Section 6.1: Evidence Collection Procedure | Team Lead Developer, Managing Director |
 | A.5.29|	Information security during disruption|
 | A.5.30              | ICT readiness for business continuity                       | ❌           | BCDR plan adequately covers ICT readiness.                                                           |
-| Missing|
+| A.5.31	| Legal, statutory, regulatory and contractual requirements| 
+| A.5.32	| Intellectual property rights| 
+| A.5.33	| Protection of records| 
+| A.5.34	| Privacy and protection of personally identifiable information (PII)| 
+| A.5.35	| Independent review of information security| 
+| A.5.36	| Compliance with policies, rules and standards| 
 | A.5.37              | Documented operating procedures                             | ❌           | Procedures documented as needed within specific policy documents.                                    |
-
-
-
-
-
 | A.6.1                      | Screening                                                                | ✅           | Prevents insider threats through background verification.    | Access Control Policy (Onboarding Process)                | Managing Director                      |
 | A.6.2                      | Terms and conditions of employment                                       | ✅           | Ensures employees understand their security responsibilities.| Access Control Policy                                     | Managing Director                      |
 | A.6.3                      | Information security awareness, education and training                   | ✅           | Promotes ongoing security awareness among staff.             | Access Control Policy (Training Process)                  | Managing Director                      |
@@ -1058,7 +1057,6 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.6.6               | Confidentiality or non-disclosure agreements                | ❌           | Employees sign NDAs on employment, documented in HR processes.                                       |
 | A.6.7               | Remote working                                              | ❌           | Remote work securely managed via cloud apps and VPN.                                                 |
 | A.6.8               | Information security event reporting                        | ❌           | Addressed within Incident Management and Response Plan.                                               |
-
 | A.7.1                      | Physical security perimeter                                              | ✅           | Prevents unauthorized physical access.                       | Asset Management Policy                                   | Managing Director                      |
 | A.7.2                      | Physical entry                                                           | ✅           | Controls physical entry to sensitive areas.                  | Asset Management Policy                                   | Managing Director                      |
 | A.7.3               | Securing offices, rooms and facilities                      | ❌           | Managed via physical access control procedures.                                                      |
@@ -1073,7 +1071,6 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.7.12              | Cabling security                                            | ❌           | Managed by infrastructure providers.                                                                 |
 | A.7.13              | Equipment maintenance                                       | ❌           | Minimal equipment; mostly managed externally.                                                        |
 | A.7.14              | Secure disposal/re-use of equipment                         | ❌           | Minimal hardware; secure disposal already practiced.                                                 |
-
 | A.8.1               | User endpoint devices                                       | ❌           | Managed via access control and device encryption.                                                    |
 | A.8.2               | Privileged access rights                                    | ❌           | Managed under access control policy.                                                                 |
 | A.8.3               | Information access restriction                              | ❌           | Managed through RBAC.                                                                                |
@@ -1108,7 +1105,6 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.8.32              | Change management                                           | ❌           | Already covered in secure development and deployment.                                                |
 | A.8.33              | Test information                                            | ❌           | Minimal test data; securely managed.                                                                 |
 | A.8.34              | Protection of systems during audit and testing              | ❌           | Secure testing practices already in place.                                                           |
-
 
 
 
