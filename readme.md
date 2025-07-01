@@ -1008,72 +1008,62 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 
 ---
 
-## Applicable ISO 27001:2022 Controls
+## ISO 27001:2022 Controls
 
 | **Annex A Control (2022)** | **Control Title**                                                        | **Applicable** | **Justification**                                            | **Related Policy/Process**                               | **Responsible Role**                   |
 |----------------------------|--------------------------------------------------------------------------|--------------|--------------------------------------------------------------|----------------------------------------------------------|----------------------------------------|
 | A.5.1                      | Policies for information security                                        | ✅           | Required for ISMS governance.                                | Information Security Policy                               | CEO                                    |
+| A.5.2               | Information security roles and responsibilities             | ❌           | Roles and responsibilities already clearly defined in existing policy documents.                     |
 | A.5.3                      | Segregation of duties                                                    | ✅           | Ensures accountability and avoids conflicts of interest.     | ISMS Roles & Responsibilities                             | CEO, Managing Director                 |
+| A.5.4               | Management responsibilities                                 | ❌           | Covered under established ISMS documentation and governance processes.                               |
+| A.5.5               | Contact with authorities                                    | ❌           | No regulatory requirement or direct communication needed with authorities.                           |
+| A.5.6               | Contact with special interest groups                        | ❌           | No direct involvement with industry special interest groups.                                         |
+| A.5.7               | Threat intelligence                                         | ❌           | Managed through existing security and vulnerability management processes.                            |
+| A.5.8               | Information security in project management                  | ❌           | Integrated into secure development practices; no separate project management control needed.         |
 | A.5.9                      | Inventory of information and other associated assets                     | ✅           | Prevents data loss by ensuring all assets are accounted for. | Asset Management Policy                                   | Managing Director, Team Lead Developer |
 | A.5.10                     | Acceptable use of information and other associated assets                | ✅           | Enforces proper handling and usage of assets.                | Asset Management Policy                                   | Managing Director                      |
 | A.5.11                     | Return of assets                                                         | ✅           | Ensures retrieval of assets upon employee exit.              | Asset Management Policy                                   | Managing Director                      |
+| A.5.12              | Classification of information                               | ❌           | Assets classification documented in Asset Management Policy.                                         |
+| A.5.13              | Labelling of information                                    | ❌           | Covered by standard access control and cloud-based management practices.                             |
+| A.5.14              | Information transfer                                        | ❌           | Minimal external information transfer; secured by encryption and access controls.                    |
 | A.5.15                     | Access control                                                           | ✅           | Reduces risk of unauthorized access.                         | Access Control Policy                                     | Team Lead Developer                    |
 | A.5.16                     | Identity management                                                      | ✅           | Manages user identities securely.                            | Access Control Policy                                     | Team Lead Developer                    |
 | A.5.17                     | Authentication information                                               | ✅           | Protects authentication credentials.                         | Access Control Policy                                     | Team Lead Developer                    |
 | A.5.18                     | Access rights                                                            | ✅           | Regularly reviews and updates access rights.                 | Access Control Policy                                     | Team Lead Developer                    |
 | A.5.19                     | Information security in supplier relationships                           | ✅           | Ensures security responsibilities clearly defined for suppliers.| Supplier Security & Contractual Obligations             | Managing Director                      |
 | A.5.20                     | Addressing information security within supplier agreements               | ✅           | Ensures suppliers adhere to contractual security requirements.| Supplier Security & Contractual Obligations              | Managing Director                      |
-| A.5.28                     | Collection of Evidence                                                   | ✅           | Evidence may need to be collected and preserved during incidents or investigations to support legal or disciplinary action. | Incident Management Plan – Section 6.1: Evidence Collection Procedure | Team Lead Developer, Managing Director |
-| A.6.1                      | Screening                                                                | ✅           | Prevents insider threats through background verification.    | Access Control Policy (Onboarding Process)                | Managing Director                      |
-| A.6.2                      | Terms and conditions of employment                                       | ✅           | Ensures employees understand their security responsibilities.| Access Control Policy                                     | Managing Director                      |
-| A.6.3                      | Information security awareness, education and training                   | ✅           | Promotes ongoing security awareness among staff.             | Access Control Policy (Training Process)                  | Managing Director                      |
-| A.7.1                      | Physical security perimeter                                              | ✅           | Prevents unauthorized physical access.                       | Asset Management Policy                                   | Managing Director                      |
-| A.7.2                      | Physical entry                                                           | ✅           | Controls physical entry to sensitive areas.                  | Asset Management Policy                                   | Managing Director                      |
-| A.7.4                      | Physical security monitoring                                             | ✅           | Physical security managed via building infrastructure.       | Asset Management Policy                                   | Managing Director                      |
-| A.8.7                      | Protection against malware                                               | ✅           | Ensures system integrity and protection from malicious software.| BCDR Plan, Access Control Policy                        | Team Lead Developer                    |
-| A.8.8                      | Management of technical vulnerabilities                                  | ✅           | Reduces risk through timely patching and updates.            | BCDR Plan, Access Control Policy                          | Team Lead Developer                    |
-| A.8.9                      | Configuration management                                                 | ✅           | Maintains secure system configurations.                      | BCDR Plan, Access Control Policy                          | Team Lead Developer                    |
-| A.8.13                     | Information backup                                                       | ✅           | Ensures data recovery capability.                            | BCDR Plan                                                 | Team Lead Developer                    |
-| A.8.20                     | Networks security                                                        | ✅           | Secures network boundaries and communications.               | Access Control Policy                                     | Team Lead Developer                    |
-| A.8.23                     | Applying web filters                                                     | ✅           | Web filtering is managed by our building provider (GHG), who blocks access to malicious and inappropriate websites at the network level as per their SLA. | GHG network security policy/SLA                           | Managing Director                      |
-| A.5.2               | Information security roles and responsibilities             | ❌           | Roles and responsibilities already clearly defined in existing policy documents.                     |
-| A.8.25                     | Secure development life cycle                                            | ✅           | Integrates security into the software development process.   | Secure Development & Change Management                    | Team Lead Developer                    |
-| A.8.26                     | Application security requirements                                        | ✅           | Ensures applications meet security standards.                | Secure Development & Change Management                    | Team Lead Developer                    |
-| A.8.28                     | Secure coding                                                            | ✅           | Promotes secure coding practices.                            | Secure Development & Change Management, Secure Coding Policy | Team Lead Developer                 |
-
-
-## **3. Justification for Exclusions**
-
-These exclusions are based on:
-
-* The absence of relevant business operations requiring these controls.
-* The use of alternative security measures to mitigate associated risks.
-* The reliance on cloud-based infrastructure, reducing physical security concerns.
-
-The following Annex A controls were evaluated and determined to be **not applicable** to Rate’s ISMS scope. Justifications are based on the organization’s operations, infrastructure, and risk assessment results.
-
-| **Annex A Control** | **Control Title**                                           | **Included** | **Justification**                                                                                   |
-|---------------------|-------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------|
-| A.5.2               | Information security roles and responsibilities             | ❌           | Roles and responsibilities already clearly defined in existing policy documents.                     |
-| A.5.4               | Management responsibilities                                 | ❌           | Covered under established ISMS documentation and governance processes.                               |
-| A.5.5               | Contact with authorities                                    | ❌           | No regulatory requirement or direct communication needed with authorities.                           |
-| A.5.6               | Contact with special interest groups                        | ❌           | No direct involvement with industry special interest groups.                                         |
-| A.5.7               | Threat intelligence                                         | ❌           | Managed through existing security and vulnerability management processes.                            |
-| A.5.8               | Information security in project management                  | ❌           | Integrated into secure development practices; no separate project management control needed.         |
-| A.5.12              | Classification of information                               | ❌           | Assets classification documented in Asset Management Policy.                                         |
-| A.5.13              | Labelling of information                                    | ❌           | Covered by standard access control and cloud-based management practices.                             |
-| A.5.14              | Information transfer                                        | ❌           | Minimal external information transfer; secured by encryption and access controls.                    |
 | A.5.21              | Managing information security in the ICT supply chain       | ❌           | Managed by supplier agreements and contract security clauses.                                        |
 | A.5.22              | Monitoring/review/change mgmt of supplier services          | ❌           | Included under Supplier Security & Contractual Obligations.                                          |
 | A.5.23              | Information security for use of cloud services              | ❌           | Already explicitly addressed by cloud service providers (Google, Hetzner, etc.).                     |
+
+|A.5.24|	Information security incident management planning and preparation|
+|A.5.25|	Assessment and decision on information security events|
+|A.5.26|	Response to information security incidents|
+|A.5.27|	Learning from information security incidents|
+
+| A.5.28                     | Collection of Evidence                                                   | ✅           | Evidence may need to be collected and preserved during incidents or investigations to support legal or disciplinary action. | Incident Management Plan – Section 6.1: Evidence Collection Procedure | Team Lead Developer, Managing Director |
+|A.5.29|	Information security during disruption|
 | A.5.30              | ICT readiness for business continuity                       | ❌           | BCDR plan adequately covers ICT readiness.                                                           |
+|Missing|
 | A.5.37              | Documented operating procedures                             | ❌           | Procedures documented as needed within specific policy documents.                                    |
+
+
+
+
+
+| A.6.1                      | Screening                                                                | ✅           | Prevents insider threats through background verification.    | Access Control Policy (Onboarding Process)                | Managing Director                      |
+| A.6.2                      | Terms and conditions of employment                                       | ✅           | Ensures employees understand their security responsibilities.| Access Control Policy                                     | Managing Director                      |
+| A.6.3                      | Information security awareness, education and training                   | ✅           | Promotes ongoing security awareness among staff.             | Access Control Policy (Training Process)                  | Managing Director                      |
 | A.6.4               | Disciplinary process                                        | ❌           | Managed under general HR policies.                                                                   |
 | A.6.5               | Responsibilities after termination/change of employment     | ❌           | Covered by onboarding/offboarding in Access Control Policy.                                          |
 | A.6.6               | Confidentiality or non-disclosure agreements                | ❌           | Employees sign NDAs on employment, documented in HR processes.                                       |
 | A.6.7               | Remote working                                              | ❌           | Remote work securely managed via cloud apps and VPN.                                                 |
 | A.6.8               | Information security event reporting                        | ❌           | Addressed within Incident Management and Response Plan.                                               |
+
+| A.7.1                      | Physical security perimeter                                              | ✅           | Prevents unauthorized physical access.                       | Asset Management Policy                                   | Managing Director                      |
+| A.7.2                      | Physical entry                                                           | ✅           | Controls physical entry to sensitive areas.                  | Asset Management Policy                                   | Managing Director                      |
 | A.7.3               | Securing offices, rooms and facilities                      | ❌           | Managed via physical access control procedures.                                                      |
+| A.7.4                      | Physical security monitoring                                             | ✅           | Physical security managed via building infrastructure.       | Asset Management Policy                                   | Managing Director                      |
 | A.7.5               | Protecting against physical/environmental threats           | ❌           | External data centers (Hetzner) with physical protections.                                           |
 | A.7.6               | Working in secure areas                                     | ❌           | No designated secure areas requiring additional controls.                                            |
 | A.7.7               | Clear desk and clear screen                                 | ❌           | Covered under office and device security practices.                                                  |
@@ -1084,24 +1074,35 @@ The following Annex A controls were evaluated and determined to be **not applica
 | A.7.12              | Cabling security                                            | ❌           | Managed by infrastructure providers.                                                                 |
 | A.7.13              | Equipment maintenance                                       | ❌           | Minimal equipment; mostly managed externally.                                                        |
 | A.7.14              | Secure disposal/re-use of equipment                         | ❌           | Minimal hardware; secure disposal already practiced.                                                 |
+
 | A.8.1               | User endpoint devices                                       | ❌           | Managed via access control and device encryption.                                                    |
 | A.8.2               | Privileged access rights                                    | ❌           | Managed under access control policy.                                                                 |
 | A.8.3               | Information access restriction                              | ❌           | Managed through RBAC.                                                                                |
 | A.8.4               | Access to source code                                       | ❌           | Controlled via GitHub and secure development practices.                                              |
 | A.8.5               | Secure authentication                                       | ❌           | Strong password and MFA policies in place.                                                           |
 | A.8.6               | Capacity management                                         | ❌           | Managed via cloud provider SLAs.                                                                     |
+| A.8.7                      | Protection against malware                                               | ✅           | Ensures system integrity and protection from malicious software.| BCDR Plan, Access Control Policy                        | Team Lead Developer                    |
+| A.8.8                      | Management of technical vulnerabilities                                  | ✅           | Reduces risk through timely patching and updates.            | BCDR Plan, Access Control Policy                          | Team Lead Developer                    |
+| A.8.9                      | Configuration management                                                 | ✅           | Maintains secure system configurations.                      | BCDR Plan, Access Control Policy                          | Team Lead Developer                    |
 | A.8.10              | Information deletion                                        | ❌           | Covered by data retention/deletion policies.                                                         |
 | A.8.11              | Data masking                                                | ❌           | Not required due to minimal handling of sensitive data.                                              |
 | A.8.12              | Data leakage prevention                                     | ❌           | Managed via RBAC and cloud-based protections.                                                        |
+| A.8.13                     | Information backup                                                       | ✅           | Ensures data recovery capability.                            | BCDR Plan                                                 | Team Lead Developer                    |
 | A.8.14              | Redundancy of information processing facilities             | ❌           | Ensured by cloud providers’ DR plans.                                                                |
 | A.8.15              | Logging                                                     | ❌           | Managed by system/cloud logging tools.                                                               |
 | A.8.16              | Monitoring activities                                       | ❌           | Covered under alerting and monitoring procedures.                                                    |
 | A.8.17              | Clock synchronization                                       | ❌           | Automatically handled by cloud platforms.                                                            |
 | A.8.18              | Use of privileged utility programs                          | ❌           | Scope limited; managed via access controls.                                                          |
 | A.8.19              | Installation of software on operational systems             | ❌           | Controlled by automation and policies.                                                               |
+| A.8.20                     | Networks security                                                        | ✅           | Secures network boundaries and communications.               | Access Control Policy                                     | Team Lead Developer                    |
 | A.8.21              | Security of network services                                | ❌           | Managed externally by cloud service providers.                                                       |
 | A.8.22              | Segregation in networks                                     | ❌           | Covered by cloud configuration controls.                                                             |
+| A.8.23                     | Applying web filters                                                     | ✅           | Web filtering is managed by our building provider (GHG), who blocks access to malicious and inappropriate websites at the network level as per their SLA. | GHG network security policy/SLA                           | Managing Director                      |
+|A.8.24|	Use of cryptography | 
+| A.8.25                     | Secure development life cycle                                            | ✅           | Integrates security into the software development process.   | Secure Development & Change Management                    | Team Lead Developer                    |
+| A.8.26                     | Application security requirements                                        | ✅           | Ensures applications meet security standards.                | Secure Development & Change Management                    | Team Lead Developer                    |
 | A.8.27              | Secure system architecture and engineering principles       | ❌           | Integrated into secure development process.                                                          |
+| A.8.28                     | Secure coding                                                            | ✅           | Promotes secure coding practices.                            | Secure Development & Change Management, Secure Coding Policy | Team Lead Developer                 |
 | A.8.29              | Security testing in development and acceptance              | ❌           | Addressed in secure development lifecycle.                                                           |
 | A.8.30              | Outsourced development                                      | ❌           | No outsourced development performed.                                                                 |
 | A.8.31              | Separation of dev/test/prod environments                    | ❌           | Handled through workflows and processes in GitHub.                                                   |
