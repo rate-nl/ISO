@@ -670,7 +670,18 @@ PIR outcomes are reviewed during **Management Review Meetings** and are used to 
   - Actions taken
   - Resolution date
 - Incident logs are maintained in Google Drive.
+- If evidence is collected during the investigation, procedures in **Section 6.1: Evidence Collection Procedure (A.5.28)** must be followed.
 
+### 6.1 Evidence Collection Procedure (A.5.28)
+
+In the event of a security incident or internal investigation, Rate ensures that digital evidence is collected in a manner that is reliable, secure, and legally admissible.
+
+- **Sources of Evidence:** System logs, access records, emails, backup files, and endpoint data.
+- **Collection Method:** Evidence is exported or copied by the Team Lead Developer. Original data remains intact when possible.
+- **Chain of Custody:** All handling is documented, including date, time, collector name, and actions taken.
+- **Storage:** Evidence is stored in an encrypted folder with access restricted to the CEO and Managing Director.
+- **Retention:** Evidence is retained for 3 years or as required by legal obligations.
+  
 ## 7. Roles and Responsibilities
 ### **7.1. Employees**
 - Report security incidents immediately.
@@ -1015,6 +1026,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.5.18                     | Access rights                                                            | Regularly reviews and updates access rights.                 | Access Control Policy                                     | Team Lead Developer                    |
 | A.5.19                     | Information security in supplier relationships                           | Ensures security responsibilities clearly defined for suppliers.| Supplier Security & Contractual Obligations             | Managing Director                      |
 | A.5.20                     | Addressing information security within supplier agreements               | Ensures suppliers adhere to contractual security requirements.| Supplier Security & Contractual Obligations              | Managing Director                      |
+| A.5.28 | Collection of Evidence | Included – Evidence may need to be collected and preserved during incidents or investigations to support legal or disciplinary action. | Incident Management Plan – Section 6.1: Evidence Collection Procedure | Team Lead Developer, Managing Director |
 | A.7.1                      | Physical security perimeter                                              | Prevents unauthorized physical access.                       | Asset Management Policy                                   | Managing Director                      |
 | A.7.2                      | Physical entry                                                           | Controls physical entry to sensitive areas.                  | Asset Management Policy                                   | Managing Director                      |
 | A.7.4           | Physical security monitoring                                  | Physical security managed via building infrastructure.                                       | Asset Management Policy | Managing Director                      |
@@ -1053,7 +1065,6 @@ The following Annex A controls were evaluated and determined to be **not applica
 | A.5.21          | Managing information security in the ICT supply chain         | Managed by supplier agreements and contract security clauses.                                  |
 | A.5.22          | Monitoring, review and change management of supplier services | Included under Supplier Security & Contractual Obligations.                                  |
 | A.5.23          | Information security for use of cloud services                | Already explicitly addressed by individual cloud service providers (Google, Hetzner, etc.).  |
-| A.5.28          | Collection of evidence                                        | Incident response processes include evidence documentation.                                  |
 | A.5.30          | ICT readiness for business continuity                         | BCDR plan adequately covers ICT readiness.                                                   |
 | A.5.37          | Documented operating procedures                               | Procedures documented as needed within specific policy documents.                            |
 | A.6.4           | Disciplinary process                                          | Managed under general HR policies.                                                           |
