@@ -473,6 +473,7 @@ This policy applies to all personnel accessing Rate's information assets, includ
 - **Need-to-Know:** Restrict sensitive data access.
 - **Role-Based Access Control (RBAC):** Assign permissions based on job roles.
 - **Separation of Duties:** Divide security-sensitive responsibilities.
+- **Web Filtering and Internet Access:** Access to external websites is managed at the network level by our building provider (GHG). GHG implements and maintains web filtering controls to block access to malicious and inappropriate websites for all tenants. 
 
 ## 4. User Access Management
 
