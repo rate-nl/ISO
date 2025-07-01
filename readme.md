@@ -886,6 +886,17 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 - **Asset Owners:** Maintain classification records and ensure security controls are applied.
 - **Employees:** Follow policies, and report security issues.
 
+## 9. Physical Security Monitoring (Annex A.7.4)
+
+Rate’s office is located in the Groothandelsgebouw (GHG), a multi-tenant building in Rotterdam. GHG is responsible for the physical security infrastructure and monitoring.
+
+- **Access Control:** Entry to the building and Rate's office requires keycard access managed by GHG.
+- **Monitoring:** Common areas such as entrances, elevators, and corridors are monitored via CCTV by GHG’s security team.
+- **Alarms and Physical Protections:** GHG ensures regular testing and maintenance of alarm systems and physical access controls.
+- **Office-Level Controls:** Rate’s office is locked after hours; NAS and development servers are stored in locked rooms.
+- **Responsibility:** While Rate does not manage surveillance systems directly, physical security is contractually handled via the lease with GHG.
+
+
 
 ## Secure Development & Change Management
 
@@ -1006,6 +1017,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.5.20                     | Addressing information security within supplier agreements               | Ensures suppliers adhere to contractual security requirements.| Supplier Security & Contractual Obligations              | Managing Director                      |
 | A.7.1                      | Physical security perimeter                                              | Prevents unauthorized physical access.                       | Asset Management Policy                                   | Managing Director                      |
 | A.7.2                      | Physical entry                                                           | Controls physical entry to sensitive areas.                  | Asset Management Policy                                   | Managing Director                      |
+| A.7.4           | Physical security monitoring                                  | Physical security managed via building infrastructure.                                       | Asset Management Policy | Managing Director                      |
 | A.8.7                      | Protection against malware                                               | Ensures system integrity and protection from malicious software.| BCDR Plan, Access Control Policy                        | Team Lead Developer                    |
 | A.8.8                      | Management of technical vulnerabilities                                  | Reduces risk through timely patching and updates.            | BCDR Plan, Access Control Policy                          | Team Lead Developer                    |
 | A.8.9                      | Configuration management                                                 | Maintains secure system configurations.                      | BCDR Plan, Access Control Policy                          | Team Lead Developer                    |
@@ -1050,7 +1062,6 @@ The following Annex A controls were evaluated and determined to be **not applica
 | A.6.7           | Remote working                                                | Remote work securely managed via cloud-based applications and VPN.                           |
 | A.6.8           | Information security event reporting                          | Already addressed within Incident Management and Response Plan.                              |
 | A.7.3           | Securing offices, rooms and facilities                        | Office security managed through physical access control procedures.                          |
-| A.7.4           | Physical security monitoring                                  | Physical security managed via building infrastructure.                                       |
 | A.7.5           | Protecting against physical and environmental threats         | Data centers managed externally (Hetzner) with strong physical protections.                  |
 | A.7.6           | Working in secure areas                                       | No designated secure areas requiring additional controls.                                    |
 | A.7.7           | Clear desk and clear screen                                   | Managed under general office practices and device security policies.                         |
