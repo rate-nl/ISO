@@ -102,8 +102,11 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 1 year  
 **Owner:** Team Lead Developer  
 
-| Patch ID   | Date       | System        | Description     | Status  | Link                         |
-|:-----------|:-----------|:--------------|:----------------|:--------|:-----------------------------|
+| Patch ID     | Date       | System      | Description                                                                                  | Status   | Link                                                                                                   |
+|--------------|------------|-------------|----------------------------------------------------------------------------------------------|----------|--------------------------------------------------------------------------------------------------------|
+| SEC-2025-003 | 2025-07-02 | Dev Server  | Automatic updates applied: KB5001716, KB5060533, KB5058379, KB5057056, KB5055683, KB5055518  | ✅ Done | [Update Screenshot](https://drive.google.com/file/d/1NLQs2yoWaTEsjjweUqAM-2IyP5zgTLfF/view?usp=drive_link) |
+
+> **Note:** Automatic updates are enabled on this server. Patch history is verified annually via Windows Update History screenshots . Screenshot evidence is stored in Google Drive.
 
 
 ---
@@ -114,8 +117,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Owner:** Managing Director  
 **Old Risk assessments were managed within relevant trello cards**
 
-| Assessment ID | Date       | Assessor      | Summary               | Status   | Link                         |
-|:--------------|:-----------|:--------------|:----------------------|:---------|:-----------------------------|
+| Assessment ID | Date       | Assessor           | Summary                                                       | Status   | Link                                               |
+|---------------|------------|--------------------|---------------------------------------------------------------|----------|----------------------------------------------------|
+| RA-2025-001   | 2025-06-17 | Firas Kassoumeh     | Risk assessment for migrating production servers to Hetzner. Risks included data loss, downtime, compatibility, and security. Mitigations documented. | ✅ Closed | [Trello: Hetzner Migration Risk](https://trello.com/c/PdvfZXPs) |
 
 ---
 
