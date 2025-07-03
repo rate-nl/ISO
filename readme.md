@@ -1195,8 +1195,10 @@ Each year, a structured **audit plan** is developed by the **Managing Director**
 
 ## 3. Internal Audit Log
 
-| **Audit Date** | **Reviewed By**   | **Findings**             | **Corrective Actions**        |
-| -------------- | ----------------- | ------------------------ | ----------------------------- |
+| **Audit Date** | **Reviewed By**                            | **Findings Summary**                                                                                      | **Corrective Actions Summary**                                        |
+|----------------|---------------------------------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| 2025-06-17     | Pieter-Jan Bouwmans (Internal Lead Auditor) | 5 nonconformities (risk management linkage, SoA exclusions, outsourced risks, missing management review); 1 OFI (Scope Clarity) | ✅ All NCs resolved and verified. OFI implemented. Risk Assessment section created. |
+
 
 
 ## 4. Review & Updates
@@ -1220,8 +1222,13 @@ This section defines how **non-compliance issues** are identified, recorded, and
 
 ## 3. Non-Compliance Log
 
-| **Issue**             | **Detected Date** | **Assigned To**     | **Resolution Date** | **Status** |
-| --------------------- | ----------------- | ------------------- | ------------------- | ---------- |
+| **Issue**                                                     | **Detected Date** | **Assigned To**         | **Resolution Date** | **Status**   |
+|---------------------------------------------------------------|-------------------|--------------------------|---------------------|--------------|
+| Risk register missing linkage to stakeholder issues           | 2025-06-17        | Managing Director        | 2025-07-04          | ✅ Closed     |
+| Missing "transfer" option in risk treatment plan              | 2025-06-17        | Managing Director        | 2025-07-04          | ✅ Closed     |
+| Outsourced infrastructure risks not documented                | 2025-06-17        | Team Lead Developer      | 2025-07-04          | ✅ Closed     |
+| SoA incomplete + exclusions not justified                     | 2025-06-17        | Managing Director        | 2025-07-04          | ✅ Closed     |
+| Management review of 27001:2022 transition not evidenced      | 2025-06-17        | CEO & Managing Director  | 2025-07-04          | ✅ Closed     |
 
 
 **Corrective actions are reviewed annually** by the CEO.
@@ -1231,6 +1238,25 @@ This section defines how **non-compliance issues** are identified, recorded, and
 For reference and audit traceability, the corrective actions taken in response to the **2024 ISO 27001 external audit** are documented and tracked in the following log:
 
  **[2024 ISO Audit – Corrective Actions Log](https://docs.google.com/spreadsheets/d/158OZ0o3GnyeTbsZXJwQG2oTLb0GeGbNR/edit?gid=529622322#gid=529622322)**  
+
+## 5. Internal Audit 2025 – Corrective Actions
+
+The following nonconformities and required actions were identified during the internal ISO 27001:2022 audit conducted on 17 June 2025 by Lead Auditor Pieter-Jan Bouwmans. All actions were completed and verified by 3 July 2025.
+
+| ID         | Clause         | Nonconformity                                                                                                                                         | Required Action                                                                                                                          | Status  | Owner                   | Resolution Date |
+|------------|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------------------|------------------|
+| NC-2025-01 | 6.1.1 / 6.1.2  | Risk assessment does not clearly link risks to internal/external issues and interested party requirements.                                          | Update risk identification to explicitly show how issues and stakeholder needs are reflected in the risk register.                      | ✅ Closed | Managing Director       | 2025-07-04       |
+| NC-2025-02 | 6.1.3          | Risk treatment options limited to accept/mitigate; transfer and outsource-related risks not described.                                               | Add “Transfer” option and address risks for outsourced services (e.g., Hetzner) in the treatment plan.                                  | ✅ Closed | Managing Director       | 2025-07-04       |
+| NC-2025-03 | 8.1            | Infrastructure risks of outsourced data processors are not addressed.                                                                                | Include third-party infrastructure risks (e.g., cloud hosting) in the risk register and risk treatment.                                 | ✅ Closed | Team Lead Developer     | 2025-07-04       |
+| NC-2025-04 | 8.3            | Statement of Applicability (SoA) is incomplete and contains inconsistent justifications for exclusions.                                              | Re-review SoA to ensure full coverage and risk-based justifications for each included or excluded control.                              | ✅ Closed | Managing Director       | 2025-07-04       |
+| NC-2025-05 | 9.3            | Management review of ISO 27001:2022 transition not documented or evidenced.                                                                          | Complete and document the July 2025 Management Review, ensuring ISO 27001:2022 transition is addressed.                                 | ✅ Closed | CEO & Managing Director | 2025-07-04       |
+
+---
+
+### Remarks and Opportunities for Improvement (OFI)
+
+- ✅ NCs from 2024 external audit are properly closed via PDCA.
+- ✅ **OFI Implemented**: Certification scope was explicitly added to both the ISMS scope and the Scope section of the SoA.
 
 
 ---
