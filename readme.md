@@ -1337,6 +1337,20 @@ This section defines key **performance indicators (KPIs)** to measure the effect
 - Metrics are reviewed during **Management Review Meetings**.
 - If KPIs fall below targets, **corrective actions** are initiated and logged.
 
+## 4. KPI Evaluation Summary – Reporting Year 2024
+
+The information security objectives and KPIs for 2024 were defined in the document  
+**_B-650c Informatiebeveiligingsdoelstellingen & KPIs_**  
+[Link to Document](https://docs.google.com/document/d/1JXhz8oZ-mvohjFvLiOs2ZbyCtRDMOhKJVGmAsautIjA/edit?tab=t.0#heading=h.gjdgxs)
+
+This document was reviewed during the Management Review held on **24 June 2025**.
+
+The KPIs covered the following areas:
+- ✅ Security awareness and ISMS adoption across all staff
+- ✅ Annual risk assessment and treatment, with focus on red-classified risks
+- ✅ Timely incident response and periodic business continuity testing
+- ✅ Secure platform development using Security by Design principles
+- ✅ Handling and classification of health-related user feedback data
 
 
 
