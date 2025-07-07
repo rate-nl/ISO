@@ -38,6 +38,13 @@ Rate is committed to safeguarding the confidentiality, integrity, and availabili
 The scope of Rate’s Information Security Management System (ISMS) is:
 The development, maintenance, hosting, and support of SaaS applications that enable health, education, and other organizations to independently conduct evaluation and improvement activities, at Stationsplein 45 Unit D3.125, 3013 AK Rotterdam, Netherlands, including all supporting people, processes, systems, and information assets, in accordance with the Statement of Applicability.
 
+### System Architecture Overview
+
+To support this scope, the following diagram provides a high-level overview of Rate’s core system architecture. It includes internal systems, cloud infrastructure, hosted environments, and third-party service integrations relevant to the ISMS.
+
+![System Architecture](System-Architecture/diagram.png)
+
+> _Figure 1: Logical overview of Rate’s platform architecture, including API services, database layers, authentication flow, and infrastructure boundaries._
 
 ### Definitions and Abbreviations
 
