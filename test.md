@@ -1,4 +1,4 @@
-![System Architecture](System Architecture.png)
+![System Architecture](System-Architecture/diagram.png)
 
 
 ## 2. Risk Assessment
