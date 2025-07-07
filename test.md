@@ -1,3 +1,6 @@
+![System Architecture](images/diagram.png)
+
+
 ## 2. Risk Assessment
 
 ### 2.1. Data Security & Privacy Risks
