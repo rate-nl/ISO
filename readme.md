@@ -291,7 +291,7 @@ This document outlines the identified risks, their likelihood and impact, and th
 | 10 | Rate                    | Internet Provider | Internet connectivity | Internet provider outage or degradation | Mostly | Productivity loss, inability to access cloud/SaaS, customer impact | High 🔴 | Medium 🟡 | High | A.8.20, A.7.4 |
 | 11 | Rate employees          | Rate              | Telework infrastructure | Telework infrastructure failure (VPN/device/connectivity) | Mostly | Productivity loss, delayed projects, inability to work remotely | High 🔴 | Medium 🟡 | High | A.5.10, A.8.1 |
 | 12 | Trainer                 | Rate              | Training environment availability | Demo/training environment unavailable for trainers | Partially | Training cannot take place, onboarding and customer support delayed | High 🔴 | Medium 🟡 | High | A.8.20, A.8.16, A.17.1 |
-| 13 | Rate                    | Developers        | Supported platform | Rate platform runs on unsupported/outdated Kentico version | Partially | Security vulnerabilities, data breach, compliance failure, high maintenance cost | High 🔴 | High 🔴 | High | A.8.9, A.8.25, A.8.27 |
+
 
 ---
 
@@ -381,7 +381,6 @@ This document outlines the identified risks, their likelihood and impact, and th
 | 10 | Internet provider outage or degradation | Transfer | SLA with provider, backup 4G/5G hotspot for emergencies, regular provider review | Internet Provider | Provider SLA, backup connectivity | SLA in place, backup hotspot available, provider reviewed annually | Yes | Medium 🟡 | Low 🟢 | Acceptable if SLA and backup connectivity are maintained. | Ongoing |
 | 11 | Telework infrastructure failure (VPN/device/connectivity) | Mitigate | Provide company laptops, enforce VPN, regular device maintenance, remote support | Rate | Device management, VPN | Laptops issued, VPN enforced, support available | Yes | Low 🟢 | Low 🟢 | Acceptable if all remote endpoints are managed and VPN is enforced. | Ongoing |
 | 12 | Demo/training environment unavailable for trainers | Mitigate | Maintain dedicated demo environment, regular availability checks, fallback plan | Rate | Demo environment management | Demo system monitored, fallback procedures documented | Yes | Low 🟢 | Low 🟢 | Acceptable if demo environment is monitored and fallback exists. | Ongoing |
-| 13 | Rate platform runs on unsupported/outdated Kentico version | Mitigate | Upgrade plan for Kentico, vulnerability management, regular patching, migration project scheduled | Developers | Patch management, upgrade plan | Upgrade project scheduled, vulnerability scans performed | In progress | Medium 🟡 | Medium 🟡 | Acceptable if migration is completed and platform is supported. | Ongoing |
 
 ---
 
