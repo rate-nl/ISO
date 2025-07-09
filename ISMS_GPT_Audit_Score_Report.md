@@ -1,4 +1,4 @@
-# ✅ Final ISMS Audit-Readiness Assessment – ISO/IEC 27001:2022
+# ✅ Final ISMS Audit-Readiness Assessment – ISO/IEC 27001:2022 
 
 This document summarizes the audit-readiness review of Rate’s ISMS implementation, based on a full inspection of the ISMS Manual and Evidence Log.
 
