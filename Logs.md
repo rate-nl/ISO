@@ -58,6 +58,10 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Review Date | Users Reviewed | Findings                                      | Action Taken     | Link                                                                 |
 |:------------|----------------|-----------------------------------------------|------------------|----------------------------------------------------------------------|
 | 2025-01-15  | 6              | All access valid and aligned with roles       | No action needed | [Review Document](https://docs.google.com/document/d/1Q85vPlBdjrNonck1D5RbVWWLV86JbY6f0dcBgCFLygE/edit?tab=t.0) |
+| 2025-02-20  | 6              | Suhail Sakhizadh left, access no longer needed | Access revoked   | [Review Document](https://docs.google.com/document/d/1GfA3R8gUsjzp-ethsc6uStHqIxs00M3Bz6rT269_Mrs/edit?usp=drive_link) |
+| 2025-04-30  | 5              | Ricardo Keus left, access no longer needed     | Access revoked   | [Review Document](https://docs.google.com/document/d/167eYbklP_rwdDb2xfGFF3Rff8ztmD8x-S4gsfpR1-Ig/edit?usp=drive_link) |
+| 2025-06-30  | 4              | Younes Shina left, access no longer needed     | Access revoked   | [Review Document](https://docs.google.com/document/d/15MG6e8FEyScGgtp2Z4UrARt_XLwgUnFWjwGUF-iaa-w/edit?usp=drive_link) |
+| 2025-07-10  | 3              | Annual review, all current access valid        | No action needed | [Review Document](https://docs.google.com/document/d/1wKoK-Bx0WtrgXlnWCtZZbh0e6dKL4ockuB7z3MI3nfY/edit?usp=drive_link) |
 
 
 ---
