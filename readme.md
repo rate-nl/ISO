@@ -291,6 +291,7 @@ This document outlines the identified risks, their likelihood and impact, and th
 | 10 | Rate                    | Internet Provider | Internet connectivity | Internet provider outage or degradation | Mostly | Productivity loss, inability to access cloud/SaaS, customer impact | High 🔴 | Medium 🟡 | High | A.8.20, A.7.4 |
 | 11 | Rate employees          | Rate              | Telework infrastructure | Telework infrastructure failure (VPN/device/connectivity) | Mostly | Productivity loss, delayed projects, inability to work remotely | High 🔴 | Medium 🟡 | High | A.5.10, A.8.1 |
 | 12 | Trainer                 | Rate              | Training environment availability | Demo/training environment unavailable for trainers | Partially | Training cannot take place, onboarding and customer support delayed | High 🔴 | Medium 🟡 | High | A.8.20, A.8.16, A.17.1 |
+| 13 | Infrastructure / Network | Team Lead Developer | Secure infrastructure and services against external attack | Brute-force login attempts, scanning bots, or other probing activity targeting production | Mostly | Unauthorized access, system compromise, service downtime | Medium 🟡 | Low 🟢 | Medium 🟡 | A.5.7, A.8.25 |
 
 
 ---
@@ -382,6 +383,8 @@ This document outlines the identified risks, their likelihood and impact, and th
 | 10 | Internet provider outage or degradation | Transfer | SLA with provider, backup 4G/5G hotspot for emergencies, regular provider review | Internet Provider | Provider SLA, backup connectivity | SLA in place, backup hotspot available, provider reviewed annually | Yes | Medium 🟡 | Low 🟢 | Acceptable if SLA and backup connectivity are maintained. | Ongoing |
 | 11 | Telework infrastructure failure (VPN/device/connectivity) | Mitigate | Provide company laptops, enforce VPN, regular device maintenance, remote support | Rate | Device management, VPN | Laptops issued, VPN enforced, support available | Yes | Low 🟢 | Low 🟢 | Acceptable if all remote endpoints are managed and VPN is enforced. | Ongoing |
 | 12 | Demo/training environment unavailable for trainers | Mitigate | Maintain dedicated demo environment, regular availability checks, fallback plan | Rate | Demo environment management | Demo system monitored, fallback procedures documented | Yes | Low 🟢 | Low 🟢 | Acceptable if demo environment is monitored and fallback exists. | Ongoing |
+| 13 | External brute-force login attempts or port scans | Mitigate | CrowdSec agent is installed on the production server to detect, alert, and block brute-force attacks, port scans, and anomalies. Logs are reviewed monthly. | Team Lead Developer | A.5.7, A.8.25 | ✅ Yes | ✅ Implemented | Medium 🟡 | Low 🟢 | Acceptable with technical control in place |  Implemented |
+
 
 ---
 
@@ -566,6 +569,10 @@ All employees are made aware of these requirements during onboarding and through
 
 
 ## 6. Monitoring and Logging
+
+### Automated Threat Monitoring (CrowdSec)
+
+Rate uses **CrowdSec** to automatically detect and block suspicious traffic on its production server, including brute-force attempts, port scanning, and malicious behavior. Alerts are logged and reviewed monthly by the Team Lead Developer. CrowdSec supports ISO/IEC 27001:2022 compliance under **control A.8.25** (technical vulnerability assessment) and enhances proactive threat detection.
 
 - **Logs:** Collected from all on-premises and cloud systems.
 - **Retention:** Logs are retained for **1 year**&#x20;
@@ -1025,7 +1032,8 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.5.4                 | Management responsibilities                                 | ❌       | Covered under established ISMS documentation and governance processes.                            | N/A                                            | N/A                                     |
 | A.5.5                 | Contact with authorities                                    | ❌       | No regulatory requirement or direct communication needed with authorities.                        | N/A                                            | N/A                                     |
 | A.5.6                 | Contact with special interest groups                        | ❌       | No direct involvement with industry special interest groups.                                      | N/A                                            | N/A                                     |
-| A.5.7                 | Threat intelligence                                         | ❌       | Covered via patching and vulnerability management; no formal threat intel collection.             | N/A                                            | N/A                                     |
+| A.5.7                 | Threat intelligence                                         | ✅       | CrowdSec provides community-driven threat feeds and automated blocking.             | Secure Development & Change Management                                            | Team Lead Developer
+                                    |
 | A.5.8                 | Information security in project management                  | ❌       | Already integrated into secure development process; no separate project mgmt. control needed.     | N/A                                            | N/A                                     |
 | A.5.9                 | Inventory of information and other associated assets        | ✅       | Prevents data loss by ensuring all assets are accounted for.                                      | Asset Management Policy                         | Managing Director, Team Lead Developer |
 | A.5.10                | Acceptable use of information and other associated assets   | ✅       | Enforces proper handling and usage of assets.                                                     | Asset Management Policy                         | Managing Director                       |
@@ -1102,7 +1110,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.8.22                | Segregation in networks                                 | ❌       | Segregation handled by cloud infrastructure and configurations.             | N/A                                                         | N/A                                |
 | A.8.23                | Applying web filters                                    | ✅       | Provided by GHG building ISP-level filtering per SLA.                       | GHG network security policy/SLA                              | Managing Director                  |
 | A.8.24                | Use of cryptography                                     | ✅       | Encryption is used for storage, backups, and transmission.                  | Access Control Policy, BCDR Plan                             | Team Lead Developer                |
-| A.8.25                | Secure development life cycle                           | ✅       | Defined process exists from design through deployment.                      | Secure Development & Change Management                      | Team Lead Developer                |
+| A.8.25                | Assessment of technical vulnerabilities                           | ✅       | Covered by automated vulnerability detection using CrowdSec. Logs are reviewed.                      | Secure Development & Change Management                      | Team Lead Developer                |
 | A.8.26                | Application security requirements                       | ✅       | Security requirements are included during development.                      | Secure Development & Change Management                      | Team Lead Developer                |
 | A.8.27                | Secure system architecture and engineering principles   | ✅       | Secure design and architecture are applied in all development work.         | Secure Development & Change Management                      | Team Lead Developer                |
 | A.8.28                | Secure coding                                           | ✅       | Developers follow OWASP and internal secure coding guidelines.              | Secure Coding Policy, Secure Development & Change Management| Team Lead Developer                |
