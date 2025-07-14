@@ -18,6 +18,8 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Risk Assessment Report       | Documented risk identification and analysis            | 3 years          | Managing Director      | After major change                      | 2 hours                  |
 | Restore Drill Checklist      | Validate that backup recovery is documented and tested | 1 year           | Team Lead Developer    | Annually                                | 1 hour                   |
 | Device Offboarding Checklist | Confirm access revoked and assets returned             | 3 years          | Managing Director      | Per offboarding                         | 15 minutes per employee  |
+| CrowdSec Monitoring Log   | Detect threats (port scans, brute-force, etc.) | 3 year         | Team Lead Developer    | Annually  | 30 minutes  |
+
 
 
 ---
@@ -145,5 +147,17 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Retention:** 3 years  
 **Owner:** Managing Director
 **Access grants and revokes are maintained within EXACT software and managed by the managing director**
+
+## 11. CrowdSec Monitoring Log
+
+**Purpose:** Detect and block intrusion attempts, port scans, and other server-level threats using CrowdSec.
+
+**Retention:** 1 year  
+**Owner:** Team Lead Developer
+
+| Log ID   | Date       | System        | Detected Threats                | Action Taken           | Link                                     |
+|----------|------------|----------------|----------------------------------|------------------------|------------------------------------------|
+| CSEC-001 | 2025-07-14 | Production     | 0 brute-force attempts blocked | IPs banned automatically | [CrowdSec Report](https://drive.google.com/file/d/1ezrkXcxCGAwg8tC8z4s_orQlk4hRmS0i/view?usp=sharing) |
+
 
 
