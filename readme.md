@@ -732,7 +732,7 @@ In the event of a security incident or internal investigation, Rate ensures that
 
 ---
 
-# Business Continuity and Disaster Recovery Plan (BCDRP)
+# Business Continuity and Disaster Recovery Plan
 
 **Aligned with ISO  27001:2022 and Integrated with Risk Assessment and Treatment Plan**
 
