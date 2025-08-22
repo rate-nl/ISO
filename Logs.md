@@ -64,6 +64,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | 2025-04-30  | 5              | Ricardo Keus left, access no longer needed     | Access revoked   | [Review Document](https://docs.google.com/document/d/167eYbklP_rwdDb2xfGFF3Rff8ztmD8x-S4gsfpR1-Ig/edit?usp=drive_link) |
 | 2025-06-30  | 4              | Younes Shina left, access no longer needed     | Access revoked   | [Review Document](https://docs.google.com/document/d/15MG6e8FEyScGgtp2Z4UrARt_XLwgUnFWjwGUF-iaa-w/edit?usp=drive_link) |
 | 2025-07-10  | 3              | Annual review, all current access valid        | No action needed | [Review Document](https://docs.google.com/document/d/1wKoK-Bx0WtrgXlnWCtZZbh0e6dKL4ockuB7z3MI3nfY/edit?usp=drive_link) |
+| 2025-07-10  | 3              | Bassel Alkhateeb left, access no longer needed        | Access revoked | [Review Document](https://docs.google.com/document/d/1YJJGUH13eCq4EjNuuxK3dhFxqGSmlvyn1-hlck4ciiA/edit?tab=t.0) |
 
 
 ---
