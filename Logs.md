@@ -19,6 +19,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Restore Drill Checklist      | Validate that backup recovery is documented and tested | 1 year           | Team Lead Developer    | Annually                                | 1 hour                   |
 | Device Offboarding Checklist | Confirm access revoked and assets returned             | 3 years          | Managing Director      | Per offboarding                         | 15 minutes per employee  |
 | CrowdSec Monitoring Log   | Detect threats (port scans, brute-force, etc.) | 3 year         | Team Lead Developer    | Annually  | 30 minutes  |
+| Alternative Access Method Test | Validate ability to access production servers using Hetzner console and manual firewall IP update | 1 year | Team Lead Developer | Annually or after network change | 15 minutes |
 
 
 
@@ -164,4 +165,13 @@ _A single file to capture and track all required ISMS evidence in one place._
 | CSEC-001 | 2025-07-14 | Production     | 0 brute-force attempts blocked | IPs banned automatically | [CrowdSec Report](https://drive.google.com/file/d/1ezrkXcxCGAwg8tC8z4s_orQlk4hRmS0i/view?usp=sharing) |
 
 
+## 12. Alternative Access Method Test Log
+
+**Purpose:** Confirm ability to access production servers when primary network (e.g., office internet) is unavailable. Ensures resilience through console access and external firewall control.  
+**Retention:** 1 year  
+**Owner:** Team Lead Developer  
+
+| Test ID      | Date       | Method Used                                      | Result     | Notes                                                                                                 | Evidence Link                                                                                     |
+|--------------|------------|--------------------------------------------------|------------|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| ALT-2025-001 | 2025-08-25 | Hetzner console access + manual IP whitelist for RDP | ✅ Success | Simulated office internet outage. Used mobile hotspot. Accessed Hetzner console, added IP to firewall, verified RDP access. | [Screenshot](https://drive.google.com/file/d/13Bzt_BORRn0bEKqXy1DE6XisBaL_T9-w/view?usp=drive_link) , [Screenshot](https://drive.google.com/file/d/1hyfHDD3tsLjLTyFirXoN6oA5RJIup1o_/view?usp=drive_link)| 
 
