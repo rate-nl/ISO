@@ -1,4 +1,4 @@
-# Remote Work Transition Plan – August 2025
+# Remote Work Transition Plan – August/September 2025
 
 ## 1. Purpose and Scope
 This document outlines Rate's plan to transition from an office-based working model to a fully remote model starting **September 1, 2025**. It ensures business continuity, secure relocation of infrastructure, and compliance with the Information Security Management System (ISMS) based on ISO/IEC 27001:2022.
@@ -96,6 +96,6 @@ The following entries should be included in the Change Control Log:
 
 ### References
 - [ISMS Manual](https://github.com/rate-nl/ISO/blob/main/readme.md)
-- [Change Control Log](https://your-change-control-log-link)
-- [BCDR Plan](https://your-bcdr-plan-link)
-- [Risk Register](https://your-risk-register-link)
+- [Change Control Log](https://docs.google.com/spreadsheets/d/1aTAYJK-ycFjJh9wI8hkGKIsSFxHTPhW5TxiL7bMx1hA/edit?gid=2142384983#gid=2142384983)
+- [BCDR Plan](https://github.com/rate-nl/ISO/blob/main/readme.md#business-continuity-and-disaster-recovery-plan)
+- [Risk Register](https://github.com/rate-nl/ISO/blob/main/readme.md#risk-assessment-and-risk-treatment-plan)
