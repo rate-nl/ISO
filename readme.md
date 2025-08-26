@@ -38,6 +38,12 @@ Rate is committed to safeguarding the confidentiality, integrity, and availabili
 The scope of Rate’s Information Security Management System (ISMS) is:
 The development, maintenance, hosting, and support of SaaS applications that enable health, education, and other organizations to independently conduct evaluation and improvement activities, at Stationsplein 45 Unit D3.125, 3013 AK Rotterdam, Netherlands, including all supporting people, processes, systems, and information assets, in accordance with the Statement of Applicability.
 
+> **Remote Work Transition Notice (Effective September 1, 2025):**  
+> As of September 1, 2025, Rate will transition to a fully remote work model.  
+> This operational change affects the physical location of infrastructure and employee workspaces.  
+> The transition is formally documented in the [Remote Work Transition Plan – August 2025](./Remote_Work_Transition_Plan.md), which includes asset relocation steps (e.g., NAS and Dev Server), VPN adjustments, and necessary ISMS updates.  
+> ISMS scope, risk controls, and policies will be reviewed and updated accordingly throughout September 2025.
+
 ### System Architecture Overview
 
 To support this scope, the following diagram provides a high-level overview of Rate’s core system architecture. It includes internal systems, cloud infrastructure, hosted environments, and third-party service integrations relevant to the ISMS.
