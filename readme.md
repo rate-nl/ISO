@@ -218,6 +218,13 @@ Rate implements a structured risk management process based on ISO 27005, consist
   - **Risk Treatment Plan**
   - **Statement of Applicability (SoA)**
 
+### 6.8 Technical Vulnerability Monitoring (Annex A.8.25)
+
+Rate performs a full technical vulnerability scan annually on critical systems (production server, VPN, NAS).  
+This complements real-time monitoring with CrowdSec and monthly OS updates.  
+Findings are reviewed, logged in the **Vulnerability Management Log**, and resolved through patching or change control.  
+The next full scan is scheduled for **October 15, 2025**, and is listed in the ISMS Annual Audit Calendar.
+
 
 ## 7. Access Control
 
@@ -1028,7 +1035,7 @@ This SoA applies to **all information security policies, processes, systems, and
 The SoA ensures that selected controls effectively mitigate risks identified in the **Risk Assessment and Risk Treatment Plan (RTP)**.
 
 
-## ISO 27001:2022 Controls
+c
 
 | **Annex A Control (2022)** | **Control Title**                                                        | **Applicable** | **Justification**                                            | **Related Policy/Process**                               | **Responsible Role**                   |
 |----------------------------|--------------------------------------------------------------------------|--------------|--------------------------------------------------------------|----------------------------------------------------------|----------------------------------------|
@@ -1115,7 +1122,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.8.22                | Segregation in networks                                 | ❌       | Segregation handled by cloud infrastructure and configurations.             | N/A                                                         | N/A                                |
 | A.8.23                | Applying web filters                                    | ✅       | Provided by GHG building ISP-level filtering per SLA.                       | GHG network security policy/SLA                              | Managing Director                  |
 | A.8.24                | Use of cryptography                                     | ✅       | Encryption is used for storage, backups, and transmission.                  | Access Control Policy, BCDR Plan                             | Team Lead Developer                |
-| A.8.25                | Assessment of technical vulnerabilities                           | ✅       | Covered by automated vulnerability detection using CrowdSec. Logs are reviewed.                      | Secure Development & Change Management                      | Team Lead Developer                |
+| A.8.25 | Assessment of technical vulnerabilities | ✅ | Covered by automated threat monitoring using CrowdSec and an annual full vulnerability scan (next scheduled: October 2025). Findings are reviewed and logged. | Secure Development & Change Management | Team Lead Developer |
 | A.8.26                | Application security requirements                       | ✅       | Security requirements are included during development.                      | Secure Development & Change Management                      | Team Lead Developer                |
 | A.8.27                | Secure system architecture and engineering principles   | ✅       | Secure design and architecture are applied in all development work.         | Secure Development & Change Management                      | Team Lead Developer                |
 | A.8.28                | Secure coding                                           | ✅       | Developers follow OWASP and internal secure coding guidelines.              | Secure Coding Policy, Secure Development & Change Management| Team Lead Developer                |
