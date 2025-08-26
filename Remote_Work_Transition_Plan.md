@@ -13,12 +13,12 @@ It also outlines necessary ISMS updates to reflect the new operating model.
 
 ## 2. Transition Timeline
 
-### ✅ **Current (Before September 1)**
+### **Current (Before September 1)**
 - Office remains active
 - All ISMS controls as documented (physical access, asset location, etc.) are in place
 - Audit scheduled for August 27–28, 2025
 
-### 🚚 **During the Move (Late August)**
+### **During the Move (Late August)**
 | Task | Responsible | Notes |
 |------|-------------|-------|
 | Physically disconnect NAS and Dev Server | Team Lead Developer | Confirm offsite transportation readiness |
@@ -27,7 +27,7 @@ It also outlines necessary ISMS updates to reflect the new operating model.
 | Verify VPN accessibility | Team Lead Developer | Ensure no interruption to secure remote access |
 | Update internal documentation (temporary) | Team Lead Developer | Pending full ISMS update post-move |
 
-### 🛠️ **Post-Move (Starting September 1)**
+###  **Post-Move (Starting September 1)**
 | Action | Responsible | Target Date |
 |--------|-------------|-------------|
 | Update Asset Inventory | Managing Director | Sept 5 |
@@ -85,7 +85,7 @@ The following entries should be included in the Change Control Log:
 
 ## 7. Annex – Checklist & References
 
-### 🧾 Checklist
+### Checklist
 - [ ] Devices securely packed and relocated
 - [ ] Remote connectivity (VPN, RDP) tested from home
 - [ ] NAS backup process verified after relocation
@@ -94,8 +94,8 @@ The following entries should be included in the Change Control Log:
 - [ ] Risk Register updated
 - [ ] ISMS Manual and relevant policies updated
 
-### 🔗 References
-- [ISMS Manual](https://your-isms-manual-link)
+### References
+- [ISMS Manual](https://github.com/rate-nl/ISO/blob/main/readme.md)
 - [Change Control Log](https://your-change-control-log-link)
 - [BCDR Plan](https://your-bcdr-plan-link)
 - [Risk Register](https://your-risk-register-link)
