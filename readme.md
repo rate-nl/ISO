@@ -1012,7 +1012,7 @@ To comply with **ISO/IEC 27001:2022 Annex A.8.28**, Rate enforces structured sec
 
 ---
 
-# **Statement of Applicability (SoA)**
+# **Statement of Applicability (SoA)**  -- Version 2.0, date 27-June 2025   (need to add dec for each control)
 
 ## **1. Introduction**
 
