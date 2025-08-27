@@ -15,7 +15,7 @@
 ## 3. Statement of Applicability
 
 ## 4. Compliance & Security Governance
-   - [Legal & Regulatory Compliance](#legal--regulatory-compliance)
+   - [Legal & Regulatory Compliance](#compliance--security-governance)
    - [Privacy & Data Protection Policy](#privacy--data-protection-policy)
    - [Supplier Security & Contractual Obligations](#supplier-security--contractual-obligations)
    - [Internal Audit Program](#internal-audit-program)
