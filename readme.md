@@ -262,9 +262,9 @@ In compliance with ISO  27001:2022 Clause 5.1.2, this Information Security Polic
 
 This document outlines the identified risks, their likelihood and impact, and the appropriate risk treatment actions in accordance with **ISO 27001:2022**.
 
-## 1. Interested Parties and Their Needs/Issues
+## 1. Interested Parties / Stakeholder and Their Needs/Issues
 
-| Interested Party         | Needs / Requirements / Issues                                                                                                   |
+| Interested Party / Stakeholder         | Needs / Requirements / Issues                                                                                                   |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Customers               | - Confidentiality, integrity, and availability of their data (survey/customer/end-user data)<br>- Reliable access to Rate platform and services<br>- Timely incident notification<br>- Contractual clarity and compliance<br>- Protection against misuse of the platform by other users or Rate itself |
 | Rate Employees          | - Secure handling of personal and HR data<br>- Reliable, secure devices for work (laptop/desktop)<br>- Safe remote work and VPN access<br>- Training and awareness on security and policies<br>- Privacy of employment records<br>- Clear onboarding/offboarding processes |
