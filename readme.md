@@ -89,7 +89,7 @@ Rate is committed to the following measurable information security objectives:
 
 ## 4. Roles and Responsibilities
 
-In accordance with ISO  27001:2022 Clause 5.3 and Annex A.5.2, the following roles and responsibilities are defined:
+In accordance with ISO  27001:2022 Clause 5.3 and A.5.2, the following roles and responsibilities are defined:
 
 ### 4.1. Chief Executive Officer (CEO)
 
@@ -152,7 +152,7 @@ In accordance with ISO  27001:2022 Clause 5.3 and Annex A.5.2, the following rol
   - Support security compliance by maintaining documentation and adhering to best practices.
   - Identify and report potential software vulnerabilities to the Team Lead Developer.
   - Assist in responding to security incidents by providing technical expertise and remediation support.
-  - Implement and enforce **access control measures** in compliance with **Annex A.9**.
+  - Implement and enforce **access control measures** in compliance with ** A.9**.
 - **Competency Requirements**:
   - Knowledge of secure coding standards and access control.
   - Participation in annual security awareness training.
@@ -218,7 +218,7 @@ Rate implements a structured risk management process based on ISO 27005, consist
   - **Risk Treatment Plan**
   - **Statement of Applicability (SoA)**
 
-### 6.8 Technical Vulnerability Monitoring (Annex A.8.25)
+### 6.8 Technical Vulnerability Monitoring 
 
 Rate performs a full technical vulnerability scan annually on critical systems (production server, VPN, NAS).  
 This complements real-time monitoring with CrowdSec and monthly OS updates.  
@@ -228,7 +228,7 @@ The next full scan is scheduled for **October 15, 2025**, and is listed in the I
 
 ## 7. Access Control
 
-In accordance with **Annex A.9 - Access Control**, Rate enforces the following security measures:
+In accordance with ** Access Control**, Rate enforces the following security measures:
 
 - **Role-based access control (RBAC)** is implemented for all systems.
 - **Firewall rules and VPN access restrictions** are enforced to protect critical infrastructure.
@@ -476,7 +476,7 @@ This document will be reviewed **annually** and **after any significant changes*
 
 ## 1. Purpose
 
-This Access Control Policy defines guidelines for managing access to Rate's information systems, cloud applications, and on-premises infrastructure. It ensures proper role-based access and aligns with ISO  27001:2022 Annex A.5.15 requirements.
+This Access Control Policy defines guidelines for managing access to Rate's information systems, cloud applications, and on-premises infrastructure. It ensures proper role-based access and aligns with ISO  27001:2022 requirements.
 
 ## 2. Scope
 
@@ -518,7 +518,7 @@ This policy applies to all personnel accessing Rate's information assets, includ
 
 #### **Pre-Employment Screening**
 
-In alignment with ISO  27001:2022 Annex A.7.1.1, all candidates offered employment at Rate undergo pre-employment screening appropriate to the role. This includes:
+In alignment with ISO  27001:2022 , all candidates offered employment at Rate undergo pre-employment screening appropriate to the role. This includes:
 
 - Verification of identity and qualifications.
 - Reference checks (where legally permissible).
@@ -563,7 +563,7 @@ To ensure all employees understand their **security responsibilities** and compl
 
 ## 5. Authentication and Password Management
 
-In compliance with ISO  27001:2022 Annex A.9.4.3, Rate enforces a strong password policy for all systems and applications:
+In compliance with ISO  27001:2022 , Rate enforces a strong password policy for all systems and applications:
 
 - **Minimum Length:** Passwords must be at least **12 characters** long.
 - **Complexity Requirements:** Passwords must include **at least three of the following**:
@@ -677,7 +677,7 @@ A security incident is any event that compromises the confidentiality, integrity
 - Data integrity is verified on Google Drive, Exact Online, and production servers.
 - **Annual backup testing is required** to ensure reliability, in alignment with the Risk Treatment Plan (RTP).
 
-### **5.6. Post-Incident Learning (Annex A.5.27)**
+### **5.6. Post-Incident Learning **
 
 Following any significant security incident, a **Post-Incident Review (PIR)** must be conducted by the Managing Director and team lead to:
 
@@ -899,33 +899,33 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 - **Data Storage:** Role-based access controls protect sensitive data.
 - **Backups:** Daily backups with **monthly restoration tests and an annual full validation check**.
 
-## 5. Access Control and Data Security (Annex A.9)
+## 5. Access Control and Data Security 
 
 - **Access Management:** Controlled by the team lead with CEO approval for high-privilege roles.
 - **Log Retention:** Access logs are retained for **one year** to align with compliance requirements.
 - **Access Revocation:** Immediate action for role changes or departures, with records documented.
 - **Remote Access:** VPN is required for development server access.
 
-## 6. Data Retention and Disposal (Annex A.8, A.11)
+## 6. Data Retention and Disposal 
 
 - **Retention Periods:** Backups retained for **one month for standard data, one year for critical logs** .
 - **Secure Disposal:** Hardware is securely wiped and destroyed.
 - **Disposal Records:** Logs include date, method, approver details, and retention for three years.
 
-## 7. Monitoring and Review (Annex A.12, A.15)
+## 7. Monitoring and Review 
 
 - **Audit Documentation:** Managed by the Managing Director, documenting findings, corrective actions, and dates.
 - **Policy Review:** Annually conducted with updates and actions logged.
 - **Audit Record Retention:** All audit reports and supporting documents retained.
 
-## 8. Roles and Responsibilities (Annex A.7, A.6)
+## 8. Roles and Responsibilities 
 
 - **Managing Director:** Manages inventory, risk assessments, audit logs, and ensures Statement of Applicability (SoA) mappings are current.
 - **Team Lead Developer:** Conducts asset reviews, oversees backups, and verifies disposal records.
 - **Asset Owners:** Maintain classification records and ensure security controls are applied.
 - **Employees:** Follow policies, and report security issues.
 
-## 9. Physical Security Monitoring (Annex A.7.4)
+## 9. Physical Security Monitoring 
 
 Rate’s office is located in the Groothandelsgebouw (GHG), a multi-tenant building in Rotterdam. GHG is responsible for the physical security infrastructure and monitoring.
 
@@ -939,7 +939,7 @@ Rate’s office is located in the Groothandelsgebouw (GHG), a multi-tenant build
 
 ## Secure Development & Change Management
 
-This section describes Rate’s secure development and change management process, aligning with ISO  27001:2022 Annex A.8.28, A.8.29, and A.14.2.8.
+This section describes Rate’s secure development and change management process, aligning with ISO  27001:2022 
 
 ### 1. Development Process Overview
 
@@ -982,7 +982,7 @@ Developers work from right to left to keep the board flowing efficiently. Cards 
 
 ### 5. Secure Coding Policy 
 
-To comply with **ISO/IEC 27001:2022 Annex A.8.28**, Rate enforces structured secure coding controls across all software lifecycle phases:
+To comply with **ISO/IEC 27001:2022 **, Rate enforces structured secure coding controls across all software lifecycle phases:
 
 #### 5.1 Planning & Pre-Coding
 
