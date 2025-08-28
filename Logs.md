@@ -115,7 +115,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 | Patch ID     | Date       | System      | Description                                                                                  | Status   | Link                                                                                                   |
 |--------------|------------|-------------|----------------------------------------------------------------------------------------------|----------|--------------------------------------------------------------------------------------------------------|
-| SEC-2025-003 | 2025-07-02 | Dev Server  | Automatic updates applied: KB5001716, KB5060533, KB5058379, KB5057056, KB5055683, KB5055518  | ✅ Done | [Update Screenshot](https://drive.google.com/file/d/1NLQs2yoWaTEsjjweUqAM-2IyP5zgTLfF/view?usp=drive_link) |
+| SEC-2025-003 | 2025-07-02 |  Server  | Automatic updates applied: KB5001716, KB5060533, KB5058379, KB5057056, KB5055683, KB5055518  | ✅ Done | [Update Screenshot](https://drive.google.com/file/d/1NLQs2yoWaTEsjjweUqAM-2IyP5zgTLfF/view?usp=drive_link) |
 
 > **Note:** Automatic updates are enabled on this server. Patch history is verified annually via Windows Update History screenshots . Screenshot evidence is stored in Google Drive.
 
