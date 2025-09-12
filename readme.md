@@ -1334,7 +1334,6 @@ Each year, a structured **audit plan** is developed by the **Managing Director**
 Audit findings are reviewed by the **CEO**, and all corrective actions must be implemented **within 30 days**. Audit plans and outcomes are reviewed annually or when significant changes occur.
 
 
-
 # Corrective Actions & Non-Compliance Log
 
 ## 1. Purpose
@@ -1351,43 +1350,49 @@ This section defines how **non-compliance issues** are identified, recorded, and
 6. **Set a Deadline:** Issues must be resolved within **30 days**, or a documented target date must be provided if longer.  
 7. **Verify Resolution:** The CEO approves resolution, including review of root cause analysis and preventive actions, before closing.  
 
-## 3. Non-Compliance Log
 
-| **Issue**                                                     | **Detected Date** | **Assigned To**         | **Resolution Date** | **Status**   |
-|---------------------------------------------------------------|-------------------|--------------------------|---------------------|--------------|
-| Risk register missing linkage to stakeholder issues           | 2025-06-17        | Managing Director        | 2025-07-04          | ✅ Closed     |
-| Missing "transfer" option in risk treatment plan              | 2025-06-17        | Managing Director        | 2025-07-04          | ✅ Closed     |
-| Outsourced infrastructure risks not documented                | 2025-06-17        | Team Lead Developer      | 2025-07-04          | ✅ Closed     |
-| SoA incomplete + exclusions not justified                     | 2025-06-17        | Managing Director        | 2025-07-04          | ✅ Closed     |
-| Management review of 27001:2022 transition not evidenced      | 2025-06-17        | CEO & Managing Director  | 2025-07-04          | ✅ Closed     |
-
-
-**Corrective actions are reviewed annually** by the CEO.
-
-## 4. External Audit 2024 – Corrective Actions
+## 3. External Audit 2024 – Corrective Actions
 
 For reference and audit traceability, the corrective actions taken in response to the **2024 ISO 27001 external audit** are documented and tracked in the following log:
 
  **[2024 ISO Audit – Corrective Actions Log](https://docs.google.com/spreadsheets/d/158OZ0o3GnyeTbsZXJwQG2oTLb0GeGbNR/edit?gid=529622322#gid=529622322)**  
 
-## 5. Internal Audit 2025 – Corrective Actions
+## 4. Internal Audit 2025 – Corrective Actions
 
 The following nonconformities and required actions were identified during the internal ISO 27001:2022 audit conducted on 17 June 2025 by Lead Auditor Pieter-Jan Bouwmans. All actions were completed and verified by 3 July 2025.
 
 
-| ID        | Norm element | Anomaly type | Description of deviation | Root cause analysis | Scope of analysis | RECOVERY ON THE DEVIATION (direct recovery from deviation) | CORRECTIVE ACTION of the root cause | Corrective Action Taken | Status |
-|-----------|--------------|--------------|--------------------------|---------------------|-------------------|------------------------------------------------------------|-------------------------------------|-------------------------|--------|
-| NC-2025-01 | 6.1.1 / 6.1.2 | NC (Minor) | Risk assessment did not clearly link risks to internal/external issues and stakeholder needs. | Stakeholder requirements were documented but not explicitly mapped into the risk register. | Risk identification process and risk register | Risks updated in the register with explicit linkage to issues/needs. | Update procedure to require mapping of stakeholder needs into risk register. | Risk register updated and re-approved July 2025. | ✅ Closed |
-| NC-2025-02 | 6.1.3 | NC (Minor) | Risk treatment plan did not include “Transfer” option or cover outsourced services. | Risk treatment template did not include “Transfer” option; outsourced risks overlooked. | Risk treatment plan and SoA | RTP updated with “Transfer” option and outsourced risks. | Update template to always include all 4 treatment options (mitigate, avoid, transfer, accept). | RTP updated July 2025. | ✅ Closed |
-| NC-2025-03 | 8.1 | NC (Minor) | Outsourced infrastructure risks not addressed in the risk register. | Third-party/cloud risks assumed covered by SLA but not documented in register. | Risk register and supplier list | Risks for Hetzner, Google, VPN provider added. | Update risk assessment procedure to require explicit review of third-party risks annually. | Risks added July 2025. | ✅ Closed |
-| NC-2025-04 | 8.3 | NC (Minor) | Statement of Applicability (SoA) incomplete and exclusions unjustified. | SoA not fully aligned with revised risk treatment; exclusions lacked justification. | Statement of Applicability | SoA re-reviewed and corrected. | Require SoA review/update after each risk treatment revision. | SoA updated July 2025. | ✅ Closed |
-| NC-2025-05 | 9.3 | NC (Minor) | Management review of ISO 27001:2022 transition not documented or evidenced. | Review agenda/template did not include specific ISO 27001:2022 transition. | Management review process | Management review completed July 2025, covering transition. | Update review template to include transition/standard changes explicitly. | Management Review Minutes July 2025. | ✅ Closed |
+| ID         | Norm element | Anomaly type | Description of deviation | Root cause analysis | Scope of analysis | RECOVERY ON THE DEVIATION (direct recovery from deviation) | CORRECTIVE ACTION of the root cause | Corrective Action Taken | Responsible | Status |
+|------------|--------------|--------------|--------------------------|---------------------|-------------------|------------------------------------------------------------|-------------------------------------|-------------------------|-------------|--------|
+| NC-2025-01 | 6.1.1 / 6.1.2 | NC (Minor) | Risk assessment did not clearly link risks to internal/external issues and stakeholder needs. | Stakeholder requirements were documented but not explicitly mapped into the risk register. | Risk identification process and risk register | Risks updated in the register with explicit linkage to issues/needs. | Update procedure to require mapping of stakeholder needs into risk register. | Risk register updated and re-approved July 2025. | Firas | ✅ Closed |
+| NC-2025-02 | 6.1.3 | NC (Minor) | Risk treatment plan did not include “Transfer” option or cover outsourced services. | Risk treatment template did not include “Transfer” option; outsourced risks overlooked. | Risk treatment plan and SoA | RTP updated with “Transfer” option and outsourced risks. | Update template to always include all 4 treatment options (mitigate, avoid, transfer, accept). | RTP updated July 2025. | Firas | ✅ Closed |
+| NC-2025-03 | 8.1 | NC (Minor) | Outsourced infrastructure risks not addressed in the risk register. | Third-party/cloud risks assumed covered by SLA but not documented in register. | Risk register and supplier list | Risks for Hetzner, Google, VPN provider added. | Update risk assessment procedure to require explicit review of third-party risks annually. | Risks added July 2025. | Firas | ✅ Closed |
+| NC-2025-04 | 8.3 | NC (Minor) | Statement of Applicability (SoA) incomplete and exclusions unjustified. | SoA not fully aligned with revised risk treatment; exclusions lacked justification. | Statement of Applicability | SoA re-reviewed and corrected. | Require SoA review/update after each risk treatment revision. | SoA updated July 2025. | Firas | ✅ Closed |
+| NC-2025-05 | 9.3 | NC (Minor) | Management review of ISO 27001:2022 transition not documented or evidenced. | Review agenda/template did not include specific ISO 27001:2022 transition. | Management review process | Management review completed July 2025, covering transition. | Update review template to include transition/standard changes explicitly. | Management Review Minutes July 2025. | Firas | ✅ Closed |
+
+
+## 5. External Audit 2025 – Corrective Actions
+
+The following findings were identified during the **external ISO 27001:2022 certification audit** conducted on 27–28 August 2025. They include **nonconformities (NCs)**, **observations**, and **improvement points**.  
+
+| ID             | Finding type   | Norm element        | Anomaly type   | Description of deviation                                                                 | Root cause analysis                                   | Scope of analysis                    | Recovery on the deviation (direct recovery)         | Corrective action of the root cause                                 | Corrective Action Taken                               | Responsible           | Status   |
+|----------------|----------------|---------------------|----------------|------------------------------------------------------------------------------------------|------------------------------------------------------|--------------------------------------|----------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------|----------------------|----------|
+| NC-2025-EXT-01 | NC (Minor)     | 4.1                 | Nonconformity  | No evidence provided that climate change was assessed as a relevant context issue.       | Context analysis template did not include climate change factor. | ISMS Context & Risk Register         | Add climate change consideration to context analysis. | Update ISMS context template and risk register to include climate change relevance. | Planned Sept 2025                                   | Firas (ISMS Lead)    | 🔄 Open  |
+| NC-2025-EXT-02 | NC (Minor)     | 9.2.2               | Nonconformity  | Internal audit 2025 report did not cover Annex A controls as required.                   | Scope of audit narrowed due to ISMS revision.         | Internal audit plan & reporting       | Complete follow-up audit covering Annex A.          | Update audit procedure to ensure full scope coverage annually.     | Planned Sept 2025                                   | Pieter-Jan, Inge, Firas | 🔄 Open  |
+| NC-2025-EXT-03 | NC (Minor)     | 6.1.3               | Nonconformity  | SoA exclusions inconsistent: A.7.13 excluded but equipment maintenance exists; link to A.8.11 insufficient. | Risk treatment link to SoA not updated.              | SoA & Risk Treatment Plan             | Review and align SoA with risk treatment results.   | Update SoA with consistent justification and link to risk treatment. | Planned Sept 2025                                   | Firas                | 🔄 Open  |
+| NC-2025-EXT-04 | NC (Minor)     | 10.2                | Nonconformity  | Corrective Action Log lacked root cause analysis for NCs from internal audit.             | Template/log did not require cause analysis.          | Corrective Actions Log                 | Update log with root cause fields; backfill missing entries. | Revised log format with root cause analysis (Mid-Sept 2025).           | Firas                | ✅ Closed |
+| NC-2025-EXT-05 | NC (Minor)     | A.5.31              | Nonconformity  | DPAs/contracts with clients state NEN7510 certification still applies, though only ISO 27001 is current. | Contracts not updated after standard transition.      | Compliance Register & Contracts        | Update all DPAs/contracts to reflect ISO 27001 only. | Correct compliance register and customer agreements.               | Planned Sept 2025                                   | Inge                 | 🔄 Open  |
+| OBS-2025-EXT-01| Observation    | A.5.7 / Threat intel| Observation    | Threat intelligence via CrowdSec not clearly separated into strategic, tactical, operational levels. | Process not formally defined.                        | Threat intelligence process            | Clarify intelligence levels in documentation.       | Update Threat Intel procedure to distinguish levels.               | Planned Oct 2025                                    | Firas                | 🔄 Open  |
+| OBS-2025-EXT-02| Observation    | A.5.23 / Cloud exit strategy | Observation    | Exit strategy for cloud services insufficiently detailed.                                | Exit strategy not formalized in supplier management. | Supplier & continuity planning          | Define cloud exit procedures in BCDR/Supplier Policy. | Update ISMS with exit strategy for cloud providers.                | Planned Oct 2025                                    | Firas                | 🔄 Open  |
+| OBS-2025-EXT-03| Observation    | A.8.28 / Dev approvals | Observation    | Not always clear that lead developer approved all changes (sampled cases).               | Missing documentation of approvals.                  | Development & change management         | Reinforce change approval tracking.                 | Update change log template to require explicit approvals.           | Planned Oct 2025                                    | Team Lead Developer  | 🔄 Open  |
+| IMP-2025-EXT-01| Improvement Point | Operational planning | OFI            | Operational planning did not clearly evidence that tasks were executed.                  | Execution tracking not consistently documented.      | Operational planning & logs             | Improve evidence of execution in planning logs.     | Merge audit calendar & change log to track execution.              | Planned Oct 2025                                    | Firas                | 🔄 Open  |
 
 
 ### Remarks and Opportunities for Improvement (OFI)
 
 - ✅ NCs from 2024 external audit are properly closed via PDCA.
 - ✅ **OFI Implemented**: Certification scope was explicitly added to both the ISMS scope and the Scope section of the SoA.
+
 
 
 ---
