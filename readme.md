@@ -1343,10 +1343,13 @@ This section defines how **non-compliance issues** are identified, recorded, and
 
 ## 2. Non-Compliance Handling Process
 
-1. **Identify Issue:** Any non-compliance is **logged**.
-2. **Assign Responsibility:** A team member is assigned to fix the issue.
-3. **Set a Deadline:** Issues must be resolved **within 30 days**.
-4. **Verify Resolution:** The CEO approves resolution before closing.
+1. **Identify Issue:** Any non-compliance is logged.  
+2. **Cause Analysis:** A root cause analysis is documented to ensure the underlying reason for the non-conformity is understood.  
+3. **Assign Responsibility:** A team member is assigned to implement corrective and preventive actions.  
+4. **Corrective Action:** Define and execute actions to eliminate the non-conformity itself.  
+5. **Preventive Action:** Define and execute actions to eliminate the root cause and prevent recurrence. 
+6. **Set a Deadline:** Issues must be resolved within **30 days**, or a documented target date must be provided if longer.  
+7. **Verify Resolution:** The CEO approves resolution, including review of root cause analysis and preventive actions, before closing.  
 
 ## 3. Non-Compliance Log
 
@@ -1371,15 +1374,15 @@ For reference and audit traceability, the corrective actions taken in response t
 
 The following nonconformities and required actions were identified during the internal ISO 27001:2022 audit conducted on 17 June 2025 by Lead Auditor Pieter-Jan Bouwmans. All actions were completed and verified by 3 July 2025.
 
-| ID         | Clause         | Nonconformity                                                                                                                                         | Required Action                                                                                                                          | Status  | Owner                   | Resolution Date |
-|------------|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------------------|------------------|
-| NC-2025-01 | 6.1.1 / 6.1.2  | Risk assessment does not clearly link risks to internal/external issues and interested party requirements.                                          | Update risk identification to explicitly show how issues and stakeholder needs are reflected in the risk register.                      | ✅ Closed | Managing Director       | 2025-07-04       |
-| NC-2025-02 | 6.1.3          | Risk treatment options limited to accept/mitigate; transfer and outsource-related risks not described.                                               | Add “Transfer” option and address risks for outsourced services (e.g., Hetzner) in the treatment plan.                                  | ✅ Closed | Managing Director       | 2025-07-04       |
-| NC-2025-03 | 8.1            | Infrastructure risks of outsourced data processors are not addressed.                                                                                | Include third-party infrastructure risks (e.g., cloud hosting) in the risk register and risk treatment.                                 | ✅ Closed | Team Lead Developer     | 2025-07-04       |
-| NC-2025-04 | 8.3            | Statement of Applicability (SoA) is incomplete and contains inconsistent justifications for exclusions.                                              | Re-review SoA to ensure full coverage and risk-based justifications for each included or excluded control.                              | ✅ Closed | Managing Director       | 2025-07-04       |
-| NC-2025-05 | 9.3            | Management review of ISO 27001:2022 transition not documented or evidenced.                                                                          | Complete and document the July 2025 Management Review, ensuring ISO 27001:2022 transition is addressed.                                 | ✅ Closed | CEO & Managing Director | 2025-07-04       |
 
----
+| ID        | Norm element | Anomaly type | Description of deviation | Root cause analysis | Scope of analysis | RECOVERY ON THE DEVIATION (direct recovery from deviation) | CORRECTIVE ACTION of the root cause | Corrective Action Taken | Status |
+|-----------|--------------|--------------|--------------------------|---------------------|-------------------|------------------------------------------------------------|-------------------------------------|-------------------------|--------|
+| NC-2025-01 | 6.1.1 / 6.1.2 | NC (Minor) | Risk assessment did not clearly link risks to internal/external issues and stakeholder needs. | Stakeholder requirements were documented but not explicitly mapped into the risk register. | Risk identification process and risk register | Risks updated in the register with explicit linkage to issues/needs. | Update procedure to require mapping of stakeholder needs into risk register. | Risk register updated and re-approved July 2025. | ✅ Closed |
+| NC-2025-02 | 6.1.3 | NC (Minor) | Risk treatment plan did not include “Transfer” option or cover outsourced services. | Risk treatment template did not include “Transfer” option; outsourced risks overlooked. | Risk treatment plan and SoA | RTP updated with “Transfer” option and outsourced risks. | Update template to always include all 4 treatment options (mitigate, avoid, transfer, accept). | RTP updated July 2025. | ✅ Closed |
+| NC-2025-03 | 8.1 | NC (Minor) | Outsourced infrastructure risks not addressed in the risk register. | Third-party/cloud risks assumed covered by SLA but not documented in register. | Risk register and supplier list | Risks for Hetzner, Google, VPN provider added. | Update risk assessment procedure to require explicit review of third-party risks annually. | Risks added July 2025. | ✅ Closed |
+| NC-2025-04 | 8.3 | NC (Minor) | Statement of Applicability (SoA) incomplete and exclusions unjustified. | SoA not fully aligned with revised risk treatment; exclusions lacked justification. | Statement of Applicability | SoA re-reviewed and corrected. | Require SoA review/update after each risk treatment revision. | SoA updated July 2025. | ✅ Closed |
+| NC-2025-05 | 9.3 | NC (Minor) | Management review of ISO 27001:2022 transition not documented or evidenced. | Review agenda/template did not include specific ISO 27001:2022 transition. | Management review process | Management review completed July 2025, covering transition. | Update review template to include transition/standard changes explicitly. | Management Review Minutes July 2025. | ✅ Closed |
+
 
 ### Remarks and Opportunities for Improvement (OFI)
 
