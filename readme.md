@@ -35,14 +35,8 @@
 Rate is committed to safeguarding the confidentiality, integrity, and availability of all physical and electronic information assets. Our Information Security Management System (ISMS) is designed to manage information security risks effectively, ensuring business continuity and minimizing potential threats.
 
 ## Scope of the ISMS
-The scope of Rate’s Information Security Management System (ISMS) is:
-The development, maintenance, hosting, and support of SaaS applications that enable health, education, and other organizations to independently conduct evaluation and improvement activities, at Stationsplein 45 Unit D3.125, 3013 AK Rotterdam, Netherlands, including all supporting people, processes, systems, and information assets, in accordance with the Statement of Applicability.
+The development, maintenance, hosting, and support of SaaS applications that enable health, education, and other organizations to independently conduct evaluation and improvement activities, including all supporting people, processes, systems, and information assets, in accordance with the Statement of Applicability.
 
-> **Remote Work Transition Notice (Effective September 1, 2025):**  
-> As of September 1, 2025, Rate will transition to a fully remote work model.  
-> This operational change affects the physical location of infrastructure and employee workspaces.  
-> The transition is formally documented in the [Remote Work Transition Plan – August 2025](./Remote_Work_Transition_Plan.md), which includes asset relocation steps (e.g., NAS and Dev Server), VPN adjustments, and necessary ISMS updates.  
-> ISMS scope, risk controls, and policies will be reviewed and updated accordingly throughout September 2025.
 
 ### System Architecture Overview
 
@@ -772,7 +766,7 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 | **Production Hosting**                   | Hetzner (Primary)              | NAS                                                              | 4 hours   | 30 minutes | Team Lead Developer |
 | **Secondary Hosting (Provider Failure)** | Azure                          | Cloud                                                            | 4 hours   | 30 minutes | Team Lead Developer |
 | **Source Code Repository**               | GitHub                         | Cloud with integrity checks                                      | 1 hour    | Real-time  | Team Lead Developer |
-| **Backups**                              | NAS (Local)                    | Monthly restoration tests & **annual full integrity validation** | N/A       | 30 minutes | Team Lead Developer |
+| **Backups**                              | NAS (Home Office)                    | Monthly restoration tests & **annual full integrity validation** | N/A       | 30 minutes | Team Lead Developer |
 | **VPN & Remote Access**                  | Local VPN on Dev Server        | N/A                                                              | Immediate | None       | Managing Director   |
 | **Communication Tools**                  | Google Workspace (email, docs) | Google Cloud                                                     | Immediate | None       | Managing Director   |
 | **HR and Compliance System**             | Exact Online                   | Cloud                                                            | 2 hours   | 1 hour     | Managing Director   |
@@ -927,13 +921,24 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 
 ## 9. Physical Security Monitoring 
 
-Rate’s office is located in the Groothandelsgebouw (GHG), a multi-tenant building in Rotterdam. GHG is responsible for the physical security infrastructure and monitoring.
+As of September 2025, Rate does not maintain a permanent office location. All critical infrastructure, including the NAS backup device and Development Server, is physically located in a locked, access-controlled home office.
 
-- **Access Control:** Entry to the building and Rate's office requires keycard access managed by GHG.
-- **Monitoring:** Common areas such as entrances, elevators, and corridors are monitored via CCTV by GHG’s security team.
-- **Alarms and Physical Protections:** GHG ensures regular testing and maintenance of alarm systems and physical access controls.
-- **Office-Level Controls:** Rate’s office is locked after hours; NAS and development servers are stored in locked rooms.
-- **Responsibility:** While Rate does not manage surveillance systems directly, physical security is contractually handled via the lease with GHG.
+**Access Control:**  
+Access to the home office where the NAS and Development Server are stored is strictly limited to the CEO. The room is kept locked at all times when not in use, and no keys are shared with any other persons, including family members or guests.
+
+**Monitoring:**  
+The home office is equipped with a camera surveillance system managed by the CEO. Cameras are installed at all entry points to the home and inside the office room containing Rate's infrastructure. The CEO regularly reviews footage and verifies the physical condition and presence of all devices during scheduled asset inventory reviews. Any unauthorized access attempts or suspicious circumstances are immediately logged and investigated.
+
+**Alarms and Physical Protections:**  
+The home office is protected with intrusion alarms and reinforced locks. All windows and doors to the room are kept closed and locked outside of authorized access periods.
+
+**Office-Level Controls:**  
+No other persons (including family or guests) are permitted to access the home office. Devices are never left unattended in shared areas. Portable devices (e.g., laptops) are encrypted and kept under the direct control of authorized personnel.
+
+**Responsibility:**  
+The CEO is responsible for implementing and maintaining all physical security measures for the home office infrastructure, including the camera system, conducting regular checks, and documenting asset inventories. Any changes in physical access or detected incidents must be logged and reported to the Managing Director.
+
+Cloud-hosted assets continue to be protected and monitored under their respective provider’s security policies and SLAs.
 
 
 
