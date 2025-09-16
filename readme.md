@@ -566,6 +566,23 @@ To ensure all employees understand their **security responsibilities** and compl
 | --------------------------- | ------------------- | -------------------------- | ---------------------------------- |
 | Security Awareness Training | All employees       | Upon onboarding + annually | Online session / internal training |
 
+### 2.1 Training Content
+
+All employees receive annual training covering at minimum:
+
+- Security responsibilities when working remotely or from a home office
+- Enforcing VPN usage and device encryption at all times
+- Securing home WiFi and creating a private, access-restricted workspace
+- Prohibition of guest or family member access to Rate devices or data
+- Physical security of Rate equipment (lock room, alarm, camera awareness)
+- Awareness of risks of device loss, theft, or shoulder surfing in a home environment
+- Recognizing, reporting, and responding to incidents when working remotely
+- Password security, phishing, and social engineering
+- Updates on any new ISMS policies or procedures affecting remote work
+
+These topics are reviewed and updated annually to reflect new risks or organizational changes.
+
+
 ## 3. Compliance Tracking
 
 - Training completion records are **logged and retained** in **Google Drive**.
@@ -905,6 +922,13 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
     - **Restricted** – Highly sensitive data requiring strict security measures.
   - **All assets in the inventory must be classified accordingly** and updated in the asset inventory list.
   - Asset classification must be reviewed annually to ensure proper security controls are in place.
+
+**Key on-premises assets are inventoried as follows:**
+
+| Asset Name         | Location                                      | Owner  | Physical Controls                                                           | Access Rights  | 
+|--------------------|-----------------------------------------------|--------|-----------------------------------------------------------------------------|----------------|-----------------|
+| NAS Backup Device  | Locked, access-controlled room in CEO's home  | CEO    | Room locked at all times, CEO-only access, camera surveillance, intrusion alarm | CEO only       | 
+| Development Server | Locked, access-controlled room in CEO's home  | CEO    | Room locked at all times, CEO-only access, camera surveillance, intrusion alarm | CEO only       | 
 
 ## 4. Acceptable Use and Protection Measures
 
