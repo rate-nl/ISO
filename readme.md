@@ -1555,6 +1555,8 @@ This log tracks the review and approval history of all core ISMS documents and p
 | Jul 26                 | Business Continuity & Disaster Recovery Drill  | CEO & Managing Director | Annual              |
 | Aug 25       | Alternative Access Method Test (Production Servers)    | Team Lead Developer | Annual    |
 | Oct 15 | Annual Vulnerability Scan (Critical Systems) | Team Lead Developer | Annual |
+| Nov 10, 2025 | Home office physical access and camera log review  | CEO | Annual    |
+| Nov 10, 2025| Asset inventory check for home office devices      | CEO | Annual    |
 
 
 
