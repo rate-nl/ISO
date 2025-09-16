@@ -612,10 +612,11 @@ In the event of **VPN failure**, an **alternative secure access method** must be
 
 ## 8. Physical Access Control
 
-- Building entry requires key card access.
-- Office access is secured by key.
-- NAS and Development Server are stored under lock.
-- Production servers are cloud-hosted on Hetzner.
+- **Access Restriction:** Only the CEO has keys and authorized access to this room. No other individuals, including family members or guests, are permitted entry or access to Rate infrastructure or devices.
+- **Physical Protections:** The room is protected by reinforced locks, an intrusion alarm system, and camera surveillance covering both the room and all external entry points to the home.
+- **Monitoring:** The CEO regularly reviews camera footage and performs physical inspections during scheduled asset inventory reviews. Any unauthorized access attempt or suspicious activity is logged and immediately reported to the Managing Director.
+- **Device Handling:** Devices (such as NAS and Development Server) are never left unattended outside the locked room, and are always secured when not in direct use by the CEO.
+- **Production servers:** are cloud-hosted on Hetzner.
 
 ## 9. Responsibilities
 
@@ -1035,7 +1036,7 @@ To comply with **ISO/IEC 27001:2022 **, Rate enforces structured secure coding c
 
 ---
 
-# **Statement of Applicability (SoA)**  -- Version 2.0, date 27-June 2025   (need to add dec for each control)
+# **Statement of Applicability (SoA)**  -- Version 3.0, date 16-September 2025 
 
 ## **1. Introduction**
 
@@ -1105,12 +1106,12 @@ c
 | A.6.4                 | Disciplinary process                                   | ❌       | Managed under general HR policies, not separately documented in ISMS.       | N/A                                              | N/A                  |
 | A.6.5                 | Responsibilities after termination/change of employment| ✅       | Covered through formal offboarding process in Access Control Policy.        | Access Control Policy (Offboarding Process)      | Managing Director    |
 | A.6.6                 | Confidentiality or non-disclosure agreements           | ✅       | NDAs signed on employment and stored with HR records.                       | Access Control Policy                 | Managing Director    |
-| A.6.7                 | Remote working                                         | ✅       | Employees use VPN and secured apps; remote work risk is mitigated.          | Access Control Policy, Asset Management Policy   | Team Lead Developer  |
+| A.6.7           | Remote working          | ✅         | All staff work remotely. Secure home office policies, VPN enforcement, device encryption, and security training mitigate risks associated with remote operations. | Access Control Policy, Asset Management Policy | Team Lead Developer |
 | A.6.8                 | Information security event reporting                   | ✅       | Reporting process is defined in Incident Management Plan.                   | Incident Management and Response Plan            | Managing Director    |
-| A.7.1                 | Physical security perimeter                  | ✅       | Prevents unauthorized physical access.                                      | Asset Management Policy          | Managing Director    |
-| A.7.2                 | Physical entry                               | ✅       | Controls physical entry to sensitive areas.                                 | Asset Management Policy          | Managing Director    |
-| A.7.3                 | Securing offices, rooms and facilities       | ✅       | Office entry is badge-controlled and monitored by GHG building security.    | Asset Management Policy          | Managing Director    |
-| A.7.4                 | Physical security monitoring                 | ✅       | Monitored via GHG’s building-wide surveillance and access logs.             | Asset Management Policy          | Managing Director    |
+| A.7.1           | Physical security perimeter | ✅         | Critical infrastructure is located in the CEO's locked, camera-monitored home office, protected by intrusion alarm. No office is maintained. | Asset Management Policy          | CEO                 |
+| A.7.2           | Physical entry          | ✅         | Entry to the home office server room is strictly limited to the CEO. Access is logged, and controls are reviewed regularly. | Asset Management Policy          | CEO                 |
+| A.7.3           | Securing offices, rooms and facilities | ✅ | Devices (NAS, Dev Server) are stored in a secured, locked, camera-monitored room. No unauthorized persons permitted entry. | Asset Management Policy          | CEO                 |
+| A.7.4           | Physical security monitoring | ✅         | The home office is equipped with camera surveillance and intrusion alarms, and is reviewed regularly by the CEO.         | Asset Management Policy          | CEO                 |
 | A.7.5                 | Protecting against physical/environmental threats | ❌   | Managed by external data center (Hetzner) with physical protections.        | N/A                              | N/A                  |
 | A.7.6                 | Working in secure areas                      | ❌       | No designated secure areas beyond general office access control.            | N/A                              | N/A                  |
 | A.7.7                 | Clear desk and clear screen                  | ✅       | Enforced through employee awareness and regular spot checks.                | Asset Management Policy          | Managing Director    |
