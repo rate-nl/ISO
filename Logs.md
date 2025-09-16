@@ -175,3 +175,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 |--------------|------------|--------------------------------------------------|------------|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | ALT-2025-001 | 2025-08-25 | Hetzner console access + manual IP whitelist for RDP | ✅ Success | Simulated office internet outage. Used mobile hotspot. Accessed Hetzner console, added IP to firewall, verified RDP access. | [Screenshot](https://drive.google.com/file/d/13Bzt_BORRn0bEKqXy1DE6XisBaL_T9-w/view?usp=drive_link) , [Screenshot](https://drive.google.com/file/d/1hyfHDD3tsLjLTyFirXoN6oA5RJIup1o_/view?usp=drive_link)| 
 
+## 13. Management Review Minutes
+
+| Date        | Meeting Title / Topic                                      | Purpose / Summary                                                              | Link                                                                                          |
+|-------------|-----------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| 2025/06/24  | Management Review Meeting – 2025/06/24                    | Annual ISMS review, remote work transition, policy and risk register update, audit findings. | [Minutes – 2025/06/24](https://docs.google.com/document/d/1BJRiWJ1ElRQEHxifpxfcI0TywrcIfc1n-WYDztba3fA/edit?tab=t.jnwggahwd0u8) |
+| 2025/09/30  | Management Review Meeting – 2025/09/30                    | Follow-up management review after full remote transition, confirmation of updated ISMS controls and evidence, review of new remote/home office risks. | [Minutes – 2025/09/17](https://docs.google.com/document/d/)           |
