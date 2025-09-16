@@ -365,6 +365,14 @@ This document outlines the identified risks, their likelihood and impact, and th
 | 40 | Rate                    | Rate              | Business continuity (pandemic) | Pandemic (e.g., Covid-19) disrupts business continuity | Mostly | Loss of income, operational disruption, need for team reorganization | High 🔴 | Medium 🟡 | High | A.5.30, A.17.1 |
 | 41 | Rate / Customers         | Managing Director | Service continuity (external factors) | Climate-related disruption at hosting provider (e.g., extreme weather, fire, flood) | Mostly | Service downtime, data unavailability | High 🔴 | Low 🟢 (covered by Hetzner/Azure SLA & BCDR) | Medium 🟡 | A.5.30, A.17.1 |
 
+### 2.8 Remote Work & Home Office Risks
+
+| #  | Main Group (Stakeholder) | Requirement Owner | Issue/Requirement Addressed                | Risk                                                           | How well is this being met? | Effect                         | Impact | Likelihood | Risk Level | Annex A Reference (2022) |
+|----|-------------------------|------------------|--------------------------------------------|----------------------------------------------------------------|-----------------------------|--------------------------------|--------|------------|-----------|-------------------------|
+| 42 | Rate, CEO               | CEO              | Physical security of infrastructure at home | Unauthorized access, theft, or tampering in the home office     | Controlled with locks, cameras, and CEO-only access | Data loss, business impact | High   | Low        | Medium    | A.7.1, A.7.2, A.7.3     |
+| 43 | Rate employees          | Managing Director| Remote work – home environment risks        | Weak home network, risk of family/guest viewing, device loss    | Controlled via endpoint protection, employee awareness, VPN & encryption | Data breach, incident | High   | Low        | Medium    | A.6.7, A.8.1            |
+
+
 # 3. Risk Treatment Plan
 
 ## 3.1 Data Security & Privacy Risks
@@ -457,6 +465,16 @@ This document outlines the identified risks, their likelihood and impact, and th
 | 40 | Pandemic (e.g., Covid-19) disrupts business continuity | Mitigate | Maintain and test BCDR plan, enable remote work, review pandemic scenarios annually | Rate | BCDR, remote work | BCDR plan includes pandemic, remote work enabled | Yes | Low 🟢 | Low 🟢 | Acceptable if BCDR is tested and remote work is functional. | Ongoing |
 | 41 | Climate-related disruption at hosting provider | Transfer / Mitigate | Covered by Hetzner SLA (environmental resilience), Azure failover plan (BCDR §6.9), and annual supplier review. | Managing Director | Supplier SLA, BCDR plan | Yes | Yes | Low 🟢 | Low 🟢 | Acceptable if supplier SLA and BCDR are reviewed annually | Ongoing |
 
+---
+
+### 3.8 Remote Work & Home Office Risks – Risk Treatment Plan
+
+| #  | Risk                                           | Treatment Option | Mitigation Actions                                                                                                                                          | Risk Owner        | Control                        | Controlled? | Implemented? | Impact (residual) | Likelihood (residual) | Risk Acceptance Criteria                        | Status/Deadline  |
+|----|------------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|----------------------------------|-------------|--------------|-------------------|-----------------------|--------------------------------------------------|-----------------|
+| 42 | Unauthorized access, theft, or tampering in the home office | Mitigate         | Home office room kept locked at all times; access limited to CEO only; camera surveillance inside and outside the home; intrusion alarm; regular asset and footage reviews | CEO               | Physical access control         | Yes         | Yes          | Low 🟢             | Low 🟢                | Acceptable if controls and reviews are maintained | Ongoing         |
+| 43 | Remote work leads to home network compromise or data breach | Mitigate         | VPN required for all remote access; device encryption enforced; regular remote work security training for all employees; prohibition of guest/family access to work devices | Managing Director | Endpoint protection, awareness training | Yes         | Yes          | Low 🟢             | Low 🟢                | Acceptable if technical and awareness controls remain enforced | Ongoing         |
+
+---
 
 ## 4. Risk Review and Approval
 
