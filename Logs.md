@@ -14,7 +14,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | DB Restore Test Log          | Confirm successful backup recovery tests               | 1 year           | Team Lead Developer    | Monthly + Annually                      | 1 hour                   |
 | Asset Inventory              | Track hardware, software and ownership                 | 3 years          | Managing Director      | Annually                                | 2 hours                  |
 | Change Control Log           | Track changes in production systems with approvals     | 3 years          | Team Lead Developer    | Per change                              | 10 minutes per entry     |
-| Endpoint Patch/Update Log    | Prove system vulnerabilities are managed               | 1 year           | Team Lead Developer    | Monthly                                 | 30 minutes               |
+| Endpoint Patch/Update Log    | Prove system vulnerabilities are managed               | 1 year           | Team Lead Developer    | Annually                                 | 30 minutes               |
 | Risk Assessment Report       | Documented risk identification and analysis            | 3 years          | Managing Director      | After major change                      | 2 hours                  |
 | Restore Drill Checklist      | Validate that backup recovery is documented and tested | 1 year           | Team Lead Developer    | Annually                                | 1 hour                   |
 | Device Offboarding Checklist | Confirm access revoked and assets returned             | 3 years          | Managing Director      | Per offboarding                         | 15 minutes per employee  |
@@ -111,14 +111,20 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 ## 7. Endpoint Patch/Update Log  
 **Purpose:** Prove system vulnerabilities are managed  
-**Retention:** 1 year  
+**Retention:** 3 years  
 **Owner:** Team Lead Developer  
+**Reference ID:** SEC-2025-003  
+**Related Controls:** A.7.13 (Equipment maintenance), A.5.15 (Access control), A.8.16 (Logging)  
+**Linked Policies:** Asset Management Policy; BCDR Plan  
+**Verification Method:** Windows update history screenshots, antivirus reports, OS version checks
 
 | Patch ID     | Date       | System      | Description                                                                                  | Status   | Link                                                                                                   |
 |--------------|------------|-------------|----------------------------------------------------------------------------------------------|----------|--------------------------------------------------------------------------------------------------------|
 | SEC-2025-003 | 2025-07-02 |  Server  | Automatic updates applied: KB5001716, KB5060533, KB5058379, KB5057056, KB5055683, KB5055518  | ✅ Done | [Update Screenshot](https://drive.google.com/file/d/1NLQs2yoWaTEsjjweUqAM-2IyP5zgTLfF/view?usp=drive_link) |
+| SEC-2025-003 | 2025-10-16 | Laptop – Firas | windows auto-updates verified; AV definitions current | ✅ Done | [Update Screenshot](https://drive.google.com/file/d/1LlwsipZDCBbYL4Im5pPSfgZSkIQRCKCF/view?usp=drive_link) |
+| SEC-2025-003 | 2025-10-16 | Laptop – Inge  | windows auto-updates verified; AV definitions current | ✅ Done | [Update Screenshot](https://drive.google.com/file/d/1V_bDK7LU6RBQpeTPwqo-BcbfyERLKReC/view?usp=drive_link) |
+| SEC-2025-003 | 2025-10-16 | NAS            | DSM firmware + packages updated | ✅ Done | [Update Screenshot](https://drive.google.com/file/d/1jAyGnN0BcSspdPmvBSx1NaBkWh505y46/view?usp=drive_link) |
 
-> **Note:** Automatic updates are enabled on this server. Patch history is verified annually via Windows Update History screenshots . Screenshot evidence is stored in Google Drive.
 
 
 ---
