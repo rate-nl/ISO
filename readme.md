@@ -377,13 +377,14 @@ This document outlines the identified risks, their likelihood and impact, and th
 
 ## 3.1 Data Security & Privacy Risks
 
-| # | Risk | Treatment Option | Mitigation Actions (Taken measures) | Risk Owner | Control | Controlled? | Implemented? | Impact (residual) | Likelihood (residual) | Risk Acceptance Criteria | Status/Deadline |
-|---|------|------------------|-------------------------------------|------------|---------|-------------|--------------|-------------------|-----------------------|------------------------|----------------|
-| 1 | Irresponsible handling or unauthorized access to customer/end-user data (availability, integrity, confidentiality) | Mitigate | Strict access control, encryption, regular audits, customer contract clauses, incident response plan | Developers, Managing Director | Access control, encryption, audit | Controls in place, regular audits, contract clauses reviewed annually | Yes | Low 🟢 | Low 🟢 | Acceptable if all controls are enforced and regularly audited. | Ongoing |
-| 2 | Insider threats (employee mishandling data) | Mitigate | Implement role-based access control (RBAC) and log all sensitive actions. Refer to the Access Control Policy – Section 3 and Incident Plan – Section 6. | Managing Director | RBAC & logging | RBAC enforced| Implemented | Low 🟢 | Low 🟢 | Acceptable if RBAC is enforced. | Ongoing |
-| 3 | Mishandling of employee personal data (HR, payroll, contracts, ID) | Mitigate | Access to HR data restricted, encryption, regular audits, staff awareness training | Rate | Access control, encryption, audit | Controls in place, regular audits, training completed | Yes | Low 🟢 | Low 🟢 | Acceptable if controls are enforced and audited. | Ongoing |
-| 4 | Mishandling of respondent data (including health info) | Mitigate | Data minimization, access control, encryption, retention policy, staff training | Rate | Data protection, retention, access control | Controls in place, training delivered, retention policy enforced | Yes | Low 🟢 | Low 🟢 | Acceptable if all controls and retention policy are enforced. | Ongoing |
-| 5 | Data leakage via AI tools (e.g., ChatGPT) | Mitigate | Policy prohibits sharing sensitive data with AI tools, awareness training, monitoring | Rate | Acceptable use policy, training | Policy in place, training delivered, monitoring enabled | Yes | Low 🟢 | Low 🟢 | Acceptable if policy is enforced and staff trained. | Ongoing |
+| # | Risk | Likelihood | Impact | Treatment Option | Mitigation Actions (Taken measures) | Risk Owner | Selected Controls (Annex A) | Evidence / Reference | Controlled? | Implemented? | Impact (residual) | Likelihood (residual) | Risk Acceptance Criteria | Status/Deadline |
+|---|------|-------------|---------|------------------|-------------------------------------|------------|-----------------------------|----------------------|-------------|--------------|-------------------|-----------------------|------------------------|----------------|
+| 1 | Irresponsible handling or unauthorized access to customer/end-user data (availability, integrity, confidentiality) | Medium | High | Mitigate | Strict access control, encryption, regular audits, customer contract clauses, incident response plan | Developers, Managing Director | **A.5.15 Access Control**, **A.8.11 Data Masking**, **A.8.28 Secure Coding**, **A.8.16 Logging** | Access Control Policy, Secure Development Guidelines | Controls in place, regular audits, contract clauses reviewed annually | Yes | Low 🟢 | Low 🟢 | Acceptable if all controls are enforced and regularly audited | Ongoing |
+| 2 | Insider threats (employee mishandling data) | Low | High | Mitigate | Implement role-based access control (RBAC) and log all sensitive actions. Refer to the Access Control Policy – Section 3 and Incident Plan – Section 6. | Managing Director | **A.5.15 Access Control**, **A.8.28 Secure Coding**, **A.8.16 Logging** | Access Control Policy, Incident Response Plan | RBAC enforced | Implemented | Low 🟢 | Low 🟢 | Acceptable if RBAC is enforced | Ongoing |
+| 3 | Mishandling of employee personal data (HR, payroll, contracts, ID) | Low | Medium | Mitigate | Access to HR data restricted, encryption, regular audits, staff awareness training | Rate | **A.5.15 Access Control**, **A.8.25 Secure Disposal**, **A.8.2 Information Classification** | HR Access Controls, Employee Privacy Policy | Controls in place, regular audits, training completed | Yes | Low 🟢 | Low 🟢 | Acceptable if controls are enforced and audited | Ongoing |
+| 4 | Mishandling or use of unmasked respondent data in development/test environments | Low | High | Mitigate | Data minimization, access control, encryption, retention policy, staff training | Rate | **A.8.11 Data Masking**, **A.7.4 Physical Security**, **A.8.25 Secure Disposal** | Secure Development & Change Management Policy | Controls in place, training delivered, retention policy enforced | Yes | Low 🟢 | Low 🟢 | Acceptable if all controls and retention policy are enforced | Ongoing |
+| 5 | Data leakage via AI tools (e.g., ChatGPT) | Low | High | Mitigate | Policy prohibits sharing sensitive data with AI tools, awareness training, monitoring | Rate | **A.5.23 Information Security for Use of Cloud Services**, **A.6.3 Information Security Awareness** | Acceptable Use Policy, Training Records | Policy in place, training delivered, monitoring enabled | Yes | Low 🟢 | Low 🟢 | Acceptable if policy is enforced and staff trained | Ongoing |
+
 
 ---
 
@@ -936,33 +937,43 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 - **Data Storage:** Role-based access controls protect sensitive data.
 - **Backups:** Daily backups with **monthly restoration tests and an annual full validation check**.
 
-## 5. Access Control and Data Security 
+### 5. Equipment Maintenance (A.7.13)
+
+Rate maintains all in-scope equipment (laptops, NAS, and development server) according to the following process:
+
+- **OS & Antivirus updates:** performed monthly (or automatically) and immediately on critical patches. Evidence is logged in the **Endpoint Patch/Update Log**.  
+- **Backups & restore verification:** backups are verified monthly; full restore validation is performed annually. Evidence is available in the **DB Restore Test Log** and **Restore Drill Checklist**.  
+- **Physical checks:** annual asset inventory and physical verification of all devices per the **ISMS Audit Calendar**.  
+- **Recordkeeping:** all maintenance records are retained in **Logs.md (Evidence & Logs)**.  
+- **Non-compliance:** any deviation triggers corrective actions under the ISMS Corrective Action Procedure.
+
+## 6. Access Control and Data Security 
 
 - **Access Management:** Controlled by the team lead with CEO approval for high-privilege roles.
 - **Log Retention:** Access logs are retained for **one year** to align with compliance requirements.
 - **Access Revocation:** Immediate action for role changes or departures, with records documented.
 - **Remote Access:** VPN is required for development server access.
 
-## 6. Data Retention and Disposal 
+## 7. Data Retention and Disposal 
 
 - **Retention Periods:** Backups retained for **one month for standard data, one year for critical logs** .
 - **Secure Disposal:** Hardware is securely wiped and destroyed.
 - **Disposal Records:** Logs include date, method, approver details, and retention for three years.
 
-## 7. Monitoring and Review 
+## 8. Monitoring and Review 
 
 - **Audit Documentation:** Managed by the Managing Director, documenting findings, corrective actions, and dates.
 - **Policy Review:** Annually conducted with updates and actions logged.
 - **Audit Record Retention:** All audit reports and supporting documents retained.
 
-## 8. Roles and Responsibilities 
+## 9. Roles and Responsibilities 
 
 - **Managing Director:** Manages inventory, risk assessments, audit logs, and ensures Statement of Applicability (SoA) mappings are current.
 - **Team Lead Developer:** Conducts asset reviews, oversees backups, and verifies disposal records.
 - **Asset Owners:** Maintain classification records and ensure security controls are applied.
 - **Employees:** Follow policies, and report security issues.
 
-## 9. Physical Security Monitoring 
+## 10. Physical Security Monitoring 
 
 As of September 2025, Rate does not maintain a permanent office location. All critical infrastructure, including the NAS backup device and Development Server, is physically located in a locked, access-controlled home office.
 
@@ -1144,7 +1155,7 @@ c
 | A.7.10 | Storage media | ❌ | Not applicable. Portable/removable media are not used. Policy prohibits use of USB/external drives; all data is transferred via secure cloud services. | Asset Management Policy, Access Control Policy | Managing Director |
 | A.7.11 | Supporting utilities | ❌ | Covered under Hetzner’s data center SLA (power, cooling, fire safety) and GHG building SLA for office utilities. Not applicable to Rate directly. | Supplier Security & Contractual Obligations | Managing Director |
 | A.7.12 | Cabling security | ❌ | Managed by GHG building provider and Hetzner data center. Rate has no direct responsibility for cabling infrastructure. | Supplier Security & Contractual Obligations | Managing Director |
-| A.7.13 | Equipment maintenance | ❌ | Not applicable. Core systems (Hetzner, Google, GitHub, etc.) are vendor-managed under SLA. Internal hardware is minimal (laptops, NAS) and maintained via patching and antivirus, covered in Asset Management Policy. | Asset Management Policy, Supplier Security | Team Lead Developer |
+| A.7.13 | Equipment maintenance | ✅ | Rate maintains in-scope endpoints and on-prem equipment (laptops, NAS, development server). Maintenance includes OS and antivirus updates, backup verification, integrity/restore tests, and periodic physical checks. | Asset Management Policy; BCDR Plan; Endpoint Patch/Update Log; Asset Inventory; Logs.md → Endpoint Patch/Update Log (SEC-2025-003), Asset Inventory, DB Restore Test Log | Team Lead Developer |
 | A.7.14                | Secure disposal/re-use of equipment          | ✅       | Company policy enforces secure data wipe and disposal procedures.           | Asset Management Policy          | Team Lead Developer  |
 | A.8.1                 | User endpoint devices                                   | ✅       | Company-managed laptops are encrypted and secured; policies are in place.   | Asset Management Policy, Access Control Policy              | Team Lead Developer                |
 | A.8.2                 | Privileged access rights                                | ✅       | Managed through role-based access and review of elevated privileges.        | Access Control Policy                                        | Team Lead Developer                |
@@ -1156,7 +1167,7 @@ c
 | A.8.8                 | Management of technical vulnerabilities                 | ✅       | Patch management and monitoring procedures are in place.                    | BCDR Plan, Access Control Policy                             | Team Lead Developer                |
 | A.8.9                 | Configuration management                                | ✅       | System configurations are managed and reviewed regularly.                   | BCDR Plan, Access Control Policy                             | Team Lead Developer                |
 | A.8.10                | Information deletion                                    | ✅       | Retention periods and deletion procedures are defined and applied.          | Asset Management Policy                                      | Team Lead Developer                |
-| A.8.11 | Data masking | ✅ | Sensitive or personal data is not used in development unless explicitly required with customer consent. In such cases, data is anonymised or masked to prevent exposure. | Secure Development & Change Management, Asset Management Policy | Team Lead Developer |
+ A.8.11 | Data masking | ✅ | Selected in Risk Treatment Plan (RTP) for risks #1 and #4 related to unauthorized access and mishandling of personal/test data. All development and test environments use masked/anonymised data unless explicit customer consent is in place. | Secure Development & Change Management; Asset Management Policy; RTP 3.1 (#1, #4) | Managing Director |
 | A.8.12                | Data leakage prevention                                 | ✅       | Data loss prevention is enforced via cloud and RBAC controls.               | Access Control Policy, Asset Management Policy               | Team Lead Developer                |
 | A.8.13                | Information backup                                      | ✅       | Regular backups are performed and tested.                                   | BCDR Plan                                                    | Team Lead Developer                |
 | A.8.14                 | Redundancy of information processing facilities | ✅         | Redundancy is provided through Hetzner’s infrastructure (ISO 27001 certified) and Rate’s failover to Azure as documented in the BCDR Plan. This ensures continuity if primary hosting fails. | Business Continuity & Disaster Recovery Plan, Supplier Security | Team Lead Developer |
@@ -1368,7 +1379,8 @@ Each year, a structured **audit plan** is developed by the **Managing Director**
 3. **Identify Non-Conformities** – Document issues and assign severity ratings.
 4. **Report & Corrective Actions** – Assign responsibilities and deadlines for resolution.
 5. **Follow-Up (if needed)** – Verify that corrective actions were completed.
-
+6. **Verify SoA↔RTP consistency:** During each ISMS or internal audit review, confirm that every updated risk or control in the Risk Treatment Plan is reflected in the Statement of Applicability with aligned justification and evidence references.
+7. 
 ## 3. Internal Audit Log
 
 | **Audit Date** | **Reviewed By**                            | **Findings Summary**                                                                                      | **Corrective Actions Summary**                                        |
@@ -1426,10 +1438,10 @@ The following findings were identified during the **external ISO 27001:2022 cert
 | ID             | Finding type   | Norm element        | Anomaly type   | Description of deviation                                                                 | Root cause analysis                                   | Scope of analysis                    | Recovery on the deviation (direct recovery)         | Corrective action of the root cause                                 | Corrective Action Taken                               | Responsible           | Status   |
 |----------------|----------------|---------------------|----------------|------------------------------------------------------------------------------------------|------------------------------------------------------|--------------------------------------|----------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------|----------------------|----------|
 | NC-2025-EXT-01 | NC (Minor) | 4.1 | Nonconformity | No evidence provided that climate change was assessed as a relevant context issue. | Context analysis template did not include climate change factor. | ISMS Context & Risk Register | Add climate change consideration to context analysis. | ISMS Context Analysis updated to explicitly include climate change as an external factor. Assessment concludes no direct relevance for Rate as a SaaS/software company, but indirect risks (datacenter continuity) are covered through supplier SLAs and the BCDR plan. Risk Register updated accordingly. Annual verification added to supplier review. | 19 Sept 2025 | Firas | ✅ Closed |
-| NC-2025-EXT-02 | NC (Minor)     | 9.2.2               | Nonconformity  | Internal audit 2025 report did not cover Annex A controls as required.                   | Scope of audit narrowed due to ISMS revision.         | Internal audit plan & reporting       | Complete follow-up audit covering Annex A.          | Update audit procedure to ensure full scope coverage annually.     | Planned End-Sept 2025                                   | Pieter-Jan, Inge, Firas | 🔄 Open  |
-| NC-2025-EXT-03 | NC (Minor)     | 6.1.3               | Nonconformity  | SoA exclusions inconsistent: A.7.13 excluded but equipment maintenance exists; link to A.8.11 insufficient. | Risk treatment link to SoA not updated.              | SoA & Risk Treatment Plan             | Review and align SoA with risk treatment results.   | Update SoA with consistent justification and link to risk treatment. | Planned 22 Sept 2025                                   | Firas                | 🔄 Open  |
+| NC-2025-EXT-02 | NC (Minor)     | 9.2.2               | Nonconformity  | Internal audit 2025 report did not cover Annex A controls as required.                   | Scope of audit narrowed due to ISMS revision.         | Internal audit plan & reporting       | Complete follow-up audit covering Annex A.          | Update audit procedure to ensure full scope coverage annually.     | Planned End-Sept 2025                                   | Pieter-Jan, Inge | 🔄 Open  |
+| NC-2025-EXT-03 | Risk Treatment (SoA A.7.13 / A.8.11) | During the June 2025 SoA review, some measures were assessed theoretically (cloud-first) without fully considering internal maintenance activities, and the linkage between risk assessment and selected controls was not explicitly documented. | SoA updated (A.7.13 set ✅ with detailed maintenance description and evidence links; A.8.11 mapped to RTP risks #1 and #4). Added “Equipment Maintenance” procedure under Asset Management Policy and a process check to enforce SoA↔RTP consistency. | Deviation eliminated through SoA revision and policy addition. | Managing Director / Team Lead Developer | ✅ Closed | 2025-10-16 |
 | NC-2025-EXT-04 | NC (Minor)     | 10.2                | Nonconformity  | Corrective Action Log lacked root cause analysis for NCs from internal audit.             | Template/log did not require cause analysis.          | Corrective Actions Log                 | Update log with root cause fields; backfill missing entries. | Revised log format with root cause analysis .           |  15 Sept 2025 |Firas                | ✅ Closed |
-| NC-2025-EXT-05 | NC (Minor)     | A.5.31              | Nonconformity  | DPAs/contracts with clients state NEN7510 certification still applies, though only ISO 27001 is current. | Contracts not updated after standard transition.      | Compliance Register & Contracts        | Update all DPAs/contracts to reflect ISO 27001 only. | Correct compliance register and customer agreements.               | Planned 15 Oct 2025                                   | Inge                 | 🔄 Open  |
+| NC-2025-EXT-05 | NC (Minor)     | A.5.31              | Nonconformity  | DPAs/contracts with clients state NEN7510 certification still applies, though only ISO 27001 is current. | Contracts not updated after standard transition.      | Compliance Register & Contracts        | Update all DPAs/contracts to reflect ISO 27001 only. | Correct compliance register and customer agreements.               | 15 Oct 2025                                   | Inge                 | ✅ Closed  |
 | OBS-2025-EXT-01| Observation    | A.5.7 / Threat intel| Observation    | Threat intelligence via CrowdSec not clearly separated into strategic, tactical, operational levels. | Process not formally defined.                        | Threat intelligence process            | Clarify intelligence levels in documentation.       | Update Threat Intel procedure to distinguish levels.               | Planned 20 Oct 2025                                    | Firas                | 🔄 Open  |
 | OBS-2025-EXT-02| Observation    | A.5.23 / Cloud exit strategy | Observation    | Exit strategy for cloud services insufficiently detailed.                                | Exit strategy not formalized in supplier management. | Supplier & continuity planning          | Define cloud exit procedures in BCDR/Supplier Policy. | Update ISMS with exit strategy for cloud providers.                | Planned 20 Oct 2025                                    | Firas                | 🔄 Open  |
 | OBS-2025-EXT-03| Observation    | A.8.28 / Dev approvals | Observation    | Not always clear that lead developer approved all changes (sampled cases).               | Missing documentation of approvals.                  | Development & change management         | Reinforce change approval tracking.                 | Update change log template to require explicit approvals.           | Planned 25 Oct 2025                                    | Firas  | 🔄 Open  |
