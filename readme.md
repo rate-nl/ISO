@@ -1038,7 +1038,8 @@ Developers work from right to left to keep the board flowing efficiently. Cards 
 - Code is committed to version control daily.
 - After development, issues and solutions are documented in the knowledge base.
 - Testing is performed before deployment.
-- All changes must be **approved by the Team Lead Developer** before deployment.
+- All production changes must be reviewed and approved by the **Team Lead Developer** prior to deployment.  
+Approval must be **recorded** in the Change Control Log (Google Sheet) using the “Lead Developer Approval” column, including approver name and date.  
 
 ### 3. Urgent or Blocked Tasks
 
