@@ -941,7 +941,7 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
 
 Rate maintains all in-scope equipment (laptops, NAS, and development server) according to the following process:
 
-- **OS & Antivirus updates:** performed monthly (or automatically) and immediately on critical patches. Evidence is logged in the **Endpoint Patch/Update Log**.  
+- **OS & Antivirus updates:** applied automatically and verified annually (or immediately for critical patches). Evidence is logged in the **Endpoint Patch/Update Log**.  
 - **Backups & restore verification:** backups are verified monthly; full restore validation is performed annually. Evidence is available in the **DB Restore Test Log** and **Restore Drill Checklist**.  
 - **Physical checks:** annual asset inventory and physical verification of all devices per the **ISMS Audit Calendar**.  
 - **Recordkeeping:** all maintenance records are retained in **Logs.md (Evidence & Logs)**.  
@@ -1155,7 +1155,7 @@ c
 | A.7.10 | Storage media | ❌ | Not applicable. Portable/removable media are not used. Policy prohibits use of USB/external drives; all data is transferred via secure cloud services. | Asset Management Policy, Access Control Policy | Managing Director |
 | A.7.11 | Supporting utilities | ❌ | Covered under Hetzner’s data center SLA (power, cooling, fire safety) and GHG building SLA for office utilities. Not applicable to Rate directly. | Supplier Security & Contractual Obligations | Managing Director |
 | A.7.12 | Cabling security | ❌ | Managed by GHG building provider and Hetzner data center. Rate has no direct responsibility for cabling infrastructure. | Supplier Security & Contractual Obligations | Managing Director |
-| A.7.13 | Equipment maintenance | ✅ | Rate maintains in-scope endpoints and on-prem equipment (laptops, NAS, development server). Maintenance includes OS and antivirus updates, backup verification, integrity/restore tests, and periodic physical checks. | Asset Management Policy; BCDR Plan; Endpoint Patch/Update Log; Asset Inventory; Logs.md → Endpoint Patch/Update Log (SEC-2025-003), Asset Inventory, DB Restore Test Log | Team Lead Developer |
+| A.7.13 | Equipment maintenance | ✅ | Rate maintains in-scope endpoints and on-prem equipment (laptops, NAS, development server). Maintenance includes automated OS and antivirus updates verified annually through the Endpoint Patch/Update Log (SEC-2025-003) and periodic hardware checks. | Asset Management Policy; BCDR Plan; Endpoint Patch/Update Log; Asset Inventory; Logs.md → Endpoint Patch/Update Log (SEC-2025-003), Asset Inventory, DB Restore Test Log | Team Lead Developer |
 | A.7.14                | Secure disposal/re-use of equipment          | ✅       | Company policy enforces secure data wipe and disposal procedures.           | Asset Management Policy          | Team Lead Developer  |
 | A.8.1                 | User endpoint devices                                   | ✅       | Company-managed laptops are encrypted and secured; policies are in place.   | Asset Management Policy, Access Control Policy              | Team Lead Developer                |
 | A.8.2                 | Privileged access rights                                | ✅       | Managed through role-based access and review of elevated privileges.        | Access Control Policy                                        | Team Lead Developer                |
