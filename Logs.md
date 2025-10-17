@@ -20,6 +20,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Device Offboarding Checklist | Confirm access revoked and assets returned             | 3 years          | Managing Director      | Per offboarding                         | 15 minutes per employee  |
 | CrowdSec Monitoring Log   | Detect threats (port scans, brute-force, etc.) | 3 year         | Team Lead Developer    | Annually  | 30 minutes  |
 | Alternative Access Method Test | Validate ability to access production servers using Hetzner console and manual firewall IP update | 1 year | Team Lead Developer | Annually or after network change | 15 minutes |
+| Threat Intelligence & Cloud Exit Review | Record of annual review of threat intelligence sources (CrowdSec, ENISA) and validation of cloud exit strategy for Hetzner, Google, and GitHub | 3 years | Team Lead Developer / Managing Director | Annually | 1 hour |
 
 
 
@@ -191,3 +192,14 @@ _A single file to capture and track all required ISMS evidence in one place._
 |-------------|-----------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 2025/06/24  | Management Review Meeting – 2025/06/24                    | Annual ISMS review, remote work transition, policy and risk register update, audit findings. | [Minutes – 2025/06/24](https://docs.google.com/document/d/1BJRiWJ1ElRQEHxifpxfcI0TywrcIfc1n-WYDztba3fA/edit?tab=t.jnwggahwd0u8) |
 | 2025/09/30  | Management Review Meeting – 2025/10/08                    | Follow-up management review after full remote transition, confirmation of updated ISMS controls and evidence, review of new remote/home office risks. | [Minutes – 2025/10/08](https://docs.google.com/document/d/1Pl-GfmV7PRediT77E7ZS731rRZFeSMhssyfcFRutZHo)           |
+
+## 14. Threat Intelligence & Cloud Exit Review
+
+**Purpose:** Document review of threat intelligence activities and cloud exit strategy.  
+**Retention:** 3 years  
+**Owner:** Team Lead Developer / Managing Director  
+
+| Date | Reviewer | Scope | Summary | Link |
+|------|-----------|--------|----------|------|
+| 2025-10-16 | Firas Kassoumeh | CrowdSec, ENISA, Google, Hetzner, GitHub | Threat intel process classified into strategic/tactical/operational; exit strategy verified. | [Review Notes](https://docs.google.com/document/d/12OC04i2QIxgDwtrUDY7uvukoggfxdtiIqRrgkIwMUCg/edit?tab=t.0) |
+
