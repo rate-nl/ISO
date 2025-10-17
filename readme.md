@@ -620,6 +620,18 @@ Rate uses **CrowdSec** to automatically detect and block suspicious traffic on i
 - **Logs:** Collected from all on-premises and cloud systems.
 - **Retention:** Logs are retained for **1 year**&#x20;
 
+## Threat Intelligence Process (A.5.7 / ISO 27001:2022 §8.3)
+
+Rate uses multiple sources and tools for threat intelligence, including **CrowdSec** and relevant vendor security bulletins.  
+Threat intelligence activities are categorized as follows:
+
+- **Strategic Threat Intelligence** – external developments and long-term trends (e.g., NCSC, ENISA advisories, vendor security reports). Reviewed annually by the Managing Director during the ISMS Management Review.  
+- **Tactical Threat Intelligence** – indicators of attack and methods observed within the industry (e.g., CrowdSec dashboards, GitHub security alerts). Reviewed quarterly by the Team Lead Developer.  
+- **Operational Threat Intelligence** – real-time detection and blocking (CrowdSec logs, firewall events). Monitored continuously by the Team Lead Developer.  
+
+All relevant findings and mitigations are recorded in the **CrowdSec Monitoring Log (Logs.md)** and evaluated during the **annual internal audit**.
+
+
 ## 7. Alternative Secure Access Methods
 
 In the event of **VPN failure**, an **alternative secure access method** must be available to ensure continued access to critical systems. This may include:
@@ -1343,6 +1355,15 @@ All contracts with suppliers must include the following security obligations:
 **supplier agreements are reviewed annually** to ensure compliance.
 
 ---
+### Cloud Service Exit Strategy
+
+To mitigate vendor lock-in and ensure service continuity, Rate defines the following exit approach for its primary cloud suppliers:
+
+- **Hetzner (Hosting):** Server images and data backups are stored separately on NAS. In case of termination, full server images can be restored to an alternative provider within 48 hours.  
+- **Google Workspace / Drive:** All business data exportable via Google Takeout; email and documents backed up weekly to NAS. Exit testing reviewed annually.  
+- **GitHub (Source Control):** All repositories mirrored weekly to NAS (Git bare clone). If GitHub becomes unavailable, repositories can be re-hosted on a self-managed Git server.  
+
+This exit plan is reviewed annually in the **Management Review** and forms part of the **Supplier Security Policy**.
 
 
 
