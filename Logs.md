@@ -107,6 +107,9 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Owner:** Team Lead Developer
 **Change Management Log** https://docs.google.com/spreadsheets/d/1aTAYJK-ycFjJh9wI8hkGKIsSFxHTPhW5TxiL7bMx1hA/edit?usp=sharing
 
+> **Update 2025-10-20:** Change Control Log template updated with mandatory “Lead Developer Approval” field (name + date).  
+> All future production changes require explicit recorded approval before implementation.
+
 
 ---
 
