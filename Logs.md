@@ -14,7 +14,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | DB Restore Test Log          | Confirm successful backup recovery tests               | 1 year           | Team Lead Developer    | Monthly + Annually                      | 1 hour                   |
 | Asset Inventory              | Track hardware, software and ownership                 | 3 years          | Managing Director      | Annually                                | 2 hours                  |
 | Change Control Log           | Track changes in production systems with approvals     | 3 years          | Team Lead Developer    | Per change                              | 10 minutes per entry     |
-| Endpoint Patch/Update Log    | Prove system vulnerabilities are managed               | 1 year           | Team Lead Developer    | Annually                                 | 30 minutes               |
+| Endpoint Patch/Update Log    | Prove system vulnerabilities are managed               | 3 years           | Team Lead Developer    | Annually                                 | 30 minutes               |
 | Risk Assessment Report       | Documented risk identification and analysis            | 3 years          | Managing Director      | After major change                      | 2 hours                  |
 | Restore Drill Checklist      | Validate that backup recovery is documented and tested | 1 year           | Team Lead Developer    | Annually                                | 1 hour                   |
 | Device Offboarding Checklist | Confirm access revoked and assets returned             | 3 years          | Managing Director      | Per offboarding                         | 15 minutes per employee  |
@@ -113,10 +113,13 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Purpose:** Prove system vulnerabilities are managed  
 **Retention:** 3 years  
 **Owner:** Team Lead Developer  
-**Reference ID:** SEC-2025-003  
+**Reference ID:** SEC-2025-003 
+**Frequency:** Annually 
 **Related Controls:** A.7.13 (Equipment maintenance), A.5.15 (Access control), A.8.16 (Logging)  
 **Linked Policies:** Asset Management Policy; BCDR Plan  
 **Verification Method:** Windows update history screenshots, antivirus reports, OS version checks
+> **Note:** Automatic updates are enabled on all managed endpoints (servers, NAS, laptops). Evidence of patch history and update status is collected annually as part of the ISMS maintenance verification.
+
 
 | Patch ID     | Date       | System      | Description                                                                                  | Status   | Link                                                                                                   |
 |--------------|------------|-------------|----------------------------------------------------------------------------------------------|----------|--------------------------------------------------------------------------------------------------------|
