@@ -1605,31 +1605,31 @@ This log tracks the review and approval history of all core ISMS documents and p
 
 | Planned Date | Activity | Owner | Frequency | Executed On | Verified By | Evidence Link |
 |---|---|---|---|---|---|---|
-| 2025-01-10 | Backup Restore Test | Team Lead Developer | Monthly | 2025-01-07 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-02-10 | Backup Restore Test | Team Lead Developer | Monthly | 2025-02-15 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-03-10 | Backup Restore Test | Team Lead Developer | Monthly | 2025-03-28 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-04-10 | Backup Restore Test | Team Lead Developer | Monthly | 2025-04-12 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-05-10 | Backup Restore Test | Team Lead Developer | Monthly | 2025-05-13 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-06-10 | Backup Restore Test | Team Lead Developer | Monthly | 2025-06-11 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-07-10 | Backup Restore Test | Team Lead Developer | Monthly | 2025-07-10 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-08-10 | Backup Restore Test | Team Lead Developer | Monthly | 2025-08-12 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-09-10 | Backup Restore Test | Team Lead Developer | Monthly | 2025-09-11 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-10-10 | Backup Restore Test | Team Lead Developer | Monthly | 2025-10-10 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-11-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-12-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-05-20 | Security Awareness Training | Managing Director | Annual | 2025-05-20 | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
-| 2025-06-01 | Review ISMS Performance Metrics | Managing Director | Annual | 2025-06-17 | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
-| 2025-06-16 | Internal ISO 27001 Audit | Managing Director | Annual | 2025-06-17 | Managing Director | [Internal Audit Report](https://docs.google.com/presentation/d/1hpdiHv9LSB2PBspId_2M_N_0q63-BJee/edit?usp=drive_link&ouid=100575306994247914394&rtpof=true&sd=true) |
-| 2025-06-24 | Management Review Meeting | Managing Director | Annual | 2025-06-24 | CEO | [Minutes – 2025/06/24](Logs.md#13-management-review-minutes) |
-| 2025-07-08 | Access Control Review | Team Lead Developer | Annual / when someone leaves | 2025-08-01 | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
-| 2025-07-15 | Supplier Security Reviews (Threat Intelligence & Cloud Exit) | Team Lead Developer / Managing Director | Annual | 2025-10-16 | Managing Director | [Threat Intelligence & Cloud Exit Review](Logs.md#14-threat-intelligence--cloud-exit-review) |
-| 2025-07-25 | LastPass Full Backup to NAS | Managing Director | Annual | 2025-07-25 | CEO | [Change Control Log](Logs.md#6-change-control-log) |
-| 2025-07-26 | Business Continuity & Disaster Recovery Drill | Team Lead Developer | Annual | 2025-07-29 | CEO | [Restore Drill Checklist](Logs.md#9-restore-drill-checklist) |
-| 2025-08-25 | Alternative Access Method Test (Production Servers) | Team Lead Developer | Annual | 2025-08-25 | CEO | [Alternative Access Method Test Log](Logs.md#12-alternative-access-method-test-log) |
-| 2025-10-15 | Annual Vulnerability Scan (Critical Systems) | Team Lead Developer | Annual | 2025-10-10 | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
-| 2025-10-16 | Endpoint Patch/Update – Annual Verification (SEC-2025-003) | Team Lead Developer | Annual | 2025-10-16 | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
-| 2025-11-10 | Home Office Physical Access & Camera Log Review | Managing Director | Annual | Pending | CEO | — |
-| 2025-11-10 | Asset Inventory Check for Home Office Devices | Managing Director | Annual | Pending | CEO | [Asset Inventory](Logs.md#5-asset-inventory) |
+| 2025-01-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-01-07 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-02-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-02-15 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-03-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-03-28 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-04-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-04-12 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-05-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-05-13 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-06-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-06-11 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-07-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-07-10 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-08-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-08-12 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-09-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-09-11 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-10-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-10-10 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-11-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-12-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-05-20 | Security Awareness Training | Managing Director | Annual | ✅ 2025-05-20 | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
+| 2025-06-01 | Review ISMS Performance Metrics | Managing Director | Annual | ✅ 2025-06-17 | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
+| 2025-06-16 | Internal ISO 27001 Audit | Managing Director | Annual | ✅ 2025-06-17 | Managing Director | [Internal Audit Report](https://docs.google.com/presentation/d/1hpdiHv9LSB2PBspId_2M_N_0q63-BJee/edit?usp=drive_link&ouid=100575306994247914394&rtpof=true&sd=true) |
+| 2025-06-24 | Management Review Meeting | Managing Director | Annual | ✅ 2025-06-24 | CEO | [Minutes – 2025/06/24](Logs.md#13-management-review-minutes) |
+| 2025-07-08 | Access Control Review | Team Lead Developer | Annual / when someone leaves | ✅ 2025-08-01 | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
+| 2025-07-15 | Supplier Security Reviews (Threat Intelligence & Cloud Exit) | Team Lead Developer / Managing Director | Annual | ✅ 2025-10-16 | Managing Director | [Threat Intelligence & Cloud Exit Review](Logs.md#14-threat-intelligence--cloud-exit-review) |
+| 2025-07-25 | LastPass Full Backup to NAS | Managing Director | Annual | ✅ 2025-07-25 | CEO | [Change Control Log](Logs.md#6-change-control-log) |
+| 2025-07-26 | Business Continuity & Disaster Recovery Drill | Team Lead Developer | Annual | ✅ 2025-07-29 | CEO | [Restore Drill Checklist](Logs.md#9-restore-drill-checklist) |
+| 2025-08-25 | Alternative Access Method Test (Production Servers) | Team Lead Developer | Annual | ✅ 2025-08-25 | CEO | [Alternative Access Method Test Log](Logs.md#12-alternative-access-method-test-log) |
+| 2025-10-15 | Annual Vulnerability Scan (Critical Systems) | Team Lead Developer | Annual | ✅ 2025-10-10 | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
+| 2025-10-16 | Endpoint Patch/Update – Annual Verification (SEC-2025-003) | Team Lead Developer | Annual | ✅ 2025-10-16 | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
+| 2025-11-10 | Home Office Physical Access & Camera Log Review | Managing Director | Annual | 🔄 Pending | CEO | — |
+| 2025-11-10 | Asset Inventory Check for Home Office Devices | Managing Director | Annual | 🔄 Pending | CEO | [Asset Inventory](Logs.md#5-asset-inventory) |
 
 
 ## ISMS Annual Audit Calendar – 2026
@@ -1639,28 +1639,28 @@ This log tracks the review and approval history of all core ISMS documents and p
 
 | Planned Date | Activity | Owner | Frequency | Executed On | Verified By | Evidence Link |
 |---|---|---|---|---|---|---|
-| 2026-01-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-02-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-03-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-04-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-05-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-06-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-07-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-08-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-09-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-10-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-11-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-12-10 | Backup Restore Test | Team Lead Developer | Monthly | Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-05-20 | Security Awareness Training | Managing Director | Annual | Pending | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
-| 2026-06-01 | Review ISMS Performance Metrics | Managing Director | Annual | Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
-| 2026-06-16 | Internal ISO 27001 Audit | Managing Director | Annual | Pending | Managing Director | — |
-| 2026-06-24 | Management Review Meeting | Managing Director | Annual | Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
-| 2026-07-08 | Access Control Review | Team Lead Developer | Annual / when someone leaves | Pending | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
-| 2026-07-15 | Supplier Security Reviews (Threat Intelligence & Cloud Exit) | Team Lead Developer / Managing Director | Annual | Pending | Managing Director | [Threat Intelligence & Cloud Exit Review](Logs.md#14-threat-intelligence--cloud-exit-review) |
-| 2026-07-25 | LastPass Full Backup to NAS | Managing Director | Annual | Pending | CEO | [Change Control Log](Logs.md#6-change-control-log) |
-| 2026-07-26 | Business Continuity & Disaster Recovery Drill | Team Lead Developer | Annual | Pending | CEO | [Restore Drill Checklist](Logs.md#9-restore-drill-checklist) |
-| 2026-08-25 | Alternative Access Method Test (Production Servers) | Team Lead Developer | Annual | Pending | CEO | [Alternative Access Method Test Log](Logs.md#12-alternative-access-method-test-log) |
-| 2026-10-15 | Annual Vulnerability Scan (Critical Systems) | Team Lead Developer | Annual | Pending | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
-| 2026-10-16 | Endpoint Patch/Update – Annual Verification (SEC-2026-003) | Team Lead Developer | Annual | Pending | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
-| 2026-11-10 | Home Office Physical Access & Camera Log Review | Managing Director | Annual | Pending | CEO | — |
-| 2026-11-10 | Asset Inventory Check for Home Office Devices | Managing Director | Annual | Pending | CEO | [Asset Inventory](Logs.md#5-asset-inventory) |
+| 2026-01-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-02-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-03-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-04-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-05-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-06-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-07-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-08-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-09-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-10-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-11-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-12-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-05-20 | Security Awareness Training | Managing Director | Annual | 🔄 Pending | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
+| 2026-06-01 | Review ISMS Performance Metrics | Managing Director | Annual | 🔄 Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
+| 2026-06-16 | Internal ISO 27001 Audit | Managing Director | Annual | 🔄 Pending | Managing Director | — |
+| 2026-06-24 | Management Review Meeting | Managing Director | Annual | 🔄 Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
+| 2026-07-08 | Access Control Review | Team Lead Developer | Annual / when someone leaves | 🔄 Pending | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
+| 2026-07-15 | Supplier Security Reviews (Threat Intelligence & Cloud Exit) | Team Lead Developer / Managing Director | Annual |🔄  Pending | Managing Director | [Threat Intelligence & Cloud Exit Review](Logs.md#14-threat-intelligence--cloud-exit-review) |
+| 2026-07-25 | LastPass Full Backup to NAS | Managing Director | Annual | 🔄 Pending | CEO | [Change Control Log](Logs.md#6-change-control-log) |
+| 2026-07-26 | Business Continuity & Disaster Recovery Drill | Team Lead Developer | Annual | 🔄 Pending | CEO | [Restore Drill Checklist](Logs.md#9-restore-drill-checklist) |
+| 2026-08-25 | Alternative Access Method Test (Production Servers) | Team Lead Developer | Annual | 🔄 Pending | CEO | [Alternative Access Method Test Log](Logs.md#12-alternative-access-method-test-log) |
+| 2026-10-15 | Annual Vulnerability Scan (Critical Systems) | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
+| 2026-10-16 | Endpoint Patch/Update – Annual Verification (SEC-2026-003) | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
+| 2026-11-10 | Home Office Physical Access & Camera Log Review | Managing Director | Annual | 🔄 Pending | CEO | — |
+| 2026-11-10 | Asset Inventory Check for Home Office Devices | Managing Director | Annual | 🔄 Pending | CEO | [Asset Inventory](Logs.md#5-asset-inventory) |
