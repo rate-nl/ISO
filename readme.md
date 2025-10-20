@@ -1577,7 +1577,7 @@ The KPIs covered the following areas:
 ## ISMS Review & Approval Log
 
 This log tracks the review and approval history of all core ISMS documents and policies, including who reviewed them, when they were last approved, and whether formal approval is required.  
-This ensures traceability, accountability, and compliance with ISO 27001:2022.
+This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 
 | Section / Policy | Last Reviewed | Reviewed By | Requires Approval | Approved By | Approval Date | Status | Notes |
 |------------------|---------------|--------------|------------------|--------------|----------------|---------|-------|
@@ -1585,18 +1585,19 @@ This ensures traceability, accountability, and compliance with ISO 27001:2022.
 | Information Security Policy | 2025-05-16 | Managing Director | ✅ Yes | CEO | 2025-05-19 | ✅ Approved | Policy aligns with ISO 27001; no changes needed. |
 | Access Control Policy | 2025-05-16 | Team Lead Developer | ✅ Yes | CEO | 2025-05-19 | ✅ Approved | Covers all access processes; onboarding flow clarified. |
 | Incident Management & Response Plan | 2025-05-16 | Managing Director | ✅ Yes | CEO | 2025-05-19 | ✅ Approved | PIR and reporting procedures confirmed. |
-| **BCDR Plan** | **2025-10-16** | **Team Lead Developer / Managing Director** | ✅ Yes | **CEO** | **2025-10-16** | ✅ Approved | **Updated with explicit cloud-exit strategy for Hetzner, Google, GitHub (Audit Obs #6).** |
-| **Asset Management Policy** | **2025-10-16** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-16** | ✅ Approved | **Added Equipment Maintenance (A.7.13) procedure & link to SEC-2025-003 evidence (NC #3).** |
-| **Secure Development & Change Management** | **2025-10-20** | **Team Lead Developer** | ✅ Yes | **CEO** | **2025-10-20** | ✅ Approved | **Change Control Log template updated with “Lead Developer Approval” field (Audit Obs #7).** |
-| **Risk Assessment & Treatment Plan** | **2025-10-16** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-16** | ✅ Approved | **Updated RTP §3.1 to map A.8.11 to Risks #1 and #4 (NC #3).** |
-| **Statement of Applicability (SoA)** | **2025-10-16** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-16** | ✅ Approved | **A.7.13 added as applicable with maintenance description and evidence link (NC #3).** |
-| **Legal & Regulatory Compliance** | **2025-10-15** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-15** | ✅ Approved | **DPAs/contracts updated to reference ISO 27001 only; NEN7510 removed (NC-2025-EXT-05).** |
+| **BCDR Plan** | **2025-10-16** | **Team Lead Developer / Managing Director** | ✅ Yes | **CEO** | **2025-10-22** | ✅ Approved | **Updated with explicit cloud-exit strategy for Hetzner, Google, GitHub (Audit Obs #6).** |
+| **Asset Management Policy** | **2025-10-16** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-22** | ✅ Approved | **Added Equipment Maintenance (A.7.13) procedure & link to SEC-2025-003 evidence (NC #3).** |
+| **Secure Development & Change Management** | **2025-10-20** | **Team Lead Developer** | ✅ Yes | **CEO** | **2025-10-22** | ✅ Approved | **Change Control Log template updated with “Lead Developer Approval” field (Audit Obs #7).** |
+| **Risk Assessment & Treatment Plan** | **2025-10-16** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-22** | ✅ Approved | **Updated RTP §3.1 to map A.8.11 to Risks #1 and #4 (NC #3).** |
+| **Statement of Applicability (SoA)** | **2025-10-16** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-22** | ✅ Approved | **A.7.13 added as applicable with maintenance description and evidence link (NC #3).** |
+| **Legal & Regulatory Compliance** | **2025-10-15** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-22** | ✅ Approved | **DPAs / contracts updated to reference ISO 27001 only; NEN7510 removed (NC-2025-EXT-05).** |
 | **Privacy & Data Protection Policy** | 2025-05-16 | Managing Director | ✅ Yes | CEO | 2025-05-19 | ✅ Approved | GDPR rights handling and retention confirmed. |
-| **Supplier Security & Contractual Obligations** | **2025-10-15** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-15** | ✅ Approved | **Supplier and client agreements aligned with ISO 27001; NEN7510 reference removed & cloud-exit strategy added (NC-2025-EXT-05 + Obs #6).** |
-| **Internal Audit Program** | **2025-10-18** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-18** | ✅ Approved | **Scope expanded to include all Annex A controls annually; audit calendar enhanced with Executed/Verified fields (NC-2025-EXT-02 + Improvement #8).** |
-| **Corrective Actions & Non-Compliance Log** | **2025-10-20** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-20** | ✅ Approved | **Template revised with root-cause fields; historical entries backfilled (NC-2025-EXT-04 + NC #3).** |
-| **Management Review** | **2025-10-08** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-08** | ✅ Approved | **Follow-up review confirmed closure of NC #3, NC-2025-EXT-01-05, and audit observations.** |
+| **Supplier Security & Contractual Obligations** | **2025-10-15** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-22** | ✅ Approved | **Supplier and client agreements aligned with ISO 27001; NEN7510 reference removed & cloud-exit strategy added (NC-2025-EXT-05 + Obs #6).** |
+| **Internal Audit Program** | **2025-10-18** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-22** | ✅ Approved | **Scope expanded to include all Annex A controls annually; audit calendar enhanced with Executed / Verified fields (NC-2025-EXT-02 + Improvement #8).** |
+| **Corrective Actions & Non-Compliance Log** | **2025-10-20** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-22** | ✅ Approved | **Template revised with root-cause fields; historical entries backfilled (NC-2025-EXT-04 + NC #3).** |
+| **Management Review** | **2025-10-08** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-22** | ✅ Approved | **Follow-up review confirmed closure of NC #3, NC-2025-EXT-01-05, and audit observations.** |
 | ISMS Performance Metrics | 2025-05-16 | Managing Director | ✅ Yes | CEO | 2025-05-19 | ✅ Approved | KPIs aligned with ISMS goals and tracked annually. |
+
 
 ---
 
