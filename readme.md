@@ -1581,7 +1581,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 
 | Section / Policy | Last Reviewed | Reviewed By | Requires Approval | Approved By | Approval Date | Status | Notes |
 |------------------|---------------|--------------|------------------|--------------|----------------|---------|-------|
-| **ISMS Context & Scope / Context Analysis** | **2025-09-19** | **Managing Director** | ✅ Yes | **CEO** | **2025-09-19** | ✅ Approved | **Context updated to include climate-change factor; risk assessed and covered via supplier SLAs and BCDR plan (NC-2025-EXT-01).** |
+| **ISMS Context & Scope / Context Analysis** | **2025-09-19** | **Managing Director** | ✅ Yes | **CEO** | **2025-10-22** | ✅ Approved | **Context updated to include climate-change factor; risk assessed and covered via supplier SLAs and BCDR plan (NC-2025-EXT-01).** |
 | Information Security Policy | 2025-05-16 | Managing Director | ✅ Yes | CEO | 2025-05-19 | ✅ Approved | Policy aligns with ISO 27001; no changes needed. |
 | Access Control Policy | 2025-05-16 | Team Lead Developer | ✅ Yes | CEO | 2025-05-19 | ✅ Approved | Covers all access processes; onboarding flow clarified. |
 | Incident Management & Response Plan | 2025-05-16 | Managing Director | ✅ Yes | CEO | 2025-05-19 | ✅ Approved | PIR and reporting procedures confirmed. |
