@@ -1633,7 +1633,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2025-10-15 | Annual Vulnerability Scan (Critical Systems) | Team Lead Developer | Annual | ✅ 2025-10-10 | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
 | 2025-10-16 | Endpoint Patch/Update – Annual Verification (SEC-2025-003) | Team Lead Developer | Annual | ✅ 2025-10-16 | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
 | 2025-11-24 | Home Office Physical Access & Camera Log Review | Managing Director | Annual | ✅ Closed | CEO | [Home Office Physical Access & Camera Log Review Report](https://docs.google.com/document/d/1fbLFVScRHLx-L_nkpRtMReME9WDCyJekUcuzGjCtkp8/edit?tab=t.0)  |
-| 2025-11-24 | Asset Inventory Check for Home Office Devices | Managing Director | Annual | ✅ Closed | CEO | [Asset Inventory](Logs.md#5-asset-inventory) |
+| 2025-11-24 | Asset Inventory Check for Home Office Devices | Managing Director | Annual | ✅ Closed | CEO | [Asset Inventory](Logs.md#5-asset-inventory) ,  [Asset Inventory Check – Home Office Devices](https://docs.google.com/document/d/1Mbq44s1gVBIaUNoDwJXDqXn1HDv5_nUkUS806lTHGjc/edit?tab=t.0)|
 
 
 ## ISMS Annual Audit Calendar – 2026
