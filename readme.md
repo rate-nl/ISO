@@ -615,7 +615,7 @@ All employees are made aware of these requirements during onboarding and through
 
 ### Automated Threat Monitoring (CrowdSec)
 
-Rate uses **CrowdSec** to automatically detect and block suspicious traffic on its production server, including brute-force attempts, port scanning, and malicious behavior. Alerts are logged and reviewed monthly by the Team Lead Developer. CrowdSec supports ISO/IEC 27001:2022 compliance under **control A.8.25** (technical vulnerability assessment) and enhances proactive threat detection.
+Rate uses **CrowdSec** to automatically detect and block suspicious traffic on its production server, including brute-force attempts, port scanning, and malicious behavior. Alerts are logged and reviewed annually by the Team Lead Developer. CrowdSec supports ISO/IEC 27001:2022 compliance under **control A.8.25** (technical vulnerability assessment) and enhances proactive threat detection.
 
 - **Logs:** Collected from all on-premises and cloud systems.
 - **Retention:** Logs are retained for **1 year**&#x20;
