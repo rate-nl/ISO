@@ -1660,6 +1660,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-06-16 | Internal ISO 27001 Audit | Managing Director | Annual | 🔄 Pending | Managing Director | — |
 | 2026-06-24 | Management Review Meeting | Managing Director | Annual | 🔄 Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
 | 2026-07-08 | Access Control Review | Team Lead Developer | Annual / when someone leaves | 🔄 Pending | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
+| 2026-07-14 | CrowdSec Monitoring Log Review | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [CrowdSec Monitoring Log](Logs.md#11-crowdsec-monitoring-log) |
 | 2026-07-15 | Supplier Security Reviews (Threat Intelligence & Cloud Exit) | Team Lead Developer / Managing Director | Annual |🔄  Pending | Managing Director | [Threat Intelligence & Cloud Exit Review](Logs.md#14-threat-intelligence--cloud-exit-review) |
 | 2026-07-25 | LastPass Full Backup to NAS | Managing Director | Annual | 🔄 Pending | CEO | [Change Control Log](Logs.md#6-change-control-log) |
 | 2026-07-26 | Business Continuity & Disaster Recovery Drill | Team Lead Developer | Annual | 🔄 Pending | CEO | [Restore Drill Checklist](Logs.md#9-restore-drill-checklist) |
