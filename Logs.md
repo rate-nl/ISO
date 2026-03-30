@@ -150,6 +150,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Assessment ID | Date       | Assessor           | Summary                                                       | Status   | Link                                               |
 |---------------|------------|--------------------|---------------------------------------------------------------|----------|----------------------------------------------------|
 | RA-2025-001   | 2025-06-17 | Firas Kassoumeh     | Risk assessment for migrating production servers to Hetzner. Risks included data loss, downtime, compatibility, and security. Mitigations documented. | ✅ Closed | [Trello: Hetzner Migration Risk](https://trello.com/c/PdvfZXPs) |
+| RA-2026-001 | 2026-03-30 | Managing Director | Risk assessment triggered by INC-2026-03-25 (NAS backup failure due to power outage at Inge's home office, Mar 24 2026). NAS failed to complete automated boot sequence after power surge, causing 2-hour backup gap. Data integrity not affected; monitoring functioned correctly. Long-term mitigation: UPS installation under evaluation. Risk #42 reviewed and updated. | 🔄 Open — pending UPS decision | [INC-2026-03-25](https://docs.google.com/document/d/1rawsk6max_HNbIwICoXPdtyMUtmXiEOPj4jiNOWbtzc/edit?tab=t.0) |
 
 ---
 
