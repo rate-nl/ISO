@@ -1669,4 +1669,4 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-10-15 | Annual Vulnerability Scan (Critical Systems) | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
 | 2026-10-16 | Endpoint Patch/Update – Annual Verification (SEC-2026-003) | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
 | 2026-11-10 | Home Office Physical Access & Camera Log Review | Managing Director | Annual | 🔄 Pending | CEO | — |
-| 2026-11-10 | Asset Inventory Check for Home Office Devices | Managing Director | Annual | 🔄 Pending | CEO | [Asset Inventory](Logs.md#5-asset-inventory) |
+| 2026-11-15 | Asset Inventory Check for Home Office Devices | Managing Director | Annual | 🔄 Pending | CEO | [Asset Inventory](Logs.md#5-asset-inventory) |
