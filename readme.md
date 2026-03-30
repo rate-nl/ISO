@@ -1619,8 +1619,8 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2025-08-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-08-12 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2025-09-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-09-11 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2025-10-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-10-10 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-11-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2025-12-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-11-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-11-10 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2025-12-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2025-12-12 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2025-05-20 | Security Awareness Training | Managing Director | Annual | ✅ 2025-05-20 | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
 | 2025-06-01 | Review ISMS Performance Metrics | Managing Director | Annual | ✅ 2025-06-17 | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
 | 2025-06-16 | Internal ISO 27001 Audit | Managing Director | Annual | ✅ 2025-06-17 | Managing Director | [Internal Audit Report](https://docs.google.com/presentation/d/1hpdiHv9LSB2PBspId_2M_N_0q63-BJee/edit?usp=drive_link&ouid=100575306994247914394&rtpof=true&sd=true) |
@@ -1643,9 +1643,9 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 
 | Planned Date | Activity | Owner | Frequency | Executed On | Verified By | Evidence Link |
 |---|---|---|---|---|---|---|
-| 2026-01-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-02-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-03-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-01-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2026-01-11 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-02-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2026-02-13 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-03-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2026-03-12 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-04-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-05-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-06-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
