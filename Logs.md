@@ -21,6 +21,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | CrowdSec Monitoring Log   | Detect threats (port scans, brute-force, etc.) | 3 year         | Team Lead Developer    | Annually  | 30 minutes  |
 | Alternative Access Method Test | Validate ability to access production servers using Hetzner console and manual firewall IP update | 1 year | Team Lead Developer | Annually or after network change | 15 minutes |
 | Threat Intelligence & Cloud Exit Review | Record of annual review of threat intelligence sources (CrowdSec, ENISA) and validation of cloud exit strategy for Hetzner, Google, and GitHub | 3 years | Team Lead Developer / Managing Director | Annually | 1 hour |
+| Password Rotation Log | Confirm admin and critical passwords are rotated every 180 days | 3 years | Managing Director / Team Lead Developer | Every 180 days | 30 minutes |
 
 
 
@@ -217,4 +218,17 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Date | Reviewer | Scope | Summary | Link |
 |------|-----------|--------|----------|------|
 | 2025-10-16 | Firas Kassoumeh | CrowdSec, ENISA, Google, Hetzner, GitHub | Threat intel process classified into strategic/tactical/operational; exit strategy verified. | [Review Notes](https://docs.google.com/document/d/12OC04i2QIxgDwtrUDY7uvukoggfxdtiIqRrgkIwMUCg/edit?tab=t.0) |
+
+## 15. Password Rotation Log
+
+**Purpose:** Confirm that all admin and critical system passwords are rotated every 180 days per the Access Control Policy (Section 5).
+**Retention:** 3 years
+**Owner:** Managing Director / Team Lead Developer
+**Frequency:** Every 180 days
+
+| Rotation ID | Date | Performed By | Systems / Accounts Covered | Next Due | Verified By | Notes |
+|-------------|------|-------------|----------------------------|----------|-------------|-------|
+| PWR-2025-001 | 2025-09-26 | Firas Kassoumeh/ Inge Proost | LastPass (CEO + MD), Google Workspace, GitHub, Hetzner, Server RDP, Production server accounts | 2026-03-31 | Managing Director | First documented rotation. No prior rotation log existed — gap identified during ISMS review Mar 2026. |
+| PWR-2026-001 | 2026-03-31 | Firas Kassoumeh/ Inge Proost | LastPass (CEO + MD), Google Workspace, GitHub, Hetzner, Server RDP, Production server accounts | 2026-09-27 | Managing Director | First documented rotation. No prior rotation log existed — gap identified during ISMS review Mar 2026. |
+
 
