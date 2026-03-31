@@ -174,10 +174,10 @@ _A single file to capture and track all required ISMS evidence in one place._
 **Access grants and revokes are maintained within EXACT software and managed by the managing director**
 | Date | Employee Name | Role Ended | Assets Returned | Access Revoked | Accounts Removed (LastPass / Cloud) | Signed Off By | Notes |
 |------|--------------|------------|-----------------|----------------|--------------------------------------|---------------|-------|
-| 2025-02-20 | Suhail Sakhizadh | — | ⬜ Confirm | ✅ Yes | ⬜ Confirm | Managing Director | Access revoked — see [Section 3 review 2025-02-20](https://docs.google.com/document/d/1GfA3R8gUsjzp-ethsc6uStHqIxs00M3Bz6rT269_Mrs/edit?usp=drive_link) |
-| 2025-04-30 | Ricardo Keus | — | ⬜ Confirm | ✅ Yes | ⬜ Confirm | Managing Director | Access revoked — see [Section 3 review 2025-04-30](https://docs.google.com/document/d/167eYbklP_rwdDb2xfGFF3Rff8ztmD8x-S4gsfpR1-Ig/edit?usp=drive_link) |
-| 2025-06-30 | Younes Shina | — | ⬜ Confirm | ✅ Yes | ⬜ Confirm | Managing Director | Access revoked — see [Section 3 review 2025-06-30](https://docs.google.com/document/d/15MG6e8FEyScGgtp2Z4UrARt_XLwgUnFWjwGUF-iaa-w/edit?usp=drive_link) |
-| 2025-08-01 | Bassel Alkhateeb | — | ⬜ Confirm | ✅ Yes | ⬜ Confirm | Managing Director | Access revoked — see [Section 3 review 2025-08-01](https://docs.google.com/document/d/1YJJGUH13eCq4EjNuuxK3dhFxqGSmlvyn1-hlck4ciiA/edit?tab=t.0) |
+| 2025-02-20 | Suhail Sakhizadh | — | ✅ Yes | ✅ Yes | ✅ Yes | Managing Director | Access revoked — see [Section 3 review 2025-02-20](https://docs.google.com/document/d/1GfA3R8gUsjzp-ethsc6uStHqIxs00M3Bz6rT269_Mrs/edit?usp=drive_link) |
+| 2025-04-30 | Ricardo Keus | — | ✅ Yes | ✅ Yes | ✅ Yes | Managing Director | Access revoked — see [Section 3 review 2025-04-30](https://docs.google.com/document/d/167eYbklP_rwdDb2xfGFF3Rff8ztmD8x-S4gsfpR1-Ig/edit?usp=drive_link) |
+| 2025-06-30 | Younes Shina | — | ✅ Yes | ✅ Yes | ✅ Yes | Managing Director | Access revoked — see [Section 3 review 2025-06-30](https://docs.google.com/document/d/15MG6e8FEyScGgtp2Z4UrARt_XLwgUnFWjwGUF-iaa-w/edit?usp=drive_link) |
+| 2025-08-01 | Bassel Alkhateeb | — | ✅ Yes | ✅ Yes | ✅ Yes | Managing Director | Access revoked — see [Section 3 review 2025-08-01](https://docs.google.com/document/d/1YJJGUH13eCq4EjNuuxK3dhFxqGSmlvyn1-hlck4ciiA/edit?tab=t.0) |
 
 ## 11. CrowdSec Monitoring Log
 
