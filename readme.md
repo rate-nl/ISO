@@ -1656,6 +1656,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-10-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-11-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-12-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-03-31 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | ✅ 2026-03-31 | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
 | 2026-05-20 | Security Awareness Training | Managing Director | Annual | 🔄 Pending | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
 | 2026-06-01 | Review ISMS Performance Metrics | Managing Director | Annual | 🔄 Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
 | 2026-06-10 | Perform a complete restore of production environment | Team Lead Developer | Annual | 🔄 Pending | CEO | [Perform a complete restore of production environmen](Logs.md#Perform-complete-restore-production-environmen) |
@@ -1667,6 +1668,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-07-25 | LastPass Full Backup to NAS | Managing Director | Annual | 🔄 Pending | CEO | [Change Control Log](Logs.md#6-change-control-log) |
 | 2026-07-26 | Business Continuity & Disaster Recovery Drill | Team Lead Developer | Annual | 🔄 Pending | CEO | [Restore Drill Checklist](Logs.md#9-restore-drill-checklist) |
 | 2026-08-25 | Alternative Access Method Test (Production Servers) | Team Lead Developer | Annual | 🔄 Pending | CEO | [Alternative Access Method Test Log](Logs.md#12-alternative-access-method-test-log) |
+| 2026-09-27 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | 🔄 Pending | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
 | 2026-10-15 | Annual Vulnerability Scan (Critical Systems) | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
 | 2026-10-16 | Endpoint Patch/Update – Annual Verification (SEC-2026-003) | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
 | 2026-11-10 | Home Office Physical Access & Camera Log Review | Managing Director | Annual | 🔄 Pending | CEO | — |
