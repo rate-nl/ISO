@@ -74,7 +74,7 @@ This policy applies to all employees, contractors, consultants, temporary staff,
 
 Rate is committed to the following measurable information security objectives:
 
-- Maintain 100% completion rate for annual information security awareness training for all employees.
+- Maintain 100% completion rate for security awareness training upon onboarding and annually thereafter for all employees.
 - Ensure all backups are tested monthly with a minimum 90% success rate.
 - Limit unauthorized access incidents to zero per year.
 - Review access permissions for all systems at least once per year.
@@ -1542,7 +1542,7 @@ This section defines key **performance indicators (KPIs)** to measure the effect
 
 | **Metric**                    | **Description**                                                                 | **Target**              | **Related ISMS Objective**                                      | **Review Frequency** |
 |------------------------------|---------------------------------------------------------------------------------|--------------------------|------------------------------------------------------------------|----------------------|
-| Security Awareness Completion | Percentage of employees who completed training                                 | 100%                     | All employees complete annual awareness training                | Annually             |
+| Security Awareness Completion | Percentage of employees who completed training upon onboarding and annually thereafter | 100% | All employees complete security awareness training upon onboarding and annually thereafter | Annually |
 | Backup Integrity              | Success rate of monthly backup restorations                                     | ≥ 90%                    | Backups tested monthly with at least 90% success rate           | Monthly              |
 | Access Control Violations     | Number of unauthorized access attempts detected                                | 0 per year               | Limit unauthorized access incidents to zero                     | Annually             |
 | Incident Response Time        | Time taken to contain and resolve security incidents                           | < 4 hours                | Ensure quick response to security events                        | Annually             |
