@@ -859,7 +859,7 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 | **6.2 Cloud Provider Failure (Hetzner Unavailable)** | Deploy server on Azure, restore backups, notify customers                                    | Team Lead Developer | 4 hours                           | 30 minutes                         |
 | **6.3 Office Internet Outage**                       | Use alternative access means like whitelisting new ips in the firewall.                      | Managing Director   | Immediate                         | None                               |
 | **6.4 Data Leak or Malware Attack**                  | Isolate systems, notify Managing Director, conduct forensic analysis                         | Managing Director   | 2 hours                           | 30 minutes                         |
-| **6.5 Calamities (Fire, Flood, Physical Theft)**     | Follow Groothandelsgebouw escape plan, secure backups offsite                                | CEO                 | As feasible                       | 30 minutes                         |
+| **6.5 Calamities (Fire, Flood, Physical Theft at Home Office)** | Evacuate home office safely. NAS and Dev Server are located in CEO's locked home office — in case of physical threat, priority is personal safety first, then notify Managing Director. Backups stored on Hetzner cloud remain unaffected. Restore from cloud backup if home office equipment is lost or damaged. | CEO | As feasible | 30 minutes |
 | **6.6 Loss of LastPass (Password Manager)**          | Restore from encrypted NAS backup, reset passwords for critical systems                    | CEO                 | 1 hour                            | 30 minutes                         |
 | **6.7 SSL Certificate Expiry for Website/Platform**  | **Enable SSL auto-renewals are enabled** or set calendar reminders for manual renewal checks | Team Lead Developer | 1 hour                            | None                               |
 | **6.8 Sudden Departure of CEO or Managing Director** | Access Rate's credentials via LastPass. Redistribute operational and ISMS responsibilities to designated successors. Document transition actions and notify key stakeholders. | Managing Director / CEO | 1 day | None |
@@ -882,7 +882,8 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 - **Testing Frequency:** Yearly (full disaster recovery drill) with monthly backup restoration tests
 - **Test Components:** Server restoration, VPN failover, LastPass recovery
 - **Review Cycle:** **Annual** or after any major incident or infrastructure change
-- **Responsible for Testing:** Managing Director
+- **Responsible for Testing:** Managing Director.
+- **Power Continuity:** Following IR-2026-001 (Mar 2026 NAS power outage), power continuity at the home office is included as a BCDR consideration. UPS installation under evaluation (RA-2026-001). Once resolved, home office power resilience will be verified as part of the annual BCDR drill.
 
 
 
