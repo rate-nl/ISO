@@ -516,9 +516,9 @@ This policy applies to all personnel accessing Rate's information assets, includ
 
 ### **4.1. Registration and De-registration**
 
-- **Registration:** Requests are submitted to the team lead via email. CEO approval is required for high-privilege access. Requests are stored in email records, which serve as documentation.
-- **De-registration:** The CEO instructs the team lead via email to revoke access upon role change or departure.
-- **Documentation:** Access approvals and removals are retained in email records. and must be updated in **Access Overview** ([view file](https://docs.google.com/document/d/1zzRYV8-JB9kXEzqw2DPTuI3aIKU_ifDiUABFxwWd43I/edit?tab=t.0)).
+- **Registration:** Requests are submitted to the team lead via email. CEO approval is required for high-privilege access. All approved requests are logged in the **Access Control Review Record** (Section 3 of the ISMS Logs) with date, system, access level, and approver. Email approvals are retained as supporting evidence and linked in the log entry.
+- **De-registration:** The CEO instructs the team lead via email to revoke access upon role change or departure. Revocations are logged immediately in the **Access Control Review Record** (Section 3 of the ISMS Logs) with date and confirmation of revocation.
+- **Documentation:** All access grants and revocations are recorded in the **Access Control Review Record** ([ISMS Logs — Section 3](https://github.com/rate-nl/ISO/blob/main/Logs.md)) and reflected in the **Access Overview** ([view file](https://docs.google.com/document/d/1zzRYV8-JB9kXEzqw2DPTuI3aIKU_ifDiUABFxwWd43I/edit?tab=t.0)). Email approvals serve as secondary supporting evidence and are retained in the ISMS evidence folder on Google Drive.
 
 
 ### **4.2. Provisioning and Review**
