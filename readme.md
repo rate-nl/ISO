@@ -146,7 +146,7 @@ In accordance with ISO  27001:2022 Clause 5.3 and A.5.2, the following roles and
   - Support security compliance by maintaining documentation and adhering to best practices.
   - Identify and report potential software vulnerabilities to the Team Lead Developer.
   - Assist in responding to security incidents by providing technical expertise and remediation support.
-  - Implement and enforce **access control measures** in compliance with ** A.9**.
+  - Implement and enforce **access control measures** in compliance with **Annex A control A.8.2 (Privileged Access Rights)** of ISO/IEC 27001:2022.
 - **Competency Requirements**:
   - Knowledge of secure coding standards and access control.
   - Participation in annual security awareness training.
@@ -222,7 +222,7 @@ The next full scan is scheduled for **October 15, 2025**, and is listed in the I
 
 ## 7. Access Control
 
-In accordance with ** Access Control**, Rate enforces the following security measures:
+In accordance with **Annex A control A.8.3 (Information Access Restriction)** and the **Access Control Policy**, Rate enforces the following security measures:
 
 - **Role-based access control (RBAC)** is implemented for all systems.
 - **Firewall rules and VPN access restrictions** are enforced to protect critical infrastructure.
@@ -237,7 +237,7 @@ Rate is committed to complying with all applicable legal, regulatory, and contra
 
 ## 9. Incident Reporting and Response
 
-In accordance with ISO  27001:2022 Clause 16.1.1, Rate has established a formal Incident Response Plan (IRP) that includes:
+In accordance with **ISO/IEC 27001:2022 Annex A controls A.5.24–A.5.28 (Information Security Incident Management)**, Rate has established a formal Incident Response Plan (IRP) that includes:
 
 - **Incident Identification**: All employees are responsible for reporting suspected information security incidents immediately to the **Managing Director**.
 - **Incident Escalation**: Significant incidents will be escalated to the **CEO** if necessary.
@@ -245,7 +245,7 @@ In accordance with ISO  27001:2022 Clause 16.1.1, Rate has established a formal 
 
 ## 10. Policy Review and Approval
 
-In compliance with ISO  27001:2022 Clause 5.1.2, this Information Security Policy shall be:
+In compliance with **ISO/IEC 27001:2022 Clause 5.2**, this Information Security Policy shall be:
 
 - **Reviewed**: The **Managing Director** is responsible for reviewing this policy **at least annually** or when significant changes occur.
 - **Approved**: The policy must be **approved by the Chief Executive Officer (CEO)** to ensure its relevance and effectiveness.
@@ -320,7 +320,7 @@ This document outlines the identified risks, their likelihood and impact, and th
 | 17 | Rate employees          | Team Lead Developer | Device security | Developer’s laptop lost/stolen/damaged | Mostly | Loss of sensitive data, potential data breach | Medium 🟡 | Medium 🟡 | Medium | A.5.10, A.8.10 |
 | 18 | Rate                    | Team Lead Developer | Data transfer security | Use of removable media (USB drives) for data transfer | Fully avoided | Data leakage, malware introduction | High 🔴 | Low 🟢 | Medium | A.8.10, A.8.12 |
 | 19 | Rate employees          | Managing Director | Remote work security | Remote work leads to home network compromise | Mostly | Unauthorized access to company data via insecure home WiFi | High 🔴 | Medium 🟡 | High | A.6.7, A.8.1 |
-| 20 | Rate employees          | Managing Director | Device management | Use of unmanaged/personal devices for company data (no AV, improper storage) | Partially | Malware infection, data breach, data leakage, device unusable | High 🔴 | Medium 🟡 | High | A.8.7, A.8.10 |
+| 20 | Rate employees | Managing Director | Device management | Use of unmanaged/personal devices for company data (no AV, improper storage) | Mostly | Malware infection, data breach, data leakage, device unusable | High 🔴 | Low 🟢 | Medium | A.8.7, A.8.10 |
 
 ---
 
@@ -815,7 +815,7 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 | **Production Hosting**                   | Hetzner (Primary)              | NAS                                                              | 4 hours   | 30 minutes | Team Lead Developer |
 | **Secondary Hosting (Provider Failure)** | Azure                          | Cloud                                                            | 4 hours   | 30 minutes | Team Lead Developer |
 | **Source Code Repository**               | GitHub                         | Cloud with integrity checks                                      | 1 hour    | Real-time  | Team Lead Developer |
-| **Backups**                              | NAS (Home Office)                    | Monthly restoration tests & **annual full integrity validation** | N/A       | 30 minutes | Team Lead Developer |
+| **Backups** | NAS (Home Office) | Monthly restoration tests & **annual full integrity validation** | 4 hours | 30 minutes | Team Lead Developer |
 | **VPN & Remote Access**                  | Local VPN on Dev Server        | N/A                                                              | Immediate | None       | Managing Director   |
 | **Communication Tools**                  | Google Workspace (email, docs) | Google Cloud                                                     | Immediate | None       | Managing Director   |
 | **HR and Compliance System**             | Exact Online                   | Cloud                                                            | 2 hours   | 1 hour     | Managing Director   |
@@ -835,7 +835,7 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 - **Incremental Backups:** Every 4 hours (retained 1 month)
 - **Transaction Log Backups:** Every 30 minutes (retained 1 month)
 - **Testing:** Monthly restoration from backups & **annual full validation check**
-- **Backup Retention Policy:** *(Updated)* Backups retained for **one month for standard data, one year for critical logs**.
+- **Backup Retention Policy:** Operational backups retained for **one month**. Critical security logs retained for **one year**. ISMS compliance records retained for **three years** in Google Drive. See Section 5.4.
 
 ### **5.2 Production Application Folder Backups**
 
@@ -849,7 +849,7 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 ### **5.4 Backup Retention Policy:**
 
 - **Location:** Local NAS
-- **Retention Period:** 3 Years.
+- **Retention Period:** Operational backups (database, application) retained for **1 month**. Critical security and compliance logs retained for **1 year**. ISMS records, audit reports, and corrective action evidence retained for **3 years** in Google Drive.
 
 ## **6. Disaster Scenarios, RTO, and RPO**
 
@@ -889,11 +889,12 @@ Covers all systems, employees, cloud services, and processes supporting **Rate's
 
 ## **9. Compliance and Recordkeeping (ISO Clause 9.2 & 9.3)**
 
-| **Record**    | **Retention Period** | **Storage Location** | **Responsible Owner** |   |
-| ------------- | -------------------- | -------------------- | --------------------- | - |
-| Backups       | 3 years              | NAS                  | Team Lead Developer   |   |
-| Incident Logs | 3 years              | Google Drive         | Managing Director     |   |
-|               |                      |                      |                       |   |
+| **Record** | **Retention Period** | **Storage Location** | **Responsible Owner** |
+| ---------- | -------------------- | -------------------- | --------------------- |
+| Operational Backups (DB, Application) | 1 month | NAS | Team Lead Developer |
+| Critical Security & Compliance Logs | 1 year | NAS / Google Drive | Team Lead Developer |
+| ISMS Records (Audits, Incidents, Corrective Actions) | 3 years | Google Drive | Managing Director |
+| Incident Logs | 3 years | Google Drive | Managing Director |
 
 ### **Compliance with Standards:**
 
