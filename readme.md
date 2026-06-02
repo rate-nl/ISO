@@ -35,7 +35,15 @@
 Rate is committed to safeguarding the confidentiality, integrity, and availability of all physical and electronic information assets. Our Information Security Management System (ISMS) is designed to manage information security risks effectively, ensuring business continuity and minimizing potential threats.
 
 ## Scope of the ISMS
-The development, maintenance, hosting, and support of SaaS applications that enable health, education, and other organizations to independently conduct evaluation and improvement activities, including all supporting people, processes, systems, and information assets, in accordance with the Statement of Applicability.
+
+### ISO 27001:2022
+The development, maintenance, hosting, and support of SaaS applications that enable health, education, and other organizations to independently conduct evaluation and improvement activities, including all supporting people, processes, systems, and information assets.
+
+This scope covers all Rate employees, contractors, and systems including the SaaS platform, cloud infrastructure (Hetzner), home office infrastructure (NAS and Dev Server), and all customer segments — healthcare, education, and other organizations.
+
+### NEN 7510:2022
+The same SaaS platform, but limited to the processing of health-related personal data for healthcare organizations in the Netherlands, in accordance with Wkkgz and Wabvpz. Education, non-healthcare customers, fully anonymized data, and corporate HR/finance systems are excluded from this scope.
+
 
 
 ### System Architecture Overview
