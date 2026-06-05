@@ -1231,6 +1231,15 @@ The **Statement of Applicability (SoA)** is reviewed and updated:
 
 # Compliance & Security Governance
 
+Rate maintains a formal Legal & Regulatory Register documenting all laws, regulations, 
+and standards applicable to its information security and health data processing 
+activities. The register is maintained in accordance with ISO 27001:2022 Clause 4.2 
+and Annex A control A.5.31 (Legal, Statutory, Regulatory and Contractual Requirements). 
+
+| Date | Scope | Status | Approved By | Link |
+|------|-------|--------|-------------|------|
+| 2026-06-05 | NEN 7510, GDPR/AVG, Wkkgz, Wabvpz, ISO 27001:2022 | ✅ Signed | CEO (Inge Proost) | [Legal & Regulatory Register — June 2026](https://drive.google.com/file/d/1paTFMLUXjAotd3IdTx7sGHuIwtiYYuDm/view?usp=drive_link) |
+
 ## 1. Legal & Regulatory Requirements
 
 Rate is committed to ensuring compliance with all applicable **legal, regulatory, and contractual obligations** related to information security. The following regulations and industry standards apply:
