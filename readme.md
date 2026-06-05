@@ -1420,6 +1420,18 @@ Each year, a structured **audit plan** is developed by the **Managing Director**
 | 2025-06-17     | Pieter-Jan Bouwmans (Internal Lead Auditor) | 5 nonconformities (risk management linkage, SoA exclusions, outsourced risks, missing management review); 1 OFI (Scope Clarity) | ✅ All NCs resolved and verified. OFI implemented. Risk Assessment section created. |
 
 
+### GAP Analysis
+
+Rate conducts periodic GAP analyses to assess the current compliance status of the 
+ISMS against ISO 27001:2022 and NEN 7510:2022 requirements. The GAP analysis 
+identifies open and pending items, assigns owners and deadlines, and tracks resolution.
+
+| Date | Scope | Status | Approved By | Link |
+|------|-------|--------|-------------|------|
+| 2026-06-05 | ISO 27001:2022 & NEN 7510:2022 — full ISMS review | ✅ Signed | CEO (Inge Proost) | [GAP Analysis Report — June 2026](https://drive.google.com/file/d/1x-j1DUd9uKQJXMBZJ61KZyD4gCzk4nOx/view?usp=drive_link) |
+
+The GAP analysis is reviewed annually and after any major ISMS change.
+
 
 ## 4. Review & Updates
 
@@ -1666,9 +1678,9 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-10-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-11-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-12-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-03-31 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | ✅ 2026-03-31 | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
-| 2026-05-20 | Security Awareness Training | Managing Director | Annual | 🔄 Pending | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
-| 2026-06-01 | Review ISMS Performance Metrics | Managing Director | Annual | 🔄 Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
+| 2026-03-31 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | ✅ 2026-06-31 | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
+| 2026-06-05 | Security Awareness Training | Managing Director | Annual | ✅ 2026-06-05 | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
+| 2026-06-05 | Review ISMS Performance Metrics | Managing Director | Annual | ✅ 2026-06-05 | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
 | 2026-06-10 | Perform a complete restore of production environment | Team Lead Developer | Annual | 🔄 Pending | CEO | [Perform a complete restore of production environmen](Logs.md#Perform-complete-restore-production-environmen) |
 | 2026-06-16 | Internal ISO 27001 Audit | Managing Director | Annual | 🔄 Pending | Managing Director | — |
 | 2026-06-24 | Management Review Meeting | Managing Director | Annual | 🔄 Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
