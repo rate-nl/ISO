@@ -1690,7 +1690,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-03-31 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | ✅ 2026-06-31 | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
 | 2026-06-05 | Security Awareness Training | Managing Director | Annual | ✅ 2026-06-05 | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
 | 2026-06-05 | Review ISMS Performance Metrics | Managing Director | Annual | ✅ 2026-06-05 | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
-| 2026-06-10 | Perform a complete restore of production environment | Team Lead Developer | Annual | 🔄 Pending | CEO | [Perform a complete restore of production environmen](Logs.md#Perform-complete-restore-production-environmen) |
+| 2026-06-10 | Perform a complete restore of production environment | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Perform a complete restore of production environmen](Logs.md#Perform-complete-restore-production-environmen) |
 | 2026-06-16 | Internal ISO 27001 Audit | Managing Director | Annual | 🔄 Pending | Managing Director | — |
 | 2026-06-24 | Management Review Meeting | Managing Director | Annual | 🔄 Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
 | 2026-07-08 | Access Control Review | Team Lead Developer | Annual / when someone leaves | 🔄 Pending | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
