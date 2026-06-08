@@ -1252,7 +1252,7 @@ NEN 7510.
 | A.5.42 | HLT — Communication in emergency situations | HLT | ✅ | In a major incident affecting health data availability, healthcare customers notified promptly to maintain continuity of care. | CEO / Managing Director |
 | A.5.43 | HLT — External incident reporting | HLT | ✅ | Rate (processor) notifies healthcare customers (controllers) of incidents; customers handle external reporting to authorities. Rate supports within GDPR 72-hour timeframe. Reflected in customer DPAs. | Managing Director / Healthcare Customer |
 | A.6.9 | HLT — Management training | HLT | ✅ | Annual Security Awareness Training conducted; CEO receives training on healthcare information security obligations and NEN 7510 responsibilities. | ISO Lead |
-| A.8.35 | HLT — Zero trust principles | HLT | ⚠️ Partial | Rate applies several Zero Trust principles (RBAC least-privilege, VPN-verified access, IP whitelisting, dev/prod separation, CrowdSec monitoring). Formal full Zero Trust architecture not yet implemented — planned as future improvement. | Team Lead Developer |
+| A.8.35 | HLT — Zero trust principles | HLT | ⚠️ Partial | Rate applies several Zero Trust principles (RBAC least-privilege, VPN-verified access, IP whitelisting, dev/prod separation, CrowdSec monitoring). A formal full Zero Trust architecture is not implemented, which is acceptable as it is not a NEN 7510 certification requirement. | Team Lead Developer |
 
 ## **4. Control Review and Updates**
 The **Statement of Applicability (SoA)** is reviewed and updated:
@@ -1729,7 +1729,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-10-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-11-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-12-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-03-31 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | ✅ 2026-06-31 | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
+| 2026-03-31 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | ✅ 2026-06-05 | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
 | 2026-06-05 | Security Awareness Training | Managing Director | Annual | ✅ 2026-06-05 | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
 | 2026-06-05 | Review ISMS Performance Metrics | Managing Director | Annual | ✅ 2026-06-05 | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
 | 2026-06-10 | Perform a complete restore of production environment | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Perform a complete restore of production environmen](Logs.md#Perform-complete-restore-production-environmen) |
