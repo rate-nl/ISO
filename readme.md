@@ -326,7 +326,7 @@ This document outlines the identified risks, their likelihood and impact, and th
 | # | Main Group (Stakeholder) | Requirement Owner | Issue/Requirement Addressed | Risk | How well is this being met? | Effect (consequence if not met) | Impact (Value of effect) | Likelihood | Risk Level | Annex A Reference (2022) |
 |---|--------------------------|-------------------|-----------------------------|------|-----------------------------|----------------------------------|------------------------|------------|-----------|-------------------------|
 | 17 | Rate employees          | Team Lead Developer | Device security | Developer’s laptop lost/stolen/damaged | Mostly | Loss of sensitive data, potential data breach | Medium 🟡 | Medium 🟡 | Medium | A.5.10, A.8.10 |
-| 18 | Rate                    | Team Lead Developer | Data transfer security | Use of removable media (USB drives) for data transfer | Fully avoided | Data leakage, malware introduction | High 🔴 | Low 🟢 | Medium | A.8.10, A.8.12 |
+| 18 | Rate                    | Team Lead Developer | Data transfer security | Use of removable media (USB drives) for data transfer | Fully avoided | Data leakage, malware introduction | High 🔴 | Low 🟢 | Medium | A.7.10, A.8.10, A.8.12 |
 | 19 | Rate employees          | Managing Director | Remote work security | Remote work leads to home network compromise | Mostly | Unauthorized access to company data via insecure home WiFi | High 🔴 | Medium 🟡 | High | A.6.7, A.8.1 |
 | 20 | Rate employees | Managing Director | Device management | Use of unmanaged/personal devices for company data (no AV, improper storage) | Mostly | Malware infection, data breach, data leakage, device unusable | High 🔴 | Low 🟢 | Medium | A.8.7, A.8.10 |
 
@@ -1094,7 +1094,7 @@ To comply with **ISO/IEC 27001:2022 **, Rate enforces structured secure coding c
 
 ---
 
-# **Statement of Applicability (SoA)**  -- Version 4.0, date 10-June 2026
+# **Statement of Applicability (SoA)**  -- Version 4.0, date 8-June 2026
 
 ## **1. Introduction**
 
@@ -1176,7 +1176,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.7.7                 | Clear desk and clear screen                  | ✅       | Enforced through employee awareness and regular spot checks.                | Asset Management Policy          | Managing Director    |
 | A.7.8 | Equipment siting and protection | ✅ | NAS and Dev Server are sited in the CEO's locked, secure home office. Equipment placement considers physical security, access control, and environmental factors. Cloud infrastructure siting managed by Hetzner under SLA, reviewed annually. | Asset Management Policy, Supplier Security & Contractual Obligations | CEO / Team Lead Developer |
 | A.7.9                 | Security of assets off-premises              | ✅       | Laptops are encrypted and tracked; strict policies in place for remote use. | Asset Management Policy          | Team Lead Developer  |
-| A.7.10 | Storage media | ❌ | Not applicable. Portable/removable media are not used. Policy prohibits use of USB/external drives; all data is transferred via secure cloud services. | Asset Management Policy, Access Control Policy | Managing Director |
+| A.7.10 | Storage media | ✅ | Applicable. Rate manages storage media risk by prohibiting the use of portable/removable media (USB/external drives). The prohibition is enforced by policy and technical controls; all data transfer occurs via secure cloud services. Any media containing health data must be encrypted and securely wiped before disposal or reuse. | Asset Management Policy, Access Control Policy | Managing Director / Team Lead Developer |
 | A.7.11 | Supporting utilities | ✅ | Home office utilities (power, connectivity) support NAS and Dev Server operations. Power interruption risk identified in IR-2026-001 (Mar 2026). UPS procurement under evaluation as mitigation. Hetzner data center utilities (power, cooling, fire) managed under SLA, reviewed annually. | Asset Management Policy, Supplier Security & Contractual Obligations, RA-2026-001 | CEO / Managing Director |
 | A.7.12 | Cabling security | ✅ | Home office cabling for NAS and Dev Server is managed by CEO. Data center cabling managed by Hetzner under SLA and reviewed annually as part of supplier security review. | Asset Management Policy, Supplier Security & Contractual Obligations | CEO / Team Lead Developer |
 | A.7.13 | Equipment maintenance | ✅ | Rate maintains in-scope endpoints and on-prem equipment (laptops, NAS, development server). Maintenance includes automated OS and antivirus updates verified annually through the Endpoint Patch/Update Log (SEC-2025-003) and periodic hardware checks. | Asset Management Policy; BCDR Plan; Endpoint Patch/Update Log; Asset Inventory; Logs.md → Endpoint Patch/Update Log (SEC-2025-003), Asset Inventory, DB Restore Test Log | Team Lead Developer |
@@ -1242,7 +1242,7 @@ NEN 7510.
 | A.5.19 | Information security in supplier relationships | Additional | ✅ | Sub-processors handling health data (Hetzner) bound by DPA with healthcare-grade requirements. | Managing Director |
 | A.6.2 | Terms and conditions of employment | Additional | ✅ | Employment contracts include confidentiality; staff with health data access bound to medical confidentiality obligations. | Managing Director |
 | A.6.6 | Confidentiality or non-disclosure agreements | Additional | ✅ | NDAs explicitly cover health-related personal data and medical secrecy where applicable. | Managing Director |
-| A.7.10 | Storage media | HLT | ✅ | Removable media use avoided; any media containing health data must be encrypted and securely wiped before disposal or reuse. | Team Lead Developer |
+| A.7.10 | Storage media | HLT | ✅ | Removable media use is prohibited and technically enforced (see ISO 27001 A.7.10). For health data specifically, any storage media must be encrypted and securely wiped before disposal or reuse. | Team Lead Developer |
 | A.8.5 | Secure authentication | Additional | ✅ | Access to health data requires strong authentication; static IP whitelisting enforced where native MFA unavailable. | Team Lead Developer |
 | A.8.13 | Information backup | Additional | ✅ | Health data backups encrypted, retained per legal requirements, recoverable within 4-hour RTO; monthly restore tests at ≥99% target. | Team Lead Developer |
 | A.5.38 | HLT — Analysis and specification of information security requirements | HLT | ✅ | Health data protection requirements specified at design stage for all features processing patient feedback. | Team Lead Developer / ISO Lead |
@@ -1265,14 +1265,21 @@ The **Statement of Applicability (SoA)** is reviewed and updated:
 
 # Compliance & Security Governance
 
-Rate maintains a formal Legal & Regulatory Register documenting all laws, regulations, 
-and standards applicable to its information security and health data processing 
-activities. The register is maintained in accordance with ISO 27001:2022 Clause 4.2 
-and Annex A control A.5.31 (Legal, Statutory, Regulatory and Contractual Requirements). 
+# Compliance & Security Governance
 
-| Date | Scope | Status | Approved By | Link |
-|------|-------|--------|-------------|------|
-| 2026-06-05 | NEN 7510, GDPR/AVG, Wkkgz, Wabvpz, ISO 27001:2022 | ✅ Signed | CEO (Inge Proost) | [Legal & Regulatory Register — June 2026](https://drive.google.com/file/d/1paTFMLUXjAotd3IdTx7sGHuIwtiYYuDm/view?usp=drive_link) |
+Rate maintains a formal Legal & Regulatory Register documenting all laws, regulations, and standards applicable to its information security and health data processing activities. The register is maintained in accordance with ISO 27001:2022 Clause 4.2 and Annex A control A.5.31 (Legal, Statutory, Regulatory and Contractual Requirements). It is reviewed annually and approved by the CEO via the ISMS Review & Approval Log.
+
+## Legal & Regulatory Register
+
+| Law / Regulation | Applies? | What Rate Must Do | Status | Owner |
+|------------------|----------|-------------------|--------|-------|
+| NEN 7510:2022 | ✅ Yes | Maintain ISMS covering health data processing. Create NEN 7510 Statement of Applicability. Conduct risk analysis for healthcare data. Maintain incident procedure for health data breaches. | 🔄 In Progress | ISO Lead (Firas Kassoumeh) |
+| GDPR / AVG | ✅ Yes | Maintain Record of Processing Activities. Handle data breaches within 72 hours. Respond to data subject requests. Maintain Data Processing Agreements with customers and suppliers. | ✅ Compliant | Managing Director |
+| Wkkgz | ✅ Yes | Ensure platform supports secure logging of healthcare quality data. Support healthcare customers in meeting their Wkkgz obligations via Rate's platform. | ✅ Compliant | CEO (Inge Proost) |
+| Wabvpz | ✅ Yes | Ensure health data processed via Rate's platform meets Wabvpz requirements. Implement appropriate access controls and logging for health data exchange. | 🔄 In Progress | ISO Lead (Firas Kassoumeh) |
+| ISO/IEC 27001:2022 | ✅ Yes | Maintain certified ISMS. Conduct annual internal audit. Hold annual management review. Keep Statement of Applicability current. Resolve non-conformities within 30 days. | ✅ Compliant | ISO Lead (Firas Kassoumeh) |
+
+_Last reviewed: 2026-06-05 · Prepared by: Firas Kassoumeh (ISO Lead) · Approval tracked in the ISMS Review & Approval Log · Review frequency: Annually_
 
 ## 1. Legal & Regulatory Requirements
 
@@ -1280,9 +1287,15 @@ Rate is committed to ensuring compliance with all applicable **legal, regulatory
 
 ### **Applicable Laws & Regulations**
 
-- **General Data Protection Regulation (GDPR)** – Governs data protection and privacy for EU residents.
-- **ISO  27001:2022** – International standard for information security management.
+- **General Data Protection Regulation (GDPR / AVG)** – Governs data protection and privacy for EU residents, including special-category health data.
+- **NEN 7510:2022** – Dutch standard for information security in healthcare; applies to Rate's processing of health-related personal data for Dutch healthcare organizations.
+- **Wkkgz (Wet kwaliteit, klachten en geschillen zorg)** – Dutch Healthcare Quality, Complaints and Disputes Act; relevant as Rate's platform supports healthcare quality evaluation.
+- **Wabvpz (Wet aanvullende bepalingen verwerking persoonsgegevens in de zorg)** – Additional provisions for processing personal data in healthcare; governs electronic exchange of health data.
+- **ISO/IEC 27001:2022** – International standard for information security management.
 - **Any contractual agreements that impose security obligations** on Rate.
+
+The full register with applicability status and owners is shown in the Legal & Regulatory Register table above.
+
 
 ### **Compliance Review & Tracking**
 
@@ -1671,7 +1684,14 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | **Management Review** | 2025-10-08 | Managing Director | ✅ Yes | CEO | **2025-10-22** | ✅ Approved | Follow-up review confirmed closure of NC #3, NC-2025-EXT-01-05, and audit observations. |
 | ISMS Performance Metrics | 2025-05-16 | Managing Director | ✅ Yes | CEO | 2025-05-19 | ✅ Approved | KPIs aligned with ISMS goals and tracked annually. |
 | **Remote Work & Home-Office Security Addendum** | 2025-10-08 | Managing Director | ✅ Yes | CEO | **2025-10-21** | ✅ Approved | Defines controls for remote-work setup, NAS relocation, and home-office access; aligned with BCDR, Asset Mgmt, and Access Control Policies. |
+
+
 | **Risk Assessment & Treatment Plan — RA-2026-001** | 2026-03-30 | Firas Kassoumeh | ✅ Yes | CEO (Inge Proost) | **2026-03-30** | 🔄 Open — pending UPS decision | Risk assessment for NAS power outage (INC-2026-03-25). Risk #42 updated. UPS decision pending. [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN) |
+
+
+| **Legal & Regulatory Register** | 2026-06-05 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | Register of applicable laws (NEN 7510, GDPR/AVG, Wkkgz, Wabvpz, ISO 27001). GDPR/AVG and Wkkgz marked Compliant; NEN 7510 and Wabvpz In Progress pending SoA completion. |
+
+| **Statement of Applicability (SoA) — v4.0 (NEN 7510)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | SoA updated to Version 4.0 — added NEN 7510:2022 healthcare-specific controls (22 controls) as a separate table. A.7.10 aligned to ✅ across both ISO and NEN tables. Pending CEO sign-off. |
 
 
 ---
