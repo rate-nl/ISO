@@ -1094,12 +1094,13 @@ To comply with **ISO/IEC 27001:2022 **, Rate enforces structured secure coding c
 
 ---
 
-# **Statement of Applicability (SoA)**  -- Version 3.0, date 16-September 2025 
+# **Statement of Applicability (SoA)**  -- Version 4.0, date 10-June 2026
 
 ## **1. Introduction**
 
 ### **1.1 Purpose**
-The **Statement of Applicability (SoA)** defines the security controls selected and applied within **Rate’s Information Security Management System (ISMS)**. It ensures alignment with **ISO  27001:2022** and provides justification for the inclusion or exclusion of Annex A controls.
+The **Statement of Applicability (SoA)** defines the security controls selected and applied within **Rate’s Information Security Management System (ISMS)**. It ensures alignment with **ISO  27001:2022** and **NEN 7510:2022** and provides justification for the inclusion or exclusion of Annex A controls.
+As of Version 4.0, this SoA covers both ISO 27001:2022 and NEN 7510:2022 healthcare-specific controls.
 
 This document:
 - Identifies applicable **Annex A** controls from ISO  27001:2022.
@@ -1117,7 +1118,7 @@ This SoA applies to **all information security policies, processes, systems, and
 The SoA ensures that selected controls effectively mitigate risks identified in the **Risk Assessment and Risk Treatment Plan (RTP)**.
 
 
-c
+## **2. ISO27001:2022 — Controls**
 
 | **Annex A Control (2022)** | **Control Title**                                                        | **Applicable** | **Justification**                                            | **Related Policy/Process**                               | **Responsible Role**                   |
 |----------------------------|--------------------------------------------------------------------------|--------------|--------------------------------------------------------------|----------------------------------------------------------|----------------------------------------|
@@ -1218,7 +1219,40 @@ c
 
 ---
 
+---
 
+### **3. NEN 7510:2022 — Healthcare-Specific Controls**
+
+The following controls are additional to ISO 27001:2022 and apply specifically to Rate's 
+processing of health-related personal data for Dutch healthcare organizations under the 
+NEN 7510:2022 scope. Controls marked "Additional" extend an existing ISO 27001 control 
+with a healthcare requirement; controls marked "HLT" are health-specific and unique to 
+NEN 7510.
+
+| Control | Title | Type | Status | Justification | Owner |
+|---------|-------|------|--------|---------------|-------|
+| A.5.1 | Information security policies | Additional | ✅ | ISMS Information Security Policy applies; explicitly addresses health data protection and references Wkkgz, Wabvpz, NEN 7510:2022. | ISO Lead / CEO |
+| A.5.2 | Information security roles and responsibilities | Additional | ✅ | Roles defined in ISMS Manual Section 4; responsibility for health data protection assigned to ISO Lead, accountability with CEO. | CEO / ISO Lead |
+| A.5.9 | Inventory of information and associated assets | Additional | ✅ | Asset Inventory maintained; health-related data assets identified and classified separately as special-category data. | Managing Director |
+| A.5.11 | Return of assets | Additional | ✅ | Device Offboarding Checklist covers asset return; ensures no health data remains on returned devices. | Managing Director |
+| A.5.12 | Classification of information | Additional | ✅ | Health-related personal data classified as highest sensitivity tier requiring strongest controls. | ISO Lead |
+| A.5.14 | Information transfer | Additional | ✅ | Secure transfer via TLS/VPN; health data transfers encrypted in transit and restricted to authorized healthcare customer tenants. | Team Lead Developer |
+| A.5.15 | Access control | Additional | ✅ | Role-based access control enforced; access to health data restricted on strict need-to-know basis per healthcare customer tenant. | Team Lead Developer |
+| A.5.16 | Identity management | Additional | ✅ | Unique identity per user; health data access tied to authenticated, authorized identities only. | Team Lead Developer |
+| A.5.19 | Information security in supplier relationships | Additional | ✅ | Sub-processors handling health data (Hetzner) bound by DPA with healthcare-grade requirements. | Managing Director |
+| A.6.2 | Terms and conditions of employment | Additional | ✅ | Employment contracts include confidentiality; staff with health data access bound to medical confidentiality obligations. | Managing Director |
+| A.6.6 | Confidentiality or non-disclosure agreements | Additional | ✅ | NDAs explicitly cover health-related personal data and medical secrecy where applicable. | Managing Director |
+| A.7.10 | Storage media | HLT | ✅ | Removable media use avoided; any media containing health data must be encrypted and securely wiped before disposal or reuse. | Team Lead Developer |
+| A.8.5 | Secure authentication | Additional | ✅ | Access to health data requires strong authentication; static IP whitelisting enforced where native MFA unavailable. | Team Lead Developer |
+| A.8.13 | Information backup | Additional | ✅ | Health data backups encrypted, retained per legal requirements, recoverable within 4-hour RTO; monthly restore tests at ≥99% target. | Team Lead Developer |
+| A.5.38 | HLT — Analysis and specification of information security requirements | HLT | ✅ | Health data protection requirements specified at design stage for all features processing patient feedback. | Team Lead Developer / ISO Lead |
+| A.5.39 | HLT — Unique identification of care recipients | HLT | ⚠️ Partial | Rate is a feedback platform — respondents may provide identifying details but Rate does NOT perform unique clinical patient identification. This is the healthcare customer's responsibility as data controller, reflected in customer DPAs. | Healthcare Customer / Team Lead Developer |
+| A.5.40 | HLT — Validation of displayed/printed data | HLT | ✅ | Data integrity controls ensure displayed/exported feedback matches stored data without alteration. | Team Lead Developer |
+| A.5.41 | HLT — Publicly available health information | HLT | ✅ | Rate does not publish health data publicly; only fully anonymized statistical data used in aggregate reporting. | ISO Lead / Managing Director |
+| A.5.42 | HLT — Communication in emergency situations | HLT | ✅ | In a major incident affecting health data availability, healthcare customers notified promptly to maintain continuity of care. | CEO / Managing Director |
+| A.5.43 | HLT — External incident reporting | HLT | ✅ | Rate (processor) notifies healthcare customers (controllers) of incidents; customers handle external reporting to authorities. Rate supports within GDPR 72-hour timeframe. Reflected in customer DPAs. | Managing Director / Healthcare Customer |
+| A.6.9 | HLT — Management training | HLT | ✅ | Annual Security Awareness Training conducted; CEO receives training on healthcare information security obligations and NEN 7510 responsibilities. | ISO Lead |
+| A.8.35 | HLT — Zero trust principles | HLT | ⚠️ Partial | Rate applies several Zero Trust principles (RBAC least-privilege, VPN-verified access, IP whitelisting, dev/prod separation, CrowdSec monitoring). Formal full Zero Trust architecture not yet implemented — planned as future improvement. | Team Lead Developer |
 
 ## **4. Control Review and Updates**
 The **Statement of Applicability (SoA)** is reviewed and updated:
@@ -1500,6 +1534,14 @@ The following findings were identified during the **external ISO 27001:2022 cert
 | OBS-2025-EXT-03| Observation    | A.8.28 / Dev approvals | Observation    | Not always clear that lead developer approved all changes (sampled cases).               | Missing documentation of approvals.                  | Development & change management         | Reinforce change approval tracking.                 | Update change log template to require explicit approvals.           | 25 Oct 2025                                    | Firas  | ✅ Closed  |
 | IMP-2025-EXT-01| Improvement Point | Operational planning | OFI            | Operational planning did not clearly evidence that tasks were executed.                  | Execution tracking not consistently documented.      | Operational planning & logs             | Improve evidence of execution in planning logs.     | Merge audit calendar & change log to track execution.              | 30 Oct 2025                                    | Firas                | ✅ Closed  |
 
+
+## 6. NEN 7510 Implementation 2026 – Improvement Points
+
+The following improvement points were identified during the NEN 7510:2022 controls implementation and Statement of Applicability mapping conducted in June 2026.
+
+| ID | Finding type | Norm element | Anomaly type | Description of deviation | Root cause analysis | Scope of analysis | Recovery on the deviation (direct recovery) | Corrective action of the root cause | Corrective Action Taken | Responsible | Status |
+|----|--------------|--------------|--------------|--------------------------|---------------------|-------------------|---------------------------------------------|-------------------------------------|-------------------------|-------------|--------|
+| IMP-2026-NEN-01 | Improvement Point | NEN 7510 A.5.39 / A.5.43 | OFI | Customer DPAs should explicitly state that unique patient identification (A.5.39) and external authority incident reporting (A.5.43) are the responsibility of the healthcare customer as data controller. | DPAs did not yet reflect the NEN 7510 role split between processor (Rate) and controller (customer). | Customer contracts & DPAs | Note added to SoA justifications referencing customer DPA responsibility. | Update customer DPA template to clarify that Rate acts as data processor; unique patient identification and external authority reporting (Autoriteit Persoonsgegevens, IGJ) remain the customer's responsibility as data controller. | DPA template update planned Q3 2026. | Managing Director | 🔄 Open |
 
 ### Remarks and Opportunities for Improvement (OFI)
 
