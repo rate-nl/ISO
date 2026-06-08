@@ -83,7 +83,7 @@ This policy applies to all employees, contractors, consultants, temporary staff,
 Rate is committed to the following measurable information security objectives:
 
 - Maintain 100% completion rate for security awareness training upon onboarding and annually thereafter for all employees.
-- Ensure all backups are tested monthly with a minimum 90% success rate.
+- Ensure all backups are tested monthly with a minimum 99% success rate.
 - Limit unauthorized access incidents to zero per year.
 - Review access permissions for all systems at least once per year.
 - Complete annual internal ISMS audit and resolve 100% of non-conformities within 30 days.
