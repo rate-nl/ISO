@@ -433,11 +433,6 @@ This document outlines the identified risks, their likelihood and impact, and th
 
 ### 2.9 Healthcare Data / NEN 7510 Risks
 
-| #  | Main Group (Stakeholder) | Requirement Owner | Issue/Requirement Addressed | Risk | How well is this being met? | Effect (consequence if not met) | Impact (Value of effect) | Likelihood | Risk Level | Annex A / NEN 7510 Reference |
-|----|--------------------------|-------------------|-----------------------------|------|-----------------------------|----------------------------------|------------------------|------------|-----------|------------------------------|
-| 44 | Respondents (patients), Healthcare Customers | Team Lead Developer | Correct attribution of health feedback data | Health feedback data attributed to the wrong respondent due to lack of unique identification | Mostly | Incorrect data linked to a person; loss of data integrity; potential harm to patient care decisions by customer | High 🔴 | Low 🟢 | Medium | NEN 7510 A.5.39, A.5.40 |
-| 45 | Respondents (patients) | ISO Lead / Managing Director | Prevent public exposure of health data | Health-related personal data unintentionally exposed publicly or in aggregate reports | Mostly | Privacy breach, regulatory penalties (AVG), reputational damage, loss of healthcare customer trust | High 🔴 | Low 🟢 | Medium | NEN 7510 A.5.41, A.8.35 |
-| 46 | Healthcare Customers | Managing Director | Timely breach notification for health data | Delay in notifying healthcare customers of an incident affecting health data, preventing them from meeting their controller obligations | Mostly | Customer unable to meet 72-hour AVG / Wkkgz reporting duty; regulatory penalties; contractual breach | High 🔴 | Low 🟢 | Medium | NEN 7510 A.5.42, A.5.43 |
 
 # 3. Risk Treatment Plan
 
@@ -544,27 +539,6 @@ This document outlines the identified risks, their likelihood and impact, and th
 
 ### 3.9 Healthcare Data / NEN 7510 Risks – Risk Treatment Plan
 
-| # | Risk | Treatment Option | Mitigation Actions | Risk Owner | Control | Controlled? | Implemented? | Impact (residual) | Likelihood (residual) | Risk Acceptance Criteria | Status/Deadline |
-|---|------|------------------|--------------------|------------|---------|-------------|--------------|-------------------|-----------------------|--------------------------|-----------------|
-| 44 | Health feedback data attributed to the wrong respondent | Mitigate | Data integrity controls ensure feedback is attributable to the submitting respondent. Unique clinical patient identification is the healthcare customer's responsibility as data controller (reflected in customer DPAs). Displayed/exported data validated against stored data. | Team Lead Developer | NEN 7510 A.5.39, A.5.40 | Yes | Yes | Low 🟢 | Low 🟢 | Acceptable if data integrity controls are maintained and customer DPA defines patient-identification responsibility | Ongoing |
-| 45 | Health data unintentionally exposed publicly | Mitigate | Health data is never published publicly. Only fully anonymized statistical data (not personal data per AVG) is used in aggregate reporting. Access restricted per tenant on need-to-know basis. | ISO Lead / Managing Director | NEN 7510 A.5.41, A.8.35 | Yes | Yes | Low 🟢 | Low 🟢 | Acceptable if anonymization and access controls are enforced | Ongoing |
-| 46 | Delay in notifying customers of a health-data incident | Mitigate | Incident Management Plan requires prompt notification of affected healthcare customers. Rate (processor) supports customers (controllers) with all information needed within the AVG 72-hour timeframe; customers handle external authority reporting. | Managing Director | NEN 7510 A.5.42, A.5.43 | Yes | Yes | Low 🟢 | Low 🟢 | Acceptable if incident notification process and customer DPAs are maintained | Ongoing |
-
-
-#### NEN 7510 HLT Controls — Risk Traceability Mapping
-
-The 8 NEN 7510 HLT (health-specific) controls are addressed through the following risks. Controls that introduce new health-specific risks are treated under Section 3.9 (Risks #44–46); the remainder are covered by existing risks already in this Risk Treatment Plan.
-
-| NEN 7510 HLT Control | Treated Under | Notes |
-|----------------------|---------------|-------|
-| A.5.38 — Analysis & specification of security requirements | Existing Risks #1, #4 (+ SoA A.8.26, A.8.27) | Security requirements analysis is part of the Secure Development & Change Management process. No new health-specific risk. |
-| A.5.39 — Unique identification of care recipients | New Risk #44 | Health-data attribution / integrity. Unique clinical identification is the customer's responsibility as data controller. |
-| A.5.40 — Validation of displayed/printed data | New Risk #44 | Data integrity of displayed/exported health feedback. |
-| A.5.41 — Publicly available health information | New Risk #45 | Prevention of public exposure of health data. |
-| A.5.42 — Communication in emergency situations | New Risk #46 | Timely notification to healthcare customers during incidents. |
-| A.5.43 — External incident reporting | New Risk #46 | Rate (processor) supports customers (controllers) who report to authorities. |
-| A.6.9 — Management training | Existing Risk #25 (+ SoA A.6.3) | Covered by annual security awareness training; CEO receives health-specific training as an extension. No new risk. |
-| A.8.35 — Zero trust principles | Existing Risks #1, #2 (+ Risk #45) | Access and exposure controls (RBAC, VPN, IP whitelisting, segregation) already mitigate these risks. Partial implementation; not a NEN certification requirement. |
 
 ---
 
