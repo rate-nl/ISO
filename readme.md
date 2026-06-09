@@ -172,6 +172,57 @@ In accordance with ISO  27001:2022 Clause 5.3 and A.5.2, the following roles and
   - Completion of onboarding and annual information security awareness training.
   - Understanding of how to report incidents and follow policies.
 
+### 4.6 Official Role Assignments & RACI Matrix
+
+In accordance with ISO 27001:2022 Clause 5.3 and Annex A control A.5.2, the following individuals are formally appointed to ISMS roles. This record serves as evidence of official role assignment, approved by the CEO and reviewed annually.
+
+#### Role Assignment Record
+
+| ISMS Role | Appointed Person | Key ISMS Authority | Appointment Approved By |
+|-----------|------------------|--------------------|--------------------------|
+| CEO / Managing Director / ISMS Owner | Inge Proost | Overall accountability, resource provision, policy & risk approval, ISMS implementation oversight | Board / Self (CEO) |
+| ISO Lead / Technical Security Lead | Firas Kassoumeh | ISMS implementation, audits, risk management, compliance, secure development, access controls, backups, technical controls | CEO |
+| All Staff | All Rate employees & contractors (per HR records) | Follow policies, report incidents, complete training | CEO / Managing Director |
+
+> **Segregation of Duties Statement:** Rate is a small organization in which ISMS roles are concentrated between two individuals: Inge Proost (CEO / Managing Director / ISMS Owner) and Firas Kassoumeh (ISO Lead / Technical Security Lead). Full segregation of duties is not achievable at this organizational size. The associated risk is managed through compensating controls: (1) the CEO independently approves all risk treatment, policy, and access decisions; (2) an independent external security officer conducts periodic ISMS reviews; (3) annual internal audit; and (4) all privileged actions are logged and reviewed. This arrangement is documented, accepted as a residual risk, and reviewed annually.
+
+#### RACI Matrix
+
+The RACI matrix below uses functional role columns. At Rate's current size, these roles map to two people as follows: **CEO** and **Managing Director** columns are both held by **Inge Proost**; **Team Lead Developer** column is held by **Firas Kassoumeh** (who is also the ISO Lead); **Employees** refers to all staff.
+
+**R** = Responsible (does the work) · **A** = Accountable (owns it, one per activity) · **C** = Consulted (gives input) · **I** = Informed (kept updated). "A/R" means the role is both accountable and performs the work.
+
+| ISMS Activity | CEO | Managing Director | Team Lead Developer | Employees |
+|---------------|:---:|:---:|:---:|:---:|
+| ISMS ownership & strategic direction | A | R | C | I |
+| Approve ISMS policies & changes | A | R | C | I |
+| Provide ISMS resources | A | R | I | I |
+| Risk assessment & risk register | C | A/R | C | I |
+| Risk treatment decisions | A | R | C | I |
+| Approve Statement of Applicability (SoA) | A | R | C | I |
+| Internal audit execution | I | A/R | C | I |
+| Management review (chair) | A/R | C | C | I |
+| Incident response coordination | A | R | R | C |
+| Incident reporting (initial) | I | C | R | R |
+| Post-incident review (PIR) | A | R | R | I |
+| Access control & provisioning | A | C | R | I |
+| Access rights review | I | A | R | I |
+| Onboarding / offboarding | A | R | C | I |
+| Backup execution & restore tests | I | A | R | I |
+| BCDR plan & drills | A | C | R | I |
+| Secure development & change management | I | C | A/R | R |
+| Asset inventory & classification | I | A | R | C |
+| Supplier security & DPA management | A | R | C | I |
+| Legal & regulatory register | A | R | C | I |
+| Security awareness training | A | R | C | R |
+| Physical security (home office) | A/R | C | I | I |
+| Password rotation (admin accounts) | R | A | R | I |
+| NEN 7510 healthcare compliance | A | R | R | I |
+| ISMS performance metrics / KPIs | A | R | C | I |
+| Corrective actions & improvement | A | R | R | I |
+
+This matrix is reviewed annually and whenever ISMS roles change. Approval is recorded in the ISMS Review & Approval Log.
+
 
 ## 5. Information Security Principles
 
@@ -1725,7 +1776,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 
 | **Statement of Applicability (SoA) — v4.0 (NEN 7510)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | SoA updated to Version 4.0 — added NEN 7510:2022 healthcare-specific controls (22 controls) as a separate table. A.7.10 aligned to ✅ across both ISO and NEN tables. Pending CEO sign-off. |
 
-
+| **Role Assignments & RACI Matrix (Policy 4.6)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | New section formalizing ISMS role assignments, RACI matrix, and segregation-of-duties statement. |
 ---
 
 
@@ -1798,3 +1849,6 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-10-16 | Endpoint Patch/Update – Annual Verification (SEC-2026-003) | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
 | 2026-11-10 | Home Office Physical Access & Camera Log Review | Managing Director | Annual | 🔄 Pending | CEO | — |
 | 2026-11-15 | Asset Inventory Check for Home Office Devices | Managing Director | Annual | 🔄 Pending | CEO | [Asset Inventory](Logs.md#5-asset-inventory) |
+
+
+| 2026-11-20 | Role Assignments & RACI Matrix Review | Managing Director | Annual | 🔄 Pending | CEO | [Information Security Policy §4.6](readme.md#46-official-role-assignments--raci-matrix) |
