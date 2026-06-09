@@ -1515,7 +1515,19 @@ To mitigate vendor lock-in and ensure service continuity, Rate defines the follo
 
 This exit plan is reviewed annually in the **Management Review** and forms part of the **Supplier Security Policy**.
 
+## Supplier Security Assessment
 
+Rate uses a standardized Supplier Security Assessment Form to evaluate each supplier that processes or accesses Rate's data, both before onboarding and at each annual supplier review. The form assesses data access, security certifications, DPA status, technical controls, and assigns a risk rating and approval decision. This satisfies ISO 27001:2022 controls A.5.19–A.5.22 and NEN 7510 supplier requirements.
+
+📄 **Supplier Security Assessment Form (template):** [link to Drive](https://docs.google.com/document/d/1qkl787Qcqa_h0EjhtO-NFPYIWidThRa0/edit?usp=drive_link&ouid=100575306994247914394&rtpof=true&sd=true)
+
+Completed assessments are stored in the ISMS evidence folder and tracked in the Supplier Assessment Log below:
+
+| Date | Supplier | Risk Rating | Decision | Assessed By | Next Review | Evidence |
+|------|----------|-------------|----------|-------------|-------------|----------|
+| 2026-06-08 | Hetzner Cloud | Low 🟢 | Approved | Firas Kassoumeh | 2027-06-08 | [Hetzner Assessment 2026](https://drive.google.com/file/d/1bVkmnIbnB4KiAVL2SF5P3zv2XpBbuTJu/view?usp=drive_link) |
+
+This assessment is performed annually as part of the Supplier Security Review (ISMS Audit Calendar).
 
 ---
 
@@ -1777,6 +1789,9 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | **Statement of Applicability (SoA) — v4.0 (NEN 7510)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | SoA updated to Version 4.0 — added NEN 7510:2022 healthcare-specific controls (22 controls) as a separate table. A.7.10 aligned to ✅ across both ISO and NEN tables. Pending CEO sign-off. |
 
 | **Role Assignments & RACI Matrix (Policy 4.6)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | New section formalizing ISMS role assignments, RACI matrix, and segregation-of-duties statement. |
+
+
+| **Supplier Security Assessment Form** | 2026-06-15 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | New standardized supplier assessment form added (security officer requirement). |
 ---
 
 
@@ -1840,7 +1855,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-06-24 | Management Review Meeting | Managing Director | Annual | 🔄 Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
 | 2026-07-08 | Access Control Review | Team Lead Developer | Annual / when someone leaves | 🔄 Pending | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
 | 2026-07-14 | CrowdSec Monitoring Log Review | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [CrowdSec Monitoring Log](Logs.md#11-crowdsec-monitoring-log) |
-| 2026-07-15 | Supplier Security Reviews (Threat Intelligence & Cloud Exit) | Team Lead Developer / Managing Director | Annual |🔄  Pending | Managing Director | [Threat Intelligence & Cloud Exit Review](Logs.md#14-threat-intelligence--cloud-exit-review) |
+| 2026-07-15 | Supplier Security Reviews (Assessment Forms, Threat Intelligence & Cloud Exit) | Managing Director / Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Threat Intelligence & Cloud Exit Review](Logs.md#14-threat-intelligence--cloud-exit-review) · [Supplier Assessment Form](https://docs.google.com/document/d/1qkl787Qcqa_h0EjhtO-NFPYIWidThRa0/edit?usp=drive_link&ouid=100575306994247914394&rtpof=true&sd=true) |
 | 2026-07-25 | LastPass Full Backup to NAS | Managing Director | Annual | 🔄 Pending | CEO | [Change Control Log](Logs.md#6-change-control-log) |
 | 2026-07-26 | Business Continuity & Disaster Recovery Drill | Team Lead Developer | Annual | 🔄 Pending | CEO | [Restore Drill Checklist](Logs.md#9-restore-drill-checklist) |
 | 2026-08-25 | Alternative Access Method Test (Production Servers) | Team Lead Developer | Annual | 🔄 Pending | CEO | [Alternative Access Method Test Log](Logs.md#12-alternative-access-method-test-log) |
