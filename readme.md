@@ -188,38 +188,23 @@ In accordance with ISO 27001:2022 Clause 5.3 and Annex A control A.5.2, the foll
 
 #### RACI Matrix
 
-The RACI matrix below uses functional role columns. At Rate's current size, these roles map to two people as follows: **CEO** and **Managing Director** columns are both held by **Inge Proost**; **Team Lead Developer** column is held by **Firas Kassoumeh** (who is also the ISO Lead); **Employees** refers to all staff.
+This matrix uses three columns reflecting Rate's actual structure: **CEO / Managing Director** (Inge Proost), **Team Lead Developer** (Firas Kassoumeh, who is also ISO Lead), and **Employees** (all staff).
 
-**R** = Responsible (does the work) · **A** = Accountable (owns it, one per activity) · **C** = Consulted (gives input) · **I** = Informed (kept updated). "A/R" means the role is both accountable and performs the work.
+**R** = Responsible · **A** = Accountable (owns it) · **C** = Consulted · **I** = Informed. "A/R" means the role is both accountable and performs the work.
 
-| ISMS Activity | CEO | Managing Director | Team Lead Developer | Employees |
-|---------------|:---:|:---:|:---:|:---:|
-| ISMS ownership & strategic direction | A | R | C | I |
-| Approve ISMS policies & changes | A | R | C | I |
-| Provide ISMS resources | A | R | I | I |
-| Risk assessment & risk register | C | A/R | C | I |
-| Risk treatment decisions | A | R | C | I |
-| Approve Statement of Applicability (SoA) | A | R | C | I |
-| Internal audit execution | I | A/R | C | I |
-| Management review (chair) | A/R | C | C | I |
-| Incident response coordination | A | R | R | C |
-| Incident reporting (initial) | I | C | R | R |
-| Post-incident review (PIR) | A | R | R | I |
-| Access control & provisioning | A | C | R | I |
-| Access rights review | I | A | R | I |
-| Onboarding / offboarding | A | R | C | I |
-| Backup execution & restore tests | I | A | R | I |
-| BCDR plan & drills | A | C | R | I |
-| Secure development & change management | I | C | A/R | R |
-| Asset inventory & classification | I | A | R | C |
-| Supplier security & DPA management | A | R | C | I |
-| Legal & regulatory register | A | R | C | I |
-| Security awareness training | A | R | C | R |
-| Physical security (home office) | A/R | C | I | I |
-| Password rotation (admin accounts) | R | A | R | I |
-| NEN 7510 healthcare compliance | A | R | R | I |
-| ISMS performance metrics / KPIs | A | R | C | I |
-| Corrective actions & improvement | A | R | R | I |
+| ISMS Activity | CEO / Managing Director | Team Lead Developer | Employees |
+|---------------|:---:|:---:|:---:|
+| ISMS governance, policies & strategic direction | A/R | C | I |
+| Risk assessment, treatment & SoA | A | R | I |
+| Internal audit & management review | A/R | C | I |
+| Incident management & response | A | R | C |
+| Access control & user management | A | R | I |
+| Backups, BCDR & business continuity | A | R | I |
+| Secure development & change management | C | A/R | R |
+| Asset & supplier security management | A | R | I |
+| Legal, regulatory & NEN 7510 compliance | A/R | R | I |
+| Security awareness & training | A/R | C | R |
+
 
 This matrix is reviewed annually and whenever ISMS roles change. Approval is recorded in the ISMS Review & Approval Log.
 
