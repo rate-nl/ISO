@@ -99,6 +99,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | 2026-03-12  | prod_db_test | Firas Kassoumeh | Success | Manual restore to test DB     | [Screenshot](https://drive.google.com/drive/folders/1GmgUvBjcJPJz7uHGvbFHhH6pUHFmn3Lu) |
 | 2026-04-13  | prod_db_test | Firas Kassoumeh | Success | Manual restore to test DB     | [Screenshot](https://drive.google.com/drive/folders/1GmgUvBjcJPJz7uHGvbFHhH6pUHFmn3Lu) |
 | 2026-05-13  | prod_db_test | Firas Kassoumeh | Success | Manual restore to test DB     | [Screenshot](https://drive.google.com/drive/folders/1GmgUvBjcJPJz7uHGvbFHhH6pUHFmn3Lu) |
+| 2026-06-12  | prod_db_test | Firas Kassoumeh | Success | Manual restore to test DB     | [Screenshot](https://drive.google.com/drive/folders/1GmgUvBjcJPJz7uHGvbFHhH6pUHFmn3Lu) |
 
 ---
 
