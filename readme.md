@@ -1799,7 +1799,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-03-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2026-03-12 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-04-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2026-04-13 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-05-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2026-05-13 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
-| 2026-06-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
+| 2026-06-10 | Backup Restore Test | Team Lead Developer | Monthly | ✅ 2026-05-12 | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-07-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-08-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
 | 2026-09-10 | Backup Restore Test | Team Lead Developer | Monthly | 🔄 Pending | Managing Director | [DB Restore Test Log](Logs.md#4-db-restore-test-log) |
