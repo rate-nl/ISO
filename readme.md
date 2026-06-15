@@ -1269,7 +1269,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.8.8                 | Management of technical vulnerabilities                 | ✅       | Patch management and monitoring procedures are in place.                    | BCDR Plan, Access Control Policy                             | Team Lead Developer                |
 | A.8.9                 | Configuration management                                | ✅       | System configurations are managed and reviewed regularly.                   | BCDR Plan, Access Control Policy                             | Team Lead Developer                |
 | A.8.10                | Information deletion                                    | ✅       | Retention periods and deletion procedures are defined and applied.          | Asset Management Policy                                      | Team Lead Developer                |
- A.8.11 | Data masking | ✅ | Selected in Risk Treatment Plan (RTP) for risks #1 and #4 related to unauthorized access and mishandling of personal/test data. All development and test environments use masked/anonymised data unless explicit customer consent is in place. | Secure Development & Change Management; Asset Management Policy; RTP 3.1 (#1, #4) | Managing Director |
+| A.8.11 | Data masking | ✅ | Selected in Risk Treatment Plan (RTP) for risks #1 and #4 related to unauthorized access and mishandling of personal/test data. All development and test environments use masked/anonymised data unless explicit customer consent is in place. | Secure Development & Change Management; Asset Management Policy; RTP 3.1 (#1, #4) | Managing Director |
 | A.8.12                | Data leakage prevention                                 | ✅       | Data loss prevention is enforced via cloud and RBAC controls.               | Access Control Policy, Asset Management Policy               | Team Lead Developer                |
 | A.8.13                | Information backup                                      | ✅       | Regular backups are performed and tested.                                   | BCDR Plan                                                    | Team Lead Developer                |
 | A.8.14                 | Redundancy of information processing facilities | ✅         | Redundancy is provided through Hetzner’s infrastructure (ISO 27001 certified) and Rate’s failover to Azure as documented in the BCDR Plan. This ensures continuity if primary hosting fails. | Business Continuity & Disaster Recovery Plan, Supplier Security | Team Lead Developer |
@@ -1324,11 +1324,11 @@ NEN 7510.
 | A.8.5 | Secure authentication | Additional | ✅ | Access to health data requires strong authentication; static IP whitelisting enforced where native MFA unavailable. | Team Lead Developer |
 | A.8.13 | Information backup | Additional | ✅ | Health data backups encrypted, retained per legal requirements, recoverable within 4-hour RTO; monthly restore tests at ≥99% target. | Team Lead Developer |
 | A.5.38 | HLT — Analysis and specification of information security requirements | HLT | ✅ | Health data protection requirements specified at design stage for all features processing patient feedback. | Team Lead Developer / ISO Lead |
-| A.5.39 | HLT — Unique identification of care recipients | HLT | ⚠️ Partial | Rate is a feedback platform — respondents may provide identifying details but Rate does NOT perform unique clinical patient identification. This is the healthcare customer's responsibility as data controller, reflected in customer DPAs. | Healthcare Customer / Team Lead Developer |
+| A.5.39 | HLT — Unique identification of care recipients | HLT | ⚠️ Partial | Rate is a feedback platform — respondents may provide identifying details but Rate does NOT perform unique clinical patient identification. This is the healthcare customer's responsibility as data controller, now defined in the BOZ addendum and General Terms & Conditions (see IMP-2026-NEN-01). | Healthcare Customer / Team Lead Developer |
 | A.5.40 | HLT — Validation of displayed/printed data | HLT | ✅ | Data integrity controls ensure displayed/exported feedback matches stored data without alteration. | Team Lead Developer |
 | A.5.41 | HLT — Publicly available health information | HLT | ✅ | Rate does not publish health data publicly; only fully anonymized statistical data used in aggregate reporting. | ISO Lead / Managing Director |
 | A.5.42 | HLT — Communication in emergency situations | HLT | ✅ | In a major incident affecting health data availability, healthcare customers notified promptly to maintain continuity of care. | CEO / Managing Director |
-| A.5.43 | HLT — External incident reporting | HLT | ✅ | Rate (processor) notifies healthcare customers (controllers) of incidents; customers handle external reporting to authorities. Rate supports within GDPR 72-hour timeframe. Reflected in customer DPAs. | Managing Director / Healthcare Customer |
+| A.5.43 | HLT — External incident reporting | HLT | ✅ | Rate (processor) notifies healthcare customers (controllers) of incidents; customers handle external reporting to authorities. Rate supports within GDPR 72-hour timeframe. Responsibility split now defined in the BOZ addendum and General Terms & Conditions (see IMP-2026-NEN-01). | Managing Director / Healthcare Customer |
 | A.6.9 | HLT — Management training | HLT | ✅ | Annual Security Awareness Training conducted; CEO receives training on healthcare information security obligations and NEN 7510 responsibilities. | ISO Lead |
 | A.8.35 | HLT — Zero trust principles | HLT | ⚠️ Partial | Rate applies several Zero Trust principles (RBAC least-privilege, VPN-verified access, IP whitelisting, dev/prod separation, CrowdSec monitoring). A formal full Zero Trust architecture is not implemented, which is acceptable as it is not a NEN 7510 certification requirement. | Team Lead Developer |
 
@@ -1343,7 +1343,6 @@ The **Statement of Applicability (SoA)** is reviewed and updated:
 
 # Compliance & Security Governance
 
-# Compliance & Security Governance
 
 Rate maintains a formal Legal & Regulatory Register documenting all laws, regulations, and standards applicable to its information security and health data processing activities. The register is maintained in accordance with ISO 27001:2022 Clause 4.2 and Annex A control A.5.31 (Legal, Statutory, Regulatory and Contractual Requirements). It is reviewed annually and approved by the CEO via the ISMS Review & Approval Log.
 
@@ -1558,7 +1557,8 @@ Each year, a structured **audit plan** is developed by the **Managing Director**
 4. **Report & Corrective Actions** – Assign responsibilities and deadlines for resolution.
 5. **Follow-Up (if needed)** – Verify that corrective actions were completed.
 6. **Verify SoA↔RTP consistency:** During each ISMS or internal audit review, confirm that every updated risk or control in the Risk Treatment Plan is reflected in the Statement of Applicability with aligned justification and evidence references.
-7. 
+
+   
 ## 3. Internal Audit Log
 
 | **Audit Date** | **Reviewed By**                            | **Findings Summary**                                                                                      | **Corrective Actions Summary**                                        |
@@ -1850,7 +1850,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-06-05 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | ✅ 2026-06-05 | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
 | 2026-06-05 | Security Awareness Training | Managing Director | Annual | ✅ 2026-06-05 | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
 | 2026-06-05 | Review ISMS Performance Metrics | Managing Director | Annual | ✅ 2026-06-05 | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
-| 2026-06-16 | Internal ISO 27001 Audit | Managing Director | Annual | 🔄 Pending | Managing Director | — |
+| 2026-06-30 | Internal ISO 27001 Audit | Managing Director | Annual | 🔄 Pending | Managing Director | — |
 | 2026-06-24 | Management Review Meeting | Managing Director | Annual | 🔄 Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
 | 2026-07-08 | Access Control Review | Team Lead Developer | Annual / when someone leaves | 🔄 Pending | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
 | 2026-07-14 | CrowdSec Monitoring Log Review | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [CrowdSec Monitoring Log](Logs.md#11-crowdsec-monitoring-log) |
