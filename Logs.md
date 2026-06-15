@@ -234,6 +234,6 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Rotation ID | Date | Performed By | Systems / Accounts Covered | Next Due | Verified By | Notes |
 |-------------|------|-------------|----------------------------|----------|-------------|-------|
 | PWR-2025-001 | 2025-09-26 | Firas Kassoumeh/ Inge Proost | LastPass (CEO + MD), Google Workspace, GitHub, Hetzner, Server RDP, Production server accounts | 2026-03-31 | Managing Director | First documented rotation. No prior rotation log existed — gap identified during ISMS review Mar 2026. |
-| PWR-2026-001 | 2026-03-31 | Firas Kassoumeh/ Inge Proost | LastPass (CEO + MD), Google Workspace, GitHub, Hetzner, Server RDP, Production server accounts | 2026-09-27 | Managing Director | First documented rotation. No prior rotation log existed — gap identified during ISMS review Mar 2026. |
+| PWR-2026-001 | 2026-03-31 | Firas Kassoumeh/ Inge Proost | LastPass (CEO + MD), Google Workspace, GitHub, Hetzner, Server RDP, Production server accounts | 2026-09-27 | Managing Director | Scheduled 180-day rotation completed on time. |
 
 
