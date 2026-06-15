@@ -1776,17 +1776,22 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | **Remote Work & Home-Office Security Addendum** | 2025-10-08 | Managing Director | ✅ Yes | CEO | **2025-10-21** | ✅ Approved | Defines controls for remote-work setup, NAS relocation, and home-office access; aligned with BCDR, Asset Mgmt, and Access Control Policies. |
 
 
-| **Risk Assessment & Treatment Plan — RA-2026-001** | 2026-03-30 | Firas Kassoumeh | ✅ Yes | CEO (Inge Proost) | **2026-03-30** | 🔄 Open — pending UPS decision | Risk assessment for NAS power outage (INC-2026-03-25). Risk #42 updated. UPS decision pending. [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN) |
+
+
+
+
+
+| **Statement of Applicability (SoA) — v4.0 (NEN 7510)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-12 | ✅ Approved | SoA updated to Version 4.0 — added NEN 7510:2022 healthcare-specific controls (22 controls) as a separate table. A.7.10 aligned to ✅ across both ISO and NEN tables. Approved by CEO email. |
+
+| **Role Assignments & RACI Matrix (Policy 4.6)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-12 | ✅ Approved | New section formalizing ISMS role assignments, RACI matrix (10 grouped activities, 3-column structure), and segregation-of-duties statement. Approved by CEO email. |
 
 
 | **Legal & Regulatory Register** | 2026-06-05 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | Register of applicable laws (NEN 7510, GDPR/AVG, Wkkgz, Wabvpz, ISO 27001). GDPR/AVG and Wkkgz marked Compliant; NEN 7510 and Wabvpz In Progress pending SoA completion. |
 
-| **Statement of Applicability (SoA) — v4.0 (NEN 7510)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | SoA updated to Version 4.0 — added NEN 7510:2022 healthcare-specific controls (22 controls) as a separate table. A.7.10 aligned to ✅ across both ISO and NEN tables. Pending CEO sign-off. |
-
-| **Role Assignments & RACI Matrix (Policy 4.6)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | New section formalizing ISMS role assignments, RACI matrix, and segregation-of-duties statement. |
-
-
 | **Supplier Security Assessment Form** | 2026-06-15 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | New standardized supplier assessment form added (security officer requirement). |
+
+| **Risk Assessment & Treatment Plan — RA-2026-001** | 2026-03-30 | Firas Kassoumeh | ✅ Yes | CEO (Inge Proost) | **2026-03-30** | 🔄 Open — pending UPS decision | Risk assessment for NAS power outage (INC-2026-03-25). Risk #42 updated. UPS decision pending. [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN) |
+
 ---
 
 
