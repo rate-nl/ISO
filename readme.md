@@ -1788,7 +1788,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 
 | **Legal & Regulatory Register** | 2026-06-05 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | Register of applicable laws (NEN 7510, GDPR/AVG, Wkkgz, Wabvpz, ISO 27001). GDPR/AVG and Wkkgz marked Compliant; NEN 7510 and Wabvpz In Progress pending SoA completion. |
 
-| **Supplier Security Assessment Form** | 2026-06-15 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | New standardized supplier assessment form added (security officer requirement). |
+| **Supplier Security Assessment Form** | 2026-06-15 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-16 | ✅ Approved | New standardized supplier assessment form added (security officer requirement)[Manager Approvals](https://drive.google.com/file/d/1MmKMSGmnpSwD38IZsIklo0LavxNX6Vee/view?usp=drive_link) |
 
 | **Risk Assessment & Treatment Plan — RA-2026-001** | 2026-03-30 | Firas Kassoumeh | ✅ Yes | CEO (Inge Proost) | **2026-03-30** | 🔄 Open — pending UPS decision | Risk assessment for NAS power outage (INC-2026-03-25). Risk #42 updated. UPS decision pending. [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN) |
 
