@@ -253,10 +253,16 @@ Status: ✅ Implemented · 📋 Defined (concrete approach in place; operational
 | A.2.4 | Review of AI policy | ✅ | Annual review cycle defined and recorded (§5.2/§7.5) | AIMS Owner |
 
 ## A.3 Internal organization
+
+| Control | Title | Status | Justification / implementation | Owner |
+|---|---|---|---|---|
 | A.3.2 | Roles & responsibilities | ✅ | RACI (§5.3) | AIMS Owner |
 | A.3.3 | Reporting of concerns | ✅ | AI concerns reported via the ISMS incident/reporting channel; communicated in awareness (§7.3) | AI Technical Lead |
 
 ## A.4 Resources for AI systems
+
+| Control | Title | Status | Justification / implementation | Owner |
+|---|---|---|---|---|
 | A.4.2 | Resource documentation | ✅ | AI resource register (Part V) | AI Technical Lead |
 | A.4.3 | Data resources | ✅ | Data register (Part V); provenance/licences documented | AI Technical Lead |
 | A.4.4 | Tooling resources | ✅ | Tooling listed (PyTorch, HF, Docker, GitHub) | AI Technical Lead |
@@ -264,16 +270,25 @@ Status: ✅ Implemented · 📋 Defined (concrete approach in place; operational
 | A.4.6 | Human resources | ✅ | Roles & competence (§5.3/§7.2) | AIMS Owner |
 
 ## A.5 Assessing impacts of AI systems
+
+| Control | Title | Status | Justification / implementation | Owner |
+|---|---|---|---|---|
 | A.5.2 | Impact assessment process | ✅ | AISIA process (§6.1.4) | AI Technical Lead |
 | A.5.3 | Documentation of impact assessments | ✅ | AISIAs (Part IV) + DPIA (Part VII) | AI Technical Lead |
 | A.5.4 | Impact on individuals | ✅ | Part IV (privacy, fairness, safety, autonomy) | AI Technical Lead |
 | A.5.5 | Societal impacts | ✅ | Part IV societal section | AI Technical Lead |
 
 ## A.6 AI system life cycle
+
+| Control | Title | Status | Justification / implementation | Owner |
+|---|---|---|---|---|
 | A.6.1 | Management guidance for responsible development | ✅ | AI Policy + lifecycle controls (Part VI) | AIMS Owner |
 | A.6.2 | AI system life cycle (design→verification→deployment→operation→monitoring; technical docs; event logs) | ✅ | Part VI controls + model cards (Part VIII) | AI Technical Lead |
 
 ## A.7 Data for AI systems
+
+| Control | Title | Status | Justification / implementation | Owner |
+|---|---|---|---|---|
 | A.7.2 | Data for development | ✅ | Data register; Vess360 corpora; iVessy protocol/anonymised data | AI Technical Lead |
 | A.7.3 | Acquisition of data | ✅ | MSP-Podcast licence; consent for own corpus | AI Technical Lead |
 | A.7.4 | Quality of data | ✅ | Multi-rater consensus labelling; preprocessing & quality checks | AI Technical Lead |
@@ -281,17 +296,26 @@ Status: ✅ Implemented · 📋 Defined (concrete approach in place; operational
 | A.7.6 | Data preparation | ✅ | Preprocessing/labelling documented (Part VIII) | AI Technical Lead |
 
 ## A.8 Information for interested parties
+
+| Control | Title | Status | Justification / implementation | Owner |
+|---|---|---|---|---|
 | A.8.2 | Documentation for users | ✅ | User information + consent flow (Part VI); user-facing explanation provided per session | AI Technical Lead |
 | A.8.3 | External reporting (adverse impacts) | ✅ | External parties can report adverse impacts via the Rate.nl support/contact channel, routed to the AI Technical Lead and logged | AI Technical Lead |
 | A.8.4 | Communication of incidents | ✅ | AI incident communication via the ISMS incident process | AIMS Owner |
 | A.8.5 | Legal reporting obligations | ✅ | GDPR breach notification to the AP within 72h; EU AI Act serious-incident reporting once applicable; mapped in Part VII | AIMS Owner |
 
 ## A.9 Use of AI systems
+
+| Control | Title | Status | Justification / implementation | Owner |
+|---|---|---|---|---|
 | A.9.2 | Processes for responsible use | ✅ | Intended-use + human-oversight controls (Part VI) | AI Technical Lead |
 | A.9.3 | Objectives for responsible use | ✅ | Fairness, transparency, oversight (§5.2/§6.2) | AIMS Owner |
 | A.9.4 | Intended use | ✅ | Data collection only; no decisions; documented & enforced | AI Technical Lead |
 
 ## A.10 Third-party & customer relationships
+
+| Control | Title | Status | Justification / implementation | Owner |
+|---|---|---|---|---|
 | A.10.2 | Allocating responsibilities | ✅ | Controller/processor split and supplier/partner/customer roles documented (Part VII) | AIMS Owner |
 | A.10.3 | Suppliers | ✅ | AI supplier register + assessment (Part V) | AI Technical Lead |
 | A.10.4 | Customers | ✅ | Customer requirements captured in contracts/DPAs | AIMS Owner |
