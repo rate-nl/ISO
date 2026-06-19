@@ -213,140 +213,169 @@ Changes to AI systems — including the **iVessy migration OpenAI → EU → sel
 
 # PART II — AI RISK REGISTER
 
-Scales and appetite per §6.1.2. Owner of all entries: AI Technical Lead (treatment), AIMS Owner (acceptance).
+**Method:** ISO/IEC 23894 / ISO 31000-aligned, integrated with the ISMS risk process.
+**Scales (§6.1.2):** Likelihood and Impact = High / Medium / Low; risk level from the matrix below.
+**Treatment options (ISO 27005):** Modify (apply controls) · Retain (accept) · Avoid · Share/Transfer.
+**Risk owner:** AI Technical Lead (treatment). **Acceptance:** AIMS Owner (CEO).
+
+**Risk matrix (Impact × Likelihood → risk level)**
+
+| Impact \ Likelihood | Low | Medium | High |
+|---|---|---|---|
+| **High** | Medium | High | High |
+| **Medium** | Low | Medium | High |
+| **Low** | Low | Low | Medium |
 
 ## iVessy
 
-| # | Risk | Impact | Likelihood | Treatment | Residual |
-|---|---|---|---|---|---|
-| iV-1 | Hallucination / incorrect structuring of care data | High | Medium | Schema-only output; reject extra text → clarification question; **user confirmation loop**; human-in-the-loop before record commit | Low 🟢 |
-| iV-2 | **OpenAI (US) processing** of health-related input → GDPR transfer / CLOUD-Act exposure | High | Medium | DPA + EU data terms; minimise/avoid sending identifiable special-category data; transient processing; **planned migration to EU/self-hosted** | Medium 🟡 (until migration) |
-| iV-3 | ASR error / poor input quality | Medium | Medium | ASR confidence + re-ask; slot/format validation; user confirmation | Low 🟢 |
-| iV-4 | Bias across language / accent / assistance level | High | Medium | Multilingual testing; fairness monitoring; Avans inclusion research; plain language | Medium 🟡 |
-| iV-5 | Automation bias / over-reliance by professionals | High | Medium | "Supportive only" framing; mandatory human validation; training; clear UI | Medium 🟡 |
-| iV-6 | Use beyond intended purpose (triage/diagnosis) | High | Low | Intended-use controls; user instructions; contracts; no decision features | Low 🟢 |
-| iV-7 | Data leakage across tenants/sessions | High | Low | Tenant isolation (keys + namespaces); stateless inference; no audio storage | Low 🟢 |
-| iV-8 | Vulnerable users misunderstand the AI | Medium | Medium | Consent + plain-language explanation; review/edit/confirm; multilingual | Low 🟢 |
+| Risk ID | AI system | Risk (event) description | Likelihood | Impact | Inherent risk | Treatment | Controls / treatment | Residual risk | Acceptance |
+|---|---|---|---|---|---|---|---|---|---|
+| iV-1 | iVessy | Hallucination / incorrect structuring of care data | Medium | High | High 🔴 | Modify | Schema-only output; reject extra text → clarification; user confirmation loop; human-in-the-loop before commit | Low 🟢 | Accepted |
+| iV-2 | iVessy | OpenAI (US) processing of health input → GDPR transfer / CLOUD-Act exposure | Medium | High | High 🔴 | Modify | DPA + EU terms; minimise identifiable special-category data; transient processing; planned migration to EU/self-hosted | Medium 🟡 | Accepted – monitored (CEO) |
+| iV-3 | iVessy | ASR error / poor input quality | Medium | Medium | Medium 🟡 | Modify | ASR confidence + re-ask; slot/format validation; user confirmation | Low 🟢 | Accepted |
+| iV-4 | iVessy | Bias across language / accent / assistance level | Medium | High | High 🔴 | Modify | Multilingual testing; fairness monitoring; Avans inclusion research; plain language | Medium 🟡 | Accepted – monitored (CEO) |
+| iV-5 | iVessy | Automation bias / over-reliance by professionals | Medium | High | High 🔴 | Modify | "Supportive only" framing; mandatory human validation; training; clear UI | Medium 🟡 | Accepted – monitored (CEO) |
+| iV-6 | iVessy | Use beyond intended purpose (triage/diagnosis) | Low | High | Medium 🟡 | Modify | Intended-use controls; user instructions; contracts; no decision features | Low 🟢 | Accepted |
+| iV-7 | iVessy | Data leakage across tenants / sessions | Low | High | Medium 🟡 | Modify | Tenant isolation (keys + namespaces); stateless inference; no audio storage | Low 🟢 | Accepted |
+| iV-8 | iVessy | Vulnerable users misunderstand the AI | Medium | Medium | Medium 🟡 | Modify | Consent + plain-language explanation; review/edit/confirm; multilingual | Low 🟢 | Accepted |
 
 ## Vess360
 
-| # | Risk | Impact | Likelihood | Treatment | Residual |
-|---|---|---|---|---|---|
-| Ve-1 | **Low emotion accuracy** (~0.48 Dutch baseline) misleads professionals | High | High | Supportive-only; **confidence ≥ 0.70 threshold** + "uncertain" labelling; human interpretation; **accuracy-improvement objective**; never autonomous | Medium 🟡 |
-| Ve-2 | Emotion misclassification bias (atypical expression, dialect, culture) | High | Medium | Diverse training corpus; aggregate fairness review; documented limitation; never decision-driving | Medium 🟡 |
-| Ve-3 | EU AI Act emotion-recognition compliance | High | Low | Consent + disclosure (Art. 50); medical context only; **no workplace/education use**; no profiling | Low 🟢 |
-| Ve-4 | Azure/Google **EU-region but US-provider** transfer exposure | Medium | Medium | DPA + SCCs; EU regions; transfer assessment (Part VII); access controls | Medium 🟡 |
-| Ve-5 | Training-data licence breach (MSP-Podcast reconstruction/redistribution) | Medium | Low | No raw-data redistribution; no model reconstruction of corpus; access control; licence terms tracked | Low 🟢 |
-| Ve-6 | Model drift over time | Medium | Medium | Semi-annual performance check + retrain trigger; versioning | Low 🟢 |
+| Risk ID | AI system | Risk (event) description | Likelihood | Impact | Inherent risk | Treatment | Controls / treatment | Residual risk | Acceptance |
+|---|---|---|---|---|---|---|---|---|---|
+| Ve-1 | Vess360 | Low emotion accuracy (~0.48 Dutch baseline) misleads professionals | High | High | High 🔴 | Modify | Supportive-only; confidence ≥ 0.70 threshold + "uncertain" labelling; human interpretation; accuracy-improvement objective; never autonomous | Medium 🟡 | Accepted – monitored (CEO) |
+| Ve-2 | Vess360 | Emotion misclassification bias (atypical expression, dialect, culture) | Medium | High | High 🔴 | Modify | Diverse training corpus; aggregate fairness review; documented limitation; never decision-driving | Medium 🟡 | Accepted – monitored (CEO) |
+| Ve-3 | Vess360 | EU AI Act emotion-recognition non-compliance | Low | High | Medium 🟡 | Modify | Consent + disclosure (Art. 50); medical context only; no workplace/education use; no profiling | Low 🟢 | Accepted |
+| Ve-4 | Vess360 | Azure/Google EU-region but US-provider transfer exposure | Medium | Medium | Medium 🟡 | Modify | DPA + SCCs; EU regions; transfer assessment (Part VII); access controls | Medium 🟡 | Accepted – monitored (CEO) |
+| Ve-5 | Vess360 | Training-data licence breach (MSP-Podcast reconstruction/redistribution) | Low | Medium | Low 🟢 | Modify | No raw-data redistribution; no model reconstruction; access control; licence terms tracked | Low 🟢 | Accepted |
+| Ve-6 | Vess360 | Model drift over time | Medium | Medium | Medium 🟡 | Modify | Semi-annual performance check + retrain trigger; versioning | Low 🟢 | Accepted |
+
+Residual risks rated Medium concern fundamental-rights / legal areas and are **formally accepted by the AIMS Owner with ongoing monitoring** (per the risk appetite, §6.1.2); they are tracked in the AI Evidence Log and reduced over time (e.g. iV-2 falls to Low after the EU/self-hosted migration).
 
 ---
 
-# PART III — STATEMENT OF APPLICABILITY (ISO 42001 Annex A)
+# PART III — STATEMENT OF APPLICABILITY (ISO/IEC 42001 Annex A)
 
-Status: ✅ Implemented · 📋 Defined (concrete approach in place; operationalised through pilots/rollout). All controls Applicable.
+**SoA version:** 1.0 · **Date:** 18 June 2026 · **Approved by:** AIMS Owner (CEO).
+All Annex A controls are assessed below. Columns: **Applicable** (Yes/No) · **Justification for inclusion / exclusion** · **Implementation status** (Implemented / Partially implemented / Planned) · **Reference / evidence** · **Owner**. All controls are Applicable; there are no exclusions.
 
 ## A.2 Policies for AI
-| Control | Title | Status | Justification / implementation | Owner |
-|---|---|---|---|---|
-| A.2.2 | AI policy | ✅ | AI Policy (§5.2), CEO-approved, integrated with ISMS policy | AIMS Owner |
-| A.2.3 | Alignment with other policies | ✅ | §6/§5.2 aligned with ISMS policies | AI Technical Lead |
-| A.2.4 | Review of AI policy | ✅ | Annual review cycle defined and recorded (§5.2/§7.5) | AIMS Owner |
+
+| Control | Title | Applicable | Justification for inclusion / exclusion | Implementation status | Reference / evidence | Owner |
+|---|---|---|---|---|---|---|
+| A.2.2 | AI policy | Yes | Organization develops & operates AI; a governing policy is required | Implemented | §5.2 | AIMS Owner |
+| A.2.3 | Alignment with other policies | Yes | AIMS must align with the existing ISMS policy set | Implemented | §5.2 / §6 | AI Technical Lead |
+| A.2.4 | Review of AI policy | Yes | Policy must be kept current | Implemented | §5.2 / §7.5 | AIMS Owner |
 
 ## A.3 Internal organization
 
-| Control | Title | Status | Justification / implementation | Owner |
-|---|---|---|---|---|
-| A.3.2 | Roles & responsibilities | ✅ | RACI (§5.3) | AIMS Owner |
-| A.3.3 | Reporting of concerns | ✅ | AI concerns reported via the ISMS incident/reporting channel; communicated in awareness (§7.3) | AI Technical Lead |
+| Control | Title | Applicable | Justification for inclusion / exclusion | Implementation status | Reference / evidence | Owner |
+|---|---|---|---|---|---|---|
+| A.3.2 | Roles & responsibilities | Yes | Accountability for AI must be assigned | Implemented | §5.3 (RACI) | AIMS Owner |
+| A.3.3 | Reporting of concerns | Yes | A channel to raise AI concerns is required | Implemented | §7.3; ISMS incident channel; E-11 | AI Technical Lead |
 
 ## A.4 Resources for AI systems
 
-| Control | Title | Status | Justification / implementation | Owner |
-|---|---|---|---|---|
-| A.4.2 | Resource documentation | ✅ | AI resource register (Part V) | AI Technical Lead |
-| A.4.3 | Data resources | ✅ | Data register (Part V); provenance/licences documented | AI Technical Lead |
-| A.4.4 | Tooling resources | ✅ | Tooling listed (PyTorch, HF, Docker, GitHub) | AI Technical Lead |
-| A.4.5 | System & computing resources | ✅ | Hetzner EU; Azure/Google EU (Vess360); GPU | AI Technical Lead |
-| A.4.6 | Human resources | ✅ | Roles & competence (§5.3/§7.2) | AIMS Owner |
+| Control | Title | Applicable | Justification for inclusion / exclusion | Implementation status | Reference / evidence | Owner |
+|---|---|---|---|---|---|---|
+| A.4.2 | Resource documentation | Yes | AI resources must be identified & documented | Implemented | Part V (resource register) | AI Technical Lead |
+| A.4.3 | Data resources | Yes | AI relies on training/operational data | Implemented | Part V (data register); E-1..E-3 | AI Technical Lead |
+| A.4.4 | Tooling resources | Yes | Development/runtime tooling used | Implemented | Part V | AI Technical Lead |
+| A.4.5 | System & computing resources | Yes | Compute/hosting underpins the AI | Implemented | Part V; §6 | AI Technical Lead |
+| A.4.6 | Human resources | Yes | Competent people required | Implemented | §5.3 / §7.2 | AIMS Owner |
 
 ## A.5 Assessing impacts of AI systems
 
-| Control | Title | Status | Justification / implementation | Owner |
-|---|---|---|---|---|
-| A.5.2 | Impact assessment process | ✅ | AISIA process (§6.1.4) | AI Technical Lead |
-| A.5.3 | Documentation of impact assessments | ✅ | AISIAs (Part IV) + DPIA (Part VII) | AI Technical Lead |
-| A.5.4 | Impact on individuals | ✅ | Part IV (privacy, fairness, safety, autonomy) | AI Technical Lead |
-| A.5.5 | Societal impacts | ✅ | Part IV societal section | AI Technical Lead |
+| Control | Title | Applicable | Justification for inclusion / exclusion | Implementation status | Reference / evidence | Owner |
+|---|---|---|---|---|---|---|
+| A.5.2 | Impact assessment process | Yes | AI affects individuals; a process is required | Implemented | §6.1.4 | AI Technical Lead |
+| A.5.3 | Documentation of impact assessments | Yes | Assessments must be recorded | Implemented | Part IV (AISIA) + Part VII (DPIA) | AI Technical Lead |
+| A.5.4 | Impact on individuals | Yes | Vulnerable data subjects involved | Implemented | Part IV | AI Technical Lead |
+| A.5.5 | Societal impacts | Yes | Healthcare/societal effects relevant | Implemented | Part IV | AI Technical Lead |
 
 ## A.6 AI system life cycle
 
-| Control | Title | Status | Justification / implementation | Owner |
-|---|---|---|---|---|
-| A.6.1 | Management guidance for responsible development | ✅ | AI Policy + lifecycle controls (Part VI) | AIMS Owner |
-| A.6.2 | AI system life cycle (design→verification→deployment→operation→monitoring; technical docs; event logs) | ✅ | Part VI controls + model cards (Part VIII) | AI Technical Lead |
+| Control | Title | Applicable | Justification for inclusion / exclusion | Implementation status | Reference / evidence | Owner |
+|---|---|---|---|---|---|---|
+| A.6.1 | Management guidance for responsible development | Yes | Responsible development must be governed | Implemented | §5.2; Part VI | AIMS Owner |
+| A.6.2 | AI system life cycle (design→operation→monitoring; technical docs; event logs) | Yes | Full lifecycle must be controlled | Partially implemented | Part VI + Part VIII; operationalised in pilot (E-7, E-8) | AI Technical Lead |
 
 ## A.7 Data for AI systems
 
-| Control | Title | Status | Justification / implementation | Owner |
-|---|---|---|---|---|
-| A.7.2 | Data for development | ✅ | Data register; Vess360 corpora; iVessy protocol/anonymised data | AI Technical Lead |
-| A.7.3 | Acquisition of data | ✅ | MSP-Podcast licence; consent for own corpus | AI Technical Lead |
-| A.7.4 | Quality of data | ✅ | Multi-rater consensus labelling; preprocessing & quality checks | AI Technical Lead |
-| A.7.5 | Data provenance | ✅ | Provenance recorded per dataset (Part V) | AI Technical Lead |
-| A.7.6 | Data preparation | ✅ | Preprocessing/labelling documented (Part VIII) | AI Technical Lead |
+| Control | Title | Applicable | Justification for inclusion / exclusion | Implementation status | Reference / evidence | Owner |
+|---|---|---|---|---|---|---|
+| A.7.2 | Data for development | Yes | Models are developed on data | Implemented | Part V; Part VIII | AI Technical Lead |
+| A.7.3 | Acquisition of data | Yes | Third-party & own data acquired | Implemented | MSP-Podcast licence; consent; Part V | AI Technical Lead |
+| A.7.4 | Quality of data | Yes | Data quality affects safety/fairness | Partially implemented | Multi-rater labelling; quality checks (E-2, E-3) | AI Technical Lead |
+| A.7.5 | Data provenance | Yes | Provenance required for accountability | Implemented | Part V (data register) | AI Technical Lead |
+| A.7.6 | Data preparation | Yes | Preprocessing/labelling performed | Implemented | Part VIII | AI Technical Lead |
 
 ## A.8 Information for interested parties
 
-| Control | Title | Status | Justification / implementation | Owner |
-|---|---|---|---|---|
-| A.8.2 | Documentation for users | ✅ | User information + consent flow (Part VI); user-facing explanation provided per session | AI Technical Lead |
-| A.8.3 | External reporting (adverse impacts) | ✅ | External parties can report adverse impacts via the Rate.nl support/contact channel, routed to the AI Technical Lead and logged | AI Technical Lead |
-| A.8.4 | Communication of incidents | ✅ | AI incident communication via the ISMS incident process | AIMS Owner |
-| A.8.5 | Legal reporting obligations | ✅ | GDPR breach notification to the AP within 72h; EU AI Act serious-incident reporting once applicable; mapped in Part VII | AIMS Owner |
+| Control | Title | Applicable | Justification for inclusion / exclusion | Implementation status | Reference / evidence | Owner |
+|---|---|---|---|---|---|---|
+| A.8.2 | Documentation for users | Yes | Users need information about the AI | Partially implemented | Part VI consent/info flow; user pack (E-9) | AI Technical Lead |
+| A.8.3 | External reporting (adverse impacts) | Yes | External parties must be able to report | Implemented | Rate.nl support channel → AI Technical Lead; E-11 | AI Technical Lead |
+| A.8.4 | Communication of incidents | Yes | Incidents must be communicated | Implemented | ISMS incident process; §10.2 | AIMS Owner |
+| A.8.5 | Legal reporting obligations | Yes | GDPR/AI-Act reporting duties apply | Implemented | Part VII §6 (AP 72h) | AIMS Owner |
 
 ## A.9 Use of AI systems
 
-| Control | Title | Status | Justification / implementation | Owner |
-|---|---|---|---|---|
-| A.9.2 | Processes for responsible use | ✅ | Intended-use + human-oversight controls (Part VI) | AI Technical Lead |
-| A.9.3 | Objectives for responsible use | ✅ | Fairness, transparency, oversight (§5.2/§6.2) | AIMS Owner |
-| A.9.4 | Intended use | ✅ | Data collection only; no decisions; documented & enforced | AI Technical Lead |
+| Control | Title | Applicable | Justification for inclusion / exclusion | Implementation status | Reference / evidence | Owner |
+|---|---|---|---|---|---|---|
+| A.9.2 | Processes for responsible use | Yes | Operational use must be controlled | Implemented | Part VI; §5.2 | AI Technical Lead |
+| A.9.3 | Objectives for responsible use | Yes | Use objectives must be set | Implemented | §5.2 / §6.2 | AIMS Owner |
+| A.9.4 | Intended use | Yes | Intended use must be defined & enforced | Implemented | §4.3; Part VIII | AI Technical Lead |
 
 ## A.10 Third-party & customer relationships
 
-| Control | Title | Status | Justification / implementation | Owner |
-|---|---|---|---|---|
-| A.10.2 | Allocating responsibilities | ✅ | Controller/processor split and supplier/partner/customer roles documented (Part VII) | AIMS Owner |
-| A.10.3 | Suppliers | ✅ | AI supplier register + assessment (Part V) | AI Technical Lead |
-| A.10.4 | Customers | ✅ | Customer requirements captured in contracts/DPAs | AIMS Owner |
+| Control | Title | Applicable | Justification for inclusion / exclusion | Implementation status | Reference / evidence | Owner |
+|---|---|---|---|---|---|---|
+| A.10.2 | Allocating responsibilities | Yes | Roles across the value chain must be clear | Implemented | Part VII §1 (controller/processor) | AIMS Owner |
+| A.10.3 | Suppliers | Yes | Third-party AI/cloud suppliers used | Partially implemented | Part V (supplier register); DPAs (E-10) | AI Technical Lead |
+| A.10.4 | Customers | Yes | Customer (deployer) requirements apply | Implemented | Contracts / DPAs | AIMS Owner |
 
 ---
 
 # PART IV — AI SYSTEM IMPACT ASSESSMENTS (AISIA)
 
+Assessed per ISO/IEC 42005 / Annex A.5, before deployment and on significant change. The data-protection assessment is in Part VII (DPIA).
+
 ## iVessy
-- **Purpose:** voice-driven collection/structuring of care information; output to professionals via FHIR/HL7. No decisions.
-- **Affected individuals:** clients/patients incl. low-literacy, non-native, elderly, cognitively impaired; informal caregivers; professionals.
-- **Potential impacts & mitigations:**
-  - *Privacy* (special-category voice/health data) → transient audio (not stored), structured output only, consent, tenant isolation, DPIA (Part VII). **Residual: Low–Medium** (Medium while OpenAI/US is used).
-  - *Fairness* (language/accent) → multilingual testing, monitoring, Avans research. **Residual: Medium.**
-  - *Safety / data integrity* (wrong field) → guardrails + confirmation loop + human validation. **Residual: Low.**
-  - *Autonomy / dignity* → review/edit/confirm; plain language; no behavioural steering. **Residual: Low.**
-  - *Transparency* → pre-session disclosure + logged consent. **Residual: Low.**
-- **Societal:** improves inclusion and reduces administrative burden; over-reliance mitigated by human-in-the-loop. **Net positive.**
-- **Provisional EU AI Act class:** limited-risk + transparency. **Decision:** proceed in pilots with controls; reassess on migration and scale.
+
+| Item | Assessment |
+|---|---|
+| Purpose | Voice-driven collection/structuring of care information; output to professionals via FHIR/HL7. No decisions. |
+| Affected individuals | Clients/patients incl. low-literacy, non-native, elderly, cognitively impaired; informal caregivers; professionals. |
+| Provisional EU AI Act class | Limited-risk + transparency obligations. |
+| Decision | Proceed in pilots with controls; reassess on migration and scale. |
+
+| Impact area | Potential impact | Mitigation | Residual |
+|---|---|---|---|
+| Privacy | Exposure of special-category voice/health data | Transient audio (not stored); structured output only; consent; tenant isolation; DPIA (Part VII) | Low–Medium (Medium while OpenAI/US used) |
+| Fairness | Worse performance for some language/accent groups | Multilingual testing; monitoring; Avans research | Medium |
+| Safety / data integrity | Wrong field committed to record | Guardrails + confirmation loop + human validation | Low |
+| Autonomy / dignity | Pressure or loss of control for the user | Review/edit/confirm; plain language; no behavioural steering | Low |
+| Transparency | User unaware they interact with AI | Pre-session disclosure + logged consent | Low |
+| Societal | Over-reliance vs. improved inclusion/efficiency | Human-in-the-loop; net positive on inclusion & admin burden | Net positive |
 
 ## Vess360
-- **Purpose:** voice-emotion recognition (6 emotions) as supportive context.
-- **Affected individuals:** speakers whose emotion is inferred (patients/clients).
-- **Potential impacts & mitigations:**
-  - *Misleading/incorrect emotion* (low accuracy) → supportive-only, confidence ≥ 0.70 threshold + uncertainty labelling, human interpretation, accuracy objective. **Residual: Medium.**
-  - *Bias* (atypical/dialect/cultural expression) → diverse corpus, aggregate review, documented limitation. **Residual: Medium.**
-  - *Privacy* → no demographic data stored; transient audio; consent. **Residual: Low.**
-  - *Transparency* → emotion disclosed, consented (Art. 50). **Residual: Low.**
-  - *Transfer* (Azure/Google EU-region/US-provider) → DPA/SCCs, transfer assessment (Part VII). **Residual: Medium.**
-- **Societal:** supports empathic care; misuse mitigated by no-decision rule and no workplace/education use.
-- **Provisional EU AI Act class:** emotion recognition with transparency obligations; medical context. **Decision:** proceed with controls; accuracy improvement is a tracked objective.
+
+| Item | Assessment |
+|---|---|
+| Purpose | Voice-emotion recognition (6 emotions) as supportive context for professionals. |
+| Affected individuals | Speakers whose emotion is inferred (patients/clients). |
+| Provisional EU AI Act class | Emotion recognition with transparency obligations; medical context. |
+| Decision | Proceed with controls; accuracy improvement is a tracked objective. |
+
+| Impact area | Potential impact | Mitigation | Residual |
+|---|---|---|---|
+| Reliability | Incorrect emotion (low accuracy) misleads professional | Supportive-only; confidence ≥ 0.70 + "uncertain" labelling; human interpretation; accuracy objective | Medium |
+| Fairness | Bias on atypical/dialect/cultural expression | Diverse corpus; aggregate review; documented limitation | Medium |
+| Privacy | Sensitive inference | No demographic data stored; transient audio; consent | Low |
+| Transparency | Undisclosed emotion analysis | Disclosed + consented (Art. 50) | Low |
+| Transfer | EU-region but US-provider (Azure/Google) | DPA/SCCs; transfer assessment (Part VII) | Medium |
+| Societal | Misuse for profiling/decisions | No-decision rule; no workplace/education use | Low |
 
 ---
 
@@ -478,4 +507,4 @@ With the measures above, residual risk is acceptable for pilot deployment. The D
 | Version | Date | Change | Author |
 |---|---|---|---|
 | 0.1 | 2026 | Initial consolidated AIMS (Clauses 4–10, SoA, risk register, AISIA, registers, lifecycle) | Firas Kassoumeh |
-| 1.0 | 18 Jun 2026 | Completed all sections: added DPIA (Part VII) and Model Cards (Part VIII); set Vess360 confidence threshold (0.70); completed Vera entry, SoA, objectives and supplier statuses; recorded ISO 27001 certificate; converted open items into a continual-improvement plan; issued | Firas Kassoumeh |
+| 1.0 | 19 Jun 2026 | Completed all sections: added DPIA (Part VII) and Model Cards (Part VIII); set Vess360 confidence threshold (0.70); completed Vera entry, SoA, objectives and supplier statuses; recorded ISO 27001 certificate; converted open items into a continual-improvement plan; issued | Firas Kassoumeh |
