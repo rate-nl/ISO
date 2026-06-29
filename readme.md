@@ -51,7 +51,27 @@ This scope covers all Rate employees, contractors, and systems including the Saa
 ### NEN 7510:2022
 The same SaaS platform, but limited to the processing of health-related personal data for healthcare organizations in the Netherlands, in accordance with Wkkgz and Wabvpz. Education, non-healthcare customers, fully anonymized data, and corporate HR/finance systems are excluded from this scope.
 
+## Context of the Organization (Clause 4.1)
 
+In accordance with ISO 27001:2022 Clause 4.1, Rate maintains a structured register of the internal and external issues relevant to its purpose and that affect its ability to achieve the intended outcomes of the ISMS. This register is reviewed at least annually during the Management Review and whenever a significant change occurs. Issues are linked to the relevant risks and ISMS objectives.
+
+| # | Issue | Internal / External | Description & Relevance to the ISMS | Linked Risk / Objective |
+|---|-------|---------------------|--------------------------------------|--------------------------|
+| 1 | Small organization size | Internal | Rate operates with a very small team. Full segregation of duties is not achievable; ISMS roles are concentrated in two individuals. Managed via compensating controls (CEO oversight, external security officer, annual audit, logging). | Risks #14, #15; Segregation of Duties Statement (§4.6) |
+| 2 | Fully remote / home-office operation | Internal | No permanent office; critical infrastructure (NAS, Dev Server) located in the CEO's locked home office. Introduces physical-security and home-network considerations. | Risks #42, #43; Remote Work Addendum |
+| 3 | Key-person dependency | Internal | Loss of the CEO/MD or ISO Lead would significantly affect operations and ISMS continuity. Managed via shared credential vault and succession planning. | Risks #14, #15; BCDR §6.8 |
+| 4 | Cloud infrastructure dependency | External | Core platform hosted on Hetzner, with Azure failover. Availability and security depend on third-party providers and their SLAs. | Risks #6, #9, #36, #41; A.5.21, A.5.23 |
+| 5 | Healthcare data processing & NEN 7510 | External | Processing of health-related personal data for Dutch healthcare customers imposes additional legal and security obligations (NEN 7510, Wkkgz, Wabvpz). | Risks #44–46; Legal & Regulatory Register |
+| 6 | Data protection regulation (GDPR/AVG) | External | As a processor of personal and special-category data, Rate must meet GDPR/AVG obligations, including breach notification and data-subject rights. | Risk #4; Privacy Policy; Legal Register |
+| 7 | Evolving cyber-threat landscape | External | SaaS platforms are targets for brute-force, scanning, DDoS, and malware. Requires continuous monitoring and threat intelligence. | Risks #13, #21, #24; A.5.7, A.8.25 |
+| 8 | Customer / contractual security requirements | External | Healthcare and education customers impose security and contractual expectations (DPAs, ISO 27001 certification, processor obligations). | Risks #29, #33–35; Supplier & Compliance sections |
+| 9 | Certification & regulatory bodies | External | Rate must maintain its ISO 27001 certification (DNV) and meet auditor and regulator expectations (Autoriteit Persoonsgegevens, IGJ). | ISMS Objectives; Internal Audit Program |
+| 10 | Supplier / sub-processor reliance | External | Dependence on Hetzner, Google, GitHub, LastPass, Exact Online and others for critical services. Sub-processor failures or breaches could affect Rate. | Risks #29, #32, #39; Supplier Security section |
+| 11 | Climate / environmental factors | External | Extreme weather or environmental events could affect datacenter or home-office continuity. Mitigated via provider SLAs and BCDR. | Risk #41; BCDR §6.9 (NC-2025-EXT-01) |
+| 12 | Power-supply continuity (home office) | Internal | Home-office infrastructure depends on residential power. Addressed via UPS installation (RA-2026-001) following the March 2026 outage. | Risk #42; A.7.11 |
+| 13 | Technology stack constraints | Internal | The ASP.NET CMS platform does not support native MFA, requiring compensating controls (IP whitelisting). | Risk #28; A.5.17, A.8.5 |
+
+This register is owned by the ISO Lead and reviewed annually as part of the ISMS Management Review.
 
 ### System Architecture Overview
 
@@ -713,7 +733,7 @@ In compliance with ISO  27001:2022 , Rate enforces a strong password policy for 
 - **Account Lockout:** Accounts are locked after **5 failed login attempts**, with automatic unlock after 15 minutes.
 - **Secure Storage:** Passwords must never be stored in plaintext. All credentials are securely stored using **LastPass** with end-to-end encryption.
 - All critical credentials (production servers, cloud accounts, HR systems) are securely stored in LastPass, with shared access for both the CEO and Managing Director.In the event one of them leaves, the other ensures smooth access continuity and triggers access reviews and necessary reassignments.
-- **Multi-Factor Authentication (MFA):** MFA is **recommended** for access to production systems, VPN, and administrative tools to enhance security.
+- **Multi-Factor Authentication (MFA):** MFA is **mandatory** for: (1) all privileged and administrative accounts, (2) remote access and VPN, and (3) cloud management consoles (Google Workspace, GitHub, LastPass, Hetzner, Trello). MFA is enforced technically where the system supports it. Where a system does not support native MFA (e.g., the CMS), a documented compensating control applies — static IP whitelisting and firewall restriction. Any exception must be risk-assessed, time-limited, and approved by the CEO, and recorded in the ISMS Review & Approval Log.
 
 All employees are made aware of these requirements during onboarding and through annual security awareness training.
 
@@ -726,6 +746,17 @@ Rate uses **CrowdSec** to automatically detect and block suspicious traffic on i
 
 - **Logs:** Collected from all on-premises and cloud systems.
 - **Retention:** Logs are retained for **1 year**&#x20;
+
+### Clock Synchronization (A.8.17)
+
+All Rate servers and managed endpoints (production, NAS, development server, laptops) synchronize their clocks via the Network Time Protocol (NTP) to approved external time sources (e.g., pool.ntp.org, or the operating-system default time service). Synchronization occurs automatically at the operating-system level. Cloud and SaaS platforms (Hetzner, Google Workspace, GitHub, LastPass) maintain their own provider-managed time synchronization. Accurate, consistent timestamps support reliable log correlation, audit trails, and incident investigation.
+
+Clock synchronization can be verified on Windows systems (run as Administrator) with:
+  net start w32time
+  w32tm /query /status
+
+ On the Synology NAS via Control Panel → Regional Options → Time, and on Linux/cloud servers with `timedatectl`. **Owner:** Team Lead Developer.
+
 
 ## Threat Intelligence Process (A.5.7 / ISO 27001:2022 §8.3)
 
@@ -766,9 +797,20 @@ In the event of **VPN failure**, an **alternative secure access method** must be
 
 The policy undergoes **annual review** or immediate revision after major changes.
 
-## 11. Compliance
+## 11. Compliance and Disciplinary Process
 
-Non-compliance may result in disciplinary actions or legal consequences.
+All employees and contractors are required to comply with this policy and all other ISMS policies. Compliance is monitored through access reviews, audits, and incident investigations.
+
+**Disciplinary process for information security violations (A.6.4):**
+Confirmed violations of information security policies — including unauthorized access, mishandling of data, sharing of credentials, or negligent behavior leading to a security incident — are subject to disciplinary action. The process is as follows:
+
+1. **Investigation:** The suspected violation is investigated by the Managing Director, who gathers relevant evidence (logs, records, incident reports).
+2. **Assessment:** The CEO and Managing Director assess the nature, severity, and intent of the violation.
+3. **Action:** Disciplinary measures are applied proportionately to the severity of the violation and may include a documented verbal warning, a formal written warning, or suspension of access. Serious or unlawful breaches may additionally be referred to the relevant authorities.
+4. **Consistency:** Measures are applied consistently and fairly to all employees and contractors, regardless of role or seniority.
+5. **Record:** The outcome is documented and retained as ISMS evidence.
+
+This process applies to all personnel with access to Rate's information assets and supports ISO 27001:2022 Annex A control A.6.4.
 
 *Note: Employees will be notified of all policy updates.*
 
@@ -1237,7 +1279,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.5.14                 | Information transfer          | ✅         | Information transfer is secured using TLS, VPN, and encrypted cloud services. USB/removable media are prohibited. | Asset Management Policy, Access Control Policy | Team Lead Developer & Managing Director |
 | A.5.15                | Access control                                              | ✅       | Reduces risk of unauthorized access.                                                              | Access Control Policy                           | Team Lead Developer                     |
 | A.5.16                | Identity management                                         | ✅       | Manages user identities securely.                                                                 | Access Control Policy                           | Team Lead Developer                     |
-| A.5.17                | Authentication information                                  | ✅       | Protects authentication credentials.                                                              | Access Control Policy                           | Team Lead Developer                     |
+| A.5.17                | Authentication information                                  | ✅       | Authentication credentials are protected via LastPass with end-to-end encryption and a strong password policy. MFA is mandatory for privileged accounts, VPN/remote access, and cloud consoles (Access Control Policy §5). | Access Control Policy                           | Team Lead Developer                     |
 | A.5.18                | Access rights                                               | ✅       | Regularly reviews and updates access rights.                                                      | Access Control Policy                           | Team Lead Developer                     |
 | A.5.19                | Information security in supplier relationships              | ✅       | Ensures security responsibilities are clearly defined for suppliers.                              | Supplier Security & Contractual Obligations     | Managing Director                       |
 | A.5.20                 | Addressing information security within supplier agreements     | ✅       | Ensures suppliers adhere to contractual security requirements.                                        | Supplier Security & Contractual Obligations                         | Managing Director                   |
@@ -1261,7 +1303,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.6.1                 | Screening                                              | ✅       | Prevents insider threats through background checks during onboarding.       | Access Control Policy (Onboarding Process)       | Managing Director    |
 | A.6.2                 | Terms and conditions of employment                     | ✅       | Ensures employees understand their security responsibilities.               | Access Control Policy                            | Managing Director    |
 | A.6.3                 | Information security awareness, education and training | ✅       | Mandatory security training promotes awareness and compliance.              | Access Control Policy         | Managing Director    |
-| A.6.4                 | Disciplinary process                                   | ❌       | Managed under general HR policies, not separately documented in ISMS.       | N/A                                              | N/A                  |
+| A.6.4                 | Disciplinary process                                   | ✅       | A disciplinary process for information security violations is defined in the Access Control Policy (§11). Confirmed security breaches are handled proportionately, up to and including termination, applied consistently across all staff and contractors. | Access Control Policy §11 | CEO / Managing Director |
 | A.6.5                 | Responsibilities after termination/change of employment| ✅       | Covered through formal offboarding process in Access Control Policy.        | Access Control Policy (Offboarding Process)      | Managing Director    |
 | A.6.6                 | Confidentiality or non-disclosure agreements           | ✅       | NDAs signed on employment and stored with HR records.                       | Access Control Policy                 | Managing Director    |
 | A.6.7           | Remote working          | ✅         | All staff work remotely. Secure home office policies, VPN enforcement, device encryption, and security training mitigate risks associated with remote operations. | Access Control Policy, Asset Management Policy | Team Lead Developer |
@@ -1284,7 +1326,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.8.2                 | Privileged access rights                                | ✅       | Managed through role-based access and review of elevated privileges.        | Access Control Policy                                        | Team Lead Developer                |
 | A.8.3                 | Information access restriction                          | ✅       | Role-based access controls restrict information access as required.         | Access Control Policy                                        | Team Lead Developer                |
 | A.8.4                 | Access to source code                                   | ✅       | GitHub access is strictly controlled and reviewed.                          | Secure Development & Change Management                      | Team Lead Developer                |
-| A.8.5                 | Secure authentication                                   | ✅       | MFA and strong password policies are enforced.                              | Access Control Policy                                        | Team Lead Developer                |
+| A.8.5                 | Secure authentication                                   | ✅       | Mandatory MFA for privileged accounts, VPN, and cloud consoles; strong password policy enforced via LastPass. CMS protected by IP whitelisting where native MFA is unavailable (compensating control). | Access Control Policy                                        | Team Lead Developer                |
 | A.8.6                  | Capacity management    | ✅         | Capacity management is ensured through Hetzner’s SLA and Rate’s own monitoring of server usage and storage. Scaling procedures are part of operational change management. | Supplier Security & Contractual Obligations, Secure Development & Change Management | Team Lead Developer |
 | A.8.7                 | Protection against malware                              | ✅       | Antivirus and OS protections are enforced and updated.                      | BCDR Plan, Access Control Policy                             | Team Lead Developer                |
 | A.8.8                 | Management of technical vulnerabilities                 | ✅       | Patch management and monitoring procedures are in place.                    | BCDR Plan, Access Control Policy                             | Team Lead Developer                |
@@ -1296,7 +1338,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.8.14                 | Redundancy of information processing facilities | ✅         | Redundancy is provided through Hetzner’s infrastructure (ISO 27001 certified) and Rate’s failover to Azure as documented in the BCDR Plan. This ensures continuity if primary hosting fails. | Business Continuity & Disaster Recovery Plan, Supplier Security | Team Lead Developer |
 | A.8.15                | Logging                                                 | ✅       | Logging is enabled across infrastructure and cloud services.                | BCDR Plan, Access Control Policy                             | Team Lead Developer                |
 | A.8.16                | Monitoring activities                                   | ✅       | Systems and applications are continuously monitored and alerted.            | BCDR Plan                                                    | Team Lead Developer                |
-| A.8.17                | Clock synchronization                                   | ❌       | Rate does not operate its own time synchronization service. All critical systems rely on cloud/SaaS provider-managed clock synchronization (Hetzner, Google Workspace, GitHub, LastPass, etc.), which ensures consistent timestamps.                              | N/A                                                         | N/A                                |
+| A.8.17                | Clock synchronization                                   | ✅       | Server clocks are synchronized via NTP to approved external time sources. Cloud/SaaS systems (Hetzner, Google Workspace, GitHub, LastPass) rely on provider-managed synchronization. Consistent timestamps support reliable logging and incident investigation. See Access Control Policy §6 (Clock Synchronization). | Access Control Policy, BCDR Plan | Team Lead Developer |
 | A.8.18                | Use of privileged utility programs                      | ✅       | Use is limited and monitored under access controls.                         | Access Control Policy                                        | Team Lead Developer                |
 | A.8.19                | Installation of software on operational systems         | ✅       | Restricted to authorized personnel via documented procedures.               | Access Control Policy                                        | Team Lead Developer                |
 | A.8.20                | Networks security                                       | ✅       | Firewalls and VPN are used; access is controlled.                           | Access Control Policy                                        | Team Lead Developer                |
