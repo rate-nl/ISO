@@ -1807,7 +1807,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | **Role Assignments & RACI Matrix (Policy 4.6)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-12 | ✅ Approved | New section formalizing ISMS role assignments, RACI matrix (10 grouped activities, 3-column structure), and segregation-of-duties statement. Approved by CEO email. |
 
 
-| **Legal & Regulatory Register** | 2026-06-05 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-XX | ✅ Approved | Register of applicable laws (NEN 7510, GDPR/AVG, Wkkgz, Wabvpz, ISO 27001). GDPR/AVG and Wkkgz marked Compliant; NEN 7510 and Wabvpz In Progress pending SoA completion. Approved by CEO email. |
+| **Legal & Regulatory Register** | 2026-06-05 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-16 | ✅ Approved | Register of applicable laws (NEN 7510, GDPR/AVG, Wkkgz, Wabvpz, ISO 27001). GDPR/AVG and Wkkgz marked Compliant; NEN 7510 and Wabvpz In Progress pending SoA completion. Approved by CEO email. |
 
 | **Supplier Security Assessment Form** | 2026-06-15 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-16 | ✅ Approved | New standardized supplier assessment form added (security officer requirement)[Manager Approvals](https://drive.google.com/file/d/1MmKMSGmnpSwD38IZsIklo0LavxNX6Vee/view?usp=drive_link) |
 
