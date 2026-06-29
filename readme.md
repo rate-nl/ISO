@@ -1,28 +1,35 @@
 # Information Security Management System (ISMS) Manual  
 
 ## 1. Introduction
+   - [ISMS Continual Improvement (PDCA Cycle)](#isms-continual-improvement-pdca-cycle)
 
 ## 2. Core ISMS Documents
-   - [Information Security Policy](#Information-Security-Policy)
+   - [Information Security Policy](#information-security-policy)
    - [Risk Assessment and Risk Treatment Plan](#risk-assessment-and-risk-treatment-plan)
-   - [Access Control Policy](#Access-Control-Policy)
-   - [Incident Management and Response Plan](#Incident-Management-and-Response-Plan)
-   - [Business Continuity and Disaster Recovery Plan](#Business-Continuity-and-Disaster-Recovery-Plan)
-   - [Asset Management Policy](#Asset-Management-Policy)
+   - [Access Control Policy](#access-control-policy)
+   - [Incident Management and Response Plan](#incident-management-and-response-plan)
+   - [Business Continuity and Disaster Recovery Plan](#business-continuity-and-disaster-recovery-plan)
+   - [Asset Management Policy](#asset-management-policy)
    - [Secure Development & Change Management](#secure-development--change-management)
 
-
 ## 3. Statement of Applicability
+   - [ISO 27001:2022 Controls](#2-iso270012022--controls)
+   - [NEN 7510:2022 Healthcare-Specific Controls](#3-nen-75102022--healthcare-specific-controls)
 
 ## 4. Compliance & Security Governance
-   - [Legal & Regulatory Compliance](#compliance--security-governance)
+   - [Legal & Regulatory Register](#legal--regulatory-register)
    - [Privacy & Data Protection Policy](#privacy--data-protection-policy)
    - [Supplier Security & Contractual Obligations](#supplier-security--contractual-obligations)
    - [Internal Audit Program](#internal-audit-program)
    - [Corrective Actions & Non-Compliance Log](#corrective-actions--non-compliance-log)
-   - [Management Review](#Management-Review)
-   - [ISMS Performance Metrics](#ISMS-Performance-Metrics)
-   - [Evidence & Logs](#Evidence-&-Logs)
+   - [Management Review](#management-review)
+   - [ISMS Performance Metrics](#isms-performance-metrics)
+
+## 5. ISMS Governance Records
+   - [ISMS Review & Approval Log](#isms-review--approval-log)
+   - [ISMS Annual Audit Calendar 2025](#isms-annual-audit-calendar-2025)
+   - [ISMS Annual Audit Calendar 2026](#isms-annual-audit-calendar--2026)
+   - [Evidence & Logs (Logs.md)](Logs.md)
 
 
 ---
@@ -62,6 +69,20 @@ To support this scope, the following diagram provides a high-level overview of R
 - **Integrity**: Maintaining the accuracy and completeness of information
 - **Availability**: Ensuring information and resources are accessible when needed
 
+
+---
+## ISMS Continual Improvement (PDCA Cycle)
+
+Rate's ISMS operates on the Plan-Do-Check-Act (PDCA) model underpinning ISO 27001:2022 and NEN 7510:2022, ensuring continual improvement (Clause 10.1).
+
+| Phase | ISMS Activities | Primary Evidence |
+|-------|-----------------|------------------|
+| **Plan** | Define scope, context, risks, objectives, and applicable controls | ISMS Scope, Risk Assessment and Risk Treatment Plan, Statement of Applicability, Legal & Regulatory Register, Information Security Objectives |
+| **Do** | Implement and operate selected controls and procedures | Access Control Policy, BCDR Plan, Incident Management Plan, Secure Development & Change Management, Asset Management Policy, Evidence & Logs |
+| **Check** | Monitor, measure, audit, and review performance | ISMS Performance Metrics (KPIs), Internal Audit Program, Management Review, CrowdSec Monitoring & DB Restore logs |
+| **Act** | Correct nonconformities, prevent recurrence, and improve | Corrective Actions & Non-Compliance Log, GAP Analysis, NEN 7510 Implementation Improvement Points (§6) |
+
+The cycle repeats annually and after any major change or incident, driving measurable and auditable improvement across both ISO 27001:2022 and NEN 7510:2022.
 
 ---
 
@@ -528,7 +549,7 @@ This document outlines the identified risks, their likelihood and impact, and th
 
 | #  | Risk                                           | Treatment Option | Mitigation Actions                                                                                                                                          | Risk Owner        | Control                        | Controlled? | Implemented? | Impact (residual) | Likelihood (residual) | Risk Acceptance Criteria                        | Status/Deadline  |
 |----|------------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|----------------------------------|-------------|--------------|-------------------|-----------------------|--------------------------------------------------|-----------------|
-| 42 | Unauthorized access, theft, or tampering in the home office — and power interruption causing NAS downtime and backup gaps | Mitigate | Home office room kept locked at all times; access limited to CEO only; camera surveillance inside and outside the home; intrusion alarm; regular asset and footage reviews. Power outage incident (INC-2026-03-25, Mar 24 2026) caused NAS boot failure and 2-hour backup gap at Inge's home office. No data loss occurred. UPS installation currently under evaluation as long-term mitigation. See RA-2026-001 and [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN). | CEO | Physical access control + power continuity (UPS under evaluation) | Yes | Yes | Low 🟢 | Low 🟢 | Acceptable if physical controls maintained and UPS decision concluded | 🔄 Open — UPS decision requested from CEO. Decision deadline: 2026-06-07. If no UPS: risk formally accepted with justification. If UPS approved: status updated to ✅ Closed upon installation. See [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN). |
+| 42 | Unauthorized access, theft, or tampering in the home office — and power interruption causing NAS downtime and backup gaps | Mitigate | Home office room kept locked at all times; access limited to CEO only; camera surveillance inside and outside the home; intrusion alarm; regular asset and footage reviews. Power outage incident (INC-2026-03-25, Mar 24 2026) caused NAS boot failure and 2-hour backup gap at Inge's home office. No data loss occurred. UPS installation currently under evaluation as long-term mitigation. See RA-2026-001 and [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN). | CEO | Physical access control + power continuity (UPS installed) | Yes | Yes | Low 🟢 | Low 🟢 | Acceptable — physical controls maintained and UPS installed | ✅ Closed — UPS procured and installed June 2026. Home office power continuity verified; NAS now protected against power interruptions. Power resilience to be confirmed at the annual BCDR drill (2026-07-26).|
 | 43 | Remote work leads to home network compromise or data breach | Mitigate         | VPN required for all remote access; device encryption enforced; regular remote work security training for all employees; prohibition of guest/family access to work devices | Managing Director | Endpoint protection, awareness training | Yes         | Yes          | Low 🟢             | Low 🟢                | Acceptable if technical and awareness controls remain enforced | Ongoing         |
 
 
@@ -1786,11 +1807,11 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | **Role Assignments & RACI Matrix (Policy 4.6)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-12 | ✅ Approved | New section formalizing ISMS role assignments, RACI matrix (10 grouped activities, 3-column structure), and segregation-of-duties statement. Approved by CEO email. |
 
 
-| **Legal & Regulatory Register** | 2026-06-05 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | _pending_ | 🔄 Pending Approval | Register of applicable laws (NEN 7510, GDPR/AVG, Wkkgz, Wabvpz, ISO 27001). GDPR/AVG and Wkkgz marked Compliant; NEN 7510 and Wabvpz In Progress pending SoA completion. |
+| **Legal & Regulatory Register** | 2026-06-05 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-XX | ✅ Approved | Register of applicable laws (NEN 7510, GDPR/AVG, Wkkgz, Wabvpz, ISO 27001). GDPR/AVG and Wkkgz marked Compliant; NEN 7510 and Wabvpz In Progress pending SoA completion. Approved by CEO email. |
 
 | **Supplier Security Assessment Form** | 2026-06-15 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-16 | ✅ Approved | New standardized supplier assessment form added (security officer requirement)[Manager Approvals](https://drive.google.com/file/d/1MmKMSGmnpSwD38IZsIklo0LavxNX6Vee/view?usp=drive_link) |
 
-| **Risk Assessment & Treatment Plan — RA-2026-001** | 2026-03-30 | Firas Kassoumeh | ✅ Yes | CEO (Inge Proost) | **2026-03-30** | 🔄 Open — pending UPS decision | Risk assessment for NAS power outage (INC-2026-03-25). Risk #42 updated. UPS decision pending. [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN) |
+| **Risk Assessment & Treatment Plan — RA-2026-001** | 2026-03-30 | Firas Kassoumeh | ✅ Yes | CEO (Inge Proost) | **2026-03-30** | ✅ Closed — UPS installed | Risk assessment for NAS power outage (INC-2026-03-25). Risk #42 updated. UPS procured and installed June 2026; home office power continuity now in place. [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN) |
 
 ---
 
