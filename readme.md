@@ -1292,6 +1292,28 @@ This baseline applies to:
 - Adherence to the baseline is verified during the **annual internal audit** and the **annual vulnerability scan** (production server, VPN, NAS).
 - **Owner:** Team Lead Developer.
 
+
+## 7. Secure Architecture & Engineering Principles (A.8.27)
+
+To satisfy ISO 27001:2022 Annex A control A.8.27, Rate establishes and applies the following principles for engineering secure systems. These principles guide the design, development, and maintenance of Rate's platform and supporting infrastructure, and are applied during the "Scoped" and "Risk Analysis" stages of the development workflow.
+
+### 7.1 Core Principles
+
+- **Defence in depth:** Security is layered across network, application, data, and access controls so that no single control failure leads to compromise (e.g., firewall + VPN + RBAC + encryption + monitoring).
+- **Least privilege:** Users, services, and processes are granted only the minimum access required for their function. Privileged access is restricted, justified, and logged.
+- **Fail secure / secure defaults:** Systems default to a secure state on error or failure (e.g., firewall default-deny, access denied unless explicitly granted, sessions terminated on timeout).
+- **Separation of concerns:** Development, testing, and production environments are segregated; duties and access are separated where organizationally feasible; data flows between environments are controlled.
+- **Secure data handling:** Sensitive and health-related data is encrypted in transit (TLS) and at rest, access-restricted per tenant on a need-to-know basis, and never used in development/test without anonymization or explicit consent.
+- **API & application security:** Application and API design follows OWASP secure-coding standards for .NET, including input validation, authentication and authorization checks, protection against common vulnerabilities (e.g., injection, broken access control), and secure error handling.
+- **Security by design:** Security requirements are identified and assessed at the design stage of every feature, not added retrospectively. High-risk features undergo additional risk analysis.
+
+### 7.2 Application & Review
+
+- These principles are applied to all new development and to significant changes to existing systems, and are validated during design review and the Secure Development & Change Management process.
+- The principles are **formally approved by the CEO** and recorded in the ISMS Review & Approval Log.
+- They are **reviewed at least annually**, and when significant changes occur in technology, architecture, or the threat landscape.
+- **Owner:** Team Lead Developer / ISO Lead.
+
 ---
 
 # **Statement of Applicability (SoA)**  -- Version 4.0, date 8-June 2026
