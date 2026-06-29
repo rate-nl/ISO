@@ -320,6 +320,25 @@ In accordance with **Annex A control A.8.3 (Information Access Restriction)** an
 
 Rate is committed to complying with all applicable legal, regulatory, and contractual requirements related to information security. This includes, but is not limited to, data protection laws and industry standards.
 
+##  Information Security Communication (Clause 7.4)
+
+In accordance with ISO 27001:2022 Clause 7.4, Rate determines the internal and external communications relevant to the ISMS, including what is communicated, when, to whom, and by whom. The following communication plan applies:
+
+| What is communicated | Frequency / When | Audience (To Whom) | Owner (By Whom) | Channel |
+|----------------------|------------------|--------------------|-----------------|---------|
+| Security awareness updates & policy changes | Annually, and on any significant change | All employees & contractors | Managing Director | Training session / email |
+| ISMS policy updates & new procedures | On approval / change | All staff | ISO Lead | Email / GitHub repository |
+| Security incidents (internal) | Immediately on detection | CEO, Managing Director, Team Lead | Team Lead Developer | Email / direct |
+| Security incidents affecting customers | Without undue delay (within GDPR 72h support window) | Affected healthcare/other customers | CEO / Managing Director | Email / formal notice |
+| Breach reporting to authorities | As legally required (supporting role) | Customers (controllers); Autoriteit Persoonsgegevens / IGJ where applicable | CEO | Formal notification |
+| Management review outputs & decisions | Annually (after Management Review) | CEO, Managing Director, ISO Lead | Managing Director | Management Review Minutes |
+| ISMS KPI / objective performance | Reviewed at Management Review | Top management | ISO Lead | KPI Review / Minutes |
+| Internal audit findings & corrective actions | After each internal audit | CEO, relevant owners | Managing Director | Audit report / Corrective Actions Log |
+| External / certification communication | As scheduled or requested | DNV (certification body) | ISO Lead / CEO | Email / audit portal |
+| Supplier security requirements & reviews | Annually, or at onboarding | Key suppliers / sub-processors | Managing Director | Email / supplier assessment |
+
+This communication plan is reviewed annually during the Management Review and updated when ISMS roles, processes, or stakeholders change. **Owner:** ISO Lead.
+
 ## 9. Incident Reporting and Response
 
 In accordance with **ISO/IEC 27001:2022 Annex A controls A.5.24–A.5.28 (Information Security Incident Management)**, Rate has established a formal Incident Response Plan (IRP) that includes:
@@ -1217,7 +1236,7 @@ To comply with **ISO/IEC 27001:2022 **, Rate enforces structured secure coding c
 
 - Developers follow **OWASP secure coding standards for .NET**.
 - Code is committed daily to version control (GitHub).
-- Peer code reviews are required before merging any change to the production branch.
+- Because Rate currently operates with a single developer, peer review is not always possible. In its place, the developer performs a documented self-review of all changes against a secure-coding checklist (OWASP .NET) before merging, supported by automated static analysis where available. The **Team Lead Developer** formally reviews and approves each production change, recorded in the Change Control Log. When a second developer is engaged, mandatory peer review is reinstated.
 - Security controls and assumptions are documented for high-risk features.
 
 #### 5.3 Assessment & Testing
@@ -1232,6 +1251,46 @@ To comply with **ISO/IEC 27001:2022 **, Rate enforces structured secure coding c
 - Security patches are given priority and monitored via the Kanban flow.
 - The **Team Lead Developer** reviews critical patches before release.
 - All changes are recorded in the **[Change Management Log](https://docs.google.com/spreadsheets/d/1aTAYJK-ycFjJh9wI8hkGKIsSFxHTPhW5TxiL7bMx1hA/edit?gid=2142384983#gid=2142384983)**.
+
+## 6. Configuration Management & Hardening Baseline (A.8.9)
+
+To satisfy ISO 27001:2022 Annex A control A.8.9, Rate establishes and maintains secure configuration baselines for its servers, network, and managed endpoints. Baselines define the approved secure state of each system type and are applied consistently and reviewed regularly.
+
+### 6.1 Scope
+
+This baseline applies to:
+- **Production servers** (Hetzner)
+- **Development server** (home office)
+- **NAS backup device** (Synology)
+- **Managed endpoints** (company laptops)
+- **Network configuration** (firewall rules, VPN, segmentation)
+
+### 6.2 Configuration Management Method
+
+- Systems are configured manually by the Team Lead Developer according to the hardening baseline below.
+- All configuration changes to production systems follow the **Secure Development & Change Management** process: changes are recorded in the **Change Control Log** with the date, description, and Team Lead Developer approval before implementation.
+- Configuration changes are tracked through the team's task board (Trello) and the Change Control Log, providing a documented and auditable record.
+
+### 6.3 Hardening Baseline — Minimum Standards
+
+| Area | Baseline Requirement |
+|------|----------------------|
+| Operating system | Supported OS versions only; automatic security updates enabled; unnecessary services and packages disabled |
+| Accounts & access | Default/guest accounts disabled; least-privilege; named accounts only; privileged access restricted and logged |
+| Authentication | Strong password policy enforced; MFA mandatory for privileged/cloud/remote access (per Access Control Policy §5) |
+| Network | Firewall default-deny; only required ports open; VPN required for admin access; dev/test/prod segregated |
+| Time | NTP synchronization enabled (per Access Control Policy §6, A.8.17) |
+| Logging | System and security logging enabled; logs retained per retention policy |
+| Encryption | Full-disk encryption on endpoints; TLS in transit; encryption at rest for backups |
+| Malware protection | Endpoint protection / antivirus enabled and auto-updated; CrowdSec active on production |
+| Remote/unused interfaces | Removable media restricted; unused remote-access interfaces disabled |
+
+### 6.4 Approval, Review & Monitoring
+
+- The configuration baseline is **formally approved by the CEO** and recorded in the ISMS Review & Approval Log.
+- The baseline is **reviewed at least annually**, and after any major infrastructure or technology change.
+- Adherence to the baseline is verified during the **annual internal audit** and the **annual vulnerability scan** (production server, VPN, NAS).
+- **Owner:** Team Lead Developer.
 
 ---
 
@@ -1790,9 +1849,10 @@ This section defines key **performance indicators (KPIs)** to measure the effect
 
 ## 3. Reporting and Review
 
-- The **Managing Director** compiles ISMS performance reports annually.
-- Metrics are reviewed during **Management Review Meetings**.
-- If KPIs fall below targets, **corrective actions** are initiated and logged.
+- ISMS KPIs are **measured and recorded on a defined cadence**: operational metrics (e.g., backup restore tests) are recorded **monthly** in the Evidence & Logs; all ISMS objectives are **formally reviewed against target at least annually** during the Management Review, with results documented in the ISMS KPI Review Minutes.
+- The **ISO Lead / Managing Director** compiles the KPI performance report, comparing each metric to its target and noting whether it is met, partially met, or not met.
+- KPI results are a **standing input to the Management Review** (Clause 9.3) and are retained as ISMS evidence.
+- If any KPI falls below target, a **corrective action is initiated and logged** in the Corrective Actions Log, with an owner and due date.
 
 ## 4. KPI Evaluation Summary – Reporting Year 2024
 
@@ -1809,7 +1869,21 @@ The KPIs covered the following areas:
 - ✅ Secure platform development using Security by Design principles
 - ✅ Handling and classification of health-related user feedback data
 
+## 5. KPI Performance Summary — 2026
 
+The following table records measured ISMS objective performance for the current reporting period, reviewed at the Management Review (see ISMS KPI Review Minutes 2026-06-05).
+
+| KPI / Objective | Target | Measured Result (2026) | Status | Notes / Action |
+|-----------------|--------|------------------------|--------|----------------|
+| Security Awareness Completion | 100% | 100% (all staff trained 2026-06-05) | ✅ Met | Annual training completed |
+| Backup Restore Test | Monthly test passes | 6/6 monthly tests passed (Jan–Jun 2026) | ✅ Met | All restores successful; see DB Restore Test Log |
+| Access Control Violations | 0 per year | 0 detected | ✅ Met | CrowdSec monitoring active |
+| Incident Response Time | < 4 hours | All incidents contained within target | ✅ Met | See Incident Response Log |
+| User Access Reviews | 100% systems reviewed | Annual review scheduled 2026-07-08 | ✅ On track | Pending July review |
+| Audit Non-Conformities (major) | 0 major | 0 major (9 minor NCs in pre-audit review) | ✅ Met | Minor NCs under remediation |
+
+
+KPI performance is reviewed at least annually and updated each reporting period. **Owner:** ISO Lead.
 ---
 
 
