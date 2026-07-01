@@ -2009,8 +2009,8 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-03-31 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | ✅ 2026-03-31 | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
 | 2026-06-05 | Security Awareness Training | Managing Director | Annual | ✅ 2026-06-05 | Managing Director | [Training Completion Log](Logs.md#1-training-completion-log) |
 | 2026-06-05 | Review ISMS Performance Metrics | Managing Director | Annual | ✅ 2026-06-05 | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
-| 2026-06-30 | Internal ISO 27001 Audit | Managing Director | Annual | 🔄 Pending | Managing Director | — |
-| 2026-06-24 | Management Review Meeting | Managing Director | Annual | 🔄 Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
+| 2026-07-01 | Management Review Meeting | Managing Director | Annual | 🔄 Pending | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
+| 2026-07-13 | Internal ISO 27001 Audit | Managing Director | Annual | 🔄 Pending | Managing Director | — |
 | 2026-07-08 | Access Control Review | Team Lead Developer | Annual / when someone leaves | 🔄 Pending | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
 | 2026-07-14 | CrowdSec Monitoring Log Review | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [CrowdSec Monitoring Log](Logs.md#11-crowdsec-monitoring-log) |
 | 2026-07-15 | Supplier Security Reviews (Assessment Forms, Threat Intelligence & Cloud Exit) | Managing Director / Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Threat Intelligence & Cloud Exit Review](Logs.md#14-threat-intelligence--cloud-exit-review) · [Supplier Assessment Form](https://docs.google.com/document/d/1qkl787Qcqa_h0EjhtO-NFPYIWidThRa0/edit?usp=drive_link&ouid=100575306994247914394&rtpof=true&sd=true) |
