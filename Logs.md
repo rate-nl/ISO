@@ -213,6 +213,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | 2025/06/24  | Management Review Meeting – 2025/06/24                    | Annual ISMS review, remote work transition, policy and risk register update, audit findings. | [Minutes – 2025/06/24](https://docs.google.com/document/d/1BJRiWJ1ElRQEHxifpxfcI0TywrcIfc1n-WYDztba3fA/edit?tab=t.jnwggahwd0u8) |
 | 2025/09/30  | Management Review Meeting – 2025/10/08                    | Follow-up management review after full remote transition, confirmation of updated ISMS controls and evidence, review of new remote/home office risks. | [Minutes – 2025/10/08](https://docs.google.com/document/d/1Pl-GfmV7PRediT77E7ZS731rRZFeSMhssyfcFRutZHo)           |
 | 2026/06/05  | ISMS KPI Review vs Targets – 2026/06/05 | Annual review of ISMS KPIs against targets. Reviewed training, backups, incidents, access reviews. Corrective actions defined for open items. | [Minutes – 2026/06/05](https://drive.google.com/file/d/18gMFNHTyZP2hUxXx2AE8NkfaWr4Bnu9T/view?usp=drive_link) |
+| 2026/07/01  | Management Review Meeting – 2026/07/01                    | Annual ISMS review (Clause 9.3): previous actions closed, context changes (single developer, UPS/Risk #42 closed, NEN 7510 implemented), audit results, no open nonconformities, KPI performance, risk/RTP status, improvement opportunities. ISMS confirmed effective; ready for internal audit 2026-07-13. | [Minutes – 2026/07/01](DRIVE_LINK) |
 
 ## 14. Threat Intelligence & Cloud Exit Review
 
