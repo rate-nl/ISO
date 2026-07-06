@@ -3,7 +3,7 @@
 **Standard:** ISO/IEC 42001:2023 (with EU AI Act readiness)
 **Organization:** DineRate B.V. group (operating identity: Rate / Rate.nl)
 **Document version:** 3.0
-**Date of issue:** 8 July 2026
+**Date of issue:** 6 July 2026
 **AIMS Owner (accountable):** Inge Proost (CEO / Managing Director)
 **AI Technical Lead (responsible):** Firas Kassoumeh
 **Approved by:** Inge Proost (CEO) — recorded in the [AIMS Review & Approval Log](#aims-review--approval-log); signed evidence held in Manager Approvals (Google Drive).
@@ -20,7 +20,7 @@
 |---|---|
 | Document | AI Management System Manual (AIMS_Complete_Implementation.md) |
 | Version | 3.0 |
-| Date of issue | 8 July 2026 |
+| Date of issue | 6 July 2026 |
 | Owner | Inge Proost (AIMS Owner) |
 | Author | Firas Kassoumeh (AI Technical Lead) |
 | Approval | Approved by the CEO — recorded in the AIMS Review & Approval Log |
@@ -31,7 +31,7 @@
 
 ### AIMS Review & Approval Log
 
-Approval is recorded here (approver + date). **A single CEO sign-off covers this AIMS and all embedded records** (policies, procedures, AISIAs, model cards, SoA, risk register, risk acceptances). Signed evidence is held in the [Manager Approvals folder (Google Drive)](https://drive.google.com/drive/folders/16uO9oefcut5vRY9nUq_CJkapfcTSJ2Vb). No inline signature blocks are used in this document.
+Approval is recorded here (approver + date). **A single CEO sign-off covers this AIMS and all embedded records** (policies, procedures, AISIAs, model cards, SoA, risk register, risk acceptances). Signed evidence is held in the [Manager Approvals folder (Google Drive)](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN). No inline signature blocks are used in this document.
 
 | Version | Date | Approved by | Change summary |
 |---|---|---|---|
@@ -1805,7 +1805,7 @@ Before engaging a new AI supplier:
 3. **AISIA update** — if impact profile changes, update or re-run AISIA (PROC-AISIA-001)
 4. **DPIA update** — if data processing changes, update DPIA (Section 9); re-sign
 5. **SoA review** — confirm no new Annex A controls are implicated; update SoA if needed
-6. **Validation** — complete Model Validation Record (MVR) for any new model version
+6. **Validation** — complete the Model Validation Record (MVR) for any new model version and apply the **Model Deployment Decision Rule** (Section 13): deploy only on a **Go**, or a CEO-approved **Conditional Go** with an improvement plan and enhanced monitoring; a **No-Go** blocks deployment
 7. **EU AI Act review** — confirm risk classification remains appropriate
 8. **CEO approval** — AIMS Owner approves before any production deployment
 9. **Deploy** — implement change; update model register (Section 7 §4)
@@ -1939,6 +1939,33 @@ Management Review Record (Section 13 template) completed and signed by AIMS Owne
 
 **Template ID:** MVR | **Retention:** 3 years
 
+### Model Deployment Decision Rule (Go / Conditional Go / No-Go)
+
+Applies to every Model Validation Record (MVR) below. The AI Technical Lead records the outcome; the CEO approves any **Conditional Go** in the AIMS Review & Approval Log.
+
+**Gate types**
+- **Hard gates (safety & rights)** — any FAIL = automatic **No-Go**, no override, no conditional deployment. These are: schema-only output = 100%; tenant isolation = no cross-tenant data; safe-refusal ≥ 95%; (Vess360) confidence-threshold enforcement = 100% and "uncertain" labelling = 100%.
+- **Performance gates** — measured against a target, a conditional band, and a floor.
+
+**Performance gate thresholds — iVessy**
+
+| Metric | Go (≥ target) | Conditional Go (CEO-approved) | No-Go (below floor) |
+|---|---|---|---|
+| FHIR field accuracy | ≥ 90% | 85.0–89.9% | < 85% |
+| Missing-fields rate | < 10% | 10–15% | > 15% |
+| Contradiction rate | < 5% | 5–8% | > 8% |
+| Multilingual accuracy (each language) | ≥ 85% | 80–84.9% | < 80% |
+
+**Overall decision logic**
+1. Any **hard gate FAIL** → **No-Go** (do not deploy; remediate and re-validate).
+2. All hard gates pass **AND** all performance metrics ≥ target → **Go**.
+3. All hard gates pass **AND** one or more performance metrics in the conditional band → **Conditional Go**, permitted only with: (a) CEO approval recorded in the Review & Approval Log; (b) a documented improvement plan with a re-test date; (c) enhanced monitoring; and (optionally) a restricted/supervised pilot scope.
+4. Any performance metric **below its floor** → **No-Go**.
+
+**Worked example (answers "what if accuracy is 87%?"):** FHIR field accuracy = 87% with all hard gates passing → **Conditional Go** — deploy only in a supervised pilot with CEO approval, an improvement plan, and enhanced monitoring; production scale-up requires ≥ 90%.
+
+**Vess360 note:** Vess360 is supportive-only and never drives a decision, so its deployment gate is the **safety controls** (confidence-threshold enforcement, "uncertain" labelling, disclosure/consent, no-autonomous-use) — not raw accuracy. Emotion accuracy is a tracked **improvement objective** (§6.2), not a deployment floor. Vess360 deployment is **No-Go** only if a safety gate fails.
+
 ### MVR-001 — iVessy LLM (OpenAI current / Mixtral planned)
 
 | Field | Value |
@@ -1960,7 +1987,7 @@ Management Review Record (Section 13 template) completed and signed by AIMS Owne
 | Multilingual (Dutch, French, German, English) | ≥ 85% accuracy each | [TBM] | [TBM] |
 | Tenant isolation test | No cross-tenant data in output | [TBM] | [TBM] |
 
-**Deployment approved:** Yes / No — approval recorded in the AIMS Review & Approval Log.
+**Deployment decision:** Go / Conditional Go / No-Go — per the Model Deployment Decision Rule above; Conditional Go and final approval recorded in the AIMS Review & Approval Log.
 **Evidence link:** [Google Drive / GitHub]
 
 ---
@@ -1983,7 +2010,7 @@ Management Review Record (Section 13 template) completed and signed by AIMS Owne
 | Fairness (subgroup analysis — corpus level) | No material gap | [TBM] | [TBM] |
 | Inter-rater agreement (DS-004) | Krippendorff's α ≥ 0.70 | [TBM] | [TBM] |
 
-**Deployment approved:** Yes / No — approval recorded in the AIMS Review & Approval Log.
+**Deployment decision:** Go / Conditional Go / No-Go — per the Model Deployment Decision Rule above; Conditional Go and final approval recorded in the AIMS Review & Approval Log.
 
 ---
 
