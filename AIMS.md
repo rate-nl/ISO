@@ -31,7 +31,7 @@
 
 ### AIMS Review & Approval Log
 
-Approval is recorded here (approver + date). **A single CEO sign-off covers this AIMS and all embedded records** (policies, procedures, AISIAs, model cards, SoA, risk register, risk acceptances). Signed evidence is held in the [Manager Approvals folder (Google Drive)](https://drive.google.com/drive/folders/16uO9oefcut5vRY9nUq_CJkapfcTSJ2Vb). No inline signature blocks are used in this document.
+Approval is recorded here (approver + date). **A single CEO sign-off covers this AIMS and all embedded records** (policies, procedures, AISIAs, model cards, SoA, risk register, risk acceptances). Signed evidence is held in the [Manager Approvals folder (Google Drive)](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN). No inline signature blocks are used in this document.
 
 | Version | Date | Approved by | Change summary |
 |---|---|---|---|
@@ -572,10 +572,10 @@ The AIMS internal audit is added to the ISMS audit programme. The audit covers a
 
 | Audit | Scope | Frequency | Lead auditor | Next due |
 |---|---|---|---|---|
-| AIMS full audit | All clauses + Annex A | Annual | AI Technical Lead (with independent review) | Q3 2026 [FIRST AUDIT DUE] |
+| AIMS full audit | All clauses + Annex A | Annual | **Independent external auditor (Jaguar IT)** | Q3 2026 [FIRST AUDIT DUE] |
 | AIMS focused audit | High-risk areas + open findings | Post-incident or before external assessment | AI Technical Lead | As triggered |
 
-**Independence:** Given the small team size, the AI Technical Lead leads the audit with the AIMS Owner conducting independent review of findings. For the first certification audit, an external reviewer is recommended.
+**Independence:** The AIMS internal audit is conducted by an **independent external auditor (Jaguar IT)**; the AI Technical Lead provides evidence and the AIMS Owner reviews the findings. Using an external auditor strengthens independence for the certification pathway. Focused/interim audits may be run internally by the AI Technical Lead with AIMS Owner review.
 
 **Audit records:** See Section 13 — Internal Audit Checklist; records retained 3 years in Google Drive.
 
@@ -1147,6 +1147,17 @@ The following items are logged per session (no audio stored):
 - Session outcome (completed / abandoned / confirmation declined)
 
 **Consent log location:** Application event logs (encrypted); meta-logs only; retained 1 year; accessible to AI Technical Lead for audit purposes.
+
+**Development status:** iVessy is in development and does not yet process real patient data. Consent logging is a **specified control to be implemented and evidenced (E-9) before go-live** — a hard gate: no real-patient session may run until it is operational and tested. This is consistent with the AI system life cycle (Phase 6 deployment approval / Phase 7 operation).
+
+**Consent-logging requirements (to implement before go-live):**
+- One consent record is written per session, **before any AI processing begins**. Records hold **meta-information only — no audio, no transcript, no patient identifiers**; the session id is pseudonymized.
+- Fields: session id (pseudonymized); tenant/organization id; timestamp (UTC); language; disclosure version; AI Policy version; AI consent (given + timestamp); emotion analysis disclosed and consented (separate Art. 50 opt-in for Vess360); consent method (verbal/click); session outcome (completed / abandoned / consent declined); app version.
+- **Enforcement:** if AI consent is not given, the session does not start (logged as "consent declined"); if emotion consent is not given, Vess360 emotion analysis is disabled for that session.
+- **Storage:** encrypted at rest; tenant-isolated; retained 1 year (per ISMS log retention); exportable per tenant/date for audit.
+- **Evidence (E-9):** a redacted sample export plus the consent-logging test results are filed before go-live.
+
+**Vess360 note:** Vess360 is an existing, built model used as a component (including within iVessy). Emotion consent is captured at the iVessy consent layer above (Art. 50 opt-in); Vess360 does not collect consent directly. Vess360 code is stable; any future change is governed via change management (PROC-CM-001).
 
 ### 2.2 Guardrails and output controls (A.9.2)
 
@@ -1908,7 +1919,7 @@ Applies to preparing voice data for Vess360 training/fine-tuning (A.7.4, A.7.6).
 
 | Audit | Frequency | Lead | Scope |
 |---|---|---|---|
-| Annual AIMS audit | Annual | AI Technical Lead (AI Technical Lead performs; AIMS Owner reviews for independence) | All ISO 42001 Clauses 4–10; all Annex A controls |
+| Annual AIMS audit | Annual | **Independent external auditor (Jaguar IT)**; AI Technical Lead provides evidence; AIMS Owner reviews | All ISO 42001 Clauses 4–10; all Annex A controls |
 | Pre-certification audit | Before external assessment | External reviewer (recommended) | Full scope |
 | Focused audit | Post-incident or post-significant-change | AI Technical Lead | Relevant clauses/controls |
 
@@ -2147,12 +2158,12 @@ Applies to every Model Validation Record (MVR) below. The AI Technical Lead reco
 | ID | Date raised | Source | Category | Description | Severity | Immediate containment | Root cause | Corrective action | Owner | Due date | Date closed | Verified by | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | NC-AI-001 | 30 Jun 2026 | Gap analysis | Evidence — Training | No AI-specific training records exist (Clause 7.2) | Major | N/A — not yet operational | AIMS v1.0 did not include AI-specific training programme | Implement AI training programme per ATCP-001; deliver first session; document records in Section 13 | Firas Kassoumeh | Q3 2026 | [TBM] | Inge Proost | 🔄 Open |
-| NC-AI-002 | 30 Jun 2026 | Gap analysis | Audit — AIMS audit | No AIMS internal audit conducted (Clause 9.2) | Major | N/A | AIMS is newly established | Schedule and conduct first AIMS internal audit using checklist in Section 13 | Firas Kassoumeh | Q3 2026 | [TBM] | Inge Proost | 🔄 Open |
+| NC-AI-002 | 30 Jun 2026 | Gap analysis | Audit — AIMS audit | No AIMS internal audit conducted (Clause 9.2) | Major | N/A | AIMS is newly established | Arrange first AIMS internal audit (conducted by **external auditor, Jaguar IT**); provide evidence; file report | Firas Kassoumeh | Q3 2026 | [TBM] | Inge Proost | 🔄 Open |
 | NC-AI-003 | 30 Jun 2026 | Gap analysis | Management review | No AIMS management review conducted (Clause 9.3) | Major | N/A | AIMS is newly established | Schedule first AIMS management review; document using Section 13 template | Inge Proost | Q3 2026 | [TBM] | — | 🔄 Open |
 | NC-AI-004 | 30 Jun 2026 | Gap analysis | DPIA | DPIA not finalized or signed (GDPR Art. 35; A.5.3) | Major | N/A | DPIA embedded in AIMS without sign-off | Extract as standalone document; CEO signs; file in Google Drive | Firas Kassoumeh | Q3 2026 | [TBM] | Inge Proost | 🔄 Open |
 | NC-AI-005 | 30 Jun 2026 | Gap analysis | Supplier | Supplier DPAs not confirmed/evidenced (A.10.3) | Major | N/A | Evidence not collected and filed | Confirm DPA status with OpenAI, Azure, Google; file copies in Drive | Firas Kassoumeh | Q3 2026 | [TBM] | Inge Proost | 🔄 Open |
 | NC-AI-006 | 30 Jun 2026 | Gap analysis | Lifecycle | No model validation records (A.6.2, E-8) | Major | Suspend live patient processing until complete | Validation not yet performed | Complete MVR-001 and MVR-002 before any live patient data processing | Firas Kassoumeh | Before pilot | [TBM] | Inge Proost | 🔄 Open |
-| NC-AI-007 | 30 Jun 2026 | Gap analysis | Consent | Consent logging infrastructure not operational (A.8.2, E-9) | Major | Suspend live patient processing until complete | Not yet implemented | Implement consent logging per Section 8 §2.1; test with sample | Firas Kassoumeh | Before pilot | [TBM] | Inge Proost | 🔄 Open |
+| NC-AI-007 | 30 Jun 2026 | Gap analysis | Consent | Consent logging infrastructure not operational (A.8.2, E-9) | Major | Suspend live patient processing until complete | Requirements specified (Section 8 §2.1) — iVessy in development | Implement and test consent logging before iVessy go-live (hard gate); file sample export (E-9) | Firas Kassoumeh | Before go-live | [TBM] | Inge Proost | 🔄 Open — planned |
 
 ---
 
