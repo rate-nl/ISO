@@ -31,7 +31,7 @@
 
 ### AIMS Review & Approval Log
 
-Approval is recorded here (approver + date). **A single CEO sign-off covers this AIMS and all embedded records** (policies, procedures, AISIAs, model cards, SoA, risk register, risk acceptances). Signed evidence is held in the [Manager Approvals folder (Google Drive)](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN). No inline signature blocks are used in this document.
+Approval is recorded here (approver + date). **A single CEO sign-off covers this AIMS and all embedded records** (policies, procedures, AISIAs, model cards, SoA, risk register, risk acceptances). Signed evidence is held in the [Manager Approvals folder (Google Drive)](https://drive.google.com/drive/folders/16uO9oefcut5vRY9nUq_CJkapfcTSJ2Vb). No inline signature blocks are used in this document.
 
 | Version | Date | Approved by | Change summary |
 |---|---|---|---|
