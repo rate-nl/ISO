@@ -19,11 +19,11 @@
 | E-3 | Objective: Vess360 emotion reliability | Model evaluation report (F1/accuracy, confidence) | GitHub / Drive | 🔄 |
 | E-4 | Objective: Fairness | Subgroup performance review | Drive | ⬜ |
 | E-5 | Objective: Model monitoring | Semi-annual drift-check log (this file, §5) | This file | ⬜ |
-| E-6 | A.5 / Part VII | DPIA record (signed) | Drive | 🔄 |
-| E-7 | A.6 / Part VIII | Model cards (versioned) | GitHub | 🔄 |
-| E-8 | A.6.2 | Validation-before-deployment records | GitHub / Drive | ⬜ |
+| E-6 | A.5 / Section 9 | Standalone DPIA drafted (v1.0, 8 Jul 2026); CEO signature pending | Drive | 🔄 |
+| E-7 | A.6 / Section 10 | Model cards (versioned) | GitHub | 🔄 |
+| E-8 | A.6.2 | Validation records — Go/No-Go decision rule defined (AIMS Section 13); runs pending (hard blocker) | GitHub / Drive | ⬜ |
 | E-9 | A.8/A.9 | Consent & transparency logs | App logs / Drive | ⬜ |
-| E-10 | A.10.3 | Supplier DPAs / SCCs | Drive | 🔄 |
+| E-10 | A.10.3 | Supplier DPAs/SCCs — SAR-001/002/003 drafted (public due diligence); signed DPAs pending | Drive | 🔄 |
 | E-11 | A.8.4 / 10.2 | AI incident records | This file, §8 / ISMS | ⬜ |
 | E-12 | Clause 9.2 / 9.3 | Internal audit + management review | Drive | ⬜ |
 | E-13 | Clause 7.2/7.3 | Training & awareness records | Drive | ⬜ |
@@ -83,24 +83,26 @@
 
 ---
 
-## 6. DPIA records (E-6) — Part VII
+## 6. DPIA records (E-6) — Section 9
 
 | System | DPIA status | Version / date | Reviewed by | Controller (deployment) | Evidence link | Status |
 |---|---|---|---|---|---|---|
-| iVessy | Draft in AIMS.md Part VII | — | — | Healthcare org (processor: CareRate B.V.) | — | 🔄 |
-| Vess360 | Draft in AIMS.md Part VII | — | — | Vess B.V. (own corpus) | — | 🔄 |
+| iVessy | Standalone DPIA drafted (DPIA_iVessy_Vess360 v1.0) | v1.0 / 8 Jul 2026 | Inge Proost (signature pending) | Healthcare org (processor: CareRate B.V.) | DPIA_iVessy_Vess360.docx | 🔄 signature pending |
+| Vess360 | Standalone DPIA drafted (same document) | v1.0 / 8 Jul 2026 | Inge Proost (signature pending) | Vess B.V. (own corpus) | DPIA_iVessy_Vess360.docx | 🔄 signature pending |
 
 *Action:* finalise & sign before processing real patient data; review on iVessy migration.
 
 ---
 
-## 7. Model cards & deployment validation (E-7, E-8) — Part VI/VIII
+## 7. Model cards & deployment validation (E-7, E-8) — Section 8/10
 
 | Model | Card location | Current version | Validation done | Validation date | Approved by | Status |
 |---|---|---|---|---|---|---|
-| iVessy LLM (OpenAI → Mixtral) | AIMS.md §8.1 / GitHub | — | — | — | — | 🔄 |
-| ASR Whisper | AIMS.md §8.2 / GitHub | — | — | — | — | 🔄 |
-| Vess360 emotion | AIMS.md §8.3 / GitHub | — | — | — | — | 🔄 |
+| iVessy LLM (OpenAI → Mixtral) | AIMS.md §10 (MC-001) / GitHub | — | — | — | — | 🔄 |
+| ASR Whisper | AIMS.md §10 (MC-002) / GitHub | — | — | — | — | 🔄 |
+| Vess360 emotion | AIMS.md §10 (MC-003) / GitHub | — | — | — | — | 🔄 |
+
+*Deployment decision rule (Go / Conditional Go / No-Go) defined in AIMS Section 13. MVR-001/002 runs pending — hard blocker for live patient data.*
 
 ---
 
@@ -116,9 +118,9 @@
 
 | Supplier | Service | DPA signed | SCCs / transfer safeguard | Review date | Evidence link | Status |
 |---|---|---|---|---|---|---|
-| OpenAI | iVessy LLM (current, US) | — | — | — | — | 🔄 |
-| Microsoft Azure | Vess360 STT (EU region) | — | — | — | — | 🔄 |
-| Google Cloud | Vess360 translate/run/training (EU region) | — | — | — | — | 🔄 |
+| OpenAI | iVessy LLM (current, US) | Pending | SCTs (obtain) | — | SAR-001 drafted | 🔄 SAR drafted; DPA pending |
+| Microsoft Azure | Vess360 STT (EU region) | Pending | SCCs (confirm) | — | SAR-002 drafted | 🔄 SAR drafted; DPA pending |
+| Google Cloud | Vess360 translate/run/training (EU region) | Pending | SCCs (confirm) | — | SAR-003 drafted | 🔄 SAR drafted; DPA pending |
 
 ---
 
@@ -153,3 +155,4 @@
 | Version | Date | Change | Author |
 |---|---|---|---|
 | 1.0 | 18 Jun 2026 | Initial evidence-log template created with index, targets and baselines pre-filled | Firas Kassoumeh |
+| 1.1 | 8 Jul 2026 | Synced with AIMS v3.0 gap-remediation (B1–B11): standalone DPIA drafted (E-6); Go/No-Go rule (E-8); SAR-001/002/003 drafted (E-10); Part→Section references updated | Firas Kassoumeh |
