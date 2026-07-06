@@ -2,12 +2,12 @@
 
 **Standard:** ISO/IEC 42001:2023 (with EU AI Act readiness)
 **Organization:** DineRate B.V. group (operating identity: Rate / Rate.nl)
-**Document version:** 2.0
-**Date of issue:** 30 June 2026
+**Document version:** 3.0
+**Date of issue:** 6 July 2026
 **AIMS Owner (accountable):** Inge Proost (CEO / Managing Director)
 **AI Technical Lead (responsible):** Firas Kassoumeh
 **Approved by:** Inge Proost (CEO) — recorded in the [AIMS Review & Approval Log](#aims-review--approval-log); signed evidence held in Manager Approvals (Google Drive).
-**Supersedes:** AIMS.md v1.0 (18 June 2026)
+**Supersedes:** AIMS.md v2.0 (30 June 2026); full history in Appendix C
 **Integration:** Extends the certified ISO/IEC 27001:2022 / NEN 7510:2022 ISMS
 
 > **Audit note:** This document is the complete, standalone AIMS. It contains all required policies, procedures, registers, impact assessments, model cards, evidence structures, and record templates. All controls are addressed. Items marked [RECORD] are operational records to be populated. The DPIA is a standalone document referenced in Section 9. The EU AI Act compliance mapping is in Section 15.
@@ -19,8 +19,8 @@
 | Field | Value |
 |---|---|
 | Document | AI Management System Manual (AIMS_Complete_Implementation.md) |
-| Version | 2.0 |
-| Date of issue | 30 June 2026 |
+| Version | 3.0 |
+| Date of issue | 6 July 2026 |
 | Owner | Inge Proost (AIMS Owner) |
 | Author | Firas Kassoumeh (AI Technical Lead) |
 | Approval | Approved by the CEO — recorded in the AIMS Review & Approval Log |
@@ -37,6 +37,7 @@ Approval is recorded here (approver + date). **A single CEO sign-off covers this
 |---|---|---|---|
 | 1.0 | 18 Jun 2026 | Inge Proost (CEO) | Initial AIMS issued |
 | 2.0 | 30 Jun 2026 | Inge Proost (CEO) | Gap-analysis remediation: added standalone procedures, record templates, EU AI Act mapping, training framework, risk acceptance records, complete Annex A evidence |
+| 3.0 | 6 Jul 2026 | Pending — Inge Proost (CEO) | Format & governance revision: removed inline signature blocks (single sign-off via this log + Manager Approvals); added the Governance Records section; reformatted to ISMS-style numbered sections with a linked Table of Contents and Introduction. No change to policy, risk, AISIA, DPIA or control content. |
 
 ---
 
@@ -2476,8 +2477,9 @@ This wording must be presented **before** emotion analysis begins, in the user's
 | 0.1 | 2026 | Firas Kassoumeh | Initial AIMS skeleton | — |
 | 1.0 | 18 Jun 2026 | Firas Kassoumeh | First complete AIMS: Clauses 4–10, SoA, risk register, AISIAs, registers, lifecycle, DPIA, model cards, continual-improvement plan | Inge Proost |
 | 2.0 | 30 Jun 2026 | Firas Kassoumeh | Gap-analysis remediation: added standalone procedures (Section 12); complete record templates (Section 13); integrated evidence log (Section 14); EU AI Act compliance mapping (Section 15); AI policies (Section 11); risk acceptance records (Section 4 §5); nonconformity log with open NCs from gap analysis; updated SoA with remediation status; AISIA approvals recorded; model card approvals recorded; management review procedure; internal audit checklist; user information sheet template; supplier risk assessment template; AI competence criteria and training register; consent log template; monitoring log template; change request CR-2026-001; updated continual improvement plan (25 items); cross-reference appendix | Inge Proost |
+| 3.0 | 6 Jul 2026 | Firas Kassoumeh | Format & governance revision: removed all inline signature blocks (single CEO sign-off via the AIMS Review & Approval Log + Manager Approvals folder); added the AIMS Governance Records section (approval log, audit calendar, evidence links); reformatted to ISMS-style numbered sections (1–15 + Appendices) with a linked Table of Contents and an Introduction (purpose, scope, definitions). No change to policy, risk, AISIA, DPIA or control content. | Inge Proost (approval pending) |
 
 ---
 
-*End of AIMS Complete Implementation — v2.0 — 30 June 2026*
+*End of AIMS Complete Implementation — v3.0 — 6 July 2026*
 *DineRate B.V. / Rate.nl — CONFIDENTIAL*
