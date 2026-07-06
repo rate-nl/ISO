@@ -443,6 +443,8 @@ The AIMS Owner ensures the following resources are provided:
 | AI Technical Lead | ISO 42001:2023 detailed requirements; AI/ML engineering; responsible AI (bias, fairness, explainability); EU AI Act technical requirements; GDPR/healthcare data; AI security (adversarial ML); model evaluation and monitoring | Training records; certifications; demonstrated work product |
 | All staff | Responsible AI principles; prohibited AI uses; how to identify and report AI concerns; basic data protection for AI | Annual AI awareness training |
 
+**AIMS Owner (CEO) competence — compensating rationale:** The CEO's accountable role is governance, resource allocation and risk acceptance — not technical operation. Detailed technical execution (model validation, monitoring, security) sits with the AI Technical Lead under the documented RACI. The CEO's competence requirement (annual AI-governance briefing/course; ISO 42001 and EU AI Act executive overview; management-review leadership) is proportionate to this governance role and is reinforced by (a) the AI Technical Lead's detailed technical competence, (b) independent periodic review, and (c) management-review reporting that surfaces technical risk to the CEO in governance terms. This mirrors the ISMS segregation-of-duties compensating-control approach for a small organization.
+
 **Training records:** See Section 13 — AI Competence & Training Records.
 
 **Competence gaps:** Identified during the gap analysis conducted 30 June 2026. Remediation actions are in Appendix A items 1–2.
@@ -839,14 +841,14 @@ See Appendix A for the current continual improvement plan.
 | A.7.3 | Acquisition of data | Yes | ✅ | MSP-Podcast: licensed (non-exclusive, perpetual, commercial use); DUTCHDES/DUTCHESS: public terms; Own corpus: consented, anonymized | AI Technical Lead | None |
 | A.7.4 | Quality of data | Yes | 🔄 | Multi-rater labelling described in model cards; **GAP: no documented quality metrics or records — remediation: data quality procedure and records in Section 12/XI** | AI Technical Lead | Complete data quality checks and records; due Q3 2026 |
 | A.7.5 | Data provenance | Yes | ✅ | Full provenance in Section 7 data register; licence and consent chain documented | AI Technical Lead | None |
-| A.7.6 | Data preparation | Yes | 🔄 | Preprocessing described in model cards; **GAP: no standalone preprocessing procedure — remediation: Section 12 data preparation procedure** | AI Technical Lead | Document preprocessing procedure; due Q3 2026 |
+| A.7.6 | Data preparation | Yes | ✅ | Preprocessing procedure documented (Section 12 — PROC-DP-001); records via E-20 | AI Technical Lead | Complete data-quality records in pilot |
 
 ## A.8 — Information for Interested Parties
 
 | Ref | Control title | Applicable | Status | Implementation evidence | Owner | Gap/Action |
 |---|---|---|---|---|---|---|
 | A.8.2 | Documentation and information for users | Yes | 🔄 | Consent/transparency flow described Section 8; **GAP: no user information sheet or consent form template — remediation: Section 13 user documentation** | AI Technical Lead | Create user information sheet and consent form template; due before pilot |
-| A.8.3 | External reporting of adverse impacts | Yes | 🔄 | Rate.nl support channel → AI Technical Lead documented; **GAP: not publicly communicated — remediation: publish AI transparency notice** | AI Technical Lead | Publish AI transparency notice; due Q3 2026 |
+| A.8.3 | External reporting of adverse impacts | Yes | 🔄 | Public AI transparency notice + responsible-disclosure channel **drafted (Section 15)**; to publish on Rate.nl | AI Technical Lead | Publish notice on Rate.nl |
 | A.8.4 | Communication of incidents affecting interested parties | Yes | ✅ | ISMS incident process extended for AI; Section 12 AI incident procedure; communication steps defined | AI Technical Lead | None (procedure in Section 12) |
 | A.8.5 | Legal reporting obligations | Yes | ✅ | AP 72h GDPR breach notification; EU AI Act serious incident reporting (when applicable); Section 9 §6 | AIMS Owner | None |
 
@@ -886,6 +888,9 @@ See Appendix A for the current continual improvement plan.
 | Assessment ID | AISIA-001 |
 | System | iVessy |
 | Version | 2.0 |
+| Date | 8 July 2026 |
+| Prepared by | Firas Kassoumeh (AI Technical Lead) |
+| Approval | Recorded in the AIMS Review & Approval Log |
 | Date | 30 June 2026 |
 | Assessed by | Firas Kassoumeh (AI Technical Lead) |
 | Approved by | Inge Proost (CEO / AIMS Owner) — recorded in the AIMS Review & Approval Log |
@@ -937,6 +942,9 @@ iVessy is a multilingual, voice-driven assistant that replaces paper care-intake
 | Assessment ID | AISIA-002 |
 | System | Vess360 |
 | Version | 2.0 |
+| Date | 8 July 2026 |
+| Prepared by | Firas Kassoumeh (AI Technical Lead) |
+| Approval | Recorded in the AIMS Review & Approval Log |
 | Date | 30 June 2026 |
 | Assessed by | Firas Kassoumeh (AI Technical Lead) |
 | Approved by | Inge Proost (CEO / AIMS Owner) — recorded in the AIMS Review & Approval Log |
@@ -968,17 +976,42 @@ iVessy is a multilingual, voice-driven assistant that replaces paper care-intake
 
 ---
 
-## AISIA-003 — Vera (Template — to be completed at operational launch)
+## AISIA-003 — Vera (Preliminary pre-assessment — to be finalized at operational launch)
 
 | Field | Value |
 |---|---|
 | Assessment ID | AISIA-003 |
 | System | Vera |
-| Status | TEMPLATE — to be completed and signed before Vera processes real user data |
+| Status | PRELIMINARY — completed at pre-development stage; to be finalized, dated and approved before Vera processes real user data |
 | Trigger | Vera scope-entry trigger: first processing of real user data |
-| Action required | AI Technical Lead completes this AISIA; AI Technical Lead and CEO sign before operational launch |
+| Prepared by | Firas Kassoumeh (AI Technical Lead) |
+| Approval | To be recorded in the AIMS Review & Approval Log before launch |
 
-**[Complete all sections from AISIA-001 format at time of launch — architecture, intended use, affected individuals, EU AI Act classification, impact table, conditions]**
+### Preliminary assessment
+| Item | Preliminary assessment |
+|---|---|
+| Intended use | Low-threshold patient app to record and listen back to spoken care information; planned voice-to-text and (later) Vess360 emotion support. Supportive/self-service; not a decision system; no diagnosis or triage. |
+| Likely architecture | Mobile app (iOS/Android) + EU-hosted backend; ASR via self-hosted Whisper (group standard); optional Vess360 emotion (supportive-only, ≥ 0.70 threshold). To confirm at design. |
+| Affected individuals | Patients/clients (incl. vulnerable groups); possibly informal caregivers. |
+| Data categories | Voice recordings, transcribed content, possibly inferred emotion — special-category health data. |
+| Provisional EU AI Act class | Limited-risk (self-service documentation) + transparency; emotion feature under Art. 50. Confirmed in final AISIA. |
+
+### Preliminary impact & mitigation (to confirm at launch)
+| Impact area | Potential impact | Preliminary mitigation | Provisional residual |
+|---|---|---|---|
+| Privacy | Vera may **store** voice recordings (unlike iVessy's transient audio) | Define retention + legal basis; encryption; user delete control; DPIA update | To assess |
+| Transparency | User unaware of AI / emotion analysis | Pre-use disclosure + consent (Art. 50) | Low |
+| Autonomy | Self-service use without professional oversight | Clear scope; no advice/decisions; signpost to care team | To assess |
+| Fairness | ASR accuracy varies by accent/language | Multilingual testing; monitoring | To assess |
+| Security | App-store distribution attack surface | ISMS mobile controls; store compliance | To assess |
+
+### Known unknowns (resolve before launch)
+- Whether recordings are stored (and if so, retention + legal basis) — the key difference from iVessy.
+- Final architecture and hosting.
+- Whether Vess360 emotion is enabled at launch or later.
+- Controller/processor split (self-service vs. via healthcare org).
+
+**On launch, this preliminary assessment is completed to full AISIA-001 depth, dated, and approved via the AIMS Review & Approval Log.**
 
 ---
 
@@ -1052,9 +1085,9 @@ iVessy is a multilingual, voice-driven assistant that replaces paper care-intake
 
 | Supplier ID | Supplier | Service | Data processed | Processing location | DPA status | SCC/transfer safeguard | Risk assessment | Review date | Status |
 |---|---|---|---|---|---|---|---|---|---|
-| SUP-001 | OpenAI Inc. | iVessy LLM API | Voice transcript text (health content, potentially identifiable) | US | 🔄 DPA confirmation required — file in Drive | OpenAI EU SCTs | 🔄 Supplier risk assessment required (Section 13 template) | Q3 2026 | Active — transitional |
-| SUP-002 | Microsoft Azure | Vess360 STT | Voice audio (transient; EU region) | EU (Netherlands/Germany) | 🔄 Confirmation required | Azure DPA + SCC | 🔄 Supplier risk assessment required | Q3 2026 | Active |
-| SUP-003 | Google Cloud | Vess360 Translate, Cloud Run, Vertex AI | Transcribed text; model inference (EU region) | EU | 🔄 Confirmation required | Google Cloud DPA + SCC | 🔄 Supplier risk assessment required | Q3 2026 | Active |
+| SUP-001 | OpenAI Inc. | iVessy LLM API | Voice transcript text (health content, potentially identifiable) | US | 🔄 DPA confirmation required — file in Drive | OpenAI EU SCTs | 🔄 SAR drafted (due diligence begun); confirmation pending (Section 13 template) | Q3 2026 | Active — transitional |
+| SUP-002 | Microsoft Azure | Vess360 STT | Voice audio (transient; EU region) | EU (Netherlands/Germany) | 🔄 Confirmation required | Azure DPA + SCC | 🔄 SAR drafted (due diligence begun); confirmation pending | Q3 2026 | Active |
+| SUP-003 | Google Cloud | Vess360 Translate, Cloud Run, Vertex AI | Transcribed text; model inference (EU region) | EU | 🔄 Confirmation required | Google Cloud DPA + SCC | 🔄 SAR drafted (due diligence begun); confirmation pending | Q3 2026 | Active |
 | SUP-004 | Mistral AI (Mixtral 8x7B) | iVessy LLM (planned self-hosted) | Model weights only (self-hosted; no API calls) | EU / on-prem | N/A — self-hosted | N/A — no data transfer | Licence review completed | At migration | Planned |
 | SUP-005 | Hetzner | Hosting | Application data (encrypted) | EU (Germany) | ✅ ISMS DPA on file | EU-based; adequacy | Reviewed under ISMS | Annual | Active |
 | SUP-006 | GitHub (Microsoft) | Code/AIMS repository | AIMS documents; code (no personal data) | EU | ✅ ISMS DPA on file | Reviewed under ISMS | Annual | Active |
@@ -1086,7 +1119,7 @@ All AI systems in scope follow this lifecycle. At each gate, the AI Technical Le
 | **2. Data acquisition & preparation** | Acquire/consent data; document provenance; preprocessing; quality check | Data quality criteria met; provenance documented | DS register entry; quality check record; consent documents |
 | **3. Model development** | Training; architecture design; hyperparameter tuning; version control | Model card drafted; version tagged in Git | Model card (Section 10); Git tag |
 | **4. Validation & testing** | Accuracy evaluation; fairness analysis; guardrail testing; adversarial testing | Validation targets met; fairness check complete; validation record signed | Model Validation Record (Section 13 — MVR) |
-| **5. Impact & compliance review** | Finalize AISIA; DPIA review; SoA check; EU AI Act check | AISIA and DPIA signed; SoA updated | Signed AISIA; DPIA sign-off; SoA v update |
+| **5. Impact, ethics & compliance review** | Finalize AISIA; **AI ethics review** (vulnerable-user & fairness checklist; optional external input from Avans / Erasmus MC); DPIA review; SoA check; EU AI Act check | AISIA and DPIA signed; **ethics review recorded**; SoA updated | Signed AISIA; DPIA sign-off; **Ethics Review Record (Section 13)**; SoA v update |
 | **6. Deployment approval** | CEO approves production deployment | CEO approval documented | Change request (Section 13) with CEO approval |
 | **7. Production operation** | Human-in-the-loop enforcement; consent logging; tenant isolation; event logging | All operational controls active | Consent logs; event logs |
 | **8. Monitoring** | Semi-annual drift check; fairness review; incident monitoring; objective measurement | Monitoring log populated | Monitoring log (Section 13 — MML) |
@@ -1792,6 +1825,27 @@ Before engaging a new AI supplier:
 
 ---
 
+## Data Preparation Procedure (Vess360 training)
+
+**Procedure ID:** PROC-DP-001 | **Version:** 1.0 | **Date:** 8 July 2026
+
+Applies to preparing voice data for Vess360 training/fine-tuning (A.7.4, A.7.6).
+
+**Steps:**
+1. **Source & consent check** — confirm dataset licence/consent (MSP-Podcast licence; DUTCHDES/DUTCHESS terms; own-corpus consent). Record in the Data Register.
+2. **Ingestion** — import audio; verify integrity/format; pseudonymize identifiers.
+3. **Cleaning** — noise reduction; normalise sample rate/loudness; remove unusable segments.
+4. **Segmentation & diarization** — split into utterances; separate speakers where relevant.
+5. **Labelling** — psychologists label emotion; multi-rater consensus voting; record inter-rater agreement (Krippendorff's α ≥ 0.70 target).
+6. **Quality check** — class balance and label distribution; re-review low-agreement items; document metrics.
+7. **Split** — train/validation/test split; prevent speaker leakage across splits.
+8. **Versioning** — version the dataset; link to model card and Data Register (DS-004).
+9. **Record** — complete the data-quality record (evidence E-20).
+
+**Outputs:** versioned prepared dataset; data-quality record; inter-rater agreement record.
+
+---
+
 ## AI Change Management Procedure
 
 **Procedure ID:** PROC-CM-001 | **Version:** 1.0 | **Date:** 30 June 2026
@@ -2237,6 +2291,58 @@ By participating in this session, you confirm that you have read this informatio
 
 ---
 
+## AI Ethics Review Record
+
+**Record ID:** ETH-[NNN] | **Owner:** AI Technical Lead | **When:** lifecycle Phase 5 and on significant change.
+
+Given the healthcare context and vulnerable users, each AI system undergoes a documented ethics review before deployment. ISO 42001 does not mandate an ethics board; this lightweight review meets the expectation and can draw on knowledge partners (Avans — Responsible AI; Erasmus MC — clinical).
+
+| Ethics checkpoint | Question | Assessment | Action |
+|---|---|---|---|
+| Beneficence | Clear benefit to patients/care? | | |
+| Non-maleficence | Could it cause harm (wrong data, distress, exclusion)? Mitigated? | | |
+| Autonomy & dignity | Can the user understand, consent, review, edit, decline? | | |
+| Fairness | Are vulnerable/minority groups fairly served? Bias monitored? | | |
+| Transparency | AI use (and emotion analysis) clearly disclosed? | | |
+| Human oversight | Human always in control of any decision? | | |
+| Proportionality | Data use proportionate to benefit? | | |
+| External input | Knowledge-partner/ethics input sought where warranted? | | |
+
+| Field | Value |
+|---|---|
+| System | [iVessy / Vess360 / Vera] |
+| Reviewed by | Firas Kassoumeh (AI Technical Lead) |
+| External input | [Avans / Erasmus MC / none] |
+| Date | [Date] |
+| Outcome | ☐ Proceed ☐ Proceed with conditions ☐ Do not proceed |
+| Conditions / notes | |
+
+**Approval:** Recorded in the AIMS Review & Approval Log.
+
+---
+
+## AI System Decommission Record
+
+**Record ID:** DEC-[NNN] | **Owner:** AI Technical Lead | **Lifecycle Phase 10 (Retirement).**
+
+| Field | Value |
+|---|---|
+| System / model | [Name + version] |
+| Reason | [Replacement / obsolescence / risk / end of use] |
+| Decommission date | [Date] |
+| Data handling | [Training/inference data deleted or archived per retention schedule] |
+| Model artefact handling | [Weights archived/deleted; keys revoked] |
+| Dependent systems notified | [Yes/No — which] |
+| Model card archived | [Link] |
+| Supplier services terminated | [OpenAI/Azure/Google — contracts/keys closed as applicable] |
+| Evidence log updated | [Yes — E-ref] |
+| Residual risk after decommission | [Assessment] |
+| Approved by | Recorded in the AIMS Review & Approval Log |
+
+**Data-deletion confirmation:** ☐ Deleted per schedule ☐ Archived (justification) — verified by [name], [date].
+
+---
+
 ## Supplier AI Risk Assessment Template
 
 **Template ID:** SAR | **Use per AI supplier**
@@ -2266,7 +2372,43 @@ By participating in this session, you confirm that you have read this informatio
 **Approval to use supplier:** ☐ Approved ☐ Approved with conditions ☐ Not approved
 **Approved by:** ___________________________ Date: ___
 
-**To be completed for:** SAR-001 (OpenAI), SAR-002 (Microsoft Azure), SAR-003 (Google Cloud) — due Q3 2026
+### SAR-001 — OpenAI (iVessy LLM, transitional) — preliminary
+| Assessment area | Preliminary finding (public info — confirm) | Risk | Action |
+|---|---|---|---|
+| DPA / SCC | OpenAI provides a DPA incorporating EU SCCs — **obtain signed copy** | H | Sign & file DPA |
+| EU data residency | US processing; EU data-residency / Zero-Data-Retention options on some tiers — confirm | H | Confirm option; minimise data; migrate to EU/self-hosted |
+| No training on our data | API/Business terms: data not used to train models by default — confirm | M | Verify clause |
+| Security certification | SOC 2 Type 2 reported; CSA STAR — **obtain current report** | L | File link |
+| Incident notification | Confirm breach-notification clause in DPA | M | Verify |
+| Sub-processor disclosure | Confirm sub-processor list | M | Obtain list |
+| Transfer risk (CLOUD Act) | US provider — see TIA (DPIA §7) | M | SCTs; migration |
+| Overall | Medium (transitional) — accepted RA-AI-001 | M | |
+
+### SAR-002 — Microsoft Azure (Vess360 STT) — preliminary
+| Assessment area | Preliminary finding (public info — confirm) | Risk | Action |
+|---|---|---|---|
+| DPA / SCC | Microsoft Products & Services DPA incl. EU SCCs — **obtain/confirm signed** | M | File DPA |
+| EU data residency | EU regions + EU Data Boundary — confirm configuration | L | Confirm region config |
+| No training on our data | Azure AI: customer data not used to train foundation models — confirm | L | Verify |
+| Security certification | ISO/IEC 27001, 27017, 27018; SOC 1/2/3 — **obtain current attestations** | L | File links |
+| Incident notification | Confirm DPA breach-notification terms | L | Verify |
+| Sub-processor disclosure | Microsoft sub-processor list published — confirm | L | File link |
+| Transfer risk | EU region, US-HQ — see TIA (DPIA §7) | M | SCCs |
+| Overall | Medium — accepted RA-AI-006 | M | |
+
+### SAR-003 — Google Cloud (Vess360 translate/run/training) — preliminary
+| Assessment area | Preliminary finding (public info — confirm) | Risk | Action |
+|---|---|---|---|
+| DPA / SCC | Google Cloud DPA incl. EU SCCs — **obtain/confirm signed** | M | File DPA |
+| EU data residency | EU regions + data-residency controls — confirm | L | Confirm config |
+| No training on our data | Google Cloud: customer data not used to train models — confirm | L | Verify |
+| Security certification | ISO/IEC 27001, 27017, 27018; SOC 1/2/3 — **obtain current reports** | L | File links |
+| Incident notification | Confirm DPA breach terms | L | Verify |
+| Sub-processor disclosure | Google sub-processor list published — confirm | L | File link |
+| Transfer risk | EU region, US-HQ — see TIA (DPIA §7) | M | SCCs |
+| Overall | Medium — accepted RA-AI-006 | M | |
+
+**Completion status:** SAR-001/002/003 drafted above from public due diligence; **signed DPAs + current attestations to be obtained and filed** (NC-AI-005), then finalise risk ratings and record CEO approval. Due Q3 2026.
 
 ---
 
@@ -2323,6 +2465,38 @@ By participating in this session, you confirm that you have read this informatio
 
 **Basis:** Regulation (EU) 2024/1689 (EU AI Act) — phased application 2024–2027
 **Last reviewed:** 30 June 2026 | **Owner:** Firas Kassoumeh
+
+## Article 13 & Article 50 Transparency Checklist
+
+Concrete transparency obligations mapped to implementation; reviewed before each deployment.
+
+**Art. 13 — information to users (iVessy)**
+| Requirement | Provided? | Where |
+|---|---|---|
+| That the user interacts with an AI system | ✅ | Pre-session disclosure (Section 8 §2.1) |
+| Identity / purpose of the system | ✅ | Pre-session disclosure |
+| Data processed (speech, content, emotion) | ✅ | Disclosure + consent |
+| Human oversight (professional reviews output) | ✅ | Disclosure; process design |
+| Right to review / edit / withdraw | ✅ | Disclosure; UX |
+| Contact for questions | ✅ | Disclosure (care professional / privacy contact) |
+| Known limitations / accuracy caveat | 🔄 | Add accuracy caveat to the user information sheet |
+
+**Art. 50 — emotion-recognition disclosure (Vess360)**
+| Requirement | Provided? | Where |
+|---|---|---|
+| Explicit disclosure that emotion recognition is used | ✅ | Pre-session disclosure |
+| Consent before emotion analysis | ✅ | Logged consent |
+| Emotion is supportive-only, not decisional | ✅ | Disclosure + policy |
+| No workplace / education use (Art. 5) | ✅ | Contractual restriction; SoA |
+| Data-subject rights honoured | ✅ | GDPR rights in disclosure |
+
+**Emotion-recognition disclosure wording (Vess360):** *"During this session, an AI tool may analyse the tone of your voice to give your care professional an indication of your emotional state. This is for supportive context only and does not make any decision about your care. You can decline this at any time."*
+
+## Public AI Transparency Notice & Responsible Disclosure
+
+**Public notice (to publish on Rate.nl):** *"Rate develops AI-assisted tools (iVessy, Vess360) that help care professionals capture care information through natural conversation and provide supportive emotional context. These tools support — and never replace — professional judgment; no automated decisions are made about care. Voice is processed in the EU and audio is not stored by iVessy. We operate an AI Management System aligned with ISO/IEC 42001 and comply with the GDPR and the EU AI Act."*
+
+**Responsible disclosure channel:** Anyone can report a concern or adverse impact of our AI systems via the Rate.nl contact form / privacy contact, routed to the AI Technical Lead and logged in the AI incident log (E-11), acknowledged within a defined timeframe.
 
 ## 1. Risk Classification Summary
 
@@ -2463,8 +2637,8 @@ This wording must be presented **before** emotion analysis begins, in the user's
 | 10 | Complete data quality checks for DS-004 (E-20); document inter-rater agreement | AI Technical Lead | Q3 2026 | HIGH | 🔄 Open | |
 | 11 | Conduct Vess360 fairness analysis — corpus-level subgroup analysis (E-4) | AI Technical Lead | Q3 2026 | HIGH | 🔄 Open | |
 | 12 | Complete AI Use Policy communication to all staff (E-15) | AI Technical Lead | Q3 2026 | HIGH | 🔄 Open | Policy in Section 11 |
-| 13 | Publish AI transparency notice and responsible disclosure channel (E-18, A.8.3) | AI Technical Lead | Q3 2026 | MEDIUM | ⬜ Planned | |
-| 14 | Create data preprocessing procedure for Vess360 training (A.7.6) | AI Technical Lead | Q3 2026 | MEDIUM | ⬜ Planned | |
+| 13 | Publish AI transparency notice and responsible disclosure channel (E-18, A.8.3) | AI Technical Lead | Q3 2026 | MEDIUM | 🔄 Drafted (Section 15) — publish on Rate.nl | |
+| 14 | Create data preprocessing procedure for Vess360 training (A.7.6) | AI Technical Lead | Q3 2026 | MEDIUM | ✅ Done (PROC-DP-001, Section 12) | |
 | 15 | Complete iVessy pilot study registration and E-1/E-2 measurement plan (WP2) | AI Technical Lead | Q3–Q4 2026 | MEDIUM | ⬜ Planned | |
 | 16 | Execute iVessy migration from OpenAI → EU → self-hosted Mixtral (CR-2026-001) | AI Technical Lead | Per roadmap | MEDIUM | 🔄 In progress | Change request in Section 13 |
 | 17 | Improve Vess360 emotion accuracy above ~0.48 Dutch baseline | AI Technical Lead | Ongoing — semi-annual review | MEDIUM | 🔄 Ongoing | |
