@@ -3,7 +3,7 @@
 **Standard:** ISO/IEC 42001:2023 (with EU AI Act readiness)
 **Organization:** DineRate B.V. group (operating identity: Rate / Rate.nl)
 **Document version:** 3.0
-**Date of issue:** 6 July 2026
+**Date of issue:** 8 July 2026
 **AIMS Owner (accountable):** Inge Proost (CEO / Managing Director)
 **AI Technical Lead (responsible):** Firas Kassoumeh
 **Approved by:** Inge Proost (CEO) — recorded in the [AIMS Review & Approval Log](#aims-review--approval-log); signed evidence held in Manager Approvals (Google Drive).
@@ -20,7 +20,7 @@
 |---|---|
 | Document | AI Management System Manual (AIMS_Complete_Implementation.md) |
 | Version | 3.0 |
-| Date of issue | 6 July 2026 |
+| Date of issue | 8 July 2026 |
 | Owner | Inge Proost (AIMS Owner) |
 | Author | Firas Kassoumeh (AI Technical Lead) |
 | Approval | Approved by the CEO — recorded in the AIMS Review & Approval Log |
