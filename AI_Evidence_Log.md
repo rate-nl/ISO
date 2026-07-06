@@ -3,7 +3,7 @@
 **Purpose:** central register of evidence proving the AIMS operates as documented in `AIMS.md`. This is the file an auditor asks for. It mirrors the ISMS `Logs.md` approach.
 **Owner:** Firas Kassoumeh (AI Technical Lead) — collection · Inge Proost (AIMS Owner) — review
 **Related:** `AIMS.md`, `readme.md` (ISMS), `Logs.md` (ISMS evidence)
-**Status legend:** ⬜ Planned · 🔄 In progress · ✅ Collected
+**Status legend:** ✅ Collected · 🔄 In progress · ⬜ Planned. Planned items carry a **reason tier**: **Before go-live** (blocked by iVessy build) · **Pilot (WP2)** (needs pilot data) · **Ready — action pending** (materials done, execute) · **Run eval** (measurable now on existing model) · **After go-live** / **Ongoing**.
 **How to use:** when something is done/measured, fill the row — date, result, and a link to the raw data (Google Drive / GitHub / EPD export). Keep raw files; this log points to them.
 
 > Note: iVessy is in the **development phase**, so most performance evidence is **Planned** until the WP2 pilot (2026). Targets are pre-filled; results are added when measured. The only measured baseline so far is Vess360 accuracy ≈ 0.48.
@@ -14,19 +14,19 @@
 
 | Ref | AIMS item | Evidence needed | Location | Status |
 |---|---|---|---|---|
-| E-1 | Objective: iVessy intake-time reduction | Time-motion / EPD timestamp comparison | Google Drive / EPD export | ⬜ |
-| E-2 | Objective: iVessy field quality | Validation-set results (accuracy, clarification, contradiction) | GitHub / Drive | ⬜ |
+| E-1 | Objective: iVessy intake-time reduction | Time-motion / EPD timestamp comparison | Google Drive / EPD export | ⬜ Pilot (WP2) |
+| E-2 | Objective: iVessy field quality | Validation-set results (accuracy, clarification, contradiction) | GitHub / Drive | ⬜ Pilot (WP2) |
 | E-3 | Objective: Vess360 emotion reliability | Model evaluation report (F1/accuracy, confidence) | GitHub / Drive | 🔄 |
-| E-4 | Objective: Fairness | Subgroup performance review | Drive | ⬜ |
-| E-5 | Objective: Model monitoring | Semi-annual drift-check log (this file, §5) | This file | ⬜ |
+| E-4 | Objective: Fairness | Subgroup performance review | Drive | ⬜ Pilot (WP2) / Run eval (Vess360) |
+| E-5 | Objective: Model monitoring | Semi-annual drift-check log (this file, §5) | This file | ⬜ After go-live |
 | E-6 | A.5 / Section 9 | Standalone DPIA drafted (v1.0, 8 Jul 2026); CEO signature pending | Drive | 🔄 |
 | E-7 | A.6 / Section 10 | Model cards (versioned) | GitHub | 🔄 |
-| E-8 | A.6.2 | Validation records — Go/No-Go decision rule defined (AIMS Section 13); runs pending (hard blocker) | GitHub / Drive | ⬜ |
-| E-9 | A.8/A.9 | Consent & transparency logs | App logs / Drive | ⬜ |
+| E-8 | A.6.2 | Validation records — Go/No-Go decision rule defined (AIMS Section 13); runs pending | GitHub / Drive | ⬜ Before go-live |
+| E-9 | A.8/A.9 | Consent-logging **requirements specified** (AIMS Section 8); implement + test before go-live | App logs / Drive | ⬜ Before go-live |
 | E-10 | A.10.3 | Supplier DPAs/SCCs — SAR-001/002/003 drafted (public due diligence); signed DPAs pending | Drive | 🔄 |
-| E-11 | A.8.4 / 10.2 | AI incident records | This file, §8 / ISMS | ⬜ |
-| E-12 | Clause 9.2 / 9.3 | Internal audit + management review | Drive | ⬜ |
-| E-13 | Clause 7.2/7.3 | Training & awareness records | Drive | ⬜ |
+| E-11 | A.8.4 / 10.2 | AI incident records | This file, §10 / ISMS | ⬜ Ongoing (as incidents arise) |
+| E-12 | Clause 9.2 / 9.3 | Internal audit (**external — Jaguar IT**, scheduled); management review MRR-001 template ready | Drive | ⬜ Ready — action pending |
+| E-13 | Clause 7.2/7.3 | Training pack ready (deck, attendance sheet, invitation, script); deliver + file | Drive | ⬜ Ready — action pending |
 
 ---
 
@@ -34,12 +34,12 @@
 
 | Metric | Target | Result | Date | Pilot / org | Evidence link | Status |
 |---|---|---|---|---|---|---|
-| Intake-time reduction | ≥ 20% | — | — | — | — | ⬜ |
-| Field-extraction accuracy | ≥ 90% | — | — | — | — | ⬜ |
-| Missing-fields rate | trend ↓ | — | — | — | — | ⬜ |
-| Contradiction rate | low | — | — | — | — | ⬜ |
-| "Needs-clarification" rate | trend ↓ | — | — | — | — | ⬜ |
-| Data-quality vs. baseline | no significant drop | — | — | — | — | ⬜ |
+| Intake-time reduction | ≥ 20% | — | — | — | — | ⬜ Pilot (WP2) |
+| Field-extraction accuracy | ≥ 90% | — | — | — | — | ⬜ Pilot (WP2) |
+| Missing-fields rate | trend ↓ | — | — | — | — | ⬜ Pilot (WP2) |
+| Contradiction rate | low | — | — | — | — | ⬜ Pilot (WP2) |
+| "Needs-clarification" rate | trend ↓ | — | — | — | — | ⬜ Pilot (WP2) |
+| Data-quality vs. baseline | no significant drop | — | — | — | — | ⬜ Pilot (WP2) |
 
 *Method:* WP2 pilot, ≥3 care organisations, ~100 clients each; primary outcome time-per-intake (EPD logs); registered prospectively.
 
@@ -51,13 +51,13 @@
 |---|---|---|---|---|---|---|---|
 | Overall accuracy (Dutch) | ≈ 0.48 | improve over baseline | — | — | — | — | 🔄 |
 | Confidence display threshold | 0.70 (rule) | maintained | — | — | — | — | ✅ (rule set in AIMS.md) |
-| Per-emotion F1 — happy | — | — | — | — | — | — | ⬜ |
-| Per-emotion F1 — sad | — | — | — | — | — | — | ⬜ |
-| Per-emotion F1 — angry | — | — | — | — | — | — | ⬜ |
-| Per-emotion F1 — fear | — | — | — | — | — | — | ⬜ |
-| Per-emotion F1 — disgust | — | — | — | — | — | — | ⬜ |
-| Per-emotion F1 — surprise | — | — | — | — | — | — | ⬜ |
-| Per-emotion F1 — neutral | — | — | — | — | — | — | ⬜ |
+| Per-emotion F1 — happy | — | — | — | — | — | — | ⬜ Run eval |
+| Per-emotion F1 — sad | — | — | — | — | — | — | ⬜ Run eval |
+| Per-emotion F1 — angry | — | — | — | — | — | — | ⬜ Run eval |
+| Per-emotion F1 — fear | — | — | — | — | — | — | ⬜ Run eval |
+| Per-emotion F1 — disgust | — | — | — | — | — | — | ⬜ Run eval |
+| Per-emotion F1 — surprise | — | — | — | — | — | — | ⬜ Run eval |
+| Per-emotion F1 — neutral | — | — | — | — | — | — | ⬜ Run eval |
 
 ---
 
@@ -65,10 +65,10 @@
 
 | System | Attribute monitored | Method | Result / gap | Date | Evidence link | Status |
 |---|---|---|---|---|---|---|
-| iVessy | Language | Subgroup performance | — | — | — | ⬜ |
-| iVessy | Accent / dialect | Subgroup performance | — | — | — | ⬜ |
-| iVessy | Level of assistance | Subgroup performance | — | — | — | ⬜ |
-| Vess360 | Dataset diversity (no demographics stored) | Corpus-level review + aggregate accuracy | — | — | — | ⬜ |
+| iVessy | Language | Subgroup performance | — | — | — | ⬜ Pilot (WP2) |
+| iVessy | Accent / dialect | Subgroup performance | — | — | — | ⬜ Pilot (WP2) |
+| iVessy | Level of assistance | Subgroup performance | — | — | — | ⬜ Pilot (WP2) |
+| Vess360 | Dataset diversity (no demographics stored) | Corpus-level review + aggregate accuracy | — | — | — | ⬜ Run eval |
 
 ---
 
@@ -76,8 +76,8 @@
 
 | Date | System / model version | Metric checked | Result | Drift vs. previous | Retrain triggered? | Owner | Status |
 |---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | AI Technical Lead | ⬜ |
-| — | — | — | — | — | — | AI Technical Lead | ⬜ |
+| — | — | — | — | — | — | AI Technical Lead | ⬜ After go-live |
+| — | — | — | — | — | — | AI Technical Lead | ⬜ After go-live |
 
 *Cadence:* twice per year + after any major change. Retrain trigger = defined accuracy drop.
 
@@ -108,9 +108,11 @@
 
 ## 8. Consent & transparency logs (E-9) — A.8/A.9
 
+*iVessy is in development. Consent-logging **requirements are specified** in AIMS Section 8 (fields, enforcement, retention); implemented and evidenced (redacted sample export) **before go-live** — a hard gate. Vess360 emotion consent is captured at the iVessy consent layer.*
+
 | Pilot / org | Consent flow shown | Consent logged | Emotion disclosure shown | Sample export link | Date | Status |
 |---|---|---|---|---|---|---|
-| — | — | — | — | — | — | ⬜ |
+| — | — | — | — | — | — | ⬜ before go-live |
 
 ---
 
@@ -128,7 +130,7 @@
 
 | ID | Date | Type (bias / drift / hallucination / adversarial / privacy) | Description | Action taken | Reported to (if applicable) | Status |
 |---|---|---|---|---|---|---|
-| AI-INC-0001 | — | — | — | — | — | ⬜ |
+| AI-INC-0001 | — | — | — | — | — | ⬜ Ongoing |
 
 *Process:* logged & handled via the ISMS incident + corrective-action process; GDPR breach → AP within 72h where required.
 
@@ -138,16 +140,18 @@
 
 | Activity | Date | Outcome / findings | Actions | Owner | Status |
 |---|---|---|---|---|---|
-| AIMS internal audit | — | — | — | AI Technical Lead | ⬜ |
-| AIMS management review | — | — | — | AIMS Owner | ⬜ |
+| AIMS internal audit | — | — | — | **External auditor (Jaguar IT)** — AI Technical Lead provides evidence | ⬜ Scheduled |
+| AIMS management review (MRR-001) | — | — | — | AIMS Owner (chair) | ⬜ Template ready |
 
 ---
 
 ## 12. Training & awareness (E-13) — Clause 7.2/7.3
 
+*Materials ready: AI_Training_Deck.pptx + AI_Training_Attendance.docx + invitation email + narration script. Deliver online recorded session, then file attendance sheet + recording.*
+
 | Person / group | Topic (responsible AI, bias, AI Act, incident reporting) | Date completed | Evidence link | Status |
 |---|---|---|---|---|
-| — | — | — | — | ⬜ |
+| — | — | — | — | ⬜ materials ready |
 
 ---
 
@@ -156,3 +160,5 @@
 |---|---|---|---|
 | 1.0 | 18 Jun 2026 | Initial evidence-log template created with index, targets and baselines pre-filled | Firas Kassoumeh |
 | 1.1 | 8 Jul 2026 | Synced with AIMS v3.0 gap-remediation (B1–B11): standalone DPIA drafted (E-6); Go/No-Go rule (E-8); SAR-001/002/003 drafted (E-10); Part→Section references updated | Firas Kassoumeh |
+| 1.2 | 8 Jul 2026 | Synced with Table C progress: consent-logging requirements specified — before go-live (E-9); internal audit set to external auditor Jaguar IT (E-12); management-review MRR-001 + training pack ready (E-12/E-13) | Firas Kassoumeh |
+| 1.3 | 8 Jul 2026 | Relabelled all Planned (⬜) items with reason tiers (Before go-live / Pilot WP2 / Ready — action pending / Run eval / After go-live / Ongoing) for audit clarity | Firas Kassoumeh |
