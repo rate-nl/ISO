@@ -647,7 +647,7 @@ This policy applies to all personnel accessing Rate's information assets, includ
   - NAS (Backup System) - Secured with locked storage
   - Development Server - Secured with locked storage
   - WiFi Network: Secured private Wi-Fi at the CEO's home office (WPA2/WPA3-encrypted, access restricted to authorized devices; no guest network in use)
-- **Cloud Applications and Providers:** Google Drive, Google Workspace, GitHub, Stack Overflow, Exact Online, WordPress, and Hetzner Cloud
+- **Cloud Applications and Providers:** Google Drive, Google Workspace, GitHub, LastPass, Stack Overflow, Exact Online, Trello, Miro, Freshdesk, WordPress, and Hetzner Cloud
 - **Remote Access Systems:** Remote Desktop Server, Local VPN (Hetzner), and employee-managed laptops
 
 ## 3. Access Control Principles
@@ -1589,6 +1589,7 @@ All third-party suppliers handling Rate’s sensitive data must be reviewed and 
 | **Stack Overflow**   | Developer Collaboration    | Internal knowledge base      | Data Encrypted in Transit       | Annually           | Managing Director |
 | **Freshdesk**       | Customer Support System    | Customer Service Data          | ISO 27001, GDPR Compliant       | Annually           | Managing Director  |
 | **Trello**         | Project Management         | Internal Business Data         | SOC 2, GDPR Compliant           | Annually           | Managing Director  |
+| **Miro**             | Collaboration / Whiteboarding | Internal Business Data (no customer/health data) | SOC 2 Type II, GDPR Compliant | Annually | Managing Director |
 
 ## 3. Security Responsibilities
 
@@ -1633,6 +1634,11 @@ All third-party suppliers handling Rate’s sensitive data must be reviewed and 
 - Compliance with SOC 2 and GDPR.
 - Notification and management of security incidents.
 
+### Miro
+- Secure handling of internal collaboration/whiteboard data.
+- Data encryption in transit and at rest; compliance with GDPR.
+- No customer or health data stored; internal business use only.
+- Notification of any security incidents or vulnerabilities.
 ---
 
 ## 4. Security Clauses for supplier Contracts
@@ -2015,7 +2021,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-06-05 | Review ISMS Performance Metrics | Managing Director | Annual | ✅ 2026-06-05 | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
 | 2026-07-01 | Management Review Meeting | Managing Director | Annual | ✅ 2026-07-01 | CEO | [Management Review Minutes](Logs.md#13-management-review-minutes) |
 | 2026-07-13 | Internal ISO 27001 Audit | Managing Director | Annual | 🔄 Pending | Managing Director | — |
-| 2026-07-15 | Access Control Review | Team Lead Developer | Annual / when someone leaves | 🔄 Pending | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
+| 2026-07-15 | Access Control Review | Team Lead Developer | Annual / when someone leaves | ✅ 2026-07-14 | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
 | 2026-07-17 | CrowdSec Monitoring Log Review | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [CrowdSec Monitoring Log](Logs.md#11-crowdsec-monitoring-log) |
 | 2026-07-20 | Supplier Security Reviews (Assessment Forms, Threat Intelligence & Cloud Exit) | Managing Director / Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Threat Intelligence & Cloud Exit Review](Logs.md#14-threat-intelligence--cloud-exit-review) · [Supplier Assessment Form](https://docs.google.com/document/d/1qkl787Qcqa_h0EjhtO-NFPYIWidThRa0/edit?usp=drive_link&ouid=100575306994247914394&rtpof=true&sd=true) |
 | 2026-07-25 | LastPass Full Backup to NAS | Managing Director | Annual | 🔄 Pending | CEO | [Change Control Log](Logs.md#6-change-control-log) |
