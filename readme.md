@@ -1591,6 +1591,23 @@ All third-party suppliers handling Rate’s sensitive data must be reviewed and 
 | **Trello**         | Project Management         | Internal Business Data         | SOC 2, GDPR Compliant           | Annually           | Managing Director  |
 | **Miro**             | Collaboration / Whiteboarding | Internal Business Data (no customer/health data) | SOC 2 Type II, GDPR Compliant | Annually | Managing Director |
 
+## 2. Supplier List & Review Process
+
+All third-party suppliers handling Rate's sensitive data must be reviewed and approved. Supplier security certifications are verified via each vendor's trust centre and, where obtained, retained in the ISMS evidence folder on Google Drive. Certifications are re-verified at the annual Supplier Security Review.
+
+| Supplier Name | Service Provided | Data Accessed | Security Compliance | Review Frequency | Responsible Owner | Evidence / Trust Page |
+|---------------|------------------|---------------|---------------------|------------------|-------------------|-----------------------|
+| **Hetzner Cloud** | Server Hosting | Customer Survey Data | ISO 27001 Certified | Annually | Managing Director | [ISO cert + DPA (Drive)](https://drive.google.com/drive/folders/13TEP_dY-cp08s0cQqm__PEMSVxSZv-4O) |
+| **Google Workspace** | Email, Docs, Cloud Storage | Internal Business Data | ISO 27001, SOC 2, GDPR Compliant | Annually | Managing Director | [Google Cloud compliance](https://cloud.google.com/security/compliance) |
+| **GitHub** | Source Code Repository | Internal Codebase | SOC 2 Type II, ISO 27001:2022 | Annually | Team Lead Developer | [GitHub Trust Center](https://ghec.github.trust.page/) |
+| **LastPass** | Password Manager | Encrypted Password Storage | SOC 2 Type II, ISO 27001 | Annually | CEO | ISO + SOC 2 Type II [*Drive*](https://drive.google.com/drive/folders/13TEP_dY-cp08s0cQqm__PEMSVxSZv-4O) |
+| **Exact Online** | HR & Financial System | Employee & Financial Data | ISO 27001, GDPR Compliant | Annually | Managing Director | [Exact Trust/Security](https://www.exact.com/uk/security) |
+| **Stack Overflow** | Developer Collaboration | Internal knowledge base | Data Encrypted in Transit, GDPR | Annually | Managing Director | [Stack Overflow Trust](https://stackoverflow.co/teams/) |
+| **Freshdesk** | Customer Support System | Customer Service Data | ISO 27001, SOC 2, GDPR Compliant | Annually | Managing Director | [Freshworks Trust](https://www.freshworks.com/security/) |
+| **Trello** | Project Management | Internal Business Data | SOC 2, ISO 27001, GDPR (Atlassian) | Annually | Managing Director | [Atlassian Trust](https://www.atlassian.com/trust/compliance/resources) |
+| **Miro** | Collaboration / Whiteboarding | Internal Business Data (no customer/health data) | SOC 2 Type II, ISO 27001, GDPR | Annually | Managing Director | ISO + SOC 2 Type II [*Drive*](https://drive.google.com/drive/folders/13TEP_dY-cp08s0cQqm__PEMSVxSZv-4O) |
+
+
 ## 3. Security Responsibilities
 
 ### Hetzner Cloud
