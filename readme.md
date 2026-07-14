@@ -1091,7 +1091,6 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
   - **Software & Cloud Services:** Owned by the Managing Director, with maintenance delegated to relevant teams.
   - **Data (including backups):** Owned by the Team Lead Developer; Managing Director oversees classification and access.
   - Each asset in the inventory must have a designated owner listed with their responsibilities documented in the inventory file.
-
 - **Role Assignments:**
   - **Hardware:** Team Lead Developer.
   - **Software/Cloud Services:** Managing Director.
@@ -1106,12 +1105,15 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
   - **All assets in the inventory must be classified accordingly** and updated in the asset inventory list.
   - Asset classification must be reviewed annually to ensure proper security controls are in place.
 
+The table below lists Rate's **critical on-premises physical assets**, which require enhanced physical-security controls because they are located in the CEO's home office. The **complete asset register** — all laptops, desktops, monitors, network equipment, and software — is maintained separately in the [Asset Inventory](https://github.com/rate-nl/ISO/blob/main/Logs.md#5-asset-inventory) (Logs — Section 5) and reviewed annually. Legal ownership of assets rests with the relevant Rate entity (DineRate B.V. / CareRate B.V.); the **asset-owner / custodian role** for ISMS purposes is assigned as defined above.
+
 **Key on-premises assets are inventoried as follows:**
 
-| Asset Name         | Location                                      | Owner  | Physical Controls                                                           | Access Rights  | 
-|--------------------|-----------------------------------------------|--------|-----------------------------------------------------------------------------|----------------|-----------------|
-| NAS Backup Device  | Locked, access-controlled room in CEO's home  | CEO    | Room locked at all times, CEO-only access, camera surveillance, intrusion alarm | CEO only       | 
-| Development Server | Locked, access-controlled room in CEO's home  | CEO    | Room locked at all times, CEO-only access, camera surveillance, intrusion alarm | CEO only       | 
+| Asset Name | Location | Owner (custodian) | Physical Controls | Access Rights |
+|------------|----------|-------------------|-------------------|---------------|
+| NAS Backup Device | Locked, access-controlled room in CEO's home | CEO | Room locked at all times, CEO-only access, camera surveillance, intrusion alarm | CEO only |
+| Development Server | Locked, access-controlled room in CEO's home | CEO | Room locked at all times, CEO-only access, camera surveillance, intrusion alarm | CEO only |
+| UPS (Power Continuity) | Locked, access-controlled room in CEO's home | CEO | Same locked room; protects NAS/Dev Server against power interruption (installed June 2026, RA-2026-001) | CEO only |
 
 ## 4. Acceptable Use and Protection Measures
 
