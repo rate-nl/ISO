@@ -1688,9 +1688,18 @@ Rate uses a standardized Supplier Security Assessment Form to evaluate each supp
 
 Completed assessments are stored in the ISMS evidence folder and tracked in the Supplier Assessment Log below:
 
-| Date | Supplier | Risk Rating | Decision | Assessed By | Next Review | Evidence |
+| Date | Supplier | Risk Rating | Approval | Assessed By | Next Review | Evidence |
 |------|----------|-------------|----------|-------------|-------------|----------|
-| 2026-06-08 | Hetzner Cloud | Low 🟢 | Approved | Firas Kassoumeh | 2027-06-08 | [Hetzner Assessment 2026](https://drive.google.com/file/d/1bVkmnIbnB4KiAVL2SF5P3zv2XpBbuTJu/view?usp=drive_link) |
+| 2026-06-08 | Hetzner Cloud | Low 🟢 | Approved | Firas Kassoumeh | 2027-06-08 | [Assessment 2026](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
+| 2026-07-15 | Google Workspace | Low 🟢 | Approved | Firas Kassoumeh | 2027-07-15 |[Assessment 2026](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
+| 2026-07-15 | GitHub | Low 🟢 | Approved | Firas Kassoumeh | 2027-07-15 | [Assessment 2026](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
+| 2026-07-15 | LastPass | Medium 🟡 | Approved with conditions | Firas Kassoumeh | 2027-07-15 | [Assessment 2026](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
+| 2026-07-15 | Exact Online | Low 🟢 | Approved | Firas Kassoumeh | 2027-07-15 | [Assessment 2026](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
+| 2026-07-15 | Freshdesk | Low 🟢 | Approved | Firas Kassoumeh | 2027-07-15 | [Assessment 2026](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
+| 2026-07-15 | Trello | Low 🟢 | Approved | Firas Kassoumeh | 2027-07-15 | [Assessment 2026](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
+| 2026-07-15 | Stack Overflow | Low 🟢 | Approved | Firas Kassoumeh | 2027-07-15 | [Assessment 2026](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
+| 2026-07-15 | Miro | Low 🟢 | Approved | Firas Kassoumeh | 2027-07-15 | [Assessment 2026](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
+| 2026-07-15 | CrowdSec | Low 🟢 | Approved | Firas Kassoumeh | 2027-07-15 | [Assessment 2026](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
 
 This assessment is performed annually as part of the Supplier Security Review (ISMS Audit Calendar).
 
