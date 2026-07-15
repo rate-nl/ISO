@@ -226,6 +226,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Date | Reviewer | Scope | Summary | Link |
 |------|-----------|--------|----------|------|
 | 2025-10-16 | Firas Kassoumeh | CrowdSec, ENISA, Google, Hetzner, GitHub | Threat intel process classified into strategic/tactical/operational; exit strategy verified. | [Review Notes](https://docs.google.com/document/d/12OC04i2QIxgDwtrUDY7uvukoggfxdtiIqRrgkIwMUCg/edit?tab=t.0) |
+| 2026-07-15 | Firas Kassoumeh | All 10 suppliers, trust-centre certs, supplier incidents (Google/Drift, GitHub, LastPass) | Annual supplier review completed; all suppliers confirmed active & compliant; certs re-verified (Hetzner/LastPass/Miro in Drive); no incident impact to Rate. | [Supplier Review MoM 2026-07-15](https://docs.google.com/document/d/1kJ1Irmnq_kVSMBEBENxYDFbYwwhJF3HG/edit?rtpof=true) |
 
 ## 15. Password Rotation Log
 
