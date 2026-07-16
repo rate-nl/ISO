@@ -2049,7 +2049,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-07-13 | Internal ISO 27001 Audit | Managing Director | Annual | 🔄 Pending | Managing Director | — |
 | 2026-07-14 | Access Control Review | Team Lead Developer | Annual / when someone leaves | ✅ 2026-07-14 | Managing Director | [Access Control Review Record](Logs.md#3-access-control-review-record) |
 | 2026-07-15 | Supplier Security Reviews (Assessment Forms, Threat Intelligence & Cloud Exit) | Managing Director / Team Lead Developer | Annual | ✅ 2026-07-15 | Managing Director | [Threat Intelligence & Cloud Exit Review](Logs.md#14-threat-intelligence--cloud-exit-review) · [Supplier Assessment Form](https://docs.google.com/document/d/1qkl787Qcqa_h0EjhtO-NFPYIWidThRa0/edit?usp=drive_link&ouid=100575306994247914394&rtpof=true&sd=true) |
-| 2026-07-16 | LastPass Full Backup to NAS | Managing Director | Annual | ✅ 2026-07-16 | CEO | [Change Control Log](Logs.md#16-credential--vault-backup-log) |
+| 2026-07-16 | LastPass Full Backup to NAS | Managing Director | Annual | ✅ 2026-07-16 | CEO | [Credential vault backup log](Logs.md#16-credential--vault-backup-log) |
 | 2026-07-20 | CrowdSec Monitoring Log Review | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [CrowdSec Monitoring Log](Logs.md#11-crowdsec-monitoring-log) |
 | 2026-07-26 | Business Continuity & Disaster Recovery Drill | Team Lead Developer | Annual | 🔄 Pending | CEO | [Restore Drill Checklist](Logs.md#9-restore-drill-checklist) |
 | 2026-08-25 | Alternative Access Method Test (Production Servers) | Team Lead Developer | Annual | 🔄 Pending | CEO | [Alternative Access Method Test Log](Logs.md#12-alternative-access-method-test-log) |
