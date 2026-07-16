@@ -22,6 +22,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Alternative Access Method Test | Validate ability to access production servers using Hetzner console and manual firewall IP update | 1 year | Team Lead Developer | Annually or after network change | 15 minutes |
 | Threat Intelligence & Cloud Exit Review | Record of annual review of threat intelligence sources (CrowdSec, ENISA) and validation of cloud exit strategy for Hetzner, Google, and GitHub | 3 years | Team Lead Developer / Managing Director | Annually | 1 hour |
 | Password Rotation Log | Confirm admin and critical passwords are rotated every 180 days | 3 years | Managing Director / Team Lead Developer | Every 180 days | 30 minutes |
+| Credential / Vault Backup Log | Record credential-vault backups to secured storage | 1 year | Team Lead Developer | As performed | 1 hour |
 
 
 
