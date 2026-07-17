@@ -19,14 +19,14 @@
 | E-3 | Objective: Vess360 emotion reliability | Model evaluation report (F1/accuracy, confidence) | GitHub / Drive | 🔄 |
 | E-4 | Objective: Fairness | Subgroup performance review | Drive | ⬜ Pilot (WP2) / Run eval (Vess360) |
 | E-5 | Objective: Model monitoring | Semi-annual drift-check log (this file, §5) | This file | ⬜ After go-live |
-| E-6 | A.5 / Section 9 | Standalone DPIA drafted (v1.0, 8 Jul 2026); CEO signature pending | Drive | 🔄 |
+| E-6 | A.5 / Section 9 | Standalone DPIA v1.0 — CEO signed 13 Jul 2026 | Drive | ✅ |
 | E-7 | A.6 / Section 10 | Model cards (versioned) | GitHub | 🔄 |
 | E-8 | A.6.2 | Validation records — Go/No-Go decision rule defined (AIMS Section 13); runs pending | GitHub / Drive | ⬜ Before go-live |
 | E-9 | A.8/A.9 | Consent-logging **requirements specified** (AIMS Section 8); implement + test before go-live | App logs / Drive | ⬜ Before go-live |
 | E-10 | A.10.3 | Supplier DPAs/SCCs — SAR-001/002/003 drafted (public due diligence); signed DPAs pending | Drive | 🔄 |
 | E-11 | A.8.4 / 10.2 | AI incident records | This file, §10 / ISMS | ⬜ Ongoing (as incidents arise) |
-| E-12 | Clause 9.2 / 9.3 | Internal audit (**external — Jaguar IT**, scheduled); management review MRR-001 template ready | Drive | ⬜ Ready — action pending |
-| E-13 | Clause 7.2/7.3 | Training pack ready (deck, attendance sheet, invitation, script); deliver + file | Drive | ⬜ Ready — action pending |
+| E-12 | Clause 9.2 / 9.3 | Management review MRR-001 signed 10 Jul 2026; internal audit (external — Jaguar IT) pending | Drive | 🔄 |
+| E-13 | Clause 7.2/7.3 | AI training session delivered; attendance signed 9 Jul 2026 (TR-AIMS-001) | Drive | ✅ |
 
 ---
 
@@ -87,8 +87,8 @@
 
 | System | DPIA status | Version / date | Reviewed by | Controller (deployment) | Evidence link | Status |
 |---|---|---|---|---|---|---|
-| iVessy | Standalone DPIA drafted (DPIA_iVessy_Vess360 v1.0) | v1.0 / 8 Jul 2026 | Inge Proost (signature pending) | Healthcare org (processor: CareRate B.V.) | DPIA_iVessy_Vess360.docx | 🔄 signature pending |
-| Vess360 | Standalone DPIA drafted (same document) | v1.0 / 8 Jul 2026 | Inge Proost (signature pending) | Vess B.V. (own corpus) | DPIA_iVessy_Vess360.docx | 🔄 signature pending |
+| iVessy | Standalone DPIA v1.0 signed | v1.0 / signed 13 Jul 2026 | Inge Proost (CEO) | Healthcare org (processor: CareRate B.V.) | DPIA_iVessy_Vess360.docx | ✅ signed |
+| Vess360 | Standalone DPIA v1.0 signed (same document) | v1.0 / signed 13 Jul 2026 | Inge Proost (CEO) | Vess B.V. (own corpus) | DPIA_iVessy_Vess360.docx | ✅ signed |
 
 *Action:* finalise & sign before processing real patient data; review on iVessy migration.
 
@@ -141,7 +141,7 @@
 | Activity | Date | Outcome / findings | Actions | Owner | Status |
 |---|---|---|---|---|---|
 | AIMS internal audit | — | — | — | **External auditor (Jaguar IT)** — AI Technical Lead provides evidence | ⬜ Scheduled |
-| AIMS management review (MRR-001) | — | — | — | AIMS Owner (chair) | ⬜ Template ready |
+| AIMS management review (MRR-001) | 10 Jul 2026 | Completed & signed | Filed in Drive | AIMS Owner (chair) | ✅ Completed |
 
 ---
 
@@ -151,7 +151,7 @@
 
 | Person / group | Topic (responsible AI, bias, AI Act, incident reporting) | Date completed | Evidence link | Status |
 |---|---|---|---|---|
-| — | — | — | — | ⬜ materials ready |
+| All staff | Responsible AI (ISO 42001) | 9 Jul 2026 | Attendance sheet (Drive) | ✅ Completed |
 
 ---
 
@@ -162,3 +162,4 @@
 | 1.1 | 8 Jul 2026 | Synced with AIMS v3.0 gap-remediation (B1–B11): standalone DPIA drafted (E-6); Go/No-Go rule (E-8); SAR-001/002/003 drafted (E-10); Part→Section references updated | Firas Kassoumeh |
 | 1.2 | 8 Jul 2026 | Synced with Table C progress: consent-logging requirements specified — before go-live (E-9); internal audit set to external auditor Jaguar IT (E-12); management-review MRR-001 + training pack ready (E-12/E-13) | Firas Kassoumeh |
 | 1.3 | 8 Jul 2026 | Relabelled all Planned (⬜) items with reason tiers (Before go-live / Pilot WP2 / Ready — action pending / Run eval / After go-live / Ongoing) for audit clarity | Firas Kassoumeh |
+| 1.4 | 13 Jul 2026 | Recorded signed evidence: AIMS approval 8 Jul; training/attendance 9 Jul (E-13); management review MRR-001 10 Jul (E-12); standalone DPIA v1.0 13 Jul (E-6) | Firas Kassoumeh |
