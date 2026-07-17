@@ -37,7 +37,7 @@ Approval is recorded here (approver + date). **A single CEO sign-off covers this
 |---|---|---|---|
 | 1.0 | 18 Jun 2026 | Inge Proost (CEO) | Initial AIMS issued |
 | 2.0 | 30 Jun 2026 | Inge Proost (CEO) | Gap-analysis remediation: added standalone procedures, record templates, EU AI Act mapping, training framework, risk acceptance records, complete Annex A evidence |
-| 3.0 | 6 Jul 2026 | Pending — Inge Proost (CEO) | Format & governance revision: removed inline signature blocks (single sign-off via this log + Manager Approvals); added the Governance Records section; reformatted to ISMS-style numbered sections with a linked Table of Contents and Introduction. No change to policy, risk, AISIA, DPIA or control content. |
+| 3.0 | 6 Jul 2026 | Inge Proost (CEO) — approved 8 Jul 2026 | Format & governance revision: removed inline signature blocks (single sign-off via this log + Manager Approvals); added the Governance Records section; reformatted to ISMS-style numbered sections with a linked Table of Contents and Introduction. No change to policy, risk, AISIA, DPIA or control content. |
 
 ---
 
@@ -134,8 +134,8 @@ Single-file governance index (mirrors the ISMS Governance Records section). Appr
 
 | Activity | Scope | Planned | Lead | Status |
 |---|---|---|---|---|
-| Initial AIMS internal audit | All clauses 4–10 + Annex A | Q3 2026 | AI Technical Lead (independent review by AIMS Owner) | Planned |
-| Initial AIMS management review | Full AIMS review | Q3 2026 | Inge Proost (CEO) | Planned |
+| Initial AIMS internal audit | All clauses 4–10 + Annex A | Q3 2026 | External auditor (Jaguar IT); AIMS Owner reviews | Planned |
+| Initial AIMS management review | Full AIMS review | 10 Jul 2026 | Inge Proost (CEO) | ✅ Completed (MRR-001) |
 | Pre-certification readiness review | Gap-closure verification | Q4 2026 | AI Technical Lead (+ external reviewer) | Planned |
 | Annual AIMS internal audit | All clauses + Annex A | June 2027 | AI Technical Lead | Scheduled |
 
@@ -796,7 +796,7 @@ See Appendix A for the current continual improvement plan.
 
 | Ref | Control title | Applicable | Status | Implementation evidence | Owner | Gap/Action |
 |---|---|---|---|---|---|---|
-| A.2.2 | AI policy | Yes | ✅ | AI Policy in Section 11 (§5.2); CEO approved v2.0 30 Jun 2026 | AIMS Owner | CEO approval recorded in the AIMS Review & Approval Log |
+| A.2.2 | AI policy | Yes | ✅ | AI Policy in Section 11 (§5.2); CEO approved; AIMS v3.0 approved 8 Jul 2026 | AIMS Owner | CEO approval recorded in the AIMS Review & Approval Log |
 | A.2.3 | Alignment with other policies | Yes | ✅ | AIMS integrates with ISMS (readme.md); cross-reference in Appendix B | AI Technical Lead | None |
 | A.2.4 | Review of AI Policy | Yes | ✅ | Annual review cycle defined; v2.0 reviewed 30 Jun 2026; documented in §5.2 | AIMS Owner | First review complete; next June 2027 |
 
@@ -1235,7 +1235,7 @@ AI incidents are handled per the AI Incident Response Procedure (Section 12). AI
 
 # 9. Data Protection Impact Assessment (DPIA)
 
-> **Important:** This section contains the full DPIA text. For operational use, this DPIA should be extracted into a standalone signed PDF and stored in Google Drive. A signed standalone version supersedes this embedded version. Reference the standalone document as "DPIA-iVessy-Vess360-v2.0-[date].pdf" in the evidence log.
+> **Important:** This section contains the full DPIA text. For operational use, this DPIA should be extracted into a standalone signed PDF and stored in Google Drive. A signed standalone version supersedes this embedded version. Reference the standalone document as "DPIA_iVessy_Vess360 v1.0 (signed 13 Jul 2026)" in the evidence log.
 
 **DPIA version:** 2.0
 **Date:** 30 June 2026
@@ -2157,10 +2157,10 @@ Applies to every Model Validation Record (MVR) below. The AI Technical Lead reco
 
 | ID | Date raised | Source | Category | Description | Severity | Immediate containment | Root cause | Corrective action | Owner | Due date | Date closed | Verified by | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| NC-AI-001 | 30 Jun 2026 | Gap analysis | Evidence — Training | No AI-specific training records exist (Clause 7.2) | Major | N/A — not yet operational | AIMS v1.0 did not include AI-specific training programme | Implement AI training programme per ATCP-001; deliver first session; document records in Section 13 | Firas Kassoumeh | Q3 2026 | [TBM] | Inge Proost | 🔄 Open |
+| NC-AI-001 | 30 Jun 2026 | Gap analysis | Evidence — Training | No AI-specific training records exist (Clause 7.2) | Major | N/A — not yet operational | AIMS v1.0 did not include AI-specific training programme | AI training programme implemented (ATCP-001); first session delivered; attendance signed 9 Jul 2026 (TR-AIMS-001) | Firas Kassoumeh | Q3 2026 | 9 Jul 2026 | Inge Proost | ✅ Closed |
 | NC-AI-002 | 30 Jun 2026 | Gap analysis | Audit — AIMS audit | No AIMS internal audit conducted (Clause 9.2) | Major | N/A | AIMS is newly established | Arrange first AIMS internal audit (conducted by **external auditor, Jaguar IT**); provide evidence; file report | Firas Kassoumeh | Q3 2026 | [TBM] | Inge Proost | 🔄 Open |
-| NC-AI-003 | 30 Jun 2026 | Gap analysis | Management review | No AIMS management review conducted (Clause 9.3) | Major | N/A | AIMS is newly established | Schedule first AIMS management review; document using Section 13 template | Inge Proost | Q3 2026 | [TBM] | — | 🔄 Open |
-| NC-AI-004 | 30 Jun 2026 | Gap analysis | DPIA | DPIA not finalized or signed (GDPR Art. 35; A.5.3) | Major | N/A | DPIA embedded in AIMS without sign-off | Extract as standalone document; CEO signs; file in Google Drive | Firas Kassoumeh | Q3 2026 | [TBM] | Inge Proost | 🔄 Open |
+| NC-AI-003 | 30 Jun 2026 | Gap analysis | Management review | No AIMS management review conducted (Clause 9.3) | Major | N/A | AIMS is newly established | First AIMS management review conducted and signed (MRR-001) 10 Jul 2026 | Inge Proost | Q3 2026 | 10 Jul 2026 | Inge Proost | ✅ Closed |
+| NC-AI-004 | 30 Jun 2026 | Gap analysis | DPIA | DPIA not finalized or signed (GDPR Art. 35; A.5.3) | Major | N/A | DPIA embedded in AIMS without sign-off | Standalone DPIA v1.0 extracted; CEO signed 13 Jul 2026; filed in Google Drive | Firas Kassoumeh | Q3 2026 | 13 Jul 2026 | Inge Proost | ✅ Closed |
 | NC-AI-005 | 30 Jun 2026 | Gap analysis | Supplier | Supplier DPAs not confirmed/evidenced (A.10.3) | Major | N/A | Evidence not collected and filed | Confirm DPA status with OpenAI, Azure, Google; file copies in Drive | Firas Kassoumeh | Q3 2026 | [TBM] | Inge Proost | 🔄 Open |
 | NC-AI-006 | 30 Jun 2026 | Gap analysis | Lifecycle | No model validation records (A.6.2, E-8) | Major | Suspend live patient processing until complete | Validation not yet performed | Complete MVR-001 and MVR-002 before any live patient data processing | Firas Kassoumeh | Before pilot | [TBM] | Inge Proost | 🔄 Open |
 | NC-AI-007 | 30 Jun 2026 | Gap analysis | Consent | Consent logging infrastructure not operational (A.8.2, E-9) | Major | Suspend live patient processing until complete | Requirements specified (Section 8 §2.1) — iVessy in development | Implement and test consent logging before iVessy go-live (hard gate); file sample export (E-9) | Firas Kassoumeh | Before go-live | [TBM] | Inge Proost | 🔄 Open — planned |
@@ -2441,14 +2441,14 @@ Given the healthcare context and vulnerable users, each AI system undergoes a do
 | E-3 | Objective: Vess360 emotion reliability | 9.1, A.6.2 | Model evaluation report (overall accuracy; per-emotion F1; confidence distribution) | GitHub / Google Drive | Q3 2026 | 🔄 |
 | E-4 | Objective: Fairness | 9.1, A.5.4 | Subgroup performance analysis (iVessy: language/accent/assistance; Vess360: corpus-level) | Google Drive | Q3 2026 | ⬜ |
 | E-5 | Objective: Model monitoring | 9.1, A.6.2 | Semi-annual drift-check log (MML in Section 13) | This document Section 13 | 6 months post-launch | ⬜ |
-| E-6 | DPIA signed (standalone) | A.5.3, GDPR | Signed standalone DPIA document (DPIA-iVessy-Vess360-v2.0-[date].pdf) | Google Drive | Q3 2026 | 🔄 |
+| E-6 | DPIA signed (standalone) | A.5.3, GDPR | Standalone DPIA v1.0 signed by CEO 13 Jul 2026 (DPIA_iVessy_Vess360.docx) | Google Drive | 13 Jul 2026 | ✅ |
 | E-7 | Model cards (versioned, approved) | A.6.2, A.6.1 | Model cards MC-001, MC-002, MC-003 — approved, dated, version-controlled | This document Section 10 + GitHub | 30 Jun 2026 | 🔄 (recorded in Review & Approval Log) |
 | E-8 | Validation-before-deployment records | A.6.2 | MVR-001 (iVessy LLM) and MVR-002 (Vess360) — signed | Google Drive + Section 13 | Before pilot go-live | ⬜ |
 | E-9 | Consent and transparency logs | A.8.2, A.9.2 | Sample consent log exports; consent infrastructure test results | App logs / Google Drive | Before pilot go-live | ⬜ |
 | E-10 | Supplier DPAs / SCCs | A.10.3 | Signed DPAs with OpenAI, Azure, Google — on file | Google Drive | Q3 2026 | 🔄 |
 | E-11 | AI incident records | A.8.4, 10.1 | AI incident log (Section 13 NC log) — operational with at least one test/drill entry | This document Section 13 | Q3 2026 | 🔄 (template in place; operational pending) |
-| E-12 | Internal audit + management review | 9.2, 9.3 | Audit report (IAC-AIMS-001 completed); Management Review Record (MRR-001 completed) | Google Drive | Q3 2026 | ⬜ |
-| E-13 | Training and awareness records | 7.2, 7.3 | Training register (Section 13 TR-AIMS) — all roles; first AI-specific training session completed | Google Drive | Q3 2026 | ⬜ |
+| E-12 | Internal audit + management review | 9.2, 9.3 | Management review MRR-001 completed & signed 10 Jul 2026; internal audit (external — Jaguar IT) pending | Google Drive | 10 Jul 2026 | 🔄 |
+| E-13 | Training and awareness records | 7.2, 7.3 | First AI-specific training session delivered; attendance signed 9 Jul 2026 (TR-AIMS-001) | Google Drive | 9 Jul 2026 | ✅ |
 | E-14 | Risk Acceptance Records | 6.1.3 | All 7 CEO-approved Risk Acceptance Records (Section 4 §5) | This document Section 4 | 30 Jun 2026 | 🔄 (recorded in Review & Approval Log) |
 | E-15 | AI Policy communication | 5.2, 7.3 | Evidence AI Policy was communicated to all staff (email/meeting record) | Google Drive | Q3 2026 | ⬜ |
 | E-16 | AISIA approvals | A.5.3 | Approved AISIA-001 and AISIA-002 (Section 6) | This document Section 6 | Q3 2026 | 🔄 (recorded in Review & Approval Log) |
@@ -2636,9 +2636,9 @@ This wording must be presented **before** emotion analysis begins, in the user's
 
 | # | Action | Owner | Target date | Priority | Status | Progress notes |
 |---|---|---|---|---|---|---|
-| 1 | Deliver first AI-specific training session for all roles; document records in Section 13 (TR-AIMS); define competence criteria | AI Technical Lead | Q3 2026 | CRITICAL | 🔄 Open | Training content being prepared |
+| 1 | Deliver first AI-specific training session for all roles; document records in Section 13 (TR-AIMS); define competence criteria | AI Technical Lead | Q3 2026 | CRITICAL | ✅ Done | Session delivered; attendance signed 9 Jul 2026 (TR-AIMS-001) |
 | 2 | Conduct first AIMS internal audit (IAC-AIMS-001); document findings; raise corrective actions | AI Technical Lead | Q3 2026 | CRITICAL | 🔄 Open | Checklist in Section 13 |
-| 3 | Conduct first AIMS management review (MRR-001); document outputs; AIMS Owner to sign | AIMS Owner | Q3 2026 | CRITICAL | 🔄 Open | Template in Section 13 |
+| 3 | Conduct first AIMS management review (MRR-001); document outputs; AIMS Owner to sign | AIMS Owner | Q3 2026 | CRITICAL | ✅ Done | Held & signed 10 Jul 2026 (MRR-001) |
 | 4 | Finalize and sign DPIA as standalone document; file in Google Drive | AI Technical Lead + CEO | Q3 2026 | CRITICAL | 🔄 Open | Draft in Section 9 |
 | 5 | Confirm and file supplier DPAs (OpenAI, Azure, Google); complete supplier risk assessments (SAR-001, 002, 003) | AI Technical Lead | Q3 2026 | CRITICAL | 🔄 Open | Templates in Section 13 |
 | 6 | Implement consent logging infrastructure; test; document sample evidence (E-9) | AI Technical Lead | Before pilot go-live / before 2 Aug 2026 | CRITICAL | 🔄 Open | Required for Art. 50 |
