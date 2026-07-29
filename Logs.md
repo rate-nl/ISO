@@ -260,4 +260,4 @@ _A single file to capture and track all required ISMS evidence in one place._
 | 2026-07-15 | Incident Report INC-2026-03-25 | Restricted | Document header | Firas Kassoumeh | [link](https://docs.google.com/document/d/1rawsk6max_HNbIwICoXPdtyMUtmXiEOPj4jiNOWbtzc/edit?tab=t.0) |
 | 2026-07-15 | Supplier Security Assessment Forms (×10) | Confidential | Document footer | Firas Kassoumeh | [folder](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
 | 2026-07-15 | Access Control Review 2026 | Confidential | Document footer | Firas Kassoumeh | [link](https://docs.google.com/document/d/1f9kMCHngHH331trAuSemfKkS3HLZOXru/edit) |
-| 2026-07-15 | Management Review Minutes 2026-07-01 | Confidential | Document footer | Firas Kassoumeh | [link]([PASTE_LINK](https://drive.google.com/drive/folders/1B4FHXc_tqqcvScazOXhOAjDZ8MqTRpl2)) |
+| 2026-07-15 | Management Review Minutes 2026-07-01 | Confidential | Document footer | Firas Kassoumeh | [link](https://drive.google.com/drive/folders/1B4FHXc_tqqcvScazOXhOAjDZ8MqTRpl2) |
