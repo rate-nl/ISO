@@ -1107,6 +1107,20 @@ Applies to all digital, physical, and cloud-based assets accessed by Rate employ
   - **All assets in the inventory must be classified accordingly** and updated in the asset inventory list.
   - Asset classification must be reviewed annually to ensure proper security controls are in place.
 
+**Information Labelling Procedure (A.5.13):**
+Information is labelled according to its classification so handling requirements are clear to anyone accessing it:
+
+| Classification | Label / marking method | Handling |
+|----------------|------------------------|----------|
+| **Public** | No label required | Freely shareable |
+| **Internal** | Google Drive folder location; no explicit marking required | Employees only |
+| **Confidential** | "Confidential" in document header/footer or filename; stored in access-restricted Drive folders | Need-to-know; access-controlled |
+| **Restricted** | "Restricted" in header/footer or filename; encrypted storage; per-tenant tagging for health data | Strict least-privilege; encrypted at rest/in transit |
+
+- Health-related personal data is always treated as **Restricted** and tagged per healthcare-customer tenant.
+- The classification of each asset is recorded in the Asset Inventory (Logs §5).
+- Labelling is verified during the annual asset-classification review.
+
 The table below lists Rate's **critical on-premises physical assets**, which require enhanced physical-security controls because they are located in the CEO's home office. The **complete asset register** — all laptops, desktops, monitors, network equipment, and software — is maintained separately in the [Asset Inventory](https://github.com/rate-nl/ISO/blob/main/Logs.md#5-asset-inventory) (Logs — Section 5) and reviewed annually. Legal ownership of assets rests with the relevant Rate entity (DineRate B.V. / CareRate B.V.); the **asset-owner / custodian role** for ISMS purposes is assigned as defined above.
 
 **Key on-premises assets are inventoried as follows:**
@@ -1360,7 +1374,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 | A.5.10                | Acceptable use of information and other associated assets   | ✅       | Enforces proper handling and usage of assets.                                                     | Asset Management Policy                         | Managing Director                       |
 | A.5.11                | Return of assets                                            | ✅       | Ensures retrieval of assets upon employee exit.                                                   | Asset Management Policy                         | Managing Director                       |
 | A.5.12                 | Classification of information | ✅         | Classification levels (Public, Internal, Confidential, Restricted) are defined in the Asset Management Policy and applied to all assets. | Asset Management Policy             | Managing Director       |
-| A.5.13                 | Labelling of information      | ✅         | Logical labelling is implemented via file permissions, Google Drive folder structures, and access control settings rather than physical labels. | Asset Management Policy, Access Control Policy | Team Lead Developer     |
+| A.5.13                 | Labelling of information      | ✅         | Information is labelled according to the 4-tier classification scheme (Public, Internal, Confidential, Restricted) using the Information Labelling Procedure in the Asset Management Policy: document headers/footers for Confidential and Restricted files, folder-level tagging in Google Drive, per-tenant tagging for health data, and classification recorded in the Asset Inventory. Public and anonymized data require no marking. | Asset Management Policy, Access Control Policy | Team Lead Developer     |
 | A.5.14                 | Information transfer          | ✅         | Information transfer is secured using TLS, VPN, and encrypted cloud services. USB/removable media are prohibited. | Asset Management Policy, Access Control Policy | Team Lead Developer & Managing Director |
 | A.5.15                | Access control                                              | ✅       | Reduces risk of unauthorized access.                                                              | Access Control Policy                           | Team Lead Developer                     |
 | A.5.16                | Identity management                                         | ✅       | Manages user identities securely.                                                                 | Access Control Policy                           | Team Lead Developer                     |
