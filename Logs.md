@@ -23,6 +23,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Threat Intelligence & Cloud Exit Review | Record of annual review of threat intelligence sources (CrowdSec, ENISA) and validation of cloud exit strategy for Hetzner, Google, and GitHub | 3 years | Team Lead Developer / Managing Director | Annually | 1 hour |
 | Password Rotation Log | Confirm admin and critical passwords are rotated every 180 days | 3 years | Managing Director / Team Lead Developer | Every 180 days | 30 minutes |
 | Credential / Vault Backup Log | Record credential-vault backups to secured storage | 1 year | Team Lead Developer | As performed | 1 hour |
+| Information Labelling Register | Evidence that information is labelled per classification scheme | 3 years | Team Lead Developer | As performed / annually | 30 minutes |
 
 
 
@@ -248,3 +249,15 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Date | Source | Destination | Encryption | Performed By | Result | Evidence |
 |------|--------|-------------|------------|--------------|--------|----------|
 | 2026-07-15 | LastPass vault (full export) | Synology NAS — access-controlled folder | Stored in encrypted volume / encrypted archive | Firas Kassoumeh | Success — file present, current, encrypted | [Screenshot](https://drive.google.com/file/d/1QsnQShgVb6glCvZcbo5pTh7FMzQmDrMT/view?usp=drive_link) |
+
+## 17. Information Labelling Register
+**Purpose:** Evidence that information is labelled according to the classification scheme (A.5.13).  
+**Retention:** 3 years · **Owner:** Team Lead Developer
+
+| Date | Document | Classification | Label Location | Labelled By | Evidence |
+|------|----------|----------------|----------------|-------------|----------|
+| 2026-07-15 | Asset Inventory (Google Sheet) | Confidential | Header row (frozen) | Firas Kassoumeh | [link](https://docs.google.com/spreadsheets/d/1pTpcCb0NRaoKwHqVUfqojYlkyGQRnSVEPFTyKMASNBg/edit?usp=sharing) |
+| 2026-07-15 | Incident Report INC-2026-03-25 | Restricted | Document header | Firas Kassoumeh | [link](https://docs.google.com/document/d/1rawsk6max_HNbIwICoXPdtyMUtmXiEOPj4jiNOWbtzc/edit?tab=t.0) |
+| 2026-07-15 | Supplier Security Assessment Forms (×10) | Confidential | Document footer | Firas Kassoumeh | [folder](https://drive.google.com/drive/folders/1W2D7YA6JMV3gsd8U0jNEozAEscZXi50i) |
+| 2026-07-15 | Access Control Review 2026 | Confidential | Document footer | Firas Kassoumeh | [link](https://docs.google.com/document/d/1f9kMCHngHH331trAuSemfKkS3HLZOXru/edit) |
+| 2026-07-15 | Management Review Minutes 2026-07-01 | Confidential | Document footer | Firas Kassoumeh | [link]([PASTE_LINK](https://drive.google.com/drive/folders/1B4FHXc_tqqcvScazOXhOAjDZ8MqTRpl2)) |
