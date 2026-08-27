@@ -172,6 +172,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 |:-----------|:-----------|:------------------|:-----------|:--------------------|:-----------------------------|
 | DRILL-001  | 10-01-2025 | Team lead , Developers    | Successful | Met 4-hour RTO goal | [Hetzner migration](https://trello.com/c/PdvfZXPs)  |
 | DRILL-002  | 29-07-2025 | CEO, Team lead    | Successful | Met 4-hour RTO goal | [Business Continuity & Disaster Recovery Drill Report](https://docs.google.com/document/d/10gqrAy8atvssXkNBAlIAWsQb5nvZivrszV974V0S1u4/edit?tab=t.0)  |
+| DRILL-003  | 27-08-2025 | CEO, Team lead    | Successful | Met 4-hour RTO goal | [Business Continuity & Disaster Recovery Drill Report](https://docs.google.com/document/d/1GDLk7cP4KIc7dagGMIIsMrGRVOTkhaeZ/edit)  |
 
 
 ---
