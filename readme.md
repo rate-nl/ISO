@@ -2032,6 +2032,8 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 
 | **Risk Assessment & Treatment Plan — RA-2026-001** | 2026-03-30 | Firas Kassoumeh | ✅ Yes | CEO (Inge Proost) | **2026-03-30** | ✅ Closed — UPS installed | Risk assessment for NAS power outage (INC-2026-03-25). Risk #42 updated. UPS procured and installed June 2026; home office power continuity now in place. [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN) |
 
+| **Management Review — 2026-08-25** | 2026-08-25 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-08-28 | ✅ Approved | Post-internal-audit management review (Clause 9.3) of the 14 July 2026 Jaguar IT ISO 27001 / NEN 7510 audit. Verified closure of all six internal-audit nonconformities (NB-2026-01 Major; NC-2026-01…05 Minor) with root-cause analysis. 5 of 6 ISMS objectives met; the "zero major nonconformities" KPI recorded as not met but remediated within 30 days. Five OFIs (OFI-2026-01…05) approved as the next-cycle action plan. ISMS confirmed suitable, adequate, and effective. Signed by CEO & ISO Lead. |
+
 ---
 
 
