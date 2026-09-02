@@ -14,7 +14,7 @@
 
 ## 3. Statement of Applicability
    - [ISO 27001:2022 Controls](#2-iso270012022--controls)
-   - [NEN 7510-1:2024 Healthcare-Specific Controls](#3-nen-7510-1:2024--healthcare-specific-controls)
+   - [NEN 7510-1:2024 Healthcare-Specific Controls](#3-nen-7510-12024--healthcare-specific-controls)
 
 ## 4. Compliance & Security Governance
    - [Legal & Regulatory Register](#legal--regulatory-register)
