@@ -1867,7 +1867,7 @@ The following improvement points were identified during the NEN 7510:2022 contro
 | OFI-2026-01 | 5.2 / 6.2 | Define an explicit framework (e.g. SMART) linking policy intent to verifiable objectives. | Restate security objectives in SMART form. | Firas Kassoumeh | Open |
 | OFI-2026-02 | 9.2.2 | Make the internal audit program more specific/risk-based rather than auditing everything each cycle. | Introduce a risk-based, multi-year audit plan. | Firas Kassoumeh | Open |
 | OFI-2026-03 | 10.2 | Align incident-management with the nonconformity/corrective-action process and deepen root-cause analysis (5-Whys). | Adopt a structured RCA method; cross-link both workflows. | Firas Kassoumeh | Open |
-| OFI-2026-04 | A.5.35 / A.8.8 | No technical vulnerability scan of production infrastructure, VPN, and NAS evidenced. | Perform a documented vulnerability scan with findings + treatment plan; add to Audit Calendar. | Firas Kassoumeh | Open |
+| OFI-2026-04 | A.5.35 / A.8.8 | No technical vulnerability scan of production infrastructure, VPN, and NAS evidenced. | Documented vulnerability scan performed 2026-09-01 (production server) with findings + treatment plan, logged as VULN-2026-001 in the Vulnerability Management Log; added to Audit Calendar (annual).| Firas Kassoumeh | Closed 2026-09-01 |
 | OFI-2026-05 | A.5.9 | Asset register layout/formatting not fully aligned. | Reformat the asset inventory for consistency. | Firas Kassoumeh | Open |
 
 
