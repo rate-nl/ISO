@@ -18,7 +18,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Risk Assessment Report       | Documented risk identification and analysis            | 3 years          | Managing Director      | After major change                      | 2 hours                  |
 | Restore Drill Checklist      | Validate that backup recovery is documented and tested | 1 year           | Team Lead Developer    | Annually                                | 1 hour                   |
 | Device Offboarding Checklist | Confirm access revoked and assets returned             | 3 years          | Managing Director      | Per offboarding                         | 15 minutes per employee  |
-| CrowdSec Monitoring Log   | Detect threats (port scans, brute-force, etc.) | 3 year         | Team Lead Developer    | Annually  | 30 minutes  |
+| CrowdSec Monitoring Log | Detect threats (port scans, brute-force, etc.) | 3 years | Team Lead Developer | Annually | 30 minutes |
 | Alternative Access Method Test | Validate ability to access production servers using Hetzner console and manual firewall IP update | 1 year | Team Lead Developer | Annually or after network change | 15 minutes |
 | Threat Intelligence & Cloud Exit Review | Record of annual review of threat intelligence sources (CrowdSec, ENISA) and validation of cloud exit strategy for Hetzner, Google, and GitHub | 3 years | Team Lead Developer / Managing Director | Annually | 1 hour |
 | Password Rotation Log | Confirm admin and critical passwords are rotated every 180 days | 3 years | Managing Director / Team Lead Developer | Every 180 days | 30 minutes |
@@ -197,7 +197,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 
 **Purpose:** Detect and block intrusion attempts, port scans, and other server-level threats using CrowdSec.
 
-**Retention:** 1 year  
+**Retention:** 3 years  
 **Owner:** Team Lead Developer
 
 | Log ID   | Date       | System        | Detected Threats                | Action Taken           | Link                                     |
