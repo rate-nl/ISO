@@ -203,6 +203,7 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Log ID   | Date       | System        | Detected Threats                | Action Taken           | Link                                     |
 |----------|------------|----------------|----------------------------------|------------------------|------------------------------------------|
 | CSEC-001 | 2025-07-14 | Production     | 0 brute-force attempts blocked | IPs banned automatically | [CrowdSec Report](https://drive.google.com/file/d/1ezrkXcxCGAwg8tC8z4s_orQlk4hRmS0i/view?usp=sharing) |
+| CSEC-002 | 2026-09-01 | Production | Annual review performed. Monitoring stack found stopped since 2026-03-18 (IR-2026-003); rebuilt on patched images against native Windows engine. Native engine active with local detections (http-probing, wordpress-scan, admin-probing). Enforcement restored via Windows Firewall Bouncer. Auto-restart + watchdog added. | Dashboard rebuilt; bouncer installed (blocking active); SCM auto-restart + email watchdog configured; outage logged as IR-2026-003. | ✅ Done | [Evidence Folder](https://drive.google.com/drive/folders/1xyGf9o5WdAYFRFh-EBgbvTUI4dHXJItr) |
 
 
 **Evidence — CSEC-002 (2026-09-01), stored in Drive → CSEC-001 folder:**
