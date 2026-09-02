@@ -791,7 +791,7 @@ Threat intelligence activities are categorized as follows:
 - **Tactical Threat Intelligence** – indicators of attack and methods observed within the industry (e.g., CrowdSec dashboards, GitHub security alerts). Reviewed quarterly by the Team Lead Developer.  
 - **Operational Threat Intelligence** – real-time detection and blocking (CrowdSec logs, firewall events). Monitored continuously by the Team Lead Developer.  
 
-All relevant findings and mitigations are recorded in the **CrowdSec Monitoring Log (Logs.md)** and evaluated during the **annual internal audit**.
+All relevant findings and mitigations are recorded in the **CrowdSec Monitoring Log (Logs.md)** and evaluated during the **annual internal audit**. Continuity of monitoring and enforcement is protected by service auto-restart (SCM recovery) on the CrowdSec engine and Windows Firewall Bouncer, and by an independent watchdog (5-minute scheduled task) that restarts these services and the monitoring dashboard and issues an email alert on any state change.
 
 
 ## 7. Alternative Secure Access Methods
@@ -2101,6 +2101,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-07-26 | Business Continuity & Disaster Recovery Drill | Team Lead Developer | Annual | ✅ 2026-08-28  | CEO | [Restore Drill Checklist](Logs.md#9-restore-drill-checklist) |
 | 2026-08-25 | Alternative Access Method Test (Production Servers) | Team Lead Developer | Annual | ✅ 2026-08-31 | CEO | [Alternative Access Method Test Log](Logs.md#12-alternative-access-method-test-log) |
 | 2026-09-01 | Annual Vulnerability Scan (Production Server) | Team Lead Developer | Annual | ✅ 2026-09-01 | Managing Director | [Vulnerability Management Log](Logs.md#18-vulnerability-management-log) |
+| 2026-09-01 | Hardening Baseline Review | Team Lead Developer | Annual | ✅ 2026-09-01 | Managing Director | [Hardening Review Log](Logs.md#19-hardening-review-log) |
 | 2026-09-27 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | 🔄 Pending | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
 | 2026-10-15 | Annual Vulnerability Scan (VPN + NAS) | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Vulnerability Management Log](Logs.md#18-vulnerability-management-log) |
 | 2026-10-16 | Endpoint Patch/Update – Annual Verification (SEC-2026-003) | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
