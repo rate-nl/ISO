@@ -14,7 +14,7 @@
 
 ## 3. Statement of Applicability
    - [ISO 27001:2022 Controls](#2-iso270012022--controls)
-   - [NEN 7510:2022 Healthcare-Specific Controls](#3-nen-75102022--healthcare-specific-controls)
+   - [NEN 7510-1:2024 Healthcare-Specific Controls](#3-nen-7510-1:2024--healthcare-specific-controls)
 
 ## 4. Compliance & Security Governance
    - [Legal & Regulatory Register](#legal--regulatory-register)
@@ -48,7 +48,7 @@ The development, maintenance, hosting, and support of SaaS applications that ena
 
 This scope covers all Rate employees, contractors, and systems including the SaaS platform, cloud infrastructure (Hetzner), home office infrastructure (NAS and Dev Server), and all customer segments — healthcare, education, and other organizations.
 
-### NEN 7510:2022
+### NEN 7510-1:2024
 The same SaaS platform, but limited to the processing of health-related personal data for healthcare organizations in the Netherlands, in accordance with Wkkgz and Wabvpz. Education, non-healthcare customers, fully anonymized data, and corporate HR/finance systems are excluded from this scope.
 
 ## Context of the Organization (Clause 4.1)
@@ -93,7 +93,7 @@ To support this scope, the following diagram provides a high-level overview of R
 ---
 ## ISMS Continual Improvement (PDCA Cycle)
 
-Rate's ISMS operates on the Plan-Do-Check-Act (PDCA) model underpinning ISO 27001:2022 and NEN 7510:2022, ensuring continual improvement (Clause 10.1).
+Rate's ISMS operates on the Plan-Do-Check-Act (PDCA) model underpinning ISO 27001:2022 and NEN 7510-1:2024, ensuring continual improvement (Clause 10.1).
 
 | Phase | ISMS Activities | Primary Evidence |
 |-------|-----------------|------------------|
@@ -102,7 +102,7 @@ Rate's ISMS operates on the Plan-Do-Check-Act (PDCA) model underpinning ISO 2700
 | **Check** | Monitor, measure, audit, and review performance | ISMS Performance Metrics (KPIs), Internal Audit Program, Management Review, CrowdSec Monitoring & DB Restore logs |
 | **Act** | Correct nonconformities, prevent recurrence, and improve | Corrective Actions & Non-Compliance Log, GAP Analysis, NEN 7510 Implementation Improvement Points (§6) |
 
-The cycle repeats annually and after any major change or incident, driving measurable and auditable improvement across both ISO 27001:2022 and NEN 7510:2022.
+The cycle repeats annually and after any major change or incident, driving measurable and auditable improvement across both ISO 27001:2022 and NEN 7510-1:2024.
 
 ---
 
@@ -1344,8 +1344,8 @@ To satisfy ISO 27001:2022 Annex A control A.8.27, Rate establishes and applies t
 ## **1. Introduction**
 
 ### **1.1 Purpose**
-The **Statement of Applicability (SoA)** defines the security controls selected and applied within **Rate’s Information Security Management System (ISMS)**. It ensures alignment with **ISO  27001:2022** and **NEN 7510:2022** and provides justification for the inclusion or exclusion of Annex A controls.
-As of Version 4.0, this SoA covers both ISO 27001:2022 and NEN 7510:2022 healthcare-specific controls.
+The **Statement of Applicability (SoA)** defines the security controls selected and applied within **Rate’s Information Security Management System (ISMS)**. It ensures alignment with **ISO  27001:2022** and **NEN 7510-1:2024** and provides justification for the inclusion or exclusion of Annex A controls.
+As of Version 4.0, this SoA covers both ISO 27001:2022 and NEN 7510-1:2024 healthcare-specific controls.
 
 This document:
 - Identifies applicable **Annex A** controls from ISO  27001:2022.
@@ -1466,17 +1466,17 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 
 ---
 
-### **3. NEN 7510:2022 — Healthcare-Specific Controls**
+### **3. NEN 7510-1:2024 — Healthcare-Specific Controls**
 
 The following controls are additional to ISO 27001:2022 and apply specifically to Rate's 
 processing of health-related personal data for Dutch healthcare organizations under the 
-NEN 7510:2022 scope. Controls marked "Additional" extend an existing ISO 27001 control 
+NEN 7510-1:2024 scope. Controls marked "Additional" extend an existing ISO 27001 control 
 with a healthcare requirement; controls marked "HLT" are health-specific and unique to 
 NEN 7510.
 
 | Control | Title | Type | Status | Justification | Owner |
 |---------|-------|------|--------|---------------|-------|
-| A.5.1 | Information security policies | Additional | ✅ | ISMS Information Security Policy applies; explicitly addresses health data protection and references Wkkgz, Wabvpz, NEN 7510:2022. | ISO Lead / CEO |
+| A.5.1 | Information security policies | Additional | ✅ | ISMS Information Security Policy applies; explicitly addresses health data protection and references Wkkgz, Wabvpz, NEN 7510-1:2024. | ISO Lead / CEO |
 | A.5.2 | Information security roles and responsibilities | Additional | ✅ | Roles defined in ISMS Manual Section 4; responsibility for health data protection assigned to ISO Lead, accountability with CEO. | CEO / ISO Lead |
 | A.5.9 | Inventory of information and associated assets | Additional | ✅ | Asset Inventory maintained; health-related data assets identified and classified separately as special-category data. | Managing Director |
 | A.5.11 | Return of assets | Additional | ✅ | Device Offboarding Checklist covers asset return; ensures no health data remains on returned devices. | Managing Director |
@@ -1517,7 +1517,7 @@ Rate maintains a formal Legal & Regulatory Register documenting all laws, regula
 
 | Law / Regulation | Applies? | What Rate Must Do | Status | Owner |
 |------------------|----------|-------------------|--------|-------|
-| NEN 7510:2022 | ✅ Yes | Maintain ISMS covering health data processing. Create NEN 7510 Statement of Applicability. Conduct risk analysis for healthcare data. Maintain incident procedure for health data breaches. | 🔄 In Progress | ISO Lead (Firas Kassoumeh) |
+| NEN 7510-1:2024 | ✅ Yes | Maintain ISMS covering health data processing. Create NEN 7510 Statement of Applicability. Conduct risk analysis for healthcare data. Maintain incident procedure for health data breaches. | 🔄 In Progress | ISO Lead (Firas Kassoumeh) |
 | GDPR / AVG | ✅ Yes | Maintain Record of Processing Activities. Handle data breaches within 72 hours. Respond to data subject requests. Maintain Data Processing Agreements with customers and suppliers. | ✅ Compliant | Managing Director |
 | Wkkgz | ✅ Yes | Ensure platform supports secure logging of healthcare quality data. Support healthcare customers in meeting their Wkkgz obligations via Rate's platform. | ✅ Compliant | CEO (Inge Proost) |
 | Wabvpz | ✅ Yes | Ensure health data processed via Rate's platform meets Wabvpz requirements. Implement appropriate access controls and logging for health data exchange. | 🔄 In Progress | ISO Lead (Firas Kassoumeh) |
@@ -1532,7 +1532,7 @@ Rate is committed to ensuring compliance with all applicable **legal, regulatory
 ### **Applicable Laws & Regulations**
 
 - **General Data Protection Regulation (GDPR / AVG)** – Governs data protection and privacy for EU residents, including special-category health data.
-- **NEN 7510:2022** – Dutch standard for information security in healthcare; applies to Rate's processing of health-related personal data for Dutch healthcare organizations.
+- **NEN 7510-1:2024** – Dutch standard for information security in healthcare; applies to Rate's processing of health-related personal data for Dutch healthcare organizations.
 - **Wkkgz (Wet kwaliteit, klachten en geschillen zorg)** – Dutch Healthcare Quality, Complaints and Disputes Act; relevant as Rate's platform supports healthcare quality evaluation.
 - **Wabvpz (Wet aanvullende bepalingen verwerking persoonsgegevens in de zorg)** – Additional provisions for processing personal data in healthcare; governs electronic exchange of health data.
 - **ISO/IEC 27001:2022** – International standard for information security management.
@@ -1768,12 +1768,12 @@ Each year, a structured **audit plan** is developed by the **Managing Director**
 ### GAP Analysis
 
 Rate conducts periodic GAP analyses to assess the current compliance status of the 
-ISMS against ISO 27001:2022 and NEN 7510:2022 requirements. The GAP analysis 
+ISMS against ISO 27001:2022 and NEN 7510-1:2024 requirements. The GAP analysis 
 identifies open and pending items, assigns owners and deadlines, and tracks resolution.
 
 | Date | Scope | Status | Approved By | Link |
 |------|-------|--------|-------------|------|
-| 2026-06-05 | ISO 27001:2022 & NEN 7510:2022 — full ISMS review | ✅ Signed | CEO (Inge Proost) | [GAP Analysis Report — June 2026](https://drive.google.com/file/d/1x-j1DUd9uKQJXMBZJ61KZyD4gCzk4nOx/view?usp=drive_link) |
+| 2026-06-05 | ISO 27001:2022 & NEN 7510-1:2024 — full ISMS review | ✅ Signed | CEO (Inge Proost) | [GAP Analysis Report — June 2026](https://drive.google.com/file/d/1x-j1DUd9uKQJXMBZJ61KZyD4gCzk4nOx/view?usp=drive_link) |
 
 The GAP analysis is reviewed annually and after any major ISMS change.
 
@@ -1839,7 +1839,7 @@ The following findings were identified during the **external ISO 27001:2022 cert
 
 ## 6. NEN 7510 Implementation 2026 – Improvement Points
 
-The following improvement points were identified during the NEN 7510:2022 controls implementation and Statement of Applicability mapping conducted in June 2026.
+The following improvement points were identified during the NEN 7510-1:2024 controls implementation and Statement of Applicability mapping conducted in June 2026.
 
 | ID | Finding type | Norm element | Anomaly type | Description of deviation | Root cause analysis | Scope of analysis | Recovery on the deviation (direct recovery) | Corrective action of the root cause | Corrective Action Taken | Responsible | Status |
 |----|--------------|--------------|--------------|--------------------------|---------------------|-------------------|---------------------------------------------|-------------------------------------|-------------------------|-------------|--------|
@@ -1847,7 +1847,7 @@ The following improvement points were identified during the NEN 7510:2022 contro
 
 ## 7. Internal Audit 2026 (Jaguar IT — 14 July 2026) – Corrective Actions
 
-**Audit date:** 14 July 2026 · **Auditor:** Steven Vogelaar (Jaguar IT, Lead Auditor) · **Standard:** ISO 27001:2022 / NEN 7510:2022
+**Audit date:** 14 July 2026 · **Auditor:** Steven Vogelaar (Jaguar IT, Lead Auditor) · **Standard:** ISO 27001:2022 / NEN 7510-1:2024
 **Result:** 1 Major nonconformity, 5 Minor nonconformities, 5 Opportunities for Improvement.
 **Report:** [Internal Audit Report 2026 (Jaguar IT)](https://drive.google.com/file/d/1ezrkXcxCGAwg8tC8z4s_orQlk4hRmS0i/view?usp=drive_link)
 
@@ -2021,7 +2021,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 
 
 
-| **Statement of Applicability (SoA) — v4.0 (NEN 7510)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-12 | ✅ Approved | SoA updated to Version 4.0 — added NEN 7510:2022 healthcare-specific controls (22 controls) as a separate table. A.7.10 aligned to ✅ across both ISO and NEN tables. Approved by CEO email. |
+| **Statement of Applicability (SoA) — v4.0 (NEN 7510)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-12 | ✅ Approved | SoA updated to Version 4.0 — added NEN 7510-1:2024 healthcare-specific controls (22 controls) as a separate table. A.7.10 aligned to ✅ across both ISO and NEN tables. Approved by CEO email. |
 
 | **Role Assignments & RACI Matrix (Policy 4.6)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-12 | ✅ Approved | New section formalizing ISMS role assignments, RACI matrix (10 grouped activities, 3-column structure), and segregation-of-duties statement. Approved by CEO email. |
 
