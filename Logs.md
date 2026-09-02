@@ -24,8 +24,8 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Password Rotation Log | Confirm admin and critical passwords are rotated every 180 days | 3 years | Managing Director / Team Lead Developer | Every 180 days | 30 minutes |
 | Credential / Vault Backup Log | Record credential-vault backups to secured storage | 1 year | Team Lead Developer | As performed | 1 hour |
 | Information Labelling Register | Evidence that information is labelled per classification scheme | 3 years | Team Lead Developer | As performed / annually | 30 minutes |
-
-
+| Vulnerability Management Log | Record annual technical vulnerability scans of critical systems, findings, and treatment | 3 years | Team Lead Developer | Annually | 1 hour |
+| Hardening Review Log | Verify system hardening baseline and record remediation | 3 years | Team Lead Developer | Annually | 30 minutes |
 
 ---
 
@@ -204,6 +204,20 @@ _A single file to capture and track all required ISMS evidence in one place._
 | CSEC-001 | 2025-07-14 | Production     | 0 brute-force attempts blocked | IPs banned automatically | [CrowdSec Report](https://drive.google.com/file/d/1ezrkXcxCGAwg8tC8z4s_orQlk4hRmS0i/view?usp=sharing) |
 
 
+**Evidence — CSEC-002 (2026-09-01), stored in Drive → CSEC-001 folder:**
+[Evidence Folder](https://drive.google.com/drive/folders/1xyGf9o5WdAYFRFh-EBgbvTUI4dHXJItr)
+
+| File | Description |
+|------|-------------|
+| CSEC-002_prometheus-target-up_2026-09-01.png | Prometheus Targets page: crowdsec job UP, scraping native Windows engine (host.docker.internal:6060) — monitoring live |
+| CSEC-002_grafana-dashboards_2026-09-01.png | Grafana home with restored CrowdSec dashboards (Insights, Metrics, Cyber Threat Insights) — visual monitoring operational |
+| CSEC-002_patched-images_2026-09-01.png | `docker compose images`: Grafana/Prometheus on freshly pulled patched images — CVE control on the monitoring stack |
+| CSEC-002_local-detections_2026-09-01.png | `cscli metrics`: Local API Decisions with Origin=crowdsec bans — engine detecting real attacks on the server |
+| CSEC-002_bouncer-enforcement-live_2026-09-01.png | `cscli bouncers list` (Valid ✓) + crowdsec-blocklist firewall Block rules — enforcement (block) operating |
+| CSEC-002_old-stack-last-activity_2026-03-18.png | Old-stack Docker logs, last entry 2026-03-18 with SMTP-not-configured error — outage start date + root cause |
+| CSEC-002_watchdog-restart-and-alert_2026-09-01.png | Watchdog log (service down→restarted) + alert email — self-healing and notification working |
+
+
 ## 12. Alternative Access Method Test Log
 
 **Purpose:** Confirm ability to access production servers when primary network (e.g., office internet) is unavailable. Ensures resilience through console access and external firewall control.  
@@ -268,3 +282,56 @@ _A single file to capture and track all required ISMS evidence in one place._
 | 2026-07-15 | Access Control Review 2026 | Confidential | Document footer | Firas Kassoumeh | [link](https://docs.google.com/document/d/1f9kMCHngHH331trAuSemfKkS3HLZOXru/edit) |
 | 2026-07-15 | Management Review Minutes 2026-07-01 | Confidential | Document footer | Firas Kassoumeh | [link](https://drive.google.com/drive/folders/1B4FHXc_tqqcvScazOXhOAjDZ8MqTRpl2) |
 | 2026-08-28 | Management Review Minutes 2026-08-25 | Confidential | Document footer | Firas Kassoumeh | [link](https://drive.google.com/drive/folders/1B4FHXc_tqqcvScazOXhOAjDZ8MqTRpl2) |
+
+
+## 18. Vulnerability Management Log
+
+**Purpose:** Record technical vulnerability scans of critical systems (production server, VPN, NAS), findings, and their treatment, per §6.8 Technical Vulnerability Management.
+
+**Retention:** 3 years  
+**Owner:** Team Lead Developer  
+**Reference ID:** VULN-2026-001  
+**Frequency:** Annually  
+**Related Controls:** A.8.8 (Management of technical vulnerabilities), A.8.25 (Secure development / technical assessment), A.5.7 (Threat intelligence)  
+**Linked Policies:** Information Security Policy; Change Management Policy  
+**Verification Method:** Nmap scan output (.nmap/.xml), version/edition checks, external exposure tests, remediation evidence
+
+> **Note:** Annual technical vulnerability scan performed with Nmap 7.99 (`-sV --script vulners`) against the production server, complemented by native version/edition verification and external (off-VPN) exposure testing. Findings are triaged by real applicability and exposure, then treated via patching or change control. First formal scan performed 2026-09-01, closing OFI-2026-04.
+
+| Scan ID | Date | System | Findings | Treatment | Status | Link |
+|---------|------|--------|----------|-----------|--------|------|
+| VULN-2026-001 | 2026-09-01 | Production Server (88.198.52.196) | Technical vulnerability scan performed. MailEnable CVE-2026-44400 (CVSS 9.8) flagged by scanner — **not applicable** (Enterprise Premium only; server runs Standard Edition 10.51, registry-verified). SQL Server 2019 on RTM (15.0.2000, no CU); port 1433 confirmed **not internet-reachable** (external off-VPN test). MailEnable 10.51 behind current (10.55/56). Hardening: password min-length 0 → 12; history None → 5. | CVE-2026-44400: closed, N/A (edition-verified). SQL 2019 CU + MailEnable version currency: **Risk Accepted** — not internet-reachable / Standard edition, low residual risk. Password policy: remediated same-day. | ✅ Closed | [Evidence Folder](https://drive.google.com/drive/folders/1xyGf9o5WdAYFRFh-EBgbvTUI4dHXJItr) |
+
+
+**Evidence — VULN-2026-001 (2026-09-01), stored in Drive → CSEC-001 folder:**
+[Evidence Folder](https://drive.google.com/drive/folders/1xyGf9o5WdAYFRFh-EBgbvTUI4dHXJItr) 
+
+| File | Description |
+|------|-------------|
+| VULN-2026-001_nmap-internal-scan_2026-09-01.png / .pdf | Nmap `-sV --script vulners` output — open ports, service versions, flagged CVEs (the scan itself) |
+| VULN-2026-001_mailenable-edition-standard_2026-09-01.png | Registry: Product Name = Standard Edition, v10.51 — proves CVE-2026-44400 (Premium-only) is Not Applicable |
+| VULN-2026-001_sqlserver-build-rtm_2026-09-01.png | `sqlcmd`: Version 15.0.2000 / RTM / CU none / Web Edition — documents SQL patch level |
+| VULN-2026-001_external-exposure-blocked_2026-09-01.png | Off-VPN `Test-NetConnection` (Ethernet): admin/DB ports False — firewall blocks them from the internet |
+
+## 19. Hardening Review Log
+
+**Purpose:** Record periodic verification of the system hardening baseline (§6.3) and any remediation.
+
+**Retention:** 3 years  
+**Owner:** Team Lead Developer  
+**Reference ID:** HARD-2026-001  
+**Frequency:** Annually  
+**Related Controls:** A.8.9 (Configuration management)  
+**Verification Method:** Configuration spot-check output, before/after remediation evidence
+
+| Review ID | Date | System | Findings & Actions | Status | Link |
+|-----------|------|--------|--------------------|--------|------|
+| HARD-2026-001 | 2026-09-01 | Production Server | Baseline spot-check performed. SMBv1 disabled ✅, Guest disabled ✅. Password min-length 0 → remediated to 12; password history None → remediated to 5. | ✅ Closed | [Evidence Folder](https://drive.google.com/drive/folders/1xyGf9o5WdAYFRFh-EBgbvTUI4dHXJItr) |
+
+**Evidence — HARD-2026-001 (2026-09-01), stored in Drive → CSEC-001 folder:**
+[Evidence Folder](https://drive.google.com/drive/folders/1xyGf9o5WdAYFRFh-EBgbvTUI4dHXJItr)
+
+| File | Description |
+|------|-------------|
+| HARD-2026-001_hardening-spotcheck_2026-09-01.png | Baseline check output: firewall, SMBv1, Guest, RDP NLA, TLS, password policy |
+| HARD-2026-001_password-policy-remediated_2026-09-01.png | `net accounts`: min length 12 + history 5 — remediated password policy |
