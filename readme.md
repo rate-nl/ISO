@@ -1142,6 +1142,41 @@ The table below lists Rate's **critical on-premises physical assets**, which req
 - **Data Storage:** Role-based access controls protect sensitive data.
 - **Backups:** Daily backups with **monthly restoration tests and an annual full validation check**.
 
+### 4.1 Mobile & Endpoint Device Security (A.8.1)
+
+Rate secures all endpoint and mobile devices used for company work:
+- **Managed devices only:** all laptops/desktops are company-managed, recorded in the Asset Inventory (Logs §5), and reviewed periodically.
+- **Encryption:** full-disk encryption (BitLocker) is mandatory on all endpoints; password login required.
+- **Maintenance:** the Team Lead Developer ensures devices have current security updates and endpoint protection/antivirus.
+- **Personal devices (BYOD):** personal devices are **not permitted** to store or process Confidential or Restricted (health) data. Access to company systems is via managed devices and VPN only. Any limited personal-device use must have full-disk encryption, an active antivirus, and remains subject to this policy.
+- **Remote/teleworking:** all staff work remotely; device encryption and VPN are enforced at all times (see Access Control Policy; A.6.7).
+
+### 4.2 Use of Cryptography & Key Management (A.8.24)
+
+Rate uses cryptography to protect the confidentiality, integrity, and authenticity of information:
+- **In transit:** all data transfer secured via TLS; remote/admin access via VPN.
+- **At rest:** full-disk encryption on endpoints; backups encrypted; health data encrypted at rest and in transit.
+- **Passwords/secrets:** user passwords stored hashed; application credentials and keys stored in LastPass (end-to-end encrypted) under personal Rate accounts.
+- **Web/dashboard:** accessible only over HTTPS.
+- **Key & certificate management:** TLS/SSL certificates are monitored for expiry and renewed before lapse (Risk #23); access to the credential vault is least-privilege and reviewed at the annual Access Control Review.
+- **Development:** only anonymized/synthetic data is used in test environments; no production health data.
+
+### 4.3 Clear Desk & Clear Screen (A.7.7)
+
+To prevent unauthorized access to information in the (home) workplace:
+- **Clear desk:** no Confidential or Restricted information is left unattended; documents and any data carriers are stored securely when the workplace is left.
+- **Clear screen:** screens are locked whenever the workstation is left, for any period; devices auto-lock after inactivity. For longer absences, devices are logged off or shut down.
+- **Remote context:** as Rate is fully remote, this applies to home workspaces — sensitive information must not be visible to family, guests, or others.
+- Enforced through employee awareness and periodic spot checks; verified at the annual review.
+
+### 4.4 Information Transfer (A.5.14)
+
+Rate protects information transferred internally and with external parties:
+- **Secure channels:** all transfers use TLS, VPN, and encrypted cloud services; USB/removable media are prohibited (A.7.10).
+- **Health data:** encrypted in transit and restricted to the authorized healthcare-customer tenant.
+- **Email:** no sensitive/patient data is sent by email; staff awareness reinforced via training and the security-awareness statement.
+- **Confidentiality:** a standard non-disclosure agreement governs transfers to external parties; responsibilities for information taken outside the workplace are defined.
+
 ### 5. Equipment Maintenance (A.7.13)
 
 Rate maintains all in-scope equipment (laptops, NAS, and development server) according to the following process:
