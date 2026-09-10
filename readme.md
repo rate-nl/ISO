@@ -2137,7 +2137,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | 2026-08-25 | Alternative Access Method Test (Production Servers) | Team Lead Developer | Annual | ✅ 2026-08-31 | CEO | [Alternative Access Method Test Log](Logs.md#12-alternative-access-method-test-log) |
 | 2026-09-01 | Annual Vulnerability Scan (Production Server) | Team Lead Developer | Annual | ✅ 2026-09-01 | Managing Director | [Vulnerability Management Log](Logs.md#18-vulnerability-management-log) |
 | 2026-09-01 | Hardening Baseline Review | Team Lead Developer | Annual | ✅ 2026-09-01 | Managing Director | [Hardening Review Log](Logs.md#19-hardening-review-log) |
-| 2026-09-27 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | 🔄 Pending | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
+| 2026-10-01 | Password Rotation — all admin and critical accounts | Managing Director / Team Lead Developer | Every 180 days | 🔄 Pending | Managing Director | [Password Rotation Log](Logs.md#15-password-rotation-log) |
 | 2026-10-15 | Annual Vulnerability Scan (VPN + NAS) | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Vulnerability Management Log](Logs.md#18-vulnerability-management-log) |
 | 2026-10-16 | Endpoint Patch/Update – Annual Verification (SEC-2026-003) | Team Lead Developer | Annual | 🔄 Pending | Managing Director | [Endpoint Patch/Update Log](Logs.md#7-endpoint-patchupdate-log) |
 | 2026-11-10 | Home Office Physical Access & Camera Log Review | Managing Director | Annual | 🔄 Pending | CEO | — |
