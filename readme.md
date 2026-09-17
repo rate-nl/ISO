@@ -1374,7 +1374,7 @@ To satisfy ISO 27001:2022 Annex A control A.8.27, Rate establishes and applies t
 
 ---
 
-# **Statement of Applicability (SoA)**  -- Version 4.0, date 8-June 2026
+# **Statement of Applicability (SoA)**  -- ISO Version 4.0, date 8-June 2026 / NEN Version 4.1, date 17-September 2026
 
 ## **1. Introduction**
 
@@ -1505,7 +1505,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 
 **Organisatie:** DineRate B.V. / CareRate B.V. (Holding: Proost Works B.V.)  
 **Norm:** NEN 7510-1:2024 (managementsysteem) — beheersmaatregelen conform NEN 7510-2:2024+A1:2026  
-**VvT-versie:** 4.0  **Versiedatum:** 8 juni 2026  
+**VvT-versie:** 4.1  **Versiedatum:** 17 September 2026
 **Eigenaar:** Managing Director (Inge Proost) — **Opgesteld door:** ISO Lead (Team Lead Developer)
 
 > **Relatie met de ISO 27001-VvT.** NEN 7510-2:2024 gebruikt dezelfde beheersmaatregelen en nummering als ISO 27001:2022 / ISO 27002 (bevestigd in NEN 7510-2:2024, Bijlage B), aangevuld met zorgspecifieke (HLT) beheersmaatregelen die uniek zijn voor NEN 7510.
@@ -1545,7 +1545,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 
 **Organisation:** DineRate B.V. / CareRate B.V. (Holding: Proost Works B.V.)  
 **Standard:** NEN 7510-1:2024 (management system) — controls per NEN 7510-2:2024+A1:2026  
-**SoA version:** 4.0  **Version date:** 8 June 2026  
+**SoA version:** 4.1  **Version date:** 17 September 2026
 **Owner:** Managing Director (Inge Proost) — **Prepared by:** ISO Lead (Team Lead Developer)
 
 > **Relation to the ISO 27001 SoA.** NEN 7510-2:2024 uses the same controls and numbering as ISO 27001:2022 / ISO 27002 (confirmed in NEN 7510-2:2024, Annex B), plus healthcare-specific (HLT) controls unique to NEN 7510.
@@ -2096,25 +2096,12 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | **Management Review** | 2025-10-08 | Managing Director | ✅ Yes | CEO | **2025-10-22** | ✅ Approved | Follow-up review confirmed closure of NC #3, NC-2025-EXT-01-05, and audit observations. |
 | ISMS Performance Metrics | 2025-05-16 | Managing Director | ✅ Yes | CEO | 2025-05-19 | ✅ Approved | KPIs aligned with ISMS goals and tracked annually. |
 | **Remote Work & Home-Office Security Addendum** | 2025-10-08 | Managing Director | ✅ Yes | CEO | **2025-10-21** | ✅ Approved | Defines controls for remote-work setup, NAS relocation, and home-office access; aligned with BCDR, Asset Mgmt, and Access Control Policies. |
-
-
-
-
-
-
-
-| **Statement of Applicability (SoA) — v4.0 (NEN 7510)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-12 | ✅ Approved | SoA updated to Version 4.0 — added NEN 7510-1:2024 healthcare-specific controls (22 controls) as a separate table. A.7.10 aligned to ✅ across both ISO and NEN tables. Approved by CEO email. |
-
 | **Role Assignments & RACI Matrix (Policy 4.6)** | 2026-06-08 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-12 | ✅ Approved | New section formalizing ISMS role assignments, RACI matrix (10 grouped activities, 3-column structure), and segregation-of-duties statement. Approved by CEO email. |
-
-
 | **Legal & Regulatory Register** | 2026-06-05 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-16 | ✅ Approved | Register of applicable laws (NEN 7510, GDPR/AVG, Wkkgz, Wabvpz, ISO 27001). GDPR/AVG and Wkkgz marked Compliant; NEN 7510 and Wabvpz In Progress pending SoA completion. Approved by CEO email. |
-
 | **Supplier Security Assessment Form** | 2026-06-15 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-06-16 | ✅ Approved | New standardized supplier assessment form added [Manager Approvals](https://drive.google.com/file/d/1MmKMSGmnpSwD38IZsIklo0LavxNX6Vee/view?usp=drive_link) |
-
 | **Risk Assessment & Treatment Plan — RA-2026-001** | 2026-03-30 | Firas Kassoumeh | ✅ Yes | CEO (Inge Proost) | **2026-03-30** | ✅ Closed — UPS installed | Risk assessment for NAS power outage (INC-2026-03-25). Risk #42 updated. UPS procured and installed June 2026; home office power continuity now in place. [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN) |
-
 | **Management Review — 2026-08-25** | 2026-08-25 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-08-28 | ✅ Approved | Post-internal-audit management review (Clause 9.3) of the 14 July 2026 Jaguar IT ISO 27001 / NEN 7510 audit. Verified closure of all six internal-audit nonconformities (NB-2026-01 Major; NC-2026-01…05 Minor) with root-cause analysis. 5 of 6 ISMS objectives met; the "zero major nonconformities" KPI recorded as not met but remediated within 30 days. Five OFIs (OFI-2026-01…05) approved as the next-cycle action plan. ISMS confirmed suitable, adequate, and effective. Signed by CEO & ISO Lead. |
+| **Statement of Applicability (SoA) — v4.1 (NEN 7510 VvT full)** | 2026-09-17 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | *pending* | 🔄 Pending | NEN 7510 VvT (NL + EN) rebuilt to full DigiTrust format: header (organisation, standard, VvT version 4.1 / 17-09-2026), full control text from NEN 7510-2:2024+A1:2026, inclusion/exclusion justification, implementation status, and (partly) outsourced column. Relation to ISO 27001 SoA clarified (shared 93 controls + 8 HLT). Supersedes the v4.0 NEN SoA row above. |
 
 ---
 
