@@ -14,7 +14,8 @@
 
 ## 3. Statement of Applicability
    - [ISO 27001:2022 Controls](#2-iso270012022--controls)
-   - [NEN 7510-1:2024 Healthcare-Specific Controls](#3-nen-7510-12024--healthcare-specific-controls)
+   - [NEN 7510-1:2024 — Zorgspecifieke beheersmaatregelen (VvT)](#3-nen-7510-12024--zorgspecifieke-beheersmaatregelen-verklaring-van-toepasselijkheid)
+   - [NEN 7510-1:2024 — Healthcare-Specific Controls (SoA, English)](#3a-nen-7510-12024--healthcare-specific-controls-statement-of-applicability--english)
 
 ## 4. Compliance & Security Governance
    - [Legal & Regulatory Register](#legal--regulatory-register)
