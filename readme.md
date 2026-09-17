@@ -43,13 +43,26 @@ Rate is committed to safeguarding the confidentiality, integrity, and availabili
 
 ## Scope of the ISMS
 
-### ISO 27001:2022
-The development, maintenance, hosting, and support of SaaS applications that enable health, education, and other organizations to independently conduct evaluation and improvement activities, including all supporting people, processes, systems, and information assets.
+**Organisatie / Organisation:** Groep Proost Works — Proost Works B.V. (Holding, KVK 55057195); DineRate B.V. (technische en ontwikkelactiviteiten, KVK 55058590); CareRate B.V. (business support, KVK 61419214)  
+**Locatie / Location:** Stationsplein 45 Unit D3.125, 3013 AK Rotterdam
 
-This scope covers all Rate employees, contractors, and systems including the SaaS platform, cloud infrastructure (Hetzner), home office infrastructure (NAS and Dev Server), and all customer segments — healthcare, education, and other organizations.
+### ISO 27001:2022
+
+**Toepassingsgebied (NL — authoritative):**
+> Informatiebeveiliging gerelateerd aan het ontwikkelen en programmeren van software voor SaaS-applicaties die zorg- en overheidsorganisaties in staat stellen om cliënt- en patiëntgerelateerde informatie via feedback- en onderzoeksformulieren te verzamelen, vast te leggen, te structureren, te evalueren en te verbeteren, inclusief alle ondersteunende mensen, processen, systemen en informatiebronnen. Deze scope omvat alle medewerkers en contractanten binnen de Groep Proost Works, en alle systemen, waaronder de SaaS-platformen die binnen deze organisatorische en technische infrastructuur worden ontwikkeld.
+
+**Scope (EN — translation):**
+> Information security related to the development and programming of software for SaaS applications that enable healthcare and government organisations to collect, record, structure, evaluate and improve client- and patient-related information through feedback and survey forms, including all supporting people, processes, systems and information resources. This scope covers all employees and contractors within the Proost Works Group, and all systems, including the SaaS platforms developed within this organisational and technical infrastructure.
 
 ### NEN 7510-1:2024
-The same SaaS platform, but limited to the processing of health-related personal data for healthcare organizations in the Netherlands, in accordance with Wkkgz and Wabvpz. Education, non-healthcare customers, fully anonymized data, and corporate HR/finance systems are excluded from this scope.
+
+**Toepassingsgebied (NL — authoritative):**
+> Informatiebeveiliging gerelateerd aan het ontwikkelen, programmeren, hosten en beheren van software voor SaaS-applicaties die zorg- en overheidsorganisaties in staat stellen om cliënt- en patiëntgerelateerde informatie via feedback- en onderzoeksformulieren te verzamelen, vast te leggen, te structureren, te evalueren en te verbeteren, inclusief alle ondersteunende mensen, processen, systemen en informatiebronnen, maar beperkt tot de verwerking van gezondheidsgerelateerde persoonsgegevens ten behoeve van zorgorganisaties in Nederland, conform de Wkkgz en de Wabvpz. Deze scope omvat alle medewerkers en contractanten binnen de Groep Proost Works, en alle systemen, waaronder de zorggerichte SaaS-platformen die binnen deze organisatorische en technische infrastructuur worden ontwikkeld.
+
+**Scope (EN — translation):**
+> Information security related to the development, programming, hosting and management of software for SaaS applications that enable healthcare and government organisations to collect, record, structure, evaluate and improve client- and patient-related information through feedback and survey forms, including all supporting people, processes, systems and information resources, but limited to the processing of health-related personal data for healthcare organisations in the Netherlands, in accordance with the Wkkgz and the Wabvpz. This scope covers all employees and contractors within the Proost Works Group, and all systems, including the healthcare-focused SaaS platforms developed within this organisational and technical infrastructure.
+
+**Buiten scope / Out of scope:** Education and other non-healthcare customers, fully anonymised data, and corporate HR/finance systems are excluded from the NEN 7510 scope (health-related personal data processing only).
 
 ## Context of the Organization (Clause 4.1)
 
@@ -2102,6 +2115,8 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | **Risk Assessment & Treatment Plan — RA-2026-001** | 2026-03-30 | Firas Kassoumeh | ✅ Yes | CEO (Inge Proost) | **2026-03-30** | ✅ Closed — UPS installed | Risk assessment for NAS power outage (INC-2026-03-25). Risk #42 updated. UPS procured and installed June 2026; home office power continuity now in place. [Manager Approvals](https://drive.google.com/drive/folders/1LVJoKFKQxtZmwX9v2lCjW-83h3gsYwyN) |
 | **Management Review — 2026-08-25** | 2026-08-25 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-08-28 | ✅ Approved | Post-internal-audit management review (Clause 9.3) of the 14 July 2026 Jaguar IT ISO 27001 / NEN 7510 audit. Verified closure of all six internal-audit nonconformities (NB-2026-01 Major; NC-2026-01…05 Minor) with root-cause analysis. 5 of 6 ISMS objectives met; the "zero major nonconformities" KPI recorded as not met but remediated within 30 days. Five OFIs (OFI-2026-01…05) approved as the next-cycle action plan. ISMS confirmed suitable, adequate, and effective. Signed by CEO & ISO Lead. |
 | **Statement of Applicability (SoA) — v4.1 (NEN 7510 VvT full)** | 2026-09-17 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | *pending* | 🔄 Pending | NEN 7510 VvT (NL + EN) rebuilt to full DigiTrust format: header (organisation, standard, VvT version 4.1 / 17-09-2026), full control text from NEN 7510-2:2024+A1:2026, inclusion/exclusion justification, implementation status, and (partly) outsourced column. Relation to ISO 27001 SoA clarified (shared 93 controls + 8 HLT). Supersedes the v4.0 NEN SoA row above. |
+| **ISMS Scope (ISO 27001:2022 & NEN 7510-1:2024)** | 2026-09-17 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-09-17 | ✅ Approved | Scope statements refreshed and aligned to the DigiTrust-registered scope: added organisational units (Groep Proost Works — Proost Works B.V., DineRate B.V., CareRate B.V. with KVK numbers), fuller ISO and NEN wording, and Dutch-authoritative text with English translation. NEN scope retains the healthcare limitation (health-related personal data, NL, Wkkgz/Wabvpz). Scope text authored by the CEO. |
+
 
 ---
 
