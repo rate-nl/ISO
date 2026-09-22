@@ -263,7 +263,8 @@ _A single file to capture and track all required ISMS evidence in one place._
 | Rotation ID | Date | Performed By | Systems / Accounts Covered | Next Due | Verified By | Notes |
 |-------------|------|-------------|----------------------------|----------|-------------|-------|
 | PWR-2025-001 | 2025-09-26 | Firas Kassoumeh/ Inge Proost | LastPass (CEO + MD), Google Workspace, GitHub, Hetzner, Server RDP, Production server accounts | 2026-03-31 | Managing Director | First documented rotation. No prior rotation log existed — gap identified during ISMS review Mar 2026. |
-| PWR-2026-001 | 2026-03-31 | Firas Kassoumeh/ Inge Proost | LastPass (CEO + MD), Google Workspace, GitHub, Hetzner, Server RDP, Production server accounts | 2026-09-27 | Managing Director | Scheduled 180-day rotation completed on time. |
+| PWR-2026-001 | 2026-03-31 | Firas Kassoumeh/ Inge Proost | LastPass (CEO + MD), Google Workspace, GitHub, Hetzner, Server RDP, Production server accounts | 2026-09-25 | Managing Director | Scheduled 180-day rotation completed on time. |
+| PWR-2026-002 | 2026-09-25 | Firas Kassoumeh / Inge Proost | LastPass (CEO + MD), Google Workspace, GitHub, Hetzner, Server RDP, Production server accounts | 2027-03-30 | Managing Director | Scheduled 180-day rotation completed on time. |
 
 ## 16. Credential / Vault Backup Log
 **Purpose:** Record backups of credential vaults (e.g. LastPass) to secured storage, confirming encryption and retention.  
