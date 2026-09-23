@@ -1388,7 +1388,7 @@ To satisfy ISO 27001:2022 Annex A control A.8.27, Rate establishes and applies t
 
 ---
 
-# **Statement of Applicability (SoA)**  -- ISO Version 4.0, date 8-June 2026 / NEN Version 4.1, date 17-September 2026
+# **Statement of Applicability (SoA)**  -- ISO Version 4.0, date 8-June 2026 / NEN Version 4.2, date 24-September 2026
 
 ## **1. Introduction**
 
@@ -1519,7 +1519,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 
 **Organisatie:** Proost Works B.V. (KVK 55057195), inclusief CareRate B.V. (KVK 61419214) en DineRate B.V. (KVK 55058590)  
 **Norm:** NEN 7510-1:2024 (managementsysteem) — beheersmaatregelen conform **NEN 7510-1:2024, Bijlage A (normatief)**  
-**VvT-versie:** 4.1  **Versiedatum:** 17 september 2026  
+**VvT-versie:** 4.2  **Versiedatum:** 24 september 2026  
 **Eigenaar:** Managing Director (Inge Proost) — **Opgesteld door:** ISO Lead (Team Lead Developer)
 
 > **Relatie met de ISO 27001-VvT.** NEN 7510-1:2024, Bijlage A gebruikt dezelfde beheersmaatregelen en nummering als ISO 27001:2022. Alle 93 gedeelde beheersmaatregelen (A.5.1–A.8.34) zijn beoordeeld in de ISO 27001:2022-VvT hierboven en worden hier niet herhaald. De 14 hieronder vermelde gedeelde beheersmaatregelen worden herhaald vanwege een zorgspecifieke aanvulling; de 8 HLT-beheersmaatregelen zijn uniek voor NEN 7510. Maatregelteksten overgenomen uit NEN 7510-1:2024, Bijlage A (in licentie verstrekt aan DineRate B.V.).
@@ -1555,7 +1555,7 @@ The SoA ensures that selected controls effectively mitigate risks identified in 
 
 **Organisation:** Proost Works B.V. (KVK 55057195), including CareRate B.V. (KVK 61419214) and DineRate B.V. (KVK 55058590)  
 **Standard:** NEN 7510-1:2024 (management system) — controls per **NEN 7510-1:2024, Annex A (normative)**  
-**SoA version:** 4.1  **Version date:** 17 September 2026  
+**SoA version:** 4.2  **Version date:** 24 September 2026  
 **Owner:** Managing Director (Inge Proost) — **Prepared by:** ISO Lead (Team Lead Developer)
 
 > **Relation to the ISO 27001 SoA.** NEN 7510-1:2024, Annex A uses the same controls and numbering as ISO 27001:2022. All 93 shared controls (A.5.1–A.8.34) are assessed in the ISO 27001:2022 SoA above and are not repeated here. The 14 shared controls below are repeated because of a healthcare-specific addition; the 8 HLT controls are unique to NEN 7510. Control texts taken from NEN 7510-1:2024, Annex A (licensed to DineRate B.V.); English is a working translation, the licensed Dutch text is authoritative.
@@ -2109,7 +2109,7 @@ This ensures traceability, accountability, and compliance with ISO 27001 : 2022.
 | **Management Review — 2026-08-25** | 2026-08-25 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-08-28 | ✅ Approved | Post-internal-audit management review (Clause 9.3) of the 14 July 2026 Jaguar IT ISO 27001 / NEN 7510 audit. Verified closure of all six internal-audit nonconformities (NB-2026-01 Major; NC-2026-01…05 Minor) with root-cause analysis. 5 of 6 ISMS objectives met; the "zero major nonconformities" KPI recorded as not met but remediated within 30 days. Five OFIs (OFI-2026-01…05) approved as the next-cycle action plan. ISMS confirmed suitable, adequate, and effective. Signed by CEO & ISO Lead. |
 | **Statement of Applicability (SoA) — v4.1 (NEN 7510 VvT full)** | 2026-09-17 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | *pending* | 🔄 Pending | NEN 7510 VvT (NL + EN) rebuilt to full DigiTrust format: header (organisation, standard, VvT version 4.1 / 17-09-2026), full control text from NEN 7510-2:2024+A1:2026, inclusion/exclusion justification, implementation status, and (partly) outsourced column. Relation to ISO 27001 SoA clarified (shared 93 controls + 8 HLT). Supersedes the v4.0 NEN SoA row above. |
 | **ISMS Scope (ISO 27001:2022 & NEN 7510-1:2024)** | 2026-09-17 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-09-17 | ✅ Approved | Scope statements refreshed and aligned to the DigiTrust-registered scope: added organisational units (Groep Proost Works — Proost Works B.V., DineRate B.V., CareRate B.V. with KVK numbers), fuller ISO and NEN wording, and Dutch-authoritative text with English translation. NEN scope retains the healthcare limitation (health-related personal data, NL, Wkkgz/Wabvpz). Scope text authored by the CEO. |
-
+| **Statement of Applicability (SoA) — v4.2 (NEN 7510 VvT control text)** | 2026-09-24 | Firas Kassoumeh (ISO Lead) | ✅ Yes | CEO (Inge Proost) | 2026-09-25 | ✅ Approved | NEN 7510 VvT control descriptions re-sourced from NEN 7510-1:2024, Bijlage A (normatief) instead of NEN 7510-2:2024+A1:2026, per DigiTrust Stage 2 pre-audit feedback (certification is against 7510-1:2024). All other columns unchanged. Supersedes v4.1. |
 
 
 ---
